@@ -129,7 +129,8 @@ section.u4m-blog-listing div.hero div.wrapper div.card .image-wrap a .image {
 section.u4m-blog-listing div.hero div.wrapper div.card .image-wrap .image img {
   height: 100%;
   width: 100%;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 section.u4m-blog-listing div.hero div.wrapper div.card .content {
   text-align: left;
@@ -249,7 +250,9 @@ section.u4m-blog-listing div.filter div.mobile-menu {
     margin-top: 2rem;
     margin-bottom: 20rem;
     font-size: 16rem;
-    appearance: none;
+    -webkit-appearance: none;
+       -moz-appearance: none;
+            appearance: none;
     background: url("//cdn2.hubspot.net/hubfs/302335/select-arrow.png") no-repeat;
     background-size: 13rem 8rem;
     background-position: 97% 51%;
@@ -596,7 +599,8 @@ section.u4m-blog-listing div.posts a.blog-post-card .image.filled {
 section.u4m-blog-listing div.posts a.blog-post-card .image.filled img {
   height: 100%;
   width: 100%;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
   margin: 0;
 }
 section.u4m-blog-listing div.posts a.blog-post-card .image a {
@@ -728,7 +732,8 @@ section.u4m-blog-listing div.posts a.blog-post-card .featured-image {
 section.u4m-blog-listing div.posts a.blog-post-card .featured-image img {
   height: 100%;
   width: 100%;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 section.u4m-blog-listing div.posts a.blog-post-card .content {
   height: calc(100% - 203rem);

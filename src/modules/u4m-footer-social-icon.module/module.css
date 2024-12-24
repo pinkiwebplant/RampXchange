@@ -1,0 +1,36 @@
+html {
+  font-size: 1px;
+}
+
+/* auto scale down elements on mobile */
+@media (max-width: 580px) {
+  html {
+    font-size: 1px;
+  }
+}
+
+/* auto scale up elements on large displays */
+@media (min-width: 2560px) {
+  html {
+    font-size: 1px;
+  }
+}
+
+.footer-social ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+}
+.footer-social ul li {
+  margin: 0;
+  margin-right: 10px;
+}
+.footer-social ul li svg {
+  vertical-align: middle;
+  width: 24px;
+  height: 24px;
+  color: #007C43;
+  fill: #007C43;
+}

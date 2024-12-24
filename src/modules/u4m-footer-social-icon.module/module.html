@@ -1,0 +1,32 @@
+<div class="footer-social">
+	<ul>
+		{% for item in module.social_items %}
+		<li>
+			{% set href = item.social_link.url.href %}
+			{% if item.social_link.url.type is equalto "EMAIL_ADDRESS" %}
+			{% set href = "mailto:" + href %}
+			{% endif %}
+			<a
+				 {% if item.social_link.url.type is equalto "CALL_TO_ACTION"  %}
+				 href="{{ href }}" {# The href here is not escaped as it is not editable and functions as a JavaScript call to the associated CTA #}
+				 {% else %}
+				 href="{{ href|escape_url }}"
+				 {% endif %}
+				 {% if item.social_link.open_in_new_tab %}
+				 target="_blank"
+				 {% endif %}
+				 {% if item.social_link.rel %}
+				 rel="{{ item.social_link.rel|escape_attr }}"
+				 {% endif %}
+				 >
+				{% icon
+		name="{{ item.social_icon.name }}"
+		style="{{ item.social_icon.type }}"
+		unicode="{{ item.social_icon.unicode }}"
+		icon_set="{{ item.social_icon.icon_set }}"
+	%}
+			</a>
+		</li>
+		{% endfor %}
+	</ul>
+</div>

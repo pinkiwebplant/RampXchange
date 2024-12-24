@@ -29,6 +29,9 @@ section.u4m-landing-page-sign-up.reverse-text .logo img {
 section.u4m-landing-page-sign-up.reverse-text .footer-links a {
   color: #ffffff;
 }
+section.u4m-landing-page-sign-up.reverse-text .input input.hs-input[type=email]::-moz-placeholder {
+  color: #ffffff;
+}
 section.u4m-landing-page-sign-up.reverse-text .input input.hs-input[type=email]::placeholder {
   color: #ffffff;
 }
@@ -210,7 +213,9 @@ section.u4m-landing-page-sign-up .form-wrap .input input[type=email] {
   background-color: #ffffff;
   padding: 16rem;
   width: 100%;
-  appearance: none;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
 }
 section.u4m-landing-page-sign-up .form-wrap.hs-form .input input[type=text].error, section.u4m-landing-page-sign-up .form-wrap.hs-form .input input[type=text].invalid,
 section.u4m-landing-page-sign-up .form-wrap.hs-form .input input[type=number].error,
@@ -232,6 +237,9 @@ section.u4m-landing-page-sign-up .form-wrap .input input[type=tel].invalid,
 section.u4m-landing-page-sign-up .form-wrap .input input[type=email].error,
 section.u4m-landing-page-sign-up .form-wrap .input input[type=email].invalid {
   border: 1rem solid red;
+}
+section.u4m-landing-page-sign-up .form-wrap.hs-form .input input[type=text]::-moz-placeholder, section.u4m-landing-page-sign-up .form-wrap.hs-form .input input[type=number]::-moz-placeholder, section.u4m-landing-page-sign-up .form-wrap.hs-form .input input[type=tel]::-moz-placeholder, section.u4m-landing-page-sign-up .form-wrap.hs-form .input input[type=email]::-moz-placeholder, section.u4m-landing-page-sign-up .form-wrap.mixitup-multifilter .input input[type=text]::-moz-placeholder, section.u4m-landing-page-sign-up .form-wrap.mixitup-multifilter .input input[type=number]::-moz-placeholder, section.u4m-landing-page-sign-up .form-wrap.mixitup-multifilter .input input[type=tel]::-moz-placeholder, section.u4m-landing-page-sign-up .form-wrap.mixitup-multifilter .input input[type=email]::-moz-placeholder, section.u4m-landing-page-sign-up .form-wrap .input input[type=text]::-moz-placeholder, section.u4m-landing-page-sign-up .form-wrap .input input[type=number]::-moz-placeholder, section.u4m-landing-page-sign-up .form-wrap .input input[type=tel]::-moz-placeholder, section.u4m-landing-page-sign-up .form-wrap .input input[type=email]::-moz-placeholder {
+  color: #eeeeee;
 }
 section.u4m-landing-page-sign-up .form-wrap.hs-form .input input[type=text]::placeholder,
 section.u4m-landing-page-sign-up .form-wrap.hs-form .input input[type=number]::placeholder,
@@ -268,7 +276,9 @@ section.u4m-landing-page-sign-up .form-wrap.hs-form .input input[type=file], sec
   margin-bottom: 23rem;
 }
 section.u4m-landing-page-sign-up .form-wrap.hs-form .input select, section.u4m-landing-page-sign-up .form-wrap.mixitup-multifilter .input select, section.u4m-landing-page-sign-up .form-wrap .input select {
-  appearance: none;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
   background: url("//cdn2.hubspot.net/hubfs/302335/select-arrow.png") no-repeat;
   background-size: 13rem 8rem;
   background-position: 97% 51%;
@@ -754,7 +764,8 @@ section.u4m-landing-page-sign-up .testimonials .quote .author-name::before {
 section.u4m-landing-page-sign-up .testimonials img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 section.u4m-landing-page-sign-up .footer-links {
   text-align: center;
