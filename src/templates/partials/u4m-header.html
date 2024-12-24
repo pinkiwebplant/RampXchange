@@ -1,0 +1,56 @@
+<!--
+ templateType: global_partial
+ label: Header
+-->
+
+<div class="header-wrapper">
+	<header class="header">
+		<div class="header-inner">
+			<div class="header-top">
+				<div class="page-center">
+					<div class="row-fluid">
+						<div class="header-top-menu span12">
+							{% menu "top_menu"
+             flyouts=false,
+             label="Header Top Menu",
+             id="184230032501",
+						 max_levels="1"
+           %}
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="main-header">
+				<div class="page-center">
+					<div class="row-fluid">
+						<div class="span4 site_logo">
+							<div class="site_logo_inn">
+								{% set logo_src = get_asset_url('../../templates/images/rampXchange.png') %}
+								{% module "site_logo" path="@hubspot/logo", label="Site Logo", link="/" img={src="{{logo_src}}", width=326, open_in_new_tab=true ,override_inherited_src= true, alt="rampXchange"} %}
+							</div>
+							<div class="menu-trigger">
+								<span></span>
+								<span></span>
+								<span></span>
+							</div>
+						</div>
+						<div class="main_menu span8">
+							<div class="main_menu_inn">
+								<div class="site_menu">
+									{% menu "site_menu"
+             flyouts=false,
+             label="Main Menu",
+             id="184230021814"
+           %}
+									<div class="header_btn">
+										{% module "book_button" path="@hubspot/button", button_text="Book a Demo", label="Button", link={ "url": { "type": "EXTERNAL", "href": "", "content_id": null }, "open_in_new_tab": false, "no_follow": false } %}
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+</div>
