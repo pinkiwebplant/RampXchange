@@ -111,9 +111,7 @@
   line-height: 1.6;
   letter-spacing: .25rem;
   margin-bottom: 20rem;
-  @include phone {
-    font-size: 15rem;
-  }
+
 }
 @mixin b4 {
   font-family: $font1;

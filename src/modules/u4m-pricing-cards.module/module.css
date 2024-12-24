@@ -77,11 +77,6 @@ section.u4m-pricing-cards div.intro .subheading {
   line-height: 1.7;
   margin: 0 auto;
 }
-@media (max-width: 580px) {
-  section.u4m-pricing-cards div.intro .subheading {
-    font-size: 15rem;
-  }
-}
 section.u4m-pricing-cards .wrapper {
   float: none;
   margin-left: auto;
@@ -157,8 +152,7 @@ section.u4m-pricing-cards .wrapper div.card .image.filled {
 section.u4m-pricing-cards .wrapper div.card .image.filled img {
   height: 100%;
   width: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   margin: 0;
 }
 section.u4m-pricing-cards .wrapper div.card .image a {
@@ -372,11 +366,6 @@ section.u4m-pricing-cards .wrapper div.card div.content .price-container .price 
   font-size: 20rem;
   font-family: "Inter";
 }
-@media (max-width: 580px) {
-  section.u4m-pricing-cards .wrapper div.card div.content .price-container .price .price-frequency {
-    font-size: 15rem;
-  }
-}
 section.u4m-pricing-cards .wrapper div.card div.content .price-container .teaser {
   font-family: "Inter";
   font-size: 14rem;
@@ -476,11 +465,6 @@ section.u4m-pricing-cards .wrapper div.card div.content ul li {
   line-height: 1.6;
   letter-spacing: 0.25rem;
   margin-bottom: 20rem;
-}
-@media (max-width: 580px) {
-  section.u4m-pricing-cards .wrapper div.card div.content ul li {
-    font-size: 15rem;
-  }
 }
 section.u4m-pricing-cards .wrapper div.card div.content ul li span img {
   position: relative;

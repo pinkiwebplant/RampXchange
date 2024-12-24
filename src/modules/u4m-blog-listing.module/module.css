@@ -129,8 +129,7 @@ section.u4m-blog-listing div.hero div.wrapper div.card .image-wrap a .image {
 section.u4m-blog-listing div.hero div.wrapper div.card .image-wrap .image img {
   height: 100%;
   width: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 section.u4m-blog-listing div.hero div.wrapper div.card .content {
   text-align: left;
@@ -250,9 +249,7 @@ section.u4m-blog-listing div.filter div.mobile-menu {
     margin-top: 2rem;
     margin-bottom: 20rem;
     font-size: 16rem;
-    -webkit-appearance: none;
-       -moz-appearance: none;
-            appearance: none;
+    appearance: none;
     background: url("//cdn2.hubspot.net/hubfs/302335/select-arrow.png") no-repeat;
     background-size: 13rem 8rem;
     background-position: 97% 51%;
@@ -599,8 +596,7 @@ section.u4m-blog-listing div.posts a.blog-post-card .image.filled {
 section.u4m-blog-listing div.posts a.blog-post-card .image.filled img {
   height: 100%;
   width: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   margin: 0;
 }
 section.u4m-blog-listing div.posts a.blog-post-card .image a {
@@ -732,8 +728,7 @@ section.u4m-blog-listing div.posts a.blog-post-card .featured-image {
 section.u4m-blog-listing div.posts a.blog-post-card .featured-image img {
   height: 100%;
   width: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 section.u4m-blog-listing div.posts a.blog-post-card .content {
   height: calc(100% - 203rem);
@@ -824,11 +819,6 @@ section.u4m-blog-listing div.posts a.blog-post-card .content h2.title {
     letter-spacing: 0.25rem;
     margin-bottom: 20rem;
     font-weight: bold;
-  }
-}
-@media (max-width: 767px) and (max-width: 580px) {
-  section.u4m-blog-listing div.posts a.blog-post-card .content h2.title {
-    font-size: 15rem;
   }
 }
 section.u4m-blog-listing div.posts a.blog-post-card .content span.teaser {
@@ -959,11 +949,6 @@ section.u4m-blog-listing div.posts .resource-card a .content span.type {
   margin-bottom: 20rem;
   margin-bottom: 0;
   text-transform: uppercase;
-}
-@media (max-width: 580px) {
-  section.u4m-blog-listing div.posts .resource-card a .content span.type {
-    font-size: 15rem;
-  }
 }
 section.u4m-blog-listing div.posts .resource-card a .content h2.title {
   font-family: "Inter";

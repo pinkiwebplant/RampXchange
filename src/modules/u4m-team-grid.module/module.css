@@ -149,8 +149,7 @@ section.u4m-team-grid .member-wrap .member .image.filled {
 section.u4m-team-grid .member-wrap .member .image.filled img {
   height: 100%;
   width: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   margin: 0;
 }
 section.u4m-team-grid .member-wrap .member .image a {
@@ -338,11 +337,11 @@ section.u4m-team-grid .member-wrap .member > .inner .inner__inner h4 {
 }
 section.u4m-team-grid .member-wrap .member > .inner .inner__inner .view-bio {
   all: unset;
-  text-decoration: none;
-  /* Remove default underline */
   color: #007C43;
   transition: 0.1s ease-in;
   display: inline-block;
+  text-decoration-thickness: 2px;
+  text-underline-offset: 4px;
   margin-bottom: 5rem;
   color: #00a4bd;
 }
@@ -388,11 +387,6 @@ section.u4m-team-grid .member-wrap .member > .inner .inner__inner p {
   margin-bottom: 20rem;
   margin-bottom: 10rem;
   font-size: 15rem;
-}
-@media (max-width: 580px) {
-  section.u4m-team-grid .member-wrap .member > .inner .inner__inner p {
-    font-size: 15rem;
-  }
 }
 section.u4m-team-grid .member-wrap .member > .inner button.button-arrow {
   position: absolute;

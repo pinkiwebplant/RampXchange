@@ -215,11 +215,6 @@ header.u4m-header .inner .menu .hs-menu-wrapper.hs-menu-wrapper.hs-menu-flow-hor
   border-bottom: solid 1rem #6E757C;
   font-weight: bold;
 }
-@media (max-width: 580px) {
-  header.u4m-header .inner .menu .hs-menu-wrapper.hs-menu-wrapper.hs-menu-flow-horizontal ul li.mega-drop ul.hs-menu-children-wrapper a {
-    font-size: 15rem;
-  }
-}
 header.u4m-header .inner .menu .hs-menu-wrapper.hs-menu-wrapper.hs-menu-flow-horizontal ul li.mega-drop ul.hs-menu-children-wrapper a:hover {
   color: #007C43;
   transition: none;
@@ -345,9 +340,7 @@ header.u4m-header .inner button.hamburger-toggle {
   padding: 0;
   transition: 0.3s;
   cursor: pointer;
-  -webkit-user-select: none;
-     -moz-user-select: none;
-          user-select: none;
+  user-select: none;
   margin: 0;
   background: transparent;
   border: 0;
@@ -519,11 +512,6 @@ header.u4m-header .inner .offscreen-menu .mobile-menu div li.hs-menu-depth-3 a {
   margin-bottom: 20rem;
   margin-bottom: 0;
   padding: 10;
-}
-@media (max-width: 580px) {
-  header.u4m-header .inner .offscreen-menu .mobile-menu div li.hs-menu-depth-3 a {
-    font-size: 15rem;
-  }
 }
 header.u4m-header .inner .offscreen-menu .mobile-menu div li.hs-item-has-children > a:after {
   position: relative;

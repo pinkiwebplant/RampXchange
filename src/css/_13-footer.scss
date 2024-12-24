@@ -69,7 +69,13 @@
         }
       }
       .footer-menu {
-        width: 100%;
+        width: calc(100% - 453px);
+        @include tablet{
+          width: calc(100% - 340px);
+        }
+        @include tabletvert{
+          width: 100%;
+        }
       }
       .footer-menu .hs-menu-wrapper > ul {
         -moz-column-gap: 40px;

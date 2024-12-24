@@ -507,7 +507,7 @@ section[class*='u4m-'] {
     z-index: 2;
   }
 }
-
+  
 
 .hs-button {
   @include button;
@@ -515,8 +515,8 @@ section[class*='u4m-'] {
 }
 .sec-btn {
   @include secondarybutton;
-} 
-.sec-btn {
+}   
+.arrow-link {
   @include arrowbutton;
 } 
 .intro_content {
@@ -553,6 +553,22 @@ section[class*='u4m-'] {
   align-items: center;
 }
  
+.arrow-link {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 0px;
+  gap: 4px;
+  font-weight: 600;
+}
+.arrow-link svg {
+  width: 12px;
+  height: 12px;
+}
+.arrow-link svg path {
+  fill: currentColor;
+}
 
 .reverse-text {
   color: $white;
@@ -612,5 +628,11 @@ section[class*='u4m-'] {
 }
 .gradient3 {
   background-image: $gradient3;
+}  
+.gradient4 {
+  background-image: $gradient4;
+}  
+.gradient5 {
+  background-image: $gradient5;
 }  
 

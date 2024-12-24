@@ -21,6 +21,17 @@
     @content;
   }
 }
+@mixin tabletmidmin {
+  @media (min-width: 992px) {
+    @content;
+  }
+}
+
+@mixin tabletmid {
+  @media (max-width: 991px) {
+    @content;
+  }
+}
 
 @mixin tabletMin {
   @media (min-width: 1025px) {
@@ -115,14 +126,14 @@
   @include center;
   max-width: 1000rem;
 }
-
+  
 // Links
-@mixin link {
-  text-decoration: none;
-  /* Remove default underline */
+@mixin link { 
   color: $action1;
   transition: $animation1;
   display: inline-block;
+  text-decoration-thickness: 2px;
+    text-underline-offset: 4px;
 
   &:hover {
     color: $action1;
