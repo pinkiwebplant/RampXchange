@@ -1,5 +1,5 @@
-# RampXchange - v1.6.3
-RampXchange for the HubSpot CMS by New Breed
+# rampxchange - v1.6.3
+rampxchange for the HubSpot CMS by New Breed
 =======
 Copyright 2024 New Breed - newbreedrevenue.com
 Last Updated - 12-4-2024
@@ -18,29 +18,29 @@ hs hubdb create u4-resource-library.json
 
 #### Upload entire project
 ```
-hs upload src RampXchange
+hs upload src rampxchange
 ```
 
 #### Watch entire project
 ```
-hs watch src RampXchange
+hs watch src rampxchange
 ```
 
 #### Fetch entire project with overwriting
 ```
-hs fetch RampXchange src -o
+hs fetch rampxchange src -o
 ```
 
 #### Fetch a specific module add -o to the end to overwrite files
 ```
-hs fetch RampXchange/modules/u4m-000.module src/modules/u4m-000.module -o
+hs fetch rampxchange/modules/u4m-000.module src/modules/u4m-000.module -o
 ```
 
-hs fetch RampXchange/modules/u4m-cards-side.module src/modules/u4m-cards-side.module -o
+hs fetch rampxchange/modules/u4m-cards-side.module src/modules/u4m-cards-side.module -o
 
 #### Watch entire folder on non-default portal (portal names are set in hubspot.config.yml)
 ```
-hs watch --account=hug_vt src RampXchange
+hs watch --account=hug_vt src rampxchange
 ```
 
 #### Fetch a HubDB table (the numbers are the ID of the table)
