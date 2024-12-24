@@ -20,7 +20,7 @@ section.u4m-logo-trust-marks {
   margin: 100rem 0;
 }
 section.u4m-logo-trust-marks.reverse-text {
-  color: #fff;
+  color: #ffffff;
 }
 section.u4m-logo-trust-marks .container {
   float: none;
@@ -37,33 +37,32 @@ section.u4m-logo-trust-marks .container .intro {
   max-width: 1240rem;
   padding-left: 20rem;
   padding-right: 20rem;
-  max-width: 900rem;
+  max-width: 1000rem;
   margin-bottom: 50rem;
   padding: 0;
 }
 section.u4m-logo-trust-marks .container .intro .heading {
-  font-family: "Montserrat";
-  font-size: 44rem;
-  font-weight: bold;
-  letter-spacing: 0.25rem;
+  font-family: "Inter";
+  font-size: 40rem;
+  font-weight: 600;
   margin-bottom: 30rem;
-  line-height: 1.2;
+  line-height: 1;
   text-align: center;
 }
 @media (max-width: 1024px) {
   section.u4m-logo-trust-marks .container .intro .heading {
-    font-size: 38rem;
+    font-size: 28rem;
   }
 }
 @media (max-width: 580px) {
   section.u4m-logo-trust-marks .container .intro .heading {
-    font-size: 32rem;
+    font-size: 25rem;
     margin-bottom: 20rem;
   }
 }
 section.u4m-logo-trust-marks .container .intro .subheading {
   text-align: center;
-  font-family: "Montserrat";
+  font-family: "Inter";
   font-size: 18rem;
   line-height: 1.6;
   letter-spacing: 0.25rem;
@@ -100,14 +99,14 @@ section.u4m-logo-trust-marks .container .splide .splide__track .splide__list .sp
   }
 }
 section.u4m-logo-trust-marks .container .splide .splide__arrows .splide__arrow {
-  background: #fff;
+  background: #ffffff;
   opacity: 1;
 }
 section.u4m-logo-trust-marks .container .splide .splide__arrows .splide__arrow:hover svg {
   fill: #00a4bd;
 }
 section.u4m-logo-trust-marks .container .splide .splide__arrows .splide__arrow svg {
-  fill: #33475b;
+  fill: #000000;
 }
 section.u4m-logo-trust-marks .container .splide .splide__arrows .splide__arrow.splide__arrow--prev {
   left: -20rem;
@@ -122,7 +121,7 @@ section.u4m-logo-trust-marks .container .grid {
   max-width: 1240rem;
   padding-left: 20rem;
   padding-right: 20rem;
-  max-width: 900rem;
+  max-width: 1000rem;
   padding: 0rem;
 }
 section.u4m-logo-trust-marks .container .grid .grid__wrapper .grid__list {
@@ -136,13 +135,13 @@ section.u4m-logo-trust-marks .container .grid .grid__wrapper .grid__list .grid__
   display: flex;
   justify-content: center;
   align-items: center;
-  background: #fff;
-  box-shadow: 0 5rem 25rem 0 rgba(51, 71, 91, 0.2);
+  background: #ffffff;
+  box-shadow: 0 5rem 25rem 0 rgba(0, 0, 0, 0.2);
   padding: 20rem;
   margin: 10rem;
   transition: scale 0.3s ease-in-out;
 }
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   section.u4m-logo-trust-marks .container .grid .grid__wrapper .grid__list .grid__item {
     flex: 0 0 calc(50% - 20rem);
   }
@@ -166,7 +165,7 @@ section.u4m-logo-trust-marks .container .grid .grid__wrapper .grid__list .grid__
   object-fit: contain;
   object-position: center;
 }
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   section.u4m-logo-trust-marks .container .grid .grid__wrapper .grid__list .grid__item img.logo {
     max-height: 50rem;
   }

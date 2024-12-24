@@ -17,7 +17,7 @@ html {
 }
 
 section.u4m-banner {
-  background-color: #33475b;
+  background-color: #000000;
   padding: 8rem 0 7rem 0;
 }
 section.u4m-banner.offscreen {
@@ -45,26 +45,26 @@ section.u4m-banner div.content div.image img {
   position: relative;
   top: -3rem;
 }
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   section.u4m-banner div.content div.image img {
     max-width: 67rem;
   }
 }
 section.u4m-banner div.content div.text {
   font-size: 16rem;
-  color: #fff;
+  color: #ffffff;
   line-height: 1;
   letter-spacing: 1rem;
 }
 section.u4m-banner div.content div.text span.bar {
   margin: 0 12rem;
 }
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   section.u4m-banner div.content div.text span.bar {
     display: none;
   }
 }
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   section.u4m-banner div.content div.text {
     font-size: 12rem;
     margin-left: 10rem;
@@ -73,29 +73,29 @@ section.u4m-banner div.content div.text span.bar {
 }
 section.u4m-banner div.content div.cta {
   margin-left: 15rem;
-  color: #733BF7;
+  color: #007C43;
   text-transform: uppercase;
   line-height: 1;
   letter-spacing: 1rem;
 }
 section.u4m-banner div.content div.cta a {
-  color: #fff;
+  color: #ffffff;
 }
 section.u4m-banner div.content div.cta a:hover {
   color: #00a4bd;
 }
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   section.u4m-banner div.content div.cta a {
     font-size: 12rem;
   }
 }
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   section.u4m-banner div.content div.cta {
     margin-left: 10rem;
   }
 }
 section.u4m-banner div.content div.close span {
-  color: #fff;
+  color: #ffffff;
   cursor: pointer;
   margin-left: 15rem;
 }

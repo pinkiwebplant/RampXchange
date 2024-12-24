@@ -20,7 +20,7 @@ section.u4m-cta-row {
   margin-bottom: 100rem;
 }
 section.u4m-cta-row.reverse-text {
-  color: #fff;
+  color: #ffffff;
 }
 section.u4m-cta-row div.inner {
   float: none;
@@ -53,47 +53,43 @@ section.u4m-cta-row div.inner div.copy {
   width: 50%;
 }
 section.u4m-cta-row div.inner div.copy .heading {
-  font-family: "Montserrat";
-  font-size: 44rem;
-  font-weight: bold;
-  letter-spacing: 0.25rem;
+  font-family: "Inter";
+  font-size: 40rem;
+  font-weight: 600;
   margin-bottom: 30rem;
-  line-height: 1.2;
+  line-height: 1;
 }
 @media (max-width: 1024px) {
   section.u4m-cta-row div.inner div.copy .heading {
-    font-size: 38rem;
+    font-size: 28rem;
   }
 }
 @media (max-width: 580px) {
   section.u4m-cta-row div.inner div.copy .heading {
-    font-size: 32rem;
+    font-size: 25rem;
     margin-bottom: 20rem;
   }
 }
 section.u4m-cta-row div.inner div.copy div.cta a {
   display: inline-block;
-  font-family: "Montserrat";
-  color: #fff;
-  background-color: #733BF7;
-  border: 0;
-  border-radius: 4rem;
-  padding: 15rem 40rem 15rem 40rem;
+  font-family: "Inter";
+  color: #ffffff;
+  background-color: #007C43;
+  border: 1px solid #007C43;
+  border-radius: 12rem;
+  padding: 11rem 24rem;
   margin: 20rem 0;
   transition: 0.1s ease-in;
-  text-transform: uppercase;
-  font-weight: bold;
-  font-size: 14rem;
-  line-height: 1.2;
-  letter-spacing: 0.25rem;
+  font-weight: 600;
+  font-size: 16rem;
+  line-height: 1;
   text-decoration: none;
   cursor: pointer;
   text-align: center;
-  box-shadow: 0rem 1rem 12rem 0 rgba(51, 71, 91, 0.1);
 }
 section.u4m-cta-row div.inner div.copy div.cta a:hover, section.u4m-cta-row div.inner div.copy div.cta a:focus {
-  background-color: #33475b;
-  color: #fff;
+  background-color: #ffffff;
+  color: #007C43;
 }
 @media (max-width: 580px) {
   section.u4m-cta-row div.inner div.copy {
@@ -108,7 +104,7 @@ section.u4m-cta-row div.inner div.image {
 section.u4m-cta-row div.inner div.image img {
   max-width: 400rem;
 }
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   section.u4m-cta-row div.inner div.image img {
     max-width: 100%;
   }

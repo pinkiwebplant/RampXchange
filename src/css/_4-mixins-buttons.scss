@@ -4,24 +4,32 @@
   font-family: $font1;
   color: $white;
   background-color: $action1;
-  border: 0;
+  border: 1px solid $action1;
   border-radius: $border1;
-  padding: 15rem 40rem 15rem 40rem;
+  padding: 11rem 24rem;
   margin: 20rem 0;
-  transition: $animation1;
-  text-transform: uppercase;
-  font-weight: bold;
-  font-size: 14rem;
-  line-height: 1.2;
-  letter-spacing: .25rem;
+  transition: $animation1; 
+  font-weight: 600;
+  font-size: 16rem;
+  line-height: 1; 
   text-decoration: none;
   cursor: pointer;
-  text-align: center;
-  box-shadow: $shadow1;
+  text-align: center; 
 
   &:hover,
   &:focus {
-    background-color: $black;
+    background-color: $white;
+    color: $action1;
+  }
+}
+
+@mixin secondarybutton { 
+  @include button;
+  color: $action1;
+  background-color: $white;
+  &:hover,
+  &:focus {
+    background-color: $action1;
     color: $white;
   }
 }
@@ -29,7 +37,7 @@
 // 
 @mixin buttonSmall {
   @include button;
-  padding: 8rem 20rem 7rem 20rem;
+  padding: 10rem 20rem;
   font-size: 12rem;
   line-height: 1.2;
 }

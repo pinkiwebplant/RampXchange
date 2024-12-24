@@ -20,9 +20,8 @@ body {
   font-family: $font1;
   font-size: $baseFontSize;
   line-height: $baseLineHeight;
-  color: $black;
-  font-weight: normal;
-  margin-top: 78rem;
+  color: $heading;
+  font-weight: normal; 
 
   &.hide-header {
     margin-top: 0;
@@ -476,3 +475,44 @@ a[href='javascript:;'] {
 section[class*='u4m-'] {
   scroll-margin-top: 150px;
 }
+
+.dnd_padd {
+  position: relative;
+}
+
+.bg_overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 1;
+  pointer-events: none;
+
+  & ~ .full-width-container,
+  & ~ .page-center {
+    position: relative;
+    z-index: 3;
+  }
+
+  &.bg_overlay_image {
+    z-index: 1;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+
+  &.bg_color {
+    z-index: 2;
+  }
+}
+
+
+.hs-button {
+  @include button;
+ 
+  &.secondary {
+    @include secondarybutton;
+  } 
+}
+

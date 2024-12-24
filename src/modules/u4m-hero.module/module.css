@@ -23,7 +23,7 @@ section.u4m-hero {
   padding: 100px 0;
 }
 section.u4m-hero.reverse-text .content-wrap {
-  color: #fff;
+  color: #ffffff;
 }
 section.u4m-hero .inner .content-wrap {
   float: none;
@@ -54,97 +54,92 @@ body.hs-landing-page section.u4m-hero .inner .content-wrap .copy {
   flex: 0 0 100%;
 }
 section.u4m-hero .inner .content-wrap .copy .eyebrow {
-  font-family: "Montserrat";
-  font-size: 16rem;
-  font-weight: bold;
-  letter-spacing: 1rem;
-  text-transform: uppercase;
+  font-family: "Inter";
+  font-size: 13rem;
+  font-weight: 500;
+  line-height: 1;
   display: block;
   margin-bottom: 10rem;
 }
 section.u4m-hero .inner .content-wrap .copy .heading {
-  font-family: "Montserrat";
-  font-size: 60rem;
-  font-weight: bold;
-  letter-spacing: 0.25rem;
+  font-family: "Inter";
+  font-size: 48rem;
+  font-weight: 600;
   margin-bottom: 30rem;
-  line-height: 1.2;
+  line-height: 1;
   margin-top: 0;
 }
 @media (max-width: 1024px) {
   section.u4m-hero .inner .content-wrap .copy .heading {
-    font-size: 48rem;
+    font-size: 30rem;
   }
 }
 @media (max-width: 580px) {
   section.u4m-hero .inner .content-wrap .copy .heading {
-    font-size: 38rem;
-    margin-bottom: 20rem;
-  }
-}
-section.u4m-hero .inner .content-wrap .copy .heading.small {
-  font-family: "Montserrat";
-  font-size: 44rem;
-  font-weight: bold;
-  letter-spacing: 0.25rem;
-  margin-bottom: 30rem;
-  line-height: 1.2;
-}
-@media (max-width: 1024px) {
-  section.u4m-hero .inner .content-wrap .copy .heading.small {
-    font-size: 38rem;
-  }
-}
-@media (max-width: 580px) {
-  section.u4m-hero .inner .content-wrap .copy .heading.small {
-    font-size: 32rem;
-    margin-bottom: 20rem;
-  }
-}
-@media (max-width: 1024px) {
-  section.u4m-hero .inner .content-wrap .copy .heading.small {
-    font-family: "Montserrat";
-    font-size: 38rem;
-    font-weight: bold;
-    letter-spacing: 0.25rem;
-    margin-bottom: 30rem;
-    line-height: 1.2;
-  }
-}
-@media (max-width: 1024px) and (max-width: 1024px) {
-  section.u4m-hero .inner .content-wrap .copy .heading.small {
-    font-size: 32rem;
-  }
-}
-@media (max-width: 1024px) and (max-width: 580px) {
-  section.u4m-hero .inner .content-wrap .copy .heading.small {
     font-size: 28rem;
     margin-bottom: 20rem;
   }
 }
+section.u4m-hero .inner .content-wrap .copy .heading.small {
+  font-family: "Inter";
+  font-size: 40rem;
+  font-weight: 600;
+  margin-bottom: 30rem;
+  line-height: 1;
+}
+@media (max-width: 1024px) {
+  section.u4m-hero .inner .content-wrap .copy .heading.small {
+    font-size: 28rem;
+  }
+}
+@media (max-width: 580px) {
+  section.u4m-hero .inner .content-wrap .copy .heading.small {
+    font-size: 25rem;
+    margin-bottom: 20rem;
+  }
+}
+@media (max-width: 1024px) {
+  section.u4m-hero .inner .content-wrap .copy .heading.small {
+    font-family: "Inter";
+    font-size: 33rem;
+    font-weight: 600;
+    margin-bottom: 30rem;
+    line-height: 1;
+  }
+}
+@media (max-width: 1024px) and (max-width: 1024px) {
+  section.u4m-hero .inner .content-wrap .copy .heading.small {
+    font-size: 25rem;
+  }
+}
+@media (max-width: 1024px) and (max-width: 580px) {
+  section.u4m-hero .inner .content-wrap .copy .heading.small {
+    font-size: 22rem;
+    margin-bottom: 20rem;
+  }
+}
 @media (max-width: 1024px) {
   section.u4m-hero .inner .content-wrap .copy .heading {
-    font-family: "Montserrat";
-    font-size: 44rem;
-    font-weight: bold;
-    letter-spacing: 0.25rem;
+    font-family: "Inter";
+    font-size: 40rem;
+    font-weight: 600;
     margin-bottom: 30rem;
-    line-height: 1.2;
+    line-height: 1;
   }
 }
 @media (max-width: 1024px) and (max-width: 1024px) {
   section.u4m-hero .inner .content-wrap .copy .heading {
-    font-size: 38rem;
+    font-size: 28rem;
   }
 }
 @media (max-width: 1024px) and (max-width: 580px) {
   section.u4m-hero .inner .content-wrap .copy .heading {
-    font-size: 32rem;
+    font-size: 25rem;
     margin-bottom: 20rem;
   }
 }
 section.u4m-hero .inner .content-wrap .copy .subtext {
-  font-family: "Montserrat";
+  font-family: "Inter";
   font-size: 18rem;
   line-height: 1.6;
   letter-spacing: 0.25rem;
@@ -157,27 +152,24 @@ section.u4m-hero .inner .content-wrap .copy .subtext {
 }
 section.u4m-hero .inner .content-wrap .copy a {
   display: inline-block;
-  font-family: "Montserrat";
-  color: #fff;
-  background-color: #733BF7;
-  border: 0;
-  border-radius: 4rem;
-  padding: 15rem 40rem 15rem 40rem;
+  font-family: "Inter";
+  color: #ffffff;
+  background-color: #007C43;
+  border: 1px solid #007C43;
+  border-radius: 12rem;
+  padding: 11rem 24rem;
   margin: 20rem 0;
   transition: 0.1s ease-in;
-  text-transform: uppercase;
-  font-weight: bold;
-  font-size: 14rem;
-  line-height: 1.2;
-  letter-spacing: 0.25rem;
+  font-weight: 600;
+  font-size: 16rem;
+  line-height: 1;
   text-decoration: none;
   cursor: pointer;
   text-align: center;
-  box-shadow: 0rem 1rem 12rem 0 rgba(51, 71, 91, 0.1);
 }
 section.u4m-hero .inner .content-wrap .copy a:hover, section.u4m-hero .inner .content-wrap .copy a:focus {
-  background-color: #33475b;
-  color: #fff;
+  background-color: #ffffff;
+  color: #007C43;
 }
 section.u4m-hero .inner .content-wrap .copy svg {
   max-width: 100rem;
@@ -187,9 +179,9 @@ section.u4m-hero .inner .content-wrap .copy svg circle {
   transition: 0.1s ease-in;
 }
 section.u4m-hero .inner .content-wrap .copy svg:hover circle {
-  fill: #7C98B6;
+  fill: #EEEEEE;
 }
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   section.u4m-hero .inner .content-wrap .copy {
     padding-right: 0;
     padding-left: 0;
@@ -214,7 +206,7 @@ section.u4m-hero .inner .content-wrap.has-image .copy {
 body.hs-landing-page section.u4m-hero .inner .content-wrap.has-image .copy {
   flex: 0 0 60%;
 }
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   section.u4m-hero .inner .content-wrap.has-image .copy {
     padding-right: 0;
     padding-left: 0;
@@ -227,7 +219,7 @@ section.u4m-hero .inner .content-wrap.has-video .video {
 body.hs-landing-page section.u4m-hero .inner .content-wrap.has-video .video {
   flex: 0 0 40%;
 }
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   section.u4m-hero .inner .content-wrap.has-video .video {
     padding: 0;
     width: 100%;
@@ -240,7 +232,7 @@ section.u4m-hero .inner .content-wrap.has-video .copy {
 body.hs-landing-page section.u4m-hero .inner .content-wrap.has-video .copy {
   flex: 0 0 60%;
 }
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   section.u4m-hero .inner .content-wrap.has-video .copy {
     padding-right: 0;
     padding-left: 0;
@@ -257,14 +249,14 @@ section.u4m-hero .inner .content-wrap.text-left .copy {
   padding-right: 100px;
   padding-left: 0;
 }
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   section.u4m-hero .inner .content-wrap.text-left .copy {
     padding-right: 0;
     padding-left: 0;
     padding: 20rem 0 0 0;
   }
 }
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   section.u4m-hero .inner .content-wrap.text-left {
     flex-direction: column;
   }
@@ -272,7 +264,7 @@ section.u4m-hero .inner .content-wrap.text-left .copy {
 section.u4m-hero .inner .content-wrap.has-none .copy {
   padding-left: 0;
 }
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   section.u4m-hero .inner .content-wrap {
     flex-direction: column;
   }

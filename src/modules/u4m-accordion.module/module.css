@@ -27,26 +27,25 @@ section.u4m-accordion .intro {
   text-align: center;
 }
 section.u4m-accordion .intro h2 {
-  font-family: "Montserrat";
-  font-size: 44rem;
-  font-weight: bold;
-  letter-spacing: 0.25rem;
+  font-family: "Inter";
+  font-size: 40rem;
+  font-weight: 600;
   margin-bottom: 30rem;
-  line-height: 1.2;
+  line-height: 1;
 }
 @media (max-width: 1024px) {
   section.u4m-accordion .intro h2 {
-    font-size: 38rem;
+    font-size: 28rem;
   }
 }
 @media (max-width: 580px) {
   section.u4m-accordion .intro h2 {
-    font-size: 32rem;
+    font-size: 25rem;
     margin-bottom: 20rem;
   }
 }
 section.u4m-accordion .intro p {
-  font-family: "Montserrat";
+  font-family: "Inter";
   font-size: 18rem;
   line-height: 1.6;
   letter-spacing: 0.25rem;
@@ -67,12 +66,12 @@ section.u4m-accordion .accordions {
   margin: 50rem auto;
 }
 section.u4m-accordion .accordions details {
-  border-top: 1rem solid #cbd6e2;
+  border-top: 1rem solid #6E757C;
   transition: background-color 0.2s;
   cursor: pointer;
 }
 section.u4m-accordion .accordions details summary {
-  font-family: "Montserrat";
+  font-family: "Inter";
   font-size: 18rem;
   line-height: 1.6;
   letter-spacing: 0.25rem;
@@ -103,10 +102,10 @@ section.u4m-accordion .accordions details[open] summary:after {
   transform: translateY(-50%) rotate(45deg);
 }
 section.u4m-accordion .accordions details:hover {
-  background-color: #edf0f2;
+  background-color: #DBDBDB;
 }
 section.u4m-accordion .accordions details:last-child {
-  border-bottom: 1rem solid #cbd6e2;
+  border-bottom: 1rem solid #6E757C;
 }
 section.u4m-accordion .accordions details div {
   padding: 20rem;

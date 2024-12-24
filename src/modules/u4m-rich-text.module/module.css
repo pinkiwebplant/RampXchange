@@ -21,7 +21,7 @@ section.u4m-rich-text {
   background-position: 50% 50%;
 }
 section.u4m-rich-text.reverse-text {
-  color: #fff;
+  color: #ffffff;
 }
 section.u4m-rich-text div.content {
   float: none;
@@ -35,7 +35,7 @@ section.u4m-rich-text div.content {
   margin-bottom: 100rem;
 }
 section.u4m-rich-text div.content .b1 {
-  font-family: "Montserrat";
+  font-family: "Inter";
   font-size: 22rem;
   line-height: 1.4;
   letter-spacing: 0.25rem;
@@ -47,7 +47,7 @@ section.u4m-rich-text div.content .b1 {
   }
 }
 section.u4m-rich-text div.content .b2 {
-  font-family: "Montserrat";
+  font-family: "Inter";
   font-size: 18rem;
   line-height: 1.6;
   letter-spacing: 0.25rem;
@@ -62,7 +62,7 @@ section.u4m-rich-text div.content p,
 section.u4m-rich-text div.content ul,
 section.u4m-rich-text div.content ol,
 section.u4m-rich-text div.content .b3 {
-  font-family: "Montserrat";
+  font-family: "Inter";
   font-size: 16rem;
   line-height: 1.6;
   letter-spacing: 0.25rem;
@@ -77,7 +77,7 @@ section.u4m-rich-text div.content .b3 {
   }
 }
 section.u4m-rich-text div.content .b4 {
-  font-family: "Montserrat";
+  font-family: "Inter";
   font-size: 14rem;
   line-height: 1.6;
   letter-spacing: 0.35rem;
@@ -90,106 +90,101 @@ section.u4m-rich-text div.content .b4 {
 }
 section.u4m-rich-text div.content h1,
 section.u4m-rich-text div.content .h1 {
-  font-family: "Montserrat";
-  font-size: 60rem;
-  font-weight: bold;
-  letter-spacing: 0.25rem;
+  font-family: "Inter";
+  font-size: 48rem;
+  font-weight: 600;
   margin-bottom: 30rem;
-  line-height: 1.2;
+  line-height: 1;
   margin-top: 0;
 }
 @media (max-width: 1024px) {
   section.u4m-rich-text div.content h1,
   section.u4m-rich-text div.content .h1 {
-    font-size: 48rem;
+    font-size: 30rem;
   }
 }
 @media (max-width: 580px) {
   section.u4m-rich-text div.content h1,
   section.u4m-rich-text div.content .h1 {
-    font-size: 38rem;
+    font-size: 28rem;
     margin-bottom: 20rem;
   }
 }
 section.u4m-rich-text div.content h2,
 section.u4m-rich-text div.content .h2 {
-  font-family: "Montserrat";
-  font-size: 44rem;
-  font-weight: bold;
-  letter-spacing: 0.25rem;
+  font-family: "Inter";
+  font-size: 40rem;
+  font-weight: 600;
   margin-bottom: 30rem;
-  line-height: 1.2;
+  line-height: 1;
 }
 @media (max-width: 1024px) {
   section.u4m-rich-text div.content h2,
   section.u4m-rich-text div.content .h2 {
-    font-size: 38rem;
+    font-size: 28rem;
   }
 }
 @media (max-width: 580px) {
   section.u4m-rich-text div.content h2,
   section.u4m-rich-text div.content .h2 {
-    font-size: 32rem;
+    font-size: 25rem;
     margin-bottom: 20rem;
   }
 }
 section.u4m-rich-text div.content h3,
 section.u4m-rich-text div.content .h3 {
-  font-family: "Montserrat";
-  font-size: 38rem;
-  font-weight: bold;
-  letter-spacing: 0.25rem;
+  font-family: "Inter";
+  font-size: 33rem;
+  font-weight: 600;
   margin-bottom: 30rem;
-  line-height: 1.2;
+  line-height: 1;
 }
 @media (max-width: 1024px) {
   section.u4m-rich-text div.content h3,
   section.u4m-rich-text div.content .h3 {
-    font-size: 32rem;
+    font-size: 25rem;
   }
 }
 @media (max-width: 580px) {
   section.u4m-rich-text div.content h3,
   section.u4m-rich-text div.content .h3 {
-    font-size: 28rem;
+    font-size: 22rem;
     margin-bottom: 20rem;
   }
 }
 section.u4m-rich-text div.content h4,
 section.u4m-rich-text div.content .h4 {
-  font-family: "Montserrat";
-  font-size: 34rem;
-  font-weight: bold;
-  letter-spacing: 0.25rem;
+  font-family: "Inter";
+  font-size: 28rem;
+  font-weight: 600;
   margin-bottom: 30rem;
-  line-height: 1.2;
+  line-height: 1;
 }
 @media (max-width: 1024px) {
   section.u4m-rich-text div.content h4,
   section.u4m-rich-text div.content .h4 {
-    font-size: 28rem;
+    font-size: 22rem;
   }
 }
 @media (max-width: 580px) {
   section.u4m-rich-text div.content h4,
   section.u4m-rich-text div.content .h4 {
-    font-size: 24rem;
+    font-size: 20rem;
     margin-bottom: 20rem;
   }
 }
 section.u4m-rich-text div.content h5,
 section.u4m-rich-text div.content .h5 {
-  font-family: "Montserrat";
-  font-size: 30rem;
-  font-weight: bold;
-  letter-spacing: 0.25rem;
+  font-family: "Inter";
+  font-size: 23rem;
+  font-weight: 600;
   margin-bottom: 30rem;
-  line-height: 1.2;
+  line-height: 1;
 }
 @media (max-width: 1024px) {
   section.u4m-rich-text div.content h5,
   section.u4m-rich-text div.content .h5 {
-    font-size: 24rem;
+    font-size: 20rem;
   }
 }
 @media (max-width: 580px) {
@@ -201,23 +196,22 @@ section.u4m-rich-text div.content .h5 {
 }
 section.u4m-rich-text div.content h6,
 section.u4m-rich-text div.content .h6 {
-  font-family: "Montserrat";
-  font-size: 24rem;
-  font-weight: bold;
-  letter-spacing: 0.25rem;
+  font-family: "Inter";
+  font-size: 19rem;
+  font-weight: 600;
   margin-bottom: 30rem;
-  line-height: 1.2;
+  line-height: 1;
 }
 @media (max-width: 1024px) {
   section.u4m-rich-text div.content h6,
   section.u4m-rich-text div.content .h6 {
-    font-size: 20rem;
+    font-size: 19rem;
   }
 }
 @media (max-width: 580px) {
   section.u4m-rich-text div.content h6,
   section.u4m-rich-text div.content .h6 {
-    font-size: 18rem;
+    font-size: 19rem;
     margin-bottom: 20rem;
   }
 }
@@ -237,90 +231,84 @@ section.u4m-rich-text div.content .swatches div.secondary {
   height: 50rem;
 }
 section.u4m-rich-text div.content .action1 {
-  background-color: #733BF7;
-  color: #fff;
+  background-color: #007C43;
+  color: #ffffff;
 }
 section.u4m-rich-text div.content .action2 {
   background-color: #00a4bd;
-  color: #fff;
+  color: #ffffff;
 }
 section.u4m-rich-text div.content .black {
-  background-color: #33475b;
-  color: #fff;
+  background-color: #000000;
+  color: #ffffff;
 }
 section.u4m-rich-text div.content .gray1 {
-  background-color: #edf0f2;
-  color: #33475b;
+  background-color: #DBDBDB;
+  color: #000000;
 }
 section.u4m-rich-text div.content .gray2 {
-  background-color: #cbd6e2;
+  background-color: #6E757C;
 }
 section.u4m-rich-text div.content .gray3 {
-  background-color: #7C98B6;
-  color: #fff;
+  background-color: #EEEEEE;
+  color: #ffffff;
 }
 section.u4m-rich-text div.content .white {
-  background-color: #fff;
-  color: #33475b;
-  border: 1rem solid #cbd6e2;
+  background-color: #ffffff;
+  color: #000000;
+  border: 1rem solid #6E757C;
 }
 section.u4m-rich-text div.content .button {
   display: inline-block;
-  font-family: "Montserrat";
-  color: #fff;
-  background-color: #733BF7;
-  border: 0;
-  border-radius: 4rem;
-  padding: 15rem 40rem 15rem 40rem;
+  font-family: "Inter";
+  color: #ffffff;
+  background-color: #007C43;
+  border: 1px solid #007C43;
+  border-radius: 12rem;
+  padding: 11rem 24rem;
   margin: 20rem 0;
   transition: 0.1s ease-in;
-  text-transform: uppercase;
-  font-weight: bold;
-  font-size: 14rem;
-  line-height: 1.2;
-  letter-spacing: 0.25rem;
+  font-weight: 600;
+  font-size: 16rem;
+  line-height: 1;
   text-decoration: none;
   cursor: pointer;
   text-align: center;
-  box-shadow: 0rem 1rem 12rem 0 rgba(51, 71, 91, 0.1);
 }
 section.u4m-rich-text div.content .button:hover, section.u4m-rich-text div.content .button:focus {
-  background-color: #33475b;
-  color: #fff;
+  background-color: #ffffff;
+  color: #007C43;
 }
 section.u4m-rich-text div.content .button-small {
   display: inline-block;
-  font-family: "Montserrat";
-  color: #fff;
-  background-color: #733BF7;
-  border: 0;
-  border-radius: 4rem;
-  padding: 15rem 40rem 15rem 40rem;
+  font-family: "Inter";
+  color: #ffffff;
+  background-color: #007C43;
+  border: 1px solid #007C43;
+  border-radius: 12rem;
+  padding: 11rem 24rem;
   margin: 20rem 0;
   transition: 0.1s ease-in;
-  text-transform: uppercase;
-  font-weight: bold;
-  font-size: 14rem;
-  line-height: 1.2;
-  letter-spacing: 0.25rem;
+  font-weight: 600;
+  font-size: 16rem;
+  line-height: 1;
   text-decoration: none;
   cursor: pointer;
   text-align: center;
-  box-shadow: 0rem 1rem 12rem 0 rgba(51, 71, 91, 0.1);
-  padding: 8rem 20rem 7rem 20rem;
+  padding: 10rem 20rem;
   font-size: 12rem;
   line-height: 1.2;
 }
 section.u4m-rich-text div.content .button-small:hover, section.u4m-rich-text div.content .button-small:focus {
-  background-color: #33475b;
-  color: #fff;
+  background-color: #ffffff;
+  color: #007C43;
 }
 section.u4m-rich-text div.content .button-stroked {
   display: inline-block;
-  font-family: "Montserrat";
-  color: #33475b;
+  font-family: "Inter";
+  color: #000000;
   background-color: transparent;
-  border: solid 1rem #33475b;
+  border: solid 1rem #000000;
   padding: 13rem 30rem;
   margin: 20rem 0;
   transition: 0.1s ease-in;
@@ -330,8 +318,8 @@ section.u4m-rich-text div.content .button-stroked {
   cursor: pointer;
 }
 section.u4m-rich-text div.content .button-stroked:hover, section.u4m-rich-text div.content .button-stroked:focus {
-  background-color: #33475b;
-  color: #fff;
+  background-color: #000000;
+  color: #ffffff;
 }
 section.u4m-rich-text div.content .button-text {
   font-weight: bold;
@@ -345,39 +333,36 @@ section.u4m-rich-text div.content .button-text:after {
   height: 7rem;
 }
 section.u4m-rich-text div.content .button-text:hover, section.u4m-rich-text div.content .button-text:focus {
-  color: #33475b;
+  color: #000000;
 }
 section.u4m-rich-text div.content .hs-cta-wrapper a {
   display: inline-block;
-  font-family: "Montserrat";
-  color: #fff;
-  background-color: #733BF7;
-  border: 0;
-  border-radius: 4rem;
-  padding: 15rem 40rem 15rem 40rem;
+  font-family: "Inter";
+  color: #ffffff;
+  background-color: #007C43;
+  border: 1px solid #007C43;
+  border-radius: 12rem;
+  padding: 11rem 24rem;
   margin: 20rem 0;
   transition: 0.1s ease-in;
-  text-transform: uppercase;
-  font-weight: bold;
-  font-size: 14rem;
-  line-height: 1.2;
-  letter-spacing: 0.25rem;
+  font-weight: 600;
+  font-size: 16rem;
+  line-height: 1;
   text-decoration: none;
   cursor: pointer;
   text-align: center;
-  box-shadow: 0rem 1rem 12rem 0 rgba(51, 71, 91, 0.1);
 }
 section.u4m-rich-text div.content .hs-cta-wrapper a:hover, section.u4m-rich-text div.content .hs-cta-wrapper a:focus {
-  background-color: #33475b;
-  color: #fff;
+  background-color: #ffffff;
+  color: #007C43;
 }
 section.u4m-rich-text div.content .animation-sample-short,
 section.u4m-rich-text div.content .animation-sample-medium,
 section.u4m-rich-text div.content .animation-sample-long {
   cursor: pointer;
-  background-color: #733BF7;
+  background-color: #007C43;
   padding: 60rem 20rem;
-  color: #fff;
+  color: #ffffff;
   margin: 10rem auto;
   text-align: center;
   text-transform: uppercase;

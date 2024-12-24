@@ -18,8 +18,8 @@ html {
 
 footer.u4m-footer {
   padding: 50px 0;
-  border-radius: 4rem;
-  background: #edf0f2;
+  border-radius: 12rem;
+  background: #DBDBDB;
 }
 footer.u4m-footer .inner {
   float: none;
@@ -58,10 +58,10 @@ footer.u4m-footer .inner .logo-and-menu .menu ul li a[role=menuitem] {
   width: unset;
   max-width: unset;
   padding: 0;
-  color: #33475b;
+  color: #000000;
 }
 footer.u4m-footer .inner .logo-and-menu .menu ul li a[role=menuitem]:hover {
-  color: #733BF7;
+  color: #007C43;
 }
 footer.u4m-footer .inner .logo-and-menu .menu ul li.hs-menu-depth-1 {
   padding: 0 10px;
@@ -83,7 +83,7 @@ footer.u4m-footer .inner .logo-and-menu .menu ul li.hs-menu-depth-1 ul li {
     justify-content: unset;
   }
 }
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   footer.u4m-footer .inner .logo-and-menu .menu ul {
     flex-direction: column;
   }
@@ -101,7 +101,7 @@ footer.u4m-footer .inner .logo-and-menu .menu ul li.hs-menu-depth-1 ul li {
     flex-direction: column;
   }
 }
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   footer.u4m-footer .inner .logo-and-menu {
     align-items: center;
     text-align: center;
@@ -126,12 +126,12 @@ footer.u4m-footer .inner .colophon-and-social ul li {
   margin-top: 5rem;
 }
 footer.u4m-footer .inner .colophon-and-social ul li a {
-  color: #33475b;
+  color: #000000;
   font-size: 16rem;
   padding: 0;
 }
 footer.u4m-footer .inner .colophon-and-social ul li a:hover, footer.u4m-footer .inner .colophon-and-social ul li a:focus {
-  color: #733BF7;
+  color: #007C43;
 }
 footer.u4m-footer .inner .colophon-and-social .colophon .links {
   display: flex;
@@ -139,7 +139,7 @@ footer.u4m-footer .inner .colophon-and-social .colophon .links {
 footer.u4m-footer .inner .colophon-and-social .colophon .links .copyright {
   margin: 5px;
 }
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   footer.u4m-footer .inner .colophon-and-social .colophon .links {
     flex-direction: column-reverse;
     align-items: center;
@@ -151,12 +151,12 @@ footer.u4m-footer .inner .colophon-and-social .social ul {
 }
 footer.u4m-footer .inner .colophon-and-social .social ul li a {
   font-size: 25px;
-  color: #33475b;
+  color: #000000;
 }
 footer.u4m-footer .inner .colophon-and-social .social ul li a:hover {
-  color: #733BF7;
+  color: #007C43;
 }
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   footer.u4m-footer .inner .colophon-and-social {
     flex-direction: column-reverse;
   }

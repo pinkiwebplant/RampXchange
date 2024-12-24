@@ -44,7 +44,7 @@ section.u4m-side-cta .link div.cta div.inner {
   height: 80rem;
   border-radius: 3rem 0 0 3rem;
   padding: 10rem 15rem;
-  box-shadow: 0 15rem 30rem rgba(124, 152, 182, 0.22);
+  box-shadow: 0 15rem 30rem rgba(238, 238, 238, 0.22);
 }
 section.u4m-side-cta .link div.cta div.inner div.image {
   line-height: 0;
@@ -63,12 +63,12 @@ section.u4m-side-cta .link div.cta div.outer {
   transition: all 0.5s ease-out;
   padding: 35rem;
   height: 100%;
-  background-color: #fff;
-  box-shadow: 0 15rem 30rem rgba(124, 152, 182, 0.22);
+  background-color: #ffffff;
+  box-shadow: 0 15rem 30rem rgba(238, 238, 238, 0.22);
   position: relative;
 }
 section.u4m-side-cta .link div.cta div.outer p {
-  color: #7C98B6;
+  color: #EEEEEE;
   font-size: 14rem;
 }
 section.u4m-side-cta .link div.cta div.outer button {
@@ -77,31 +77,28 @@ section.u4m-side-cta .link div.cta div.outer button {
 }
 section.u4m-side-cta .link div.cta .wrapper a {
   display: inline-block;
-  font-family: "Montserrat";
-  color: #fff;
-  background-color: #733BF7;
-  border: 0;
-  border-radius: 4rem;
-  padding: 15rem 40rem 15rem 40rem;
+  font-family: "Inter";
+  color: #ffffff;
+  background-color: #007C43;
+  border: 1px solid #007C43;
+  border-radius: 12rem;
+  padding: 11rem 24rem;
   margin: 20rem 0;
   transition: 0.1s ease-in;
-  text-transform: uppercase;
-  font-weight: bold;
-  font-size: 14rem;
-  line-height: 1.2;
-  letter-spacing: 0.25rem;
+  font-weight: 600;
+  font-size: 16rem;
+  line-height: 1;
   text-decoration: none;
   cursor: pointer;
   text-align: center;
-  box-shadow: 0rem 1rem 12rem 0 rgba(51, 71, 91, 0.1);
-  padding: 8rem 20rem 7rem 20rem;
+  padding: 10rem 20rem;
   font-size: 12rem;
   line-height: 1.2;
   margin: 0;
 }
 section.u4m-side-cta .link div.cta .wrapper a:hover, section.u4m-side-cta .link div.cta .wrapper a:focus {
-  background-color: #33475b;
-  color: #fff;
+  background-color: #ffffff;
+  color: #007C43;
 }
 section.u4m-side-cta .link:first-of-type {
   margin-bottom: 25rem;

@@ -18,19 +18,19 @@ html {
 }
 
 section.u4m-landing-page-sign-up {
-  color: #33475b;
+  color: #000000;
 }
 section.u4m-landing-page-sign-up.reverse-text {
-  color: #fff;
+  color: #ffffff;
 }
 section.u4m-landing-page-sign-up.reverse-text .logo img {
   filter: brightness(0) invert(1);
 }
 section.u4m-landing-page-sign-up.reverse-text .footer-links a {
-  color: #fff;
+  color: #ffffff;
 }
 section.u4m-landing-page-sign-up.reverse-text .input input.hs-input[type=email]::placeholder {
-  color: #fff;
+  color: #ffffff;
 }
 section.u4m-landing-page-sign-up .lp-body {
   display: flex;
@@ -56,39 +56,37 @@ section.u4m-landing-page-sign-up img {
   width: 100%;
 }
 section.u4m-landing-page-sign-up h1 {
-  font-family: "Montserrat";
-  font-size: 44rem;
-  font-weight: bold;
-  letter-spacing: 0.25rem;
+  font-family: "Inter";
+  font-size: 40rem;
+  font-weight: 600;
   margin-bottom: 30rem;
-  line-height: 1.2;
+  line-height: 1;
   width: 700rem;
   text-align: center;
   margin: 0 auto 13rem;
 }
 @media (max-width: 1024px) {
   section.u4m-landing-page-sign-up h1 {
-    font-size: 38rem;
+    font-size: 28rem;
   }
 }
 @media (max-width: 580px) {
   section.u4m-landing-page-sign-up h1 {
-    font-size: 32rem;
+    font-size: 25rem;
     margin-bottom: 20rem;
   }
 }
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   section.u4m-landing-page-sign-up h1 {
     width: 95%;
   }
 }
 section.u4m-landing-page-sign-up h2 {
-  font-family: "Montserrat";
-  font-size: 30rem;
-  font-weight: bold;
-  letter-spacing: 0.25rem;
+  font-family: "Inter";
+  font-size: 23rem;
+  font-weight: 600;
   margin-bottom: 30rem;
-  line-height: 1.2;
+  line-height: 1;
   width: 610rem;
   text-align: center;
   margin: 16rem auto 0;
@@ -98,7 +96,7 @@ section.u4m-landing-page-sign-up h2 {
 }
 @media (max-width: 1024px) {
   section.u4m-landing-page-sign-up h2 {
-    font-size: 24rem;
+    font-size: 20rem;
   }
 }
 @media (max-width: 580px) {
@@ -107,14 +105,14 @@ section.u4m-landing-page-sign-up h2 {
     margin-bottom: 20rem;
   }
 }
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   section.u4m-landing-page-sign-up h2 {
     width: 85%;
     font-size: 14rem;
   }
 }
 section.u4m-landing-page-sign-up .form-wrap {
-  background-color: #edf0f2;
+  background-color: #dbdbdb;
   padding: 20rem 30rem;
   max-width: 765rem;
   margin: 30rem auto 30rem auto;
@@ -131,27 +129,26 @@ section.u4m-landing-page-sign-up .form-wrap {
   }
 }
 section.u4m-landing-page-sign-up .form-wrap h3 {
-  font-family: "Montserrat";
-  font-size: 24rem;
-  font-weight: bold;
-  letter-spacing: 0.25rem;
+  font-family: "Inter";
+  font-size: 19rem;
+  font-weight: 600;
   margin-bottom: 30rem;
-  line-height: 1.2;
+  line-height: 1;
 }
 @media (max-width: 1024px) {
   section.u4m-landing-page-sign-up .form-wrap h3 {
-    font-size: 20rem;
+    font-size: 19rem;
   }
 }
 @media (max-width: 580px) {
   section.u4m-landing-page-sign-up .form-wrap h3 {
-    font-size: 18rem;
+    font-size: 19rem;
     margin-bottom: 20rem;
   }
 }
 section.u4m-landing-page-sign-up .form-wrap div.legal-consent-container p,
 section.u4m-landing-page-sign-up .form-wrap div.legal-consent-container .hs-form-booleancheckbox label {
-  font-family: "Montserrat";
+  font-family: "Inter";
   font-size: 12rem;
   line-height: 1.6;
   letter-spacing: 0.35rem;
@@ -210,7 +207,7 @@ section.u4m-landing-page-sign-up .form-wrap .input input[type=email] {
   margin-top: 2rem;
   margin-bottom: 20rem;
   font-size: 16rem;
-  background-color: #fff;
+  background-color: #ffffff;
   padding: 16rem;
   width: 100%;
   appearance: none;
@@ -246,7 +243,7 @@ section.u4m-landing-page-sign-up .form-wrap.mixitup-multifilter .input input[typ
 section.u4m-landing-page-sign-up .form-wrap .input input[type=number]::placeholder,
 section.u4m-landing-page-sign-up .form-wrap .input input[type=tel]::placeholder,
 section.u4m-landing-page-sign-up .form-wrap .input input[type=email]::placeholder {
-  color: #7c98b6;
+  color: #eeeeee;
 }
 section.u4m-landing-page-sign-up .form-wrap.hs-form .input input[type=checkbox],
 section.u4m-landing-page-sign-up .form-wrap.hs-form .input input[type=radio], section.u4m-landing-page-sign-up .form-wrap.mixitup-multifilter .input input[type=checkbox],
@@ -260,11 +257,11 @@ section.u4m-landing-page-sign-up .form-wrap.hs-form .input input select, section
   margin-top: 2rem;
   margin-bottom: 20rem;
   font-size: 16rem;
-  background-color: #fff;
+  background-color: #ffffff;
 }
 section.u4m-landing-page-sign-up .form-wrap.hs-form .input input[type=file], section.u4m-landing-page-sign-up .form-wrap.mixitup-multifilter .input input[type=file], section.u4m-landing-page-sign-up .form-wrap .input input[type=file] {
   font-size: 16rem;
-  font-family: "Montserrat";
+  font-family: "Inter";
   background-color: transparent;
   position: relative;
   font-weight: bold;
@@ -280,7 +277,7 @@ section.u4m-landing-page-sign-up .form-wrap.hs-form .input select, section.u4m-l
   margin-top: 2rem;
   margin-bottom: 20rem;
   font-size: 16rem;
-  background-color: #fff;
+  background-color: #ffffff;
   padding: 16rem;
 }
 section.u4m-landing-page-sign-up .form-wrap.hs-form .input + .hs-error-msgs, section.u4m-landing-page-sign-up .form-wrap.mixitup-multifilter .input + .hs-error-msgs, section.u4m-landing-page-sign-up .form-wrap .input + .hs-error-msgs {
@@ -323,7 +320,7 @@ section.u4m-landing-page-sign-up .form-wrap.hs-form .input + .hs-error-msgs li:b
 }
 section.u4m-landing-page-sign-up .form-wrap.hs-form .input + .hs-error-msgs li label, section.u4m-landing-page-sign-up .form-wrap.mixitup-multifilter .input + .hs-error-msgs li label, section.u4m-landing-page-sign-up .form-wrap .input + .hs-error-msgs li label {
   font-size: 12rem;
-  font-family: "Montserrat";
+  font-family: "Inter";
   text-transform: uppercase;
   letter-spacing: 1rem;
   display: inline-block;
@@ -347,7 +344,7 @@ section.u4m-landing-page-sign-up .form-wrap.hs-form textarea, section.u4m-landin
   margin-bottom: 20rem;
   min-height: 100rem;
   font-size: 16rem;
-  background-color: #fff;
+  background-color: #ffffff;
   width: 100%;
 }
 section.u4m-landing-page-sign-up .form-wrap.hs-form textarea.invalid, section.u4m-landing-page-sign-up .form-wrap.mixitup-multifilter textarea.invalid, section.u4m-landing-page-sign-up .form-wrap textarea.invalid {
@@ -583,27 +580,24 @@ section.u4m-landing-page-sign-up .form-wrap.hs-form .form-columns-2 > div:last-o
 }
 section.u4m-landing-page-sign-up .form-wrap.hs-form .hs-button, section.u4m-landing-page-sign-up .form-wrap.mixitup-multifilter .hs-button, section.u4m-landing-page-sign-up .form-wrap .hs-button {
   display: inline-block;
-  font-family: "Montserrat";
-  color: #fff;
-  background-color: #733BF7;
-  border: 0;
-  border-radius: 4rem;
-  padding: 15rem 40rem 15rem 40rem;
+  font-family: "Inter";
+  color: #ffffff;
+  background-color: #007C43;
+  border: 1px solid #007C43;
+  border-radius: 12rem;
+  padding: 11rem 24rem;
   margin: 20rem 0;
   transition: 0.1s ease-in;
-  text-transform: uppercase;
-  font-weight: bold;
-  font-size: 14rem;
-  line-height: 1.2;
-  letter-spacing: 0.25rem;
+  font-weight: 600;
+  font-size: 16rem;
+  line-height: 1;
   text-decoration: none;
   cursor: pointer;
   text-align: center;
-  box-shadow: 0rem 1rem 12rem 0 rgba(51, 71, 91, 0.1);
 }
 section.u4m-landing-page-sign-up .form-wrap.hs-form .hs-button:hover, section.u4m-landing-page-sign-up .form-wrap.hs-form .hs-button:focus, section.u4m-landing-page-sign-up .form-wrap.mixitup-multifilter .hs-button:hover, section.u4m-landing-page-sign-up .form-wrap.mixitup-multifilter .hs-button:focus, section.u4m-landing-page-sign-up .form-wrap .hs-button:hover, section.u4m-landing-page-sign-up .form-wrap .hs-button:focus {
-  background-color: #33475b;
-  color: #fff;
+  background-color: #ffffff;
+  color: #007C43;
 }
 section.u4m-landing-page-sign-up .form-wrap form {
   display: flex;
@@ -621,31 +615,31 @@ section.u4m-landing-page-sign-up .form-wrap .hs-button,
 section.u4m-landing-page-sign-up .form-wrap .input .hs-input[type=email] {
   margin-top: 0;
   border-radius: 0;
-  border: 1rem solid #733BF7;
+  border: 1rem solid #007C43;
 }
 section.u4m-landing-page-sign-up .form-wrap .input input.hs-input[type=email] {
   color: inherit;
-  border-top-left-radius: 4rem;
-  border-bottom-left-radius: 4rem;
+  border-top-left-radius: 12rem;
+  border-bottom-left-radius: 12rem;
   background-color: transparent;
   font-size: 15rem;
 }
 section.u4m-landing-page-sign-up .form-wrap input.hs-button[type=submit] {
-  background-color: #733BF7;
-  border-top-right-radius: 4rem;
-  border-bottom-right-radius: 4rem;
+  background-color: #007C43;
+  border-top-right-radius: 12rem;
+  border-bottom-right-radius: 12rem;
   padding: 16rem 30rem 15rem 30rem;
 }
 section.u4m-landing-page-sign-up .hs-submit input.hs-button {
   padding: 10rem 16rem;
-  border: 2rem solid #733BF7;
-  background-color: #733BF7;
-  border-top-right-radius: 4rem;
-  border-bottom-right-radius: 4rem;
-  color: #fff;
+  border: 2rem solid #007C43;
+  background-color: #007C43;
+  border-top-right-radius: 12rem;
+  border-bottom-right-radius: 12rem;
+  color: #ffffff;
 }
 section.u4m-landing-page-sign-up .hs-submit input.hs-button:hover {
-  color: #33475b;
+  color: #000000;
 }
 section.u4m-landing-page-sign-up .submitted-message {
   text-align: center;
@@ -670,10 +664,10 @@ section.u4m-landing-page-sign-up .custom-share div .label {
   align-self: center;
 }
 section.u4m-landing-page-sign-up .custom-share div a {
-  color: #733BF7;
+  color: #007C43;
 }
 section.u4m-landing-page-sign-up .custom-share div a svg {
-  fill: #733BF7;
+  fill: #007C43;
 }
 section.u4m-landing-page-sign-up .custom-share div a:hover {
   color: #00a4bd;
@@ -695,7 +689,7 @@ section.u4m-landing-page-sign-up .testimonials {
   max-width: 1400rem;
   margin: 100rem auto 0;
 }
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   section.u4m-landing-page-sign-up .testimonials {
     width: 95%;
   }
@@ -719,7 +713,7 @@ section.u4m-landing-page-sign-up .testimonials .quote {
     width: 80%;
   }
 }
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   section.u4m-landing-page-sign-up .testimonials .quote {
     width: 100%;
     flex-direction: column;
@@ -732,7 +726,7 @@ section.u4m-landing-page-sign-up .testimonials .quote .author-image {
   border-radius: 100rem;
   overflow: hidden;
 }
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   section.u4m-landing-page-sign-up .testimonials .quote .author-image {
     margin-bottom: 15rem;
   }
@@ -740,13 +734,13 @@ section.u4m-landing-page-sign-up .testimonials .quote .author-image {
 section.u4m-landing-page-sign-up .testimonials .quote .text {
   width: 65%;
 }
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   section.u4m-landing-page-sign-up .testimonials .quote .text {
     width: 100%;
   }
 }
 section.u4m-landing-page-sign-up .testimonials .quote .quotation-mark {
-  color: #733BF7;
+  color: #007C43;
   font-weight: bold;
 }
 section.u4m-landing-page-sign-up .testimonials .quote .author-name,
@@ -769,11 +763,11 @@ section.u4m-landing-page-sign-up .footer-links {
   margin-bottom: 40rem;
 }
 section.u4m-landing-page-sign-up .footer-links a {
-  color: #33475b;
+  color: #000000;
   margin-left: 10rem;
 }
 section.u4m-landing-page-sign-up .footer-links a:hover {
-  color: #733BF7;
+  color: #007C43;
 }
 section.u4m-landing-page-sign-up .footer-links .hs-menu-wrapper.hs-menu-flow-horizontal > ul li a {
   max-width: 100%;

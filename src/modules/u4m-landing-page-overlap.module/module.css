@@ -39,7 +39,7 @@ section.u4m-landing-page-overlap .landing-page-columns .left-column .hero .colum
 }
 section.u4m-landing-page-overlap .landing-page-columns .left-column .hero .column-inner .text {
   padding: 250rem 0 100rem 0;
-  color: #fff;
+  color: #ffffff;
 }
 @media (max-width: 1024px) {
   section.u4m-landing-page-overlap .landing-page-columns .left-column .hero .column-inner .text {
@@ -48,41 +48,39 @@ section.u4m-landing-page-overlap .landing-page-columns .left-column .hero .colum
   }
 }
 section.u4m-landing-page-overlap .landing-page-columns .left-column .hero .column-inner .text .eyebrow {
-  font-family: "Montserrat";
-  font-size: 16rem;
-  font-weight: bold;
-  letter-spacing: 1rem;
-  text-transform: uppercase;
+  font-family: "Inter";
+  font-size: 13rem;
+  font-weight: 500;
+  line-height: 1;
   display: block;
   margin-bottom: 10rem;
 }
 section.u4m-landing-page-overlap .landing-page-columns .left-column .hero .column-inner .text .eyebrow.black-text {
-  color: #33475b;
+  color: #000000;
 }
 section.u4m-landing-page-overlap .landing-page-columns .left-column .hero .column-inner .text h1 {
-  font-family: "Montserrat";
-  font-size: 38rem;
-  font-weight: bold;
-  letter-spacing: 0.25rem;
+  font-family: "Inter";
+  font-size: 33rem;
+  font-weight: 600;
   margin-bottom: 30rem;
-  line-height: 1.2;
+  line-height: 1;
 }
 @media (max-width: 1024px) {
   section.u4m-landing-page-overlap .landing-page-columns .left-column .hero .column-inner .text h1 {
-    font-size: 32rem;
+    font-size: 25rem;
   }
 }
 @media (max-width: 580px) {
   section.u4m-landing-page-overlap .landing-page-columns .left-column .hero .column-inner .text h1 {
-    font-size: 28rem;
+    font-size: 22rem;
     margin-bottom: 20rem;
   }
 }
 section.u4m-landing-page-overlap .landing-page-columns .left-column .hero .column-inner .text h1.black-text {
-  color: #33475b;
+  color: #000000;
 }
 section.u4m-landing-page-overlap .landing-page-columns .left-column .hero .column-inner .text h2 {
-  font-family: "Montserrat";
+  font-family: "Inter";
   font-size: 22rem;
   line-height: 1.4;
   letter-spacing: 0.25rem;
@@ -95,36 +93,33 @@ section.u4m-landing-page-overlap .landing-page-columns .left-column .hero .colum
   }
 }
 section.u4m-landing-page-overlap .landing-page-columns .left-column .hero .column-inner .text h2.black-text {
-  color: #33475b;
+  color: #000000;
 }
 section.u4m-landing-page-overlap .landing-page-columns .left-column .hero .column-inner .text.true h1,
 section.u4m-landing-page-overlap .landing-page-columns .left-column .hero .column-inner .text.true h2 {
-  color: #fff;
+  color: #ffffff;
 }
 section.u4m-landing-page-overlap .landing-page-columns .left-column .hero .column-inner .text .anchor-link-button {
   display: inline-block;
-  font-family: "Montserrat";
-  color: #fff;
-  background-color: #733BF7;
-  border: 0;
-  border-radius: 4rem;
-  padding: 15rem 40rem 15rem 40rem;
+  font-family: "Inter";
+  color: #ffffff;
+  background-color: #007C43;
+  border: 1px solid #007C43;
+  border-radius: 12rem;
+  padding: 11rem 24rem;
   margin: 20rem 0;
   transition: 0.1s ease-in;
-  text-transform: uppercase;
-  font-weight: bold;
-  font-size: 14rem;
-  line-height: 1.2;
-  letter-spacing: 0.25rem;
+  font-weight: 600;
+  font-size: 16rem;
+  line-height: 1;
   text-decoration: none;
   cursor: pointer;
   text-align: center;
-  box-shadow: 0rem 1rem 12rem 0 rgba(51, 71, 91, 0.1);
   display: none;
 }
 section.u4m-landing-page-overlap .landing-page-columns .left-column .hero .column-inner .text .anchor-link-button:hover, section.u4m-landing-page-overlap .landing-page-columns .left-column .hero .column-inner .text .anchor-link-button:focus {
-  background-color: #33475b;
-  color: #fff;
+  background-color: #ffffff;
+  color: #007C43;
 }
 @media (max-width: 1024px) {
   section.u4m-landing-page-overlap .landing-page-columns .left-column .hero .column-inner .text .anchor-link-button {
@@ -138,7 +133,7 @@ section.u4m-landing-page-overlap .landing-page-columns .left-column .hero .colum
     padding: 0;
   }
 }
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   section.u4m-landing-page-overlap .landing-page-columns .left-column .hero .column-inner {
     max-width: unset;
   }
@@ -169,7 +164,7 @@ section.u4m-landing-page-overlap .landing-page-columns .left-column .additional-
   margin: 0 0 0 auto;
 }
 section.u4m-landing-page-overlap .landing-page-columns .left-column .additional-copy .column-inner p {
-  font-family: "Montserrat";
+  font-family: "Inter";
   font-size: 16rem;
   line-height: 1.6;
   letter-spacing: 0.25rem;
@@ -181,7 +176,7 @@ section.u4m-landing-page-overlap .landing-page-columns .left-column .additional-
   }
 }
 section.u4m-landing-page-overlap .landing-page-columns .left-column .additional-copy .column-inner p:first-of-type {
-  font-family: "Montserrat";
+  font-family: "Inter";
   font-size: 18rem;
   line-height: 1.6;
   letter-spacing: 0.25rem;
@@ -193,36 +188,34 @@ section.u4m-landing-page-overlap .landing-page-columns .left-column .additional-
   }
 }
 section.u4m-landing-page-overlap .landing-page-columns .left-column .additional-copy .column-inner h2 {
-  font-family: "Montserrat";
-  font-size: 34rem;
-  font-weight: bold;
-  letter-spacing: 0.25rem;
+  font-family: "Inter";
+  font-size: 28rem;
+  font-weight: 600;
   margin-bottom: 30rem;
-  line-height: 1.2;
+  line-height: 1;
 }
 @media (max-width: 1024px) {
   section.u4m-landing-page-overlap .landing-page-columns .left-column .additional-copy .column-inner h2 {
-    font-size: 28rem;
+    font-size: 22rem;
   }
 }
 @media (max-width: 580px) {
   section.u4m-landing-page-overlap .landing-page-columns .left-column .additional-copy .column-inner h2 {
-    font-size: 24rem;
+    font-size: 20rem;
     margin-bottom: 20rem;
   }
 }
 section.u4m-landing-page-overlap .landing-page-columns .left-column .additional-copy .column-inner h3 {
-  font-family: "Montserrat";
-  font-size: 30rem;
-  font-weight: bold;
-  letter-spacing: 0.25rem;
+  font-family: "Inter";
+  font-size: 23rem;
+  font-weight: 600;
   margin-bottom: 30rem;
-  line-height: 1.2;
+  line-height: 1;
   font-weight: 700;
 }
 @media (max-width: 1024px) {
   section.u4m-landing-page-overlap .landing-page-columns .left-column .additional-copy .column-inner h3 {
-    font-size: 24rem;
+    font-size: 20rem;
   }
 }
 @media (max-width: 580px) {
@@ -243,7 +236,7 @@ section.u4m-landing-page-overlap .landing-page-columns .left-column .additional-
     padding: 0 20px;
   }
 }
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   section.u4m-landing-page-overlap .landing-page-columns .left-column .additional-copy .column-inner {
     max-width: unset;
   }
@@ -287,7 +280,7 @@ section.u4m-landing-page-overlap .landing-page-columns .right-column .column-inn
   text-align: right;
 }
 section.u4m-landing-page-overlap .landing-page-columns .right-column .column-inner .custom-share div span.label {
-  color: #fff;
+  color: #ffffff;
   position: relative;
   top: -5rem;
 }
@@ -295,19 +288,19 @@ section.u4m-landing-page-overlap .landing-page-columns .right-column .column-inn
   font-size: 24rem;
   line-height: 1;
   margin-left: 5rem;
-  color: #fff;
+  color: #ffffff;
 }
 section.u4m-landing-page-overlap .landing-page-columns .right-column .column-inner .custom-share div a svg {
-  fill: #fff;
+  fill: #ffffff;
 }
 section.u4m-landing-page-overlap .landing-page-columns .right-column .column-inner .custom-share div a:hover {
-  color: #733BF7;
+  color: #007C43;
 }
 section.u4m-landing-page-overlap .landing-page-columns .right-column .column-inner .custom-share div a:hover svg {
-  fill: #733BF7;
+  fill: #007C43;
 }
 section.u4m-landing-page-overlap .landing-page-columns .right-column .column-inner .form-wrap {
-  background-color: #edf0f2;
+  background-color: #dbdbdb;
   padding: 20rem 30rem;
   max-width: 765rem;
   margin: 30rem auto 30rem auto;
@@ -315,8 +308,8 @@ section.u4m-landing-page-overlap .landing-page-columns .right-column .column-inn
   overflow: auto;
   min-height: 400px;
   margin-top: 10rem;
-  box-shadow: 0rem 1rem 12rem 0 rgba(51, 71, 91, 0.1);
-  border: 1px solid #cbd6e2;
+  box-shadow: 0rem 1rem 12rem 0 rgba(0, 0, 0, 0.1);
+  border: 1px solid #6E757C;
 }
 @media (max-width: 1024px) {
   section.u4m-landing-page-overlap .landing-page-columns .right-column .column-inner .form-wrap {
@@ -324,27 +317,26 @@ section.u4m-landing-page-overlap .landing-page-columns .right-column .column-inn
   }
 }
 section.u4m-landing-page-overlap .landing-page-columns .right-column .column-inner .form-wrap h3 {
-  font-family: "Montserrat";
-  font-size: 24rem;
-  font-weight: bold;
-  letter-spacing: 0.25rem;
+  font-family: "Inter";
+  font-size: 19rem;
+  font-weight: 600;
   margin-bottom: 30rem;
-  line-height: 1.2;
+  line-height: 1;
 }
 @media (max-width: 1024px) {
   section.u4m-landing-page-overlap .landing-page-columns .right-column .column-inner .form-wrap h3 {
-    font-size: 20rem;
+    font-size: 19rem;
   }
 }
 @media (max-width: 580px) {
   section.u4m-landing-page-overlap .landing-page-columns .right-column .column-inner .form-wrap h3 {
-    font-size: 18rem;
+    font-size: 19rem;
     margin-bottom: 20rem;
   }
 }
 section.u4m-landing-page-overlap .landing-page-columns .right-column .column-inner .form-wrap div.legal-consent-container p,
 section.u4m-landing-page-overlap .landing-page-columns .right-column .column-inner .form-wrap div.legal-consent-container .hs-form-booleancheckbox label {
-  font-family: "Montserrat";
+  font-family: "Inter";
   font-size: 12rem;
   line-height: 1.6;
   letter-spacing: 0.35rem;
@@ -403,7 +395,7 @@ section.u4m-landing-page-overlap .landing-page-columns .right-column .column-inn
   margin-top: 2rem;
   margin-bottom: 20rem;
   font-size: 16rem;
-  background-color: #fff;
+  background-color: #ffffff;
   padding: 16rem;
   width: 100%;
   appearance: none;
@@ -439,7 +431,7 @@ section.u4m-landing-page-overlap .landing-page-columns .right-column .column-inn
 section.u4m-landing-page-overlap .landing-page-columns .right-column .column-inner .form-wrap .input input[type=number]::placeholder,
 section.u4m-landing-page-overlap .landing-page-columns .right-column .column-inner .form-wrap .input input[type=tel]::placeholder,
 section.u4m-landing-page-overlap .landing-page-columns .right-column .column-inner .form-wrap .input input[type=email]::placeholder {
-  color: #7c98b6;
+  color: #eeeeee;
 }
 section.u4m-landing-page-overlap .landing-page-columns .right-column .column-inner .form-wrap.hs-form .input input[type=checkbox],
 section.u4m-landing-page-overlap .landing-page-columns .right-column .column-inner .form-wrap.hs-form .input input[type=radio], section.u4m-landing-page-overlap .landing-page-columns .right-column .column-inner .form-wrap.mixitup-multifilter .input input[type=checkbox],
@@ -453,11 +445,11 @@ section.u4m-landing-page-overlap .landing-page-columns .right-column .column-inn
   margin-top: 2rem;
   margin-bottom: 20rem;
   font-size: 16rem;
-  background-color: #fff;
+  background-color: #ffffff;
 }
 section.u4m-landing-page-overlap .landing-page-columns .right-column .column-inner .form-wrap.hs-form .input input[type=file], section.u4m-landing-page-overlap .landing-page-columns .right-column .column-inner .form-wrap.mixitup-multifilter .input input[type=file], section.u4m-landing-page-overlap .landing-page-columns .right-column .column-inner .form-wrap .input input[type=file] {
   font-size: 16rem;
-  font-family: "Montserrat";
+  font-family: "Inter";
   background-color: transparent;
   position: relative;
   font-weight: bold;
@@ -473,7 +465,7 @@ section.u4m-landing-page-overlap .landing-page-columns .right-column .column-inn
   margin-top: 2rem;
   margin-bottom: 20rem;
   font-size: 16rem;
-  background-color: #fff;
+  background-color: #ffffff;
   padding: 16rem;
 }
 section.u4m-landing-page-overlap .landing-page-columns .right-column .column-inner .form-wrap.hs-form .input + .hs-error-msgs, section.u4m-landing-page-overlap .landing-page-columns .right-column .column-inner .form-wrap.mixitup-multifilter .input + .hs-error-msgs, section.u4m-landing-page-overlap .landing-page-columns .right-column .column-inner .form-wrap .input + .hs-error-msgs {
@@ -516,7 +508,7 @@ section.u4m-landing-page-overlap .landing-page-columns .right-column .column-inn
 }
 section.u4m-landing-page-overlap .landing-page-columns .right-column .column-inner .form-wrap.hs-form .input + .hs-error-msgs li label, section.u4m-landing-page-overlap .landing-page-columns .right-column .column-inner .form-wrap.mixitup-multifilter .input + .hs-error-msgs li label, section.u4m-landing-page-overlap .landing-page-columns .right-column .column-inner .form-wrap .input + .hs-error-msgs li label {
   font-size: 12rem;
-  font-family: "Montserrat";
+  font-family: "Inter";
   text-transform: uppercase;
   letter-spacing: 1rem;
   display: inline-block;
@@ -540,7 +532,7 @@ section.u4m-landing-page-overlap .landing-page-columns .right-column .column-inn
   margin-bottom: 20rem;
   min-height: 100rem;
   font-size: 16rem;
-  background-color: #fff;
+  background-color: #ffffff;
   width: 100%;
 }
 section.u4m-landing-page-overlap .landing-page-columns .right-column .column-inner .form-wrap.hs-form textarea.invalid, section.u4m-landing-page-overlap .landing-page-columns .right-column .column-inner .form-wrap.mixitup-multifilter textarea.invalid, section.u4m-landing-page-overlap .landing-page-columns .right-column .column-inner .form-wrap textarea.invalid {
@@ -776,27 +768,24 @@ section.u4m-landing-page-overlap .landing-page-columns .right-column .column-inn
 }
 section.u4m-landing-page-overlap .landing-page-columns .right-column .column-inner .form-wrap.hs-form .hs-button, section.u4m-landing-page-overlap .landing-page-columns .right-column .column-inner .form-wrap.mixitup-multifilter .hs-button, section.u4m-landing-page-overlap .landing-page-columns .right-column .column-inner .form-wrap .hs-button {
   display: inline-block;
-  font-family: "Montserrat";
-  color: #fff;
-  background-color: #733BF7;
-  border: 0;
-  border-radius: 4rem;
-  padding: 15rem 40rem 15rem 40rem;
+  font-family: "Inter";
+  color: #ffffff;
+  background-color: #007C43;
+  border: 1px solid #007C43;
+  border-radius: 12rem;
+  padding: 11rem 24rem;
   margin: 20rem 0;
   transition: 0.1s ease-in;
-  text-transform: uppercase;
-  font-weight: bold;
-  font-size: 14rem;
-  line-height: 1.2;
-  letter-spacing: 0.25rem;
+  font-weight: 600;
+  font-size: 16rem;
+  line-height: 1;
   text-decoration: none;
   cursor: pointer;
   text-align: center;
-  box-shadow: 0rem 1rem 12rem 0 rgba(51, 71, 91, 0.1);
 }
 section.u4m-landing-page-overlap .landing-page-columns .right-column .column-inner .form-wrap.hs-form .hs-button:hover, section.u4m-landing-page-overlap .landing-page-columns .right-column .column-inner .form-wrap.hs-form .hs-button:focus, section.u4m-landing-page-overlap .landing-page-columns .right-column .column-inner .form-wrap.mixitup-multifilter .hs-button:hover, section.u4m-landing-page-overlap .landing-page-columns .right-column .column-inner .form-wrap.mixitup-multifilter .hs-button:focus, section.u4m-landing-page-overlap .landing-page-columns .right-column .column-inner .form-wrap .hs-button:hover, section.u4m-landing-page-overlap .landing-page-columns .right-column .column-inner .form-wrap .hs-button:focus {
-  background-color: #33475b;
-  color: #fff;
+  background-color: #ffffff;
+  color: #007C43;
 }
 section.u4m-landing-page-overlap .landing-page-columns .right-column .column-inner .form-wrap form {
   margin: 0;
@@ -819,7 +808,7 @@ section.u4m-landing-page-overlap .landing-page-columns .right-column .column-inn
   display: none;
 }
 section.u4m-landing-page-overlap .landing-page-columns .right-column .column-inner .form-wrap.has-thankyou .submitted-message {
-  font-family: "Montserrat";
+  font-family: "Inter";
   font-size: 22rem;
   line-height: 1.4;
   letter-spacing: 0.25rem;
@@ -831,32 +820,31 @@ section.u4m-landing-page-overlap .landing-page-columns .right-column .column-inn
   }
 }
 section.u4m-landing-page-overlap .landing-page-columns .right-column .column-inner .form-wrap h2.heading {
-  font-family: "Montserrat";
-  font-size: 24rem;
-  font-weight: bold;
-  letter-spacing: 0.25rem;
+  font-family: "Inter";
+  font-size: 19rem;
+  font-weight: 600;
   margin-bottom: 30rem;
-  line-height: 1.2;
+  line-height: 1;
 }
 @media (max-width: 1024px) {
   section.u4m-landing-page-overlap .landing-page-columns .right-column .column-inner .form-wrap h2.heading {
-    font-size: 20rem;
+    font-size: 19rem;
   }
 }
 @media (max-width: 580px) {
   section.u4m-landing-page-overlap .landing-page-columns .right-column .column-inner .form-wrap h2.heading {
-    font-size: 18rem;
+    font-size: 19rem;
     margin-bottom: 20rem;
   }
 }
 section.u4m-landing-page-overlap .landing-page-columns .right-column .column-inner .disclaimer {
-  color: #7C98B6;
+  color: #EEEEEE;
   font-size: 14rem;
   text-align: center;
   max-width: 380rem;
   margin: 0 auto;
 }
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   section.u4m-landing-page-overlap .landing-page-columns .right-column .column-inner .disclaimer {
     max-width: unset;
   }
@@ -873,34 +861,33 @@ section.u4m-landing-page-overlap .landing-page-columns .right-column .column-inn
   background-size: cover;
 }
 section.u4m-landing-page-overlap .landing-page-columns .right-column .column-inner .quote .quotation-mark {
-  font-family: "Montserrat";
-  font-size: 24rem;
-  font-weight: bold;
-  letter-spacing: 0.25rem;
+  font-family: "Inter";
+  font-size: 19rem;
+  font-weight: 600;
   margin-bottom: 30rem;
-  line-height: 1.2;
+  line-height: 1;
   color: #00a4bd;
   font-weight: bold;
 }
 @media (max-width: 1024px) {
   section.u4m-landing-page-overlap .landing-page-columns .right-column .column-inner .quote .quotation-mark {
-    font-size: 20rem;
+    font-size: 19rem;
   }
 }
 @media (max-width: 580px) {
   section.u4m-landing-page-overlap .landing-page-columns .right-column .column-inner .quote .quotation-mark {
-    font-size: 18rem;
+    font-size: 19rem;
     margin-bottom: 20rem;
   }
 }
 section.u4m-landing-page-overlap .landing-page-columns .right-column .column-inner .quote .quote-text {
-  font-family: "Montserrat";
+  font-family: "Inter";
   font-size: 22rem;
   line-height: 1.4;
   letter-spacing: 0.25rem;
   margin-bottom: 20rem;
-  font-family: "Montserrat";
-  color: #7C98B6;
+  font-family: "Inter";
+  color: #EEEEEE;
 }
 @media (max-width: 580px) {
   section.u4m-landing-page-overlap .landing-page-columns .right-column .column-inner .quote .quote-text {
@@ -908,7 +895,7 @@ section.u4m-landing-page-overlap .landing-page-columns .right-column .column-inn
   }
 }
 section.u4m-landing-page-overlap .landing-page-columns .right-column .column-inner .quote .quote-author {
-  font-family: "Montserrat";
+  font-family: "Inter";
   font-size: 16rem;
   line-height: 1.6;
   letter-spacing: 0.25rem;
@@ -920,7 +907,7 @@ section.u4m-landing-page-overlap .landing-page-columns .right-column .column-inn
   }
 }
 section.u4m-landing-page-overlap .landing-page-columns .right-column .column-inner .quote .quote-author span.author-name {
-  font-family: "Montserrat";
+  font-family: "Inter";
   font-weight: bold;
   display: block;
   text-transform: uppercase;
@@ -934,7 +921,7 @@ section.u4m-landing-page-overlap .landing-page-columns .right-column .column-inn
     margin: 0 auto;
   }
 }
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   section.u4m-landing-page-overlap .landing-page-columns .right-column .column-inner {
     max-width: unset;
   }

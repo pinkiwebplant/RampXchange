@@ -5,8 +5,13 @@
   }
 }
 
-@mixin tabletvert {
+@mixin tabletvertmin {
   @media (max-width: 768px) {
+    @content;
+  }
+}
+@mixin tabletvert {
+  @media (max-width: 767px) {
     @content;
   }
 }
@@ -18,7 +23,7 @@
 }
 
 @mixin tabletMin {
-  @media (min-width: 1024px) {
+  @media (min-width: 1025px) {
     @content;
   }
 }
@@ -108,7 +113,7 @@
 
 @mixin centerSmall {
   @include center;
-  max-width: 900rem;
+  max-width: 1000rem;
 }
 
 // Links

@@ -20,7 +20,7 @@ section.u4m-slider-resource-cards {
   margin: 100px 0;
 }
 section.u4m-slider-resource-cards.reverse-text h2.heading {
-  color: #fff;
+  color: #ffffff;
 }
 section.u4m-slider-resource-cards .top-wrapper {
   float: none;
@@ -33,43 +33,41 @@ section.u4m-slider-resource-cards .top-wrapper {
   justify-content: space-between;
 }
 section.u4m-slider-resource-cards .top-wrapper .heading {
-  font-family: "Montserrat";
-  font-size: 44rem;
-  font-weight: bold;
-  letter-spacing: 0.25rem;
+  font-family: "Inter";
+  font-size: 40rem;
+  font-weight: 600;
   margin-bottom: 30rem;
-  line-height: 1.2;
+  line-height: 1;
 }
 @media (max-width: 1024px) {
   section.u4m-slider-resource-cards .top-wrapper .heading {
-    font-size: 38rem;
+    font-size: 28rem;
   }
 }
 @media (max-width: 580px) {
   section.u4m-slider-resource-cards .top-wrapper .heading {
-    font-size: 32rem;
+    font-size: 25rem;
     margin-bottom: 20rem;
   }
 }
 @media (max-width: 1024px) {
   section.u4m-slider-resource-cards .top-wrapper .heading {
-    font-family: "Montserrat";
-    font-size: 34rem;
-    font-weight: bold;
-    letter-spacing: 0.25rem;
+    font-family: "Inter";
+    font-size: 28rem;
+    font-weight: 600;
     margin-bottom: 30rem;
-    line-height: 1.2;
+    line-height: 1;
     margin: 0;
   }
 }
 @media (max-width: 1024px) and (max-width: 1024px) {
   section.u4m-slider-resource-cards .top-wrapper .heading {
-    font-size: 28rem;
+    font-size: 22rem;
   }
 }
 @media (max-width: 1024px) and (max-width: 580px) {
   section.u4m-slider-resource-cards .top-wrapper .heading {
-    font-size: 24rem;
+    font-size: 20rem;
     margin-bottom: 20rem;
   }
 }
@@ -87,15 +85,15 @@ section.u4m-slider-resource-cards .top-wrapper .button:after {
   height: 7rem;
 }
 section.u4m-slider-resource-cards .top-wrapper .button:hover, section.u4m-slider-resource-cards .top-wrapper .button:focus {
-  color: #33475b;
+  color: #000000;
 }
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   section.u4m-slider-resource-cards .top-wrapper .button {
     text-align: center;
     width: 100%;
   }
 }
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   section.u4m-slider-resource-cards .top-wrapper {
     display: block;
     text-align: center;
@@ -128,9 +126,9 @@ section.u4m-slider-resource-cards .container .slick-list .slick-track .slick-sli
 section.u4m-slider-resource-cards .container .slick-list .slick-track .slick-slide div .resource-card {
   margin: 20rem;
   padding: 20rem;
-  box-shadow: 0rem 1rem 12rem 0 rgba(51, 71, 91, 0.1);
-  border: 1px solid #edf0f2;
-  background-color: #fff;
+  box-shadow: 0rem 1rem 12rem 0 rgba(0, 0, 0, 0.1);
+  border: 1px solid #DBDBDB;
+  background-color: #ffffff;
   flex-basis: calc(33.333% - 40rem);
   flex-grow: 1;
   flex-shrink: 0;
@@ -141,7 +139,7 @@ section.u4m-slider-resource-cards .container .slick-list .slick-track .slick-sli
   flex-grow: 0;
   flex-shrink: 0;
   padding: 0;
-  background-color: #fff;
+  background-color: #ffffff;
   position: relative;
   top: 0;
   transition: top 0.1s ease-in;
@@ -161,30 +159,27 @@ section.u4m-slider-resource-cards .container .slick-list .slick-track .slick-sli
 }
 section.u4m-slider-resource-cards .container .slick-list .slick-track .slick-slide div .resource-card button {
   display: inline-block;
-  font-family: "Montserrat";
-  color: #fff;
-  background-color: #733BF7;
-  border: 0;
-  border-radius: 4rem;
-  padding: 15rem 40rem 15rem 40rem;
+  font-family: "Inter";
+  color: #ffffff;
+  background-color: #007C43;
+  border: 1px solid #007C43;
+  border-radius: 12rem;
+  padding: 11rem 24rem;
   margin: 20rem 0;
   transition: 0.1s ease-in;
-  text-transform: uppercase;
-  font-weight: bold;
-  font-size: 14rem;
-  line-height: 1.2;
-  letter-spacing: 0.25rem;
+  font-weight: 600;
+  font-size: 16rem;
+  line-height: 1;
   text-decoration: none;
   cursor: pointer;
   text-align: center;
-  box-shadow: 0rem 1rem 12rem 0 rgba(51, 71, 91, 0.1);
-  padding: 8rem 20rem 7rem 20rem;
+  padding: 10rem 20rem;
   font-size: 12rem;
   line-height: 1.2;
 }
 section.u4m-slider-resource-cards .container .slick-list .slick-track .slick-slide div .resource-card button:hover, section.u4m-slider-resource-cards .container .slick-list .slick-track .slick-slide div .resource-card button:focus {
-  background-color: #33475b;
-  color: #fff;
+  background-color: #ffffff;
+  color: #007C43;
 }
 section.u4m-slider-resource-cards .container .slick-list .slick-track .slick-slide div .resource-card .image {
   min-height: 100rem;
@@ -194,7 +189,7 @@ section.u4m-slider-resource-cards .container .slick-list .slick-track .slick-sli
 section.u4m-slider-resource-cards .container .slick-list .slick-track .slick-slide div .resource-card .image.filled {
   width: 100%;
   min-height: 203rem;
-  border-bottom: 1rem solid #edf0f2;
+  border-bottom: 1rem solid #DBDBDB;
 }
 section.u4m-slider-resource-cards .container .slick-list .slick-track .slick-slide div .resource-card .image.filled img {
   height: 100%;
@@ -225,7 +220,7 @@ section.u4m-slider-resource-cards .container .slick-list .slick-track .slick-sli
   align-items: flex-start;
   height: 100%;
 }
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   section.u4m-slider-resource-cards .container .slick-list .slick-track .slick-slide div .resource-card .content {
     padding: 20rem;
   }
@@ -234,12 +229,12 @@ section.u4m-slider-resource-cards .container .slick-list .slick-track .slick-sli
   display: flex;
 }
 section.u4m-slider-resource-cards .container .slick-list .slick-track .slick-slide div .resource-card .content span.eyebrow {
-  font-family: "Montserrat";
+  font-family: "Inter";
   font-size: 13rem;
   line-height: 1.6;
   letter-spacing: 0.35rem;
   margin-bottom: 20rem;
-  color: #7C98B6;
+  color: #EEEEEE;
   font-weight: bold;
   text-transform: uppercase;
   margin-bottom: 0;
@@ -250,35 +245,34 @@ section.u4m-slider-resource-cards .container .slick-list .slick-track .slick-sli
   }
 }
 section.u4m-slider-resource-cards .container .slick-list .slick-track .slick-slide div .resource-card .content span.title {
-  font-family: "Montserrat";
-  font-size: 24rem;
-  font-weight: bold;
-  letter-spacing: 0.25rem;
+  font-family: "Inter";
+  font-size: 19rem;
+  font-weight: 600;
   margin-bottom: 30rem;
-  line-height: 1.2;
+  line-height: 1;
   display: block;
-  color: #33475b;
+  color: #000000;
   margin-top: 5rem;
   margin-bottom: 15rem;
 }
 @media (max-width: 1024px) {
   section.u4m-slider-resource-cards .container .slick-list .slick-track .slick-slide div .resource-card .content span.title {
-    font-size: 20rem;
+    font-size: 19rem;
   }
 }
 @media (max-width: 580px) {
   section.u4m-slider-resource-cards .container .slick-list .slick-track .slick-slide div .resource-card .content span.title {
-    font-size: 18rem;
+    font-size: 19rem;
     margin-bottom: 20rem;
   }
 }
 section.u4m-slider-resource-cards .container .slick-list .slick-track .slick-slide div .resource-card .content span.teaser {
-  font-family: "Montserrat";
+  font-family: "Inter";
   font-size: 13rem;
   line-height: 1.6;
   letter-spacing: 0.35rem;
   margin-bottom: 20rem;
-  color: #33475b;
+  color: #000000;
   display: block;
   margin-bottom: 0;
 }
@@ -294,32 +288,29 @@ section.u4m-slider-resource-cards .container .slick-list .slick-track .slick-sli
 section.u4m-slider-resource-cards .container .slick-list .slick-track .slick-slide div .resource-card .content span.cta a,
 section.u4m-slider-resource-cards .container .slick-list .slick-track .slick-slide div .resource-card .content span.url a {
   display: inline-block;
-  font-family: "Montserrat";
-  color: #fff;
-  background-color: #733BF7;
-  border: 0;
-  border-radius: 4rem;
-  padding: 15rem 40rem 15rem 40rem;
+  font-family: "Inter";
+  color: #ffffff;
+  background-color: #007C43;
+  border: 1px solid #007C43;
+  border-radius: 12rem;
+  padding: 11rem 24rem;
   margin: 20rem 0;
   transition: 0.1s ease-in;
-  text-transform: uppercase;
-  font-weight: bold;
-  font-size: 14rem;
-  line-height: 1.2;
-  letter-spacing: 0.25rem;
+  font-weight: 600;
+  font-size: 16rem;
+  line-height: 1;
   text-decoration: none;
   cursor: pointer;
   text-align: center;
-  box-shadow: 0rem 1rem 12rem 0 rgba(51, 71, 91, 0.1);
-  padding: 8rem 20rem 7rem 20rem;
+  padding: 10rem 20rem;
   font-size: 12rem;
   line-height: 1.2;
 }
 section.u4m-slider-resource-cards .container .slick-list .slick-track .slick-slide div .resource-card .content span.cta a:hover, section.u4m-slider-resource-cards .container .slick-list .slick-track .slick-slide div .resource-card .content span.cta a:focus,
 section.u4m-slider-resource-cards .container .slick-list .slick-track .slick-slide div .resource-card .content span.url a:hover,
 section.u4m-slider-resource-cards .container .slick-list .slick-track .slick-slide div .resource-card .content span.url a:focus {
-  background-color: #33475b;
-  color: #fff;
+  background-color: #ffffff;
+  color: #007C43;
 }
 section.u4m-slider-resource-cards .container .slick-list .slick-track .slick-slide div .resource-card:hover {
   top: -10rem;
@@ -331,7 +322,7 @@ section.u4m-slider-resource-cards .container .slick-list .slick-track .slick-sli
     flex-shrink: 0;
   }
 }
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   section.u4m-slider-resource-cards .container .slick-list .slick-track .slick-slide div .resource-card {
     flex-basis: calc(50% - 40rem);
     flex-grow: 0;
@@ -365,12 +356,12 @@ section.u4m-slider-resource-cards .container .slick-list .slick-track .slick-sli
   height: calc(100% - 152rem);
 }
 section.u4m-slider-resource-cards .container .slick-list .slick-track .slick-slide div .resource-card a.link-wrap .content .heading {
-  font-family: "Montserrat";
+  font-family: "Inter";
   font-size: 14rem;
   line-height: 1.6;
   letter-spacing: 0.35rem;
   margin-bottom: 20rem;
-  color: #33475b;
+  color: #000000;
   font-weight: bold;
   margin: 0;
   text-align: left;
@@ -381,12 +372,12 @@ section.u4m-slider-resource-cards .container .slick-list .slick-track .slick-sli
   }
 }
 section.u4m-slider-resource-cards .container .slick-list .slick-track .slick-slide div .resource-card a.link-wrap .content span.medium {
-  font-family: "Montserrat";
+  font-family: "Inter";
   font-size: 12rem;
   line-height: 1.6;
   letter-spacing: 0.35rem;
   margin-bottom: 10rem;
-  color: #33475b;
+  color: #000000;
   margin: 0 0 5rem 0;
 }
 @media (max-width: 580px) {
@@ -395,12 +386,12 @@ section.u4m-slider-resource-cards .container .slick-list .slick-track .slick-sli
   }
 }
 section.u4m-slider-resource-cards .container .slick-list .slick-track .slick-slide div .resource-card a.link-wrap .content p {
-  font-family: "Montserrat";
+  font-family: "Inter";
   font-size: 12rem;
   line-height: 1.6;
   letter-spacing: 0.35rem;
   margin-bottom: 10rem;
-  color: #33475b;
+  color: #000000;
 }
 @media (max-width: 580px) {
   section.u4m-slider-resource-cards .container .slick-list .slick-track .slick-slide div .resource-card a.link-wrap .content p {
@@ -421,7 +412,7 @@ section.u4m-slider-resource-cards .container .slick-list .slick-track .slick-sli
   height: 7rem;
 }
 section.u4m-slider-resource-cards .container .slick-list .slick-track .slick-slide div .resource-card a.link-wrap .content span.learn-more:hover, section.u4m-slider-resource-cards .container .slick-list .slick-track .slick-slide div .resource-card a.link-wrap .content span.learn-more:focus {
-  color: #33475b;
+  color: #000000;
 }
 section.u4m-slider-resource-cards .container .slick-list .slick-track .slick-slide div .resource-card a.link-wrap .image {
   height: 210px;
@@ -440,7 +431,7 @@ section.u4m-slider-resource-cards .container .slick-dots {
   position: static;
 }
 section.u4m-slider-resource-cards .container .slick-dots li button {
-  background-color: #cbd6e2;
+  background-color: #6E757C;
   transition: 0.1s ease-in;
   border-radius: 100%;
 }
@@ -448,16 +439,16 @@ section.u4m-slider-resource-cards .container .slick-dots li button:before {
   opacity: 0;
 }
 section.u4m-slider-resource-cards .container .slick-dots li button:hover {
-  background-color: #7C98B6;
+  background-color: #EEEEEE;
 }
 section.u4m-slider-resource-cards .container .slick-dots li.slick-active button {
-  background-color: #733BF7;
+  background-color: #007C43;
 }
 section.u4m-slider-resource-cards .container .slick-dots > li:only-child {
   display: none;
 }
 section.u4m-slider-resource-cards .container .slick-active button:before {
-  color: #733BF7;
+  color: #007C43;
   opacity: 1;
 }
 section.u4m-slider-resource-cards .container.slick-initialized {

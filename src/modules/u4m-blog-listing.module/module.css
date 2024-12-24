@@ -38,23 +38,22 @@ section.u4m-blog-listing div.hero {
   padding-top: 150rem;
 }
 section.u4m-blog-listing div.hero h1.heading {
-  font-family: "Montserrat";
-  font-size: 60rem;
-  font-weight: bold;
-  letter-spacing: 0.25rem;
+  font-family: "Inter";
+  font-size: 48rem;
+  font-weight: 600;
   margin-bottom: 30rem;
-  line-height: 1.2;
+  line-height: 1;
   margin-top: 0;
   text-align: center;
 }
 @media (max-width: 1024px) {
   section.u4m-blog-listing div.hero h1.heading {
-    font-size: 48rem;
+    font-size: 30rem;
   }
 }
 @media (max-width: 580px) {
   section.u4m-blog-listing div.hero h1.heading {
-    font-size: 38rem;
+    font-size: 28rem;
     margin-bottom: 20rem;
   }
 }
@@ -62,23 +61,22 @@ body.author-listing section.u4m-blog-listing div.hero h1.heading {
   padding-bottom: 50rem;
 }
 body.author-listing section.u4m-blog-listing div.hero h1.heading .blog-title {
-  font-family: "Montserrat";
-  font-size: 34rem;
-  font-weight: bold;
-  letter-spacing: 0.25rem;
+  font-family: "Inter";
+  font-size: 28rem;
+  font-weight: 600;
   margin-bottom: 30rem;
-  line-height: 1.2;
+  line-height: 1;
   margin-bottom: 0;
   display: block;
 }
 @media (max-width: 1024px) {
   body.author-listing section.u4m-blog-listing div.hero h1.heading .blog-title {
-    font-size: 28rem;
+    font-size: 22rem;
   }
 }
 @media (max-width: 580px) {
   body.author-listing section.u4m-blog-listing div.hero h1.heading .blog-title {
-    font-size: 24rem;
+    font-size: 20rem;
     margin-bottom: 20rem;
   }
 }
@@ -135,7 +133,7 @@ section.u4m-blog-listing div.hero div.wrapper div.card .image-wrap .image img {
 }
 section.u4m-blog-listing div.hero div.wrapper div.card .content {
   text-align: left;
-  background-color: #edf0f2;
+  background-color: #DBDBDB;
   padding: 30rem 40rem;
 }
 @media (max-width: 580px) {
@@ -144,7 +142,7 @@ section.u4m-blog-listing div.hero div.wrapper div.card .content {
   }
 }
 section.u4m-blog-listing div.hero div.wrapper div.card .content span.medium {
-  font-family: "Montserrat";
+  font-family: "Inter";
   font-size: 14rem;
   line-height: 1.6;
   letter-spacing: 0.35rem;
@@ -156,31 +154,30 @@ section.u4m-blog-listing div.hero div.wrapper div.card .content span.medium {
   }
 }
 section.u4m-blog-listing div.hero div.wrapper div.card .content .heading {
-  font-family: "Montserrat";
-  font-size: 34rem;
-  font-weight: bold;
-  letter-spacing: 0.25rem;
+  font-family: "Inter";
+  font-size: 28rem;
+  font-weight: 600;
   margin-bottom: 30rem;
-  line-height: 1.2;
+  line-height: 1;
   margin: 0;
   text-align: left;
 }
 @media (max-width: 1024px) {
   section.u4m-blog-listing div.hero div.wrapper div.card .content .heading {
-    font-size: 28rem;
+    font-size: 22rem;
   }
 }
 @media (max-width: 580px) {
   section.u4m-blog-listing div.hero div.wrapper div.card .content .heading {
-    font-size: 24rem;
+    font-size: 20rem;
     margin-bottom: 20rem;
   }
 }
 section.u4m-blog-listing div.hero div.wrapper div.card .content .heading a {
-  color: #33475b;
+  color: #000000;
 }
 section.u4m-blog-listing div.hero div.wrapper div.card .content p {
-  font-family: "Montserrat";
+  font-family: "Inter";
   font-size: 14rem;
   line-height: 1.6;
   letter-spacing: 0.35rem;
@@ -194,34 +191,31 @@ section.u4m-blog-listing div.hero div.wrapper div.card .content p {
 }
 section.u4m-blog-listing div.hero div.wrapper div.card .content a.link {
   display: inline-block;
-  font-family: "Montserrat";
-  color: #fff;
-  background-color: #733BF7;
-  border: 0;
-  border-radius: 4rem;
-  padding: 15rem 40rem 15rem 40rem;
+  font-family: "Inter";
+  color: #ffffff;
+  background-color: #007C43;
+  border: 1px solid #007C43;
+  border-radius: 12rem;
+  padding: 11rem 24rem;
   margin: 20rem 0;
   transition: 0.1s ease-in;
-  text-transform: uppercase;
-  font-weight: bold;
-  font-size: 14rem;
-  line-height: 1.2;
-  letter-spacing: 0.25rem;
+  font-weight: 600;
+  font-size: 16rem;
+  line-height: 1;
   text-decoration: none;
   cursor: pointer;
   text-align: center;
-  box-shadow: 0rem 1rem 12rem 0 rgba(51, 71, 91, 0.1);
 }
 section.u4m-blog-listing div.hero div.wrapper div.card .content a.link:hover, section.u4m-blog-listing div.hero div.wrapper div.card .content a.link:focus {
-  background-color: #33475b;
-  color: #fff;
+  background-color: #ffffff;
+  color: #007C43;
 }
 section.u4m-blog-listing div.hero div.wrapper div.card div.content .heading {
   margin-bottom: 10rem;
 }
 section.u4m-blog-listing div.hero div.wrapper div.card div.content div.read-time,
 section.u4m-blog-listing div.hero div.wrapper div.card div.content span.date {
-  font-family: "Montserrat";
+  font-family: "Inter";
   font-size: 13rem;
   line-height: 1.6;
   letter-spacing: 0.35rem;
@@ -244,7 +238,7 @@ section.u4m-blog-listing div.filter div.mobile-menu {
   display: none;
   padding: 0 20rem;
 }
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   section.u4m-blog-listing div.filter div.mobile-menu {
     display: block;
   }
@@ -260,11 +254,11 @@ section.u4m-blog-listing div.filter div.mobile-menu {
     background-size: 13rem 8rem;
     background-position: 97% 51%;
     border: 0;
-    border-radius: 4rem;
+    border-radius: 12rem;
     margin-top: 2rem;
     margin-bottom: 0;
     font-size: 16rem;
-    background-color: #edf0f2;
+    background-color: #DBDBDB;
     padding: 10rem;
   }
 }
@@ -279,42 +273,39 @@ section.u4m-blog-listing div.filter div.menu {
   padding-top: 2rem;
   /* Carret after Menu items with dropdown */
 }
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   section.u4m-blog-listing div.filter div.menu:not(.dynamic) {
     display: none;
   }
 }
 section.u4m-blog-listing div.filter div.menu div.hs-menu-wrapper.hs-menu-flow-horizontal ul li a {
   display: inline-block;
-  font-family: "Montserrat";
-  color: #fff;
-  background-color: #733BF7;
-  border: 0;
-  border-radius: 4rem;
-  padding: 15rem 40rem 15rem 40rem;
+  font-family: "Inter";
+  color: #ffffff;
+  background-color: #007C43;
+  border: 1px solid #007C43;
+  border-radius: 12rem;
+  padding: 11rem 24rem;
   margin: 20rem 0;
   transition: 0.1s ease-in;
-  text-transform: uppercase;
-  font-weight: bold;
-  font-size: 14rem;
-  line-height: 1.2;
-  letter-spacing: 0.25rem;
+  font-weight: 600;
+  font-size: 16rem;
+  line-height: 1;
   text-decoration: none;
   cursor: pointer;
   text-align: center;
-  box-shadow: 0rem 1rem 12rem 0 rgba(51, 71, 91, 0.1);
-  padding: 8rem 20rem 7rem 20rem;
+  padding: 10rem 20rem;
   font-size: 12rem;
   line-height: 1.2;
   overflow: visible;
   max-width: none;
-  background-color: #7C98B6;
+  background-color: #EEEEEE;
   margin-right: 21rem;
   margin-bottom: 0;
 }
 section.u4m-blog-listing div.filter div.menu div.hs-menu-wrapper.hs-menu-flow-horizontal ul li a:hover, section.u4m-blog-listing div.filter div.menu div.hs-menu-wrapper.hs-menu-flow-horizontal ul li a:focus {
-  background-color: #33475b;
-  color: #fff;
+  background-color: #ffffff;
+  color: #007C43;
 }
 @media (max-width: 1024px) {
   section.u4m-blog-listing div.filter div.menu div.hs-menu-wrapper.hs-menu-flow-horizontal ul li a {
@@ -334,18 +325,18 @@ section.u4m-blog-listing div.filter div.menu div.hs-menu-wrapper.hs-menu-flow-ho
   }
 }
 section.u4m-blog-listing div.filter div.menu div.hs-menu-wrapper.hs-menu-flow-horizontal ul li a:hover {
-  background-color: #33475b;
+  background-color: #000000;
 }
 section.u4m-blog-listing div.filter div.menu div.hs-menu-wrapper.hs-menu-flow-horizontal ul li.active a {
-  background-color: #33475b;
+  background-color: #000000;
 }
 section.u4m-blog-listing div.filter div.menu div.hs-menu-wrapper.hs-menu-flow-horizontal ul li:first-child.active a {
-  background-color: #7C98B6;
-  color: #fff;
+  background-color: #EEEEEE;
+  color: #ffffff;
 }
 body:not(.topic) section.u4m-blog-listing div.filter div.menu div.hs-menu-wrapper.hs-menu-flow-horizontal ul li.active a {
-  background-color: #33475b;
-  color: #fff;
+  background-color: #000000;
+  color: #ffffff;
 }
 section.u4m-blog-listing div.filter div.menu div.hs-menu-wrapper.hs-menu-flow-horizontal ul {
   padding: 0;
@@ -364,7 +355,7 @@ section.u4m-blog-listing div.filter div.menu div.hs-menu-wrapper.hs-menu-flow-ho
   }
 }
 section.u4m-blog-listing div.filter div.menu div.hs-menu-wrapper.hs-menu-flow-horizontal ul ul li a {
-  font-family: "Montserrat";
+  font-family: "Inter";
   font-size: 14rem;
   line-height: 1.6;
   letter-spacing: 0.35rem;
@@ -378,7 +369,7 @@ section.u4m-blog-listing div.filter div.menu div.hs-menu-wrapper.hs-menu-flow-ho
 }
 section.u4m-blog-listing div.filter div.menu div.hs-menu-wrapper.hs-menu-flow-horizontal ul.hs-menu-children-wrapper {
   padding-top: 20rem;
-  background-color: #fff;
+  background-color: #ffffff;
 }
 section.u4m-blog-listing div.filter div.menu div.hs-menu-wrapper.hs-menu-flow-horizontal li.hs-menu-depth-2 .hs-menu-children-wrapper {
   padding-top: 0;
@@ -412,34 +403,31 @@ section.u4m-blog-listing div.filter div.menu.dynamic ul li {
 }
 section.u4m-blog-listing div.filter div.menu.dynamic ul li a {
   display: inline-block;
-  font-family: "Montserrat";
-  color: #fff;
-  background-color: #733BF7;
-  border: 0;
-  border-radius: 4rem;
-  padding: 15rem 40rem 15rem 40rem;
+  font-family: "Inter";
+  color: #ffffff;
+  background-color: #007C43;
+  border: 1px solid #007C43;
+  border-radius: 12rem;
+  padding: 11rem 24rem;
   margin: 20rem 0;
   transition: 0.1s ease-in;
-  text-transform: uppercase;
-  font-weight: bold;
-  font-size: 14rem;
-  line-height: 1.2;
-  letter-spacing: 0.25rem;
+  font-weight: 600;
+  font-size: 16rem;
+  line-height: 1;
   text-decoration: none;
   cursor: pointer;
   text-align: center;
-  box-shadow: 0rem 1rem 12rem 0 rgba(51, 71, 91, 0.1);
-  padding: 8rem 20rem 7rem 20rem;
+  padding: 10rem 20rem;
   font-size: 12rem;
   line-height: 1.2;
   margin: 0;
 }
 section.u4m-blog-listing div.filter div.menu.dynamic ul li a:hover, section.u4m-blog-listing div.filter div.menu.dynamic ul li a:focus {
-  background-color: #33475b;
-  color: #fff;
+  background-color: #ffffff;
+  color: #007C43;
 }
 section.u4m-blog-listing div.author {
-  background-color: #edf0f2;
+  background-color: #DBDBDB;
   padding: 50rem 0;
   margin-bottom: 80rem;
 }
@@ -483,16 +471,15 @@ section.u4m-blog-listing div.author div.inner .blog-author-text {
   }
 }
 section.u4m-blog-listing div.author div.inner .header {
-  font-family: "Montserrat";
-  font-size: 30rem;
-  font-weight: bold;
-  letter-spacing: 0.25rem;
+  font-family: "Inter";
+  font-size: 23rem;
+  font-weight: 600;
   margin-bottom: 30rem;
-  line-height: 1.2;
+  line-height: 1;
 }
 @media (max-width: 1024px) {
   section.u4m-blog-listing div.author div.inner .header {
-    font-size: 24rem;
+    font-size: 20rem;
   }
 }
 @media (max-width: 580px) {
@@ -502,7 +489,7 @@ section.u4m-blog-listing div.author div.inner .header {
   }
 }
 section.u4m-blog-listing div.author div.inner p.bio {
-  font-family: "Montserrat";
+  font-family: "Inter";
   font-size: 14rem;
   line-height: 1.6;
   letter-spacing: 0.35rem;
@@ -518,10 +505,10 @@ section.u4m-blog-listing div.author div.inner div.social a {
   margin-right: 10rem;
 }
 section.u4m-blog-listing div.author div.inner div.social a svg {
-  fill: #33475b;
+  fill: #000000;
 }
 section.u4m-blog-listing div.author div.inner div.social a:hover svg {
-  fill: #733BF7;
+  fill: #007C43;
 }
 section.u4m-blog-listing div.posts {
   float: none;
@@ -544,16 +531,16 @@ section.u4m-blog-listing div.posts {
 section.u4m-blog-listing div.posts a.blog-post-card {
   margin: 20rem;
   padding: 20rem;
-  box-shadow: 0rem 1rem 12rem 0 rgba(51, 71, 91, 0.1);
-  border: 1px solid #edf0f2;
-  background-color: #fff;
+  box-shadow: 0rem 1rem 12rem 0 rgba(0, 0, 0, 0.1);
+  border: 1px solid #DBDBDB;
+  background-color: #ffffff;
   flex-basis: calc(33.333% - 40rem);
   flex-grow: 1;
   flex-shrink: 0;
   padding: 0;
   display: flex;
   flex-direction: column;
-  background-color: #fff;
+  background-color: #ffffff;
   flex-basis: calc(33.333% - 40rem);
   flex-grow: 0;
   flex-shrink: 0;
@@ -574,30 +561,27 @@ section.u4m-blog-listing div.posts a.blog-post-card {
 }
 section.u4m-blog-listing div.posts a.blog-post-card button {
   display: inline-block;
-  font-family: "Montserrat";
-  color: #fff;
-  background-color: #733BF7;
-  border: 0;
-  border-radius: 4rem;
-  padding: 15rem 40rem 15rem 40rem;
+  font-family: "Inter";
+  color: #ffffff;
+  background-color: #007C43;
+  border: 1px solid #007C43;
+  border-radius: 12rem;
+  padding: 11rem 24rem;
   margin: 20rem 0;
   transition: 0.1s ease-in;
-  text-transform: uppercase;
-  font-weight: bold;
-  font-size: 14rem;
-  line-height: 1.2;
-  letter-spacing: 0.25rem;
+  font-weight: 600;
+  font-size: 16rem;
+  line-height: 1;
   text-decoration: none;
   cursor: pointer;
   text-align: center;
-  box-shadow: 0rem 1rem 12rem 0 rgba(51, 71, 91, 0.1);
-  padding: 8rem 20rem 7rem 20rem;
+  padding: 10rem 20rem;
   font-size: 12rem;
   line-height: 1.2;
 }
 section.u4m-blog-listing div.posts a.blog-post-card button:hover, section.u4m-blog-listing div.posts a.blog-post-card button:focus {
-  background-color: #33475b;
-  color: #fff;
+  background-color: #ffffff;
+  color: #007C43;
 }
 section.u4m-blog-listing div.posts a.blog-post-card .image {
   min-height: 100rem;
@@ -607,7 +591,7 @@ section.u4m-blog-listing div.posts a.blog-post-card .image {
 section.u4m-blog-listing div.posts a.blog-post-card .image.filled {
   width: 100%;
   min-height: 203rem;
-  border-bottom: 1rem solid #edf0f2;
+  border-bottom: 1rem solid #DBDBDB;
 }
 section.u4m-blog-listing div.posts a.blog-post-card .image.filled img {
   height: 100%;
@@ -638,7 +622,7 @@ section.u4m-blog-listing div.posts a.blog-post-card .content {
   align-items: flex-start;
   height: 100%;
 }
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   section.u4m-blog-listing div.posts a.blog-post-card .content {
     padding: 20rem;
   }
@@ -647,12 +631,12 @@ section.u4m-blog-listing div.posts a.blog-post-card .content span.url {
   display: flex;
 }
 section.u4m-blog-listing div.posts a.blog-post-card .content span.eyebrow {
-  font-family: "Montserrat";
+  font-family: "Inter";
   font-size: 13rem;
   line-height: 1.6;
   letter-spacing: 0.35rem;
   margin-bottom: 20rem;
-  color: #7C98B6;
+  color: #EEEEEE;
   font-weight: bold;
   text-transform: uppercase;
   margin-bottom: 0;
@@ -663,35 +647,34 @@ section.u4m-blog-listing div.posts a.blog-post-card .content span.eyebrow {
   }
 }
 section.u4m-blog-listing div.posts a.blog-post-card .content span.title {
-  font-family: "Montserrat";
-  font-size: 24rem;
-  font-weight: bold;
-  letter-spacing: 0.25rem;
+  font-family: "Inter";
+  font-size: 19rem;
+  font-weight: 600;
   margin-bottom: 30rem;
-  line-height: 1.2;
+  line-height: 1;
   display: block;
-  color: #33475b;
+  color: #000000;
   margin-top: 5rem;
   margin-bottom: 15rem;
 }
 @media (max-width: 1024px) {
   section.u4m-blog-listing div.posts a.blog-post-card .content span.title {
-    font-size: 20rem;
+    font-size: 19rem;
   }
 }
 @media (max-width: 580px) {
   section.u4m-blog-listing div.posts a.blog-post-card .content span.title {
-    font-size: 18rem;
+    font-size: 19rem;
     margin-bottom: 20rem;
   }
 }
 section.u4m-blog-listing div.posts a.blog-post-card .content span.teaser {
-  font-family: "Montserrat";
+  font-family: "Inter";
   font-size: 13rem;
   line-height: 1.6;
   letter-spacing: 0.35rem;
   margin-bottom: 20rem;
-  color: #33475b;
+  color: #000000;
   display: block;
   margin-bottom: 0;
 }
@@ -707,32 +690,29 @@ section.u4m-blog-listing div.posts a.blog-post-card .content span.url {
 section.u4m-blog-listing div.posts a.blog-post-card .content span.cta a,
 section.u4m-blog-listing div.posts a.blog-post-card .content span.url a {
   display: inline-block;
-  font-family: "Montserrat";
-  color: #fff;
-  background-color: #733BF7;
-  border: 0;
-  border-radius: 4rem;
-  padding: 15rem 40rem 15rem 40rem;
+  font-family: "Inter";
+  color: #ffffff;
+  background-color: #007C43;
+  border: 1px solid #007C43;
+  border-radius: 12rem;
+  padding: 11rem 24rem;
   margin: 20rem 0;
   transition: 0.1s ease-in;
-  text-transform: uppercase;
-  font-weight: bold;
-  font-size: 14rem;
-  line-height: 1.2;
-  letter-spacing: 0.25rem;
+  font-weight: 600;
+  font-size: 16rem;
+  line-height: 1;
   text-decoration: none;
   cursor: pointer;
   text-align: center;
-  box-shadow: 0rem 1rem 12rem 0 rgba(51, 71, 91, 0.1);
-  padding: 8rem 20rem 7rem 20rem;
+  padding: 10rem 20rem;
   font-size: 12rem;
   line-height: 1.2;
 }
 section.u4m-blog-listing div.posts a.blog-post-card .content span.cta a:hover, section.u4m-blog-listing div.posts a.blog-post-card .content span.cta a:focus,
 section.u4m-blog-listing div.posts a.blog-post-card .content span.url a:hover,
 section.u4m-blog-listing div.posts a.blog-post-card .content span.url a:focus {
-  background-color: #33475b;
-  color: #fff;
+  background-color: #ffffff;
+  color: #007C43;
 }
 section.u4m-blog-listing div.posts a.blog-post-card:hover {
   top: -10rem;
@@ -740,7 +720,7 @@ section.u4m-blog-listing div.posts a.blog-post-card:hover {
 section.u4m-blog-listing div.posts a.blog-post-card .featured-image {
   margin-bottom: 10rem;
   background-size: cover;
-  background-color: #edf0f2;
+  background-color: #DBDBDB;
   background-position: 50% 50%;
   width: 100%;
   height: 203rem;
@@ -752,10 +732,10 @@ section.u4m-blog-listing div.posts a.blog-post-card .featured-image img {
 }
 section.u4m-blog-listing div.posts a.blog-post-card .content {
   height: calc(100% - 203rem);
-  color: #33475b;
+  color: #000000;
 }
 section.u4m-blog-listing div.posts a.blog-post-card .content .topics {
-  font-family: "Montserrat";
+  font-family: "Inter";
   font-size: 13rem;
   line-height: 1.6;
   letter-spacing: 0.35rem;
@@ -770,7 +750,7 @@ section.u4m-blog-listing div.posts a.blog-post-card .content .topics {
 section.u4m-blog-listing div.posts a.blog-post-card .content .read-time {
   display: inline;
   text-transform: uppercase;
-  font-family: "Montserrat";
+  font-family: "Inter";
   font-size: 13rem;
   line-height: 1.6;
   letter-spacing: 0.35rem;
@@ -785,7 +765,7 @@ section.u4m-blog-listing div.posts a.blog-post-card .content .read-time {
 section.u4m-blog-listing div.posts a.blog-post-card .content .date {
   display: inline;
   text-transform: uppercase;
-  font-family: "Montserrat";
+  font-family: "Inter";
   font-size: 13rem;
   line-height: 1.6;
   letter-spacing: 0.35rem;
@@ -796,45 +776,44 @@ section.u4m-blog-listing div.posts a.blog-post-card .content .date {
     font-size: 13rem;
   }
 }
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   section.u4m-blog-listing div.posts a.blog-post-card .content .date {
-    font-family: "Montserrat";
+    font-family: "Inter";
     font-size: 12rem;
     line-height: 1.6;
     letter-spacing: 0.35rem;
     margin-bottom: 10rem;
   }
 }
-@media (max-width: 768px) and (max-width: 580px) {
+@media (max-width: 767px) and (max-width: 580px) {
   section.u4m-blog-listing div.posts a.blog-post-card .content .date {
     font-size: 12rem;
   }
 }
 section.u4m-blog-listing div.posts a.blog-post-card .content h2.title {
-  font-family: "Montserrat";
-  font-size: 24rem;
-  font-weight: bold;
-  letter-spacing: 0.25rem;
+  font-family: "Inter";
+  font-size: 19rem;
+  font-weight: 600;
   margin-bottom: 30rem;
-  line-height: 1.2;
+  line-height: 1;
   display: block;
   margin-bottom: 10rem;
-  color: #33475b;
+  color: #000000;
 }
 @media (max-width: 1024px) {
   section.u4m-blog-listing div.posts a.blog-post-card .content h2.title {
-    font-size: 20rem;
+    font-size: 19rem;
   }
 }
 @media (max-width: 580px) {
   section.u4m-blog-listing div.posts a.blog-post-card .content h2.title {
-    font-size: 18rem;
+    font-size: 19rem;
     margin-bottom: 20rem;
   }
 }
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   section.u4m-blog-listing div.posts a.blog-post-card .content h2.title {
-    font-family: "Montserrat";
+    font-family: "Inter";
     font-size: 16rem;
     line-height: 1.6;
     letter-spacing: 0.25rem;
@@ -842,13 +821,13 @@ section.u4m-blog-listing div.posts a.blog-post-card .content h2.title {
     font-weight: bold;
   }
 }
-@media (max-width: 768px) and (max-width: 580px) {
+@media (max-width: 767px) and (max-width: 580px) {
   section.u4m-blog-listing div.posts a.blog-post-card .content h2.title {
     font-size: 15rem;
   }
 }
 section.u4m-blog-listing div.posts a.blog-post-card .content span.teaser {
-  font-family: "Montserrat";
+  font-family: "Inter";
   font-size: 13rem;
   line-height: 1.6;
   letter-spacing: 0.35rem;
@@ -860,9 +839,9 @@ section.u4m-blog-listing div.posts a.blog-post-card .content span.teaser {
     font-size: 13rem;
   }
 }
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   section.u4m-blog-listing div.posts a.blog-post-card .content span.teaser {
-    font-family: "Montserrat";
+    font-family: "Inter";
     font-size: 12rem;
     line-height: 1.6;
     letter-spacing: 0.35rem;
@@ -870,7 +849,7 @@ section.u4m-blog-listing div.posts a.blog-post-card .content span.teaser {
     margin-bottom: 0;
   }
 }
-@media (max-width: 768px) and (max-width: 580px) {
+@media (max-width: 767px) and (max-width: 580px) {
   section.u4m-blog-listing div.posts a.blog-post-card .content span.teaser {
     font-size: 12rem;
   }
@@ -880,7 +859,7 @@ section.u4m-blog-listing div.posts a.blog-post-card .content span.read-more {
   margin: 20rem 0;
   cursor: pointer;
   margin-top: auto;
-  color: #733BF7;
+  color: #007C43;
   transition: 0.1s ease-in;
 }
 section.u4m-blog-listing div.posts a.blog-post-card .content span.read-more:after {
@@ -890,10 +869,10 @@ section.u4m-blog-listing div.posts a.blog-post-card .content span.read-more:afte
   height: 7rem;
 }
 section.u4m-blog-listing div.posts a.blog-post-card .content span.read-more:hover, section.u4m-blog-listing div.posts a.blog-post-card .content span.read-more:focus {
-  color: #33475b;
+  color: #000000;
 }
 section.u4m-blog-listing div.posts a.blog-post-card .content span.read-more:hover {
-  color: #33475b;
+  color: #000000;
 }
 @media (max-width: 1024px) {
   section.u4m-blog-listing div.posts a.blog-post-card {
@@ -901,7 +880,7 @@ section.u4m-blog-listing div.posts a.blog-post-card .content span.read-more:hove
     margin: 0 20px 20px;
   }
 }
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   section.u4m-blog-listing div.posts a.blog-post-card {
     flex: 0 0 calc(100% - 40rem);
     margin: 0 20px 20px;
@@ -931,7 +910,7 @@ section.u4m-blog-listing div.posts .resource-card:after {
   width: 1920rem;
   z-index: 0;
   top: 0;
-  background-color: #edf0f2;
+  background-color: #DBDBDB;
   right: 50%;
   transform: translateX(50%);
 }
@@ -964,11 +943,11 @@ section.u4m-blog-listing div.posts .resource-card a .image {
 section.u4m-blog-listing div.posts .resource-card a .content h2,
 section.u4m-blog-listing div.posts .resource-card a .content span,
 section.u4m-blog-listing div.posts .resource-card a .content p {
-  color: #33475b;
+  color: #000000;
 }
 section.u4m-blog-listing div.posts .resource-card a .content span.type {
   display: block;
-  font-family: "Montserrat";
+  font-family: "Inter";
   font-size: 16rem;
   line-height: 1.6;
   letter-spacing: 0.25rem;
@@ -982,27 +961,26 @@ section.u4m-blog-listing div.posts .resource-card a .content span.type {
   }
 }
 section.u4m-blog-listing div.posts .resource-card a .content h2.title {
-  font-family: "Montserrat";
-  font-size: 44rem;
-  font-weight: bold;
-  letter-spacing: 0.25rem;
+  font-family: "Inter";
+  font-size: 40rem;
+  font-weight: 600;
   margin-bottom: 30rem;
-  line-height: 1.2;
+  line-height: 1;
   margin-top: 0;
 }
 @media (max-width: 1024px) {
   section.u4m-blog-listing div.posts .resource-card a .content h2.title {
-    font-size: 38rem;
+    font-size: 28rem;
   }
 }
 @media (max-width: 580px) {
   section.u4m-blog-listing div.posts .resource-card a .content h2.title {
-    font-size: 32rem;
+    font-size: 25rem;
     margin-bottom: 20rem;
   }
 }
 section.u4m-blog-listing div.posts .resource-card a .content p {
-  font-family: "Montserrat";
+  font-family: "Inter";
   font-size: 18rem;
   line-height: 1.6;
   letter-spacing: 0.25rem;
@@ -1015,30 +993,27 @@ section.u4m-blog-listing div.posts .resource-card a .content p {
 }
 section.u4m-blog-listing div.posts .resource-card a .content span.link {
   display: inline-block;
-  font-family: "Montserrat";
-  color: #fff;
-  background-color: #733BF7;
-  border: 0;
-  border-radius: 4rem;
-  padding: 15rem 40rem 15rem 40rem;
+  font-family: "Inter";
+  color: #ffffff;
+  background-color: #007C43;
+  border: 1px solid #007C43;
+  border-radius: 12rem;
+  padding: 11rem 24rem;
   margin: 20rem 0;
   transition: 0.1s ease-in;
-  text-transform: uppercase;
-  font-weight: bold;
-  font-size: 14rem;
-  line-height: 1.2;
-  letter-spacing: 0.25rem;
+  font-weight: 600;
+  font-size: 16rem;
+  line-height: 1;
   text-decoration: none;
   cursor: pointer;
   text-align: center;
-  box-shadow: 0rem 1rem 12rem 0 rgba(51, 71, 91, 0.1);
-  padding: 8rem 20rem 7rem 20rem;
+  padding: 10rem 20rem;
   font-size: 12rem;
   line-height: 1.2;
 }
 section.u4m-blog-listing div.posts .resource-card a .content span.link:hover, section.u4m-blog-listing div.posts .resource-card a .content span.link:focus {
-  background-color: #33475b;
-  color: #fff;
+  background-color: #ffffff;
+  color: #007C43;
 }
 section.u4m-blog-listing div.pagination-standard {
   text-align: center;
@@ -1062,11 +1037,11 @@ section.u4m-blog-listing div.pagination-standard ul.pages li a {
   justify-content: center;
   text-align: center;
   margin: 0 5rem;
-  color: #33475b;
+  color: #000000;
   min-height: 55rem;
   min-width: 55rem;
   padding: 0;
-  background-color: #edf0f2;
+  background-color: #DBDBDB;
   font-weight: bold;
 }
 @media (max-width: 580px) {
@@ -1076,15 +1051,15 @@ section.u4m-blog-listing div.pagination-standard ul.pages li a {
   }
 }
 section.u4m-blog-listing div.pagination-standard ul.pages li a:hover {
-  color: #fff;
-  background-color: #733BF7;
+  color: #ffffff;
+  background-color: #007C43;
 }
 section.u4m-blog-listing div.pagination-standard ul.pages li.disabled a {
   display: none;
 }
 section.u4m-blog-listing div.pagination-standard ul.pages li.active a {
-  color: #fff;
-  background-color: #733BF7;
+  color: #ffffff;
+  background-color: #007C43;
 }
 section.u4m-blog-listing div.pagination-infinite {
   text-align: center;
@@ -1097,27 +1072,24 @@ section.u4m-blog-listing div.pagination-infinite a.pagination-infinite_button {
   padding-left: 20rem;
   padding-right: 20rem;
   display: inline-block;
-  font-family: "Montserrat";
-  color: #fff;
-  background-color: #733BF7;
-  border: 0;
-  border-radius: 4rem;
-  padding: 15rem 40rem 15rem 40rem;
+  font-family: "Inter";
+  color: #ffffff;
+  background-color: #007C43;
+  border: 1px solid #007C43;
+  border-radius: 12rem;
+  padding: 11rem 24rem;
   margin: 20rem 0;
   transition: 0.1s ease-in;
-  text-transform: uppercase;
-  font-weight: bold;
-  font-size: 14rem;
-  line-height: 1.2;
-  letter-spacing: 0.25rem;
+  font-weight: 600;
+  font-size: 16rem;
+  line-height: 1;
   text-decoration: none;
   cursor: pointer;
   text-align: center;
-  box-shadow: 0rem 1rem 12rem 0 rgba(51, 71, 91, 0.1);
 }
 section.u4m-blog-listing div.pagination-infinite a.pagination-infinite_button:hover, section.u4m-blog-listing div.pagination-infinite a.pagination-infinite_button:focus {
-  background-color: #33475b;
-  color: #fff;
+  background-color: #ffffff;
+  color: #007C43;
 }
 .hide-next section.u4m-blog-listing div.pagination-infinite a.pagination-infinite_button {
   display: none;

@@ -33,29 +33,28 @@ section.u4m-timeline .inner .timeline {
   margin: 0 auto;
 }
 section.u4m-timeline .inner .timeline h2 {
-  font-family: "Montserrat";
-  font-size: 44rem;
-  font-weight: bold;
-  letter-spacing: 0.25rem;
+  font-family: "Inter";
+  font-size: 40rem;
+  font-weight: 600;
   margin-bottom: 30rem;
-  line-height: 1.2;
+  line-height: 1;
   text-align: center;
 }
 @media (max-width: 1024px) {
   section.u4m-timeline .inner .timeline h2 {
-    font-size: 38rem;
+    font-size: 28rem;
   }
 }
 @media (max-width: 580px) {
   section.u4m-timeline .inner .timeline h2 {
-    font-size: 32rem;
+    font-size: 25rem;
     margin-bottom: 20rem;
   }
 }
 section.u4m-timeline .inner .timeline .timeline-entry {
   display: flex;
 }
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   section.u4m-timeline .inner .timeline .timeline-entry {
     display: block;
   }
@@ -78,21 +77,20 @@ section.u4m-timeline .inner .timeline .timeline-entry div.timeline-entry-info {
   }
 }
 section.u4m-timeline .inner .timeline .timeline-entry div.timeline-entry-info h3 {
-  font-family: "Montserrat";
-  font-size: 38rem;
-  font-weight: bold;
-  letter-spacing: 0.25rem;
+  font-family: "Inter";
+  font-size: 33rem;
+  font-weight: 600;
   margin-bottom: 30rem;
-  line-height: 1.2;
+  line-height: 1;
 }
 @media (max-width: 1024px) {
   section.u4m-timeline .inner .timeline .timeline-entry div.timeline-entry-info h3 {
-    font-size: 32rem;
+    font-size: 25rem;
   }
 }
 @media (max-width: 580px) {
   section.u4m-timeline .inner .timeline .timeline-entry div.timeline-entry-info h3 {
-    font-size: 28rem;
+    font-size: 22rem;
     margin-bottom: 20rem;
   }
 }
@@ -106,7 +104,7 @@ section.u4m-timeline .inner .timeline .timeline-entry div.timeline-entry-info:be
   position: absolute;
   top: 0;
 }
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   section.u4m-timeline .inner .timeline .timeline-entry div.timeline-entry-info {
     padding: 0rem 20rem 50rem 40rem;
     width: 100%;
@@ -129,7 +127,7 @@ section.u4m-timeline .inner .timeline .timeline-entry:nth-child(odd) .timeline-e
 section.u4m-timeline .inner .timeline .timeline-entry:nth-child(odd) .timeline-entry-info:before {
   right: -17rem;
 }
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   section.u4m-timeline .inner .timeline .timeline-entry:nth-child(odd) .timeline-entry-info {
     border-right: none;
     border-left: 5rem solid #00a4bd;

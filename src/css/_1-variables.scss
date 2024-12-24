@@ -1,19 +1,27 @@
 // Colors - For transparency use rgba($action1, 0.5) = 50% opaque
-$action1: #733BF7;
+$action1: #007C43;
 $action2: #00a4bd;
-$black: #33475b;
-$white: #fff;
-$gray1: #edf0f2;
-$gray2: #cbd6e2;
-$gray3: #7C98B6;
+$black: #000000;
+$white: #ffffff; 
+$digitalgreen: #B5DDA5;
+$heading: #213944;
+$gray1: #DBDBDB;
+$gray2: #6E757C;
+$bronze:#C49E5B;
+$airwhite: #F7F8F6;
+$statblue: #315363;
+$gray3: #EEEEEE;
+$gradientbg3: #F7F8F6;
+
 $gradient1: linear-gradient(-45deg, $black 0%, $action2 50%);
-$font1: 'Montserrat';
+$font1: 'Inter';
 $baseFontSize: 16rem;
-$baseLineHeight: 1.61803398875; // Golden ratio
+$baseLineHeight: 1; // Golden ratio
 // Border Radius
-$border1: 4rem;
+$border1: 12rem;
 $border2: 5rem;
 $border3: 10rem;
+$borderRadius: 12rem;   
 // Shadow
 $shadow1: 0rem 1rem 12rem 0 rgba($black, 0.1);
 $shadow2: 0 5rem 25rem 0 rgba($black, 0.2);

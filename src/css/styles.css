@@ -2968,12 +2968,11 @@ html {
 
 /* make html visible after Firefox flash in hack */
 body {
-  font-family: "Montserrat";
+  font-family: "Inter";
   font-size: 16rem;
-  line-height: 1.6180339888;
-  color: #33475b;
+  line-height: 1;
+  color: #213944;
   font-weight: normal;
-  margin-top: 78rem;
 }
 body.hide-header {
   margin-top: 0;
@@ -2994,97 +2993,92 @@ h6 {
 }
 
 h1 {
-  font-family: "Montserrat";
-  font-size: 60rem;
-  font-weight: bold;
-  letter-spacing: 0.25rem;
+  font-family: "Inter";
+  font-size: 48rem;
+  font-weight: 600;
   margin-bottom: 30rem;
-  line-height: 1.2;
+  line-height: 1;
   margin-top: 0;
 }
 @media (max-width: 1024px) {
   h1 {
-    font-size: 48rem;
+    font-size: 30rem;
   }
 }
 @media (max-width: 580px) {
   h1 {
-    font-size: 38rem;
+    font-size: 28rem;
     margin-bottom: 20rem;
   }
 }
 
 h2 {
-  font-family: "Montserrat";
-  font-size: 44rem;
-  font-weight: bold;
-  letter-spacing: 0.25rem;
+  font-family: "Inter";
+  font-size: 40rem;
+  font-weight: 600;
   margin-bottom: 30rem;
-  line-height: 1.2;
+  line-height: 1;
 }
 @media (max-width: 1024px) {
   h2 {
-    font-size: 38rem;
+    font-size: 28rem;
   }
 }
 @media (max-width: 580px) {
   h2 {
-    font-size: 32rem;
+    font-size: 25rem;
     margin-bottom: 20rem;
   }
 }
 
 h3 {
-  font-family: "Montserrat";
-  font-size: 38rem;
-  font-weight: bold;
-  letter-spacing: 0.25rem;
+  font-family: "Inter";
+  font-size: 33rem;
+  font-weight: 600;
   margin-bottom: 30rem;
-  line-height: 1.2;
+  line-height: 1;
 }
 @media (max-width: 1024px) {
   h3 {
-    font-size: 32rem;
+    font-size: 25rem;
   }
 }
 @media (max-width: 580px) {
   h3 {
-    font-size: 28rem;
+    font-size: 22rem;
     margin-bottom: 20rem;
   }
 }
 
 h4 {
-  font-family: "Montserrat";
-  font-size: 34rem;
-  font-weight: bold;
-  letter-spacing: 0.25rem;
+  font-family: "Inter";
+  font-size: 28rem;
+  font-weight: 600;
   margin-bottom: 30rem;
-  line-height: 1.2;
+  line-height: 1;
 }
 @media (max-width: 1024px) {
   h4 {
-    font-size: 28rem;
+    font-size: 22rem;
   }
 }
 @media (max-width: 580px) {
   h4 {
-    font-size: 24rem;
+    font-size: 20rem;
     margin-bottom: 20rem;
   }
 }
 
 h5 {
-  font-family: "Montserrat";
-  font-size: 30rem;
-  font-weight: bold;
-  letter-spacing: 0.25rem;
+  font-family: "Inter";
+  font-size: 23rem;
+  font-weight: 600;
   margin-bottom: 30rem;
-  line-height: 1.2;
+  line-height: 1;
 }
 @media (max-width: 1024px) {
   h5 {
-    font-size: 24rem;
+    font-size: 20rem;
   }
 }
 @media (max-width: 580px) {
@@ -3095,21 +3089,20 @@ h5 {
 }
 
 h6 {
-  font-family: "Montserrat";
-  font-size: 24rem;
-  font-weight: bold;
-  letter-spacing: 0.25rem;
+  font-family: "Inter";
+  font-size: 19rem;
+  font-weight: 600;
   margin-bottom: 30rem;
-  line-height: 1.2;
+  line-height: 1;
 }
 @media (max-width: 1024px) {
   h6 {
-    font-size: 20rem;
+    font-size: 19rem;
   }
 }
 @media (max-width: 580px) {
   h6 {
-    font-size: 18rem;
+    font-size: 19rem;
     margin-bottom: 20rem;
   }
 }
@@ -3132,7 +3125,7 @@ div.hs_cos_wrapper_widget section.top-margin-none {
 div.hs_cos_wrapper_widget section.top-margin-small {
   margin-top: 50rem;
 }
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   div.hs_cos_wrapper_widget section.top-margin-small {
     margin-top: 35rem;
   }
@@ -3146,7 +3139,7 @@ div.hs_cos_wrapper_widget section.top-margin-small {
 div.hs_cos_wrapper_widget section.top-margin-medium {
   margin-top: 100rem;
 }
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   div.hs_cos_wrapper_widget section.top-margin-medium {
     margin-top: 75rem;
   }
@@ -3160,7 +3153,7 @@ div.hs_cos_wrapper_widget section.top-margin-medium {
 div.hs_cos_wrapper_widget section.top-margin-large {
   margin-top: 150rem;
 }
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   div.hs_cos_wrapper_widget section.top-margin-large {
     margin-top: 115rem;
   }
@@ -3178,7 +3171,7 @@ div.hs_cos_wrapper_widget section.bottom-margin-none {
 div.hs_cos_wrapper_widget section.bottom-margin-small {
   margin-bottom: 50rem;
 }
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   div.hs_cos_wrapper_widget section.bottom-margin-small {
     margin-bottom: 35rem;
   }
@@ -3192,7 +3185,7 @@ div.hs_cos_wrapper_widget section.bottom-margin-small {
 div.hs_cos_wrapper_widget section.bottom-margin-medium {
   margin-bottom: 100rem;
 }
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   div.hs_cos_wrapper_widget section.bottom-margin-medium {
     margin-bottom: 75rem;
   }
@@ -3206,7 +3199,7 @@ div.hs_cos_wrapper_widget section.bottom-margin-medium {
 div.hs_cos_wrapper_widget section.bottom-margin-large {
   margin-bottom: 150rem;
 }
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   div.hs_cos_wrapper_widget section.bottom-margin-large {
     margin-bottom: 115rem;
   }
@@ -3224,7 +3217,7 @@ div.hs_cos_wrapper_widget section.top-padding-none {
 div.hs_cos_wrapper_widget section.top-padding-small {
   padding-top: 50rem;
 }
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   div.hs_cos_wrapper_widget section.top-padding-small {
     padding-top: 35rem;
   }
@@ -3238,7 +3231,7 @@ div.hs_cos_wrapper_widget section.top-padding-small {
 div.hs_cos_wrapper_widget section.top-padding-medium {
   padding-top: 100rem;
 }
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   div.hs_cos_wrapper_widget section.top-padding-medium {
     padding-top: 75rem;
   }
@@ -3252,7 +3245,7 @@ div.hs_cos_wrapper_widget section.top-padding-medium {
 div.hs_cos_wrapper_widget section.top-padding-large {
   padding-top: 150rem;
 }
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   div.hs_cos_wrapper_widget section.top-padding-large {
     padding-top: 115rem;
   }
@@ -3270,7 +3263,7 @@ div.hs_cos_wrapper_widget section.bottom-padding-none {
 div.hs_cos_wrapper_widget section.bottom-padding-small {
   padding-bottom: 50rem;
 }
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   div.hs_cos_wrapper_widget section.bottom-padding-small {
     padding-bottom: 35rem;
   }
@@ -3284,7 +3277,7 @@ div.hs_cos_wrapper_widget section.bottom-padding-small {
 div.hs_cos_wrapper_widget section.bottom-padding-medium {
   padding-bottom: 100rem;
 }
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   div.hs_cos_wrapper_widget section.bottom-padding-medium {
     padding-bottom: 75rem;
   }
@@ -3298,7 +3291,7 @@ div.hs_cos_wrapper_widget section.bottom-padding-medium {
 div.hs_cos_wrapper_widget section.bottom-padding-large {
   padding-bottom: 150rem;
 }
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   div.hs_cos_wrapper_widget section.bottom-padding-large {
     padding-bottom: 115rem;
   }
@@ -3325,7 +3318,7 @@ div.video-popup {
   margin: 0 auto;
 }
 div.video-popup button.mfp-close {
-  color: #fff;
+  color: #ffffff;
   font-size: 40rem;
 }
 
@@ -3340,7 +3333,7 @@ div#hs-eu-cookie-confirmation.hs-cookie-notification-position-bottom.can-use-gra
   max-width: 1240rem;
 }
 div#hs-eu-cookie-confirmation.hs-cookie-notification-position-bottom.can-use-gradients div#hs-eu-cookie-confirmation-inner p {
-  font-family: "Montserrat";
+  font-family: "Inter";
   font-size: 14rem;
   line-height: 1.6;
   letter-spacing: 0.35rem;
@@ -3358,39 +3351,36 @@ div#hs-eu-cookie-confirmation.hs-cookie-notification-position-bottom.can-use-gra
 }
 div#hs-eu-cookie-confirmation.hs-cookie-notification-position-bottom.can-use-gradients div#hs-eu-cookie-confirmation-inner div#hs-en-cookie-confirmation-buttons-area a#hs-eu-confirmation-button {
   display: inline-block;
-  font-family: "Montserrat";
-  color: #fff;
-  background-color: #733BF7;
-  border: 0;
-  border-radius: 4rem;
-  padding: 15rem 40rem 15rem 40rem;
+  font-family: "Inter";
+  color: #ffffff;
+  background-color: #007C43;
+  border: 1px solid #007C43;
+  border-radius: 12rem;
+  padding: 11rem 24rem;
   margin: 20rem 0;
   transition: 0.1s ease-in;
-  text-transform: uppercase;
-  font-weight: bold;
-  font-size: 14rem;
-  line-height: 1.2;
-  letter-spacing: 0.25rem;
+  font-weight: 600;
+  font-size: 16rem;
+  line-height: 1;
   text-decoration: none;
   cursor: pointer;
   text-align: center;
-  box-shadow: 0rem 1rem 12rem 0 rgba(51, 71, 91, 0.1);
-  padding: 8rem 20rem 7rem 20rem;
+  padding: 10rem 20rem;
   font-size: 12rem;
   line-height: 1.2;
   font-weight: bold !important;
   margin: 10rem 0;
 }
 div#hs-eu-cookie-confirmation.hs-cookie-notification-position-bottom.can-use-gradients div#hs-eu-cookie-confirmation-inner div#hs-en-cookie-confirmation-buttons-area a#hs-eu-confirmation-button:hover, div#hs-eu-cookie-confirmation.hs-cookie-notification-position-bottom.can-use-gradients div#hs-eu-cookie-confirmation-inner div#hs-en-cookie-confirmation-buttons-area a#hs-eu-confirmation-button:focus {
-  background-color: #33475b;
-  color: #fff;
+  background-color: #ffffff;
+  color: #007C43;
 }
 div#hs-eu-cookie-confirmation.hs-cookie-notification-position-bottom.can-use-gradients div#hs-eu-cookie-confirmation-inner div#hs-en-cookie-confirmation-buttons-area a#hs-eu-confirmation-button:hover {
-  background-color: #33475b !important;
+  background-color: #000000 !important;
 }
 
 p {
-  font-family: "Montserrat";
+  font-family: "Inter";
   font-size: 16rem;
   line-height: 1.6;
   letter-spacing: 0.25rem;
@@ -3405,23 +3395,23 @@ p {
 a {
   text-decoration: none;
   /* Remove default underline */
-  color: #733BF7;
+  color: #007C43;
   transition: 0.1s ease-in;
   display: inline-block;
 }
 a:hover {
-  color: #733BF7;
+  color: #007C43;
 }
 
 blockquote,
 blockquote p {
-  font-family: "Montserrat";
+  font-family: "Inter";
   font-size: 30rem;
   font-weight: bold;
-  line-height: 1.6180339888;
+  line-height: 1;
   letter-spacing: 1rem;
   margin: 50rem auto;
-  color: #733BF7;
+  color: #007C43;
   display: block;
   max-width: 90%;
 }
@@ -3441,7 +3431,7 @@ strong {
 }
 
 ul {
-  font-family: "Montserrat";
+  font-family: "Inter";
   font-size: 16rem;
   line-height: 1.6;
   letter-spacing: 0.25rem;
@@ -3458,7 +3448,7 @@ ul {
 }
 
 ol {
-  font-family: "Montserrat";
+  font-family: "Inter";
   font-size: 16rem;
   line-height: 1.6;
   letter-spacing: 0.25rem;
@@ -3487,11 +3477,11 @@ ol ul {
 }
 
 input {
-  font-family: "Montserrat";
+  font-family: "Inter";
 }
 
 button {
-  font-family: "Montserrat";
+  font-family: "Inter";
   cursor: pointer;
 }
 
@@ -3501,21 +3491,21 @@ form {
 }
 
 ::-webkit-input-placeholder {
-  color: #7C98B6;
+  color: #EEEEEE;
   opacity: 1;
   font-weight: normal;
 }
 
 /* Webkit input placeholders */
 ::-moz-placeholder {
-  color: #7C98B6;
+  color: #EEEEEE;
   opacity: 1;
   font-weight: normal;
 }
 
 /* Firefox input placeholders */
 :-ms-input-placeholder {
-  color: #7C98B6;
+  color: #EEEEEE;
   opacity: 1;
   font-weight: normal;
 }
@@ -3542,7 +3532,7 @@ hr {
   margin-top: 30rem;
   margin-bottom: 35rem;
   border-width: 0;
-  border-top: 1rem solid #edf0f2;
+  border-top: 1rem solid #DBDBDB;
 }
 
 /* Abbreviations */
@@ -3555,8 +3545,8 @@ code {
   padding: 1rem;
   margin: 0 10rem;
   white-space: nowrap;
-  background: #edf0f2;
-  border: 1rem solid #edf0f2;
+  background: #DBDBDB;
+  border: 1rem solid #DBDBDB;
   border-radius: 0;
 }
 
@@ -3582,7 +3572,7 @@ th,
 td {
   padding: 10rem 20rem;
   text-align: left;
-  border-bottom: 1rem solid #edf0f2;
+  border-bottom: 1rem solid #DBDBDB;
 }
 
 th:first-child,
@@ -3604,7 +3594,7 @@ table th {
 }
 
 table td {
-  border-bottom: 1rem solid #cbd6e2;
+  border-bottom: 1rem solid #6E757C;
   font-size: 14rem;
 }
 
@@ -3614,6 +3604,82 @@ a[href="javascript:;"] {
 
 section[class*=u4m-] {
   scroll-margin-top: 150px;
+}
+
+.dnd_padd {
+  position: relative;
+}
+
+.bg_overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 1;
+  pointer-events: none;
+}
+.bg_overlay ~ .full-width-container, .bg_overlay ~ .page-center {
+  position: relative;
+  z-index: 3;
+}
+.bg_overlay.bg_overlay_image {
+  z-index: 1;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.bg_overlay.bg_color {
+  z-index: 2;
+}
+
+.hs-button {
+  display: inline-block;
+  font-family: "Inter";
+  color: #ffffff;
+  background-color: #007C43;
+  border: 1px solid #007C43;
+  border-radius: 12rem;
+  padding: 11rem 24rem;
+  margin: 20rem 0;
+  transition: 0.1s ease-in;
+  font-weight: 600;
+  font-size: 16rem;
+  line-height: 1;
+  text-decoration: none;
+  cursor: pointer;
+  text-align: center;
+}
+.hs-button:hover, .hs-button:focus {
+  background-color: #ffffff;
+  color: #007C43;
+}
+.hs-button.secondary {
+  display: inline-block;
+  font-family: "Inter";
+  color: #ffffff;
+  background-color: #007C43;
+  border: 1px solid #007C43;
+  border-radius: 12rem;
+  padding: 11rem 24rem;
+  margin: 20rem 0;
+  transition: 0.1s ease-in;
+  font-weight: 600;
+  font-size: 16rem;
+  line-height: 1;
+  text-decoration: none;
+  cursor: pointer;
+  text-align: center;
+  color: #007C43;
+  background-color: #ffffff;
+}
+.hs-button.secondary:hover, .hs-button.secondary:focus {
+  background-color: #ffffff;
+  color: #007C43;
+}
+.hs-button.secondary:hover, .hs-button.secondary:focus {
+  background-color: #007C43;
+  color: #ffffff;
 }
 
 section.u4m-404-error,
@@ -3629,7 +3695,7 @@ section.u4m-500-error {
 }
 section.u4m-404-error p,
 section.u4m-500-error p {
-  font-family: "Montserrat";
+  font-family: "Inter";
   font-size: 22rem;
   line-height: 1.4;
   letter-spacing: 0.25rem;
@@ -3664,7 +3730,7 @@ section.u4m-backup-unsubscribe {
   }
 }
 section.u4m-backup-unsubscribe p {
-  font-family: "Montserrat";
+  font-family: "Inter";
   font-size: 22rem;
   line-height: 1.4;
   letter-spacing: 0.25rem;
@@ -3676,7 +3742,7 @@ section.u4m-backup-unsubscribe p {
   }
 }
 section.u4m-backup-unsubscribe form {
-  background-color: #edf0f2;
+  background-color: #dbdbdb;
   padding: 20rem 30rem;
   max-width: 765rem;
   margin: 30rem auto 30rem auto;
@@ -3690,27 +3756,26 @@ section.u4m-backup-unsubscribe form {
   }
 }
 section.u4m-backup-unsubscribe form h3 {
-  font-family: "Montserrat";
-  font-size: 24rem;
-  font-weight: bold;
-  letter-spacing: 0.25rem;
+  font-family: "Inter";
+  font-size: 19rem;
+  font-weight: 600;
   margin-bottom: 30rem;
-  line-height: 1.2;
+  line-height: 1;
 }
 @media (max-width: 1024px) {
   section.u4m-backup-unsubscribe form h3 {
-    font-size: 20rem;
+    font-size: 19rem;
   }
 }
 @media (max-width: 580px) {
   section.u4m-backup-unsubscribe form h3 {
-    font-size: 18rem;
+    font-size: 19rem;
     margin-bottom: 20rem;
   }
 }
 section.u4m-backup-unsubscribe form div.legal-consent-container p,
 section.u4m-backup-unsubscribe form div.legal-consent-container .hs-form-booleancheckbox label {
-  font-family: "Montserrat";
+  font-family: "Inter";
   font-size: 12rem;
   line-height: 1.6;
   letter-spacing: 0.35rem;
@@ -3769,7 +3834,7 @@ section.u4m-backup-unsubscribe form .input input[type=email] {
   margin-top: 2rem;
   margin-bottom: 20rem;
   font-size: 16rem;
-  background-color: #fff;
+  background-color: #ffffff;
   padding: 16rem;
   width: 100%;
   appearance: none;
@@ -3805,7 +3870,7 @@ section.u4m-backup-unsubscribe form.mixitup-multifilter .input input[type=email]
 section.u4m-backup-unsubscribe form .input input[type=number]::placeholder,
 section.u4m-backup-unsubscribe form .input input[type=tel]::placeholder,
 section.u4m-backup-unsubscribe form .input input[type=email]::placeholder {
-  color: #7c98b6;
+  color: #eeeeee;
 }
 section.u4m-backup-unsubscribe form.hs-form .input input[type=checkbox],
 section.u4m-backup-unsubscribe form.hs-form .input input[type=radio], section.u4m-backup-unsubscribe form.mixitup-multifilter .input input[type=checkbox],
@@ -3819,11 +3884,11 @@ section.u4m-backup-unsubscribe form.hs-form .input input select, section.u4m-bac
   margin-top: 2rem;
   margin-bottom: 20rem;
   font-size: 16rem;
-  background-color: #fff;
+  background-color: #ffffff;
 }
 section.u4m-backup-unsubscribe form.hs-form .input input[type=file], section.u4m-backup-unsubscribe form.mixitup-multifilter .input input[type=file], section.u4m-backup-unsubscribe form .input input[type=file] {
   font-size: 16rem;
-  font-family: "Montserrat";
+  font-family: "Inter";
   background-color: transparent;
   position: relative;
   font-weight: bold;
@@ -3839,7 +3904,7 @@ section.u4m-backup-unsubscribe form.hs-form .input select, section.u4m-backup-un
   margin-top: 2rem;
   margin-bottom: 20rem;
   font-size: 16rem;
-  background-color: #fff;
+  background-color: #ffffff;
   padding: 16rem;
 }
 section.u4m-backup-unsubscribe form.hs-form .input + .hs-error-msgs, section.u4m-backup-unsubscribe form.mixitup-multifilter .input + .hs-error-msgs, section.u4m-backup-unsubscribe form .input + .hs-error-msgs {
@@ -3882,7 +3947,7 @@ section.u4m-backup-unsubscribe form.hs-form .input + .hs-error-msgs li:before, s
 }
 section.u4m-backup-unsubscribe form.hs-form .input + .hs-error-msgs li label, section.u4m-backup-unsubscribe form.mixitup-multifilter .input + .hs-error-msgs li label, section.u4m-backup-unsubscribe form .input + .hs-error-msgs li label {
   font-size: 12rem;
-  font-family: "Montserrat";
+  font-family: "Inter";
   text-transform: uppercase;
   letter-spacing: 1rem;
   display: inline-block;
@@ -3906,7 +3971,7 @@ section.u4m-backup-unsubscribe form.hs-form textarea, section.u4m-backup-unsubsc
   margin-bottom: 20rem;
   min-height: 100rem;
   font-size: 16rem;
-  background-color: #fff;
+  background-color: #ffffff;
   width: 100%;
 }
 section.u4m-backup-unsubscribe form.hs-form textarea.invalid, section.u4m-backup-unsubscribe form.mixitup-multifilter textarea.invalid, section.u4m-backup-unsubscribe form textarea.invalid {
@@ -4142,27 +4207,24 @@ section.u4m-backup-unsubscribe form.hs-form .form-columns-2 > div:last-of-type, 
 }
 section.u4m-backup-unsubscribe form.hs-form .hs-button, section.u4m-backup-unsubscribe form.mixitup-multifilter .hs-button, section.u4m-backup-unsubscribe form .hs-button {
   display: inline-block;
-  font-family: "Montserrat";
-  color: #fff;
-  background-color: #733BF7;
-  border: 0;
-  border-radius: 4rem;
-  padding: 15rem 40rem 15rem 40rem;
+  font-family: "Inter";
+  color: #ffffff;
+  background-color: #007C43;
+  border: 1px solid #007C43;
+  border-radius: 12rem;
+  padding: 11rem 24rem;
   margin: 20rem 0;
   transition: 0.1s ease-in;
-  text-transform: uppercase;
-  font-weight: bold;
-  font-size: 14rem;
-  line-height: 1.2;
-  letter-spacing: 0.25rem;
+  font-weight: 600;
+  font-size: 16rem;
+  line-height: 1;
   text-decoration: none;
   cursor: pointer;
   text-align: center;
-  box-shadow: 0rem 1rem 12rem 0 rgba(51, 71, 91, 0.1);
 }
 section.u4m-backup-unsubscribe form.hs-form .hs-button:hover, section.u4m-backup-unsubscribe form.hs-form .hs-button:focus, section.u4m-backup-unsubscribe form.mixitup-multifilter .hs-button:hover, section.u4m-backup-unsubscribe form.mixitup-multifilter .hs-button:focus, section.u4m-backup-unsubscribe form .hs-button:hover, section.u4m-backup-unsubscribe form .hs-button:focus {
-  background-color: #33475b;
-  color: #fff;
+  background-color: #ffffff;
+  color: #007C43;
 }
 section.u4m-backup-unsubscribe form h3 {
   font-size: 12rem;
@@ -4215,7 +4277,7 @@ section.u4m-membership-register form,
 section.u4m-membership-reset-password-request form,
 section.u4m-membership-reset-password form,
 section.u4m-password-prompt form {
-  background-color: #edf0f2;
+  background-color: #dbdbdb;
   padding: 20rem 30rem;
   max-width: 765rem;
   margin: 30rem auto 30rem auto;
@@ -4238,12 +4300,11 @@ section.u4m-membership-register form h3,
 section.u4m-membership-reset-password-request form h3,
 section.u4m-membership-reset-password form h3,
 section.u4m-password-prompt form h3 {
-  font-family: "Montserrat";
-  font-size: 24rem;
-  font-weight: bold;
-  letter-spacing: 0.25rem;
+  font-family: "Inter";
+  font-size: 19rem;
+  font-weight: 600;
   margin-bottom: 30rem;
-  line-height: 1.2;
+  line-height: 1;
 }
 @media (max-width: 1024px) {
   section.u4m-membership-login form h3,
@@ -4251,7 +4312,7 @@ section.u4m-password-prompt form h3 {
   section.u4m-membership-reset-password-request form h3,
   section.u4m-membership-reset-password form h3,
   section.u4m-password-prompt form h3 {
-    font-size: 20rem;
+    font-size: 19rem;
   }
 }
 @media (max-width: 580px) {
@@ -4260,7 +4321,7 @@ section.u4m-password-prompt form h3 {
   section.u4m-membership-reset-password-request form h3,
   section.u4m-membership-reset-password form h3,
   section.u4m-password-prompt form h3 {
-    font-size: 18rem;
+    font-size: 19rem;
     margin-bottom: 20rem;
   }
 }
@@ -4274,7 +4335,7 @@ section.u4m-membership-reset-password form div.legal-consent-container p,
 section.u4m-membership-reset-password form div.legal-consent-container .hs-form-booleancheckbox label,
 section.u4m-password-prompt form div.legal-consent-container p,
 section.u4m-password-prompt form div.legal-consent-container .hs-form-booleancheckbox label {
-  font-family: "Montserrat";
+  font-family: "Inter";
   font-size: 12rem;
   line-height: 1.6;
   letter-spacing: 0.35rem;
@@ -4461,7 +4522,7 @@ section.u4m-password-prompt form .input input[type=email] {
   margin-top: 2rem;
   margin-bottom: 20rem;
   font-size: 16rem;
-  background-color: #fff;
+  background-color: #ffffff;
   padding: 16rem;
   width: 100%;
   appearance: none;
@@ -4641,7 +4702,7 @@ section.u4m-password-prompt form .input input[type=text]::placeholder,
 section.u4m-password-prompt form .input input[type=number]::placeholder,
 section.u4m-password-prompt form .input input[type=tel]::placeholder,
 section.u4m-password-prompt form .input input[type=email]::placeholder {
-  color: #7c98b6;
+  color: #eeeeee;
 }
 section.u4m-membership-login form.hs-form .input input[type=checkbox],
 section.u4m-membership-login form.hs-form .input input[type=radio], section.u4m-membership-login form.mixitup-multifilter .input input[type=checkbox],
@@ -4691,7 +4752,7 @@ section.u4m-password-prompt form .input input select {
   margin-top: 2rem;
   margin-bottom: 20rem;
   font-size: 16rem;
-  background-color: #fff;
+  background-color: #ffffff;
 }
 section.u4m-membership-login form.hs-form .input input[type=file], section.u4m-membership-login form.mixitup-multifilter .input input[type=file], section.u4m-membership-login form .input input[type=file],
 section.u4m-membership-register form.hs-form .input input[type=file],
@@ -4707,7 +4768,7 @@ section.u4m-password-prompt form.hs-form .input input[type=file],
 section.u4m-password-prompt form.mixitup-multifilter .input input[type=file],
 section.u4m-password-prompt form .input input[type=file] {
   font-size: 16rem;
-  font-family: "Montserrat";
+  font-family: "Inter";
   background-color: transparent;
   position: relative;
   font-weight: bold;
@@ -4735,7 +4796,7 @@ section.u4m-password-prompt form .input select {
   margin-top: 2rem;
   margin-bottom: 20rem;
   font-size: 16rem;
-  background-color: #fff;
+  background-color: #ffffff;
   padding: 16rem;
 }
 section.u4m-membership-login form.hs-form .input + .hs-error-msgs, section.u4m-membership-login form.mixitup-multifilter .input + .hs-error-msgs, section.u4m-membership-login form .input + .hs-error-msgs,
@@ -4838,7 +4899,7 @@ section.u4m-password-prompt form.hs-form .input + .hs-error-msgs li label,
 section.u4m-password-prompt form.mixitup-multifilter .input + .hs-error-msgs li label,
 section.u4m-password-prompt form .input + .hs-error-msgs li label {
   font-size: 12rem;
-  font-family: "Montserrat";
+  font-family: "Inter";
   text-transform: uppercase;
   letter-spacing: 1rem;
   display: inline-block;
@@ -4898,7 +4959,7 @@ section.u4m-password-prompt form textarea {
   margin-bottom: 20rem;
   min-height: 100rem;
   font-size: 16rem;
-  background-color: #fff;
+  background-color: #ffffff;
   width: 100%;
 }
 section.u4m-membership-login form.hs-form textarea.invalid, section.u4m-membership-login form.mixitup-multifilter textarea.invalid, section.u4m-membership-login form textarea.invalid,
@@ -5950,23 +6011,20 @@ section.u4m-password-prompt form.hs-form .hs-button,
 section.u4m-password-prompt form.mixitup-multifilter .hs-button,
 section.u4m-password-prompt form .hs-button {
   display: inline-block;
-  font-family: "Montserrat";
-  color: #fff;
-  background-color: #733BF7;
-  border: 0;
-  border-radius: 4rem;
-  padding: 15rem 40rem 15rem 40rem;
+  font-family: "Inter";
+  color: #ffffff;
+  background-color: #007C43;
+  border: 1px solid #007C43;
+  border-radius: 12rem;
+  padding: 11rem 24rem;
   margin: 20rem 0;
   transition: 0.1s ease-in;
-  text-transform: uppercase;
-  font-weight: bold;
-  font-size: 14rem;
-  line-height: 1.2;
-  letter-spacing: 0.25rem;
+  font-weight: 600;
+  font-size: 16rem;
+  line-height: 1;
   text-decoration: none;
   cursor: pointer;
   text-align: center;
-  box-shadow: 0rem 1rem 12rem 0 rgba(51, 71, 91, 0.1);
 }
 section.u4m-membership-login form.hs-form .hs-button:hover, section.u4m-membership-login form.hs-form .hs-button:focus, section.u4m-membership-login form.mixitup-multifilter .hs-button:hover, section.u4m-membership-login form.mixitup-multifilter .hs-button:focus, section.u4m-membership-login form .hs-button:hover, section.u4m-membership-login form .hs-button:focus,
 section.u4m-membership-register form.hs-form .hs-button:hover,
@@ -5993,8 +6051,8 @@ section.u4m-password-prompt form.mixitup-multifilter .hs-button:hover,
 section.u4m-password-prompt form.mixitup-multifilter .hs-button:focus,
 section.u4m-password-prompt form .hs-button:hover,
 section.u4m-password-prompt form .hs-button:focus {
-  background-color: #33475b;
-  color: #fff;
+  background-color: #ffffff;
+  color: #007C43;
 }
 section.u4m-membership-login form input,
 section.u4m-membership-register form input,
@@ -6008,7 +6066,7 @@ section.u4m-password-prompt form input {
   font-size: 16rem !important;
   padding: 16rem !important;
   width: 100% !important;
-  background-color: #fff;
+  background-color: #ffffff;
 }
 section.u4m-membership-login form input#hs-login-widget-remember,
 section.u4m-membership-register form input#hs-login-widget-remember,
@@ -6063,7 +6121,7 @@ section.u4m-subscription-preferences {
   margin: 100rem auto;
 }
 section.u4m-subscription-preferences form {
-  background-color: #edf0f2;
+  background-color: #dbdbdb;
   padding: 20rem 30rem;
   max-width: 765rem;
   margin: 30rem auto 30rem auto;
@@ -6078,27 +6136,26 @@ section.u4m-subscription-preferences form {
   }
 }
 section.u4m-subscription-preferences form h3 {
-  font-family: "Montserrat";
-  font-size: 24rem;
-  font-weight: bold;
-  letter-spacing: 0.25rem;
+  font-family: "Inter";
+  font-size: 19rem;
+  font-weight: 600;
   margin-bottom: 30rem;
-  line-height: 1.2;
+  line-height: 1;
 }
 @media (max-width: 1024px) {
   section.u4m-subscription-preferences form h3 {
-    font-size: 20rem;
+    font-size: 19rem;
   }
 }
 @media (max-width: 580px) {
   section.u4m-subscription-preferences form h3 {
-    font-size: 18rem;
+    font-size: 19rem;
     margin-bottom: 20rem;
   }
 }
 section.u4m-subscription-preferences form div.legal-consent-container p,
 section.u4m-subscription-preferences form div.legal-consent-container .hs-form-booleancheckbox label {
-  font-family: "Montserrat";
+  font-family: "Inter";
   font-size: 12rem;
   line-height: 1.6;
   letter-spacing: 0.35rem;
@@ -6157,7 +6214,7 @@ section.u4m-subscription-preferences form .input input[type=email] {
   margin-top: 2rem;
   margin-bottom: 20rem;
   font-size: 16rem;
-  background-color: #fff;
+  background-color: #ffffff;
   padding: 16rem;
   width: 100%;
   appearance: none;
@@ -6193,7 +6250,7 @@ section.u4m-subscription-preferences form.mixitup-multifilter .input input[type=
 section.u4m-subscription-preferences form .input input[type=number]::placeholder,
 section.u4m-subscription-preferences form .input input[type=tel]::placeholder,
 section.u4m-subscription-preferences form .input input[type=email]::placeholder {
-  color: #7c98b6;
+  color: #eeeeee;
 }
 section.u4m-subscription-preferences form.hs-form .input input[type=checkbox],
 section.u4m-subscription-preferences form.hs-form .input input[type=radio], section.u4m-subscription-preferences form.mixitup-multifilter .input input[type=checkbox],
@@ -6207,11 +6264,11 @@ section.u4m-subscription-preferences form.hs-form .input input select, section.u
   margin-top: 2rem;
   margin-bottom: 20rem;
   font-size: 16rem;
-  background-color: #fff;
+  background-color: #ffffff;
 }
 section.u4m-subscription-preferences form.hs-form .input input[type=file], section.u4m-subscription-preferences form.mixitup-multifilter .input input[type=file], section.u4m-subscription-preferences form .input input[type=file] {
   font-size: 16rem;
-  font-family: "Montserrat";
+  font-family: "Inter";
   background-color: transparent;
   position: relative;
   font-weight: bold;
@@ -6227,7 +6284,7 @@ section.u4m-subscription-preferences form.hs-form .input select, section.u4m-sub
   margin-top: 2rem;
   margin-bottom: 20rem;
   font-size: 16rem;
-  background-color: #fff;
+  background-color: #ffffff;
   padding: 16rem;
 }
 section.u4m-subscription-preferences form.hs-form .input + .hs-error-msgs, section.u4m-subscription-preferences form.mixitup-multifilter .input + .hs-error-msgs, section.u4m-subscription-preferences form .input + .hs-error-msgs {
@@ -6270,7 +6327,7 @@ section.u4m-subscription-preferences form.hs-form .input + .hs-error-msgs li:bef
 }
 section.u4m-subscription-preferences form.hs-form .input + .hs-error-msgs li label, section.u4m-subscription-preferences form.mixitup-multifilter .input + .hs-error-msgs li label, section.u4m-subscription-preferences form .input + .hs-error-msgs li label {
   font-size: 12rem;
-  font-family: "Montserrat";
+  font-family: "Inter";
   text-transform: uppercase;
   letter-spacing: 1rem;
   display: inline-block;
@@ -6294,7 +6351,7 @@ section.u4m-subscription-preferences form.hs-form textarea, section.u4m-subscrip
   margin-bottom: 20rem;
   min-height: 100rem;
   font-size: 16rem;
-  background-color: #fff;
+  background-color: #ffffff;
   width: 100%;
 }
 section.u4m-subscription-preferences form.hs-form textarea.invalid, section.u4m-subscription-preferences form.mixitup-multifilter textarea.invalid, section.u4m-subscription-preferences form textarea.invalid {
@@ -6530,30 +6587,27 @@ section.u4m-subscription-preferences form.hs-form .form-columns-2 > div:last-of-
 }
 section.u4m-subscription-preferences form.hs-form .hs-button, section.u4m-subscription-preferences form.mixitup-multifilter .hs-button, section.u4m-subscription-preferences form .hs-button {
   display: inline-block;
-  font-family: "Montserrat";
-  color: #fff;
-  background-color: #733BF7;
-  border: 0;
-  border-radius: 4rem;
-  padding: 15rem 40rem 15rem 40rem;
+  font-family: "Inter";
+  color: #ffffff;
+  background-color: #007C43;
+  border: 1px solid #007C43;
+  border-radius: 12rem;
+  padding: 11rem 24rem;
   margin: 20rem 0;
   transition: 0.1s ease-in;
-  text-transform: uppercase;
-  font-weight: bold;
-  font-size: 14rem;
-  line-height: 1.2;
-  letter-spacing: 0.25rem;
+  font-weight: 600;
+  font-size: 16rem;
+  line-height: 1;
   text-decoration: none;
   cursor: pointer;
   text-align: center;
-  box-shadow: 0rem 1rem 12rem 0 rgba(51, 71, 91, 0.1);
 }
 section.u4m-subscription-preferences form.hs-form .hs-button:hover, section.u4m-subscription-preferences form.hs-form .hs-button:focus, section.u4m-subscription-preferences form.mixitup-multifilter .hs-button:hover, section.u4m-subscription-preferences form.mixitup-multifilter .hs-button:focus, section.u4m-subscription-preferences form .hs-button:hover, section.u4m-subscription-preferences form .hs-button:focus {
-  background-color: #33475b;
-  color: #fff;
+  background-color: #ffffff;
+  color: #007C43;
 }
 section.u4m-subscription-preferences form div.item {
-  border-bottom: 2rem solid #cbd6e2;
+  border-bottom: 2rem solid #6E757C;
   margin-bottom: 25rem;
 }
 section.u4m-subscription-preferences form div.item div.checkbox-row span span {
@@ -6588,7 +6642,7 @@ section.u4m-drag-and-drop-area {
   margin: 100rem auto;
 }
 section.u4m-drag-and-drop-area form {
-  background-color: #edf0f2;
+  background-color: #dbdbdb;
   padding: 20rem 30rem;
   max-width: 765rem;
   margin: 30rem auto 30rem auto;
@@ -6601,27 +6655,26 @@ section.u4m-drag-and-drop-area form {
   }
 }
 section.u4m-drag-and-drop-area form h3 {
-  font-family: "Montserrat";
-  font-size: 24rem;
-  font-weight: bold;
-  letter-spacing: 0.25rem;
+  font-family: "Inter";
+  font-size: 19rem;
+  font-weight: 600;
   margin-bottom: 30rem;
-  line-height: 1.2;
+  line-height: 1;
 }
 @media (max-width: 1024px) {
   section.u4m-drag-and-drop-area form h3 {
-    font-size: 20rem;
+    font-size: 19rem;
   }
 }
 @media (max-width: 580px) {
   section.u4m-drag-and-drop-area form h3 {
-    font-size: 18rem;
+    font-size: 19rem;
     margin-bottom: 20rem;
   }
 }
 section.u4m-drag-and-drop-area form div.legal-consent-container p,
 section.u4m-drag-and-drop-area form div.legal-consent-container .hs-form-booleancheckbox label {
-  font-family: "Montserrat";
+  font-family: "Inter";
   font-size: 12rem;
   line-height: 1.6;
   letter-spacing: 0.35rem;
@@ -6680,7 +6733,7 @@ section.u4m-drag-and-drop-area form .input input[type=email] {
   margin-top: 2rem;
   margin-bottom: 20rem;
   font-size: 16rem;
-  background-color: #fff;
+  background-color: #ffffff;
   padding: 16rem;
   width: 100%;
   appearance: none;
@@ -6716,7 +6769,7 @@ section.u4m-drag-and-drop-area form.mixitup-multifilter .input input[type=email]
 section.u4m-drag-and-drop-area form .input input[type=number]::placeholder,
 section.u4m-drag-and-drop-area form .input input[type=tel]::placeholder,
 section.u4m-drag-and-drop-area form .input input[type=email]::placeholder {
-  color: #7c98b6;
+  color: #eeeeee;
 }
 section.u4m-drag-and-drop-area form.hs-form .input input[type=checkbox],
 section.u4m-drag-and-drop-area form.hs-form .input input[type=radio], section.u4m-drag-and-drop-area form.mixitup-multifilter .input input[type=checkbox],
@@ -6730,11 +6783,11 @@ section.u4m-drag-and-drop-area form.hs-form .input input select, section.u4m-dra
   margin-top: 2rem;
   margin-bottom: 20rem;
   font-size: 16rem;
-  background-color: #fff;
+  background-color: #ffffff;
 }
 section.u4m-drag-and-drop-area form.hs-form .input input[type=file], section.u4m-drag-and-drop-area form.mixitup-multifilter .input input[type=file], section.u4m-drag-and-drop-area form .input input[type=file] {
   font-size: 16rem;
-  font-family: "Montserrat";
+  font-family: "Inter";
   background-color: transparent;
   position: relative;
   font-weight: bold;
@@ -6750,7 +6803,7 @@ section.u4m-drag-and-drop-area form.hs-form .input select, section.u4m-drag-and-
   margin-top: 2rem;
   margin-bottom: 20rem;
   font-size: 16rem;
-  background-color: #fff;
+  background-color: #ffffff;
   padding: 16rem;
 }
 section.u4m-drag-and-drop-area form.hs-form .input + .hs-error-msgs, section.u4m-drag-and-drop-area form.mixitup-multifilter .input + .hs-error-msgs, section.u4m-drag-and-drop-area form .input + .hs-error-msgs {
@@ -6793,7 +6846,7 @@ section.u4m-drag-and-drop-area form.hs-form .input + .hs-error-msgs li:before, s
 }
 section.u4m-drag-and-drop-area form.hs-form .input + .hs-error-msgs li label, section.u4m-drag-and-drop-area form.mixitup-multifilter .input + .hs-error-msgs li label, section.u4m-drag-and-drop-area form .input + .hs-error-msgs li label {
   font-size: 12rem;
-  font-family: "Montserrat";
+  font-family: "Inter";
   text-transform: uppercase;
   letter-spacing: 1rem;
   display: inline-block;
@@ -6817,7 +6870,7 @@ section.u4m-drag-and-drop-area form.hs-form textarea, section.u4m-drag-and-drop-
   margin-bottom: 20rem;
   min-height: 100rem;
   font-size: 16rem;
-  background-color: #fff;
+  background-color: #ffffff;
   width: 100%;
 }
 section.u4m-drag-and-drop-area form.hs-form textarea.invalid, section.u4m-drag-and-drop-area form.mixitup-multifilter textarea.invalid, section.u4m-drag-and-drop-area form textarea.invalid {
@@ -7053,29 +7106,89 @@ section.u4m-drag-and-drop-area form.hs-form .form-columns-2 > div:last-of-type, 
 }
 section.u4m-drag-and-drop-area form.hs-form .hs-button, section.u4m-drag-and-drop-area form.mixitup-multifilter .hs-button, section.u4m-drag-and-drop-area form .hs-button {
   display: inline-block;
-  font-family: "Montserrat";
-  color: #fff;
-  background-color: #733BF7;
-  border: 0;
-  border-radius: 4rem;
-  padding: 15rem 40rem 15rem 40rem;
+  font-family: "Inter";
+  color: #ffffff;
+  background-color: #007C43;
+  border: 1px solid #007C43;
+  border-radius: 12rem;
+  padding: 11rem 24rem;
   margin: 20rem 0;
   transition: 0.1s ease-in;
-  text-transform: uppercase;
-  font-weight: bold;
-  font-size: 14rem;
-  line-height: 1.2;
-  letter-spacing: 0.25rem;
+  font-weight: 600;
+  font-size: 16rem;
+  line-height: 1;
   text-decoration: none;
   cursor: pointer;
   text-align: center;
-  box-shadow: 0rem 1rem 12rem 0 rgba(51, 71, 91, 0.1);
 }
 section.u4m-drag-and-drop-area form.hs-form .hs-button:hover, section.u4m-drag-and-drop-area form.hs-form .hs-button:focus, section.u4m-drag-and-drop-area form.mixitup-multifilter .hs-button:hover, section.u4m-drag-and-drop-area form.mixitup-multifilter .hs-button:focus, section.u4m-drag-and-drop-area form .hs-button:hover, section.u4m-drag-and-drop-area form .hs-button:focus {
-  background-color: #33475b;
-  color: #fff;
+  background-color: #ffffff;
+  color: #007C43;
 }
 
+.dnd_padd,
+.dnd-section {
+  padding: 80rem 0;
+}
+@media (max-width: 1024px) {
+  .dnd_padd,
+  .dnd-section {
+    padding: 60rem 0;
+  }
+}
+@media (max-width: 767px) {
+  .dnd_padd,
+  .dnd-section {
+    padding: 50rem 0;
+  }
+}
+@media (max-width: 580px) {
+  .dnd_padd,
+  .dnd-section {
+    padding: 40rem 0;
+  }
+}
+
+.dnd-section[class*=full-width],
+.dnd-section.dnd_padding {
+  padding: 0rem 0;
+}
+
+.page-center,
+.content-wrapper,
+.dnd-section > .row-fluid {
+  float: none;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1240rem;
+  padding-left: 20rem;
+  padding-right: 20rem;
+  margin: 0 auto;
+}
+
+.full-width,
+[class*=full-width-section].dnd-section > .row-fluid {
+  max-width: 100%;
+  padding: 0;
+}
+
+[class*=full-width-section].dnd-section > .row-fluid > .dnd-column {
+  padding: 0;
+}
+
+.flex-row,
+.flex_row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+@media (max-width: 768px) {
+  .dnd-section .row-fluid > .dnd-column,
+  .col {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
 .visually-hidden,
 .sr-only {
   clip: rect(0 0 0 0);
@@ -7095,7 +7208,7 @@ section.u4m-drag-and-drop-area form.hs-form .hs-button:hover, section.u4m-drag-a
   }
 }
 .skip-to-content-link {
-  background: #edf0f2;
+  background: #DBDBDB;
   height: 40rem;
   left: 50%;
   padding: 10rem;
@@ -7124,7 +7237,7 @@ section.u4m-blog-post {
   /*****************************************/
 }
 section.u4m-blog-post div.hero {
-  background-color: #edf0f2;
+  background-color: #DBDBDB;
   margin-bottom: 50rem;
   position: relative;
   padding-top: 105px;
@@ -7139,7 +7252,7 @@ section.u4m-blog-post div.hero div.share a {
   margin: 5rem;
 }
 section.u4m-blog-post div.hero div.share a:hover {
-  color: #33475b;
+  color: #000000;
 }
 @media (max-width: 1024px) {
   section.u4m-blog-post div.hero div.share {
@@ -7158,23 +7271,22 @@ section.u4m-blog-post div.hero div.content {
   max-width: 1000rem;
 }
 section.u4m-blog-post div.hero div.content h1.title {
-  font-family: "Montserrat";
-  font-size: 60rem;
-  font-weight: bold;
-  letter-spacing: 0.25rem;
+  font-family: "Inter";
+  font-size: 48rem;
+  font-weight: 600;
   margin-bottom: 30rem;
-  line-height: 1.2;
+  line-height: 1;
   margin-top: 0;
   margin: 0;
 }
 @media (max-width: 1024px) {
   section.u4m-blog-post div.hero div.content h1.title {
-    font-size: 48rem;
+    font-size: 30rem;
   }
 }
 @media (max-width: 580px) {
   section.u4m-blog-post div.hero div.content h1.title {
-    font-size: 38rem;
+    font-size: 28rem;
     margin-bottom: 20rem;
   }
 }
@@ -7196,7 +7308,7 @@ section.u4m-blog-post div.hero div.content div.author-wrap div.author-link a {
   font-weight: bold;
 }
 section.u4m-blog-post div.hero div.content div.author-wrap div.author-link a:hover {
-  color: #33475b;
+  color: #000000;
 }
 section.u4m-blog-post div.body {
   float: none;
@@ -7210,7 +7322,7 @@ section.u4m-blog-post div.body {
 section.u4m-blog-post div.body div.content p,
 section.u4m-blog-post div.body div.content ul,
 section.u4m-blog-post div.body div.content ol {
-  font-family: "Montserrat";
+  font-family: "Inter";
   font-size: 16rem;
   line-height: 1.6;
   letter-spacing: 0.25rem;
@@ -7224,93 +7336,88 @@ section.u4m-blog-post div.body div.content ol {
   }
 }
 section.u4m-blog-post div.body div.content h1 {
-  font-family: "Montserrat";
-  font-size: 60rem;
-  font-weight: bold;
-  letter-spacing: 0.25rem;
+  font-family: "Inter";
+  font-size: 48rem;
+  font-weight: 600;
   margin-bottom: 30rem;
-  line-height: 1.2;
+  line-height: 1;
   margin-top: 0;
 }
 @media (max-width: 1024px) {
   section.u4m-blog-post div.body div.content h1 {
-    font-size: 48rem;
+    font-size: 30rem;
   }
 }
 @media (max-width: 580px) {
   section.u4m-blog-post div.body div.content h1 {
-    font-size: 38rem;
+    font-size: 28rem;
     margin-bottom: 20rem;
   }
 }
 section.u4m-blog-post div.body div.content h2 {
-  font-family: "Montserrat";
-  font-size: 44rem;
-  font-weight: bold;
-  letter-spacing: 0.25rem;
+  font-family: "Inter";
+  font-size: 40rem;
+  font-weight: 600;
   margin-bottom: 30rem;
-  line-height: 1.2;
+  line-height: 1;
 }
 @media (max-width: 1024px) {
   section.u4m-blog-post div.body div.content h2 {
-    font-size: 38rem;
+    font-size: 28rem;
   }
 }
 @media (max-width: 580px) {
   section.u4m-blog-post div.body div.content h2 {
-    font-size: 32rem;
+    font-size: 25rem;
     margin-bottom: 20rem;
   }
 }
 section.u4m-blog-post div.body div.content h3 {
-  font-family: "Montserrat";
-  font-size: 38rem;
-  font-weight: bold;
-  letter-spacing: 0.25rem;
+  font-family: "Inter";
+  font-size: 33rem;
+  font-weight: 600;
   margin-bottom: 30rem;
-  line-height: 1.2;
+  line-height: 1;
 }
 @media (max-width: 1024px) {
   section.u4m-blog-post div.body div.content h3 {
-    font-size: 32rem;
+    font-size: 25rem;
   }
 }
 @media (max-width: 580px) {
   section.u4m-blog-post div.body div.content h3 {
-    font-size: 28rem;
+    font-size: 22rem;
     margin-bottom: 20rem;
   }
 }
 section.u4m-blog-post div.body div.content h4 {
-  font-family: "Montserrat";
-  font-size: 34rem;
-  font-weight: bold;
-  letter-spacing: 0.25rem;
+  font-family: "Inter";
+  font-size: 28rem;
+  font-weight: 600;
   margin-bottom: 30rem;
-  line-height: 1.2;
+  line-height: 1;
 }
 @media (max-width: 1024px) {
   section.u4m-blog-post div.body div.content h4 {
-    font-size: 28rem;
+    font-size: 22rem;
   }
 }
 @media (max-width: 580px) {
   section.u4m-blog-post div.body div.content h4 {
-    font-size: 24rem;
+    font-size: 20rem;
     margin-bottom: 20rem;
   }
 }
 section.u4m-blog-post div.body div.content h5 {
-  font-family: "Montserrat";
-  font-size: 30rem;
-  font-weight: bold;
-  letter-spacing: 0.25rem;
+  font-family: "Inter";
+  font-size: 23rem;
+  font-weight: 600;
   margin-bottom: 30rem;
-  line-height: 1.2;
+  line-height: 1;
 }
 @media (max-width: 1024px) {
   section.u4m-blog-post div.body div.content h5 {
-    font-size: 24rem;
+    font-size: 20rem;
   }
 }
 @media (max-width: 580px) {
@@ -7320,32 +7427,31 @@ section.u4m-blog-post div.body div.content h5 {
   }
 }
 section.u4m-blog-post div.body div.content h6 {
-  font-family: "Montserrat";
-  font-size: 24rem;
-  font-weight: bold;
-  letter-spacing: 0.25rem;
+  font-family: "Inter";
+  font-size: 19rem;
+  font-weight: 600;
   margin-bottom: 30rem;
-  line-height: 1.2;
+  line-height: 1;
 }
 @media (max-width: 1024px) {
   section.u4m-blog-post div.body div.content h6 {
-    font-size: 20rem;
+    font-size: 19rem;
   }
 }
 @media (max-width: 580px) {
   section.u4m-blog-post div.body div.content h6 {
-    font-size: 18rem;
+    font-size: 19rem;
     margin-bottom: 20rem;
   }
 }
 section.u4m-blog-post div.body div.content blockquote {
-  font-family: "Montserrat";
+  font-family: "Inter";
   font-size: 30rem;
   font-weight: bold;
-  line-height: 1.6180339888;
+  line-height: 1;
   letter-spacing: 1rem;
   margin: 50rem auto;
-  color: #733BF7;
+  color: #007C43;
   display: block;
   max-width: 90%;
 }
@@ -7355,13 +7461,13 @@ section.u4m-blog-post div.body div.content blockquote {
   }
 }
 section.u4m-blog-post div.body div.content blockquote p {
-  font-family: "Montserrat";
+  font-family: "Inter";
   font-size: 30rem;
   font-weight: bold;
-  line-height: 1.6180339888;
+  line-height: 1;
   letter-spacing: 1rem;
   margin: 50rem auto;
-  color: #733BF7;
+  color: #007C43;
   display: block;
   max-width: 90%;
 }
@@ -7374,7 +7480,7 @@ section.u4m-blog-post div.body div.content a {
   font-weight: bold;
 }
 section.u4m-blog-post div.body div.content a:hover {
-  color: #33475b;
+  color: #000000;
 }
 section.u4m-blog-post div.author {
   float: none;
@@ -7412,17 +7518,16 @@ section.u4m-blog-post div.author div.meta div.avatar {
   }
 }
 section.u4m-blog-post div.author div.bio .name {
-  font-family: "Montserrat";
-  font-size: 30rem;
-  font-weight: bold;
-  letter-spacing: 0.25rem;
+  font-family: "Inter";
+  font-size: 23rem;
+  font-weight: 600;
   margin-bottom: 30rem;
-  line-height: 1.2;
+  line-height: 1;
   margin: 0;
 }
 @media (max-width: 1024px) {
   section.u4m-blog-post div.author div.bio .name {
-    font-size: 24rem;
+    font-size: 20rem;
   }
 }
 @media (max-width: 580px) {
@@ -7432,7 +7537,7 @@ section.u4m-blog-post div.author div.bio .name {
   }
 }
 section.u4m-blog-post div.author div.bio p {
-  font-family: "Montserrat";
+  font-family: "Inter";
   font-size: 13rem;
   line-height: 1.6;
   letter-spacing: 0.35rem;
@@ -7445,7 +7550,7 @@ section.u4m-blog-post div.author div.bio p {
   }
 }
 section.u4m-blog-post div.author div.bio .social .label {
-  font-family: "Montserrat";
+  font-family: "Inter";
   font-size: 14rem;
   line-height: 1.6;
   letter-spacing: 0.35rem;
@@ -7458,7 +7563,7 @@ section.u4m-blog-post div.author div.bio .social .label {
 }
 @media (max-width: 580px) {
   section.u4m-blog-post div.author div.bio .social .label {
-    font-family: "Montserrat";
+    font-family: "Inter";
     font-size: 12rem;
     line-height: 1.6;
     letter-spacing: 0.35rem;
@@ -7484,12 +7589,11 @@ section.u4m-blog-post div.comments {
   margin-bottom: 100rem;
 }
 section.u4m-blog-post div.comments h2.heading {
-  font-family: "Montserrat";
-  font-size: 38rem;
-  font-weight: bold;
-  letter-spacing: 0.25rem;
+  font-family: "Inter";
+  font-size: 33rem;
+  font-weight: 600;
   margin-bottom: 30rem;
-  line-height: 1.2;
+  line-height: 1;
   float: none;
   margin-left: auto;
   margin-right: auto;
@@ -7501,12 +7605,12 @@ section.u4m-blog-post div.comments h2.heading {
 }
 @media (max-width: 1024px) {
   section.u4m-blog-post div.comments h2.heading {
-    font-size: 32rem;
+    font-size: 25rem;
   }
 }
 @media (max-width: 580px) {
   section.u4m-blog-post div.comments h2.heading {
-    font-size: 28rem;
+    font-size: 22rem;
     margin-bottom: 20rem;
   }
 }
@@ -7521,7 +7625,7 @@ section.u4m-blog-post div.comments div.content {
   margin-top: 50rem;
 }
 section.u4m-blog-post div.comments div.content form {
-  background-color: #edf0f2;
+  background-color: #dbdbdb;
   padding: 20rem 30rem;
   max-width: 765rem;
   margin: 30rem auto 30rem auto;
@@ -7534,27 +7638,26 @@ section.u4m-blog-post div.comments div.content form {
   }
 }
 section.u4m-blog-post div.comments div.content form h3 {
-  font-family: "Montserrat";
-  font-size: 24rem;
-  font-weight: bold;
-  letter-spacing: 0.25rem;
+  font-family: "Inter";
+  font-size: 19rem;
+  font-weight: 600;
   margin-bottom: 30rem;
-  line-height: 1.2;
+  line-height: 1;
 }
 @media (max-width: 1024px) {
   section.u4m-blog-post div.comments div.content form h3 {
-    font-size: 20rem;
+    font-size: 19rem;
   }
 }
 @media (max-width: 580px) {
   section.u4m-blog-post div.comments div.content form h3 {
-    font-size: 18rem;
+    font-size: 19rem;
     margin-bottom: 20rem;
   }
 }
 section.u4m-blog-post div.comments div.content form div.legal-consent-container p,
 section.u4m-blog-post div.comments div.content form div.legal-consent-container .hs-form-booleancheckbox label {
-  font-family: "Montserrat";
+  font-family: "Inter";
   font-size: 12rem;
   line-height: 1.6;
   letter-spacing: 0.35rem;
@@ -7613,7 +7716,7 @@ section.u4m-blog-post div.comments div.content form .input input[type=email] {
   margin-top: 2rem;
   margin-bottom: 20rem;
   font-size: 16rem;
-  background-color: #fff;
+  background-color: #ffffff;
   padding: 16rem;
   width: 100%;
   appearance: none;
@@ -7649,7 +7752,7 @@ section.u4m-blog-post div.comments div.content form.mixitup-multifilter .input i
 section.u4m-blog-post div.comments div.content form .input input[type=number]::placeholder,
 section.u4m-blog-post div.comments div.content form .input input[type=tel]::placeholder,
 section.u4m-blog-post div.comments div.content form .input input[type=email]::placeholder {
-  color: #7c98b6;
+  color: #eeeeee;
 }
 section.u4m-blog-post div.comments div.content form.hs-form .input input[type=checkbox],
 section.u4m-blog-post div.comments div.content form.hs-form .input input[type=radio], section.u4m-blog-post div.comments div.content form.mixitup-multifilter .input input[type=checkbox],
@@ -7663,11 +7766,11 @@ section.u4m-blog-post div.comments div.content form.hs-form .input input select,
   margin-top: 2rem;
   margin-bottom: 20rem;
   font-size: 16rem;
-  background-color: #fff;
+  background-color: #ffffff;
 }
 section.u4m-blog-post div.comments div.content form.hs-form .input input[type=file], section.u4m-blog-post div.comments div.content form.mixitup-multifilter .input input[type=file], section.u4m-blog-post div.comments div.content form .input input[type=file] {
   font-size: 16rem;
-  font-family: "Montserrat";
+  font-family: "Inter";
   background-color: transparent;
   position: relative;
   font-weight: bold;
@@ -7683,7 +7786,7 @@ section.u4m-blog-post div.comments div.content form.hs-form .input select, secti
   margin-top: 2rem;
   margin-bottom: 20rem;
   font-size: 16rem;
-  background-color: #fff;
+  background-color: #ffffff;
   padding: 16rem;
 }
 section.u4m-blog-post div.comments div.content form.hs-form .input + .hs-error-msgs, section.u4m-blog-post div.comments div.content form.mixitup-multifilter .input + .hs-error-msgs, section.u4m-blog-post div.comments div.content form .input + .hs-error-msgs {
@@ -7726,7 +7829,7 @@ section.u4m-blog-post div.comments div.content form.hs-form .input + .hs-error-m
 }
 section.u4m-blog-post div.comments div.content form.hs-form .input + .hs-error-msgs li label, section.u4m-blog-post div.comments div.content form.mixitup-multifilter .input + .hs-error-msgs li label, section.u4m-blog-post div.comments div.content form .input + .hs-error-msgs li label {
   font-size: 12rem;
-  font-family: "Montserrat";
+  font-family: "Inter";
   text-transform: uppercase;
   letter-spacing: 1rem;
   display: inline-block;
@@ -7750,7 +7853,7 @@ section.u4m-blog-post div.comments div.content form.hs-form textarea, section.u4
   margin-bottom: 20rem;
   min-height: 100rem;
   font-size: 16rem;
-  background-color: #fff;
+  background-color: #ffffff;
   width: 100%;
 }
 section.u4m-blog-post div.comments div.content form.hs-form textarea.invalid, section.u4m-blog-post div.comments div.content form.mixitup-multifilter textarea.invalid, section.u4m-blog-post div.comments div.content form textarea.invalid {
@@ -7986,51 +8089,45 @@ section.u4m-blog-post div.comments div.content form.hs-form .form-columns-2 > di
 }
 section.u4m-blog-post div.comments div.content form.hs-form .hs-button, section.u4m-blog-post div.comments div.content form.mixitup-multifilter .hs-button, section.u4m-blog-post div.comments div.content form .hs-button {
   display: inline-block;
-  font-family: "Montserrat";
-  color: #fff;
-  background-color: #733BF7;
-  border: 0;
-  border-radius: 4rem;
-  padding: 15rem 40rem 15rem 40rem;
+  font-family: "Inter";
+  color: #ffffff;
+  background-color: #007C43;
+  border: 1px solid #007C43;
+  border-radius: 12rem;
+  padding: 11rem 24rem;
   margin: 20rem 0;
   transition: 0.1s ease-in;
-  text-transform: uppercase;
-  font-weight: bold;
-  font-size: 14rem;
-  line-height: 1.2;
-  letter-spacing: 0.25rem;
+  font-weight: 600;
+  font-size: 16rem;
+  line-height: 1;
   text-decoration: none;
   cursor: pointer;
   text-align: center;
-  box-shadow: 0rem 1rem 12rem 0 rgba(51, 71, 91, 0.1);
 }
 section.u4m-blog-post div.comments div.content form.hs-form .hs-button:hover, section.u4m-blog-post div.comments div.content form.hs-form .hs-button:focus, section.u4m-blog-post div.comments div.content form.mixitup-multifilter .hs-button:hover, section.u4m-blog-post div.comments div.content form.mixitup-multifilter .hs-button:focus, section.u4m-blog-post div.comments div.content form .hs-button:hover, section.u4m-blog-post div.comments div.content form .hs-button:focus {
-  background-color: #33475b;
-  color: #fff;
+  background-color: #ffffff;
+  color: #007C43;
 }
 section.u4m-blog-post div.comments div.content form .hs-button {
   display: inline-block;
-  font-family: "Montserrat";
-  color: #fff;
-  background-color: #733BF7;
-  border: 0;
-  border-radius: 4rem;
-  padding: 15rem 40rem 15rem 40rem;
+  font-family: "Inter";
+  color: #ffffff;
+  background-color: #007C43;
+  border: 1px solid #007C43;
+  border-radius: 12rem;
+  padding: 11rem 24rem;
   margin: 20rem 0;
   transition: 0.1s ease-in;
-  text-transform: uppercase;
-  font-weight: bold;
-  font-size: 14rem;
-  line-height: 1.2;
-  letter-spacing: 0.25rem;
+  font-weight: 600;
+  font-size: 16rem;
+  line-height: 1;
   text-decoration: none;
   cursor: pointer;
   text-align: center;
-  box-shadow: 0rem 1rem 12rem 0 rgba(51, 71, 91, 0.1);
 }
 section.u4m-blog-post div.comments div.content form .hs-button:hover, section.u4m-blog-post div.comments div.content form .hs-button:focus {
-  background-color: #33475b;
-  color: #fff;
+  background-color: #ffffff;
+  color: #007C43;
 }
 
 @keyframes fadeIn1 {

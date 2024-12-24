@@ -17,8 +17,8 @@ html {
 }
 
 section.u4m-subscribe {
-  background-color: #33475b;
-  color: #fff;
+  background-color: #000000;
+  color: #ffffff;
   padding: 50px 0;
   margin: 0 20px 20px;
   border-radius: 5px;
@@ -40,7 +40,7 @@ section.u4m-subscribe div.inner .right {
 }
 section.u4m-subscribe div.inner .left form,
 section.u4m-subscribe div.inner .right form {
-  background-color: #edf0f2;
+  background-color: #dbdbdb;
   padding: 20rem 30rem;
   max-width: 765rem;
   margin: 30rem auto 30rem auto;
@@ -62,23 +62,22 @@ section.u4m-subscribe div.inner .right form {
 }
 section.u4m-subscribe div.inner .left form h3,
 section.u4m-subscribe div.inner .right form h3 {
-  font-family: "Montserrat";
-  font-size: 24rem;
-  font-weight: bold;
-  letter-spacing: 0.25rem;
+  font-family: "Inter";
+  font-size: 19rem;
+  font-weight: 600;
   margin-bottom: 30rem;
-  line-height: 1.2;
+  line-height: 1;
 }
 @media (max-width: 1024px) {
   section.u4m-subscribe div.inner .left form h3,
   section.u4m-subscribe div.inner .right form h3 {
-    font-size: 20rem;
+    font-size: 19rem;
   }
 }
 @media (max-width: 580px) {
   section.u4m-subscribe div.inner .left form h3,
   section.u4m-subscribe div.inner .right form h3 {
-    font-size: 18rem;
+    font-size: 19rem;
     margin-bottom: 20rem;
   }
 }
@@ -86,7 +85,7 @@ section.u4m-subscribe div.inner .left form div.legal-consent-container p,
 section.u4m-subscribe div.inner .left form div.legal-consent-container .hs-form-booleancheckbox label,
 section.u4m-subscribe div.inner .right form div.legal-consent-container p,
 section.u4m-subscribe div.inner .right form div.legal-consent-container .hs-form-booleancheckbox label {
-  font-family: "Montserrat";
+  font-family: "Inter";
   font-size: 12rem;
   line-height: 1.6;
   letter-spacing: 0.35rem;
@@ -177,7 +176,7 @@ section.u4m-subscribe div.inner .right form .input input[type=email] {
   margin-top: 2rem;
   margin-bottom: 20rem;
   font-size: 16rem;
-  background-color: #fff;
+  background-color: #ffffff;
   padding: 16rem;
   width: 100%;
   appearance: none;
@@ -249,7 +248,7 @@ section.u4m-subscribe div.inner .right form .input input[type=text]::placeholder
 section.u4m-subscribe div.inner .right form .input input[type=number]::placeholder,
 section.u4m-subscribe div.inner .right form .input input[type=tel]::placeholder,
 section.u4m-subscribe div.inner .right form .input input[type=email]::placeholder {
-  color: #7c98b6;
+  color: #eeeeee;
 }
 section.u4m-subscribe div.inner .left form.hs-form .input input[type=checkbox],
 section.u4m-subscribe div.inner .left form.hs-form .input input[type=radio], section.u4m-subscribe div.inner .left form.mixitup-multifilter .input input[type=checkbox],
@@ -272,14 +271,14 @@ section.u4m-subscribe div.inner .right form .input input select {
   margin-top: 2rem;
   margin-bottom: 20rem;
   font-size: 16rem;
-  background-color: #fff;
+  background-color: #ffffff;
 }
 section.u4m-subscribe div.inner .left form.hs-form .input input[type=file], section.u4m-subscribe div.inner .left form.mixitup-multifilter .input input[type=file], section.u4m-subscribe div.inner .left form .input input[type=file],
 section.u4m-subscribe div.inner .right form.hs-form .input input[type=file],
 section.u4m-subscribe div.inner .right form.mixitup-multifilter .input input[type=file],
 section.u4m-subscribe div.inner .right form .input input[type=file] {
   font-size: 16rem;
-  font-family: "Montserrat";
+  font-family: "Inter";
   background-color: transparent;
   position: relative;
   font-weight: bold;
@@ -298,7 +297,7 @@ section.u4m-subscribe div.inner .right form .input select {
   margin-top: 2rem;
   margin-bottom: 20rem;
   font-size: 16rem;
-  background-color: #fff;
+  background-color: #ffffff;
   padding: 16rem;
 }
 section.u4m-subscribe div.inner .left form.hs-form .input + .hs-error-msgs, section.u4m-subscribe div.inner .left form.mixitup-multifilter .input + .hs-error-msgs, section.u4m-subscribe div.inner .left form .input + .hs-error-msgs,
@@ -356,7 +355,7 @@ section.u4m-subscribe div.inner .right form.hs-form .input + .hs-error-msgs li l
 section.u4m-subscribe div.inner .right form.mixitup-multifilter .input + .hs-error-msgs li label,
 section.u4m-subscribe div.inner .right form .input + .hs-error-msgs li label {
   font-size: 12rem;
-  font-family: "Montserrat";
+  font-family: "Inter";
   text-transform: uppercase;
   letter-spacing: 1rem;
   display: inline-block;
@@ -389,7 +388,7 @@ section.u4m-subscribe div.inner .right form textarea {
   margin-bottom: 20rem;
   min-height: 100rem;
   font-size: 16rem;
-  background-color: #fff;
+  background-color: #ffffff;
   width: 100%;
 }
 section.u4m-subscribe div.inner .left form.hs-form textarea.invalid, section.u4m-subscribe div.inner .left form.mixitup-multifilter textarea.invalid, section.u4m-subscribe div.inner .left form textarea.invalid,
@@ -829,23 +828,20 @@ section.u4m-subscribe div.inner .right form.hs-form .hs-button,
 section.u4m-subscribe div.inner .right form.mixitup-multifilter .hs-button,
 section.u4m-subscribe div.inner .right form .hs-button {
   display: inline-block;
-  font-family: "Montserrat";
-  color: #fff;
-  background-color: #733BF7;
-  border: 0;
-  border-radius: 4rem;
-  padding: 15rem 40rem 15rem 40rem;
+  font-family: "Inter";
+  color: #ffffff;
+  background-color: #007C43;
+  border: 1px solid #007C43;
+  border-radius: 12rem;
+  padding: 11rem 24rem;
   margin: 20rem 0;
   transition: 0.1s ease-in;
-  text-transform: uppercase;
-  font-weight: bold;
-  font-size: 14rem;
-  line-height: 1.2;
-  letter-spacing: 0.25rem;
+  font-weight: 600;
+  font-size: 16rem;
+  line-height: 1;
   text-decoration: none;
   cursor: pointer;
   text-align: center;
-  box-shadow: 0rem 1rem 12rem 0 rgba(51, 71, 91, 0.1);
 }
 section.u4m-subscribe div.inner .left form.hs-form .hs-button:hover, section.u4m-subscribe div.inner .left form.hs-form .hs-button:focus, section.u4m-subscribe div.inner .left form.mixitup-multifilter .hs-button:hover, section.u4m-subscribe div.inner .left form.mixitup-multifilter .hs-button:focus, section.u4m-subscribe div.inner .left form .hs-button:hover, section.u4m-subscribe div.inner .left form .hs-button:focus,
 section.u4m-subscribe div.inner .right form.hs-form .hs-button:hover,
@@ -854,8 +850,8 @@ section.u4m-subscribe div.inner .right form.mixitup-multifilter .hs-button:hover
 section.u4m-subscribe div.inner .right form.mixitup-multifilter .hs-button:focus,
 section.u4m-subscribe div.inner .right form .hs-button:hover,
 section.u4m-subscribe div.inner .right form .hs-button:focus {
-  background-color: #33475b;
-  color: #fff;
+  background-color: #ffffff;
+  color: #007C43;
 }
 section.u4m-subscribe div.inner .left form .hs-email,
 section.u4m-subscribe div.inner .right form .hs-email {
@@ -883,7 +879,7 @@ section.u4m-subscribe div.inner .right form input[type=submit].hs-button {
 section.u4m-subscribe div.inner .left form input[type=submit].hs-button:hover,
 section.u4m-subscribe div.inner .right form input[type=submit].hs-button:hover {
   opacity: 0.95;
-  background-color: #733BF7;
+  background-color: #007C43;
 }
 @media (max-width: 1024px) {
   section.u4m-subscribe div.inner .left form input[type=submit].hs-button,
@@ -898,25 +894,25 @@ section.u4m-subscribe div.inner .right form input[type=submit].hs-button:hover {
     flex-direction: column;
   }
 }
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   section.u4m-subscribe div.inner .left form,
   section.u4m-subscribe div.inner .right form {
     margin: 50px 0 0;
     padding: 0;
   }
 }
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   section.u4m-subscribe div.inner .left,
   section.u4m-subscribe div.inner .right {
     width: 100%;
   }
 }
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   section.u4m-subscribe div.inner {
     flex-direction: column;
   }
 }
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   section.u4m-subscribe {
     padding: 20px 0;
   }

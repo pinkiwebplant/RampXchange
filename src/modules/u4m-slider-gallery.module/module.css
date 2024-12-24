@@ -20,19 +20,19 @@ section.u4m-slider-gallery {
   margin: 100rem auto;
 }
 section.u4m-slider-gallery.reverse-text {
-  color: #fff;
+  color: #ffffff;
 }
 section.u4m-slider-gallery.additional-content {
   padding: 100rem 20rem;
 }
 section.u4m-slider-gallery.black-bg-section {
-  background-color: #33475b;
+  background-color: #000000;
 }
 section.u4m-slider-gallery.black-bg-section div.inner-wrap .optional-headline {
-  color: #fff;
+  color: #ffffff;
 }
 section.u4m-slider-gallery.black-bg-section div.inner-wrap div.container span p {
-  color: #fff;
+  color: #ffffff;
 }
 section.u4m-slider-gallery div.container {
   float: none;
@@ -49,26 +49,25 @@ section.u4m-slider-gallery div.container .intro {
   max-width: 1240rem;
   padding-left: 20rem;
   padding-right: 20rem;
-  max-width: 900rem;
+  max-width: 1000rem;
   padding: 0;
 }
 section.u4m-slider-gallery div.container .intro .optional-headline {
-  font-family: "Montserrat";
-  font-size: 44rem;
-  font-weight: bold;
-  letter-spacing: 0.25rem;
+  font-family: "Inter";
+  font-size: 40rem;
+  font-weight: 600;
   margin-bottom: 30rem;
-  line-height: 1.2;
+  line-height: 1;
   text-align: center;
 }
 @media (max-width: 1024px) {
   section.u4m-slider-gallery div.container .intro .optional-headline {
-    font-size: 38rem;
+    font-size: 28rem;
   }
 }
 @media (max-width: 580px) {
   section.u4m-slider-gallery div.container .intro .optional-headline {
-    font-size: 32rem;
+    font-size: 25rem;
     margin-bottom: 20rem;
   }
 }
@@ -98,7 +97,7 @@ section.u4m-slider-gallery div.container .splide .splide__track .splide__list .s
 section.u4m-slider-gallery div.container .splide .splide__track .splide__list .splide__slide .popout:hover {
   cursor: pointer;
   transform: scale(1.1);
-  box-shadow: 0rem 1rem 12rem 0 rgba(51, 71, 91, 0.1);
+  box-shadow: 0rem 1rem 12rem 0 rgba(0, 0, 0, 0.1);
 }
 section.u4m-slider-gallery div.container .splide .splide__track .splide__list .splide__slide .popout:hover .play-button {
   background: rgba(255, 255, 255, 0.8);
@@ -128,7 +127,7 @@ section.u4m-slider-gallery div.container .splide .splide__track .splide__list .s
   max-height: 200rem;
   object-fit: cover;
 }
-@media (min-width: 1024px) {
+@media (min-width: 1025px) {
   section.u4m-slider-gallery div.container .splide .splide__track .splide__list .splide__slide.showing-8 .play-button, section.u4m-slider-gallery div.container .splide .splide__track .splide__list .splide__slide.showing-7 .play-button, section.u4m-slider-gallery div.container .splide .splide__track .splide__list .splide__slide.showing-6 .play-button {
     width: 35rem;
     height: 35rem;
@@ -145,14 +144,14 @@ section.u4m-slider-gallery div.container .splide .splide__track .splide__list .s
   transform: scale(1.06);
 }
 section.u4m-slider-gallery div.container .splide .splide__arrows .splide__arrow {
-  background: #fff;
+  background: #ffffff;
   opacity: 1;
 }
 section.u4m-slider-gallery div.container .splide .splide__arrows .splide__arrow:hover svg {
   fill: #00a4bd;
 }
 section.u4m-slider-gallery div.container .splide .splide__arrows .splide__arrow svg {
-  fill: #33475b;
+  fill: #000000;
 }
 section.u4m-slider-gallery div.container .splide .splide__arrows .splide__arrow.splide__arrow--prev {
   left: -20rem;
