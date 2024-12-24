@@ -40,6 +40,7 @@ h4,
 h5,
 h6 {
   font-weight: normal;
+  margin-top: 0;
 }
 
 h1 {
@@ -510,9 +511,106 @@ section[class*='u4m-'] {
 
 .hs-button {
   @include button;
- 
-  &.secondary {
-    @include secondarybutton;
-  } 
+  
 }
+.sec-btn {
+  @include secondarybutton;
+} 
+.sec-btn {
+  @include arrowbutton;
+} 
+.intro_content {
+  text-align: center;
+  margin-bottom: 40rem;
+  max-width: $introContainer;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto; 
+  padding: 0 20px; 
+
+  .eyebrow_text {
+    @include eyebrow;
+    margin-bottom: 8rem;
+  }
+
+  .intro_title {
+    margin-bottom: 20rem;
+  }
+
+  .intro_desc {
+    margin-bottom: 0;
+
+    p:last-child {
+      margin: 0;
+    }
+  }
+}
+.intro_btn_wrap {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px 36px;
+  align-items: center;
+}
+ 
+
+.reverse-text {
+  color: $white;
+
+  .eyebrow_text,
+  .intro_desc,
+  .intro_title {
+    color: $white;
+  }
+  :is(h1,h2,h3,h4,h5,h6){
+    color: $white;
+  }
+  .arrow-link:not(:hover) {
+    color: $white;
+  }
+}
+
+// bg color
+.forest_green {
+  background-color: $action1;
+} 
+.dark_teal {
+  background-color: $heading;
+}
+.pale_green {
+  background-color: $digitalgreen;
+}
+.silver_gray {
+  background-color: $gray1;
+}
+.charcoal_gray {
+  background-color: $gray2;
+}
+.golden_brown {
+  background-color: $bronze;
+}
+.soft_white {
+  background-color: $airwhite;
+}
+.white_bg {
+  background-color: $white;
+}
+.bg_image {
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
+// gradient Color
+
+.gradient1 {
+  background-image: $gradient1;
+}
+.gradient2 {
+  background-image: $gradient2;
+}
+.gradient3 {
+  background-image: $gradient3;
+}  
 

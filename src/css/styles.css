@@ -2990,6 +2990,7 @@ h4,
 h5,
 h6 {
   font-weight: normal;
+  margin-top: 0;
 }
 
 h1 {
@@ -3654,7 +3655,8 @@ section[class*=u4m-] {
   background-color: #ffffff;
   color: #007C43;
 }
-.hs-button.secondary {
+
+.sec-btn {
   display: inline-block;
   font-family: "Inter";
   color: #ffffff;
@@ -3673,13 +3675,114 @@ section[class*=u4m-] {
   color: #007C43;
   background-color: #ffffff;
 }
-.hs-button.secondary:hover, .hs-button.secondary:focus {
+.sec-btn:hover, .sec-btn:focus {
   background-color: #ffffff;
   color: #007C43;
 }
-.hs-button.secondary:hover, .hs-button.secondary:focus {
+.sec-btn:hover, .sec-btn:focus {
   background-color: #007C43;
   color: #ffffff;
+}
+
+.intro_content {
+  text-align: center;
+  margin-bottom: 40rem;
+  max-width: 840rem;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 20px;
+}
+.intro_content .eyebrow_text {
+  font-family: "Inter";
+  font-size: 13rem;
+  font-weight: 500;
+  line-height: 1;
+  display: block;
+  margin-bottom: 10rem;
+  margin-bottom: 8rem;
+}
+.intro_content .intro_title {
+  margin-bottom: 20rem;
+}
+.intro_content .intro_desc {
+  margin-bottom: 0;
+}
+.intro_content .intro_desc p:last-child {
+  margin: 0;
+}
+
+.intro_btn_wrap {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px 36px;
+  align-items: center;
+}
+
+.reverse-text {
+  color: #ffffff;
+}
+.reverse-text .eyebrow_text,
+.reverse-text .intro_desc,
+.reverse-text .intro_title {
+  color: #ffffff;
+}
+.reverse-text :is(h1, h2, h3, h4, h5, h6) {
+  color: #ffffff;
+}
+.reverse-text .arrow-link:not(:hover) {
+  color: #ffffff;
+}
+
+.forest_green {
+  background-color: #007C43;
+}
+
+.dark_teal {
+  background-color: #213944;
+}
+
+.pale_green {
+  background-color: #B5DDA5;
+}
+
+.silver_gray {
+  background-color: #DBDBDB;
+}
+
+.charcoal_gray {
+  background-color: #6E757C;
+}
+
+.golden_brown {
+  background-color: #C49E5B;
+}
+
+.soft_white {
+  background-color: #F7F8F6;
+}
+
+.white_bg {
+  background-color: #ffffff;
+}
+
+.bg_image {
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.gradient1 {
+  background-image: linear-gradient(278.27deg, #315363 0%, #213944 100%);
+}
+
+.gradient2 {
+  background-image: linear-gradient(278.27deg, #EEEEEE 0%, #DBDBDB 100%);
+}
+
+.gradient3 {
+  background-image: linear-gradient(360deg, rgba(0, 124, 67, 0.07) 0.01%, rgba(181, 221, 165, 0.07) 99.97%);
 }
 
 section.u4m-404-error,

@@ -33,6 +33,13 @@
     color: $white;
   }
 }
+@mixin arrowbutton {  
+  color: $action1; 
+  &:hover,
+  &:focus { 
+    color: $heading;
+  }
+}
 
 // 
 @mixin buttonSmall {

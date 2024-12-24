@@ -175,3 +175,40 @@
   display: block;
   margin-bottom: 10rem;
 }
+@mixin size24 { 
+  font-size: 24rem;
+}
+@mixin size22 { 
+  font-size: 22rem;
+}
+@mixin size22 { 
+  font-size: 21rem;
+}
+@mixin size20 { 
+  font-size: 20rem;
+}
+@mixin size19 { 
+  font-size: 19rem;
+}
+@mixin size18 { 
+  font-size: 18rem;
+}
+
+@mixin size15 { 
+  font-size: 15rem;
+}
+@mixin size14 { 
+  font-size: 14rem;
+}
+@mixin size13 { 
+  font-size: 13rem;
+}
+@mixin size12 { 
+  font-size: 12rem;
+}
+@mixin size11 { 
+  font-size: 11rem;
+}
+@mixin size10 { 
+  font-size: 10rem;
+}
