@@ -77,8 +77,8 @@ section.u4m-cards .link a {
   display: inline-block;
   font-family: "Inter";
   color: #ffffff;
-  background-color: #007C43;
-  border: 1px solid #007C43;
+  background-color: #007c43;
+  border: 1px solid #007c43;
   border-radius: 12rem;
   padding: 11rem 24rem;
   margin: 20rem 0;
@@ -92,7 +92,7 @@ section.u4m-cards .link a {
 }
 section.u4m-cards .link a:hover, section.u4m-cards .link a:focus {
   background-color: #ffffff;
-  color: #007C43;
+  color: #007c43;
 }
 section.u4m-cards .wrapper {
   float: none;
@@ -134,7 +134,7 @@ section.u4m-cards .wrapper div.card {
   margin: 20rem;
   padding: 20rem;
   box-shadow: 0rem 1rem 12rem 0 rgba(0, 0, 0, 0.1);
-  border: 1px solid #DBDBDB;
+  border: 1px solid #dbdbdb;
   background-color: #ffffff;
   flex-basis: calc(33.333% - 40rem);
   flex-grow: 1;
@@ -158,8 +158,8 @@ section.u4m-cards .wrapper div.card button {
   display: inline-block;
   font-family: "Inter";
   color: #ffffff;
-  background-color: #007C43;
-  border: 1px solid #007C43;
+  background-color: #007c43;
+  border: 1px solid #007c43;
   border-radius: 12rem;
   padding: 11rem 24rem;
   margin: 20rem 0;
@@ -176,7 +176,7 @@ section.u4m-cards .wrapper div.card button {
 }
 section.u4m-cards .wrapper div.card button:hover, section.u4m-cards .wrapper div.card button:focus {
   background-color: #ffffff;
-  color: #007C43;
+  color: #007c43;
 }
 section.u4m-cards .wrapper div.card .image {
   min-height: 100rem;
@@ -186,12 +186,13 @@ section.u4m-cards .wrapper div.card .image {
 section.u4m-cards .wrapper div.card .image.filled {
   width: 100%;
   min-height: 203rem;
-  border-bottom: 1rem solid #DBDBDB;
+  border-bottom: 1rem solid #dbdbdb;
 }
 section.u4m-cards .wrapper div.card .image.filled img {
   height: 100%;
   width: 100%;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
   margin: 0;
 }
 section.u4m-cards .wrapper div.card .image a {
@@ -231,7 +232,7 @@ section.u4m-cards .wrapper div.card .content span.eyebrow {
   line-height: 1.6;
   letter-spacing: 0.35rem;
   margin-bottom: 20rem;
-  color: #EEEEEE;
+  color: #eeeeee;
   font-weight: bold;
   text-transform: uppercase;
   margin-bottom: 0;
@@ -287,8 +288,8 @@ section.u4m-cards .wrapper div.card .content span.url a {
   display: inline-block;
   font-family: "Inter";
   color: #ffffff;
-  background-color: #007C43;
-  border: 1px solid #007C43;
+  background-color: #007c43;
+  border: 1px solid #007c43;
   border-radius: 12rem;
   padding: 11rem 24rem;
   margin: 20rem 0;
@@ -307,7 +308,7 @@ section.u4m-cards .wrapper div.card .content span.cta a:hover, section.u4m-cards
 section.u4m-cards .wrapper div.card .content span.url a:hover,
 section.u4m-cards .wrapper div.card .content span.url a:focus {
   background-color: #ffffff;
-  color: #007C43;
+  color: #007c43;
 }
 section.u4m-cards .wrapper.two div.card {
   flex-basis: calc(50% - 40rem);

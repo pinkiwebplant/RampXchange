@@ -1,39 +1,44 @@
 // Colors - For transparency use rgba($action1, 0.5) = 50% opaque
-$action1: #007C43;
+$action1: #007c43;
 $action2: #00a4bd;
 $black: #000000;
-$white: #ffffff; 
-$digitalgreen: #B5DDA5;
+$white: #ffffff;
+$digitalgreen: #b5dda5;
 $heading: #213944;
-$gray1: #DBDBDB;
-$gray2: #6E757C;
-$bronze:#C49E5B;
-$airwhite: #F7F8F6;
+$gray1: #dbdbdb;
+$gray2: #6e757c;
+$bronze: #c49e5b;
+$airwhite: #f7f8f6;
 $statblue: #315363;
-$gray3: #EEEEEE;
-$gradientbg3: #F7F8F6; 
+$gray3: #eeeeee;
+$gradientbg3: #f7f8f6;
+$lightGrayishBlue: #b0b7ba;
 
 $gradient1: linear-gradient(278.27deg, $statblue 0%, $heading 100%);
 $gradient2: linear-gradient(278.27deg, $gray3 0%, $gray1 100%);
-$gradient3: linear-gradient(360deg, rgba($action1, 0.07) 0.01%, rgba($digitalgreen, 0.07) 99.97%);
+$gradient3: linear-gradient(
+  360deg,
+  rgba($action1, 0.07) 0.01%,
+  rgba($digitalgreen, 0.07) 99.97%
+);
 $gradient4: linear-gradient(341.11deg, $statblue 12.77%, $heading 87.28%);
 $gradient5: linear-gradient(180deg, $statblue 0%, $heading 100%);
 
-$font1: 'Inter';
+$font1: "Inter";
 $baseFontSize: 16rem;
 $baseLineHeight: 1; // Golden ratio
 // Border Radius
 $border1: 12rem;
 $border2: 5rem;
 $border3: 10rem;
-$borderRadius: 12rem;   
+$borderRadius: 12rem;
 // Shadow
 $shadow1: 0rem 1rem 12rem 0 rgba($black, 0.1);
 $shadow2: 0 5rem 25rem 0 rgba($black, 0.2);
 $shadow3: 0 10rem 50rem 0 rgba($black, 0.3);
 $textShadow1: 0 0 4rem rgba($black, 0.3);
 // Animation
-$animation1: .1s ease-in;
-$animation2: .25s ease-in;
+$animation1: 0.1s ease-in;
+$animation2: 0.25s ease-in;
 $animation3: 1s ease-in;
 $introContainer: 840rem;

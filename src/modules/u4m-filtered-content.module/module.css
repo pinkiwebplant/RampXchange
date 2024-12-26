@@ -74,11 +74,12 @@ section.u4m-filtered-content .featured .card .image-wrap a .image {
 section.u4m-filtered-content .featured .card .image-wrap .image img {
   height: 100%;
   width: 100%;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 section.u4m-filtered-content .featured .card .content {
   text-align: left;
-  background-color: #DBDBDB;
+  background-color: #dbdbdb;
   padding: 30rem 40rem;
 }
 @media (max-width: 580px) {
@@ -138,8 +139,8 @@ section.u4m-filtered-content .featured .card .content a.link {
   display: inline-block;
   font-family: "Inter";
   color: #ffffff;
-  background-color: #007C43;
-  border: 1px solid #007C43;
+  background-color: #007c43;
+  border: 1px solid #007c43;
   border-radius: 12rem;
   padding: 11rem 24rem;
   margin: 20rem 0;
@@ -153,7 +154,7 @@ section.u4m-filtered-content .featured .card .content a.link {
 }
 section.u4m-filtered-content .featured .card .content a.link:hover, section.u4m-filtered-content .featured .card .content a.link:focus {
   background-color: #ffffff;
-  color: #007C43;
+  color: #007c43;
 }
 section.u4m-filtered-content .filters {
   float: none;
@@ -259,7 +260,9 @@ section.u4m-filtered-content .filters form.multi-filter .input input[type=email]
   background-color: #ffffff;
   padding: 16rem;
   width: 100%;
-  appearance: none;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
 }
 section.u4m-filtered-content .filters form.multi-filter.hs-form .input input[type=text].error, section.u4m-filtered-content .filters form.multi-filter.hs-form .input input[type=text].invalid,
 section.u4m-filtered-content .filters form.multi-filter.hs-form .input input[type=number].error,
@@ -281,6 +284,9 @@ section.u4m-filtered-content .filters form.multi-filter .input input[type=tel].i
 section.u4m-filtered-content .filters form.multi-filter .input input[type=email].error,
 section.u4m-filtered-content .filters form.multi-filter .input input[type=email].invalid {
   border: 1rem solid red;
+}
+section.u4m-filtered-content .filters form.multi-filter.hs-form .input input[type=text]::-moz-placeholder, section.u4m-filtered-content .filters form.multi-filter.hs-form .input input[type=number]::-moz-placeholder, section.u4m-filtered-content .filters form.multi-filter.hs-form .input input[type=tel]::-moz-placeholder, section.u4m-filtered-content .filters form.multi-filter.hs-form .input input[type=email]::-moz-placeholder, section.u4m-filtered-content .filters form.multi-filter.mixitup-multifilter .input input[type=text]::-moz-placeholder, section.u4m-filtered-content .filters form.multi-filter.mixitup-multifilter .input input[type=number]::-moz-placeholder, section.u4m-filtered-content .filters form.multi-filter.mixitup-multifilter .input input[type=tel]::-moz-placeholder, section.u4m-filtered-content .filters form.multi-filter.mixitup-multifilter .input input[type=email]::-moz-placeholder, section.u4m-filtered-content .filters form.multi-filter .input input[type=text]::-moz-placeholder, section.u4m-filtered-content .filters form.multi-filter .input input[type=number]::-moz-placeholder, section.u4m-filtered-content .filters form.multi-filter .input input[type=tel]::-moz-placeholder, section.u4m-filtered-content .filters form.multi-filter .input input[type=email]::-moz-placeholder {
+  color: #eeeeee;
 }
 section.u4m-filtered-content .filters form.multi-filter.hs-form .input input[type=text]::placeholder,
 section.u4m-filtered-content .filters form.multi-filter.hs-form .input input[type=number]::placeholder,
@@ -317,7 +323,9 @@ section.u4m-filtered-content .filters form.multi-filter.hs-form .input input[typ
   margin-bottom: 23rem;
 }
 section.u4m-filtered-content .filters form.multi-filter.hs-form .input select, section.u4m-filtered-content .filters form.multi-filter.mixitup-multifilter .input select, section.u4m-filtered-content .filters form.multi-filter .input select {
-  appearance: none;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
   background: url("//cdn2.hubspot.net/hubfs/302335/select-arrow.png") no-repeat;
   background-size: 13rem 8rem;
   background-position: 97% 51%;
@@ -631,8 +639,8 @@ section.u4m-filtered-content .filters form.multi-filter.hs-form .hs-button, sect
   display: inline-block;
   font-family: "Inter";
   color: #ffffff;
-  background-color: #007C43;
-  border: 1px solid #007C43;
+  background-color: #007c43;
+  border: 1px solid #007c43;
   border-radius: 12rem;
   padding: 11rem 24rem;
   margin: 20rem 0;
@@ -646,7 +654,7 @@ section.u4m-filtered-content .filters form.multi-filter.hs-form .hs-button, sect
 }
 section.u4m-filtered-content .filters form.multi-filter.hs-form .hs-button:hover, section.u4m-filtered-content .filters form.multi-filter.hs-form .hs-button:focus, section.u4m-filtered-content .filters form.multi-filter.mixitup-multifilter .hs-button:hover, section.u4m-filtered-content .filters form.multi-filter.mixitup-multifilter .hs-button:focus, section.u4m-filtered-content .filters form.multi-filter .hs-button:hover, section.u4m-filtered-content .filters form.multi-filter .hs-button:focus {
   background-color: #ffffff;
-  color: #007C43;
+  color: #007c43;
 }
 section.u4m-filtered-content .filters form.multi-filter fieldset {
   max-width: none;
@@ -669,8 +677,8 @@ section.u4m-filtered-content .filters form.multi-filter fieldset.buttons button 
   display: inline-block;
   font-family: "Inter";
   color: #ffffff;
-  background-color: #007C43;
-  border: 1px solid #007C43;
+  background-color: #007c43;
+  border: 1px solid #007c43;
   border-radius: 12rem;
   padding: 11rem 24rem;
   margin: 20rem 0;
@@ -689,7 +697,7 @@ section.u4m-filtered-content .filters form.multi-filter fieldset.buttons button 
 }
 section.u4m-filtered-content .filters form.multi-filter fieldset.buttons button:hover, section.u4m-filtered-content .filters form.multi-filter fieldset.buttons button:focus {
   background-color: #ffffff;
-  color: #007C43;
+  color: #007c43;
 }
 section.u4m-filtered-content .filters form.multi-filter fieldset.buttons button.mixitup-control-active {
   background-color: #000000;
@@ -703,7 +711,8 @@ section.u4m-filtered-content .filters form.multi-filter fieldset.selects select 
   padding: 10rem 15rem;
   width: 100%;
   -moz-appearance: none;
-  appearance: none;
+  -webkit-appearance: none;
+          appearance: none;
 }
 section.u4m-filtered-content .filters form.multi-filter fieldset.checkboxes label {
   display: inline-block;
@@ -723,7 +732,9 @@ section.u4m-filtered-content .filters form.multi-filter fieldset.search input {
   background-color: #ffffff;
   padding: 10rem 15rem;
   width: 100%;
-  appearance: none;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
 }
 section.u4m-filtered-content .filters form.multi-filter.mixitup-sorting {
   display: flex;
@@ -749,7 +760,7 @@ section.u4m-filtered-content .filters form.multi-filter.mixitup-sorting fieldset
 }
 section.u4m-filtered-content .filters form.multi-filter.mixitup-sorting fieldset.buttons button {
   margin: 0 0 0 10rem;
-  background-color: #007C43;
+  background-color: #007c43;
 }
 section.u4m-filtered-content .filters form.multi-filter.mixitup-sorting fieldset.buttons button svg {
   filter: invert(1);
@@ -781,7 +792,7 @@ section.u4m-filtered-content #container .resource-card {
   margin: 20rem;
   padding: 20rem;
   box-shadow: 0rem 1rem 12rem 0 rgba(0, 0, 0, 0.1);
-  border: 1px solid #DBDBDB;
+  border: 1px solid #dbdbdb;
   background-color: #ffffff;
   flex-basis: calc(33.333% - 40rem);
   flex-grow: 1;
@@ -816,8 +827,8 @@ section.u4m-filtered-content #container .resource-card button {
   display: inline-block;
   font-family: "Inter";
   color: #ffffff;
-  background-color: #007C43;
-  border: 1px solid #007C43;
+  background-color: #007c43;
+  border: 1px solid #007c43;
   border-radius: 12rem;
   padding: 11rem 24rem;
   margin: 20rem 0;
@@ -834,7 +845,7 @@ section.u4m-filtered-content #container .resource-card button {
 }
 section.u4m-filtered-content #container .resource-card button:hover, section.u4m-filtered-content #container .resource-card button:focus {
   background-color: #ffffff;
-  color: #007C43;
+  color: #007c43;
 }
 section.u4m-filtered-content #container .resource-card .image {
   min-height: 100rem;
@@ -844,12 +855,13 @@ section.u4m-filtered-content #container .resource-card .image {
 section.u4m-filtered-content #container .resource-card .image.filled {
   width: 100%;
   min-height: 203rem;
-  border-bottom: 1rem solid #DBDBDB;
+  border-bottom: 1rem solid #dbdbdb;
 }
 section.u4m-filtered-content #container .resource-card .image.filled img {
   height: 100%;
   width: 100%;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
   margin: 0;
 }
 section.u4m-filtered-content #container .resource-card .image a {
@@ -889,7 +901,7 @@ section.u4m-filtered-content #container .resource-card .content span.eyebrow {
   line-height: 1.6;
   letter-spacing: 0.35rem;
   margin-bottom: 20rem;
-  color: #EEEEEE;
+  color: #eeeeee;
   font-weight: bold;
   text-transform: uppercase;
   margin-bottom: 0;
@@ -945,8 +957,8 @@ section.u4m-filtered-content #container .resource-card .content span.url a {
   display: inline-block;
   font-family: "Inter";
   color: #ffffff;
-  background-color: #007C43;
-  border: 1px solid #007C43;
+  background-color: #007c43;
+  border: 1px solid #007c43;
   border-radius: 12rem;
   padding: 11rem 24rem;
   margin: 20rem 0;
@@ -965,7 +977,7 @@ section.u4m-filtered-content #container .resource-card .content span.cta a:hover
 section.u4m-filtered-content #container .resource-card .content span.url a:hover,
 section.u4m-filtered-content #container .resource-card .content span.url a:focus {
   background-color: #ffffff;
-  color: #007C43;
+  color: #007c43;
 }
 section.u4m-filtered-content #container .resource-card:hover {
   top: -10rem;
@@ -1003,7 +1015,8 @@ section.u4m-filtered-content #container .resource-card a.link-wrap .image {
 section.u4m-filtered-content #container .resource-card a.link-wrap .image img {
   height: 100%;
   width: 100%;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
   margin: 0;
 }
 section.u4m-filtered-content #container .resource-card a.link-wrap .content {
@@ -1111,7 +1124,7 @@ section.u4m-filtered-content .pagination button {
   justify-content: center;
   text-align: center;
   border: 0;
-  background-color: #DBDBDB;
+  background-color: #dbdbdb;
   color: #000000;
   min-height: 55rem;
   min-width: 55rem;
@@ -1135,11 +1148,11 @@ section.u4m-filtered-content .pagination button {
   }
 }
 section.u4m-filtered-content .pagination button:hover {
-  background-color: #007C43;
+  background-color: #007c43;
   color: #ffffff;
 }
 section.u4m-filtered-content .pagination button.mixitup-control-active {
-  background-color: #007C43;
+  background-color: #007c43;
   color: #ffffff;
 }
 section.u4m-filtered-content .pagination.paginate.mixitup-page-list-disabled {
@@ -1152,8 +1165,8 @@ section.u4m-filtered-content .pagination.loadmore button {
   display: inline-block;
   font-family: "Inter";
   color: #ffffff;
-  background-color: #007C43;
-  border: 1px solid #007C43;
+  background-color: #007c43;
+  border: 1px solid #007c43;
   border-radius: 12rem;
   padding: 11rem 24rem;
   margin: 20rem 0;
@@ -1167,7 +1180,7 @@ section.u4m-filtered-content .pagination.loadmore button {
 }
 section.u4m-filtered-content .pagination.loadmore button:hover, section.u4m-filtered-content .pagination.loadmore button:focus {
   background-color: #ffffff;
-  color: #007C43;
+  color: #007c43;
 }
 section.u4m-filtered-content .pagination.loadmore button.hidden {
   display: none;

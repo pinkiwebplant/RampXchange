@@ -103,8 +103,8 @@ section.u4m-landing-page-overlap .landing-page-columns .left-column .hero .colum
   display: inline-block;
   font-family: "Inter";
   color: #ffffff;
-  background-color: #007C43;
-  border: 1px solid #007C43;
+  background-color: #007c43;
+  border: 1px solid #007c43;
   border-radius: 12rem;
   padding: 11rem 24rem;
   margin: 20rem 0;
@@ -119,7 +119,7 @@ section.u4m-landing-page-overlap .landing-page-columns .left-column .hero .colum
 }
 section.u4m-landing-page-overlap .landing-page-columns .left-column .hero .column-inner .text .anchor-link-button:hover, section.u4m-landing-page-overlap .landing-page-columns .left-column .hero .column-inner .text .anchor-link-button:focus {
   background-color: #ffffff;
-  color: #007C43;
+  color: #007c43;
 }
 @media (max-width: 1024px) {
   section.u4m-landing-page-overlap .landing-page-columns .left-column .hero .column-inner .text .anchor-link-button {
@@ -289,10 +289,10 @@ section.u4m-landing-page-overlap .landing-page-columns .right-column .column-inn
   fill: #ffffff;
 }
 section.u4m-landing-page-overlap .landing-page-columns .right-column .column-inner .custom-share div a:hover {
-  color: #007C43;
+  color: #007c43;
 }
 section.u4m-landing-page-overlap .landing-page-columns .right-column .column-inner .custom-share div a:hover svg {
-  fill: #007C43;
+  fill: #007c43;
 }
 section.u4m-landing-page-overlap .landing-page-columns .right-column .column-inner .form-wrap {
   background-color: #dbdbdb;
@@ -304,7 +304,7 @@ section.u4m-landing-page-overlap .landing-page-columns .right-column .column-inn
   min-height: 400px;
   margin-top: 10rem;
   box-shadow: 0rem 1rem 12rem 0 rgba(0, 0, 0, 0.1);
-  border: 1px solid #6E757C;
+  border: 1px solid #6e757c;
 }
 @media (max-width: 1024px) {
   section.u4m-landing-page-overlap .landing-page-columns .right-column .column-inner .form-wrap {
@@ -393,7 +393,9 @@ section.u4m-landing-page-overlap .landing-page-columns .right-column .column-inn
   background-color: #ffffff;
   padding: 16rem;
   width: 100%;
-  appearance: none;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
 }
 section.u4m-landing-page-overlap .landing-page-columns .right-column .column-inner .form-wrap.hs-form .input input[type=text].error, section.u4m-landing-page-overlap .landing-page-columns .right-column .column-inner .form-wrap.hs-form .input input[type=text].invalid,
 section.u4m-landing-page-overlap .landing-page-columns .right-column .column-inner .form-wrap.hs-form .input input[type=number].error,
@@ -415,6 +417,9 @@ section.u4m-landing-page-overlap .landing-page-columns .right-column .column-inn
 section.u4m-landing-page-overlap .landing-page-columns .right-column .column-inner .form-wrap .input input[type=email].error,
 section.u4m-landing-page-overlap .landing-page-columns .right-column .column-inner .form-wrap .input input[type=email].invalid {
   border: 1rem solid red;
+}
+section.u4m-landing-page-overlap .landing-page-columns .right-column .column-inner .form-wrap.hs-form .input input[type=text]::-moz-placeholder, section.u4m-landing-page-overlap .landing-page-columns .right-column .column-inner .form-wrap.hs-form .input input[type=number]::-moz-placeholder, section.u4m-landing-page-overlap .landing-page-columns .right-column .column-inner .form-wrap.hs-form .input input[type=tel]::-moz-placeholder, section.u4m-landing-page-overlap .landing-page-columns .right-column .column-inner .form-wrap.hs-form .input input[type=email]::-moz-placeholder, section.u4m-landing-page-overlap .landing-page-columns .right-column .column-inner .form-wrap.mixitup-multifilter .input input[type=text]::-moz-placeholder, section.u4m-landing-page-overlap .landing-page-columns .right-column .column-inner .form-wrap.mixitup-multifilter .input input[type=number]::-moz-placeholder, section.u4m-landing-page-overlap .landing-page-columns .right-column .column-inner .form-wrap.mixitup-multifilter .input input[type=tel]::-moz-placeholder, section.u4m-landing-page-overlap .landing-page-columns .right-column .column-inner .form-wrap.mixitup-multifilter .input input[type=email]::-moz-placeholder, section.u4m-landing-page-overlap .landing-page-columns .right-column .column-inner .form-wrap .input input[type=text]::-moz-placeholder, section.u4m-landing-page-overlap .landing-page-columns .right-column .column-inner .form-wrap .input input[type=number]::-moz-placeholder, section.u4m-landing-page-overlap .landing-page-columns .right-column .column-inner .form-wrap .input input[type=tel]::-moz-placeholder, section.u4m-landing-page-overlap .landing-page-columns .right-column .column-inner .form-wrap .input input[type=email]::-moz-placeholder {
+  color: #eeeeee;
 }
 section.u4m-landing-page-overlap .landing-page-columns .right-column .column-inner .form-wrap.hs-form .input input[type=text]::placeholder,
 section.u4m-landing-page-overlap .landing-page-columns .right-column .column-inner .form-wrap.hs-form .input input[type=number]::placeholder,
@@ -451,7 +456,9 @@ section.u4m-landing-page-overlap .landing-page-columns .right-column .column-inn
   margin-bottom: 23rem;
 }
 section.u4m-landing-page-overlap .landing-page-columns .right-column .column-inner .form-wrap.hs-form .input select, section.u4m-landing-page-overlap .landing-page-columns .right-column .column-inner .form-wrap.mixitup-multifilter .input select, section.u4m-landing-page-overlap .landing-page-columns .right-column .column-inner .form-wrap .input select {
-  appearance: none;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
   background: url("//cdn2.hubspot.net/hubfs/302335/select-arrow.png") no-repeat;
   background-size: 13rem 8rem;
   background-position: 97% 51%;
@@ -765,8 +772,8 @@ section.u4m-landing-page-overlap .landing-page-columns .right-column .column-inn
   display: inline-block;
   font-family: "Inter";
   color: #ffffff;
-  background-color: #007C43;
-  border: 1px solid #007C43;
+  background-color: #007c43;
+  border: 1px solid #007c43;
   border-radius: 12rem;
   padding: 11rem 24rem;
   margin: 20rem 0;
@@ -780,7 +787,7 @@ section.u4m-landing-page-overlap .landing-page-columns .right-column .column-inn
 }
 section.u4m-landing-page-overlap .landing-page-columns .right-column .column-inner .form-wrap.hs-form .hs-button:hover, section.u4m-landing-page-overlap .landing-page-columns .right-column .column-inner .form-wrap.hs-form .hs-button:focus, section.u4m-landing-page-overlap .landing-page-columns .right-column .column-inner .form-wrap.mixitup-multifilter .hs-button:hover, section.u4m-landing-page-overlap .landing-page-columns .right-column .column-inner .form-wrap.mixitup-multifilter .hs-button:focus, section.u4m-landing-page-overlap .landing-page-columns .right-column .column-inner .form-wrap .hs-button:hover, section.u4m-landing-page-overlap .landing-page-columns .right-column .column-inner .form-wrap .hs-button:focus {
   background-color: #ffffff;
-  color: #007C43;
+  color: #007c43;
 }
 section.u4m-landing-page-overlap .landing-page-columns .right-column .column-inner .form-wrap form {
   margin: 0;
@@ -833,7 +840,7 @@ section.u4m-landing-page-overlap .landing-page-columns .right-column .column-inn
   }
 }
 section.u4m-landing-page-overlap .landing-page-columns .right-column .column-inner .disclaimer {
-  color: #EEEEEE;
+  color: #eeeeee;
   font-size: 14rem;
   text-align: center;
   max-width: 380rem;
@@ -882,7 +889,7 @@ section.u4m-landing-page-overlap .landing-page-columns .right-column .column-inn
   letter-spacing: 0.25rem;
   margin-bottom: 20rem;
   font-family: "Inter";
-  color: #EEEEEE;
+  color: #eeeeee;
 }
 @media (max-width: 580px) {
   section.u4m-landing-page-overlap .landing-page-columns .right-column .column-inner .quote .quote-text {

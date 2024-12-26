@@ -154,8 +154,8 @@ section.u4m-hero .inner .content-wrap .copy a {
   display: inline-block;
   font-family: "Inter";
   color: #ffffff;
-  background-color: #007C43;
-  border: 1px solid #007C43;
+  background-color: #007c43;
+  border: 1px solid #007c43;
   border-radius: 12rem;
   padding: 11rem 24rem;
   margin: 20rem 0;
@@ -169,7 +169,7 @@ section.u4m-hero .inner .content-wrap .copy a {
 }
 section.u4m-hero .inner .content-wrap .copy a:hover, section.u4m-hero .inner .content-wrap .copy a:focus {
   background-color: #ffffff;
-  color: #007C43;
+  color: #007c43;
 }
 section.u4m-hero .inner .content-wrap .copy svg {
   max-width: 100rem;
@@ -179,7 +179,7 @@ section.u4m-hero .inner .content-wrap .copy svg circle {
   transition: 0.1s ease-in;
 }
 section.u4m-hero .inner .content-wrap .copy svg:hover circle {
-  fill: #EEEEEE;
+  fill: #eeeeee;
 }
 @media (max-width: 767px) {
   section.u4m-hero .inner .content-wrap .copy {

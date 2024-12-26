@@ -74,8 +74,8 @@ section.u4m-cta-row div.inner div.copy div.cta a {
   display: inline-block;
   font-family: "Inter";
   color: #ffffff;
-  background-color: #007C43;
-  border: 1px solid #007C43;
+  background-color: #007c43;
+  border: 1px solid #007c43;
   border-radius: 12rem;
   padding: 11rem 24rem;
   margin: 20rem 0;
@@ -89,7 +89,7 @@ section.u4m-cta-row div.inner div.copy div.cta a {
 }
 section.u4m-cta-row div.inner div.copy div.cta a:hover, section.u4m-cta-row div.inner div.copy div.cta a:focus {
   background-color: #ffffff;
-  color: #007C43;
+  color: #007c43;
 }
 @media (max-width: 580px) {
   section.u4m-cta-row div.inner div.copy {

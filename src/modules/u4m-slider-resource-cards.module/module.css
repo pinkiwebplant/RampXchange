@@ -127,7 +127,7 @@ section.u4m-slider-resource-cards .container .slick-list .slick-track .slick-sli
   margin: 20rem;
   padding: 20rem;
   box-shadow: 0rem 1rem 12rem 0 rgba(0, 0, 0, 0.1);
-  border: 1px solid #DBDBDB;
+  border: 1px solid #dbdbdb;
   background-color: #ffffff;
   flex-basis: calc(33.333% - 40rem);
   flex-grow: 1;
@@ -161,8 +161,8 @@ section.u4m-slider-resource-cards .container .slick-list .slick-track .slick-sli
   display: inline-block;
   font-family: "Inter";
   color: #ffffff;
-  background-color: #007C43;
-  border: 1px solid #007C43;
+  background-color: #007c43;
+  border: 1px solid #007c43;
   border-radius: 12rem;
   padding: 11rem 24rem;
   margin: 20rem 0;
@@ -179,7 +179,7 @@ section.u4m-slider-resource-cards .container .slick-list .slick-track .slick-sli
 }
 section.u4m-slider-resource-cards .container .slick-list .slick-track .slick-slide div .resource-card button:hover, section.u4m-slider-resource-cards .container .slick-list .slick-track .slick-slide div .resource-card button:focus {
   background-color: #ffffff;
-  color: #007C43;
+  color: #007c43;
 }
 section.u4m-slider-resource-cards .container .slick-list .slick-track .slick-slide div .resource-card .image {
   min-height: 100rem;
@@ -189,12 +189,13 @@ section.u4m-slider-resource-cards .container .slick-list .slick-track .slick-sli
 section.u4m-slider-resource-cards .container .slick-list .slick-track .slick-slide div .resource-card .image.filled {
   width: 100%;
   min-height: 203rem;
-  border-bottom: 1rem solid #DBDBDB;
+  border-bottom: 1rem solid #dbdbdb;
 }
 section.u4m-slider-resource-cards .container .slick-list .slick-track .slick-slide div .resource-card .image.filled img {
   height: 100%;
   width: 100%;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
   margin: 0;
 }
 section.u4m-slider-resource-cards .container .slick-list .slick-track .slick-slide div .resource-card .image a {
@@ -234,7 +235,7 @@ section.u4m-slider-resource-cards .container .slick-list .slick-track .slick-sli
   line-height: 1.6;
   letter-spacing: 0.35rem;
   margin-bottom: 20rem;
-  color: #EEEEEE;
+  color: #eeeeee;
   font-weight: bold;
   text-transform: uppercase;
   margin-bottom: 0;
@@ -290,8 +291,8 @@ section.u4m-slider-resource-cards .container .slick-list .slick-track .slick-sli
   display: inline-block;
   font-family: "Inter";
   color: #ffffff;
-  background-color: #007C43;
-  border: 1px solid #007C43;
+  background-color: #007c43;
+  border: 1px solid #007c43;
   border-radius: 12rem;
   padding: 11rem 24rem;
   margin: 20rem 0;
@@ -310,7 +311,7 @@ section.u4m-slider-resource-cards .container .slick-list .slick-track .slick-sli
 section.u4m-slider-resource-cards .container .slick-list .slick-track .slick-slide div .resource-card .content span.url a:hover,
 section.u4m-slider-resource-cards .container .slick-list .slick-track .slick-slide div .resource-card .content span.url a:focus {
   background-color: #ffffff;
-  color: #007C43;
+  color: #007c43;
 }
 section.u4m-slider-resource-cards .container .slick-list .slick-track .slick-slide div .resource-card:hover {
   top: -10rem;
@@ -348,7 +349,8 @@ section.u4m-slider-resource-cards .container .slick-list .slick-track .slick-sli
 section.u4m-slider-resource-cards .container .slick-list .slick-track .slick-slide div .resource-card a.link-wrap .image img {
   height: 100%;
   width: 100%;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
   margin: 0;
 }
 section.u4m-slider-resource-cards .container .slick-list .slick-track .slick-slide div .resource-card a.link-wrap .content {
@@ -431,7 +433,7 @@ section.u4m-slider-resource-cards .container .slick-dots {
   position: static;
 }
 section.u4m-slider-resource-cards .container .slick-dots li button {
-  background-color: #6E757C;
+  background-color: #6e757c;
   transition: 0.1s ease-in;
   border-radius: 100%;
 }
@@ -439,16 +441,16 @@ section.u4m-slider-resource-cards .container .slick-dots li button:before {
   opacity: 0;
 }
 section.u4m-slider-resource-cards .container .slick-dots li button:hover {
-  background-color: #EEEEEE;
+  background-color: #eeeeee;
 }
 section.u4m-slider-resource-cards .container .slick-dots li.slick-active button {
-  background-color: #007C43;
+  background-color: #007c43;
 }
 section.u4m-slider-resource-cards .container .slick-dots > li:only-child {
   display: none;
 }
 section.u4m-slider-resource-cards .container .slick-active button:before {
-  color: #007C43;
+  color: #007c43;
   opacity: 1;
 }
 section.u4m-slider-resource-cards .container.slick-initialized {

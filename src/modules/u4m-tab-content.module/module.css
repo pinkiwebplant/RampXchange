@@ -38,8 +38,8 @@ html {
   display: inline-block;
   font-family: "Inter";
   color: #ffffff;
-  background-color: #007C43;
-  border: 1px solid #007C43;
+  background-color: #007c43;
+  border: 1px solid #007c43;
   border-radius: 12rem;
   padding: 11rem 24rem;
   margin: 20rem 0;
@@ -53,7 +53,7 @@ html {
 }
 .u4m-simple-tabs .intro .primary-secondary-links .primary a:hover, .u4m-simple-tabs .intro .primary-secondary-links .primary a:focus {
   background-color: #ffffff;
-  color: #007C43;
+  color: #007c43;
 }
 .u4m-simple-tabs .intro .primary-secondary-links .secondary a {
   font-weight: bold;
@@ -165,7 +165,7 @@ html {
   }
 }
 .u4m-simple-tabs .tabs-module-wrap .tabs-module .tabs-navigation ul li.tab.active {
-  background-color: #DBDBDB;
+  background-color: #dbdbdb;
   cursor: default;
 }
 .u4m-simple-tabs .tabs-module-wrap .tabs-module .tabs-navigation ul li.tab.active .tab-link,

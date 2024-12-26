@@ -1,0 +1,148 @@
+html {
+  font-size: 1px;
+}
+
+/* auto scale down elements on mobile */
+@media (max-width: 580px) {
+  html {
+    font-size: 1px;
+  }
+}
+
+/* auto scale up elements on large displays */
+@media (min-width: 2560px) {
+  html {
+    font-size: 1px;
+  }
+}
+
+.u4m-slider-tabs .intro_wrapp .eyebrow_text {
+  font-size: 14rem;
+  margin-bottom: 12px;
+}
+.u4m-slider-tabs .intro_wrapp .intro_title {
+  margin-bottom: 12px;
+}
+.u4m-slider-tabs .tabber_section {
+  position: relative;
+  z-index: 9;
+}
+.u4m-slider-tabs .tabber_section .row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.u4m-slider-tabs .tabber_section .row .tab-section {
+  width: 50%;
+}
+@media (max-width: 767px) {
+  .u4m-slider-tabs .tabber_section .row .tab-section {
+    width: 100%;
+  }
+}
+.u4m-slider-tabs .tabber_section .row .tab-section .tab-item {
+  padding: 16px 28px;
+  border-left: 2px solid #b5dda5;
+}
+@media (max-width: 767px) {
+  .u4m-slider-tabs .tabber_section .row .tab-section .tab-item {
+    padding: 16px 15px;
+  }
+}
+.u4m-slider-tabs .tabber_section .row .tab-section .tab-item .tab-inner h4 {
+  cursor: pointer;
+  color: #b0b7ba;
+  margin: 0;
+  transition: all 0.3s;
+}
+.u4m-slider-tabs .tabber_section .row .tab-section .tab-item .tab-inner h4:hover {
+  color: #213944;
+}
+.u4m-slider-tabs .tabber_section .row .tab-section .tab-item .tab-inner .toggle_content {
+  display: none;
+}
+.u4m-slider-tabs .tabber_section .row .tab-section .tab-item .tab-inner .toggle_content .content {
+  margin-top: 20px;
+}
+.u4m-slider-tabs .tabber_section .row .tab-section .tab-item .tab-inner .toggle_content .tabber-btn {
+  margin-top: 32px;
+}
+.u4m-slider-tabs .tabber_section .row .tab-section .tab-item .tab-inner .toggle_content .tabber-btn .intro_btn_wrap {
+  justify-content: flex-start;
+}
+.u4m-slider-tabs .tabber_section .row .tab-section .tab-item .tab-inner .toggle_content .tabber-btn .intro_btn_wrap .btn_item a {
+  margin: 0;
+}
+.u4m-slider-tabs .tabber_section .row .tab-section .tab-item.acc-open {
+  border-color: #007c43;
+}
+.u4m-slider-tabs .tabber_section .row .tab-section .tab-item.acc-open .tab-inner h4 {
+  pointer-events: none;
+  color: #213944;
+}
+.u4m-slider-tabs .tabber_section .row .tab-section .tab-item.acc-open .tab-inner .toggle_content {
+  display: block;
+}
+.u4m-slider-tabs .tabber_section .row .tab-section .tab-item .tab-inner .toggle_content {
+  display: none;
+}
+.u4m-slider-tabs .tabber_section .row .tab-image-section {
+  width: 50%;
+}
+@media (max-width: 767px) {
+  .u4m-slider-tabs .tabber_section .row .tab-image-section {
+    display: none;
+  }
+}
+.u4m-slider-tabs .tabber_section .row .tab-image-section .img-item {
+  display: none;
+}
+.u4m-slider-tabs .tabber_section .row .tab-image-section .img-item.acc-open {
+  display: block;
+}
+.u4m-slider-tabs .tabber_section .row .tab-image-section .img-item .video_wrap {
+  position: relative;
+  padding-bottom: 56%;
+}
+.u4m-slider-tabs .tabber_section .row .tab-image-section .img-item .video_wrap.video_play .poster_img {
+  display: none;
+}
+.u4m-slider-tabs .tabber_section .row .tab-image-section .img-item .video_wrap .poster_img {
+  position: absolute;
+  z-index: 9;
+  width: 100%;
+  cursor: pointer;
+  top: -3px;
+}
+.u4m-slider-tabs .tabber_section .row .tab-image-section .img-item .video_wrap .poster_img img {
+  width: 100%;
+}
+.u4m-slider-tabs .tabber_section .row .tab-image-section .img-item .video_wrap .poster_img .playIcon {
+  position: absolute;
+  z-index: 99;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.u4m-slider-tabs .tabber_section .row .tab-image-section .img-item .video_wrap .external_video {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+.u4m-slider-tabs .tabber_section .row .tab-image-section .img-item .video_wrap .external_video .iframe {
+  width: 100%;
+  height: 100%;
+}
+.u4m-slider-tabs .tabber_section .row .tab-image-section .img-item .video_wrap .hubspot_video {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+.u4m-slider-tabs .tabber_section .row .tab-image-section .img-item .video_wrap .hubspot_video video {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}

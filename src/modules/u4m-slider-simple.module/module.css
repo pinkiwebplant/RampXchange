@@ -19,7 +19,7 @@ html {
 section.u4m-slider-simple {
   background-size: cover;
   background-position: 50% 50%;
-  background-color: #DBDBDB;
+  background-color: #dbdbdb;
   padding-bottom: 110rem;
 }
 section.u4m-slider-simple.reverse-text {
@@ -91,7 +91,7 @@ section.u4m-slider-simple div.content div.items .slick-dots {
   bottom: 0;
 }
 section.u4m-slider-simple div.content div.items .slick-dots li button {
-  background-color: #6E757C;
+  background-color: #6e757c;
   transition: 0.1s ease-in;
   border-radius: 100%;
 }
@@ -99,10 +99,10 @@ section.u4m-slider-simple div.content div.items .slick-dots li button:before {
   opacity: 0;
 }
 section.u4m-slider-simple div.content div.items .slick-dots li button:hover {
-  background-color: #EEEEEE;
+  background-color: #eeeeee;
 }
 section.u4m-slider-simple div.content div.items .slick-dots li.slick-active button {
-  background-color: #007C43;
+  background-color: #007c43;
 }
 section.u4m-slider-simple div.content div.items .slick-dots > li:only-child {
   display: none;
@@ -181,8 +181,8 @@ section.u4m-slider-simple div.content div.items div.slide a {
   display: inline-block;
   font-family: "Inter";
   color: #ffffff;
-  background-color: #007C43;
-  border: 1px solid #007C43;
+  background-color: #007c43;
+  border: 1px solid #007c43;
   border-radius: 12rem;
   padding: 11rem 24rem;
   margin: 20rem 0;
@@ -199,11 +199,11 @@ section.u4m-slider-simple div.content div.items div.slide a {
 }
 section.u4m-slider-simple div.content div.items div.slide a:hover, section.u4m-slider-simple div.content div.items div.slide a:focus {
   background-color: #ffffff;
-  color: #007C43;
+  color: #007c43;
 }
 section.u4m-slider-simple div.content div.items div.slide a:hover {
   background-color: white;
-  color: #007C43;
+  color: #007c43;
 }
 section.u4m-slider-simple div.content div.items div.slide.active {
   opacity: 1;

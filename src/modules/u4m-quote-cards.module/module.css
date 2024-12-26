@@ -18,7 +18,7 @@ html {
 
 section.u4m-quote-cards {
   padding-top: 100rem;
-  background-color: #DBDBDB;
+  background-color: #dbdbdb;
 }
 section.u4m-quote-cards.reverse-text .heading {
   color: #ffffff;
@@ -106,7 +106,7 @@ section.u4m-quote-cards div.dialog-bubbles div.item p.author {
   }
 }
 section.u4m-quote-cards div.dialog-bubbles div.item span {
-  color: #007C43;
+  color: #007c43;
   font-weight: bold;
 }
 section.u4m-quote-cards div.dialog-bubbles div.item:before {
@@ -156,8 +156,8 @@ section.u4m-quote-cards div.centered-button a {
   display: inline-block;
   font-family: "Inter";
   color: #ffffff;
-  background-color: #007C43;
-  border: 1px solid #007C43;
+  background-color: #007c43;
+  border: 1px solid #007c43;
   border-radius: 12rem;
   padding: 11rem 24rem;
   margin: 20rem 0;
@@ -171,5 +171,5 @@ section.u4m-quote-cards div.centered-button a {
 }
 section.u4m-quote-cards div.centered-button a:hover, section.u4m-quote-cards div.centered-button a:focus {
   background-color: #ffffff;
-  color: #007C43;
+  color: #007c43;
 }

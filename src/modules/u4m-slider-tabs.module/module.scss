@@ -1,0 +1,139 @@
+@import "../../css/_module-imports";
+.u4m-slider-tabs {
+  .intro_wrapp {
+    .eyebrow_text {
+      @include size14;
+      margin-bottom: 12px;
+    }
+    .intro_title {
+      margin-bottom: 12px;
+    }
+  }
+  .tabber_section {
+    position: relative;
+    z-index: 9;
+    .row {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      .tab-section {
+        width: 50%;
+        @include tabletvert {
+          width: 100%;
+        }
+        .tab-item {
+          padding: 16px 28px;
+          @include tabletvert {
+            padding: 16px 15px;
+          }
+          border-left: 2px solid $digitalgreen;
+          .tab-inner {
+            h4 {
+              cursor: pointer;
+              color: $lightGrayishBlue;
+              margin: 0;
+              transition: all 0.3s;
+              &:hover {
+                color: $heading;
+              }
+            }
+            .toggle_content {
+              display: none;
+              .content {
+                margin-top: 20px;
+              }
+              .tabber-btn {
+                margin-top: 32px;
+                .intro_btn_wrap {
+                  justify-content: flex-start;
+                  .btn_item {
+                    a {
+                      margin: 0;
+                    }
+                  }
+                }
+              }
+            }
+          }
+          &.acc-open {
+            border-color: #007c43;
+            .tab-inner {
+              h4 {
+                pointer-events: none;
+                color: $heading;
+              }
+              .toggle_content {
+                display: block;
+              }
+            }
+          }
+          .tab-inner {
+            .toggle_content {
+              display: none;
+            }
+          }
+        }
+      }
+
+      .tab-image-section {
+        @include tabletvert {
+          display: none;
+        }
+        width: 50%;
+        .img-item {
+          display: none;
+          &.acc-open {
+            display: block;
+          }
+          .video_wrap {
+            &.video_play {
+              .poster_img {
+                display: none;
+              }
+            }
+            .poster_img {
+              position: absolute;
+              z-index: 9;
+              width: 100%;
+              cursor: pointer;
+              top: -3px;
+              img {
+                width: 100%;
+              }
+              .playIcon {
+                position: absolute;
+                z-index: 99;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+              }
+            }
+            position: relative;
+            padding-bottom: 56%;
+            .external_video {
+              position: absolute;
+              left: 0;
+              top: 0;
+              width: 100%;
+              height: 100%;
+              .iframe {
+                width: 100%;
+                height: 100%;
+              }
+            }
+            .hubspot_video {
+              position: absolute;
+              width: 100%;
+              height: 100%;
+              video {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

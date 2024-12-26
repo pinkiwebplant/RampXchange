@@ -66,7 +66,7 @@ section.u4m-accordion .accordions {
   margin: 50rem auto;
 }
 section.u4m-accordion .accordions details {
-  border-top: 1rem solid #6E757C;
+  border-top: 1rem solid #6e757c;
   transition: background-color 0.2s;
   cursor: pointer;
 }
@@ -102,10 +102,10 @@ section.u4m-accordion .accordions details[open] summary:after {
   transform: translateY(-50%) rotate(45deg);
 }
 section.u4m-accordion .accordions details:hover {
-  background-color: #DBDBDB;
+  background-color: #dbdbdb;
 }
 section.u4m-accordion .accordions details:last-child {
-  border-bottom: 1rem solid #6E757C;
+  border-bottom: 1rem solid #6e757c;
 }
 section.u4m-accordion .accordions details div {
   padding: 20rem;

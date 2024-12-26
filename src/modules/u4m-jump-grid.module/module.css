@@ -60,7 +60,7 @@ section.u4m-jump-grid div.container .heading.white-text {
   color: #ffffff;
 }
 section.u4m-jump-grid div.container .heading:before {
-  background-color: #007C43;
+  background-color: #007c43;
 }
 section.u4m-jump-grid div.container .subheading {
   font-family: "Inter";
@@ -120,7 +120,7 @@ section.u4m-jump-grid div.container div.group a.item img.image {
 }
 section.u4m-jump-grid div.container div.group a.item .title {
   display: block;
-  color: #007C43;
+  color: #007c43;
   font-weight: bold;
 }
 section.u4m-jump-grid div.container div.group a.item .caption {
@@ -139,7 +139,7 @@ section.u4m-jump-grid div.container div.group a.item .caption {
 }
 section.u4m-jump-grid div.container div.group a.item:not(.no-link):hover {
   transition: 0.1s ease-in;
-  background-color: #007C43;
+  background-color: #007c43;
 }
 section.u4m-jump-grid div.container div.group a.item:not(.no-link):hover .caption,
 section.u4m-jump-grid div.container div.group a.item:not(.no-link):hover .title {

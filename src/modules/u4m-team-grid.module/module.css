@@ -85,7 +85,7 @@ section.u4m-team-grid .member-wrap .member {
   margin: 20rem;
   padding: 20rem;
   box-shadow: 0rem 1rem 12rem 0 rgba(0, 0, 0, 0.1);
-  border: 1px solid #DBDBDB;
+  border: 1px solid #dbdbdb;
   background-color: #ffffff;
   flex-basis: calc(33.333% - 40rem);
   flex-grow: 1;
@@ -116,8 +116,8 @@ section.u4m-team-grid .member-wrap .member button {
   display: inline-block;
   font-family: "Inter";
   color: #ffffff;
-  background-color: #007C43;
-  border: 1px solid #007C43;
+  background-color: #007c43;
+  border: 1px solid #007c43;
   border-radius: 12rem;
   padding: 11rem 24rem;
   margin: 20rem 0;
@@ -134,7 +134,7 @@ section.u4m-team-grid .member-wrap .member button {
 }
 section.u4m-team-grid .member-wrap .member button:hover, section.u4m-team-grid .member-wrap .member button:focus {
   background-color: #ffffff;
-  color: #007C43;
+  color: #007c43;
 }
 section.u4m-team-grid .member-wrap .member .image {
   min-height: 100rem;
@@ -144,12 +144,13 @@ section.u4m-team-grid .member-wrap .member .image {
 section.u4m-team-grid .member-wrap .member .image.filled {
   width: 100%;
   min-height: 203rem;
-  border-bottom: 1rem solid #DBDBDB;
+  border-bottom: 1rem solid #dbdbdb;
 }
 section.u4m-team-grid .member-wrap .member .image.filled img {
   height: 100%;
   width: 100%;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
   margin: 0;
 }
 section.u4m-team-grid .member-wrap .member .image a {
@@ -189,7 +190,7 @@ section.u4m-team-grid .member-wrap .member .content span.eyebrow {
   line-height: 1.6;
   letter-spacing: 0.35rem;
   margin-bottom: 20rem;
-  color: #EEEEEE;
+  color: #eeeeee;
   font-weight: bold;
   text-transform: uppercase;
   margin-bottom: 0;
@@ -245,8 +246,8 @@ section.u4m-team-grid .member-wrap .member .content span.url a {
   display: inline-block;
   font-family: "Inter";
   color: #ffffff;
-  background-color: #007C43;
-  border: 1px solid #007C43;
+  background-color: #007c43;
+  border: 1px solid #007c43;
   border-radius: 12rem;
   padding: 11rem 24rem;
   margin: 20rem 0;
@@ -265,7 +266,7 @@ section.u4m-team-grid .member-wrap .member .content span.cta a:hover, section.u4
 section.u4m-team-grid .member-wrap .member .content span.url a:hover,
 section.u4m-team-grid .member-wrap .member .content span.url a:focus {
   background-color: #ffffff;
-  color: #007C43;
+  color: #007c43;
 }
 @media (max-width: 1024px) {
   section.u4m-team-grid .member-wrap .member {
@@ -337,7 +338,7 @@ section.u4m-team-grid .member-wrap .member > .inner .inner__inner h4 {
 }
 section.u4m-team-grid .member-wrap .member > .inner .inner__inner .view-bio {
   all: unset;
-  color: #007C43;
+  color: #007c43;
   transition: 0.1s ease-in;
   display: inline-block;
   text-decoration-thickness: 2px;
@@ -346,10 +347,10 @@ section.u4m-team-grid .member-wrap .member > .inner .inner__inner .view-bio {
   color: #00a4bd;
 }
 section.u4m-team-grid .member-wrap .member > .inner .inner__inner .view-bio:hover {
-  color: #007C43;
+  color: #007c43;
 }
 section.u4m-team-grid .member-wrap .member > .inner .inner__inner .view-bio:hover {
-  color: #007C43;
+  color: #007c43;
   text-decoration: underline;
 }
 section.u4m-team-grid .member-wrap .member > .inner .inner__inner .view-bio:after {
@@ -362,7 +363,7 @@ section.u4m-team-grid .member-wrap .member > .inner .inner__inner .view-bio:afte
   transition: 0.3s ease all;
 }
 section.u4m-team-grid .member-wrap .member > .inner .inner__inner .view-bio:hover:after {
-  color: #007C43;
+  color: #007c43;
   transform: translate(3rem, 0rem);
 }
 section.u4m-team-grid .member-wrap .member > .inner .inner__inner .social-links {
@@ -377,7 +378,7 @@ section.u4m-team-grid .member-wrap .member > .inner .inner__inner .social-links 
   margin-right: 15rem;
 }
 section.u4m-team-grid .member-wrap .member > .inner .inner__inner .social-links a i:hover {
-  color: #007C43;
+  color: #007c43;
 }
 section.u4m-team-grid .member-wrap .member > .inner .inner__inner p {
   font-family: "Inter";

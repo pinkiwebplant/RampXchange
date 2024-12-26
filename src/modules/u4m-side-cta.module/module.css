@@ -68,7 +68,7 @@ section.u4m-side-cta .link div.cta div.outer {
   position: relative;
 }
 section.u4m-side-cta .link div.cta div.outer p {
-  color: #EEEEEE;
+  color: #eeeeee;
   font-size: 14rem;
 }
 section.u4m-side-cta .link div.cta div.outer button {
@@ -79,8 +79,8 @@ section.u4m-side-cta .link div.cta .wrapper a {
   display: inline-block;
   font-family: "Inter";
   color: #ffffff;
-  background-color: #007C43;
-  border: 1px solid #007C43;
+  background-color: #007c43;
+  border: 1px solid #007c43;
   border-radius: 12rem;
   padding: 11rem 24rem;
   margin: 20rem 0;
@@ -98,7 +98,7 @@ section.u4m-side-cta .link div.cta .wrapper a {
 }
 section.u4m-side-cta .link div.cta .wrapper a:hover, section.u4m-side-cta .link div.cta .wrapper a:focus {
   background-color: #ffffff;
-  color: #007C43;
+  color: #007c43;
 }
 section.u4m-side-cta .link:first-of-type {
   margin-bottom: 25rem;

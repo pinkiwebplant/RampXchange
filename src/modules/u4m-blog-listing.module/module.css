@@ -129,11 +129,12 @@ section.u4m-blog-listing div.hero div.wrapper div.card .image-wrap a .image {
 section.u4m-blog-listing div.hero div.wrapper div.card .image-wrap .image img {
   height: 100%;
   width: 100%;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 section.u4m-blog-listing div.hero div.wrapper div.card .content {
   text-align: left;
-  background-color: #DBDBDB;
+  background-color: #dbdbdb;
   padding: 30rem 40rem;
 }
 @media (max-width: 580px) {
@@ -193,8 +194,8 @@ section.u4m-blog-listing div.hero div.wrapper div.card .content a.link {
   display: inline-block;
   font-family: "Inter";
   color: #ffffff;
-  background-color: #007C43;
-  border: 1px solid #007C43;
+  background-color: #007c43;
+  border: 1px solid #007c43;
   border-radius: 12rem;
   padding: 11rem 24rem;
   margin: 20rem 0;
@@ -208,7 +209,7 @@ section.u4m-blog-listing div.hero div.wrapper div.card .content a.link {
 }
 section.u4m-blog-listing div.hero div.wrapper div.card .content a.link:hover, section.u4m-blog-listing div.hero div.wrapper div.card .content a.link:focus {
   background-color: #ffffff;
-  color: #007C43;
+  color: #007c43;
 }
 section.u4m-blog-listing div.hero div.wrapper div.card div.content .heading {
   margin-bottom: 10rem;
@@ -249,7 +250,9 @@ section.u4m-blog-listing div.filter div.mobile-menu {
     margin-top: 2rem;
     margin-bottom: 20rem;
     font-size: 16rem;
-    appearance: none;
+    -webkit-appearance: none;
+       -moz-appearance: none;
+            appearance: none;
     background: url("//cdn2.hubspot.net/hubfs/302335/select-arrow.png") no-repeat;
     background-size: 13rem 8rem;
     background-position: 97% 51%;
@@ -258,7 +261,7 @@ section.u4m-blog-listing div.filter div.mobile-menu {
     margin-top: 2rem;
     margin-bottom: 0;
     font-size: 16rem;
-    background-color: #DBDBDB;
+    background-color: #dbdbdb;
     padding: 10rem;
   }
 }
@@ -282,8 +285,8 @@ section.u4m-blog-listing div.filter div.menu div.hs-menu-wrapper.hs-menu-flow-ho
   display: inline-block;
   font-family: "Inter";
   color: #ffffff;
-  background-color: #007C43;
-  border: 1px solid #007C43;
+  background-color: #007c43;
+  border: 1px solid #007c43;
   border-radius: 12rem;
   padding: 11rem 24rem;
   margin: 20rem 0;
@@ -299,13 +302,13 @@ section.u4m-blog-listing div.filter div.menu div.hs-menu-wrapper.hs-menu-flow-ho
   line-height: 1.2;
   overflow: visible;
   max-width: none;
-  background-color: #EEEEEE;
+  background-color: #eeeeee;
   margin-right: 21rem;
   margin-bottom: 0;
 }
 section.u4m-blog-listing div.filter div.menu div.hs-menu-wrapper.hs-menu-flow-horizontal ul li a:hover, section.u4m-blog-listing div.filter div.menu div.hs-menu-wrapper.hs-menu-flow-horizontal ul li a:focus {
   background-color: #ffffff;
-  color: #007C43;
+  color: #007c43;
 }
 @media (max-width: 1024px) {
   section.u4m-blog-listing div.filter div.menu div.hs-menu-wrapper.hs-menu-flow-horizontal ul li a {
@@ -331,7 +334,7 @@ section.u4m-blog-listing div.filter div.menu div.hs-menu-wrapper.hs-menu-flow-ho
   background-color: #000000;
 }
 section.u4m-blog-listing div.filter div.menu div.hs-menu-wrapper.hs-menu-flow-horizontal ul li:first-child.active a {
-  background-color: #EEEEEE;
+  background-color: #eeeeee;
   color: #ffffff;
 }
 body:not(.topic) section.u4m-blog-listing div.filter div.menu div.hs-menu-wrapper.hs-menu-flow-horizontal ul li.active a {
@@ -405,8 +408,8 @@ section.u4m-blog-listing div.filter div.menu.dynamic ul li a {
   display: inline-block;
   font-family: "Inter";
   color: #ffffff;
-  background-color: #007C43;
-  border: 1px solid #007C43;
+  background-color: #007c43;
+  border: 1px solid #007c43;
   border-radius: 12rem;
   padding: 11rem 24rem;
   margin: 20rem 0;
@@ -424,10 +427,10 @@ section.u4m-blog-listing div.filter div.menu.dynamic ul li a {
 }
 section.u4m-blog-listing div.filter div.menu.dynamic ul li a:hover, section.u4m-blog-listing div.filter div.menu.dynamic ul li a:focus {
   background-color: #ffffff;
-  color: #007C43;
+  color: #007c43;
 }
 section.u4m-blog-listing div.author {
-  background-color: #DBDBDB;
+  background-color: #dbdbdb;
   padding: 50rem 0;
   margin-bottom: 80rem;
 }
@@ -508,7 +511,7 @@ section.u4m-blog-listing div.author div.inner div.social a svg {
   fill: #000000;
 }
 section.u4m-blog-listing div.author div.inner div.social a:hover svg {
-  fill: #007C43;
+  fill: #007c43;
 }
 section.u4m-blog-listing div.posts {
   float: none;
@@ -532,7 +535,7 @@ section.u4m-blog-listing div.posts a.blog-post-card {
   margin: 20rem;
   padding: 20rem;
   box-shadow: 0rem 1rem 12rem 0 rgba(0, 0, 0, 0.1);
-  border: 1px solid #DBDBDB;
+  border: 1px solid #dbdbdb;
   background-color: #ffffff;
   flex-basis: calc(33.333% - 40rem);
   flex-grow: 1;
@@ -563,8 +566,8 @@ section.u4m-blog-listing div.posts a.blog-post-card button {
   display: inline-block;
   font-family: "Inter";
   color: #ffffff;
-  background-color: #007C43;
-  border: 1px solid #007C43;
+  background-color: #007c43;
+  border: 1px solid #007c43;
   border-radius: 12rem;
   padding: 11rem 24rem;
   margin: 20rem 0;
@@ -581,7 +584,7 @@ section.u4m-blog-listing div.posts a.blog-post-card button {
 }
 section.u4m-blog-listing div.posts a.blog-post-card button:hover, section.u4m-blog-listing div.posts a.blog-post-card button:focus {
   background-color: #ffffff;
-  color: #007C43;
+  color: #007c43;
 }
 section.u4m-blog-listing div.posts a.blog-post-card .image {
   min-height: 100rem;
@@ -591,12 +594,13 @@ section.u4m-blog-listing div.posts a.blog-post-card .image {
 section.u4m-blog-listing div.posts a.blog-post-card .image.filled {
   width: 100%;
   min-height: 203rem;
-  border-bottom: 1rem solid #DBDBDB;
+  border-bottom: 1rem solid #dbdbdb;
 }
 section.u4m-blog-listing div.posts a.blog-post-card .image.filled img {
   height: 100%;
   width: 100%;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
   margin: 0;
 }
 section.u4m-blog-listing div.posts a.blog-post-card .image a {
@@ -636,7 +640,7 @@ section.u4m-blog-listing div.posts a.blog-post-card .content span.eyebrow {
   line-height: 1.6;
   letter-spacing: 0.35rem;
   margin-bottom: 20rem;
-  color: #EEEEEE;
+  color: #eeeeee;
   font-weight: bold;
   text-transform: uppercase;
   margin-bottom: 0;
@@ -692,8 +696,8 @@ section.u4m-blog-listing div.posts a.blog-post-card .content span.url a {
   display: inline-block;
   font-family: "Inter";
   color: #ffffff;
-  background-color: #007C43;
-  border: 1px solid #007C43;
+  background-color: #007c43;
+  border: 1px solid #007c43;
   border-radius: 12rem;
   padding: 11rem 24rem;
   margin: 20rem 0;
@@ -712,7 +716,7 @@ section.u4m-blog-listing div.posts a.blog-post-card .content span.cta a:hover, s
 section.u4m-blog-listing div.posts a.blog-post-card .content span.url a:hover,
 section.u4m-blog-listing div.posts a.blog-post-card .content span.url a:focus {
   background-color: #ffffff;
-  color: #007C43;
+  color: #007c43;
 }
 section.u4m-blog-listing div.posts a.blog-post-card:hover {
   top: -10rem;
@@ -720,7 +724,7 @@ section.u4m-blog-listing div.posts a.blog-post-card:hover {
 section.u4m-blog-listing div.posts a.blog-post-card .featured-image {
   margin-bottom: 10rem;
   background-size: cover;
-  background-color: #DBDBDB;
+  background-color: #dbdbdb;
   background-position: 50% 50%;
   width: 100%;
   height: 203rem;
@@ -728,7 +732,8 @@ section.u4m-blog-listing div.posts a.blog-post-card .featured-image {
 section.u4m-blog-listing div.posts a.blog-post-card .featured-image img {
   height: 100%;
   width: 100%;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 section.u4m-blog-listing div.posts a.blog-post-card .content {
   height: calc(100% - 203rem);
@@ -854,7 +859,7 @@ section.u4m-blog-listing div.posts a.blog-post-card .content span.read-more {
   margin: 20rem 0;
   cursor: pointer;
   margin-top: auto;
-  color: #007C43;
+  color: #007c43;
   transition: 0.1s ease-in;
 }
 section.u4m-blog-listing div.posts a.blog-post-card .content span.read-more:after {
@@ -905,7 +910,7 @@ section.u4m-blog-listing div.posts .resource-card:after {
   width: 1920rem;
   z-index: 0;
   top: 0;
-  background-color: #DBDBDB;
+  background-color: #dbdbdb;
   right: 50%;
   transform: translateX(50%);
 }
@@ -985,8 +990,8 @@ section.u4m-blog-listing div.posts .resource-card a .content span.link {
   display: inline-block;
   font-family: "Inter";
   color: #ffffff;
-  background-color: #007C43;
-  border: 1px solid #007C43;
+  background-color: #007c43;
+  border: 1px solid #007c43;
   border-radius: 12rem;
   padding: 11rem 24rem;
   margin: 20rem 0;
@@ -1003,7 +1008,7 @@ section.u4m-blog-listing div.posts .resource-card a .content span.link {
 }
 section.u4m-blog-listing div.posts .resource-card a .content span.link:hover, section.u4m-blog-listing div.posts .resource-card a .content span.link:focus {
   background-color: #ffffff;
-  color: #007C43;
+  color: #007c43;
 }
 section.u4m-blog-listing div.pagination-standard {
   text-align: center;
@@ -1031,7 +1036,7 @@ section.u4m-blog-listing div.pagination-standard ul.pages li a {
   min-height: 55rem;
   min-width: 55rem;
   padding: 0;
-  background-color: #DBDBDB;
+  background-color: #dbdbdb;
   font-weight: bold;
 }
 @media (max-width: 580px) {
@@ -1042,14 +1047,14 @@ section.u4m-blog-listing div.pagination-standard ul.pages li a {
 }
 section.u4m-blog-listing div.pagination-standard ul.pages li a:hover {
   color: #ffffff;
-  background-color: #007C43;
+  background-color: #007c43;
 }
 section.u4m-blog-listing div.pagination-standard ul.pages li.disabled a {
   display: none;
 }
 section.u4m-blog-listing div.pagination-standard ul.pages li.active a {
   color: #ffffff;
-  background-color: #007C43;
+  background-color: #007c43;
 }
 section.u4m-blog-listing div.pagination-infinite {
   text-align: center;
@@ -1064,8 +1069,8 @@ section.u4m-blog-listing div.pagination-infinite a.pagination-infinite_button {
   display: inline-block;
   font-family: "Inter";
   color: #ffffff;
-  background-color: #007C43;
-  border: 1px solid #007C43;
+  background-color: #007c43;
+  border: 1px solid #007c43;
   border-radius: 12rem;
   padding: 11rem 24rem;
   margin: 20rem 0;
@@ -1079,7 +1084,7 @@ section.u4m-blog-listing div.pagination-infinite a.pagination-infinite_button {
 }
 section.u4m-blog-listing div.pagination-infinite a.pagination-infinite_button:hover, section.u4m-blog-listing div.pagination-infinite a.pagination-infinite_button:focus {
   background-color: #ffffff;
-  color: #007C43;
+  color: #007c43;
 }
 .hide-next section.u4m-blog-listing div.pagination-infinite a.pagination-infinite_button {
   display: none;

@@ -19,7 +19,7 @@ html {
 footer.u4m-footer {
   padding: 50px 0;
   border-radius: 12rem;
-  background: #DBDBDB;
+  background: #dbdbdb;
 }
 footer.u4m-footer .inner {
   float: none;
@@ -61,7 +61,7 @@ footer.u4m-footer .inner .logo-and-menu .menu ul li a[role=menuitem] {
   color: #000000;
 }
 footer.u4m-footer .inner .logo-and-menu .menu ul li a[role=menuitem]:hover {
-  color: #007C43;
+  color: #007c43;
 }
 footer.u4m-footer .inner .logo-and-menu .menu ul li.hs-menu-depth-1 {
   padding: 0 10px;
@@ -131,7 +131,7 @@ footer.u4m-footer .inner .colophon-and-social ul li a {
   padding: 0;
 }
 footer.u4m-footer .inner .colophon-and-social ul li a:hover, footer.u4m-footer .inner .colophon-and-social ul li a:focus {
-  color: #007C43;
+  color: #007c43;
 }
 footer.u4m-footer .inner .colophon-and-social .colophon .links {
   display: flex;
@@ -154,7 +154,7 @@ footer.u4m-footer .inner .colophon-and-social .social ul li a {
   color: #000000;
 }
 footer.u4m-footer .inner .colophon-and-social .social ul li a:hover {
-  color: #007C43;
+  color: #007c43;
 }
 @media (max-width: 767px) {
   footer.u4m-footer .inner .colophon-and-social {

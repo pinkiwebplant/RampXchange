@@ -92,7 +92,7 @@ section.u4m-landing-page-classic .left-column .quote .author-image img {
   border-radius: 50%;
 }
 section.u4m-landing-page-classic .left-column .quote .quotation-mark {
-  color: #007C43;
+  color: #007c43;
   font-family: "Inter";
   font-size: 22rem;
   line-height: 1.4;
@@ -179,7 +179,7 @@ section.u4m-landing-page-classic .right-column .custom-share div a:hover {
   color: #000000;
 }
 section.u4m-landing-page-classic .right-column .custom-share div a:hover svg {
-  fill: #007C43;
+  fill: #007c43;
 }
 section.u4m-landing-page-classic .right-column .form-wrap {
   background-color: #dbdbdb;
@@ -277,7 +277,9 @@ section.u4m-landing-page-classic .right-column .form-wrap .input input[type=emai
   background-color: #ffffff;
   padding: 16rem;
   width: 100%;
-  appearance: none;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
 }
 section.u4m-landing-page-classic .right-column .form-wrap.hs-form .input input[type=text].error, section.u4m-landing-page-classic .right-column .form-wrap.hs-form .input input[type=text].invalid,
 section.u4m-landing-page-classic .right-column .form-wrap.hs-form .input input[type=number].error,
@@ -299,6 +301,9 @@ section.u4m-landing-page-classic .right-column .form-wrap .input input[type=tel]
 section.u4m-landing-page-classic .right-column .form-wrap .input input[type=email].error,
 section.u4m-landing-page-classic .right-column .form-wrap .input input[type=email].invalid {
   border: 1rem solid red;
+}
+section.u4m-landing-page-classic .right-column .form-wrap.hs-form .input input[type=text]::-moz-placeholder, section.u4m-landing-page-classic .right-column .form-wrap.hs-form .input input[type=number]::-moz-placeholder, section.u4m-landing-page-classic .right-column .form-wrap.hs-form .input input[type=tel]::-moz-placeholder, section.u4m-landing-page-classic .right-column .form-wrap.hs-form .input input[type=email]::-moz-placeholder, section.u4m-landing-page-classic .right-column .form-wrap.mixitup-multifilter .input input[type=text]::-moz-placeholder, section.u4m-landing-page-classic .right-column .form-wrap.mixitup-multifilter .input input[type=number]::-moz-placeholder, section.u4m-landing-page-classic .right-column .form-wrap.mixitup-multifilter .input input[type=tel]::-moz-placeholder, section.u4m-landing-page-classic .right-column .form-wrap.mixitup-multifilter .input input[type=email]::-moz-placeholder, section.u4m-landing-page-classic .right-column .form-wrap .input input[type=text]::-moz-placeholder, section.u4m-landing-page-classic .right-column .form-wrap .input input[type=number]::-moz-placeholder, section.u4m-landing-page-classic .right-column .form-wrap .input input[type=tel]::-moz-placeholder, section.u4m-landing-page-classic .right-column .form-wrap .input input[type=email]::-moz-placeholder {
+  color: #eeeeee;
 }
 section.u4m-landing-page-classic .right-column .form-wrap.hs-form .input input[type=text]::placeholder,
 section.u4m-landing-page-classic .right-column .form-wrap.hs-form .input input[type=number]::placeholder,
@@ -335,7 +340,9 @@ section.u4m-landing-page-classic .right-column .form-wrap.hs-form .input input[t
   margin-bottom: 23rem;
 }
 section.u4m-landing-page-classic .right-column .form-wrap.hs-form .input select, section.u4m-landing-page-classic .right-column .form-wrap.mixitup-multifilter .input select, section.u4m-landing-page-classic .right-column .form-wrap .input select {
-  appearance: none;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
   background: url("//cdn2.hubspot.net/hubfs/302335/select-arrow.png") no-repeat;
   background-size: 13rem 8rem;
   background-position: 97% 51%;
@@ -649,8 +656,8 @@ section.u4m-landing-page-classic .right-column .form-wrap.hs-form .hs-button, se
   display: inline-block;
   font-family: "Inter";
   color: #ffffff;
-  background-color: #007C43;
-  border: 1px solid #007C43;
+  background-color: #007c43;
+  border: 1px solid #007c43;
   border-radius: 12rem;
   padding: 11rem 24rem;
   margin: 20rem 0;
@@ -664,7 +671,7 @@ section.u4m-landing-page-classic .right-column .form-wrap.hs-form .hs-button, se
 }
 section.u4m-landing-page-classic .right-column .form-wrap.hs-form .hs-button:hover, section.u4m-landing-page-classic .right-column .form-wrap.hs-form .hs-button:focus, section.u4m-landing-page-classic .right-column .form-wrap.mixitup-multifilter .hs-button:hover, section.u4m-landing-page-classic .right-column .form-wrap.mixitup-multifilter .hs-button:focus, section.u4m-landing-page-classic .right-column .form-wrap .hs-button:hover, section.u4m-landing-page-classic .right-column .form-wrap .hs-button:focus {
   background-color: #ffffff;
-  color: #007C43;
+  color: #007c43;
 }
 section.u4m-landing-page-classic .right-column .form-wrap h2.heading {
   font-family: "Inter";

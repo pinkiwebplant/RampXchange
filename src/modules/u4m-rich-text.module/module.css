@@ -223,7 +223,7 @@ section.u4m-rich-text div.content .swatches div.secondary {
   height: 50rem;
 }
 section.u4m-rich-text div.content .action1 {
-  background-color: #007C43;
+  background-color: #007c43;
   color: #ffffff;
 }
 section.u4m-rich-text div.content .action2 {
@@ -235,27 +235,27 @@ section.u4m-rich-text div.content .black {
   color: #ffffff;
 }
 section.u4m-rich-text div.content .gray1 {
-  background-color: #DBDBDB;
+  background-color: #dbdbdb;
   color: #000000;
 }
 section.u4m-rich-text div.content .gray2 {
-  background-color: #6E757C;
+  background-color: #6e757c;
 }
 section.u4m-rich-text div.content .gray3 {
-  background-color: #EEEEEE;
+  background-color: #eeeeee;
   color: #ffffff;
 }
 section.u4m-rich-text div.content .white {
   background-color: #ffffff;
   color: #000000;
-  border: 1rem solid #6E757C;
+  border: 1rem solid #6e757c;
 }
 section.u4m-rich-text div.content .button {
   display: inline-block;
   font-family: "Inter";
   color: #ffffff;
-  background-color: #007C43;
-  border: 1px solid #007C43;
+  background-color: #007c43;
+  border: 1px solid #007c43;
   border-radius: 12rem;
   padding: 11rem 24rem;
   margin: 20rem 0;
@@ -269,14 +269,14 @@ section.u4m-rich-text div.content .button {
 }
 section.u4m-rich-text div.content .button:hover, section.u4m-rich-text div.content .button:focus {
   background-color: #ffffff;
-  color: #007C43;
+  color: #007c43;
 }
 section.u4m-rich-text div.content .button-small {
   display: inline-block;
   font-family: "Inter";
   color: #ffffff;
-  background-color: #007C43;
-  border: 1px solid #007C43;
+  background-color: #007c43;
+  border: 1px solid #007c43;
   border-radius: 12rem;
   padding: 11rem 24rem;
   margin: 20rem 0;
@@ -293,7 +293,7 @@ section.u4m-rich-text div.content .button-small {
 }
 section.u4m-rich-text div.content .button-small:hover, section.u4m-rich-text div.content .button-small:focus {
   background-color: #ffffff;
-  color: #007C43;
+  color: #007c43;
 }
 section.u4m-rich-text div.content .button-stroked {
   display: inline-block;
@@ -331,8 +331,8 @@ section.u4m-rich-text div.content .hs-cta-wrapper a {
   display: inline-block;
   font-family: "Inter";
   color: #ffffff;
-  background-color: #007C43;
-  border: 1px solid #007C43;
+  background-color: #007c43;
+  border: 1px solid #007c43;
   border-radius: 12rem;
   padding: 11rem 24rem;
   margin: 20rem 0;
@@ -346,13 +346,13 @@ section.u4m-rich-text div.content .hs-cta-wrapper a {
 }
 section.u4m-rich-text div.content .hs-cta-wrapper a:hover, section.u4m-rich-text div.content .hs-cta-wrapper a:focus {
   background-color: #ffffff;
-  color: #007C43;
+  color: #007c43;
 }
 section.u4m-rich-text div.content .animation-sample-short,
 section.u4m-rich-text div.content .animation-sample-medium,
 section.u4m-rich-text div.content .animation-sample-long {
   cursor: pointer;
-  background-color: #007C43;
+  background-color: #007c43;
   padding: 60rem 20rem;
   color: #ffffff;
   margin: 10rem auto;

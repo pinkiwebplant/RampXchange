@@ -62,8 +62,8 @@ section.u4m-share-page div.content a.download-button {
   display: inline-block;
   font-family: "Inter";
   color: #ffffff;
-  background-color: #007C43;
-  border: 1px solid #007C43;
+  background-color: #007c43;
+  border: 1px solid #007c43;
   border-radius: 12rem;
   padding: 11rem 24rem;
   margin: 20rem 0;
@@ -77,7 +77,7 @@ section.u4m-share-page div.content a.download-button {
 }
 section.u4m-share-page div.content a.download-button:hover, section.u4m-share-page div.content a.download-button:focus {
   background-color: #ffffff;
-  color: #007C43;
+  color: #007c43;
 }
 section.u4m-share-page div.content div.share span {
   padding-right: 10rem;
