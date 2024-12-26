@@ -1,100 +1,114 @@
 {% set moduleName = 'u4m-logo-trust-marks' %}
-{% include "/rampxchange/modules/partials/u4-module-includes.html" %}
-  {% set logoMax = 300 %}
-  {% set bgImageMax = 1920 %}
-  {% set dataSource = module.data_source %}
-  {% if dataSource == "manual" %}
-    {% set trustMarks = module.trust_marks %}
-  {% elif dataSource == "database" %}
-    {% set trustMarks = hubdb_table_rows(module.hubdbtable_field) %}
-    {% if !module.override_default_logos %}
-      {% set trustMarks = trustMarks|selectattr('show_by_default') %}
-    {% else %}
-      {% set trustMarks = module.logo_rows %}
-    {% endif %}
-  {% endif %}
-    {# Slider #}
-  <div class="container">
-    <div class="intro">
-      {{ '<h2 class="heading"> {{ module.logo_trust_marks_heading }} </h2>' if module.logo_trust_marks_heading }}
-      {{'<p class="subheading">{{ module.logo_trust_marks_intro }}</p>' if module.logo_trust_marks_intro }}
-    </div>
-  
-    {% if trustMarks %}
-      <div class="{{ module.layout_type }} {{name}}">
-        <div class="{{ 'splide__track' if module.layout_type == 'splide' else 'grid__wrapper' }}" >
-          <div class="{{ 'splide__list' if module.layout_type == 'splide' else 'grid__list' }}">
-            {% for trustMark in trustMarks %}
-              {% if dataSource == "manual" %}
-                {% set altText = trustMark.alt_text %}
-                {% set src = trustMark.logo_image.src %}
-                {% set link = trustMark.link %}
-                {% set target = (trustMark.new_tab) ? "target='_blank'" : "" %}
-              {% elif dataSource == "database" and module.override_default_logos %}
-                {% set altText = trustMark.columns.name %}
-                {% set src = trustMark.columns.logo.url %}
-              {% else %}
-                {% set altText = trustMark.internal_name %}
-                {% set src = trustMark.logo.url %}
-              {% endif %}
-                <div class="{{'splide__slide' if module.layout_type == 'splide' else 'grid__item' }}{{ ' with-link' if trustMark.link }}">
-                  {% if src %}
-                    {{ '<a href="{{trustMark.link}}" {{target}}>' if trustMark.link }}
-                      <img class="logo" 
-                      src="{{ resize_image_url(src, 0,0,logoMax) }}" 
-                      alt="{{altText}}" 
-                      width="{{ trustMark.logo_image.width }}"
-                      height="{{ trustMark.logo_image.height }}"
-                      loading="lazy" />
-                    {{ '</a>' if trustMark.link }}
-                  {% endif %}
-                </div>
-            {% endfor %}
-          </div>
-        </div>
-      </div>
-    {% endif %}
-  </div>
-</section>
-{% if module.layout_type == "splide" %}
-  {#
-  // Slider Extension In Use: https://splidejs.com/extensions/auto-scroll/
-  // Slider Options: https://splidejs.com/guides/options/
-  #}
-  {% require_js %}
-    <script> 
-      document.addEventListener( 'DOMContentLoaded', function() {
-        new Splide( '.splide.{{name}}', {
-          type: 'loop',
-          easing: 'ease-in-out',
-          pagination: false,
-          pauseOnHover: true,
-          {{ 'arrows: false,' if module.autoPlay else 'arrows: true,'}}     
-          perPage: {{ module.number_of_logos }},
-          height: "80rem",
-          gap: "50rem",
-          autoScroll:{
-            {{ 'autoStart: true,' if module.autoPlay else 'autoStart: false,'}} 
-            speed: -1,
-          },
-          breakpoints: {
-            1024: {
-              perPage: 4,
-              height: "60rem",
-            },
-            768: {
-              perPage: 3,
-            },
-            640: {
-              perPage: 3,
-            },
-            480: {
-              perPage: 2,
-            },
-          },
-        }).mount( window.splide.Extensions );
-      });
+{% set ExtramoduleClass = '' %}
+{% include "../partials/u4-module-includes.html" %}
 
-    </script>
-  {% end_require_js %}
-{% endif%}
+<div class="page-center ">
+	<div class="intro_wrapp">
+		{{macros.introGroup(module.intro_content)}}
+	</div>
+</div>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.css" />
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+<div class="logo-trust-marks {{ module.module_settings.select_gradient }}">
+	<div class="page-center">
+		<div class="row">
+			<div class="logo-wrapper">
+				{% if module.select_logo == "custom" %}
+				{% for item in module.logo_items %}
+				<div class="logo-item">
+					{% set href = item.link_field.url.href %}
+					{% if item.link_field.url.type is equalto "EMAIL_ADDRESS" %}
+					{% set href = "mailto:" + href %}
+					{% endif %}
+					<a
+						 {% if item.link_field.url.type is equalto "CALL_TO_ACTION"  %}
+						 href="{{ href }}" {# The href here is not escaped as it is not editable and functions as a JavaScript call to the associated CTA #}
+						 {% else %}
+						 href="{{ href|escape_url }}"
+						 {% endif %}
+						 {% if item.link_field.open_in_new_tab %}
+						 target="_blank"
+						 {% endif %}
+						 {% if item.link_field.rel %}
+						 rel="{{ item.link_field.rel|escape_attr }}"
+						 {% endif %}
+						 >
+						{% if item.image_field.src %}
+						{% set sizeAttrs = 'width="{{ item.image_field.width|escape_attr }}" height="{{ item.image_field.height|escape_attr }}"' %}
+						{% if item.image_field.size_type == 'auto' %}
+						{% set sizeAttrs = 'width="{{ item.image_field.width|escape_attr }}" height="{{ item.image_field.height|escape_attr }}" style="max-width: 100%; height: auto;"' %}
+						{% elif item.image_field.size_type == 'auto_custom_max' %}
+						{% set sizeAttrs = 'width="{{ item.image_field.max_width|escape_attr }}" height="{{ item.image_field.max_height|escape_attr }}" style="max-width: 100%; height: auto;"' %}
+						{% endif %}
+						{% set loadingAttr = item.image_field.loading != 'disabled' ? 'loading="{{ item.image_field.loading|escape_attr }}"' : '' %}
+						<img src="{{ item.image_field.src|escape_url }}" alt="{{ item.image_field.alt|escape_attr }}" {{ loadingAttr }} {{ sizeAttrs }}>
+						{% endif %}
+					</a>
+				</div>
+				{% endfor %}
+				{% endif %}
+				{% if module.select_logo == "hubdb" %}
+				{% set table = hubdb_table_rows(module.select_table) %}
+				{% for item in table %}
+				<div class="logo-item">
+					{% if item.logo_image.url %}
+					<a href="{{ item.link }}">
+						<img src="{{ item.logo_image.url }}" alt="{{ item.name }}">
+					</a>
+					{% endif %}
+				</div>
+				{% endfor %}
+				{% endif %}
+			</div>
+		</div>
+	</div>	
+</div>
+</section>
+
+{% require_js %}
+<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+<script>
+	$('.{{ name }} .logo-wrapper').slick({
+    speed: 5000, // Reduced speed for better readability
+    autoplay: true,
+    autoplaySpeed: 0,
+    cssEase: 'linear',
+    slidesToShow: 8,
+    slidesToScroll: 1,
+    variableWidth: true,
+    rtl: false, // Adjust according to language
+    mobileFirst: true,
+    rows: 1, // Single row for better alignment
+    arrows: false,
+    dots: false,
+    accessibility: true, // Enable for better usability
+    draggable: true, // Enable dragging
+    pauseOnHover: true, // Pause slider on hover
+    swipe: true, // Allow swipe gestures
+    touchMove: true, // Enable touch gestures
+	infinite: true,
+    responsive: [
+        {
+            breakpoint: 1024,
+            settings: {
+                slidesToShow: 8
+            }
+        },
+        {
+            breakpoint: 768,
+            settings: {
+                slidesToShow: 4
+            }
+        },
+        {
+            breakpoint: 480,
+            settings: {
+                slidesToShow: 2
+            }
+        }
+    ]
+});
+
+</script>
+{% end_require_js %}
