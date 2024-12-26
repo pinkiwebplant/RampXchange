@@ -1,5 +1,32 @@
 @import "../../css/_module-imports";
 .u4m-slider-tabs {
+  &.reverse-text {
+    .tabber_section {
+      .row {
+        .tab-section {
+          .tab-item {
+            &.acc-open {
+              .tab-inner {
+                h4 {
+                  opacity: 1;
+                  color: $white;
+                }
+              }
+            }
+            .tab-inner {
+              h4 {
+                color: $white;
+                opacity: 0.7;
+                &:hover {
+                  color: $white;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
   .intro_wrapp {
     .eyebrow_text {
       @include size14;
