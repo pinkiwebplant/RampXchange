@@ -3411,7 +3411,7 @@ ul {
   letter-spacing: 0.25rem;
   margin-bottom: 20rem;
   list-style: disc;
-  padding-left: 40rem;
+  padding-left: 34rem;
   margin-top: 0;
   margin-bottom: 30rem;
 }
@@ -3431,6 +3431,45 @@ ol {
 li {
   margin-bottom: 5rem;
   letter-spacing: 0.5rem;
+  list-style: none;
+  padding: 0;
+  margin-left: 0;
+}
+
+#main-content ul:not([class]) {
+  padding-left: 0;
+}
+#main-content ul:not([class]) li:not([class]) {
+  padding-left: 34px;
+  position: relative;
+}
+#main-content ul:not([class]) li:not([class]):before {
+  font-family: "Material Symbols Outlined";
+  font-weight: normal;
+  font-style: normal;
+  font-size: 16px;
+  line-height: 1;
+  letter-spacing: normal;
+  text-transform: none;
+  display: inline-block;
+  white-space: nowrap;
+  word-wrap: normal;
+  direction: ltr;
+  -webkit-font-feature-settings: "liga";
+  -webkit-font-smoothing: antialiased;
+  content: "\e5ca";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 20px;
+  height: 20px;
+  background: red;
+  border-radius: 100%;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
 }
 
 ul ul,
