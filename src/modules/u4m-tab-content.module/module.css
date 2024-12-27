@@ -42,7 +42,7 @@ html {
   border: 1px solid #007c43;
   border-radius: 12rem;
   padding: 11rem 24rem;
-  margin: 20rem 0;
+  margin: 0;
   transition: 0.1s ease-in;
   font-weight: 600;
   font-size: 16rem;
@@ -255,4 +255,4 @@ html {
   .u4m-simple-tabs .tabs-module-wrap .tabs-module {
     flex-direction: column;
   }
-}
+}/*# sourceMappingURL=module.css.map */

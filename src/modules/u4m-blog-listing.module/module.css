@@ -198,7 +198,7 @@ section.u4m-blog-listing div.hero div.wrapper div.card .content a.link {
   border: 1px solid #007c43;
   border-radius: 12rem;
   padding: 11rem 24rem;
-  margin: 20rem 0;
+  margin: 0;
   transition: 0.1s ease-in;
   font-weight: 600;
   font-size: 16rem;
@@ -289,7 +289,7 @@ section.u4m-blog-listing div.filter div.menu div.hs-menu-wrapper.hs-menu-flow-ho
   border: 1px solid #007c43;
   border-radius: 12rem;
   padding: 11rem 24rem;
-  margin: 20rem 0;
+  margin: 0;
   transition: 0.1s ease-in;
   font-weight: 600;
   font-size: 16rem;
@@ -412,7 +412,7 @@ section.u4m-blog-listing div.filter div.menu.dynamic ul li a {
   border: 1px solid #007c43;
   border-radius: 12rem;
   padding: 11rem 24rem;
-  margin: 20rem 0;
+  margin: 0;
   transition: 0.1s ease-in;
   font-weight: 600;
   font-size: 16rem;
@@ -570,7 +570,7 @@ section.u4m-blog-listing div.posts a.blog-post-card button {
   border: 1px solid #007c43;
   border-radius: 12rem;
   padding: 11rem 24rem;
-  margin: 20rem 0;
+  margin: 0;
   transition: 0.1s ease-in;
   font-weight: 600;
   font-size: 16rem;
@@ -700,7 +700,7 @@ section.u4m-blog-listing div.posts a.blog-post-card .content span.url a {
   border: 1px solid #007c43;
   border-radius: 12rem;
   padding: 11rem 24rem;
-  margin: 20rem 0;
+  margin: 0;
   transition: 0.1s ease-in;
   font-weight: 600;
   font-size: 16rem;
@@ -994,7 +994,7 @@ section.u4m-blog-listing div.posts .resource-card a .content span.link {
   border: 1px solid #007c43;
   border-radius: 12rem;
   padding: 11rem 24rem;
-  margin: 20rem 0;
+  margin: 0;
   transition: 0.1s ease-in;
   font-weight: 600;
   font-size: 16rem;
@@ -1073,7 +1073,7 @@ section.u4m-blog-listing div.pagination-infinite a.pagination-infinite_button {
   border: 1px solid #007c43;
   border-radius: 12rem;
   padding: 11rem 24rem;
-  margin: 20rem 0;
+  margin: 0;
   transition: 0.1s ease-in;
   font-weight: 600;
   font-size: 16rem;
@@ -1088,4 +1088,4 @@ section.u4m-blog-listing div.pagination-infinite a.pagination-infinite_button:ho
 }
 .hide-next section.u4m-blog-listing div.pagination-infinite a.pagination-infinite_button {
   display: none;
-}
+}/*# sourceMappingURL=module.css.map */

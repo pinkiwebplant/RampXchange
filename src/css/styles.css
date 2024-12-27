@@ -3336,7 +3336,7 @@ div#hs-eu-cookie-confirmation.hs-cookie-notification-position-bottom.can-use-gra
   border: 1px solid #007c43;
   border-radius: 12rem;
   padding: 11rem 24rem;
-  margin: 20rem 0;
+  margin: 0;
   transition: 0.1s ease-in;
   font-weight: 600;
   font-size: 16rem;
@@ -3644,7 +3644,7 @@ section[class*=u4m-] {
   border: 1px solid #007c43;
   border-radius: 12rem;
   padding: 11rem 24rem;
-  margin: 20rem 0;
+  margin: 0;
   transition: 0.1s ease-in;
   font-weight: 600;
   font-size: 16rem;
@@ -3666,7 +3666,7 @@ section[class*=u4m-] {
   border: 1px solid #007c43;
   border-radius: 12rem;
   padding: 11rem 24rem;
-  margin: 20rem 0;
+  margin: 0;
   transition: 0.1s ease-in;
   font-weight: 600;
   font-size: 16rem;
@@ -3691,6 +3691,10 @@ section[class*=u4m-] {
 }
 .arrow-link:hover, .arrow-link:focus {
   color: #213944;
+}
+
+.intro_btn_wrap {
+  margin: 20rem 0 0 0;
 }
 
 .intro_content {
@@ -3759,7 +3763,7 @@ section[class*=u4m-] {
 .reverse-text :is(h1, h2, h3, h4, h5, h6) {
   color: #ffffff;
 }
-.reverse-text .arrow-link:not(:hover) {
+.reverse-text .arrow-link {
   color: #ffffff;
 }
 
@@ -4359,7 +4363,7 @@ section.u4m-backup-unsubscribe form.hs-form .hs-button, section.u4m-backup-unsub
   border: 1px solid #007c43;
   border-radius: 12rem;
   padding: 11rem 24rem;
-  margin: 20rem 0;
+  margin: 0;
   transition: 0.1s ease-in;
   font-weight: 600;
   font-size: 16rem;
@@ -6170,7 +6174,7 @@ section.u4m-password-prompt form .hs-button {
   border: 1px solid #007c43;
   border-radius: 12rem;
   padding: 11rem 24rem;
-  margin: 20rem 0;
+  margin: 0;
   transition: 0.1s ease-in;
   font-weight: 600;
   font-size: 16rem;
@@ -6753,7 +6757,7 @@ section.u4m-subscription-preferences form.hs-form .hs-button, section.u4m-subscr
   border: 1px solid #007c43;
   border-radius: 12rem;
   padding: 11rem 24rem;
-  margin: 20rem 0;
+  margin: 0;
   transition: 0.1s ease-in;
   font-weight: 600;
   font-size: 16rem;
@@ -7279,7 +7283,7 @@ section.u4m-drag-and-drop-area form.hs-form .hs-button, section.u4m-drag-and-dro
   border: 1px solid #007c43;
   border-radius: 12rem;
   padding: 11rem 24rem;
-  margin: 20rem 0;
+  margin: 0;
   transition: 0.1s ease-in;
   font-weight: 600;
   font-size: 16rem;
@@ -8263,7 +8267,7 @@ section.u4m-blog-post div.comments div.content form.hs-form .hs-button, section.
   border: 1px solid #007c43;
   border-radius: 12rem;
   padding: 11rem 24rem;
-  margin: 20rem 0;
+  margin: 0;
   transition: 0.1s ease-in;
   font-weight: 600;
   font-size: 16rem;
@@ -8284,7 +8288,7 @@ section.u4m-blog-post div.comments div.content form .hs-button {
   border: 1px solid #007c43;
   border-radius: 12rem;
   padding: 11rem 24rem;
-  margin: 20rem 0;
+  margin: 0;
   transition: 0.1s ease-in;
   font-weight: 600;
   font-size: 16rem;
@@ -8509,4 +8513,4 @@ section.u4m-blog-post div.comments div.content form .hs-button:hover, section.u4
   .footer-wrapper .footer .bottom-footer .copyright {
     margin-top: 20px;
   }
-}
+}/*# sourceMappingURL=styles.css.map */

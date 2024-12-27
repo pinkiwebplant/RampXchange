@@ -557,6 +557,9 @@ section[class*="u4m-"] {
 .arrow-link {
   @include arrowbutton;
 }
+.intro_btn_wrap {
+  margin: 20rem 0 0 0;
+}
 .intro_content {
   text-align: center;
   margin-bottom: 40rem;
@@ -619,7 +622,7 @@ section[class*="u4m-"] {
   :is(h1, h2, h3, h4, h5, h6) {
     color: $white;
   }
-  .arrow-link:not(:hover) {
+  .arrow-link {
     color: $white;
   }
 }

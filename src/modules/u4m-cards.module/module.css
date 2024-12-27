@@ -81,7 +81,7 @@ section.u4m-cards .link a {
   border: 1px solid #007c43;
   border-radius: 12rem;
   padding: 11rem 24rem;
-  margin: 20rem 0;
+  margin: 0;
   transition: 0.1s ease-in;
   font-weight: 600;
   font-size: 16rem;
@@ -162,7 +162,7 @@ section.u4m-cards .wrapper div.card button {
   border: 1px solid #007c43;
   border-radius: 12rem;
   padding: 11rem 24rem;
-  margin: 20rem 0;
+  margin: 0;
   transition: 0.1s ease-in;
   font-weight: 600;
   font-size: 16rem;
@@ -292,7 +292,7 @@ section.u4m-cards .wrapper div.card .content span.url a {
   border: 1px solid #007c43;
   border-radius: 12rem;
   padding: 11rem 24rem;
-  margin: 20rem 0;
+  margin: 0;
   transition: 0.1s ease-in;
   font-weight: 600;
   font-size: 16rem;
@@ -328,4 +328,4 @@ section.u4m-cards .wrapper.four div.card {
   section.u4m-cards .wrapper.four div.card {
     flex-basis: calc(50% - 40rem);
   }
-}
+}/*# sourceMappingURL=module.css.map */
