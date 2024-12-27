@@ -3704,7 +3704,7 @@ section[class*=u4m-] {
 }
 .intro_content .eyebrow_text {
   font-family: "Inter";
-  font-size: 13rem;
+  font-size: 14rem;
   font-weight: 500;
   line-height: 1;
   display: block;
@@ -3793,6 +3793,38 @@ section[class*=u4m-] {
 
 .white_bg {
   background-color: #ffffff;
+}
+
+.forest_green_text {
+  color: #007c43;
+}
+
+.dark_teal_text {
+  color: #213944;
+}
+
+.pale_green_text {
+  color: #b5dda5;
+}
+
+.silver_gray_text {
+  color: #dbdbdb;
+}
+
+.charcoal_gray_text {
+  color: #6e757c;
+}
+
+.golden_brown_text {
+  color: #c49e5b;
+}
+
+.soft_white_text {
+  color: #f7f8f6;
+}
+
+.white_bg_text {
+  color: #ffffff;
 }
 
 .bg_image {

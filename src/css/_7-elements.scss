@@ -652,6 +652,34 @@ section[class*="u4m-"] {
 .white_bg {
   background-color: $white;
 }
+
+// text Color 
+.forest_green_text {
+  color: $action1;
+}
+.dark_teal_text {
+  color: $heading;
+}
+.pale_green_text {
+  color: $digitalgreen;
+}
+.silver_gray_text {
+  color: $gray1;
+}
+.charcoal_gray_text {
+  color: $gray2;
+}
+.golden_brown_text {
+  color: $bronze;
+}
+.soft_white_text {
+  color: $airwhite;
+}
+.white_bg_text {
+  color: $white;
+}
+
+
 .bg_image {
   background-position: center center;
   background-repeat: no-repeat;

@@ -1,425 +1,413 @@
 [ {
-  "id" : "ec449a25-72e9-8739-850f-8c1ccad3b281",
-  "name" : "include_heading",
+  "id" : "081bfb60-a75d-a475-e7fb-44c8a8969c1a",
+  "name" : "intro_content",
   "display_width" : null,
-  "label" : "Include Heading",
+  "label" : "Intro Content",
   "required" : false,
   "locked" : false,
-  "display" : "checkbox",
-  "type" : "boolean",
-  "default" : true
-}, {
-  "id" : "8442e250-a556-a1f0-d44d-e0a88ce059a7",
-  "name" : "cards_heading",
-  "display_width" : null,
-  "label" : "Cards Heading",
-  "required" : false,
-  "locked" : false,
-  "validation_regex" : "",
-  "visibility" : {
-    "controlling_field" : "ec449a25-72e9-8739-850f-8c1ccad3b281",
-    "controlling_field_path" : null,
-    "controlling_value_regex" : "true",
-    "property" : null,
-    "operator" : "EQUAL",
-    "access" : null
-  },
-  "allow_new_line" : false,
-  "show_emoji_picker" : false,
-  "type" : "text",
-  "default" : " Cards"
-}, {
-  "id" : "dc245f19-b856-1c28-d773-d347b1a634a0",
-  "name" : "include_subheading",
-  "display_width" : null,
-  "label" : "Include Subheading",
-  "required" : false,
-  "locked" : false,
-  "display" : "checkbox",
-  "type" : "boolean",
-  "default" : false
-}, {
-  "id" : "4e080608-931a-46a1-0721-63d42f626ce7",
-  "name" : "cards_subheading",
-  "display_width" : null,
-  "label" : "Cards Subheading",
-  "required" : false,
-  "locked" : false,
-  "validation_regex" : "",
-  "visibility" : {
-    "controlling_field" : "dc245f19-b856-1c28-d773-d347b1a634a0",
-    "controlling_field_path" : null,
-    "controlling_value_regex" : "true",
-    "property" : null,
-    "operator" : "EQUAL",
-    "access" : null
-  },
-  "allow_new_line" : false,
-  "show_emoji_picker" : false,
-  "type" : "text",
-  "default" : "Subheading text goes here"
-}, {
-  "id" : "22f3fce6-f4d7-43bc-bbf8-9167f089e15c",
-  "name" : "include_link",
-  "display_width" : null,
-  "label" : "Include Link",
-  "required" : false,
-  "locked" : false,
-  "display" : "checkbox",
-  "type" : "boolean",
-  "default" : false
-}, {
-  "id" : "0ed56f95-b2e8-6b0e-9d72-fe3ec21fe779",
-  "name" : "link_text",
-  "display_width" : null,
-  "label" : "Link Text",
-  "required" : false,
-  "locked" : false,
-  "validation_regex" : "",
-  "visibility" : {
-    "controlling_field" : "22f3fce6-f4d7-43bc-bbf8-9167f089e15c",
-    "controlling_field_path" : null,
-    "controlling_value_regex" : "true",
-    "property" : null,
-    "operator" : "EQUAL",
-    "access" : null
-  },
-  "allow_new_line" : false,
-  "show_emoji_picker" : false,
-  "type" : "text",
-  "default" : "Learn More"
-}, {
-  "id" : "2cddbf7d-c053-2ef9-8874-12b696428316",
-  "name" : "link_field",
-  "display_width" : null,
-  "label" : "Link",
-  "required" : false,
-  "locked" : false,
-  "visibility" : {
-    "controlling_field" : "22f3fce6-f4d7-43bc-bbf8-9167f089e15c",
-    "controlling_field_path" : null,
-    "controlling_value_regex" : "true",
-    "property" : null,
-    "operator" : "EQUAL",
-    "access" : null
-  },
-  "supported_types" : [ "EXTERNAL", "CONTENT", "FILE", "EMAIL_ADDRESS", "BLOG" ],
-  "show_advanced_rel_options" : false,
-  "type" : "link",
-  "default" : {
-    "url" : {
-      "content_id" : null,
-      "type" : "EXTERNAL",
-      "href" : "#"
-    },
-    "open_in_new_tab" : false,
-    "no_follow" : false
-  }
-}, {
-  "id" : "9859b467-6e64-88e1-7338-ebf186a6812b",
-  "name" : "landscape_cards",
-  "display_width" : null,
-  "label" : "Landscape Cards",
-  "required" : false,
-  "locked" : false,
-  "display" : "checkbox",
-  "type" : "boolean",
-  "default" : false
-}, {
-  "id" : "7268d906-4664-7f9c-4599-9538d2a9e87f",
-  "name" : "cards_per_row",
-  "display_width" : null,
-  "label" : "Cards Per Row",
-  "required" : false,
-  "locked" : false,
-  "display" : "select",
-  "choices" : [ [ "two", "Two" ], [ "three", "Three" ], [ "four", "Four" ] ],
-  "multiple" : false,
-  "reordering_enabled" : true,
-  "preset" : null,
-  "type" : "choice",
-  "default" : "three"
-}, {
-  "id" : "f4749832-c578-3c55-8bff-89f81874c04f",
-  "name" : "card",
-  "display_width" : null,
-  "label" : "Card",
-  "required" : false,
-  "locked" : false,
-  "occurrence" : {
-    "min" : null,
-    "max" : null,
-    "sorting_label_field" : "a9f65630-e8de-500e-25e5-0460ff3fe5ba",
-    "default" : 3
-  },
   "children" : [ {
-    "id" : "a9f65630-e8de-500e-25e5-0460ff3fe5ba",
-    "name" : "dynamic_card",
+    "id" : "c5ccdda8-6960-e255-a51f-c61077a633ca",
+    "name" : "include_eyebrow_text",
     "display_width" : null,
-    "label" : "Dynamic Card",
-    "inline_help_text" : "If selected manually entered card fields are ignored.",
-    "required" : false,
-    "locked" : false,
-    "display" : "checkbox",
-    "type" : "boolean",
-    "default" : false
-  }, {
-    "id" : "e2053a1b-cfc3-5f4f-3053-54dd7e9a5311",
-    "name" : "dynamic_page_field",
-    "display_width" : null,
-    "label" : "Dynamic Page",
-    "required" : false,
-    "locked" : false,
-    "visibility" : {
-      "controlling_field" : "a9f65630-e8de-500e-25e5-0460ff3fe5ba",
-      "controlling_field_path" : null,
-      "controlling_value_regex" : "true",
-      "property" : null,
-      "operator" : "EQUAL",
-      "access" : null
-    },
-    "type" : "page"
-  }, {
-    "id" : "c1046718-5885-844c-5294-d476f6a7d2eb",
-    "name" : "dynamic_page_button_text",
-    "display_width" : null,
-    "label" : "Dynamic Page Button Text",
-    "required" : false,
-    "locked" : false,
-    "validation_regex" : "",
-    "visibility" : {
-      "controlling_field" : "a9f65630-e8de-500e-25e5-0460ff3fe5ba",
-      "controlling_field_path" : null,
-      "controlling_value_regex" : "true",
-      "property" : null,
-      "operator" : "EQUAL",
-      "access" : null
-    },
-    "allow_new_line" : false,
-    "show_emoji_picker" : false,
-    "type" : "text",
-    "default" : "Learn More"
-  }, {
-    "id" : "b6683246-dc8b-6961-b1e9-7b698adcc2cd",
-    "name" : "resource_title",
-    "display_width" : null,
-    "label" : "Resource Title",
-    "required" : true,
-    "locked" : false,
-    "validation_regex" : "",
-    "visibility" : {
-      "controlling_field" : "a9f65630-e8de-500e-25e5-0460ff3fe5ba",
-      "controlling_field_path" : null,
-      "controlling_value_regex" : "true",
-      "property" : null,
-      "operator" : "NOT_EQUAL",
-      "access" : null
-    },
-    "allow_new_line" : false,
-    "show_emoji_picker" : false,
-    "type" : "text",
-    "default" : "The Sales Impact  of Optimized Product Content "
-  }, {
-    "id" : "b397a43f-7202-3b18-cd05-d9df32a798e3",
-    "name" : "include_type",
-    "display_width" : null,
-    "label" : "Include Type",
-    "required" : false,
-    "locked" : false,
-    "display" : "checkbox",
-    "type" : "boolean",
-    "default" : false
-  }, {
-    "id" : "982478ff-db5c-6ca6-fb16-76afcc9488b7",
-    "name" : "type",
-    "display_width" : null,
-    "label" : "Type",
-    "required" : false,
-    "locked" : false,
-    "validation_regex" : "",
-    "visibility" : {
-      "controlling_field" : "b397a43f-7202-3b18-cd05-d9df32a798e3",
-      "controlling_field_path" : null,
-      "controlling_value_regex" : "true",
-      "property" : null,
-      "operator" : "EQUAL",
-      "access" : null
-    },
-    "allow_new_line" : false,
-    "show_emoji_picker" : false,
-    "type" : "text",
-    "default" : "Blog Post"
-  }, {
-    "id" : "b90d447b-12d0-5d06-e9fc-a3b4fdcbfd4b",
-    "name" : "show_teaser_text",
-    "display_width" : null,
-    "label" : "Show Teaser Text",
+    "label" : "Include Eyebrow Text",
     "required" : false,
     "locked" : false,
     "display" : "checkbox",
     "type" : "boolean",
     "default" : true
   }, {
-    "id" : "93fcf6cb-62f9-da85-384e-2f90099469a5",
-    "name" : "teaser_text",
+    "id" : "5baff6ad-02e1-6b84-3429-260a0ded7ef6",
+    "name" : "eyebrow_text",
     "display_width" : null,
-    "label" : "Teaser Text",
+    "label" : "Eyebrow Text",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "visibility" : {
+      "controlling_field" : null,
+      "controlling_field_path" : "intro_content.include_eyebrow_text",
+      "controlling_value_regex" : "true",
+      "property" : null,
+      "operator" : "EQUAL",
+      "access" : null
+    },
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "Top Value Props"
+  }, {
+    "id" : "e1a83e2f-f82a-c168-4ab5-d2e59735e581",
+    "name" : "include_heading",
+    "display_width" : null,
+    "label" : "Include Heading",
+    "required" : false,
+    "locked" : false,
+    "display" : "checkbox",
+    "type" : "boolean",
+    "default" : true
+  }, {
+    "id" : "aef5e961-e297-2654-68e0-6128687770bf",
+    "name" : "heading_size",
+    "display_width" : null,
+    "label" : "Heading Size",
     "required" : false,
     "locked" : false,
     "visibility" : {
       "controlling_field" : null,
-      "controlling_field_path" : "card.show_teaser_text",
+      "controlling_field_path" : "intro_content.include_heading",
+      "controlling_value_regex" : "true",
+      "property" : null,
+      "operator" : "EQUAL",
+      "access" : null
+    },
+    "display" : "select",
+    "choices" : [ [ "h1", "Heading 1" ], [ "h2", "Heading 2" ], [ "h3", "Heading 3" ], [ "h4", "Heading 4" ], [ "h5", "Heading 5" ], [ "h6", "Heading 6" ] ],
+    "multiple" : false,
+    "reordering_enabled" : true,
+    "preset" : null,
+    "type" : "choice",
+    "default" : "h2"
+  }, {
+    "id" : "c7aa6b72-58e0-4caa-9b63-4da765e70069",
+    "name" : "heading",
+    "display_width" : null,
+    "label" : "Heading",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "visibility" : {
+      "controlling_field" : "e1a83e2f-f82a-c168-4ab5-d2e59735e581",
+      "controlling_field_path" : null,
+      "controlling_value_regex" : "true",
+      "property" : null,
+      "operator" : "EQUAL",
+      "access" : null
+    },
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "Super Compelling Headline About Challenges/Solutions/Differentiators"
+  }, {
+    "id" : "2f10bd6e-cf85-1cf6-5a4f-fa75e1e78238",
+    "name" : "include_content",
+    "display_width" : null,
+    "label" : "Include Content",
+    "required" : false,
+    "locked" : false,
+    "display" : "checkbox",
+    "type" : "boolean",
+    "default" : true
+  }, {
+    "id" : "0dc03814-a33d-3284-f2d6-b130f633f03d",
+    "name" : "content",
+    "display_width" : null,
+    "label" : "Content",
+    "required" : false,
+    "locked" : false,
+    "visibility" : {
+      "controlling_field" : null,
+      "controlling_field_path" : "intro_content.include_content",
       "controlling_value_regex" : "true",
       "property" : null,
       "operator" : "EQUAL",
       "access" : null
     },
     "type" : "richtext",
-    "default" : "<p>Lorem ipsum dolor sit amet consectetur adipiscing elit dolor sit maecenas fringilla nunc eget dolor sit amet.</p>"
+    "default" : "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>"
   }, {
-    "id" : "6e22e3a5-082f-377d-8fd1-99bbe91eb3a2",
-    "name" : "include_card_image",
+    "id" : "4a517c8a-8c15-a721-dca5-db7b58a8c2a7",
+    "name" : "include_button",
     "display_width" : null,
-    "label" : "Include Card Image",
+    "label" : "Include Button",
     "required" : false,
     "locked" : false,
     "display" : "checkbox",
     "type" : "boolean",
-    "default" : true
+    "default" : false
   }, {
-    "id" : "c928eaa2-df52-71f4-bb5a-1611ca61328e",
-    "name" : "fill_image_area",
+    "id" : "3d861e2f-6981-78b6-57a8-d59863169561",
+    "name" : "button_group",
     "display_width" : null,
-    "label" : "Fill Image Area",
+    "label" : "Button Group",
     "required" : false,
     "locked" : false,
+    "occurrence" : {
+      "min" : null,
+      "max" : 3,
+      "sorting_label_field" : "43e0936c-b29a-7bd7-61e3-b4671077ba62",
+      "default" : 2
+    },
     "visibility" : {
-      "controlling_field" : "6e22e3a5-082f-377d-8fd1-99bbe91eb3a2",
-      "controlling_field_path" : null,
+      "controlling_field" : null,
+      "controlling_field_path" : "intro_content.include_button",
       "controlling_value_regex" : "true",
       "property" : null,
       "operator" : "EQUAL",
       "access" : null
     },
-    "display" : "checkbox",
-    "type" : "boolean",
-    "default" : true
-  }, {
-    "id" : "3baf5f76-87c5-01cd-64c9-e9967b41891f",
-    "name" : "image_on_left",
+    "children" : [ {
+      "id" : "43e0936c-b29a-7bd7-61e3-b4671077ba62",
+      "name" : "button_type",
+      "display_width" : null,
+      "label" : "Button Type",
+      "required" : false,
+      "locked" : false,
+      "display" : "select",
+      "choices" : [ [ "std", "Standard" ], [ "cta", "Call to Action" ] ],
+      "multiple" : false,
+      "reordering_enabled" : true,
+      "preset" : null,
+      "type" : "choice",
+      "default" : "std"
+    }, {
+      "id" : "9d5fe057-d461-68d1-9845-607ec6d892ff",
+      "name" : "button_style",
+      "display_width" : null,
+      "label" : "Button Style",
+      "required" : false,
+      "locked" : false,
+      "visibility" : {
+        "controlling_field" : null,
+        "controlling_field_path" : "intro_content.button_group.button_type",
+        "controlling_value_regex" : "std",
+        "property" : null,
+        "operator" : "EQUAL",
+        "access" : null
+      },
+      "display" : "select",
+      "choices" : [ [ "hs-button", "Primary" ], [ "sec-btn", "Secondary" ], [ "arrow-link", "Arrow Link" ] ],
+      "multiple" : false,
+      "reordering_enabled" : true,
+      "preset" : null,
+      "type" : "choice",
+      "default" : "hs-button"
+    }, {
+      "id" : "105bbd69-dccc-fd6b-3d3d-3f4063128744",
+      "name" : "button_text",
+      "display_width" : null,
+      "label" : "Button Text",
+      "required" : false,
+      "locked" : false,
+      "validation_regex" : "",
+      "visibility" : {
+        "controlling_field" : null,
+        "controlling_field_path" : "intro_content.button_group.button_type",
+        "controlling_value_regex" : "std",
+        "property" : null,
+        "operator" : "EQUAL",
+        "access" : null
+      },
+      "allow_new_line" : false,
+      "show_emoji_picker" : false,
+      "type" : "text",
+      "default" : "Button"
+    }, {
+      "id" : "f1ccd7fd-a18d-1262-3c67-476cdf5424cd",
+      "name" : "link",
+      "display_width" : null,
+      "label" : "Link",
+      "required" : false,
+      "locked" : false,
+      "visibility" : {
+        "controlling_field" : null,
+        "controlling_field_path" : "intro_content.button_group.button_type",
+        "controlling_value_regex" : "std",
+        "property" : null,
+        "operator" : "EQUAL",
+        "access" : null
+      },
+      "supported_types" : [ "EXTERNAL", "CONTENT", "FILE", "EMAIL_ADDRESS", "PHONE_NUMBER" ],
+      "show_advanced_rel_options" : false,
+      "type" : "link",
+      "default" : {
+        "url" : {
+          "content_id" : null,
+          "type" : "EXTERNAL",
+          "href" : ""
+        },
+        "open_in_new_tab" : false,
+        "no_follow" : false
+      }
+    }, {
+      "id" : "ef46548d-bcc7-841c-4635-d4d035ae7022",
+      "name" : "cta",
+      "display_width" : null,
+      "label" : "CTA",
+      "required" : false,
+      "locked" : false,
+      "visibility" : {
+        "controlling_field" : null,
+        "controlling_field_path" : "intro_content.button_group.button_type",
+        "controlling_value_regex" : "cta",
+        "property" : null,
+        "operator" : "EQUAL",
+        "access" : null
+      },
+      "type" : "cta"
+    } ],
+    "tab" : "CONTENT",
+    "expanded" : false,
+    "group_occurrence_meta" : null,
+    "type" : "group",
+    "default" : [ {
+      "button_type" : "std",
+      "button_style" : "hs-button",
+      "button_text" : "Button",
+      "link" : {
+        "url" : {
+          "content_id" : null,
+          "type" : "EXTERNAL",
+          "href" : ""
+        },
+        "open_in_new_tab" : false,
+        "no_follow" : false
+      }
+    }, {
+      "button_type" : "std",
+      "button_style" : "hs-button",
+      "button_text" : "Button",
+      "link" : {
+        "url" : {
+          "content_id" : null,
+          "type" : "EXTERNAL",
+          "href" : ""
+        },
+        "open_in_new_tab" : false,
+        "no_follow" : false
+      }
+    } ]
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "group_occurrence_meta" : null,
+  "type" : "group",
+  "default" : {
+    "include_eyebrow_text" : true,
+    "eyebrow_text" : "Top Value Props",
+    "include_heading" : true,
+    "heading_size" : "h2",
+    "heading" : "Super Compelling Headline About Challenges/Solutions/Differentiators",
+    "include_content" : true,
+    "content" : "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>",
+    "include_button" : false,
+    "button_group" : [ {
+      "button_type" : "std",
+      "button_style" : "hs-button",
+      "button_text" : "Button",
+      "link" : {
+        "url" : {
+          "content_id" : null,
+          "type" : "EXTERNAL",
+          "href" : ""
+        },
+        "open_in_new_tab" : false,
+        "no_follow" : false
+      }
+    }, {
+      "button_type" : "std",
+      "button_style" : "hs-button",
+      "button_text" : "Button",
+      "link" : {
+        "url" : {
+          "content_id" : null,
+          "type" : "EXTERNAL",
+          "href" : ""
+        },
+        "open_in_new_tab" : false,
+        "no_follow" : false
+      }
+    } ]
+  }
+}, {
+  "id" : "2ce0e74a-0d41-fc1d-c179-6e66f4834b6f",
+  "name" : "cards_items_group",
+  "display_width" : null,
+  "label" : "Cards Items Group",
+  "required" : false,
+  "locked" : false,
+  "occurrence" : {
+    "min" : null,
+    "max" : null,
+    "sorting_label_field" : "524b8395-59dc-086e-212c-61f67c5b3731",
+    "default" : 3
+  },
+  "children" : [ {
+    "id" : "23128e0e-df0c-4f5e-784d-d6743a91b620",
+    "name" : "icon_type",
     "display_width" : null,
-    "label" : "Image on Left",
+    "label" : "Icon Type",
     "required" : false,
     "locked" : false,
-    "visibility" : {
-      "controlling_field" : "c928eaa2-df52-71f4-bb5a-1611ca61328e",
-      "controlling_field_path" : null,
-      "controlling_value_regex" : "true",
-      "property" : null,
-      "operator" : "NOT_EQUAL",
-      "access" : null
-    },
-    "display" : "checkbox",
-    "type" : "boolean",
-    "default" : true
-  }, {
-    "id" : "977c149b-3d10-8cd7-d49c-a8bfdf828e3d",
-    "name" : "card_image",
-    "display_width" : null,
-    "label" : "Card Image",
-    "required" : false,
-    "locked" : false,
-    "visibility" : {
-      "controlling_field" : "6e22e3a5-082f-377d-8fd1-99bbe91eb3a2",
-      "controlling_field_path" : null,
-      "controlling_value_regex" : "true",
-      "property" : null,
-      "operator" : "EQUAL",
-      "access" : null
-    },
-    "responsive" : false,
-    "resizable" : false,
-    "show_loading" : false,
-    "type" : "image",
-    "default" : {
-      "src" : "https://302335.fs1.hubspotusercontent-na1.net/hubfs/302335/cover-temp-720x406.png",
-      "alt" : "cover-temp-720x406",
-      "width" : 720,
-      "height" : 406
-    }
-  }, {
-    "id" : "df7cbf64-265c-87a9-28de-15036061b392",
-    "name" : "link_type",
-    "display_width" : null,
-    "label" : "Link Type",
-    "required" : false,
-    "locked" : false,
-    "visibility" : {
-      "controlling_field" : "a9f65630-e8de-500e-25e5-0460ff3fe5ba",
-      "controlling_field_path" : null,
-      "controlling_value_regex" : "true",
-      "property" : null,
-      "operator" : "NOT_EQUAL",
-      "access" : null
-    },
-    "display" : "radio",
-    "choices" : [ [ "none", "None" ], [ "cta", "CTA" ], [ "url", "URL" ] ],
+    "display" : "select",
+    "choices" : [ [ "Image", "Image" ], [ "svg", "Nomal Svg" ] ],
     "multiple" : false,
     "reordering_enabled" : true,
     "preset" : null,
     "type" : "choice",
-    "default" : "url"
+    "default" : "svg"
   }, {
-    "id" : "033fc659-22b9-6f16-98a1-fc39ded4e6b7",
-    "name" : "call_to_action",
+    "id" : "c273f462-4810-ab8c-ca03-e1bfdbb4001f",
+    "name" : "image_icon",
     "display_width" : null,
-    "label" : "Call-to-Action",
+    "label" : "Image Icon",
     "required" : false,
     "locked" : false,
     "visibility" : {
-      "controlling_field" : "df7cbf64-265c-87a9-28de-15036061b392",
-      "controlling_field_path" : null,
-      "controlling_value_regex" : "cta",
+      "controlling_field" : null,
+      "controlling_field_path" : "cards_items_group.icon_type",
+      "controlling_value_regex" : "image",
       "property" : null,
       "operator" : "EQUAL",
       "access" : null
     },
-    "type" : "cta",
-    "default" : "55235afb-a542-4293-9c89-f96156461ee6"
-  }, {
-    "id" : "66253a04-77b7-628e-cb9a-cfc208aec619",
-    "name" : "link",
-    "display_width" : null,
-    "label" : "Link",
-    "required" : false,
-    "locked" : false,
-    "visibility" : {
-      "controlling_field" : "df7cbf64-265c-87a9-28de-15036061b392",
-      "controlling_field_path" : null,
-      "controlling_value_regex" : "url",
-      "property" : null,
-      "operator" : "EQUAL",
-      "access" : null
-    },
-    "supported_types" : [ "EXTERNAL", "CONTENT", "FILE", "EMAIL_ADDRESS", "BLOG" ],
-    "type" : "url",
+    "responsive" : true,
+    "resizable" : true,
+    "show_loading" : false,
+    "type" : "image",
     "default" : {
-      "type" : "EXTERNAL",
-      "href" : "#",
-      "content_id" : null
+      "size_type" : "auto",
+      "src" : "https://23543895.fs1.hubspotusercontent-na1.net/hubfs/23543895/RampXchange/images/Frame%2042.png",
+      "alt" : "Icon",
+      "loading" : "lazy",
+      "width" : 129,
+      "height" : 128,
+      "max_width" : 129,
+      "max_height" : 128
     }
   }, {
-    "id" : "5d9f531f-9aa8-0835-3e02-ff0b301fe570",
-    "name" : "link_text",
+    "id" : "132dc87f-8c36-8c32-a100-a731126e973a",
+    "name" : "svg_icon_size_type",
     "display_width" : null,
-    "label" : "Link Text",
+    "label" : "Svg Icon Size Type",
+    "required" : false,
+    "locked" : false,
+    "visibility" : {
+      "controlling_field" : null,
+      "controlling_field_path" : "cards_items_group.icon_type",
+      "controlling_value_regex" : "svg",
+      "property" : null,
+      "operator" : "EQUAL",
+      "access" : null
+    },
+    "display" : "select",
+    "choices" : [ [ "large", "Large" ], [ "medium ", "Medium " ], [ "small", "Small" ] ],
+    "multiple" : false,
+    "reordering_enabled" : true,
+    "preset" : null,
+    "type" : "choice",
+    "default" : "small"
+  }, {
+    "id" : "e7359bd5-819d-6cb7-e63d-38bfadaae1c9",
+    "name" : "svg_icon",
+    "display_width" : null,
+    "label" : "SVG Icon",
     "required" : false,
     "locked" : false,
     "validation_regex" : "",
     "visibility" : {
-      "controlling_field" : "df7cbf64-265c-87a9-28de-15036061b392",
-      "controlling_field_path" : null,
-      "controlling_value_regex" : "url",
+      "controlling_field" : null,
+      "controlling_field_path" : "cards_items_group.icon_type",
+      "controlling_value_regex" : "svg",
       "property" : null,
       "operator" : "EQUAL",
       "access" : null
@@ -427,109 +415,477 @@
     "allow_new_line" : false,
     "show_emoji_picker" : false,
     "type" : "text",
-    "default" : "Learn More"
+    "default" : "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"65\" height=\"64\" viewBox=\"0 0 65 64\" fill=\"none\"><path fill-rule=\"evenodd\" clip-rule=\"evenodd\" d=\"M30.5906 4.49782C29.728 4.78665 27.1095 5.64931 24.7717 6.41472C20.9647 7.66124 20.5072 7.83738 20.3859 8.10367C20.1657 8.58687 20.2015 21.0944 20.4259 22.1543C20.7111 23.4998 21.3461 24.6495 22.7424 26.3475L23.0349 26.7032L21.7878 27.0313C20.531 27.362 18.4958 27.5537 17.881 27.3994C17.6184 27.3335 17.5977 27.2916 17.6977 27.0284C17.8703 26.5746 17.8325 26.1056 17.6072 25.9036C17.4953 25.8034 15.7598 25.2732 13.7503 24.7254C9.56926 23.5857 9.70891 23.587 9.39173 24.6854C8.73054 26.9753 4.33337 43.216 4.33337 43.3681C4.33337 43.4722 4.43074 43.6455 4.54982 43.7532C4.66879 43.8609 6.40363 44.3958 8.40499 44.942C11.3295 45.7401 12.0956 45.9114 12.3073 45.8149C12.493 45.7303 12.6378 45.479 12.798 44.9636L13.0251 44.2324L13.646 44.26C14.6299 44.3039 15.5377 44.8201 16.5809 45.9291C17.0655 46.4443 17.462 46.9066 17.462 46.9563C17.462 47.0061 17.2999 47.2501 17.102 47.4985C16.2373 48.583 16.0352 49.6437 16.4956 50.6805C16.7829 51.3278 17.529 52.0158 18.1431 52.1998C18.5804 52.3308 18.5995 52.3554 18.4888 52.6423C18.3157 53.0903 18.3432 54.1742 18.5396 54.6442C18.9991 55.7439 20.1528 56.4526 21.2917 56.3346C21.6455 56.2981 22.0459 56.2352 22.1815 56.195C22.3736 56.138 22.4431 56.1815 22.497 56.3929C22.6166 56.8614 23.2896 57.5545 23.9019 57.8396C24.6311 58.179 25.4658 58.196 26.151 57.885L26.649 57.659L26.7531 57.9327C26.9257 58.3867 27.5967 59.0688 28.0917 59.2937C28.706 59.5728 29.8041 59.5725 30.4164 59.2932C30.672 59.1766 31.0712 58.8849 31.3035 58.6448L31.7259 58.2084L32.5606 58.9094C33.8006 59.9505 34.7753 60.1978 35.9974 59.7814C37.0225 59.4322 38.027 58.1227 38.0261 57.137C38.026 56.916 38.0827 56.8995 38.7197 56.9354C39.9243 57.0035 41.0837 56.2857 41.6233 55.1375C41.7537 54.8602 41.8603 54.4814 41.8603 54.2958V53.9583L42.7698 53.9169C43.5373 53.882 43.7682 53.8207 44.2472 53.5245C45.0018 53.058 45.5261 52.3488 45.7039 51.5546L45.8475 50.9129H46.5879C47.8589 50.9129 48.7321 50.3781 49.2925 49.2567C49.72 48.4012 49.7563 47.6041 49.4093 46.7025L49.1739 46.0913L49.5397 45.7805C50.0693 45.3304 51.6039 44.5751 51.7241 44.7052C51.7791 44.7647 51.8878 45.0129 51.9658 45.2568C52.217 46.0425 52.2331 46.0413 56.2618 44.942C58.2631 44.3958 59.998 43.8609 60.1169 43.7532C60.236 43.6455 60.3334 43.471 60.3334 43.3654C60.3334 43.2147 56.0322 27.3355 55.2735 24.6854C54.959 23.5868 55.098 23.5856 50.9164 24.7254C48.9069 25.2732 47.1714 25.8034 47.0595 25.9036C46.831 26.1085 46.7968 26.5758 46.9761 27.0471L47.096 27.3626L45.9014 27.2849C44.8171 27.2145 41.7566 26.7981 41.6674 26.7089C41.6471 26.6886 41.8674 26.3944 42.157 26.0553C43.3032 24.7123 43.9593 23.4829 44.2422 22.1475C44.4654 21.0938 44.4999 8.58431 44.2809 8.10367C44.1586 7.83517 43.5969 7.62627 38.4874 5.94906C35.3755 4.92747 32.6786 4.06493 32.4943 4.03205C32.2755 3.99313 31.6144 4.15485 30.5906 4.49782ZM37.8006 7.19419L43.0222 8.90509V15.0218C43.0222 18.5767 42.9738 21.4005 42.9067 21.7643C42.7165 22.7952 41.9733 24.1352 40.9296 25.3289C40.2691 26.0843 39.9267 26.392 39.7901 26.3523C39.2132 26.1854 34.7217 25.3316 33.3209 25.1227C31.2328 24.8113 28.1348 24.6823 27.5309 24.8817C27.291 24.9608 26.8558 25.2081 26.5635 25.4311C26.0383 25.8322 25.1984 26.1623 24.6974 26.1647C24.3171 26.1666 22.901 24.4603 22.3359 23.3195C22.0827 22.8083 21.8235 22.1084 21.7601 21.7643C21.6929 21.4005 21.6446 18.5767 21.6446 15.0219V8.90533L26.7857 7.23346C29.6133 6.31387 32.0052 5.51965 32.101 5.46853C32.1969 5.41741 32.3436 5.39975 32.4271 5.42938C32.5107 5.459 34.9287 6.25323 37.8006 7.19419ZM34.3394 15.5039L30.2463 19.5971L28.2325 17.5952C26.1312 15.5064 25.8687 15.336 25.4288 15.7759C24.9682 16.2366 25.1323 16.475 27.6054 18.9373C29.3673 20.6917 30.0355 21.2863 30.245 21.2863C30.6433 21.2863 39.4205 12.5287 39.4205 12.1314C39.4205 11.6558 39.2116 11.4108 38.8063 11.4108C38.4699 11.4108 38.0228 11.8206 34.3394 15.5039ZM13.4934 26.101C14.9851 26.5107 16.2223 26.8629 16.2429 26.8835C16.2934 26.9344 11.5904 44.1593 11.5018 44.2479C11.3716 44.3782 5.96132 42.8496 5.96063 42.6824C5.95947 42.4183 10.6399 25.3526 10.713 25.3545C10.7506 25.3554 12.0019 25.6914 13.4934 26.101ZM56.3646 33.9396C57.6528 38.6624 58.7065 42.5966 58.7061 42.6824C58.7054 42.8496 53.2951 44.3782 53.1649 44.2479C53.0758 44.1587 48.3735 26.9342 48.4244 26.8829C48.4719 26.8351 53.7229 25.3758 53.8957 25.3625C53.967 25.357 55.0458 29.1045 56.3646 33.9396ZM33.109 26.5044C33.9509 26.6305 36.4866 27.1002 38.7439 27.5481C42.7949 28.352 45.3011 28.7215 46.7032 28.7219C47.2861 28.722 47.4332 28.7603 47.4833 28.9253C48.0949 30.9331 51.3619 43.1973 51.2995 43.2512C51.252 43.2923 50.9778 43.4169 50.6902 43.5278C50.0821 43.7625 48.9753 44.4166 48.4772 44.8358L48.131 45.1272L47.0549 44.2151C46.4629 43.7134 43.7367 41.3946 40.9964 39.0623C38.256 36.7299 35.4402 34.3355 34.739 33.7413C33.1615 32.4046 32.7501 32.1842 31.8336 32.1842C31.2403 32.1842 30.9815 32.2622 30.0799 32.7123C29.4982 33.0028 28.2902 33.7199 27.3956 34.3061C24.6402 36.1112 23.1299 36.6962 22.0057 36.3934C21.278 36.1975 21.031 35.7435 21.1065 34.7412C21.2577 32.7376 22.6535 30.6904 25.711 27.9881C27.9685 25.9928 27.6419 26.1355 29.7774 26.2113C30.7678 26.2464 32.267 26.3784 33.109 26.5044ZM22.6916 28.9371C21.5063 30.2434 20.9765 30.9784 20.4721 32.0162C19.0367 34.969 19.6297 37.3734 21.8954 37.788C23.4365 38.0699 25.1447 37.4642 27.8023 35.6932C30.2999 34.0288 31.4894 33.4387 32.1003 33.5609C32.3423 33.6092 34.8194 35.642 40.0319 40.0692C44.2006 43.61 47.7354 46.6614 47.887 46.8501C48.4755 47.5827 48.2809 48.8007 47.4982 49.2845C47.092 49.5355 46.1847 49.6027 45.8222 49.4088C45.7091 49.3482 44.0787 47.9891 42.1991 46.3884C39.9398 44.4645 38.6929 43.4779 38.5201 43.4777C38.0302 43.4768 37.6351 44.0983 37.8828 44.4801C37.9298 44.5525 39.3276 45.7691 40.989 47.1838C44.2482 49.959 44.4778 50.2253 44.3548 51.0872C44.2719 51.6677 44.0447 52.0214 43.5678 52.3122C43.1623 52.5594 42.3344 52.6147 41.9689 52.4192C41.8452 52.353 40.4549 51.2028 38.8791 49.8632C37.3034 48.5235 35.9296 47.4274 35.8262 47.4274C35.4323 47.4274 35.1069 47.7793 35.1443 48.1647C35.175 48.4811 35.4811 48.7891 37.3857 50.4194C40.3954 52.9959 40.3694 52.9679 40.4406 53.7085C40.5067 54.3966 40.3059 54.8899 39.8119 55.253C39.4794 55.4973 38.7631 55.6245 38.3308 55.516C38.1712 55.4759 37.2661 54.7849 36.3197 53.9803C34.2362 52.2091 34.1529 52.1508 33.8463 52.2482C33.5202 52.3517 33.2269 52.8242 33.3156 53.1034C33.3552 53.2282 34.0176 53.8644 34.7876 54.5172C35.5578 55.1702 36.2875 55.8679 36.4095 56.0679C36.9659 56.9804 36.394 58.2944 35.3396 58.526C34.707 58.6649 34.2143 58.4803 33.4021 57.8001C32.974 57.4415 32.613 57.1417 32.5999 57.1339C32.5868 57.126 32.6573 56.8863 32.7566 56.6013C33.2499 55.1854 32.2612 53.3136 30.8836 53.055L30.5069 52.9844L30.5632 52.1974C30.5969 51.7263 30.5615 51.2346 30.4749 50.9722C30.1914 50.1134 29.0559 49.1799 28.2858 49.1727C28.0339 49.1704 28.0199 49.1366 28.092 48.7097C28.217 47.9699 27.8859 47.0402 27.2825 46.4368C26.4002 45.5544 25.1696 45.3685 24.0312 45.9456C23.7783 46.0739 23.5544 46.1279 23.5337 46.0656C23.3972 45.6563 22.7181 44.9643 22.1989 44.7056C21.0568 44.1365 19.811 44.3704 18.8926 45.3262L18.4298 45.8078L17.394 44.776C16.2435 43.6299 15.3877 43.1372 14.1189 42.8905C13.537 42.7773 13.4014 42.7108 13.4471 42.5611C13.4786 42.4579 14.2655 39.5764 15.1959 36.1577C16.1261 32.739 16.9621 29.6805 17.0534 29.361L17.2194 28.7801L18.9963 28.7662C20.5866 28.7537 20.9074 28.7155 22.0512 28.4023C22.7541 28.2098 23.372 28.0461 23.4243 28.0385C23.4765 28.0311 23.1468 28.4354 22.6916 28.9371ZM21.6484 45.9771C22.1142 46.2179 22.3825 46.7705 22.3069 47.3338C22.26 47.6839 21.9966 48.0915 21.1135 49.1804C20.4903 49.9488 19.8727 50.653 19.7409 50.7452C19.6093 50.8375 19.2788 50.9129 19.0064 50.9129C18.0701 50.9129 17.4051 49.9193 17.7664 49.0601C17.9467 48.6311 19.7489 46.4027 20.2068 46.0425C20.5707 45.7563 21.1689 45.7292 21.6484 45.9771ZM26.1503 47.2638C26.5175 47.5045 26.7933 48.1841 26.7073 48.6371C26.6282 49.0545 22.3064 54.4526 21.7928 54.7754C21.3705 55.0407 20.862 55.0325 20.403 54.7527C19.6625 54.3012 19.5275 53.4261 20.0844 52.6873C21.5422 50.7529 24.5166 47.2634 24.8255 47.1251C25.2346 46.9419 25.7397 46.9949 26.1503 47.2638ZM28.8014 50.9593C29.1303 51.2883 29.1964 51.4395 29.1964 51.8629C29.1964 52.4644 29.2096 52.4439 27.3791 54.7011C25.8598 56.5747 25.5638 56.8029 24.8086 56.6828C24.157 56.5792 23.7359 56.0558 23.7359 55.3497C23.7359 54.8096 23.7793 54.7404 25.2996 52.8635C26.1595 51.8016 26.9817 50.8498 27.1262 50.7485C27.2708 50.6472 27.6181 50.5643 27.8979 50.5643C28.3212 50.5643 28.4725 50.6304 28.8014 50.9593ZM30.914 54.5797C31.4449 54.9515 31.6678 55.7621 31.3853 56.294C31.1569 56.724 30.2299 57.8178 29.9677 57.9669C29.831 58.0445 29.4918 58.1098 29.2139 58.1121C28.7912 58.1155 28.6439 58.0516 28.3135 57.7212C27.9809 57.3887 27.9184 57.2432 27.9184 56.8022C27.9184 56.3671 27.9992 56.1729 28.3948 55.6578C29.1702 54.6477 29.5128 54.3984 30.1247 54.3984C30.4173 54.3984 30.7712 54.4797 30.914 54.5797Z\" fill=\"#C49E5B\"/></svg>"
   }, {
-    "id" : "c34a5789-15a6-395c-8285-86f68bca5d68",
-    "name" : "open_in_new_window",
+    "id" : "af301702-41f2-ab19-527c-be2923ee22bf",
+    "name" : "include_eyebrow_text",
     "display_width" : null,
-    "label" : "Open In New Window",
+    "label" : "Include Eyebrow Text",
     "required" : false,
     "locked" : false,
+    "display" : "checkbox",
+    "type" : "boolean",
+    "default" : true
+  }, {
+    "id" : "6e019002-314f-48f0-ab77-d0d6bfbd7bc0",
+    "name" : "eyebrow_text",
+    "display_width" : null,
+    "label" : "Eyebrow Text",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
     "visibility" : {
-      "controlling_field" : "df7cbf64-265c-87a9-28de-15036061b392",
-      "controlling_field_path" : null,
-      "controlling_value_regex" : "url",
+      "controlling_field" : null,
+      "controlling_field_path" : "cards_items_group.include_eyebrow_text",
+      "controlling_value_regex" : "true",
       "property" : null,
       "operator" : "EQUAL",
       "access" : null
     },
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "Optional Eyebrow Text"
+  }, {
+    "id" : "917c98b4-8632-d9c8-5339-1ee15e998cf4",
+    "name" : "include_heading",
+    "display_width" : null,
+    "label" : "Include Heading",
+    "required" : false,
+    "locked" : false,
+    "display" : "checkbox",
+    "type" : "boolean",
+    "default" : true
+  }, {
+    "id" : "43da341d-c848-9c42-d327-b0b60d7aadd7",
+    "name" : "heading_size",
+    "display_width" : null,
+    "label" : "Heading Size",
+    "required" : false,
+    "locked" : false,
+    "visibility" : {
+      "controlling_field" : null,
+      "controlling_field_path" : "cards_items_group.include_heading",
+      "controlling_value_regex" : "true",
+      "property" : null,
+      "operator" : "EQUAL",
+      "access" : null
+    },
+    "display" : "select",
+    "choices" : [ [ "h1", "Heading 1" ], [ "h2", "Heading 2" ], [ "h3", "Heading 3" ], [ "h4", "Heading 4" ], [ "h5", "Heading 5" ], [ "h6", "Heading 6" ] ],
+    "multiple" : false,
+    "reordering_enabled" : true,
+    "preset" : null,
+    "type" : "choice",
+    "default" : "h4"
+  }, {
+    "id" : "524b8395-59dc-086e-212c-61f67c5b3731",
+    "name" : "heading",
+    "display_width" : null,
+    "label" : "Heading",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "visibility" : {
+      "controlling_field" : null,
+      "controlling_field_path" : "cards_items_group.include_heading",
+      "controlling_value_regex" : "true",
+      "property" : null,
+      "operator" : "EQUAL",
+      "access" : null
+    },
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "Simplify Compliance with Expert Support"
+  }, {
+    "id" : "b9c4deb1-893f-34bf-adb1-997ad062eeb3",
+    "name" : "include_content",
+    "display_width" : null,
+    "label" : "Include Content",
+    "required" : false,
+    "locked" : false,
+    "display" : "checkbox",
+    "type" : "boolean",
+    "default" : true
+  }, {
+    "id" : "08c6af8f-1269-8307-9dc6-fe10c0326f58",
+    "name" : "content",
+    "display_width" : null,
+    "label" : "Content",
+    "required" : false,
+    "locked" : false,
+    "visibility" : {
+      "controlling_field" : null,
+      "controlling_field_path" : "cards_items_group.include_content",
+      "controlling_value_regex" : "true",
+      "property" : null,
+      "operator" : "EQUAL",
+      "access" : null
+    },
+    "type" : "richtext",
+    "default" : "<p>RAMPxchange’s cybersecurity professional advisors provides hands-on support for creating RFPs, navigating compliance frameworks, and managing post-award vendor relationships.</p>"
+  }, {
+    "id" : "53f15bc3-9621-0433-6ce0-8306f1c7a6a4",
+    "name" : "include_button",
+    "display_width" : null,
+    "label" : "Include Button",
+    "required" : false,
+    "locked" : false,
     "display" : "checkbox",
     "type" : "boolean",
     "default" : false
+  }, {
+    "id" : "77e40e2b-5b35-0b91-bf80-4d76f95050c0",
+    "name" : "button_group",
+    "display_width" : null,
+    "label" : "Button Group",
+    "required" : false,
+    "locked" : false,
+    "occurrence" : {
+      "min" : null,
+      "max" : 3,
+      "sorting_label_field" : "43e0936c-b29a-7bd7-61e3-b4671077ba62",
+      "default" : 1
+    },
+    "visibility" : {
+      "controlling_field" : null,
+      "controlling_field_path" : "cards_items_group.include_button",
+      "controlling_value_regex" : "true",
+      "property" : null,
+      "operator" : "EQUAL",
+      "access" : null
+    },
+    "children" : [ {
+      "id" : "ee93e29c-038c-ac07-b230-8b776b1eb5ee",
+      "name" : "button_type",
+      "display_width" : null,
+      "label" : "Button Type",
+      "required" : false,
+      "locked" : false,
+      "display" : "select",
+      "choices" : [ [ "std", "Standard" ], [ "cta", "Call to Action" ] ],
+      "multiple" : false,
+      "reordering_enabled" : true,
+      "preset" : null,
+      "type" : "choice",
+      "default" : "std"
+    }, {
+      "id" : "f20faa01-3575-8aa6-7f26-596b9403fb9c",
+      "name" : "button_style",
+      "display_width" : null,
+      "label" : "Button Style",
+      "required" : false,
+      "locked" : false,
+      "visibility" : {
+        "controlling_field" : null,
+        "controlling_field_path" : "cards_items_group.button_group.button_type",
+        "controlling_value_regex" : "std",
+        "property" : null,
+        "operator" : "EQUAL",
+        "access" : null
+      },
+      "display" : "select",
+      "choices" : [ [ "hs-button", "Primary" ], [ "sec-btn", "Secondary" ], [ "arrow-link", "Arrow Link" ] ],
+      "multiple" : false,
+      "reordering_enabled" : true,
+      "preset" : null,
+      "type" : "choice",
+      "default" : "hs-button"
+    }, {
+      "id" : "3d07871f-0d97-35dd-9e11-45bd0858ace6",
+      "name" : "button_text",
+      "display_width" : null,
+      "label" : "Button Text",
+      "required" : false,
+      "locked" : false,
+      "validation_regex" : "",
+      "visibility" : {
+        "controlling_field" : null,
+        "controlling_field_path" : "cards_items_group.button_group.button_type",
+        "controlling_value_regex" : "std",
+        "property" : null,
+        "operator" : "EQUAL",
+        "access" : null
+      },
+      "allow_new_line" : false,
+      "show_emoji_picker" : false,
+      "type" : "text",
+      "default" : "Button"
+    }, {
+      "id" : "58b7a3a3-cee7-c787-7a59-99a25d4dde77",
+      "name" : "link",
+      "display_width" : null,
+      "label" : "Link",
+      "required" : false,
+      "locked" : false,
+      "visibility" : {
+        "controlling_field" : null,
+        "controlling_field_path" : "cards_items_group.button_group.button_type",
+        "controlling_value_regex" : "std",
+        "property" : null,
+        "operator" : "EQUAL",
+        "access" : null
+      },
+      "supported_types" : [ "EXTERNAL", "CONTENT", "FILE", "EMAIL_ADDRESS", "PHONE_NUMBER" ],
+      "show_advanced_rel_options" : false,
+      "type" : "link",
+      "default" : {
+        "url" : {
+          "content_id" : null,
+          "type" : "EXTERNAL",
+          "href" : ""
+        },
+        "open_in_new_tab" : false,
+        "no_follow" : false
+      }
+    }, {
+      "id" : "347c6a77-c9e0-9369-7abf-08fa3bcf2eb7",
+      "name" : "cta",
+      "display_width" : null,
+      "label" : "CTA",
+      "required" : false,
+      "locked" : false,
+      "visibility" : {
+        "controlling_field" : null,
+        "controlling_field_path" : "cards_items_group.button_group.button_type",
+        "controlling_value_regex" : "cta",
+        "property" : null,
+        "operator" : "EQUAL",
+        "access" : null
+      },
+      "type" : "cta"
+    } ],
+    "tab" : "CONTENT",
+    "expanded" : false,
+    "group_occurrence_meta" : null,
+    "type" : "group",
+    "default" : [ {
+      "button_type" : "std",
+      "button_style" : "hs-button",
+      "button_text" : "Button",
+      "link" : {
+        "url" : {
+          "content_id" : null,
+          "type" : "EXTERNAL",
+          "href" : ""
+        },
+        "open_in_new_tab" : false,
+        "no_follow" : false
+      }
+    } ]
   } ],
   "tab" : "CONTENT",
   "expanded" : false,
   "group_occurrence_meta" : null,
   "type" : "group",
   "default" : [ {
-    "dynamic_card" : false,
-    "dynamic_page_button_text" : "Learn More",
-    "resource_title" : "The Sales Impact  of Optimized Product Content ",
-    "include_type" : false,
-    "type" : "Blog Post",
-    "show_teaser_text" : true,
-    "teaser_text" : "<p>Lorem ipsum dolor sit amet consectetur adipiscing elit dolor sit maecenas fringilla nunc eget dolor sit amet.</p>",
-    "include_card_image" : true,
-    "fill_image_area" : true,
-    "image_on_left" : true,
-    "card_image" : {
-      "src" : "https://302335.fs1.hubspotusercontent-na1.net/hubfs/302335/cover-temp-720x406.png",
-      "alt" : "cover-temp-720x406",
-      "width" : 720,
-      "height" : 406
+    "icon_type" : "svg",
+    "image_icon" : {
+      "size_type" : "auto",
+      "src" : "https://23543895.fs1.hubspotusercontent-na1.net/hubfs/23543895/RampXchange/images/Frame%2042.png",
+      "alt" : "Icon",
+      "loading" : "lazy",
+      "width" : 129,
+      "height" : 128,
+      "max_width" : 129,
+      "max_height" : 128
     },
-    "link_type" : "url",
-    "call_to_action" : "55235afb-a542-4293-9c89-f96156461ee6",
-    "link" : {
-      "type" : "EXTERNAL",
-      "href" : "#",
-      "content_id" : null
-    },
-    "link_text" : "Learn More",
-    "open_in_new_window" : false
+    "svg_icon_size_type" : "small",
+    "svg_icon" : "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"65\" height=\"64\" viewBox=\"0 0 65 64\" fill=\"none\"><path fill-rule=\"evenodd\" clip-rule=\"evenodd\" d=\"M30.5906 4.49782C29.728 4.78665 27.1095 5.64931 24.7717 6.41472C20.9647 7.66124 20.5072 7.83738 20.3859 8.10367C20.1657 8.58687 20.2015 21.0944 20.4259 22.1543C20.7111 23.4998 21.3461 24.6495 22.7424 26.3475L23.0349 26.7032L21.7878 27.0313C20.531 27.362 18.4958 27.5537 17.881 27.3994C17.6184 27.3335 17.5977 27.2916 17.6977 27.0284C17.8703 26.5746 17.8325 26.1056 17.6072 25.9036C17.4953 25.8034 15.7598 25.2732 13.7503 24.7254C9.56926 23.5857 9.70891 23.587 9.39173 24.6854C8.73054 26.9753 4.33337 43.216 4.33337 43.3681C4.33337 43.4722 4.43074 43.6455 4.54982 43.7532C4.66879 43.8609 6.40363 44.3958 8.40499 44.942C11.3295 45.7401 12.0956 45.9114 12.3073 45.8149C12.493 45.7303 12.6378 45.479 12.798 44.9636L13.0251 44.2324L13.646 44.26C14.6299 44.3039 15.5377 44.8201 16.5809 45.9291C17.0655 46.4443 17.462 46.9066 17.462 46.9563C17.462 47.0061 17.2999 47.2501 17.102 47.4985C16.2373 48.583 16.0352 49.6437 16.4956 50.6805C16.7829 51.3278 17.529 52.0158 18.1431 52.1998C18.5804 52.3308 18.5995 52.3554 18.4888 52.6423C18.3157 53.0903 18.3432 54.1742 18.5396 54.6442C18.9991 55.7439 20.1528 56.4526 21.2917 56.3346C21.6455 56.2981 22.0459 56.2352 22.1815 56.195C22.3736 56.138 22.4431 56.1815 22.497 56.3929C22.6166 56.8614 23.2896 57.5545 23.9019 57.8396C24.6311 58.179 25.4658 58.196 26.151 57.885L26.649 57.659L26.7531 57.9327C26.9257 58.3867 27.5967 59.0688 28.0917 59.2937C28.706 59.5728 29.8041 59.5725 30.4164 59.2932C30.672 59.1766 31.0712 58.8849 31.3035 58.6448L31.7259 58.2084L32.5606 58.9094C33.8006 59.9505 34.7753 60.1978 35.9974 59.7814C37.0225 59.4322 38.027 58.1227 38.0261 57.137C38.026 56.916 38.0827 56.8995 38.7197 56.9354C39.9243 57.0035 41.0837 56.2857 41.6233 55.1375C41.7537 54.8602 41.8603 54.4814 41.8603 54.2958V53.9583L42.7698 53.9169C43.5373 53.882 43.7682 53.8207 44.2472 53.5245C45.0018 53.058 45.5261 52.3488 45.7039 51.5546L45.8475 50.9129H46.5879C47.8589 50.9129 48.7321 50.3781 49.2925 49.2567C49.72 48.4012 49.7563 47.6041 49.4093 46.7025L49.1739 46.0913L49.5397 45.7805C50.0693 45.3304 51.6039 44.5751 51.7241 44.7052C51.7791 44.7647 51.8878 45.0129 51.9658 45.2568C52.217 46.0425 52.2331 46.0413 56.2618 44.942C58.2631 44.3958 59.998 43.8609 60.1169 43.7532C60.236 43.6455 60.3334 43.471 60.3334 43.3654C60.3334 43.2147 56.0322 27.3355 55.2735 24.6854C54.959 23.5868 55.098 23.5856 50.9164 24.7254C48.9069 25.2732 47.1714 25.8034 47.0595 25.9036C46.831 26.1085 46.7968 26.5758 46.9761 27.0471L47.096 27.3626L45.9014 27.2849C44.8171 27.2145 41.7566 26.7981 41.6674 26.7089C41.6471 26.6886 41.8674 26.3944 42.157 26.0553C43.3032 24.7123 43.9593 23.4829 44.2422 22.1475C44.4654 21.0938 44.4999 8.58431 44.2809 8.10367C44.1586 7.83517 43.5969 7.62627 38.4874 5.94906C35.3755 4.92747 32.6786 4.06493 32.4943 4.03205C32.2755 3.99313 31.6144 4.15485 30.5906 4.49782ZM37.8006 7.19419L43.0222 8.90509V15.0218C43.0222 18.5767 42.9738 21.4005 42.9067 21.7643C42.7165 22.7952 41.9733 24.1352 40.9296 25.3289C40.2691 26.0843 39.9267 26.392 39.7901 26.3523C39.2132 26.1854 34.7217 25.3316 33.3209 25.1227C31.2328 24.8113 28.1348 24.6823 27.5309 24.8817C27.291 24.9608 26.8558 25.2081 26.5635 25.4311C26.0383 25.8322 25.1984 26.1623 24.6974 26.1647C24.3171 26.1666 22.901 24.4603 22.3359 23.3195C22.0827 22.8083 21.8235 22.1084 21.7601 21.7643C21.6929 21.4005 21.6446 18.5767 21.6446 15.0219V8.90533L26.7857 7.23346C29.6133 6.31387 32.0052 5.51965 32.101 5.46853C32.1969 5.41741 32.3436 5.39975 32.4271 5.42938C32.5107 5.459 34.9287 6.25323 37.8006 7.19419ZM34.3394 15.5039L30.2463 19.5971L28.2325 17.5952C26.1312 15.5064 25.8687 15.336 25.4288 15.7759C24.9682 16.2366 25.1323 16.475 27.6054 18.9373C29.3673 20.6917 30.0355 21.2863 30.245 21.2863C30.6433 21.2863 39.4205 12.5287 39.4205 12.1314C39.4205 11.6558 39.2116 11.4108 38.8063 11.4108C38.4699 11.4108 38.0228 11.8206 34.3394 15.5039ZM13.4934 26.101C14.9851 26.5107 16.2223 26.8629 16.2429 26.8835C16.2934 26.9344 11.5904 44.1593 11.5018 44.2479C11.3716 44.3782 5.96132 42.8496 5.96063 42.6824C5.95947 42.4183 10.6399 25.3526 10.713 25.3545C10.7506 25.3554 12.0019 25.6914 13.4934 26.101ZM56.3646 33.9396C57.6528 38.6624 58.7065 42.5966 58.7061 42.6824C58.7054 42.8496 53.2951 44.3782 53.1649 44.2479C53.0758 44.1587 48.3735 26.9342 48.4244 26.8829C48.4719 26.8351 53.7229 25.3758 53.8957 25.3625C53.967 25.357 55.0458 29.1045 56.3646 33.9396ZM33.109 26.5044C33.9509 26.6305 36.4866 27.1002 38.7439 27.5481C42.7949 28.352 45.3011 28.7215 46.7032 28.7219C47.2861 28.722 47.4332 28.7603 47.4833 28.9253C48.0949 30.9331 51.3619 43.1973 51.2995 43.2512C51.252 43.2923 50.9778 43.4169 50.6902 43.5278C50.0821 43.7625 48.9753 44.4166 48.4772 44.8358L48.131 45.1272L47.0549 44.2151C46.4629 43.7134 43.7367 41.3946 40.9964 39.0623C38.256 36.7299 35.4402 34.3355 34.739 33.7413C33.1615 32.4046 32.7501 32.1842 31.8336 32.1842C31.2403 32.1842 30.9815 32.2622 30.0799 32.7123C29.4982 33.0028 28.2902 33.7199 27.3956 34.3061C24.6402 36.1112 23.1299 36.6962 22.0057 36.3934C21.278 36.1975 21.031 35.7435 21.1065 34.7412C21.2577 32.7376 22.6535 30.6904 25.711 27.9881C27.9685 25.9928 27.6419 26.1355 29.7774 26.2113C30.7678 26.2464 32.267 26.3784 33.109 26.5044ZM22.6916 28.9371C21.5063 30.2434 20.9765 30.9784 20.4721 32.0162C19.0367 34.969 19.6297 37.3734 21.8954 37.788C23.4365 38.0699 25.1447 37.4642 27.8023 35.6932C30.2999 34.0288 31.4894 33.4387 32.1003 33.5609C32.3423 33.6092 34.8194 35.642 40.0319 40.0692C44.2006 43.61 47.7354 46.6614 47.887 46.8501C48.4755 47.5827 48.2809 48.8007 47.4982 49.2845C47.092 49.5355 46.1847 49.6027 45.8222 49.4088C45.7091 49.3482 44.0787 47.9891 42.1991 46.3884C39.9398 44.4645 38.6929 43.4779 38.5201 43.4777C38.0302 43.4768 37.6351 44.0983 37.8828 44.4801C37.9298 44.5525 39.3276 45.7691 40.989 47.1838C44.2482 49.959 44.4778 50.2253 44.3548 51.0872C44.2719 51.6677 44.0447 52.0214 43.5678 52.3122C43.1623 52.5594 42.3344 52.6147 41.9689 52.4192C41.8452 52.353 40.4549 51.2028 38.8791 49.8632C37.3034 48.5235 35.9296 47.4274 35.8262 47.4274C35.4323 47.4274 35.1069 47.7793 35.1443 48.1647C35.175 48.4811 35.4811 48.7891 37.3857 50.4194C40.3954 52.9959 40.3694 52.9679 40.4406 53.7085C40.5067 54.3966 40.3059 54.8899 39.8119 55.253C39.4794 55.4973 38.7631 55.6245 38.3308 55.516C38.1712 55.4759 37.2661 54.7849 36.3197 53.9803C34.2362 52.2091 34.1529 52.1508 33.8463 52.2482C33.5202 52.3517 33.2269 52.8242 33.3156 53.1034C33.3552 53.2282 34.0176 53.8644 34.7876 54.5172C35.5578 55.1702 36.2875 55.8679 36.4095 56.0679C36.9659 56.9804 36.394 58.2944 35.3396 58.526C34.707 58.6649 34.2143 58.4803 33.4021 57.8001C32.974 57.4415 32.613 57.1417 32.5999 57.1339C32.5868 57.126 32.6573 56.8863 32.7566 56.6013C33.2499 55.1854 32.2612 53.3136 30.8836 53.055L30.5069 52.9844L30.5632 52.1974C30.5969 51.7263 30.5615 51.2346 30.4749 50.9722C30.1914 50.1134 29.0559 49.1799 28.2858 49.1727C28.0339 49.1704 28.0199 49.1366 28.092 48.7097C28.217 47.9699 27.8859 47.0402 27.2825 46.4368C26.4002 45.5544 25.1696 45.3685 24.0312 45.9456C23.7783 46.0739 23.5544 46.1279 23.5337 46.0656C23.3972 45.6563 22.7181 44.9643 22.1989 44.7056C21.0568 44.1365 19.811 44.3704 18.8926 45.3262L18.4298 45.8078L17.394 44.776C16.2435 43.6299 15.3877 43.1372 14.1189 42.8905C13.537 42.7773 13.4014 42.7108 13.4471 42.5611C13.4786 42.4579 14.2655 39.5764 15.1959 36.1577C16.1261 32.739 16.9621 29.6805 17.0534 29.361L17.2194 28.7801L18.9963 28.7662C20.5866 28.7537 20.9074 28.7155 22.0512 28.4023C22.7541 28.2098 23.372 28.0461 23.4243 28.0385C23.4765 28.0311 23.1468 28.4354 22.6916 28.9371ZM21.6484 45.9771C22.1142 46.2179 22.3825 46.7705 22.3069 47.3338C22.26 47.6839 21.9966 48.0915 21.1135 49.1804C20.4903 49.9488 19.8727 50.653 19.7409 50.7452C19.6093 50.8375 19.2788 50.9129 19.0064 50.9129C18.0701 50.9129 17.4051 49.9193 17.7664 49.0601C17.9467 48.6311 19.7489 46.4027 20.2068 46.0425C20.5707 45.7563 21.1689 45.7292 21.6484 45.9771ZM26.1503 47.2638C26.5175 47.5045 26.7933 48.1841 26.7073 48.6371C26.6282 49.0545 22.3064 54.4526 21.7928 54.7754C21.3705 55.0407 20.862 55.0325 20.403 54.7527C19.6625 54.3012 19.5275 53.4261 20.0844 52.6873C21.5422 50.7529 24.5166 47.2634 24.8255 47.1251C25.2346 46.9419 25.7397 46.9949 26.1503 47.2638ZM28.8014 50.9593C29.1303 51.2883 29.1964 51.4395 29.1964 51.8629C29.1964 52.4644 29.2096 52.4439 27.3791 54.7011C25.8598 56.5747 25.5638 56.8029 24.8086 56.6828C24.157 56.5792 23.7359 56.0558 23.7359 55.3497C23.7359 54.8096 23.7793 54.7404 25.2996 52.8635C26.1595 51.8016 26.9817 50.8498 27.1262 50.7485C27.2708 50.6472 27.6181 50.5643 27.8979 50.5643C28.3212 50.5643 28.4725 50.6304 28.8014 50.9593ZM30.914 54.5797C31.4449 54.9515 31.6678 55.7621 31.3853 56.294C31.1569 56.724 30.2299 57.8178 29.9677 57.9669C29.831 58.0445 29.4918 58.1098 29.2139 58.1121C28.7912 58.1155 28.6439 58.0516 28.3135 57.7212C27.9809 57.3887 27.9184 57.2432 27.9184 56.8022C27.9184 56.3671 27.9992 56.1729 28.3948 55.6578C29.1702 54.6477 29.5128 54.3984 30.1247 54.3984C30.4173 54.3984 30.7712 54.4797 30.914 54.5797Z\" fill=\"#C49E5B\"/></svg>",
+    "include_eyebrow_text" : true,
+    "eyebrow_text" : "Optional Eyebrow Text",
+    "include_heading" : true,
+    "heading_size" : "h4",
+    "heading" : "Simplify Compliance with Expert Support",
+    "include_content" : true,
+    "content" : "<p>RAMPxchange’s cybersecurity professional advisors provides hands-on support for creating RFPs, navigating compliance frameworks, and managing post-award vendor relationships.</p>",
+    "include_button" : false,
+    "button_group" : [ {
+      "button_type" : "std",
+      "button_style" : "hs-button",
+      "button_text" : "Button",
+      "link" : {
+        "url" : {
+          "content_id" : null,
+          "type" : "EXTERNAL",
+          "href" : ""
+        },
+        "open_in_new_tab" : false,
+        "no_follow" : false
+      }
+    } ]
   }, {
-    "dynamic_card" : false,
-    "dynamic_page_button_text" : "Learn More",
-    "resource_title" : "The Sales Impact  of Optimized Product Content ",
-    "include_type" : false,
-    "type" : "Blog Post",
-    "show_teaser_text" : true,
-    "teaser_text" : "<p>Lorem ipsum dolor sit amet consectetur adipiscing elit dolor sit maecenas fringilla nunc eget dolor sit amet.</p>",
-    "include_card_image" : true,
-    "fill_image_area" : true,
-    "image_on_left" : true,
-    "card_image" : {
-      "src" : "https://302335.fs1.hubspotusercontent-na1.net/hubfs/302335/cover-temp-720x406.png",
-      "alt" : "cover-temp-720x406",
-      "width" : 720,
-      "height" : 406
+    "icon_type" : "svg",
+    "image_icon" : {
+      "size_type" : "auto",
+      "src" : "https://23543895.fs1.hubspotusercontent-na1.net/hubfs/23543895/RampXchange/images/Frame%2042.png",
+      "alt" : "Icon",
+      "loading" : "lazy",
+      "width" : 129,
+      "height" : 128,
+      "max_width" : 129,
+      "max_height" : 128
     },
-    "link_type" : "url",
-    "call_to_action" : "55235afb-a542-4293-9c89-f96156461ee6",
-    "link" : {
-      "type" : "EXTERNAL",
-      "href" : "#",
-      "content_id" : null
-    },
-    "link_text" : "Learn More",
-    "open_in_new_window" : false
+    "svg_icon_size_type" : "small",
+    "svg_icon" : "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"65\" height=\"64\" viewBox=\"0 0 65 64\" fill=\"none\"><path fill-rule=\"evenodd\" clip-rule=\"evenodd\" d=\"M30.5906 4.49782C29.728 4.78665 27.1095 5.64931 24.7717 6.41472C20.9647 7.66124 20.5072 7.83738 20.3859 8.10367C20.1657 8.58687 20.2015 21.0944 20.4259 22.1543C20.7111 23.4998 21.3461 24.6495 22.7424 26.3475L23.0349 26.7032L21.7878 27.0313C20.531 27.362 18.4958 27.5537 17.881 27.3994C17.6184 27.3335 17.5977 27.2916 17.6977 27.0284C17.8703 26.5746 17.8325 26.1056 17.6072 25.9036C17.4953 25.8034 15.7598 25.2732 13.7503 24.7254C9.56926 23.5857 9.70891 23.587 9.39173 24.6854C8.73054 26.9753 4.33337 43.216 4.33337 43.3681C4.33337 43.4722 4.43074 43.6455 4.54982 43.7532C4.66879 43.8609 6.40363 44.3958 8.40499 44.942C11.3295 45.7401 12.0956 45.9114 12.3073 45.8149C12.493 45.7303 12.6378 45.479 12.798 44.9636L13.0251 44.2324L13.646 44.26C14.6299 44.3039 15.5377 44.8201 16.5809 45.9291C17.0655 46.4443 17.462 46.9066 17.462 46.9563C17.462 47.0061 17.2999 47.2501 17.102 47.4985C16.2373 48.583 16.0352 49.6437 16.4956 50.6805C16.7829 51.3278 17.529 52.0158 18.1431 52.1998C18.5804 52.3308 18.5995 52.3554 18.4888 52.6423C18.3157 53.0903 18.3432 54.1742 18.5396 54.6442C18.9991 55.7439 20.1528 56.4526 21.2917 56.3346C21.6455 56.2981 22.0459 56.2352 22.1815 56.195C22.3736 56.138 22.4431 56.1815 22.497 56.3929C22.6166 56.8614 23.2896 57.5545 23.9019 57.8396C24.6311 58.179 25.4658 58.196 26.151 57.885L26.649 57.659L26.7531 57.9327C26.9257 58.3867 27.5967 59.0688 28.0917 59.2937C28.706 59.5728 29.8041 59.5725 30.4164 59.2932C30.672 59.1766 31.0712 58.8849 31.3035 58.6448L31.7259 58.2084L32.5606 58.9094C33.8006 59.9505 34.7753 60.1978 35.9974 59.7814C37.0225 59.4322 38.027 58.1227 38.0261 57.137C38.026 56.916 38.0827 56.8995 38.7197 56.9354C39.9243 57.0035 41.0837 56.2857 41.6233 55.1375C41.7537 54.8602 41.8603 54.4814 41.8603 54.2958V53.9583L42.7698 53.9169C43.5373 53.882 43.7682 53.8207 44.2472 53.5245C45.0018 53.058 45.5261 52.3488 45.7039 51.5546L45.8475 50.9129H46.5879C47.8589 50.9129 48.7321 50.3781 49.2925 49.2567C49.72 48.4012 49.7563 47.6041 49.4093 46.7025L49.1739 46.0913L49.5397 45.7805C50.0693 45.3304 51.6039 44.5751 51.7241 44.7052C51.7791 44.7647 51.8878 45.0129 51.9658 45.2568C52.217 46.0425 52.2331 46.0413 56.2618 44.942C58.2631 44.3958 59.998 43.8609 60.1169 43.7532C60.236 43.6455 60.3334 43.471 60.3334 43.3654C60.3334 43.2147 56.0322 27.3355 55.2735 24.6854C54.959 23.5868 55.098 23.5856 50.9164 24.7254C48.9069 25.2732 47.1714 25.8034 47.0595 25.9036C46.831 26.1085 46.7968 26.5758 46.9761 27.0471L47.096 27.3626L45.9014 27.2849C44.8171 27.2145 41.7566 26.7981 41.6674 26.7089C41.6471 26.6886 41.8674 26.3944 42.157 26.0553C43.3032 24.7123 43.9593 23.4829 44.2422 22.1475C44.4654 21.0938 44.4999 8.58431 44.2809 8.10367C44.1586 7.83517 43.5969 7.62627 38.4874 5.94906C35.3755 4.92747 32.6786 4.06493 32.4943 4.03205C32.2755 3.99313 31.6144 4.15485 30.5906 4.49782ZM37.8006 7.19419L43.0222 8.90509V15.0218C43.0222 18.5767 42.9738 21.4005 42.9067 21.7643C42.7165 22.7952 41.9733 24.1352 40.9296 25.3289C40.2691 26.0843 39.9267 26.392 39.7901 26.3523C39.2132 26.1854 34.7217 25.3316 33.3209 25.1227C31.2328 24.8113 28.1348 24.6823 27.5309 24.8817C27.291 24.9608 26.8558 25.2081 26.5635 25.4311C26.0383 25.8322 25.1984 26.1623 24.6974 26.1647C24.3171 26.1666 22.901 24.4603 22.3359 23.3195C22.0827 22.8083 21.8235 22.1084 21.7601 21.7643C21.6929 21.4005 21.6446 18.5767 21.6446 15.0219V8.90533L26.7857 7.23346C29.6133 6.31387 32.0052 5.51965 32.101 5.46853C32.1969 5.41741 32.3436 5.39975 32.4271 5.42938C32.5107 5.459 34.9287 6.25323 37.8006 7.19419ZM34.3394 15.5039L30.2463 19.5971L28.2325 17.5952C26.1312 15.5064 25.8687 15.336 25.4288 15.7759C24.9682 16.2366 25.1323 16.475 27.6054 18.9373C29.3673 20.6917 30.0355 21.2863 30.245 21.2863C30.6433 21.2863 39.4205 12.5287 39.4205 12.1314C39.4205 11.6558 39.2116 11.4108 38.8063 11.4108C38.4699 11.4108 38.0228 11.8206 34.3394 15.5039ZM13.4934 26.101C14.9851 26.5107 16.2223 26.8629 16.2429 26.8835C16.2934 26.9344 11.5904 44.1593 11.5018 44.2479C11.3716 44.3782 5.96132 42.8496 5.96063 42.6824C5.95947 42.4183 10.6399 25.3526 10.713 25.3545C10.7506 25.3554 12.0019 25.6914 13.4934 26.101ZM56.3646 33.9396C57.6528 38.6624 58.7065 42.5966 58.7061 42.6824C58.7054 42.8496 53.2951 44.3782 53.1649 44.2479C53.0758 44.1587 48.3735 26.9342 48.4244 26.8829C48.4719 26.8351 53.7229 25.3758 53.8957 25.3625C53.967 25.357 55.0458 29.1045 56.3646 33.9396ZM33.109 26.5044C33.9509 26.6305 36.4866 27.1002 38.7439 27.5481C42.7949 28.352 45.3011 28.7215 46.7032 28.7219C47.2861 28.722 47.4332 28.7603 47.4833 28.9253C48.0949 30.9331 51.3619 43.1973 51.2995 43.2512C51.252 43.2923 50.9778 43.4169 50.6902 43.5278C50.0821 43.7625 48.9753 44.4166 48.4772 44.8358L48.131 45.1272L47.0549 44.2151C46.4629 43.7134 43.7367 41.3946 40.9964 39.0623C38.256 36.7299 35.4402 34.3355 34.739 33.7413C33.1615 32.4046 32.7501 32.1842 31.8336 32.1842C31.2403 32.1842 30.9815 32.2622 30.0799 32.7123C29.4982 33.0028 28.2902 33.7199 27.3956 34.3061C24.6402 36.1112 23.1299 36.6962 22.0057 36.3934C21.278 36.1975 21.031 35.7435 21.1065 34.7412C21.2577 32.7376 22.6535 30.6904 25.711 27.9881C27.9685 25.9928 27.6419 26.1355 29.7774 26.2113C30.7678 26.2464 32.267 26.3784 33.109 26.5044ZM22.6916 28.9371C21.5063 30.2434 20.9765 30.9784 20.4721 32.0162C19.0367 34.969 19.6297 37.3734 21.8954 37.788C23.4365 38.0699 25.1447 37.4642 27.8023 35.6932C30.2999 34.0288 31.4894 33.4387 32.1003 33.5609C32.3423 33.6092 34.8194 35.642 40.0319 40.0692C44.2006 43.61 47.7354 46.6614 47.887 46.8501C48.4755 47.5827 48.2809 48.8007 47.4982 49.2845C47.092 49.5355 46.1847 49.6027 45.8222 49.4088C45.7091 49.3482 44.0787 47.9891 42.1991 46.3884C39.9398 44.4645 38.6929 43.4779 38.5201 43.4777C38.0302 43.4768 37.6351 44.0983 37.8828 44.4801C37.9298 44.5525 39.3276 45.7691 40.989 47.1838C44.2482 49.959 44.4778 50.2253 44.3548 51.0872C44.2719 51.6677 44.0447 52.0214 43.5678 52.3122C43.1623 52.5594 42.3344 52.6147 41.9689 52.4192C41.8452 52.353 40.4549 51.2028 38.8791 49.8632C37.3034 48.5235 35.9296 47.4274 35.8262 47.4274C35.4323 47.4274 35.1069 47.7793 35.1443 48.1647C35.175 48.4811 35.4811 48.7891 37.3857 50.4194C40.3954 52.9959 40.3694 52.9679 40.4406 53.7085C40.5067 54.3966 40.3059 54.8899 39.8119 55.253C39.4794 55.4973 38.7631 55.6245 38.3308 55.516C38.1712 55.4759 37.2661 54.7849 36.3197 53.9803C34.2362 52.2091 34.1529 52.1508 33.8463 52.2482C33.5202 52.3517 33.2269 52.8242 33.3156 53.1034C33.3552 53.2282 34.0176 53.8644 34.7876 54.5172C35.5578 55.1702 36.2875 55.8679 36.4095 56.0679C36.9659 56.9804 36.394 58.2944 35.3396 58.526C34.707 58.6649 34.2143 58.4803 33.4021 57.8001C32.974 57.4415 32.613 57.1417 32.5999 57.1339C32.5868 57.126 32.6573 56.8863 32.7566 56.6013C33.2499 55.1854 32.2612 53.3136 30.8836 53.055L30.5069 52.9844L30.5632 52.1974C30.5969 51.7263 30.5615 51.2346 30.4749 50.9722C30.1914 50.1134 29.0559 49.1799 28.2858 49.1727C28.0339 49.1704 28.0199 49.1366 28.092 48.7097C28.217 47.9699 27.8859 47.0402 27.2825 46.4368C26.4002 45.5544 25.1696 45.3685 24.0312 45.9456C23.7783 46.0739 23.5544 46.1279 23.5337 46.0656C23.3972 45.6563 22.7181 44.9643 22.1989 44.7056C21.0568 44.1365 19.811 44.3704 18.8926 45.3262L18.4298 45.8078L17.394 44.776C16.2435 43.6299 15.3877 43.1372 14.1189 42.8905C13.537 42.7773 13.4014 42.7108 13.4471 42.5611C13.4786 42.4579 14.2655 39.5764 15.1959 36.1577C16.1261 32.739 16.9621 29.6805 17.0534 29.361L17.2194 28.7801L18.9963 28.7662C20.5866 28.7537 20.9074 28.7155 22.0512 28.4023C22.7541 28.2098 23.372 28.0461 23.4243 28.0385C23.4765 28.0311 23.1468 28.4354 22.6916 28.9371ZM21.6484 45.9771C22.1142 46.2179 22.3825 46.7705 22.3069 47.3338C22.26 47.6839 21.9966 48.0915 21.1135 49.1804C20.4903 49.9488 19.8727 50.653 19.7409 50.7452C19.6093 50.8375 19.2788 50.9129 19.0064 50.9129C18.0701 50.9129 17.4051 49.9193 17.7664 49.0601C17.9467 48.6311 19.7489 46.4027 20.2068 46.0425C20.5707 45.7563 21.1689 45.7292 21.6484 45.9771ZM26.1503 47.2638C26.5175 47.5045 26.7933 48.1841 26.7073 48.6371C26.6282 49.0545 22.3064 54.4526 21.7928 54.7754C21.3705 55.0407 20.862 55.0325 20.403 54.7527C19.6625 54.3012 19.5275 53.4261 20.0844 52.6873C21.5422 50.7529 24.5166 47.2634 24.8255 47.1251C25.2346 46.9419 25.7397 46.9949 26.1503 47.2638ZM28.8014 50.9593C29.1303 51.2883 29.1964 51.4395 29.1964 51.8629C29.1964 52.4644 29.2096 52.4439 27.3791 54.7011C25.8598 56.5747 25.5638 56.8029 24.8086 56.6828C24.157 56.5792 23.7359 56.0558 23.7359 55.3497C23.7359 54.8096 23.7793 54.7404 25.2996 52.8635C26.1595 51.8016 26.9817 50.8498 27.1262 50.7485C27.2708 50.6472 27.6181 50.5643 27.8979 50.5643C28.3212 50.5643 28.4725 50.6304 28.8014 50.9593ZM30.914 54.5797C31.4449 54.9515 31.6678 55.7621 31.3853 56.294C31.1569 56.724 30.2299 57.8178 29.9677 57.9669C29.831 58.0445 29.4918 58.1098 29.2139 58.1121C28.7912 58.1155 28.6439 58.0516 28.3135 57.7212C27.9809 57.3887 27.9184 57.2432 27.9184 56.8022C27.9184 56.3671 27.9992 56.1729 28.3948 55.6578C29.1702 54.6477 29.5128 54.3984 30.1247 54.3984C30.4173 54.3984 30.7712 54.4797 30.914 54.5797Z\" fill=\"#C49E5B\"/></svg>",
+    "include_eyebrow_text" : true,
+    "eyebrow_text" : "Optional Eyebrow Text",
+    "include_heading" : true,
+    "heading_size" : "h4",
+    "heading" : "Simplify Compliance with Expert Support",
+    "include_content" : true,
+    "content" : "<p>RAMPxchange’s cybersecurity professional advisors provides hands-on support for creating RFPs, navigating compliance frameworks, and managing post-award vendor relationships.</p>",
+    "include_button" : false,
+    "button_group" : [ {
+      "button_type" : "std",
+      "button_style" : "hs-button",
+      "button_text" : "Button",
+      "link" : {
+        "url" : {
+          "content_id" : null,
+          "type" : "EXTERNAL",
+          "href" : ""
+        },
+        "open_in_new_tab" : false,
+        "no_follow" : false
+      }
+    } ]
   }, {
-    "dynamic_card" : false,
-    "dynamic_page_button_text" : "Learn More",
-    "resource_title" : "The Sales Impact  of Optimized Product Content ",
-    "include_type" : false,
-    "type" : "Blog Post",
-    "show_teaser_text" : true,
-    "teaser_text" : "<p>Lorem ipsum dolor sit amet consectetur adipiscing elit dolor sit maecenas fringilla nunc eget dolor sit amet.</p>",
-    "include_card_image" : true,
-    "fill_image_area" : true,
-    "image_on_left" : true,
-    "card_image" : {
-      "src" : "https://302335.fs1.hubspotusercontent-na1.net/hubfs/302335/cover-temp-720x406.png",
-      "alt" : "cover-temp-720x406",
-      "width" : 720,
-      "height" : 406
+    "icon_type" : "svg",
+    "image_icon" : {
+      "size_type" : "auto",
+      "src" : "https://23543895.fs1.hubspotusercontent-na1.net/hubfs/23543895/RampXchange/images/Frame%2042.png",
+      "alt" : "Icon",
+      "loading" : "lazy",
+      "width" : 129,
+      "height" : 128,
+      "max_width" : 129,
+      "max_height" : 128
     },
-    "link_type" : "url",
-    "call_to_action" : "55235afb-a542-4293-9c89-f96156461ee6",
-    "link" : {
-      "type" : "EXTERNAL",
-      "href" : "#",
-      "content_id" : null
-    },
-    "link_text" : "Learn More",
-    "open_in_new_window" : false
+    "svg_icon_size_type" : "small",
+    "svg_icon" : "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"65\" height=\"64\" viewBox=\"0 0 65 64\" fill=\"none\"><path fill-rule=\"evenodd\" clip-rule=\"evenodd\" d=\"M30.5906 4.49782C29.728 4.78665 27.1095 5.64931 24.7717 6.41472C20.9647 7.66124 20.5072 7.83738 20.3859 8.10367C20.1657 8.58687 20.2015 21.0944 20.4259 22.1543C20.7111 23.4998 21.3461 24.6495 22.7424 26.3475L23.0349 26.7032L21.7878 27.0313C20.531 27.362 18.4958 27.5537 17.881 27.3994C17.6184 27.3335 17.5977 27.2916 17.6977 27.0284C17.8703 26.5746 17.8325 26.1056 17.6072 25.9036C17.4953 25.8034 15.7598 25.2732 13.7503 24.7254C9.56926 23.5857 9.70891 23.587 9.39173 24.6854C8.73054 26.9753 4.33337 43.216 4.33337 43.3681C4.33337 43.4722 4.43074 43.6455 4.54982 43.7532C4.66879 43.8609 6.40363 44.3958 8.40499 44.942C11.3295 45.7401 12.0956 45.9114 12.3073 45.8149C12.493 45.7303 12.6378 45.479 12.798 44.9636L13.0251 44.2324L13.646 44.26C14.6299 44.3039 15.5377 44.8201 16.5809 45.9291C17.0655 46.4443 17.462 46.9066 17.462 46.9563C17.462 47.0061 17.2999 47.2501 17.102 47.4985C16.2373 48.583 16.0352 49.6437 16.4956 50.6805C16.7829 51.3278 17.529 52.0158 18.1431 52.1998C18.5804 52.3308 18.5995 52.3554 18.4888 52.6423C18.3157 53.0903 18.3432 54.1742 18.5396 54.6442C18.9991 55.7439 20.1528 56.4526 21.2917 56.3346C21.6455 56.2981 22.0459 56.2352 22.1815 56.195C22.3736 56.138 22.4431 56.1815 22.497 56.3929C22.6166 56.8614 23.2896 57.5545 23.9019 57.8396C24.6311 58.179 25.4658 58.196 26.151 57.885L26.649 57.659L26.7531 57.9327C26.9257 58.3867 27.5967 59.0688 28.0917 59.2937C28.706 59.5728 29.8041 59.5725 30.4164 59.2932C30.672 59.1766 31.0712 58.8849 31.3035 58.6448L31.7259 58.2084L32.5606 58.9094C33.8006 59.9505 34.7753 60.1978 35.9974 59.7814C37.0225 59.4322 38.027 58.1227 38.0261 57.137C38.026 56.916 38.0827 56.8995 38.7197 56.9354C39.9243 57.0035 41.0837 56.2857 41.6233 55.1375C41.7537 54.8602 41.8603 54.4814 41.8603 54.2958V53.9583L42.7698 53.9169C43.5373 53.882 43.7682 53.8207 44.2472 53.5245C45.0018 53.058 45.5261 52.3488 45.7039 51.5546L45.8475 50.9129H46.5879C47.8589 50.9129 48.7321 50.3781 49.2925 49.2567C49.72 48.4012 49.7563 47.6041 49.4093 46.7025L49.1739 46.0913L49.5397 45.7805C50.0693 45.3304 51.6039 44.5751 51.7241 44.7052C51.7791 44.7647 51.8878 45.0129 51.9658 45.2568C52.217 46.0425 52.2331 46.0413 56.2618 44.942C58.2631 44.3958 59.998 43.8609 60.1169 43.7532C60.236 43.6455 60.3334 43.471 60.3334 43.3654C60.3334 43.2147 56.0322 27.3355 55.2735 24.6854C54.959 23.5868 55.098 23.5856 50.9164 24.7254C48.9069 25.2732 47.1714 25.8034 47.0595 25.9036C46.831 26.1085 46.7968 26.5758 46.9761 27.0471L47.096 27.3626L45.9014 27.2849C44.8171 27.2145 41.7566 26.7981 41.6674 26.7089C41.6471 26.6886 41.8674 26.3944 42.157 26.0553C43.3032 24.7123 43.9593 23.4829 44.2422 22.1475C44.4654 21.0938 44.4999 8.58431 44.2809 8.10367C44.1586 7.83517 43.5969 7.62627 38.4874 5.94906C35.3755 4.92747 32.6786 4.06493 32.4943 4.03205C32.2755 3.99313 31.6144 4.15485 30.5906 4.49782ZM37.8006 7.19419L43.0222 8.90509V15.0218C43.0222 18.5767 42.9738 21.4005 42.9067 21.7643C42.7165 22.7952 41.9733 24.1352 40.9296 25.3289C40.2691 26.0843 39.9267 26.392 39.7901 26.3523C39.2132 26.1854 34.7217 25.3316 33.3209 25.1227C31.2328 24.8113 28.1348 24.6823 27.5309 24.8817C27.291 24.9608 26.8558 25.2081 26.5635 25.4311C26.0383 25.8322 25.1984 26.1623 24.6974 26.1647C24.3171 26.1666 22.901 24.4603 22.3359 23.3195C22.0827 22.8083 21.8235 22.1084 21.7601 21.7643C21.6929 21.4005 21.6446 18.5767 21.6446 15.0219V8.90533L26.7857 7.23346C29.6133 6.31387 32.0052 5.51965 32.101 5.46853C32.1969 5.41741 32.3436 5.39975 32.4271 5.42938C32.5107 5.459 34.9287 6.25323 37.8006 7.19419ZM34.3394 15.5039L30.2463 19.5971L28.2325 17.5952C26.1312 15.5064 25.8687 15.336 25.4288 15.7759C24.9682 16.2366 25.1323 16.475 27.6054 18.9373C29.3673 20.6917 30.0355 21.2863 30.245 21.2863C30.6433 21.2863 39.4205 12.5287 39.4205 12.1314C39.4205 11.6558 39.2116 11.4108 38.8063 11.4108C38.4699 11.4108 38.0228 11.8206 34.3394 15.5039ZM13.4934 26.101C14.9851 26.5107 16.2223 26.8629 16.2429 26.8835C16.2934 26.9344 11.5904 44.1593 11.5018 44.2479C11.3716 44.3782 5.96132 42.8496 5.96063 42.6824C5.95947 42.4183 10.6399 25.3526 10.713 25.3545C10.7506 25.3554 12.0019 25.6914 13.4934 26.101ZM56.3646 33.9396C57.6528 38.6624 58.7065 42.5966 58.7061 42.6824C58.7054 42.8496 53.2951 44.3782 53.1649 44.2479C53.0758 44.1587 48.3735 26.9342 48.4244 26.8829C48.4719 26.8351 53.7229 25.3758 53.8957 25.3625C53.967 25.357 55.0458 29.1045 56.3646 33.9396ZM33.109 26.5044C33.9509 26.6305 36.4866 27.1002 38.7439 27.5481C42.7949 28.352 45.3011 28.7215 46.7032 28.7219C47.2861 28.722 47.4332 28.7603 47.4833 28.9253C48.0949 30.9331 51.3619 43.1973 51.2995 43.2512C51.252 43.2923 50.9778 43.4169 50.6902 43.5278C50.0821 43.7625 48.9753 44.4166 48.4772 44.8358L48.131 45.1272L47.0549 44.2151C46.4629 43.7134 43.7367 41.3946 40.9964 39.0623C38.256 36.7299 35.4402 34.3355 34.739 33.7413C33.1615 32.4046 32.7501 32.1842 31.8336 32.1842C31.2403 32.1842 30.9815 32.2622 30.0799 32.7123C29.4982 33.0028 28.2902 33.7199 27.3956 34.3061C24.6402 36.1112 23.1299 36.6962 22.0057 36.3934C21.278 36.1975 21.031 35.7435 21.1065 34.7412C21.2577 32.7376 22.6535 30.6904 25.711 27.9881C27.9685 25.9928 27.6419 26.1355 29.7774 26.2113C30.7678 26.2464 32.267 26.3784 33.109 26.5044ZM22.6916 28.9371C21.5063 30.2434 20.9765 30.9784 20.4721 32.0162C19.0367 34.969 19.6297 37.3734 21.8954 37.788C23.4365 38.0699 25.1447 37.4642 27.8023 35.6932C30.2999 34.0288 31.4894 33.4387 32.1003 33.5609C32.3423 33.6092 34.8194 35.642 40.0319 40.0692C44.2006 43.61 47.7354 46.6614 47.887 46.8501C48.4755 47.5827 48.2809 48.8007 47.4982 49.2845C47.092 49.5355 46.1847 49.6027 45.8222 49.4088C45.7091 49.3482 44.0787 47.9891 42.1991 46.3884C39.9398 44.4645 38.6929 43.4779 38.5201 43.4777C38.0302 43.4768 37.6351 44.0983 37.8828 44.4801C37.9298 44.5525 39.3276 45.7691 40.989 47.1838C44.2482 49.959 44.4778 50.2253 44.3548 51.0872C44.2719 51.6677 44.0447 52.0214 43.5678 52.3122C43.1623 52.5594 42.3344 52.6147 41.9689 52.4192C41.8452 52.353 40.4549 51.2028 38.8791 49.8632C37.3034 48.5235 35.9296 47.4274 35.8262 47.4274C35.4323 47.4274 35.1069 47.7793 35.1443 48.1647C35.175 48.4811 35.4811 48.7891 37.3857 50.4194C40.3954 52.9959 40.3694 52.9679 40.4406 53.7085C40.5067 54.3966 40.3059 54.8899 39.8119 55.253C39.4794 55.4973 38.7631 55.6245 38.3308 55.516C38.1712 55.4759 37.2661 54.7849 36.3197 53.9803C34.2362 52.2091 34.1529 52.1508 33.8463 52.2482C33.5202 52.3517 33.2269 52.8242 33.3156 53.1034C33.3552 53.2282 34.0176 53.8644 34.7876 54.5172C35.5578 55.1702 36.2875 55.8679 36.4095 56.0679C36.9659 56.9804 36.394 58.2944 35.3396 58.526C34.707 58.6649 34.2143 58.4803 33.4021 57.8001C32.974 57.4415 32.613 57.1417 32.5999 57.1339C32.5868 57.126 32.6573 56.8863 32.7566 56.6013C33.2499 55.1854 32.2612 53.3136 30.8836 53.055L30.5069 52.9844L30.5632 52.1974C30.5969 51.7263 30.5615 51.2346 30.4749 50.9722C30.1914 50.1134 29.0559 49.1799 28.2858 49.1727C28.0339 49.1704 28.0199 49.1366 28.092 48.7097C28.217 47.9699 27.8859 47.0402 27.2825 46.4368C26.4002 45.5544 25.1696 45.3685 24.0312 45.9456C23.7783 46.0739 23.5544 46.1279 23.5337 46.0656C23.3972 45.6563 22.7181 44.9643 22.1989 44.7056C21.0568 44.1365 19.811 44.3704 18.8926 45.3262L18.4298 45.8078L17.394 44.776C16.2435 43.6299 15.3877 43.1372 14.1189 42.8905C13.537 42.7773 13.4014 42.7108 13.4471 42.5611C13.4786 42.4579 14.2655 39.5764 15.1959 36.1577C16.1261 32.739 16.9621 29.6805 17.0534 29.361L17.2194 28.7801L18.9963 28.7662C20.5866 28.7537 20.9074 28.7155 22.0512 28.4023C22.7541 28.2098 23.372 28.0461 23.4243 28.0385C23.4765 28.0311 23.1468 28.4354 22.6916 28.9371ZM21.6484 45.9771C22.1142 46.2179 22.3825 46.7705 22.3069 47.3338C22.26 47.6839 21.9966 48.0915 21.1135 49.1804C20.4903 49.9488 19.8727 50.653 19.7409 50.7452C19.6093 50.8375 19.2788 50.9129 19.0064 50.9129C18.0701 50.9129 17.4051 49.9193 17.7664 49.0601C17.9467 48.6311 19.7489 46.4027 20.2068 46.0425C20.5707 45.7563 21.1689 45.7292 21.6484 45.9771ZM26.1503 47.2638C26.5175 47.5045 26.7933 48.1841 26.7073 48.6371C26.6282 49.0545 22.3064 54.4526 21.7928 54.7754C21.3705 55.0407 20.862 55.0325 20.403 54.7527C19.6625 54.3012 19.5275 53.4261 20.0844 52.6873C21.5422 50.7529 24.5166 47.2634 24.8255 47.1251C25.2346 46.9419 25.7397 46.9949 26.1503 47.2638ZM28.8014 50.9593C29.1303 51.2883 29.1964 51.4395 29.1964 51.8629C29.1964 52.4644 29.2096 52.4439 27.3791 54.7011C25.8598 56.5747 25.5638 56.8029 24.8086 56.6828C24.157 56.5792 23.7359 56.0558 23.7359 55.3497C23.7359 54.8096 23.7793 54.7404 25.2996 52.8635C26.1595 51.8016 26.9817 50.8498 27.1262 50.7485C27.2708 50.6472 27.6181 50.5643 27.8979 50.5643C28.3212 50.5643 28.4725 50.6304 28.8014 50.9593ZM30.914 54.5797C31.4449 54.9515 31.6678 55.7621 31.3853 56.294C31.1569 56.724 30.2299 57.8178 29.9677 57.9669C29.831 58.0445 29.4918 58.1098 29.2139 58.1121C28.7912 58.1155 28.6439 58.0516 28.3135 57.7212C27.9809 57.3887 27.9184 57.2432 27.9184 56.8022C27.9184 56.3671 27.9992 56.1729 28.3948 55.6578C29.1702 54.6477 29.5128 54.3984 30.1247 54.3984C30.4173 54.3984 30.7712 54.4797 30.914 54.5797Z\" fill=\"#C49E5B\"/></svg>",
+    "include_eyebrow_text" : true,
+    "eyebrow_text" : "Optional Eyebrow Text",
+    "include_heading" : true,
+    "heading_size" : "h4",
+    "heading" : "Simplify Compliance with Expert Support",
+    "include_content" : true,
+    "content" : "<p>RAMPxchange’s cybersecurity professional advisors provides hands-on support for creating RFPs, navigating compliance frameworks, and managing post-award vendor relationships.</p>",
+    "include_button" : false,
+    "button_group" : [ {
+      "button_type" : "std",
+      "button_style" : "hs-button",
+      "button_text" : "Button",
+      "link" : {
+        "url" : {
+          "content_id" : null,
+          "type" : "EXTERNAL",
+          "href" : ""
+        },
+        "open_in_new_tab" : false,
+        "no_follow" : false
+      }
+    } ]
   } ]
+}, {
+  "id" : "138470b2-b2c5-5099-95b4-603170b39571",
+  "name" : "module_settings",
+  "display_width" : null,
+  "label" : "Module Settings",
+  "required" : false,
+  "locked" : false,
+  "children" : [ {
+    "id" : "8c5cacfc-7b8b-b55a-33b9-5dfd085104a7",
+    "name" : "cards_group",
+    "display_width" : null,
+    "label" : "Cards Group",
+    "required" : false,
+    "locked" : false,
+    "children" : [ {
+      "id" : "b9ad5f19-e2ac-fee0-ee99-51a4124ed6bc",
+      "name" : "cards_background_color",
+      "display_width" : null,
+      "label" : "Background Color",
+      "required" : false,
+      "locked" : false,
+      "display" : "select",
+      "choices" : [ [ "forest_green", "Forest Green" ], [ "dark_teal", "Dark Teal" ], [ "pale_green", "Pale Green" ], [ "silver_gray", "Silver Gray" ], [ "charcoal_gray", "Charcoal Gray" ], [ "golden_brown", "Golden Brown" ], [ "soft_white", "Soft White" ], [ "white_bg", "White" ] ],
+      "multiple" : false,
+      "reordering_enabled" : true,
+      "preset" : null,
+      "type" : "choice",
+      "default" : "white_bg"
+    }, {
+      "id" : "41a20400-1803-3142-c1ff-36fd7ff3f838",
+      "name" : "reverse_text",
+      "display_width" : null,
+      "label" : "Reverse Text",
+      "required" : false,
+      "locked" : false,
+      "visibility" : {
+        "controlling_field" : "enable_overrides",
+        "controlling_field_path" : null,
+        "controlling_value_regex" : "true",
+        "property" : null,
+        "operator" : "EQUAL",
+        "access" : null
+      },
+      "display" : "checkbox",
+      "type" : "boolean",
+      "default" : false
+    }, {
+      "id" : "7128d620-ff14-c3c1-86c1-d3a8564715e2",
+      "name" : "icon_color",
+      "display_width" : null,
+      "label" : "Icon Color",
+      "required" : false,
+      "locked" : false,
+      "display" : "select",
+      "choices" : [ [ "forest_green", "Forest Green" ], [ "dark_teal", "Dark Teal" ], [ "pale_green", "Pale Green" ], [ "silver_gray", "Silver Gray" ], [ "charcoal_gray", "Charcoal Gray" ], [ "golden_brown", "Golden Brown" ], [ "soft_white", "Soft White" ], [ "white_bg", "White" ] ],
+      "multiple" : false,
+      "reordering_enabled" : true,
+      "preset" : null,
+      "type" : "choice",
+      "default" : "golden_brown"
+    }, {
+      "id" : "e5d99919-6444-993f-0182-7907438d0eb1",
+      "name" : "content_alignment",
+      "display_width" : null,
+      "label" : "Content Alignment",
+      "required" : false,
+      "locked" : false,
+      "display" : "select",
+      "choices" : [ [ "left", "Left" ], [ "center", "Center" ], [ "right", "Right" ] ],
+      "multiple" : false,
+      "reordering_enabled" : true,
+      "preset" : null,
+      "type" : "choice",
+      "default" : "center"
+    } ],
+    "tab" : "CONTENT",
+    "expanded" : false,
+    "group_occurrence_meta" : null,
+    "type" : "group",
+    "default" : {
+      "cards_background_color" : "white_bg",
+      "reverse_text" : false,
+      "icon_color" : "golden_brown",
+      "content_alignment" : "center"
+    }
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "group_occurrence_meta" : null,
+  "type" : "group",
+  "default" : {
+    "cards_group" : {
+      "cards_background_color" : "white_bg",
+      "reverse_text" : false,
+      "icon_color" : "golden_brown",
+      "content_alignment" : "center"
+    }
+  }
 }, {
   "id" : "module_overrides",
   "name" : "module_overrides",
@@ -547,7 +903,7 @@
     "locked" : false,
     "display" : "checkbox",
     "type" : "boolean",
-    "default" : false
+    "default" : true
   }, {
     "id" : "module_overrides.section_id",
     "name" : "section_id",
@@ -589,7 +945,7 @@
     "reordering_enabled" : true,
     "preset" : null,
     "type" : "choice",
-    "default" : "top-margin-default"
+    "default" : "top-margin-none"
   }, {
     "id" : "custom_top_margin",
     "name" : "custom_top_margin",
@@ -649,7 +1005,7 @@
     "reordering_enabled" : true,
     "preset" : null,
     "type" : "choice",
-    "default" : "bottom-margin-default"
+    "default" : "bottom-margin-none"
   }, {
     "id" : "custom_bottom_margin",
     "name" : "custom_bottom_margin",
@@ -809,54 +1165,6 @@
     "type" : "number",
     "default" : 50
   }, {
-    "id" : "6c8bfd0e-1629-1268-e01c-17b4047ecfce",
-    "name" : "background_color",
-    "display_width" : null,
-    "label" : "Background Color",
-    "help_text" : "If a module has formal settings for a background color they will take priority over this value.",
-    "inline_help_text" : "",
-    "required" : false,
-    "locked" : false,
-    "visibility" : {
-      "controlling_field" : "enable_overrides",
-      "controlling_field_path" : null,
-      "controlling_value_regex" : "true",
-      "property" : null,
-      "operator" : "EQUAL",
-      "access" : null
-    },
-    "type" : "color",
-    "default" : {
-      "color" : null,
-      "opacity" : null
-    }
-  }, {
-    "id" : "878364f4-31ac-6917-e76f-65307d7d36e5",
-    "name" : "background_image",
-    "display_width" : null,
-    "label" : "Background Image",
-    "help_text" : "If a module has formal settings for a background image they will take priority over this value.",
-    "required" : false,
-    "locked" : false,
-    "visibility" : {
-      "controlling_field" : "enable_overrides",
-      "controlling_field_path" : null,
-      "controlling_value_regex" : "true",
-      "property" : null,
-      "operator" : "EQUAL",
-      "access" : null
-    },
-    "responsive" : true,
-    "resizable" : false,
-    "show_loading" : false,
-    "type" : "image",
-    "default" : {
-      "size_type" : "auto",
-      "src" : "",
-      "alt" : null,
-      "loading" : "disabled"
-    }
-  }, {
     "id" : "3eccf45d-b0dc-4bac-42a0-f923e4405158",
     "name" : "reverse_text",
     "display_width" : null,
@@ -874,17 +1182,199 @@
     "display" : "checkbox",
     "type" : "boolean",
     "default" : false
+  }, {
+    "id" : "94e04306-ecc1-4735-09fd-9b66482a8101",
+    "name" : "background_settings",
+    "display_width" : null,
+    "label" : "Background Settings",
+    "required" : false,
+    "locked" : false,
+    "visibility" : {
+      "controlling_field" : null,
+      "controlling_field_path" : "module_overrides.enable_overrides",
+      "controlling_value_regex" : "true",
+      "property" : null,
+      "operator" : "EQUAL",
+      "access" : null
+    },
+    "children" : [ {
+      "id" : "3c812905-0c66-421d-6e7e-7a7109acdd49",
+      "name" : "background_type",
+      "display_width" : null,
+      "label" : "Background Type",
+      "required" : false,
+      "locked" : false,
+      "display" : "select",
+      "choices" : [ [ "color", "Color" ], [ "image", "Image" ], [ "gradient", "Gradient" ] ],
+      "multiple" : false,
+      "reordering_enabled" : true,
+      "preset" : null,
+      "type" : "choice",
+      "default" : "image"
+    }, {
+      "id" : "5d97321e-e326-2d30-8757-51608da05ea6",
+      "name" : "background_image",
+      "display_width" : null,
+      "label" : "Background Image",
+      "required" : false,
+      "locked" : false,
+      "visibility" : {
+        "controlling_field" : null,
+        "controlling_field_path" : "module_overrides.background_settings.background_type",
+        "controlling_value_regex" : "image",
+        "property" : null,
+        "operator" : "EQUAL",
+        "access" : null
+      },
+      "responsive" : true,
+      "resizable" : false,
+      "show_loading" : false,
+      "type" : "image",
+      "default" : {
+        "size_type" : "auto_custom_max",
+        "src" : "https://23543895.fs1.hubspotusercontent-na1.net/hubfs/23543895/RampXchange/images/Bg.png",
+        "alt" : "Background Image",
+        "loading" : "lazy",
+        "width" : 2880,
+        "height" : 1470,
+        "max_width" : 2000,
+        "max_height" : 1020.8333333333334
+      }
+    }, {
+      "id" : "4ea36da9-c8a6-adf2-7460-cbf4d98190fd",
+      "name" : "select_color",
+      "display_width" : null,
+      "label" : "Select Color",
+      "required" : false,
+      "locked" : false,
+      "visibility" : {
+        "controlling_field" : null,
+        "controlling_field_path" : "module_overrides.background_settings.background_type",
+        "controlling_value_regex" : "color",
+        "property" : null,
+        "operator" : "EQUAL",
+        "access" : null
+      },
+      "display" : "select",
+      "choices" : [ [ "forest_green", "Forest Green" ], [ "dark_teal", "Dark Teal" ], [ "pale_green", "Pale Green" ], [ "silver_gray", "Silver Gray" ], [ "charcoal_gray", "Charcoal Gray" ], [ "golden_brown", "Golden Brown" ], [ "soft_white", "Soft White" ], [ "white_bg", "White" ] ],
+      "multiple" : false,
+      "reordering_enabled" : true,
+      "preset" : null,
+      "type" : "choice",
+      "default" : ""
+    }, {
+      "id" : "2659085b-598d-e346-643e-6a9ebb3bae70",
+      "name" : "select_gradient",
+      "display_width" : null,
+      "label" : "Select Gradient",
+      "required" : false,
+      "locked" : false,
+      "visibility" : {
+        "controlling_field" : null,
+        "controlling_field_path" : "module_overrides.background_settings.background_type",
+        "controlling_value_regex" : "gradient",
+        "property" : null,
+        "operator" : "EQUAL",
+        "access" : null
+      },
+      "display" : "select",
+      "choices" : [ [ "gradient1", "Gradient 1" ], [ "gradient2", "Gradient 2" ], [ "gradient3", "Gradient 3" ], [ "gradient4", "Gradient 4" ], [ "gradient5", "Gradient 5" ] ],
+      "multiple" : false,
+      "reordering_enabled" : true,
+      "preset" : null,
+      "type" : "choice",
+      "default" : "gradient5"
+    } ],
+    "tab" : "CONTENT",
+    "expanded" : true,
+    "group_occurrence_meta" : null,
+    "type" : "group",
+    "default" : {
+      "background_type" : "image",
+      "background_image" : {
+        "size_type" : "auto_custom_max",
+        "src" : "https://23543895.fs1.hubspotusercontent-na1.net/hubfs/23543895/RampXchange/images/Bg.png",
+        "alt" : "Background Image",
+        "loading" : "lazy",
+        "width" : 2880,
+        "height" : 1470,
+        "max_width" : 2000,
+        "max_height" : 1020.8333333333334
+      },
+      "select_color" : "",
+      "select_gradient" : "gradient5"
+    }
+  }, {
+    "id" : "c813f3af-99b7-d54e-7ce2-b074f008a27c",
+    "name" : "container",
+    "display_width" : null,
+    "label" : "Container",
+    "required" : false,
+    "locked" : false,
+    "visibility" : {
+      "controlling_field" : null,
+      "controlling_field_path" : "module_overrides.enable_overrides",
+      "controlling_value_regex" : "true",
+      "property" : null,
+      "operator" : "EQUAL",
+      "access" : null
+    },
+    "children" : [ {
+      "id" : "87361475-d2b5-329d-45b2-227103ad95d9",
+      "name" : "size",
+      "display_width" : null,
+      "label" : "Size",
+      "required" : false,
+      "locked" : false,
+      "display" : "select",
+      "choices" : [ [ "theme", "Theme" ], [ "full-width", "Full Width" ], [ "custom", "Custom" ] ],
+      "multiple" : false,
+      "reordering_enabled" : true,
+      "preset" : null,
+      "type" : "choice",
+      "default" : "theme"
+    }, {
+      "id" : "b9865f26-0901-d5ad-66a2-7c6ecacec658",
+      "name" : "custom_size",
+      "display_width" : null,
+      "label" : "Custom Size",
+      "required" : false,
+      "locked" : false,
+      "visibility" : {
+        "controlling_field" : null,
+        "controlling_field_path" : "module_overrides.container.size",
+        "controlling_value_regex" : "custom",
+        "property" : null,
+        "operator" : "EQUAL",
+        "access" : null
+      },
+      "display" : "slider",
+      "min" : 500,
+      "max" : 1920,
+      "step" : 1,
+      "suffix" : "px",
+      "type" : "number",
+      "default" : 1296
+    } ],
+    "tab" : "CONTENT",
+    "expanded" : false,
+    "group_occurrence_meta" : null,
+    "type" : "group",
+    "default" : {
+      "size" : "theme",
+      "custom_size" : 1296
+    }
   } ],
   "tab" : "CONTENT",
   "expanded" : false,
   "group_occurrence_meta" : null,
   "type" : "group",
   "default" : {
-    "enable_overrides" : false,
-    "top_margin" : "top-margin-default",
+    "enable_overrides" : true,
+    "top_margin" : "top-margin-none",
     "custom_top_margin" : 100,
     "custom_top_margin_mobile" : 50,
-    "bottom_margin" : "bottom-margin-default",
+    "bottom_margin" : "bottom-margin-none",
     "custom_bottom_margin" : 100,
     "custom_bottom_margin_mobile" : 50,
     "top_padding" : "top-padding-default",
@@ -893,16 +1383,25 @@
     "bottom_padding" : "bottom-padding-default",
     "custom_bottom_padding" : 100,
     "custom_bottom_padding_mobile" : 50,
-    "background_color" : {
-      "color" : null,
-      "opacity" : null
+    "reverse_text" : false,
+    "background_settings" : {
+      "background_type" : "image",
+      "background_image" : {
+        "size_type" : "auto_custom_max",
+        "src" : "https://23543895.fs1.hubspotusercontent-na1.net/hubfs/23543895/RampXchange/images/Bg.png",
+        "alt" : "Background Image",
+        "loading" : "lazy",
+        "width" : 2880,
+        "height" : 1470,
+        "max_width" : 2000,
+        "max_height" : 1020.8333333333334
+      },
+      "select_color" : "",
+      "select_gradient" : "gradient5"
     },
-    "background_image" : {
-      "size_type" : "auto",
-      "src" : "",
-      "alt" : null,
-      "loading" : "disabled"
-    },
-    "reverse_text" : false
+    "container" : {
+      "size" : "theme",
+      "custom_size" : 1296
+    }
   }
 } ]
