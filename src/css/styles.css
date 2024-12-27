@@ -8616,16 +8616,6 @@ section.u4m-blog-post div.comments div.content form .hs-button:hover, section.u4
   width: 325.71px !important;
 }
 @media (max-width: 991px) {
-  .header-wrapper .main-header .row-fluid .site_logo img {
-    width: 100% !important;
-  }
-}
-@media (max-width: 580px) {
-  .header-wrapper .main-header .row-fluid .site_logo img {
-    width: 90% !important;
-  }
-}
-@media (max-width: 991px) {
   .header-wrapper .main-header .row-fluid .main_menu {
     width: 75%;
   }

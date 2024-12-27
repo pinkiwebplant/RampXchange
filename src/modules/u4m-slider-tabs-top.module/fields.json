@@ -528,7 +528,7 @@
       "required" : false,
       "locked" : false,
       "display" : "select",
-      "choices" : [ [ "content", "Content" ], [ "media", "Media" ] ],
+      "choices" : [ [ "content", "Content" ], [ "media", "Media" ], [ "featured", "Featured" ] ],
       "multiple" : false,
       "reordering_enabled" : true,
       "preset" : null,
@@ -689,6 +689,73 @@
       "allow_new_line" : false,
       "show_emoji_picker" : false,
       "type" : "text"
+    }, {
+      "id" : "ac0f4a02-feb8-3815-65e9-dfcb163613c4",
+      "name" : "featured",
+      "display_width" : null,
+      "label" : "Featured",
+      "required" : false,
+      "locked" : false,
+      "visibility" : {
+        "controlling_field" : null,
+        "controlling_field_path" : "tabber_items.media_section.select_column_type",
+        "controlling_value_regex" : "featured",
+        "property" : null,
+        "operator" : "EQUAL",
+        "access" : null
+      },
+      "children" : [ {
+        "id" : "e0b0b504-c9ff-fe26-6bb4-0ae34990cc7a",
+        "name" : "title",
+        "display_width" : null,
+        "label" : "Title",
+        "required" : false,
+        "locked" : false,
+        "validation_regex" : "",
+        "allow_new_line" : false,
+        "show_emoji_picker" : false,
+        "type" : "text",
+        "default" : "Popular Features"
+      }, {
+        "id" : "10dd2cea-f183-70e8-07e1-b7e72c7f7cae",
+        "name" : "material_icon",
+        "display_width" : null,
+        "label" : "Material Icon",
+        "required" : false,
+        "locked" : false,
+        "validation_regex" : "",
+        "allow_new_line" : false,
+        "show_emoji_picker" : false,
+        "type" : "text",
+        "default" : "check"
+      }, {
+        "id" : "9a5f195e-0222-1d6f-2e0f-e9edec7c10bd",
+        "name" : "text",
+        "display_width" : null,
+        "label" : "Text",
+        "required" : false,
+        "locked" : false,
+        "occurrence" : {
+          "min" : null,
+          "max" : null,
+          "sorting_label_field" : null,
+          "default" : 3
+        },
+        "validation_regex" : "",
+        "allow_new_line" : false,
+        "show_emoji_picker" : false,
+        "type" : "text",
+        "default" : [ "Trusted Advisors", "Trusted Advisors", "Trusted Advisors" ]
+      } ],
+      "tab" : "CONTENT",
+      "expanded" : false,
+      "group_occurrence_meta" : null,
+      "type" : "group",
+      "default" : {
+        "title" : "Popular Features",
+        "material_icon" : "check",
+        "text" : [ "Trusted Advisors", "Trusted Advisors", "Trusted Advisors" ]
+      }
     } ],
     "tab" : "CONTENT",
     "expanded" : false,
@@ -718,8 +785,27 @@
         "height" : 571,
         "max_width" : 855,
         "max_height" : 571
+      },
+      "featured" : {
+        "title" : "Popular Features",
+        "material_icon" : "check",
+        "text" : [ "Trusted Advisors", "Trusted Advisors", "Trusted Advisors" ]
       }
     }
+  }, {
+    "id" : "6f856674-41b7-f806-3b67-9645f83f2cba",
+    "name" : "content_alignment",
+    "display_width" : null,
+    "label" : "Content Alignment",
+    "required" : false,
+    "locked" : false,
+    "display" : "select",
+    "choices" : [ [ "left_align", "Left" ], [ "right_align", "Right" ] ],
+    "multiple" : false,
+    "reordering_enabled" : true,
+    "preset" : null,
+    "type" : "choice",
+    "default" : "left_align"
   } ],
   "tab" : "CONTENT",
   "expanded" : false,
@@ -768,8 +854,14 @@
         "height" : 571,
         "max_width" : 855,
         "max_height" : 571
+      },
+      "featured" : {
+        "material_icon" : "check",
+        "text" : [ "Trusted Advisors", "Trusted Advisors", "Trusted Advisors" ],
+        "title" : "Popular Features"
       }
-    }
+    },
+    "content_alignment" : "left_align"
   }, {
     "content_section" : {
       "title" : "Small & Medium Businesses",
@@ -813,8 +905,14 @@
         "height" : 571,
         "max_width" : 855,
         "max_height" : 571
+      },
+      "featured" : {
+        "material_icon" : "check",
+        "text" : [ "Trusted Advisors", "Trusted Advisors", "Trusted Advisors" ],
+        "title" : "Popular Features"
       }
-    }
+    },
+    "content_alignment" : "left_align"
   }, {
     "content_section" : {
       "title" : "Small & Medium Businesses",
@@ -858,8 +956,14 @@
         "height" : 571,
         "max_width" : 855,
         "max_height" : 571
+      },
+      "featured" : {
+        "material_icon" : "check",
+        "text" : [ "Trusted Advisors", "Trusted Advisors", "Trusted Advisors" ],
+        "title" : "Popular Features"
       }
-    }
+    },
+    "content_alignment" : "left_align"
   }, {
     "content_section" : {
       "title" : "Small & Medium Businesses",
@@ -903,8 +1007,14 @@
         "height" : 571,
         "max_width" : 855,
         "max_height" : 571
+      },
+      "featured" : {
+        "material_icon" : "check",
+        "text" : [ "Trusted Advisors", "Trusted Advisors", "Trusted Advisors" ],
+        "title" : "Popular Features"
       }
-    }
+    },
+    "content_alignment" : "left_align"
   }, {
     "content_section" : {
       "title" : "Small & Medium Businesses",
@@ -948,8 +1058,14 @@
         "height" : 571,
         "max_width" : 855,
         "max_height" : 571
+      },
+      "featured" : {
+        "material_icon" : "check",
+        "text" : [ "Trusted Advisors", "Trusted Advisors", "Trusted Advisors" ],
+        "title" : "Popular Features"
       }
-    }
+    },
+    "content_alignment" : "left_align"
   } ]
 }, {
   "id" : "71c7696f-a458-049f-2fa1-b37823b8775b",
@@ -958,28 +1074,12 @@
   "label" : "Module Settings",
   "required" : false,
   "locked" : false,
-  "children" : [ {
-    "id" : "6f856674-41b7-f806-3b67-9645f83f2cba",
-    "name" : "content_alignment",
-    "display_width" : null,
-    "label" : "Content Alignment",
-    "required" : false,
-    "locked" : false,
-    "display" : "select",
-    "choices" : [ [ "left_align", "Left" ], [ "right_align", "Right" ] ],
-    "multiple" : false,
-    "reordering_enabled" : true,
-    "preset" : null,
-    "type" : "choice",
-    "default" : "left_align"
-  } ],
+  "children" : [ ],
   "tab" : "CONTENT",
   "expanded" : false,
   "group_occurrence_meta" : null,
   "type" : "group",
-  "default" : {
-    "content_alignment" : "left_align"
-  }
+  "default" : { }
 }, {
   "id" : "module_overrides",
   "name" : "module_overrides",

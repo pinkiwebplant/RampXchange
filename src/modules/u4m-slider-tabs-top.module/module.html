@@ -21,7 +21,7 @@
 			</div>
 			<div class="tabber_tab_content">
 				{% for item in module.tabber_items %}
-				<div class="tabber_cntnt {% if loop.first %}active{% endif %} {{ module.module_settings.content_alignment }}" content-id="tab{{ loop.index }}">
+				<div class="tabber_cntnt {% if loop.first %}active{% endif %} {{ item.content_alignment }}" content-id="tab{{ loop.index }}">
 					<div class="toggle_btn">
 						<a href="javascrpipt:void(0);">{{ item.content_section.title }} <span class="plus">+</span><span class="minus">-</span></a>
 					</div>
@@ -100,6 +100,16 @@
 									{% endif %}
 								</div>
 								{% endif %}
+							</div>
+							{% endif %}
+							{% if item.media_section.select_column_type == 'featured' %}
+							<div class="featuredsec">
+								<h5>{{item.media_section.featured.title}}</h5>
+								<ul>
+									{% for item2 in item.media_section.featured.text %}
+									<li><span class="material-symbols-outlined">{{item.media_section.featured.material_icon}}</span>{{ item2 }}</li>
+									{% endfor %}
+								</ul>
 							</div>
 							{% endif %}
 						</div>

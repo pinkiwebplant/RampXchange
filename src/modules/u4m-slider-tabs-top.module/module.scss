@@ -77,6 +77,7 @@
         .tabber_cntnt_row {
           display: flex;
           gap: 60px;
+          align-items: center;
           @include tabletvert {
             display: none;
             padding: 20px;
@@ -90,7 +91,9 @@
           }
           padding: 40px 20px 20px 20px;
           &.right_align {
-            flex-direction: row-reverse;
+            .tabber_cntnt_row {
+              flex-direction: row-reverse;
+            }
           }
           &.active {
             .toggle_btn {
@@ -235,6 +238,35 @@
               }
               ul {
                 margin-bottom: 5px;
+              }
+            }
+            .featuredsec {
+              ul {
+                margin: 0;
+                li {
+                  margin-bottom: 10px;
+                  letter-spacing: normal;
+                  position: relative;
+                  &:before {
+                    display: none !important;
+                  }
+                  span.material-symbols-outlined {
+                    font-size: 16px;
+                    line-height: 1;
+                    align-items: center;
+                    background: $bronze;
+                    border-radius: 100%;
+                    color: $white;
+                    display: flex;
+                    height: 20px;
+                    justify-content: center;
+                    left: 0;
+                    position: absolute;
+                    text-align: center;
+                    top: 0;
+                    width: 20px;
+                  }
+                }
               }
             }
           }
