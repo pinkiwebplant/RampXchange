@@ -327,7 +327,7 @@
   "locked" : false,
   "occurrence" : {
     "min" : 5,
-    "max" : null,
+    "max" : 6,
     "sorting_label_field" : "ab88f0e8-778b-fad6-1bf5-7e1d20e44354",
     "default" : 5
   },
@@ -951,6 +951,35 @@
       }
     }
   } ]
+}, {
+  "id" : "71c7696f-a458-049f-2fa1-b37823b8775b",
+  "name" : "module_settings",
+  "display_width" : null,
+  "label" : "Module Settings",
+  "required" : false,
+  "locked" : false,
+  "children" : [ {
+    "id" : "6f856674-41b7-f806-3b67-9645f83f2cba",
+    "name" : "content_alignment",
+    "display_width" : null,
+    "label" : "Content Alignment",
+    "required" : false,
+    "locked" : false,
+    "display" : "select",
+    "choices" : [ [ "left_align", "Left" ], [ "right_align", "Right" ] ],
+    "multiple" : false,
+    "reordering_enabled" : true,
+    "preset" : null,
+    "type" : "choice",
+    "default" : "left_align"
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "group_occurrence_meta" : null,
+  "type" : "group",
+  "default" : {
+    "content_alignment" : "left_align"
+  }
 }, {
   "id" : "module_overrides",
   "name" : "module_overrides",

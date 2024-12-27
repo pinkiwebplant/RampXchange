@@ -3463,13 +3463,13 @@ li {
   top: 0;
   width: 20px;
   height: 20px;
-  background: red;
+  background: #c49e5b;
   border-radius: 100%;
   text-align: center;
   display: flex;
   align-items: center;
   justify-content: center;
-  color: #fff;
+  color: #ffffff;
 }
 
 ul ul,

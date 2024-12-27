@@ -1,5 +1,27 @@
 @import "../../css/_module-imports";
 .u4m-slider-tabs-top {
+  &.reverse-text {
+    .slider-tabs-top-wrapper {
+      .row {
+        .tabber_tab_content {
+          .tabber_cntnt {
+            &.active {
+              .toggle_btn {
+                a {
+                  color: $heading;
+                }
+              }
+            }
+            .toggle_btn {
+              a {
+                color: $white;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
   .intro_content {
     .eyebrow_text {
       @include size14;
@@ -10,6 +32,9 @@
     z-index: 9;
     .row {
       .tabber_top_tabs {
+        @include tabletvert {
+          display: none;
+        }
         ul {
           padding: 8px 12px;
           margin: 0;
@@ -23,6 +48,9 @@
           li {
             border-radius: 12px;
             max-width: 220px;
+            @include navbreak {
+              max-width: unset;
+            }
             padding: 8px 12px;
             width: 100%;
             height: auto;
@@ -38,16 +66,91 @@
               text-decoration: none;
               color: $heading;
               display: inline-block;
+              @include navbreak {
+                @include size14;
+              }
             }
           }
         }
       }
       .tabber_tab_content {
+        .tabber_cntnt_row {
+          display: flex;
+          gap: 60px;
+          @include tabletvert {
+            display: none;
+            padding: 20px;
+          }
+        }
         .tabber_cntnt {
           display: none;
+          @include tabletvert {
+            display: block;
+            padding: 0;
+          }
           padding: 40px 20px 20px 20px;
+          &.right_align {
+            flex-direction: row-reverse;
+          }
+          &.active {
+            .toggle_btn {
+              background: $digitalgreen;
+              border-radius: 12px;
+              font-weight: 500;
+              pointer-events: none;
+              a {
+                span {
+                  &.plus {
+                    display: none;
+                  }
+                  &.minus {
+                    display: block;
+                  }
+                }
+              }
+            }
+            @include tabletvert {
+              .tabber_cntnt_row {
+                display: block;
+              }
+            }
+          }
+          .toggle_btn {
+            display: none;
+            cursor: pointer;
+            @include tabletvert {
+              display: flex;
+              margin-bottom: 10px;
+              min-height: 58px;
+              padding: 8px 12px;
+              text-align: center;
+              align-items: center;
+              justify-content: flex-start;
+              a {
+                text-decoration: none;
+                display: flex;
+                justify-content: space-between;
+                width: 100%;
+                align-items: center;
+                color: $heading;
+                span {
+                  @include size24;
+                  &.minus {
+                    display: none;
+                  }
+                }
+                br {
+                  display: none;
+                }
+              }
+            }
+          }
           .left_wrapper {
             width: 50%;
+            @include tabletvert {
+              width: 100%;
+              margin-bottom: 40px;
+            }
             h3 {
               @include size32;
               margin-bottom: 20px;
@@ -69,6 +172,9 @@
           }
           .right_section {
             width: 50%;
+            @include tabletvert {
+              width: 100%;
+            }
             &.image {
               .media_sec {
                 padding: 0;
@@ -78,6 +184,10 @@
               padding-bottom: 56%;
               position: relative;
               min-height: 367px;
+              @include tabletvert {
+                padding-bottom: 66.6%;
+                min-height: unset;
+              }
               .vid_section {
                 &.video-enable {
                   .poster_img {
@@ -123,10 +233,13 @@
               h5 {
                 margin-bottom: 20px;
               }
+              ul {
+                margin-bottom: 5px;
+              }
             }
           }
           &.active {
-            display: flex;
+            display: block;
             gap: 60px;
           }
         }

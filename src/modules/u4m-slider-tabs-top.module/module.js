@@ -56,3 +56,14 @@ $(document).ready(function () {
     }
   });
 });
+
+$(".toggle_btn").click(function () {
+  $(this)
+    .next()
+    .slideToggle(250)
+    .parent()
+    .siblings()
+    .children(".tabber_cntnt_row")
+    .slideUp(250);
+  $(this).parent().addClass("active").siblings().removeClass("active");
+});
