@@ -1,62 +1,211 @@
 @import "../../css/_module-imports";
 
 .u4m-simple-slider {
+  .bg_overlay.bg_color {
+    z-index: 0;
+  }
   overflow: hidden;
   position: relative;
   .simple-slider-wrapper {
-    .shape_image {
-      position: absolute;
-      width: 100%;
-      left: 0;
-      top: 0;
-      z-index: 9;
-      svg {
-        width: 100%;
-      }
-    }
-    .slider_wrapper {
+    .page-center {
       position: relative;
-      z-index: 99;
-      .slick-list {
-        position: static;
-        .slick-track {
-          position: static;
-          .slick-slide {
-            .slider_item {
-              .row {
+      padding: 0;
+      .shape_image {
+        position: absolute;
+        width: 107%;
+        left: 0;
+        top: 0;
+        right: 0;
+        z-index: 9;
+        height: 100%;
+        pointer-events: none;
+        background-repeat: no-repeat no-repeat;
+        background-position: center center;
+        background-size: cover;
+        margin-left: -7%;
+        @include tabletvert {
+          display: none;
+        }
+      }
+      .row {
+        display: flex;
+        flex-wrap: wrap;
+        @include tabletvert {
+          flex-direction: column-reverse;
+        }
+        .leftColumn {
+          position: relative;
+
+          padding: 0 20rem;
+          .cutomArrows {
+            position: absolute;
+            position: absolute;
+            width: 100%;
+            top: 89rem;
+            display: flex;
+            justify-content: flex-end;
+            gap: 20px;
+            z-index: 221;
+            right: 0;
+            @include tabletvert {
+              top: auto;
+              justify-content: flex-start;
+              bottom: 40px;
+              padding-left: 20px;
+            }
+            .slick-arrow {
+                width: 44px;
+                height: 44px;
+                border: 1px solid $heading;
+                border-radius: 100%;
                 display: flex;
-                gap: 60px;
-                .left_section {
-                  position: relative;
-                  z-index: 99;
-                  padding: 89px 0;
-                  .eyebrow_text {
-                    margin-bottom: 8px;
-                    font-size: 14px;
-                    color: $heading;
+                align-items: center;
+                justify-content: center;
+                cursor: pointer;
+                color: $heading;
+                // @include tablet {
+                //   width: 30px;
+                //   height: 30px;
+                //   }
+                &:hover {
+                  background-color: $heading;
+                  color: $white;
+                }
+                svg {
+                  // @include tablet {
+                  //   width: 10px;
+                  //   height: 10px;
+                  //   }
+                  path {
+                    fill: currentColor;
                   }
-                  .intro_desc {
-                    margin-bottom: 32px;
-                    p {
-                      @include size23;
-                    }
-                  }
-                  .author-section {
-                    font-weight: 500;
-                    margin-bottom: 32px;
-                    span {
-                      padding: 0 8px;
-                    }
-                  }
-                  .logo_img {
-                    img {
-                      width: 148px;
-                    }
-                  }
+                }
+            }
+          }
+          width: 50%;
+          @include tabletvert {
+            width: 100%;
+          }
+          .slider_wrapper {
+            position: relative;
+            z-index: 99;
+            .left_section {
+              position: relative;
+              z-index: 99;
+              padding: 89px 0;
+              @include tabletvert {
+                padding: 40px 0 120px;
+              }
+              .topSec{
+                max-width: 422px;
+                @include tablet {
+                    max-width: 100%;
+                    padding-right: 120px;
+                }
+                @include tabletvert {
+                  padding-right: 0;
+                }
+              .eyebrow_text {
+                margin-bottom: 8px;
+                font-size: 14px;
+              }
+
+            }
+              .intro_desc {
+                margin-bottom: 32px;
+                p {
+                  @include size23;
+                }
+              }
+              .author-section {
+                font-weight: 500;
+                margin-bottom: 32px;
+                span {
+                  padding: 0 8px;
+                }
+              }
+              .logo_img {
+                img {
+                  width: 148px;
                 }
               }
             }
           }
+        }
+        .rightColumn {
+          width: calc(50% + 12px);
+          margin-left: -12px;
+          display: flex;
+          @include tabletvert {
+            width: 100%;
+            margin-left: 0;
+          }
+          .bgImageNav {
+            height: 100%;
+            width: 100%;
+            .slick-list {
+              height: 100%;
+              .slick-track {
+                height: 100%;
+                .slick-slide {
+                  height: 100%;
+                  > div {
+                    height: 100%;
+                      display: block;
+
+                .media_section {
+                  height: 100%;
+                  display: block;
+                  background-size: cover;
+                  background-position: center;
+                  background-repeat: no-repeat;
+                  @include tabletvert {
+                    min-height: 50vw;
+                  }
+                }
+                  }
+              }
+              
+            }
+            
+          }
+          
+        }
+        }
+      }
+    }
+    &.fw {
+      .row {
+        .leftColumn {
+          width: 100%;  
+          text-align: center;
+          max-width: 800px;
+          margin: auto;
+          display: flex;
+          flex-wrap: wrap;
+          flex-direction: column-reverse;
+          .cutomArrows {
+            position: static;
+            justify-content: center;
+            margin: 40px 0 80px;
+          }
+          .slider_wrapper {
+            width: 100%;
+            .left_section {
+              padding: 80px 0 0;
+              .logo_img {
+                text-align: center;
+                img {
+                  display: block;
+                  margin: 0 auto;
+                }
+              }
+              .topSec {
+                max-width: 100% !important;
+                padding: 0 !important;
+              }
+            }
+        }
         }
       }
     }
