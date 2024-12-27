@@ -4,6 +4,11 @@
   "icon" : "https://8292614.fs1.hubspotusercontent-na1.net/hubfs/8292614/4.svg",
   "host_template_types" : [ "PAGE" ],
   "module_id" : 184276466775,
+  "js_assets" : [ {
+    "autoload" : true,
+    "path" : "../../js/slick.js",
+    "name" : "slick.js"
+  } ],
   "label" : "Logo Trust Marks",
   "is_available_for_new_content" : true
 }

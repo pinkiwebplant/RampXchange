@@ -7,8 +7,6 @@
 		{{macros.introGroup(module.intro_content)}}
 	</div>
 </div>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.css" />
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 
 <div class="logo-trust-marks {{ module.module_settings.select_gradient }}">
 	<div class="page-center">
@@ -51,7 +49,7 @@
 				{% if module.select_logo == "hubdb" %}
 				{% set table = hubdb_table_rows(module.select_table) %}
 				{% for item in table %}
-				<div class="logo-item">
+				<div class="logo-item splide__slide">
 					{% if item.logo_image.url %}
 					<a href="{{ item.link }}">
 						<img src="{{ item.logo_image.url }}" alt="{{ item.name }}">
@@ -67,48 +65,49 @@
 </section>
 
 {% require_js %}
-<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
 <script>
+	
+
 	$('.{{ name }} .logo-wrapper').slick({
-    speed: 5000, // Reduced speed for better readability
-    autoplay: true,
-    autoplaySpeed: 0,
-    cssEase: 'linear',
-    slidesToShow: 8,
-    slidesToScroll: 1,
-    variableWidth: true,
-    rtl: false, // Adjust according to language
-    mobileFirst: true,
-    rows: 1, // Single row for better alignment
-    arrows: false,
-    dots: false,
-    accessibility: true, // Enable for better usability
-    draggable: true, // Enable dragging
-    pauseOnHover: true, // Pause slider on hover
-    swipe: true, // Allow swipe gestures
-    touchMove: true, // Enable touch gestures
-	infinite: true,
-    responsive: [
-        {
-            breakpoint: 1024,
-            settings: {
-                slidesToShow: 8
-            }
-        },
-        {
-            breakpoint: 768,
-            settings: {
-                slidesToShow: 4
-            }
-        },
-        {
-            breakpoint: 480,
-            settings: {
-                slidesToShow: 2
-            }
-        }
-    ]
-});
+		speed: 5000, // Reduced speed for better readability
+		autoplay: true,
+		autoplaySpeed: 100,
+		cssEase: 'linear',
+		slidesToShow: 8,
+		slidesToScroll: 1,
+		variableWidth: true,
+		rtl: false, // Adjust according to language
+		mobileFirst: true,
+		rows: 1, // Single row for better alignment
+		arrows: false,
+		dots: false,
+		accessibility: true, // Enable for better usability
+		draggable: true, // Enable dragging
+		pauseOnHover: true, // Pause slider on hover
+		swipe: true, // Allow swipe gestures
+		touchMove: true, // Enable touch gestures
+		infinite: true,
+		responsive: [
+		{
+		breakpoint: 1024,
+		settings: {
+		slidesToShow: 8
+		}
+	},
+		{
+			breakpoint: 768,
+				settings: {
+					slidesToShow: 4
+				}
+		},
+			{
+				breakpoint: 480,
+					settings: {
+						slidesToShow: 2
+					}
+			}
+	]
+	}); 
 
 </script>
 {% end_require_js %}

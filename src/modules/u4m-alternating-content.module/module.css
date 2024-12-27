@@ -71,3 +71,49 @@ html {
     width: 100%;
   }
 }
+.u4m-alternating-content .row .media_section .vid_section {
+  min-height: 390px;
+  padding-bottom: 56%;
+  position: relative;
+}
+.u4m-alternating-content .row .media_section .vid_section .poster_img {
+  cursor: pointer;
+  left: 0;
+  position: absolute;
+  top: -1px;
+  z-index: 9;
+  height: 100%;
+  width: 100%;
+}
+.u4m-alternating-content .row .media_section .vid_section .poster_img img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 100%;
+  width: 100%;
+}
+.u4m-alternating-content .row .media_section .vid_section .poster_img .playIcon {
+  left: 50%;
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 9;
+}
+.u4m-alternating-content .row .media_section .vid_section .hubspot_video video {
+  height: 100%;
+  left: 0;
+  -o-object-fit: cover;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+.u4m-alternating-content .row .media_section .vid_section .external_vid .iframe {
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+.u4m-alternating-content .row .media_section .vid_section.video-enable .poster_img {
+  display: none;
+}

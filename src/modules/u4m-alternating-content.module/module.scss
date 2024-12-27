@@ -58,6 +58,57 @@
       @include tabletvert {
         width: 100%;
       }
+      .vid_section {
+        min-height: 390px;
+        padding-bottom: 56%;
+        position: relative;
+        .poster_img {
+          cursor: pointer;
+          left: 0;
+          position: absolute;
+          top: -1px;
+          z-index: 9;
+          height: 100%;
+          width: 100%;
+          img {
+            object-fit: cover;
+            height: 100%;
+            width: 100%;
+          }
+          .playIcon {
+            left: 50%;
+            position: absolute;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            z-index: 9;
+          }
+        }
+        .hubspot_video {
+          video {
+            height: 100%;
+            left: 0;
+            -o-object-fit: cover;
+            object-fit: cover;
+            position: absolute;
+            top: 0;
+            width: 100%;
+          }
+        }
+        .external_vid {
+          .iframe {
+            height: 100%;
+            left: 0;
+            position: absolute;
+            top: 0;
+            width: 100%;
+          }
+        }
+        &.video-enable {
+          .poster_img {
+            display: none;
+          }
+        }
+      }
     }
   }
 }

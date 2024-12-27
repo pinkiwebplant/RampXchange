@@ -300,12 +300,34 @@
   "required" : false,
   "locked" : false,
   "children" : [ {
+    "id" : "c2934325-a6e9-faa6-2396-5bc5cc4b6403",
+    "name" : "select_media_type",
+    "display_width" : null,
+    "label" : "Select Media Type",
+    "required" : false,
+    "locked" : false,
+    "display" : "select",
+    "choices" : [ [ "img", "Image" ], [ "vd", "Video" ] ],
+    "multiple" : false,
+    "reordering_enabled" : true,
+    "preset" : null,
+    "type" : "choice",
+    "default" : "img"
+  }, {
     "id" : "60d64902-4621-2057-b01f-e2f6a2d3eebe",
-    "name" : "image_field",
+    "name" : "image",
     "display_width" : null,
     "label" : "Image",
     "required" : false,
     "locked" : false,
+    "visibility" : {
+      "controlling_field" : null,
+      "controlling_field_path" : "media_section.select_media_type",
+      "controlling_value_regex" : "img",
+      "property" : null,
+      "operator" : "EQUAL",
+      "access" : null
+    },
     "responsive" : true,
     "resizable" : false,
     "show_loading" : false,
@@ -320,13 +342,103 @@
       "max_width" : 903,
       "max_height" : 619
     }
+  }, {
+    "id" : "ed7a363f-931c-0a6c-1f52-2742280b4fba",
+    "name" : "poster_image",
+    "display_width" : null,
+    "label" : "Poster Image",
+    "required" : false,
+    "locked" : false,
+    "visibility" : {
+      "controlling_field" : null,
+      "controlling_field_path" : "media_section.select_media_type",
+      "controlling_value_regex" : "vd",
+      "property" : null,
+      "operator" : "EQUAL",
+      "access" : null
+    },
+    "responsive" : true,
+    "resizable" : false,
+    "show_loading" : false,
+    "type" : "image",
+    "default" : {
+      "size_type" : "auto",
+      "src" : "https://23543895.fs1.hubspotusercontent-na1.net/hubfs/23543895/RampXchange/images/IOmage.png",
+      "alt" : "IOmage",
+      "loading" : "lazy",
+      "width" : 1818,
+      "height" : 1212,
+      "max_width" : 1818,
+      "max_height" : 1212
+    }
+  }, {
+    "id" : "93463190-f390-d045-6b28-c6dae1c1d1bc",
+    "name" : "select_video_type",
+    "display_width" : null,
+    "label" : "Select Video Type",
+    "required" : false,
+    "locked" : false,
+    "visibility" : {
+      "controlling_field" : null,
+      "controlling_field_path" : "media_section.select_media_type",
+      "controlling_value_regex" : "vd",
+      "property" : null,
+      "operator" : "EQUAL",
+      "access" : null
+    },
+    "display" : "select",
+    "choices" : [ [ "hubspot", "Hubspot" ], [ "external", "External" ] ],
+    "multiple" : false,
+    "reordering_enabled" : true,
+    "preset" : null,
+    "type" : "choice",
+    "default" : ""
+  }, {
+    "picker" : "file",
+    "id" : "95682f3d-6a79-d83a-7d68-b83ef88d7705",
+    "name" : "select_video",
+    "display_width" : null,
+    "label" : "Select Video",
+    "required" : false,
+    "locked" : false,
+    "visibility" : {
+      "controlling_field" : null,
+      "controlling_field_path" : "media_section.select_video_type",
+      "controlling_value_regex" : "hubspot",
+      "property" : null,
+      "operator" : "EQUAL",
+      "access" : null
+    },
+    "type" : "file",
+    "default" : "https://23543895.fs1.hubspotusercontent-na1.net/hubfs/23543895/RampXchange/videos/mov_bbb.mp4"
+  }, {
+    "id" : "96018813-e167-8ce0-7c7f-5bda848f1d2f",
+    "name" : "embed_url",
+    "display_width" : null,
+    "label" : "Embed Url",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "visibility" : {
+      "controlling_field" : null,
+      "controlling_field_path" : "media_section.select_video_type",
+      "controlling_value_regex" : "external",
+      "property" : null,
+      "operator" : "EQUAL",
+      "access" : null
+    },
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "https://www.youtube.com/embed/29BQhSVPFpo?autoplay=1"
   } ],
   "tab" : "CONTENT",
   "expanded" : false,
   "group_occurrence_meta" : null,
   "type" : "group",
   "default" : {
-    "image_field" : {
+    "select_media_type" : "img",
+    "image" : {
       "size_type" : "auto",
       "src" : "https://23543895.fs1.hubspotusercontent-na1.net/hubfs/23543895/RampXchange/images/Media.png",
       "alt" : "Media",
@@ -335,7 +447,20 @@
       "height" : 619,
       "max_width" : 903,
       "max_height" : 619
-    }
+    },
+    "poster_image" : {
+      "size_type" : "auto",
+      "src" : "https://23543895.fs1.hubspotusercontent-na1.net/hubfs/23543895/RampXchange/images/IOmage.png",
+      "alt" : "IOmage",
+      "loading" : "lazy",
+      "width" : 1818,
+      "height" : 1212,
+      "max_width" : 1818,
+      "max_height" : 1212
+    },
+    "select_video_type" : "",
+    "select_video" : "https://23543895.fs1.hubspotusercontent-na1.net/hubfs/23543895/RampXchange/videos/mov_bbb.mp4",
+    "embed_url" : "https://www.youtube.com/embed/29BQhSVPFpo?autoplay=1"
   }
 }, {
   "id" : "22527ae0-a6f1-e03f-404a-87451006191b",
@@ -352,7 +477,7 @@
     "required" : false,
     "locked" : false,
     "display" : "select",
-    "choices" : [ [ "left_col", "Left Align" ], [ "right_col", "Right Align" ] ],
+    "choices" : [ [ "left_col", "Left" ], [ "right_col", "Right" ] ],
     "multiple" : false,
     "reordering_enabled" : true,
     "preset" : null,

@@ -16,6 +16,9 @@ html {
   }
 }
 
+.u4m-logo-trust-marks .intro_content {
+  margin-bottom: 17px;
+}
 .u4m-logo-trust-marks .intro_content .eyebrow_text {
   font-size: 14rem;
 }
@@ -42,12 +45,15 @@ html {
   top: 0;
   pointer-events: none;
 }
+.u4m-logo-trust-marks .logo-trust-marks .page-center .row {
+  margin: 0 -20px;
+}
 .u4m-logo-trust-marks .logo-trust-marks .page-center .row .logo-wrapper .slick-list .slick-track {
   display: flex;
   align-items: center;
 }
 .u4m-logo-trust-marks .logo-trust-marks .page-center .row .logo-wrapper .slick-list .slick-track .slick-slide img {
-  padding: 0 30px;
+  padding: 0 20px;
   width: 180px;
   -o-object-fit: cover;
      object-fit: cover;
