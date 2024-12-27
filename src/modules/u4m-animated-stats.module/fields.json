@@ -343,16 +343,17 @@
     "show_emoji_picker" : false,
     "type" : "text"
   }, {
-    "id" : "8aab2829-2be0-e222-b5ed-1db1d20b15f6",
+    "id" : "3c65b64a-20e9-d67f-cd8d-bacaac6c57da",
     "name" : "numeric_stat",
     "display_width" : null,
     "label" : "Numeric Stat",
     "required" : false,
     "locked" : false,
-    "display" : "text",
-    "step" : 1,
-    "type" : "number",
-    "default" : 100
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "100"
   }, {
     "id" : "825cd180-d971-4933-62f1-65cbb2f4b7aa",
     "name" : "suffix",
@@ -383,19 +384,19 @@
   "group_occurrence_meta" : null,
   "type" : "group",
   "default" : [ {
-    "numeric_stat" : 100,
+    "numeric_stat" : "100",
     "suffix" : "%",
     "caption" : "stat about cybersecurity"
   }, {
-    "numeric_stat" : 100,
+    "numeric_stat" : "100",
     "suffix" : "%",
     "caption" : "stat about cybersecurity"
   }, {
-    "numeric_stat" : 100,
+    "numeric_stat" : "100",
     "suffix" : "%",
     "caption" : "stat about cybersecurity"
   }, {
-    "numeric_stat" : 100,
+    "numeric_stat" : "100",
     "suffix" : "%",
     "caption" : "stat about cybersecurity"
   } ]
@@ -516,7 +517,7 @@
     "id" : "b8b42504-a27f-b722-90b4-f35333e31f98",
     "name" : "select_count_text_color",
     "display_width" : null,
-    "label" : "Select Count Text Color",
+    "label" : "Select Numbers Color",
     "required" : false,
     "locked" : false,
     "display" : "select",
@@ -931,7 +932,7 @@
       "reordering_enabled" : true,
       "preset" : null,
       "type" : "choice",
-      "default" : ""
+      "default" : "forest_green"
     }, {
       "id" : "2659085b-598d-e346-643e-6a9ebb3bae70",
       "name" : "select_gradient",
@@ -953,7 +954,7 @@
       "reordering_enabled" : true,
       "preset" : null,
       "type" : "choice",
-      "default" : "gradient5"
+      "default" : "gradient1"
     } ],
     "tab" : "CONTENT",
     "expanded" : true,
@@ -967,8 +968,8 @@
         "alt" : null,
         "loading" : "lazy"
       },
-      "select_color" : "",
-      "select_gradient" : "gradient5"
+      "select_color" : "forest_green",
+      "select_gradient" : "gradient1"
     }
   }, {
     "id" : "c813f3af-99b7-d54e-7ce2-b074f008a27c",
@@ -1058,8 +1059,8 @@
         "alt" : null,
         "loading" : "lazy"
       },
-      "select_color" : "",
-      "select_gradient" : "gradient5"
+      "select_color" : "forest_green",
+      "select_gradient" : "gradient1"
     },
     "container" : {
       "size" : "theme",

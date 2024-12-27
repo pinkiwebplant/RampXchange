@@ -25,7 +25,7 @@
 					<div class="stats-item-inn">
 						<span class="number {{ module.card_settings.select_count_text_color }}">
 							<span class="prefix">{{ item.prefix }}</span>
-							<span class="number counter-value" data-count="{{ item.numeric_stat }}">0</span>
+							<span class="counter-value" data-count="{{ item.numeric_stat }}">0</span>
 							<span class="suffix">{{ item.suffix }}</span>
 						</span>
 						<span class="caption {{ module.card_settings.select_content_text_color }}">{{ item.caption }}</span>
@@ -43,42 +43,6 @@
 
 <style>
 
-	.{{name}}.u4m-animated-stats .lime_green{
-		color:#007C43;
-	}
-	.{{name}}.u4m-animated-stats .strong_cyan{
-		color:#00a4bd;
-	}
-	.{{name}}.u4m-animated-stats .black{
-		color:#000000;
-	}
-	.{{name}}.u4m-animated-stats .white{
-		color:#ffffff;
-	}
-	.{{name}}.u4m-animated-stats .soft_green{
-		color:#B5DDA5;
-	}
-	.{{name}}.u4m-animated-stats .dark_desaturated_blue{
-		color:#213944;
-	}
-	.{{name}}.u4m-animated-stats .light_gray{
-		color:#DBDBDB;
-	}
-	.{{name}}.u4m-animated-stats .dark_grayish_blue{
-		color:#6E757C;
-	}
-	.{{name}}.u4m-animated-stats .moderate_orange{
-		color:#C49E5B;
-	}
-	.{{name}}.u4m-animated-stats .light_grayish_green{
-		color:#F7F8F6;
-	}
-	.{{name}}.u4m-animated-stats .desaturated_blue{
-		color:#315363;
-	}
-	.{{name}}.u4m-animated-stats .very_light_gray{
-		color:#EEEEEE;
-	}
 	{% if module.card_settings.background_settings.background_type == "image" %}
 	{% if module.card_settings.background_settings.background_image.src %}
 	.{{name}}.u4m-animated-stats .animated-stats-item .bg_card_image{
