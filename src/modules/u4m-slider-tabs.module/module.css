@@ -84,6 +84,22 @@ html {
 .u4m-slider-tabs .tabber_section .row .tab-section .tab-item .tab-inner .toggle_content .tabber-btn .intro_btn_wrap .btn_item a {
   margin: 0;
 }
+.u4m-slider-tabs .tabber_section .row .tab-section .tab-item .tab-inner .toggle_content .mobile_cnnt {
+  display: none;
+}
+@media (max-width: 767px) {
+  .u4m-slider-tabs .tabber_section .row .tab-section .tab-item .tab-inner .toggle_content .mobile_cnnt {
+    display: block;
+    width: 100%;
+  }
+  .u4m-slider-tabs .tabber_section .row .tab-section .tab-item .tab-inner .toggle_content .mobile_cnnt .video_wrap {
+    margin: 50px 0;
+    padding-bottom: 62%;
+  }
+  .u4m-slider-tabs .tabber_section .row .tab-section .tab-item .tab-inner .toggle_content .mobile_cnnt .img_wrap {
+    padding: 50px 0;
+  }
+}
 .u4m-slider-tabs .tabber_section .row .tab-section .tab-item.acc-open {
   border-color: #007c43;
 }

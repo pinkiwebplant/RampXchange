@@ -80,6 +80,21 @@
                   }
                 }
               }
+              .mobile_cnnt {
+                display: none;
+                @include tabletvert{
+                  display: block;
+                  width: 100%;
+.video_wrap{
+  margin: 50px 0;
+  padding-bottom: 62%;
+}
+                  .img_wrap {
+                    padding: 50px 0;
+                  }
+                }
+              }
+             
             }
           }
           &.acc-open {

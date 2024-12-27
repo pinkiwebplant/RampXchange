@@ -591,7 +591,8 @@
       "operator" : "EQUAL",
       "access" : null
     },
-    "type" : "file"
+    "type" : "file",
+    "default" : "https://23543895.fs1.hubspotusercontent-na1.net/hubfs/23543895/RampXchange/videos/mov_bbb.mp4"
   }, {
     "id" : "2558b8ca-268d-30f4-ed1e-169ac6cff1dd",
     "name" : "embed_url",
@@ -610,7 +611,8 @@
     },
     "allow_new_line" : false,
     "show_emoji_picker" : false,
-    "type" : "text"
+    "type" : "text",
+    "default" : "https://www.youtube.com/embed/29BQhSVPFpo?autoplay=1"
   } ],
   "tab" : "CONTENT",
   "expanded" : false,
@@ -642,7 +644,6 @@
       "width" : 891,
       "height" : 613
     },
-    "video_type" : "",
     "poster_image" : {
       "size_type" : "auto",
       "src" : "https://23543895.fs1.hubspotusercontent-na1.net/hubfs/23543895/RampXchange/images/Poster%20Image.png",
@@ -652,7 +653,10 @@
       "height" : 571,
       "max_width" : 855,
       "max_height" : 571
-    }
+    },
+    "video_type" : "",
+    "select_video" : "https://23543895.fs1.hubspotusercontent-na1.net/hubfs/23543895/RampXchange/videos/mov_bbb.mp4",
+    "embed_url" : "https://www.youtube.com/embed/29BQhSVPFpo?autoplay=1"
   }, {
     "tab_title" : "Guided Support",
     "content" : "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.</p>",
@@ -679,7 +683,6 @@
       "width" : 891,
       "height" : 613
     },
-    "video_type" : "",
     "poster_image" : {
       "size_type" : "auto",
       "src" : "https://23543895.fs1.hubspotusercontent-na1.net/hubfs/23543895/RampXchange/images/Poster%20Image.png",
@@ -689,7 +692,10 @@
       "height" : 571,
       "max_width" : 855,
       "max_height" : 571
-    }
+    },
+    "video_type" : "",
+    "select_video" : "https://23543895.fs1.hubspotusercontent-na1.net/hubfs/23543895/RampXchange/videos/mov_bbb.mp4",
+    "embed_url" : "https://www.youtube.com/embed/29BQhSVPFpo?autoplay=1"
   }, {
     "tab_title" : "Guided Support",
     "content" : "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.</p>",
@@ -716,7 +722,6 @@
       "width" : 891,
       "height" : 613
     },
-    "video_type" : "",
     "poster_image" : {
       "size_type" : "auto",
       "src" : "https://23543895.fs1.hubspotusercontent-na1.net/hubfs/23543895/RampXchange/images/Poster%20Image.png",
@@ -726,7 +731,10 @@
       "height" : 571,
       "max_width" : 855,
       "max_height" : 571
-    }
+    },
+    "video_type" : "",
+    "select_video" : "https://23543895.fs1.hubspotusercontent-na1.net/hubfs/23543895/RampXchange/videos/mov_bbb.mp4",
+    "embed_url" : "https://www.youtube.com/embed/29BQhSVPFpo?autoplay=1"
   }, {
     "tab_title" : "Guided Support",
     "content" : "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.</p>",
@@ -753,7 +761,6 @@
       "width" : 891,
       "height" : 613
     },
-    "video_type" : "",
     "poster_image" : {
       "size_type" : "auto",
       "src" : "https://23543895.fs1.hubspotusercontent-na1.net/hubfs/23543895/RampXchange/images/Poster%20Image.png",
@@ -763,7 +770,10 @@
       "height" : 571,
       "max_width" : 855,
       "max_height" : 571
-    }
+    },
+    "video_type" : "",
+    "select_video" : "https://23543895.fs1.hubspotusercontent-na1.net/hubfs/23543895/RampXchange/videos/mov_bbb.mp4",
+    "embed_url" : "https://www.youtube.com/embed/29BQhSVPFpo?autoplay=1"
   }, {
     "tab_title" : "Guided Support",
     "content" : "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.</p>",
@@ -790,7 +800,6 @@
       "width" : 891,
       "height" : 613
     },
-    "video_type" : "",
     "poster_image" : {
       "size_type" : "auto",
       "src" : "https://23543895.fs1.hubspotusercontent-na1.net/hubfs/23543895/RampXchange/images/Poster%20Image.png",
@@ -800,7 +809,10 @@
       "height" : 571,
       "max_width" : 855,
       "max_height" : 571
-    }
+    },
+    "video_type" : "",
+    "select_video" : "https://23543895.fs1.hubspotusercontent-na1.net/hubfs/23543895/RampXchange/videos/mov_bbb.mp4",
+    "embed_url" : "https://www.youtube.com/embed/29BQhSVPFpo?autoplay=1"
   } ]
 }, {
   "id" : "module_overrides",
