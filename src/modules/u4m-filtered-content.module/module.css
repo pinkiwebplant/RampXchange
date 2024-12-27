@@ -90,8 +90,7 @@ section.u4m-filtered-content .featured .card .content {
 section.u4m-filtered-content .featured .card .content span.medium {
   font-family: "Inter";
   font-size: 14rem;
-  line-height: 1.6;
-  letter-spacing: 0.35rem;
+  line-height: 1.3;
   margin-bottom: 20rem;
 }
 @media (max-width: 580px) {
@@ -125,8 +124,7 @@ section.u4m-filtered-content .featured .card .content .heading a {
 section.u4m-filtered-content .featured .card .content p {
   font-family: "Inter";
   font-size: 14rem;
-  line-height: 1.6;
-  letter-spacing: 0.35rem;
+  line-height: 1.3;
   margin-bottom: 20rem;
   margin-bottom: 4rem;
 }
@@ -199,9 +197,8 @@ section.u4m-filtered-content .filters form.multi-filter h3 {
 section.u4m-filtered-content .filters form.multi-filter div.legal-consent-container p,
 section.u4m-filtered-content .filters form.multi-filter div.legal-consent-container .hs-form-booleancheckbox label {
   font-family: "Inter";
-  font-size: 12rem;
-  line-height: 1.6;
-  letter-spacing: 0.35rem;
+  font-size: 11rem;
+  line-height: 1.3;
   margin-bottom: 10rem;
 }
 @media (max-width: 580px) {
@@ -898,8 +895,7 @@ section.u4m-filtered-content #container .resource-card .content span.url {
 section.u4m-filtered-content #container .resource-card .content span.eyebrow {
   font-family: "Inter";
   font-size: 13rem;
-  line-height: 1.6;
-  letter-spacing: 0.35rem;
+  line-height: 1.3;
   margin-bottom: 20rem;
   color: #eeeeee;
   font-weight: bold;
@@ -936,8 +932,7 @@ section.u4m-filtered-content #container .resource-card .content span.title {
 section.u4m-filtered-content #container .resource-card .content span.teaser {
   font-family: "Inter";
   font-size: 13rem;
-  line-height: 1.6;
-  letter-spacing: 0.35rem;
+  line-height: 1.3;
   margin-bottom: 20rem;
   color: #000000;
   display: block;
@@ -1026,8 +1021,7 @@ section.u4m-filtered-content #container .resource-card a.link-wrap .content {
 section.u4m-filtered-content #container .resource-card a.link-wrap .content .heading {
   font-family: "Inter";
   font-size: 14rem;
-  line-height: 1.6;
-  letter-spacing: 0.35rem;
+  line-height: 1.3;
   margin-bottom: 20rem;
   color: #000000;
   font-weight: bold;
@@ -1041,9 +1035,8 @@ section.u4m-filtered-content #container .resource-card a.link-wrap .content .hea
 }
 section.u4m-filtered-content #container .resource-card a.link-wrap .content span.medium {
   font-family: "Inter";
-  font-size: 12rem;
-  line-height: 1.6;
-  letter-spacing: 0.35rem;
+  font-size: 11rem;
+  line-height: 1.3;
   margin-bottom: 10rem;
   color: #000000;
   margin: 0 0 5rem 0;
@@ -1055,9 +1048,8 @@ section.u4m-filtered-content #container .resource-card a.link-wrap .content span
 }
 section.u4m-filtered-content #container .resource-card a.link-wrap .content p {
   font-family: "Inter";
-  font-size: 12rem;
-  line-height: 1.6;
-  letter-spacing: 0.35rem;
+  font-size: 11rem;
+  line-height: 1.3;
   margin-bottom: 10rem;
   color: #000000;
 }

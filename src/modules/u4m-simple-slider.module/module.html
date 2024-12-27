@@ -1,0 +1,196 @@
+{% set moduleName = 'u4m-simple-slider' %}
+{% set ExtramoduleClass = '' %}
+{% include "../partials/u4-module-includes.html" %}
+
+
+{% set resourceTable = module.select_table %}
+{% set count = module.count %}
+{% if module.select_type == "post_by_tag" %}
+{% set category = module.category_name %}
+{% set category_query = 'orderBy=-hs_created_at&topic__in=' ~ category ~ '&limit=' ~ count %}
+{% set data = hubdb_table_rows(resourceTable,category_query) %}
+{% else %}
+{% endif %}
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.css" />
+
+<div class="simple-slider-wrapper">
+
+
+	<div class="page-center">
+		<div class="slider_wrapper">
+
+			{% if module.select_content_type == "custom" %}
+			{% for item in module.slider_items %}
+			<div class="slider_item">
+				<div class="row {% if not item.image_field.src %} no_right_img{% endif %}">
+					<div class="left_section">
+						{% if item.eyebrow_text %}
+						<div class="eyebrow_text">
+							{{ item.eyebrow_text }}
+						</div>
+						{% endif %}
+						{% if item.title %}
+						<div class="title_section">
+							<h2 class="intro_title">
+								{{ item.title }}
+							</h2>
+						</div>
+						{% endif %}
+						{% if item.quotes %}
+						<div class="intro_desc">
+							{{ item.quotes }}
+						</div>
+						{% endif %}
+						{% if item.author_name || item.designation %}
+						<div class="author-section">
+							{{ item.author_name }}{% if item.author_name %}<span>|</span>{% endif %}{{ item.designation }}
+						</div>
+						{% endif %}
+						{% if item.logo_image.src %}
+						<div class="logo_img">
+							{% set sizeAttrs = 'width="{{ item.logo_image.width|escape_attr }}" height="{{ item.logo_image.height|escape_attr }}"' %}
+							{% if item.logo_image.size_type == 'auto' %}
+							{% set sizeAttrs = 'width="{{ item.logo_image.width|escape_attr }}" height="{{ item.logo_image.height|escape_attr }}" style="max-width: 100%; height: auto;"' %}
+							{% elif item.logo_image.size_type == 'auto_custom_max' %}
+							{% set sizeAttrs = 'width="{{ item.logo_image.max_width|escape_attr }}" height="{{ item.logo_image.max_height|escape_attr }}" style="max-width: 100%; height: auto;"' %}
+							{% endif %}
+							{% set loadingAttr = item.logo_image.loading != 'disabled' ? 'loading="{{ item.logo_image.loading|escape_attr }}"' : '' %}
+							<img src="{{ item.logo_image.src|escape_url }}" alt="{{ item.logo_image.alt|escape_attr }}" {{ loadingAttr }} {{ sizeAttrs }}>
+						</div>
+						{% endif %}
+					</div>
+					{% if item.image_field.src %}
+					<div class="media_section">
+						{% if item.image_field.src %}
+						{% set sizeAttrs = 'width="{{ item.image_field.width|escape_attr }}" height="{{ item.image_field.height|escape_attr }}"' %}
+						{% if item.image_field.size_type == 'auto' %}
+						{% set sizeAttrs = 'width="{{ item.image_field.width|escape_attr }}" height="{{ item.image_field.height|escape_attr }}" style="max-width: 100%; height: auto;"' %}
+						{% elif item.image_field.size_type == 'auto_custom_max' %}
+						{% set sizeAttrs = 'width="{{ item.image_field.max_width|escape_attr }}" height="{{ item.image_field.max_height|escape_attr }}" style="max-width: 100%; height: auto;"' %}
+						{% endif %}
+						{% set loadingAttr = item.image_field.loading != 'disabled' ? 'loading="{{ item.image_field.loading|escape_attr }}"' : '' %}
+						<img src="{{ item.image_field.src|escape_url }}" alt="{{ item.image_field.alt|escape_attr }}" {{ loadingAttr }} {{ sizeAttrs }}>
+						{% endif %}
+					</div>
+					{% endif %}
+				</div>
+			</div>
+			{% endfor %}
+			{% endif %}
+
+			{% if module.select_content_type == "hubdb" %}
+			{% set data =  module.post_by_title %}
+			{% for row in data %}
+			<div class="slider_item {{ row.select_title.columns.name|lower|replace(' ','-') }}">
+				<div class="row {% if not row.logo_image.url %} no_right_img{% endif %}">
+					<div class="left_section">
+						{% if row.eyebrow_text %}
+						<div class="eyebrow_text">
+							{{ row.eyebrow_text }}
+						</div>
+						{% endif %}
+						{% if row.name %}
+						<div class="title_section">
+							<h2 class="intro_title">
+								{{ row.name }}
+							</h2>
+						</div>
+						{% endif %}
+						{% if row.quotes %}
+						<div class="intro_desc">
+							{{ row.quotes }}
+						</div>
+						{% endif %}
+						{% if row.author_name || row.designation %}
+						<div class="author-section">
+							{{ row.author_name }}{% if row.author_name %}<span>|</span>{% endif %}{{ row.designation }}
+						</div>
+						{% endif %}
+						{% if row.logo_image.url %}
+						<div class="logo_img">
+							<img src="{{ row.logo_image.url }}" alt="{{ row.name }}">
+						</div>
+						{% endif %}
+					</div>
+					{% if row.image_field.url %}
+					<div class="media_section">
+						<img src="{{ row.image_field.url }}" alt="{{ row.name }}">
+					</div>
+					{% endif %}
+				</div>
+			</div>
+			{% endfor %}
+
+			{% else %}
+
+			{% for row in data %}
+			<div class="slider_item {{ row.topic.name|lower|replace(' ','-') }}">
+				<div class="row {% if not row.logo_image.url %} no_right_img{% endif %}">
+					<div class="left_section">
+						{% if row.eyebrow_text %}
+						<div class="eyebrow_text">
+							{{ row.eyebrow_text }}
+						</div>
+						{% endif %}
+						{% if row.title %}
+						<div class="title_section">
+							<h2 class="intro_title">
+								{{ row.title }}
+							</h2>
+						</div>
+						{% endif %}
+						{% if row.quotes %}
+						<div class="intro_desc">
+							{{ row.quotes }}
+						</div>
+						{% endif %}
+						{% if row.author_name || row.designation %}
+						<div class="author-section">
+							{{ row.author_name }}{% if row.author_name %}<span>|</span>{% endif %}{{ row.designation }}
+						</div>
+						{% endif %}
+						{% if row.logo_image.url %}
+						<div class="logo_img">
+							<img src="{{ row.logo_image.url }}" alt="{{ row.name }}">
+						</div>
+						{% endif %}
+					</div>
+					{% if row.image_field.url %}
+					<div class="media_section">
+						<img src="{{ row.image_field.url }}" alt="{{ row.name }}">
+					</div>
+					{% endif %}
+				</div>
+
+			</div>
+			{% endfor %}
+
+			{% endif %}
+
+			{% endif %}
+		</div>
+	</div>
+	<div class="shape_image">
+		<svg width="1440" height="579" viewBox="0 0 1440 579" fill="none" xmlns="http://www.w3.org/2000/svg">
+			<path fill-rule="evenodd" clip-rule="evenodd" d="M805.256 0H0V579H749.684L941.963 242.344L805.256 0ZM967.146 579H1162.34L1059.98 372.753H1057.28L967.146 579ZM1386.6 579H1440V0H1325.32L1188.77 236.955L1386.6 579ZM1122.19 0L1073.45 111.396H1070.76L1018.54 0H1122.19Z" fill="#B5DDA5"/>
+		</svg>	
+	</div>
+
+</div>
+
+</section>
+
+
+{% require_js %}
+<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+<script>
+	$('.{{ name }} .slider_wrapper').slick({
+		dots: false,
+		infinite: true,
+		speed: 300,
+		slidesToShow: 1,
+		slidesToScroll: 1,
+		});
+</script>
+{% end_require_js %}

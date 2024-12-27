@@ -88,8 +88,7 @@
 @mixin b1 {
   font-family: $font1;
   font-size: 22rem;
-  line-height: 1.4;
-  letter-spacing: 0.25rem;
+  line-height: $baseLineHeight;
   margin-bottom: 20rem;
   @include phone {
     font-size: 17rem;
@@ -98,8 +97,7 @@
 @mixin b2 {
   font-family: $font1;
   font-size: 18rem;
-  line-height: 1.6;
-  letter-spacing: 0.25rem;
+  line-height: $baseLineHeight;
   margin-bottom: 20rem;
   @include phone {
     font-size: 16rem;
@@ -108,15 +106,13 @@
 @mixin b3 {
   font-family: $font1;
   font-size: 16rem;
-  line-height: 1.6;
-  letter-spacing: 0.25rem;
+  line-height: $baseLineHeight;
   margin-bottom: 20rem;
 }
 @mixin b4 {
   font-family: $font1;
   font-size: 14rem;
-  line-height: 1.6;
-  letter-spacing: 0.35rem;
+  line-height: $baseLineHeight;
   margin-bottom: 20rem;
   @include phone {
     font-size: 14rem;
@@ -125,8 +121,7 @@
 @mixin b5 {
   font-family: $font1;
   font-size: 13rem;
-  line-height: 1.6;
-  letter-spacing: 0.35rem;
+  line-height: $baseLineHeight;
   margin-bottom: 20rem;
   @include phone {
     font-size: 13rem;
@@ -134,9 +129,8 @@
 }
 @mixin b6 {
   font-family: $font1;
-  font-size: 12rem;
-  line-height: 1.6;
-  letter-spacing: 0.35rem;
+  font-size: 11rem;
+  line-height: $baseLineHeight;
   margin-bottom: 10rem;
   @include phone {
     font-size: 12rem;
@@ -177,6 +171,9 @@
 }
 @mixin size24 {
   font-size: 24rem;
+}
+@mixin size23 {
+  font-size: 23rem;
 }
 @mixin size22 {
   font-size: 22rem;

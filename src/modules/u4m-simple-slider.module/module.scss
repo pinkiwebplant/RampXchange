@@ -1,0 +1,64 @@
+@import "../../css/_module-imports";
+
+.u4m-simple-slider {
+  overflow: hidden;
+  position: relative;
+  .simple-slider-wrapper {
+    .shape_image {
+      position: absolute;
+      width: 100%;
+      left: 0;
+      top: 0;
+      z-index: 9;
+      svg {
+        width: 100%;
+      }
+    }
+    .slider_wrapper {
+      position: relative;
+      z-index: 99;
+      .slick-list {
+        position: static;
+        .slick-track {
+          position: static;
+          .slick-slide {
+            .slider_item {
+              .row {
+                display: flex;
+                gap: 60px;
+                .left_section {
+                  position: relative;
+                  z-index: 99;
+                  padding: 89px 0;
+                  .eyebrow_text {
+                    margin-bottom: 8px;
+                    font-size: 14px;
+                    color: $heading;
+                  }
+                  .intro_desc {
+                    margin-bottom: 32px;
+                    p {
+                      @include size23;
+                    }
+                  }
+                  .author-section {
+                    font-weight: 500;
+                    margin-bottom: 32px;
+                    span {
+                      padding: 0 8px;
+                    }
+                  }
+                  .logo_img {
+                    img {
+                      width: 148px;
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

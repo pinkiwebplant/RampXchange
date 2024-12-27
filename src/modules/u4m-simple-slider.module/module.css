@@ -1,0 +1,72 @@
+html {
+  font-size: 1px;
+}
+
+/* auto scale down elements on mobile */
+@media (max-width: 580px) {
+  html {
+    font-size: 1px;
+  }
+}
+
+/* auto scale up elements on large displays */
+@media (min-width: 2560px) {
+  html {
+    font-size: 1px;
+  }
+}
+
+.u4m-simple-slider {
+  overflow: hidden;
+  position: relative;
+}
+.u4m-simple-slider .simple-slider-wrapper .shape_image {
+  position: absolute;
+  width: 100%;
+  left: 0;
+  top: 0;
+  z-index: 9;
+}
+.u4m-simple-slider .simple-slider-wrapper .shape_image svg {
+  width: 100%;
+}
+.u4m-simple-slider .simple-slider-wrapper .slider_wrapper {
+  position: relative;
+  z-index: 99;
+}
+.u4m-simple-slider .simple-slider-wrapper .slider_wrapper .slick-list {
+  position: static;
+}
+.u4m-simple-slider .simple-slider-wrapper .slider_wrapper .slick-list .slick-track {
+  position: static;
+}
+.u4m-simple-slider .simple-slider-wrapper .slider_wrapper .slick-list .slick-track .slick-slide .slider_item .row {
+  display: flex;
+  gap: 60px;
+}
+.u4m-simple-slider .simple-slider-wrapper .slider_wrapper .slick-list .slick-track .slick-slide .slider_item .row .left_section {
+  position: relative;
+  z-index: 99;
+  padding: 89px 0;
+}
+.u4m-simple-slider .simple-slider-wrapper .slider_wrapper .slick-list .slick-track .slick-slide .slider_item .row .left_section .eyebrow_text {
+  margin-bottom: 8px;
+  font-size: 14px;
+  color: #213944;
+}
+.u4m-simple-slider .simple-slider-wrapper .slider_wrapper .slick-list .slick-track .slick-slide .slider_item .row .left_section .intro_desc {
+  margin-bottom: 32px;
+}
+.u4m-simple-slider .simple-slider-wrapper .slider_wrapper .slick-list .slick-track .slick-slide .slider_item .row .left_section .intro_desc p {
+  font-size: 23rem;
+}
+.u4m-simple-slider .simple-slider-wrapper .slider_wrapper .slick-list .slick-track .slick-slide .slider_item .row .left_section .author-section {
+  font-weight: 500;
+  margin-bottom: 32px;
+}
+.u4m-simple-slider .simple-slider-wrapper .slider_wrapper .slick-list .slick-track .slick-slide .slider_item .row .left_section .author-section span {
+  padding: 0 8px;
+}
+.u4m-simple-slider .simple-slider-wrapper .slider_wrapper .slick-list .slick-track .slick-slide .slider_item .row .left_section .logo_img img {
+  width: 148px;
+}

@@ -98,9 +98,8 @@ section.u4m-features-table div.header span.version {
 @media (max-width: 580px) {
   section.u4m-features-table div.header span.version {
     font-family: "Inter";
-    font-size: 12rem;
-    line-height: 1.6;
-    letter-spacing: 0.35rem;
+    font-size: 11rem;
+    line-height: 1.3;
     margin-bottom: 10rem;
   }
 }
@@ -120,8 +119,7 @@ section.u4m-features-table div.section {
 section.u4m-features-table div.section .title {
   font-family: "Inter";
   font-size: 16rem;
-  line-height: 1.6;
-  letter-spacing: 0.25rem;
+  line-height: 1.3;
   margin-bottom: 20rem;
   background-color: #eeeeee;
   margin: 0;
@@ -133,9 +131,8 @@ section.u4m-features-table div.section .title {
 @media (max-width: 580px) {
   section.u4m-features-table div.section .title {
     font-family: "Inter";
-    font-size: 12rem;
-    line-height: 1.6;
-    letter-spacing: 0.35rem;
+    font-size: 11rem;
+    line-height: 1.3;
     margin-bottom: 10rem;
   }
 }
@@ -158,9 +155,8 @@ section.u4m-features-table div.section div.item div.item-name {
 @media (max-width: 580px) {
   section.u4m-features-table div.section div.item div.item-name {
     font-family: "Inter";
-    font-size: 12rem;
-    line-height: 1.6;
-    letter-spacing: 0.35rem;
+    font-size: 11rem;
+    line-height: 1.3;
     margin-bottom: 10rem;
     margin-bottom: 0;
   }
@@ -183,9 +179,8 @@ section.u4m-features-table div.section div.item div.third-box {
   section.u4m-features-table div.section div.item div.second-box,
   section.u4m-features-table div.section div.item div.third-box {
     font-family: "Inter";
-    font-size: 12rem;
-    line-height: 1.6;
-    letter-spacing: 0.35rem;
+    font-size: 11rem;
+    line-height: 1.3;
     margin-bottom: 10rem;
     margin-bottom: 0;
   }
