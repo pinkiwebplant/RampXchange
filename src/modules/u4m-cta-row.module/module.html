@@ -1,36 +1,61 @@
 {% set moduleName = 'u4m-cta-row' %}
-  {% set bgImageMax = 1920 %}
-    
-  {% include "../partials/u4-module-includes.html" %}
-    <div class="inner {% if module.center_content %}centered{% endif %}">
-      <div class="copy">
-        {% if module.include_heading %}<h2 class="heading">{{ module.cta_row_heading }}</h2>{% endif %}
-        {% if module.include_text %}
-          <p class="text">{{ module.text }}</p>
-        {% endif %}
-        <div class="cta">
-          {% if module.use_normal_link %}
-            {% set href = module.link_field.url.href %}
-            {% if module.link_field.url.type is equalto "EMAIL_ADDRESS" %}
-              {% set href = "mailto:" + href %}
-            {% endif %}
-            <a href="{{ href }}"
-              {% if module.link_field.open_in_new_tab %}target="_blank"{% endif %}
-              {% if module.link_field.rel %}rel="{{ module.link_field.rel }}"{% endif %}
-              >
-              {{ module.link_text }}
-            </a>
-          {% else %}
-            {% cta guid="{{ module.call_to_action }}" %}
-          {% endif %}        
-        </div>
-      </div>
-  
-      {% if module.include_image %}
-          <div class="image">
-            <img loading="lazy" src="{{ module.image.src }}" width="400" alt="{{ module.image.alt }}">
-          </div>
-      {% endif %}
-  
-    </div>
-  </section>
+{% set ExtramoduleClass = '' %}
+{% include "../partials/u4-module-includes.html" %}
+
+<div class="page-center ">
+	<div class="row {{ module.module_settings.select_content_alignment }} {% if module.module_settings.reverse_text  %} cards_reverse_text {% endif %} {% if module.media_section.select_media_type %} {{ module.module_settings.bg }} {% endif %}  {{ module.media_section.select_media_type }} {% if not module.media_section.select_media_type %}  widther {% endif %}" 		>
+		<div class="left-section">
+			<div class="intro_wrapp">
+				{{macros.introGroup(module.intro_content)}}
+			</div>
+		</div>
+				{% if module.media_section.select_media_type %}
+		<div class="media_section">
+			{% if module.media_section.select_media_type=="img"%}
+			{% if module.media_section.image.src %}
+			<img src="{{ module.media_section.image.src }}" alt="{{ module.media_section.image.alt }}">
+			{% endif %}
+			{% elif module.media_section.select_media_type=="vd"%}
+			<div class="vid_section">
+				{% if module.media_section.poster_image.src %}
+				<div class="poster_img">
+					{% if module.media_section.poster_image.src %}
+					<img src="{{ module.media_section.poster_image.src }}" alt="{{ module.media_section.poster_image.alt }}">
+					{% endif %}
+					<div class="playIcon">
+						<svg xmlns="http://www.w3.org/2000/svg" width="99" height="95" viewBox="0 0 99 95" fill="none">
+							<path fill-rule="evenodd" clip-rule="evenodd" d="M98.2759 47.5C98.2759 21.2601 76.2827 0 49.1379 0C21.9932 0 0 21.2601 0 47.5C0 73.7399 21.9932 95 49.1379 95C76.2827 95 98.2759 73.7399 98.2759 47.5ZM72.3138 43.6869L37.8535 23.3468C34.7599 21.6739 30.8635 23.822 30.8635 27.3388V66.8785C30.8635 70.3763 34.7403 72.5434 37.8535 70.8705L72.3138 51.6709C75.5249 49.9411 75.5249 45.4358 72.3138 43.6869ZM49.544 9.42149C27.5558 9.42149 9.74634 26.6373 9.74634 47.8926C9.74634 69.1478 27.5558 86.3636 49.544 86.3636C71.5322 86.3636 89.3417 69.1478 89.3417 47.8926C89.3417 26.6373 71.5322 9.42149 49.544 9.42149Z" fill="white"></path>
+						</svg>
+					</div>
+				</div>
+				{% endif %}
+				{% if module.media_section.select_video_type == 'hubspot' %}
+				<div class="hubspot_video">
+					<video loop>
+						<source src="{{ module.media_section.select_video }}" type="video/mp4">
+					</video>
+				</div>
+				{% endif %}
+				{% if module.media_section.select_video_type == 'external' %}
+				<div class="external_vid">
+					<div class="external_video">
+						<iframe data-src="{{ module.media_section.embed_url }}" src="" class="iframe" allow="autoplay" loading="lazy"></iframe>
+					</div>
+				</div>
+				{% endif %}
+			</div>
+			{% elif module.media_section.select_media_type=="form"%}
+			{% form
+	form_to_use="{{ module.media_section.select_form.form_id }}"
+	response_response_type="{{ module.media_section.select_form.response_type }}"
+	response_message="{{ module.media_section.select_form.message }}"
+	response_redirect_id="{{ module.media_section.select_form.redirect_id }}"
+	response_redirect_url="{{module.media_section.select_form.redirect_url}}"
+	gotowebinar_webinar_key="{{ module.media_section.select_form.gotowebinar_webinar_key }}"
+%}
+			{% endif %}
+		</div>
+					{% endif %}
+	</div>
+</div>
+</section>
