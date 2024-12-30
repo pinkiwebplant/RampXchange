@@ -1,22 +1,50 @@
 {% set moduleName = 'u4m-accordion' %}
+{% set ExtramoduleClass = '' %}
 {% include "../partials/u4-module-includes.html" %}
-  <div class='intro'>
-    <div class="heading">
-      {% if module.include_heading %}
-      <h2>{{ module.heading }}</h2>
-      {% endif %}
-      {% if module.include_copy %}
-      <p>{{ module.copy }}</p>
-      {% endif %}     
-    </div>
-  </div>
-  <div class='accordions'>
-  {# Using details.js as a polyfill for browsers that don't suppose details/open #}
-    {% for accordion in module.accordions %}
-    <details>
-      <summary>{{ accordion.summary }}</summary>
-      <div>{{ accordion.detail }}</div>
-    </details>
-    {% endfor %}
-  </div>
+
+<div class="page-center ">
+	<div class="intro_wrapp">
+		{{macros.introGroup(module.intro_content)}}
+	</div>
+	
+		<div class="accordionItemsContainer">
+			{% for item in module.accordion %}
+			<div class="accItem {{ module.module_settings.accordion_group.background_color }} {% if  module.module_settings.accordion_group.accordion_reverse_text %}  accordion_reverse_text  {% endif %} {% if loop.first %} activeAcc {% endif %}">
+				{% if item.title %}
+				<div class="accTitle">
+					<h6><span>{{ item.title }}</span>
+						<span class="icons"> 
+						<svg class="add" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+<path d="M18 12.8571H12.8571V18H11.1429V12.8571H6V11.1429H11.1429V6H12.8571V11.1429H18V12.8571Z" fill="#213944"/>
+</svg>
+												<svg class="remove" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+<path d="M18 12.7143H6V11H18V12.7143Z" fill="#213944"/>
+</svg>
+						</span>
+					</h6>
+				</div>
+				{% endif %}
+				{% if item.content %}
+				<div class="accCont"> 
+					<div class="accContDesc">
+						{{ item.content }}
+					</div>  
+				</div>
+				{% endif %}
+			</div>
+			{% endfor %}
+		</div>   
+</div>
 </section>
+
+
+
+
+
+
+
+
+
+
+
+
