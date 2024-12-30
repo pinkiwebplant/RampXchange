@@ -7376,7 +7376,7 @@ section.u4m-drag-and-drop-area form.hs-form .hs-button:hover, section.u4m-drag-a
   flex-wrap: wrap;
 }
 
-@media (max-width: 768px) {
+@media (min-width: 768px) {
   .dnd-section .row-fluid > .dnd-column,
   .col {
     padding-left: 15px;

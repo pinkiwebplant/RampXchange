@@ -6,7 +6,7 @@
 }
 
 @mixin tabletvertmin {
-  @media (max-width: 768px) {
+  @media (min-width: 768px) {
     @content;
   }
 }
@@ -64,15 +64,13 @@
 }
 
 @mixin ie {
-
-  @media all and (-ms-high-contrast: none),
-  (-ms-high-contrast: active) {
+  @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
     @content;
   }
 }
 
 @mixin safari {
-  @media not all and (min-resolution:.001dpcm) {
+  @media not all and (min-resolution: 0.001dpcm) {
     @supports (-webkit-appearance: none) {
       @content;
     }
@@ -126,14 +124,14 @@
   @include center;
   max-width: 1000rem;
 }
-  
+
 // Links
-@mixin link { 
+@mixin link {
   color: $action1;
   transition: $animation1;
   display: inline-block;
   text-decoration-thickness: 2px;
-    text-underline-offset: 4px;
+  text-underline-offset: 4px;
 
   &:hover {
     color: $action1;
