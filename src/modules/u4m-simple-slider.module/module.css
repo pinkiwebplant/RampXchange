@@ -29,7 +29,7 @@ html {
 }
 .u4m-simple-slider .simple-slider-wrapper .page-center .shape_image {
   position: absolute;
-  width: 107%;
+  width: 111.2%;
   left: 0;
   top: 0;
   right: 0;
@@ -39,7 +39,7 @@ html {
   background-repeat: no-repeat no-repeat;
   background-position: center center;
   background-size: cover;
-  margin-left: -7%;
+  margin-left: -11.2%;
 }
 @media (max-width: 767px) {
   .u4m-simple-slider .simple-slider-wrapper .page-center .shape_image {
@@ -151,8 +151,8 @@ html {
   width: 148px;
 }
 .u4m-simple-slider .simple-slider-wrapper .page-center .row .rightColumn {
-  width: calc(50% + 12px);
-  margin-left: -12px;
+  width: calc(50% + 38px);
+  margin-left: -38px;
   display: flex;
 }
 @media (max-width: 767px) {
