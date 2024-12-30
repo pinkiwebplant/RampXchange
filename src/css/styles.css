@@ -3684,6 +3684,7 @@ section[class*=u4m-] {
 
 .arrow-link {
   color: #007c43;
+  text-decoration: none;
 }
 .arrow-link:hover, .arrow-link:focus {
   color: #213944;
