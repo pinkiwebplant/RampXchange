@@ -16,6 +16,34 @@
 		display: flex;
 		gap: 20px;
 		flex-wrap: wrap;
+		&.img_cols{
+			gap: 32px;
+			.items{
+				width: calc(33.33% - 21.3px);
+				.innerWrpp{
+					padding: 0;
+					.btmcntt{
+						padding: 36px 24px;
+						}
+			}
+			@include tabletmid{
+				width: calc(50% - 16px);
+			}
+		
+			@include tabletvert{
+				width: 100%;
+			}
+			}
+			.btns{
+				margin-top: 20px !important;
+			}
+		}
+		.btmcntt{
+		    height: 100%;
+    display: flex
+;
+    flex-direction: column;
+			}
 	&.center{
 	text-align: center;
 
@@ -40,6 +68,7 @@
 			width: calc(33.33% - 13.366667px);
 			max-width: 100%;
 			border-radius: 12px;
+			overflow: hidden;
 			&.cards_reverse_text{
 				.eyebrow_text{
 					color: $white !important;
@@ -101,6 +130,9 @@
 				}
 				.intro_btn_wrap {
 					margin-top: auto;
+					.btns{
+margin-top: 34px;
+					}
 				}
 				.eyebrow_text{
 					color: $heading;
@@ -124,7 +156,11 @@ color: $heading;
 			}
 			}
 			.topcntt {
-				margin-bottom: 34px;
+				margin-bottom: 0;
+				display: flex
+;
+    flex-direction: column;
+    height: 100%;
 			}
 	@include tabletmid{
 		width: calc(50% - 10px);
