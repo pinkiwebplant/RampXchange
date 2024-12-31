@@ -67,10 +67,11 @@
 				<div class="eyebrow_text">
 					{{ module.intro_content.eyebrow_text }}
 				</div>
+			{% endif %}
 				{% if module.intro_content.include_heading %}
 				<{{module.intro_content.heading_size}} class="intro_title">{{ module.intro_content.heading }}</{{module.intro_content.heading_size}}>
 					{% endif %}
-					{% endif %}
+					
 					</div>
 				<div class="rightContent">
 					{{macros.singleButton(module.intro_content.button_group)}}

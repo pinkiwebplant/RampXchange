@@ -354,6 +354,9 @@
             padding-bottom: 258px;
             background-size: cover;
             background-position: center;
+            @include phone {
+              padding-bottom: 56.66%;
+            }
             .absltLink {
               position: absolute;
               height: 100%;
@@ -385,6 +388,9 @@
               line-height: 1;
               margin-bottom: 8px;
               flex-wrap: nowrap;
+              @include phone {
+                flex-wrap: wrap;
+              }
               span {
                 width: 4px;
                 height: 4px;
@@ -400,6 +406,9 @@
               display: flex;
               gap: 7px;
               flex-wrap: nowrap;
+              @include phone {
+                flex-wrap: wrap;
+              }
             }
           }
           .intro_btn_wrap {

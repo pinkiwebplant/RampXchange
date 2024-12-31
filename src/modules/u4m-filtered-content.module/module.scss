@@ -2,50 +2,72 @@
 
 section.u4m-filtered-content {
   .topSec {
-    .intro_wrapp {
-      max-width: 341px;
-      .intro_content {
-        padding: 0;
-        text-align: left;
+    .flex_row {
+      @include tabletmidmin {
+        gap: 0px;
+      }
+      gap: 40px;
+      .intro_wrapp {
+        @include tabletmidmin {
+          max-width: 341px;
+        }
         max-width: 100%;
-        margin: 0;
-        .intro_btn_wrap {
-          justify-content: start;
-          margin-top: 32px;
+        .intro_content {
+          padding: 0;
+          text-align: left;
+          max-width: 100%;
+          margin: 0;
+          .intro_btn_wrap {
+            justify-content: start;
+            margin-top: 32px;
+          }
         }
       }
-    }
-    .featCardsOuter {
-      max-width: calc(100% - 341px);
-      width: 100%;
-      padding-left: 60px;
-      @include cardItem;
-      .featCards {
-        margin: 0;
-      }
-      .cardItems {
-        margin: 0;
-        .cardItem {
-          padding: 0;
-          width: 100%;
-          .itemInr {
-            display: flex;
-            align-items: center;
-            > * {
-              width: 50%;
-            }
-            .itemImg {
-              .itemImgin {
-                padding-bottom: 333px;
+      .featCardsOuter {
+        @include tabletmidmin {
+          max-width: calc(100% - 341px);
+          padding-left: 60px;
+        }
+        max-width: 100%;
+        width: 100%;
+
+        @include cardItem;
+        .featCards {
+          margin: 0;
+        }
+        .cardItems {
+          margin: 0;
+          .cardItem {
+            padding: 0;
+            width: 100%;
+            .itemInr {
+              display: flex;
+              align-items: center;
+              @include phone {
+                display: block;
               }
-            }
-            .itemCnWrap {
-              .itemCntSec {
-                .itemTags {
-                  margin-bottom: 32px;
+              > * {
+                width: 50%;
+                @include phone {
+                  width: 100%;
                 }
-                .itemTitle {
-                  margin-bottom: 8px;
+              }
+              .itemImg {
+                .itemImgin {
+                  padding-bottom: 333px;
+                  @include phone {
+                    padding-bottom: 56.66%;
+                  }
+                }
+              }
+              .itemCnWrap {
+                .itemCntSec {
+                  .itemTags {
+                    margin-bottom: 32px;
+                  }
+                  .itemTitle {
+                    margin-bottom: 8px;
+                  }
                 }
               }
             }
@@ -56,7 +78,10 @@ section.u4m-filtered-content {
   }
   .featCardsListWrap {
     .filterWrap {
-      padding: 60px 0;
+      padding: 60rem 0;
+      @include tabletvert {
+        padding: 40rem 0;
+      }
       .flex_row {
         justify-content: center;
         gap: 20px;
@@ -64,6 +89,9 @@ section.u4m-filtered-content {
           padding: 0;
           max-width: 390px;
           width: 100%;
+          @include phone {
+            max-width: 100%;
+          }
           select {
             background-size: 12px;
             background-repeat: no-repeat;

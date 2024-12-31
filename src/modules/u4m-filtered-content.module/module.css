@@ -16,87 +16,110 @@ html {
   }
 }
 
-section.u4m-filtered-content .topSec .intro_wrapp {
-  max-width: 341px;
+section.u4m-filtered-content .topSec .flex_row {
+  gap: 40px;
 }
-section.u4m-filtered-content .topSec .intro_wrapp .intro_content {
+@media (min-width: 992px) {
+  section.u4m-filtered-content .topSec .flex_row {
+    gap: 0px;
+  }
+}
+section.u4m-filtered-content .topSec .flex_row .intro_wrapp {
+  max-width: 100%;
+}
+@media (min-width: 992px) {
+  section.u4m-filtered-content .topSec .flex_row .intro_wrapp {
+    max-width: 341px;
+  }
+}
+section.u4m-filtered-content .topSec .flex_row .intro_wrapp .intro_content {
   padding: 0;
   text-align: left;
   max-width: 100%;
   margin: 0;
 }
-section.u4m-filtered-content .topSec .intro_wrapp .intro_content .intro_btn_wrap {
+section.u4m-filtered-content .topSec .flex_row .intro_wrapp .intro_content .intro_btn_wrap {
   justify-content: start;
   margin-top: 32px;
 }
-section.u4m-filtered-content .topSec .featCardsOuter {
-  max-width: calc(100% - 341px);
+section.u4m-filtered-content .topSec .flex_row .featCardsOuter {
+  max-width: 100%;
   width: 100%;
-  padding-left: 60px;
 }
-section.u4m-filtered-content .topSec .featCardsOuter .cardItems {
+@media (min-width: 992px) {
+  section.u4m-filtered-content .topSec .flex_row .featCardsOuter {
+    max-width: calc(100% - 341px);
+    padding-left: 60px;
+  }
+}
+section.u4m-filtered-content .topSec .flex_row .featCardsOuter .cardItems {
   margin: 0 -10px;
   row-gap: 20px;
 }
-section.u4m-filtered-content .topSec .featCardsOuter .cardItems .cardItem {
+section.u4m-filtered-content .topSec .flex_row .featCardsOuter .cardItems .cardItem {
   padding: 0 10px;
   width: 100%;
 }
 @media (min-width: 768px) {
-  section.u4m-filtered-content .topSec .featCardsOuter .cardItems .cardItem {
+  section.u4m-filtered-content .topSec .flex_row .featCardsOuter .cardItems .cardItem {
     width: 50%;
   }
 }
 @media (min-width: 992px) {
-  section.u4m-filtered-content .topSec .featCardsOuter .cardItems .cardItem {
+  section.u4m-filtered-content .topSec .flex_row .featCardsOuter .cardItems .cardItem {
     width: 33.33%;
   }
 }
-section.u4m-filtered-content .topSec .featCardsOuter .cardItems .cardItem .itemInr {
+section.u4m-filtered-content .topSec .flex_row .featCardsOuter .cardItems .cardItem .itemInr {
   border-radius: 12px;
   overflow: hidden;
 }
-section.u4m-filtered-content .topSec .featCardsOuter .cardItems .cardItem .itemInr.cardColor * {
+section.u4m-filtered-content .topSec .flex_row .featCardsOuter .cardItems .cardItem .itemInr.cardColor * {
   color: #ffffff;
 }
-section.u4m-filtered-content .topSec .featCardsOuter .cardItems .cardItem .itemInr.cardColor .itemCnWrap .itemCntSec .itemTags span {
+section.u4m-filtered-content .topSec .flex_row .featCardsOuter .cardItems .cardItem .itemInr.cardColor .itemCnWrap .itemCntSec .itemTags span {
   background: #ffffff;
 }
-section.u4m-filtered-content .topSec .featCardsOuter .cardItems .cardItem .itemInr a {
+section.u4m-filtered-content .topSec .flex_row .featCardsOuter .cardItems .cardItem .itemInr a {
   text-decoration: none;
 }
-section.u4m-filtered-content .topSec .featCardsOuter .cardItems .cardItem .itemInr a:not(.arrow-link) {
+section.u4m-filtered-content .topSec .flex_row .featCardsOuter .cardItems .cardItem .itemInr a:not(.arrow-link) {
   color: inherit;
 }
-section.u4m-filtered-content .topSec .featCardsOuter .cardItems .cardItem .itemInr .itemImg .itemImgin {
+section.u4m-filtered-content .topSec .flex_row .featCardsOuter .cardItems .cardItem .itemInr .itemImg .itemImgin {
   position: relative;
   padding-bottom: 258px;
   background-size: cover;
   background-position: center;
 }
-section.u4m-filtered-content .topSec .featCardsOuter .cardItems .cardItem .itemInr .itemImg .itemImgin .absltLink {
+@media (max-width: 580px) {
+  section.u4m-filtered-content .topSec .flex_row .featCardsOuter .cardItems .cardItem .itemInr .itemImg .itemImgin {
+    padding-bottom: 56.66%;
+  }
+}
+section.u4m-filtered-content .topSec .flex_row .featCardsOuter .cardItems .cardItem .itemInr .itemImg .itemImgin .absltLink {
   position: absolute;
   height: 100%;
   width: 100%;
   top: 0;
 }
-section.u4m-filtered-content .topSec .featCardsOuter .cardItems .cardItem .itemInr .itemCnWrap {
+section.u4m-filtered-content .topSec .flex_row .featCardsOuter .cardItems .cardItem .itemInr .itemCnWrap {
   display: flex;
   flex-direction: column;
   padding: 36px 24px;
 }
 @media (min-width: 768px) {
-  section.u4m-filtered-content .topSec .featCardsOuter .cardItems .cardItem .itemInr .itemCnWrap {
+  section.u4m-filtered-content .topSec .flex_row .featCardsOuter .cardItems .cardItem .itemInr .itemCnWrap {
     height: calc(100% - 258px);
   }
 }
-section.u4m-filtered-content .topSec .featCardsOuter .cardItems .cardItem .itemInr .itemCnWrap .itemCntSec {
+section.u4m-filtered-content .topSec .flex_row .featCardsOuter .cardItems .cardItem .itemInr .itemCnWrap .itemCntSec {
   margin-bottom: 32px;
 }
-section.u4m-filtered-content .topSec .featCardsOuter .cardItems .cardItem .itemInr .itemCnWrap .itemCntSec .itemTitle h4 {
+section.u4m-filtered-content .topSec .flex_row .featCardsOuter .cardItems .cardItem .itemInr .itemCnWrap .itemCntSec .itemTitle h4 {
   margin: 0;
 }
-section.u4m-filtered-content .topSec .featCardsOuter .cardItems .cardItem .itemInr .itemCnWrap .itemCntSec .itemTags {
+section.u4m-filtered-content .topSec .flex_row .featCardsOuter .cardItems .cardItem .itemInr .itemCnWrap .itemCntSec .itemTags {
   display: flex;
   gap: 5px;
   align-items: center;
@@ -106,13 +129,18 @@ section.u4m-filtered-content .topSec .featCardsOuter .cardItems .cardItem .itemI
   margin-bottom: 8px;
   flex-wrap: nowrap;
 }
-section.u4m-filtered-content .topSec .featCardsOuter .cardItems .cardItem .itemInr .itemCnWrap .itemCntSec .itemTags span {
+@media (max-width: 580px) {
+  section.u4m-filtered-content .topSec .flex_row .featCardsOuter .cardItems .cardItem .itemInr .itemCnWrap .itemCntSec .itemTags {
+    flex-wrap: wrap;
+  }
+}
+section.u4m-filtered-content .topSec .flex_row .featCardsOuter .cardItems .cardItem .itemInr .itemCnWrap .itemCntSec .itemTags span {
   width: 4px;
   height: 4px;
   background: #213944;
   border-radius: 100%;
 }
-section.u4m-filtered-content .topSec .featCardsOuter .cardItems .cardItem .itemInr .itemCnWrap .itemCntSec .itemMeta {
+section.u4m-filtered-content .topSec .flex_row .featCardsOuter .cardItems .cardItem .itemInr .itemCnWrap .itemCntSec .itemMeta {
   font-size: 13rem;
   line-height: 1;
   margin-bottom: 32px;
@@ -121,38 +149,63 @@ section.u4m-filtered-content .topSec .featCardsOuter .cardItems .cardItem .itemI
   gap: 7px;
   flex-wrap: nowrap;
 }
-section.u4m-filtered-content .topSec .featCardsOuter .cardItems .cardItem .itemInr .itemCnWrap .intro_btn_wrap {
+@media (max-width: 580px) {
+  section.u4m-filtered-content .topSec .flex_row .featCardsOuter .cardItems .cardItem .itemInr .itemCnWrap .itemCntSec .itemMeta {
+    flex-wrap: wrap;
+  }
+}
+section.u4m-filtered-content .topSec .flex_row .featCardsOuter .cardItems .cardItem .itemInr .itemCnWrap .intro_btn_wrap {
   margin: auto 0 0;
   justify-content: start;
 }
-section.u4m-filtered-content .topSec .featCardsOuter .featCards {
+section.u4m-filtered-content .topSec .flex_row .featCardsOuter .featCards {
   margin: 0;
 }
-section.u4m-filtered-content .topSec .featCardsOuter .cardItems {
+section.u4m-filtered-content .topSec .flex_row .featCardsOuter .cardItems {
   margin: 0;
 }
-section.u4m-filtered-content .topSec .featCardsOuter .cardItems .cardItem {
+section.u4m-filtered-content .topSec .flex_row .featCardsOuter .cardItems .cardItem {
   padding: 0;
   width: 100%;
 }
-section.u4m-filtered-content .topSec .featCardsOuter .cardItems .cardItem .itemInr {
+section.u4m-filtered-content .topSec .flex_row .featCardsOuter .cardItems .cardItem .itemInr {
   display: flex;
   align-items: center;
 }
-section.u4m-filtered-content .topSec .featCardsOuter .cardItems .cardItem .itemInr > * {
+@media (max-width: 580px) {
+  section.u4m-filtered-content .topSec .flex_row .featCardsOuter .cardItems .cardItem .itemInr {
+    display: block;
+  }
+}
+section.u4m-filtered-content .topSec .flex_row .featCardsOuter .cardItems .cardItem .itemInr > * {
   width: 50%;
 }
-section.u4m-filtered-content .topSec .featCardsOuter .cardItems .cardItem .itemInr .itemImg .itemImgin {
+@media (max-width: 580px) {
+  section.u4m-filtered-content .topSec .flex_row .featCardsOuter .cardItems .cardItem .itemInr > * {
+    width: 100%;
+  }
+}
+section.u4m-filtered-content .topSec .flex_row .featCardsOuter .cardItems .cardItem .itemInr .itemImg .itemImgin {
   padding-bottom: 333px;
 }
-section.u4m-filtered-content .topSec .featCardsOuter .cardItems .cardItem .itemInr .itemCnWrap .itemCntSec .itemTags {
+@media (max-width: 580px) {
+  section.u4m-filtered-content .topSec .flex_row .featCardsOuter .cardItems .cardItem .itemInr .itemImg .itemImgin {
+    padding-bottom: 56.66%;
+  }
+}
+section.u4m-filtered-content .topSec .flex_row .featCardsOuter .cardItems .cardItem .itemInr .itemCnWrap .itemCntSec .itemTags {
   margin-bottom: 32px;
 }
-section.u4m-filtered-content .topSec .featCardsOuter .cardItems .cardItem .itemInr .itemCnWrap .itemCntSec .itemTitle {
+section.u4m-filtered-content .topSec .flex_row .featCardsOuter .cardItems .cardItem .itemInr .itemCnWrap .itemCntSec .itemTitle {
   margin-bottom: 8px;
 }
 section.u4m-filtered-content .featCardsListWrap .filterWrap {
-  padding: 60px 0;
+  padding: 60rem 0;
+}
+@media (max-width: 767px) {
+  section.u4m-filtered-content .featCardsListWrap .filterWrap {
+    padding: 40rem 0;
+  }
 }
 section.u4m-filtered-content .featCardsListWrap .filterWrap .flex_row {
   justify-content: center;
@@ -162,6 +215,11 @@ section.u4m-filtered-content .featCardsListWrap .filterWrap .flex_row .selctArro
   padding: 0;
   max-width: 390px;
   width: 100%;
+}
+@media (max-width: 580px) {
+  section.u4m-filtered-content .featCardsListWrap .filterWrap .flex_row .selctArrow {
+    max-width: 100%;
+  }
 }
 section.u4m-filtered-content .featCardsListWrap .filterWrap .flex_row .selctArrow select {
   background-size: 12px;
@@ -220,6 +278,11 @@ section.u4m-filtered-content .featCardsListWrap .cardSctn .cardItems .cardItem .
   background-size: cover;
   background-position: center;
 }
+@media (max-width: 580px) {
+  section.u4m-filtered-content .featCardsListWrap .cardSctn .cardItems .cardItem .itemInr .itemImg .itemImgin {
+    padding-bottom: 56.66%;
+  }
+}
 section.u4m-filtered-content .featCardsListWrap .cardSctn .cardItems .cardItem .itemInr .itemImg .itemImgin .absltLink {
   position: absolute;
   height: 100%;
@@ -252,6 +315,11 @@ section.u4m-filtered-content .featCardsListWrap .cardSctn .cardItems .cardItem .
   margin-bottom: 8px;
   flex-wrap: nowrap;
 }
+@media (max-width: 580px) {
+  section.u4m-filtered-content .featCardsListWrap .cardSctn .cardItems .cardItem .itemInr .itemCnWrap .itemCntSec .itemTags {
+    flex-wrap: wrap;
+  }
+}
 section.u4m-filtered-content .featCardsListWrap .cardSctn .cardItems .cardItem .itemInr .itemCnWrap .itemCntSec .itemTags span {
   width: 4px;
   height: 4px;
@@ -266,6 +334,11 @@ section.u4m-filtered-content .featCardsListWrap .cardSctn .cardItems .cardItem .
   display: flex;
   gap: 7px;
   flex-wrap: nowrap;
+}
+@media (max-width: 580px) {
+  section.u4m-filtered-content .featCardsListWrap .cardSctn .cardItems .cardItem .itemInr .itemCnWrap .itemCntSec .itemMeta {
+    flex-wrap: wrap;
+  }
 }
 section.u4m-filtered-content .featCardsListWrap .cardSctn .cardItems .cardItem .itemInr .itemCnWrap .intro_btn_wrap {
   margin: auto 0 0;
