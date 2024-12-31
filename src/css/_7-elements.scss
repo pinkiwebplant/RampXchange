@@ -706,3 +706,10 @@ section[class*="u4m-"] {
 form {
   @include form;
 }
+
+.playIcon svg {
+  @include tabletvert {
+    width: 60px;
+    height: 60px;
+  }
+}

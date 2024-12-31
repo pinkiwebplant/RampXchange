@@ -4374,6 +4374,13 @@ form.hs-form .hs-button:hover, form.hs-form .hs-button:focus, form.mixitup-multi
   color: #007c43;
 }
 
+@media (max-width: 767px) {
+  .playIcon svg {
+    width: 60px;
+    height: 60px;
+  }
+}
+
 section.u4m-404-error,
 section.u4m-500-error {
   float: none;
