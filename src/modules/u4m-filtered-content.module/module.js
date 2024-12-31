@@ -191,6 +191,7 @@ function setHTML(items) {
   nav.innerHTML = paginationHTML;
   pagination.append(nav);
 
+	nav.classList.add('count'+totalPages);
   const start = (currentPage - 1) * pageSize;
   const end = currentPage * pageSize;
   items.slice(start, end).forEach((el) => {
@@ -220,10 +221,11 @@ document.addEventListener("click", (e) => {
     currPage += 1;
     setHTML(filteredItems);
   }
-  if ($this.classList.contains("previous")) {
+  if ($this.classList.contains("prev")) {
     currPage -= 1;
     setHTML(filteredItems);
   }
 });
+
 
 setHTML(filteredItems);

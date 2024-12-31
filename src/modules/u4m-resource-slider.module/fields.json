@@ -416,6 +416,34 @@
     "display" : "checkbox",
     "type" : "boolean",
     "default" : false
+  }, {
+    "id" : "004b0873-5dc1-d4b5-92e6-8eeff4677df6",
+    "name" : "slider_settings",
+    "display_width" : null,
+    "label" : "Slider Settings",
+    "required" : false,
+    "locked" : false,
+    "children" : [ {
+      "id" : "a06fbd6e-fbdc-f329-af46-16c80f198570",
+      "name" : "speed",
+      "display_width" : null,
+      "label" : "Speed",
+      "required" : false,
+      "locked" : false,
+      "display" : "slider",
+      "min" : 1000,
+      "max" : 10000,
+      "step" : 1000,
+      "type" : "number",
+      "default" : 3000
+    } ],
+    "tab" : "CONTENT",
+    "expanded" : false,
+    "group_occurrence_meta" : null,
+    "type" : "group",
+    "default" : {
+      "speed" : 3000
+    }
   } ],
   "tab" : "CONTENT",
   "expanded" : false,
@@ -423,7 +451,10 @@
   "type" : "group",
   "default" : {
     "select_card_theme" : "soft_white",
-    "reverse_text" : false
+    "reverse_text" : false,
+    "slider_settings" : {
+      "speed" : 3000
+    }
   }
 }, {
   "id" : "module_overrides",

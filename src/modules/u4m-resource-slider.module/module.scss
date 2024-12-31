@@ -10,37 +10,46 @@
             gap: 20px;
             justify-content: space-between;
             flex-wrap: nowrap;
-            @include phone {
+            @include tabletvert {
                 flex-direction: column;
+            }
+            @include phone {
+                text-align: center;
             }
             .intro_title {
                 margin: 0;
             }
-        }
-        .rightContent {
-            display: flex;
-            gap: 20px;
-            align-items: center;
-            .intro_btn_wrap {
-                margin: 0;
-                justify-content: start;
-            }
-            .btnArrow {
+            .rightContent {
                 display: flex;
                 gap: 20px;
                 align-items: center;
-                .prenext {
-                    background: none;
-                    border: 1px solid $heading;
-                    border-radius: 100%;
-                    height: 44px;
-                    width: 44px;
-                    display: flex;
-                    align-items: center;
+                justify-content: space-between;
+                @include phone {
                     justify-content: center;
-                    padding: 0;
-                    color: $heading;
-                    cursor: pointer;
+                    flex-wrap: wrap;
+                    flex-direction: column;
+                }
+                .intro_btn_wrap {
+                    margin: 0;
+                    justify-content: start;
+                }
+                .btnArrow {
+                    display: flex;
+                    gap: 20px;
+                    align-items: center;
+                    .prenext {
+                        background: none;
+                        border: 1px solid $heading;
+                        border-radius: 100%;
+                        height: 44px;
+                        width: 44px;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        padding: 0;
+                        color: $heading;
+                        cursor: pointer;
+                    }
                 }
             }
         }
