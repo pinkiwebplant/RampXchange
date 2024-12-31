@@ -44,6 +44,11 @@ html {
   border-radius: 12px;
   overflow: hidden;
 }
+@media (max-width: 767px) {
+  .u4m-animated-stats .statistics-items .animated-stats-item .stats-item {
+    padding: 30px 24px;
+  }
+}
 .u4m-animated-stats .statistics-items .animated-stats-item .stats-item .stats-item-inn {
   position: relative;
   z-index: 9;
@@ -108,6 +113,16 @@ html {
   .u4m-animated-stats .statistics-items .animated-stats-item .stats-item .stats-item-inn .number .prefix,
   .u4m-animated-stats .statistics-items .animated-stats-item .stats-item .stats-item-inn .number .suffix {
     margin-bottom: 0;
+  }
+}
+@media (max-width: 991px) {
+  .u4m-animated-stats .statistics-items .animated-stats-item .stats-item .stats-item-inn .number {
+    font-size: 40rem;
+  }
+}
+@media (max-width: 767px) {
+  .u4m-animated-stats .statistics-items .animated-stats-item .stats-item .stats-item-inn .number {
+    font-size: 40rem;
   }
 }
 .u4m-animated-stats .statistics-items .animated-stats-item .stats-item .stats-item-inn .caption {

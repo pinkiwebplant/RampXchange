@@ -21,6 +21,11 @@
         padding: 36px 24px;
         border-radius: 12px;
         overflow: hidden;
+
+        @include tabletvert {
+          padding: 30px 24px;
+        }
+
         .stats-item-inn {
           position: relative;
           z-index: 9;
@@ -47,6 +52,14 @@
               @include phone {
                 margin-bottom: 0;
               }
+            }
+
+            @include tabletmid {
+              font-size: 40rem;
+            }
+
+            @include tabletvert {
+              font-size: 40rem;
             }
           }
           .caption {
