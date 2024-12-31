@@ -70,12 +70,13 @@ width: 100%;
               color: $heading;
             }
             .intro_desc {
-              margin-bottom: 32px;
               > *{
                 color: $heading;
               }
             }
-            
+            .intro_btn_wrap{
+margin-top: 32px;
+            }
             .intro_btn_wrap {
               justify-content: flex-start;
               .btn_item {
@@ -162,7 +163,7 @@ color: $action1;
         display: flex;
         margin: 0;
         gap: 8px;
-        align-items: flex-start;
+        align-items: end;
         position: relative;
     
         .hs_error_rollup {
@@ -179,12 +180,21 @@ color: $action1;
           text-align: left;
           padding: 0;
           padding-top: 10px;
+          position: absolute;
+          left: 0;
+          right: 0;
+          border: 0;
+          @include navbreak{
+position: unset;
+          }
         }
         .hs-form-field {
           >label {
             font-weight: 500;
             @include size13; line-height: 100%;
             color: $heading;
+            margin-bottom: 8px;
+            display: block;
           }
           max-width: 395px;
           width: 100%;
@@ -246,6 +256,9 @@ color: $white !important;
           }
         }
       }
+    }
+    @include tabletvert{
+padding: 20px;
     }
   }
 }

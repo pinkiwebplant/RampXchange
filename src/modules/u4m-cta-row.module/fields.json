@@ -334,13 +334,13 @@
     "type" : "image",
     "default" : {
       "size_type" : "auto",
-      "src" : "https://23543895.fs1.hubspotusercontent-na1.net/hubfs/23543895/RampXchange/images/Media-2.png",
-      "alt" : "Media-2",
+      "src" : "https://23543895.fs1.hubspotusercontent-na1.net/hubfs/23543895/RampXchange/images/Mediaa.png",
+      "alt" : "Media",
       "loading" : "lazy",
-      "width" : 1124,
-      "height" : 770,
-      "max_width" : 1124,
-      "max_height" : 770
+      "width" : 562,
+      "height" : 385,
+      "max_width" : 562,
+      "max_height" : 385
     }
   }, {
     "id" : "ed7a363f-931c-0a6c-1f52-2742280b4fba",
@@ -460,13 +460,13 @@
     "select_media_type" : "img",
     "image" : {
       "size_type" : "auto",
-      "src" : "https://23543895.fs1.hubspotusercontent-na1.net/hubfs/23543895/RampXchange/images/Media-2.png",
-      "alt" : "Media-2",
+      "src" : "https://23543895.fs1.hubspotusercontent-na1.net/hubfs/23543895/RampXchange/images/Mediaa.png",
+      "alt" : "Media",
       "loading" : "lazy",
-      "width" : 1124,
-      "height" : 770,
-      "max_width" : 1124,
-      "max_height" : 770
+      "width" : 562,
+      "height" : 385,
+      "max_width" : 562,
+      "max_height" : 385
     },
     "poster_image" : {
       "size_type" : "auto",

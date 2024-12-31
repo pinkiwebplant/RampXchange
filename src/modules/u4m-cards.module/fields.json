@@ -86,7 +86,7 @@
     "allow_new_line" : false,
     "show_emoji_picker" : false,
     "type" : "text",
-    "default" : "Super Compelling Headline About Challenges/Solutions/Differentiators"
+    "default" : "Super Compelling Headline About Challenges / Solutions / Differentiators"
   }, {
     "id" : "2f10bd6e-cf85-1cf6-5a4f-fa75e1e78238",
     "name" : "include_content",
@@ -286,7 +286,7 @@
     "eyebrow_text" : "Top Value Props",
     "include_heading" : true,
     "heading_size" : "h2",
-    "heading" : "Super Compelling Headline About Challenges/Solutions/Differentiators",
+    "heading" : "Super Compelling Headline About Challenges / Solutions / Differentiators",
     "include_content" : true,
     "content" : "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>",
     "include_button" : false,

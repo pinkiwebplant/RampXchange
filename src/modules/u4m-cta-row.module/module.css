@@ -82,11 +82,11 @@ html {
 .u4m-cta-row .row .left-section .intro_wrapp .intro_content .intro__inner .intro_title {
   color: #213944;
 }
-.u4m-cta-row .row .left-section .intro_wrapp .intro_content .intro__inner .intro_desc {
-  margin-bottom: 32px;
-}
 .u4m-cta-row .row .left-section .intro_wrapp .intro_content .intro__inner .intro_desc > * {
   color: #213944;
+}
+.u4m-cta-row .row .left-section .intro_wrapp .intro_content .intro__inner .intro_btn_wrap {
+  margin-top: 32px;
 }
 .u4m-cta-row .row .left-section .intro_wrapp .intro_content .intro__inner .intro_btn_wrap {
   justify-content: flex-start;
@@ -163,7 +163,7 @@ html {
   display: flex;
   margin: 0;
   gap: 8px;
-  align-items: flex-start;
+  align-items: end;
   position: relative;
 }
 .u4m-cta-row .row .media_section form .hs_error_rollup {
@@ -180,6 +180,15 @@ html {
   text-align: left;
   padding: 0;
   padding-top: 10px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  border: 0;
+}
+@media (max-width: 1280px) {
+  .u4m-cta-row .row .media_section form ul.no-list.hs-error-msgs.inputs-list {
+    position: unset;
+  }
 }
 .u4m-cta-row .row .media_section form .hs-form-field {
   max-width: 395px;
@@ -190,6 +199,8 @@ html {
   font-size: 13rem;
   line-height: 100%;
   color: #213944;
+  margin-bottom: 8px;
+  display: block;
 }
 @media (max-width: 1280px) {
   .u4m-cta-row .row .media_section form .hs-form-field {
@@ -240,4 +251,9 @@ html {
 }
 .u4m-cta-row .row.cards_reverse_text .intro_btn_wrap .btn_item .arrow-link:hover {
   color: #ffffff !important;
+}
+@media (max-width: 767px) {
+  .u4m-cta-row .row {
+    padding: 20px;
+  }
 }
