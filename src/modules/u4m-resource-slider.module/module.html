@@ -1,0 +1,87 @@
+{% set moduleName = 'u4m-resource-slider' %}
+{% set ExtramoduleClass = '' %}
+{% include "../partials/u4-module-includes.html" %}
+
+
+
+{% set table = module.resource.resource_table %}
+{% set count = module.resource.count %}
+{% set recent_query = 'orderBy=hs_created_at&limit=' ~ count %}
+{% set category = module.resource.category_name %}
+{% set category_query = 'orderBy=-hs_created_at&topic__in=' ~ category ~ '&limit=' ~ count %}
+
+
+{% if module.resource.resource_type == "recent" %}
+{% set data = hubdb_table_rows(table,recent_query) %}
+{% elif module.resource.resource_type == "category" %}
+{% set data = hubdb_table_rows(table,category_query) %}
+{% endif %}
+
+<div class="page-center ">
+	<div class="intro_wrapp">
+		{% if module.intro_content.include_eyebrow_text or module.intro_content.include_heading or  module.intro_content.include_button%}
+		<div class="intro_content flex_wrap">
+			<div class="leftContent">
+				{% if module.intro_content.include_eyebrow_text %}
+				<div class="eyebrow_text">
+					{{ module.intro_content.eyebrow_text }}
+				</div>
+				{% endif %}
+				{% if module.intro_content.include_heading %}
+				<{{module.intro_content.heading_size}} class="intro_title">{{ module.intro_content.heading }}</{{module.intro_content.heading_size}}>
+					{% endif %}
+
+					</div>
+				<div class="rightContent">
+					{{macros.singleButton(module.intro_content.button_group)}}
+					<div class="btnArrow">
+						<div class="prev prenext"><span class="material-symbols-outlined">arrow_back</span></div>
+						<div class="next prenext"><span class="material-symbols-outlined">arrow_forward</span></div>
+					</div>
+				</div>
+			</div>
+			{% endif %}
+		</div>
+		<div class="CardWrap">
+			<div class="flex_row cardItems">
+				{% if module.resource.resource_type == "recent" ||  module.resource.resource_type == "category" %} 
+				{% for row in data %}
+				{{ macros.hubDBcards(row,module.module_settings)}}
+				{% endfor %}
+				{% elif module.resource.resource_type == 'postbytitle' %}
+				{% for item in module.resource.resouce_items %}
+				{% set row = item.select_row.columns %}
+				{% if row %}
+					{{ macros.hubDBcards(row,module.module_settings)}}
+				{% endif %}
+				{% endfor %}
+				{% endif %}
+			</div>
+		</div>
+	</div>
+	</section>
+
+
+	{% require_js %}
+		<script>
+			$('.{{ name }} .cardItems').slick({
+				dots: false,
+				prevArrow: $('.prev'),
+				nextArrow: $('.next'),
+						speed: 300,
+							slidesToShow: 3,
+								slidesToScroll: 1,
+									autoplay: true,
+										autoplaySpeed: 5000,
+			});
+		</script>
+		
+		{% end_require_js %}
+		
+
+
+
+
+
+
+

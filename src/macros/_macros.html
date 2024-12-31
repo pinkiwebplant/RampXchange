@@ -163,7 +163,110 @@
 	
 	
 	
+	<!-- Hubdb cards -->
 	
 	
+	{% macro hubDBcards(item,moduleSetting) %}
+	{% if item %}
+	<div class="cmCol3 cardItem">
+		<div class="itemInr {{ moduleSetting.select_card_theme }} {% if moduleSetting.reverse_text %}cardColor{% endif %}">
+			{% if row.image.url %}
+			<div class="itemImg">
+				<div class="itemImgin" style="background-image:url({{ row.image.url }})">	<a class="absltLink" href="{{ row.link }}"></a></div>
+			</div>
+			{% endif %}
+			<div class="itemCnWrap">
+				<div class="itemCntSec">
+					{% if row.topic.name %}
+					<div class="itemTags">{{ row.topic.name }}</div>
+					{% endif %}
+					{% if row.name %}
+					<div class="itemTitle">
+						<h4 class="restitle">
+							<a  href="{{ row.link }}">
+								{{ row.name }}
+							</a>
+						</h4>
+					</div>  
+					{% endif %}
+				</div>
+				{% if row.read_more_text %}
+				<div class="intro_btn_wrap">
+					<div class="btn_item">
+						<a class="arrow-link " href="{{ row.link }}">
+							<span>{{ row.read_more_text }}</span>
+							<svg width="7" height="12" viewBox="0 0 7 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path fill-rule="evenodd" clip-rule="evenodd" d="M6.83814 5.62106C7.05396 5.83037 7.05396 6.16965 6.83814 6.37896L1.2039 11.843C0.988082 12.0523 0.638231 12.0523 0.422411 11.843L0.161865 11.5904C-0.053955 11.3811 -0.053955 11.0417 0.161865 10.8324L5.14481 6.00001L0.161865 1.16755C-0.0539548 0.958242 -0.0539548 0.618957 0.161865 0.409655L0.422411 0.156977C0.638231 -0.0523252 0.988082 -0.0523252 1.2039 0.156977L6.83814 5.62106Z" fill="#007C43"></path>
+							</svg>
+						</a>
+					</div>
+				</div>
+				{% endif %}
+			</div>
 	
+		</div>
+	</div>
+	{% endif %}
+	{% endmacro%}
+	
+	
+	{% macro blogCards(item,moduleSetting) %}
+	{% if item %}
+	<div class="cmCol3 cardItem">
+		<div class="itemInr {{ moduleSetting.select_card_theme }} {% if moduleSetting.reverse_text %}cardColor{% endif %}">
+			{% if item.featured_image %}
+			<div class="itemImg">
+				<div class="itemImgin" style="background-image:url({{ item.featured_image }})">	<a class="absltLink" href="{{ item.absolute_url }}"></a></div>
+			</div>
+			{% endif %}
+			<div class="itemCnWrap">
+				<div class="itemCntSec">
+					{% if item.topic_list %}
+					<div class="itemTags">
+						{% set included_topics = item.topic_list | rejectattr("slug", "equalto", "featured") | list %}
+						{% for topic in included_topics %}
+						<a class="{{ topic.slug }}" href="{{ blog_tag_url(group.id, topic.slug) }}">{{ topic.name }}</a>{% if not loop.last %}<span class="dots"></span>{% endif %}
+						{% endfor %}
+					</div>
+					{% endif %}
+					<div class="itemMeta">
+						<span class="reading-minutes">
+							{% set initialPostWords = item.post_body|striptags|wordcount %}
+							{% set calculatedPostWords = (initialPostWords/100) * 100 %}
+							{% set finishedPostWords = calculatedPostWords|divide(300)|round(2) %}
+							{% set number = finishedPostWords|round %}
+							{% if number < 1 %}
+							{% else %}
+							{{ finishedPostWords|round }} minute read
+							{% endif %}
+						</span> | <span class="itemDate">{{ item.publish_date_local_time.strftime('%B %e, %Y') }}</span>
+					</div>
+					{% if item.name %}
+					<div class="itemTitle">
+						<h4>
+							<a  href="{{ item.absolute_url }}">
+								{{ item.name }}
+							</a>
+						</h4>
+					</div>  
+					{% endif %}
+				</div>
+				{% if moduleSetting.button_text %}
+				<div class="intro_btn_wrap">
+					<div class="btn_item">
+						<a class="arrow-link " href="{{ item.absolute_url }}">
+							<span>{{ moduleSetting.button_text }}</span>
+							<svg width="7" height="12" viewBox="0 0 7 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path fill-rule="evenodd" clip-rule="evenodd" d="M6.83814 5.62106C7.05396 5.83037 7.05396 6.16965 6.83814 6.37896L1.2039 11.843C0.988082 12.0523 0.638231 12.0523 0.422411 11.843L0.161865 11.5904C-0.053955 11.3811 -0.053955 11.0417 0.161865 10.8324L5.14481 6.00001L0.161865 1.16755C-0.0539548 0.958242 -0.0539548 0.618957 0.161865 0.409655L0.422411 0.156977C0.638231 -0.0523252 0.988082 -0.0523252 1.2039 0.156977L6.83814 5.62106Z" fill="#007C43"></path>
+							</svg>
+						</a>
+					</div>
+				</div>
+				{% endif %}
+			</div>
+	
+		</div>
+	</div>
+	{% endif %}
+	{% endmacro%}
 	
