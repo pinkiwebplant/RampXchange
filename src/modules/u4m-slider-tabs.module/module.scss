@@ -48,18 +48,52 @@
         @include tabletvert {
           width: 100%;
         }
+
         .tab-item {
           padding: 16px 28px;
+          transition:
+            color 0.2s ease,
+            border 0.2s ease;
+          & * {
+            transition: inherit;
+          }
           @include tabletvert {
             padding: 16px 15px;
           }
           border-left: 2px solid $digitalgreen;
+
+          .slider_tab_title {
+            display: flex;
+            justify-content: space-between;
+
+            span {
+              display: none;
+            }
+            @include tabletvert {
+              span.plus {
+                display: block;
+              }
+            }
+          }
+
+          &.acc-open {
+            .slider_tab_title {
+              @include tabletvert {
+                span.minus {
+                  display: block;
+                }
+                span.plus {
+                  display: none;
+                }
+              }
+            }
+          }
+
           .tab-inner {
             h4 {
               cursor: pointer;
               color: $lightGrayishBlue;
               margin: 0;
-              transition: all 0.3s;
               &:hover {
                 color: $heading;
               }
@@ -82,19 +116,18 @@
               }
               .mobile_cnnt {
                 display: none;
-                @include tabletvert{
+                @include tabletvert {
                   display: block;
                   width: 100%;
-.video_wrap{
-  margin: 50px 0;
-  padding-bottom: 62%;
-}
+                  .video_wrap {
+                    margin: 50px 0;
+                    padding-bottom: 62%;
+                  }
                   .img_wrap {
                     padding: 50px 0;
                   }
                 }
               }
-             
             }
           }
           &.acc-open {
@@ -127,6 +160,22 @@
           &.acc-open {
             display: block;
           }
+
+          & > div {
+            opacity: 0;
+            transition: opacity 0.1s ease;
+          }
+          &.animate-media > div {
+            opacity: 1;
+            transition: opacity 0.65s ease;
+          }
+
+          .tab-inner {
+            @include tabletvertmin {
+              width: calc(100% - 35px);
+            }
+          }
+
           .video_wrap {
             &.video_play {
               .poster_img {
@@ -138,9 +187,12 @@
               z-index: 9;
               width: 100%;
               cursor: pointer;
-              top: -3px;
+              top: 0;
+              height: 100%;
               img {
                 width: 100%;
+                object-fit: cover;
+                height: 100% !important;
               }
               .playIcon {
                 position: absolute;
@@ -161,6 +213,7 @@
               .iframe {
                 width: 100%;
                 height: 100%;
+                display: block;
               }
             }
             .hubspot_video {
@@ -171,6 +224,7 @@
                 width: 100%;
                 height: 100%;
                 object-fit: cover;
+                display: block;
               }
             }
           }
