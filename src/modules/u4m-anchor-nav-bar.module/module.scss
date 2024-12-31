@@ -22,10 +22,11 @@
 			color: $heading;
 			position: relative;
 			z-index: 99;
+			border-bottom: 2px solid transparent;
 		}
 		a.cm_btn.active {
 			border-bottom: 2px solid;
-			border-color: inherit;
+			border-color: $heading;
 		}
 	}
 	transition: all .3s ease;

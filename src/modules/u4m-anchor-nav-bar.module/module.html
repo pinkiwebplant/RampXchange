@@ -144,7 +144,7 @@ $(function() {
       var id = $(this).attr('id'); // Get the section's ID
       var offset = $(this).offset().top; // Get the section's offset from the top
       var height = $(this).outerHeight(); // Get the section's height
-      var offseGap = offset - height / 2; // This triggers when the section is in the middle of the viewport
+      var offseGap = offset - height / 5; // This triggers when the section is in the middle of the viewport
 
       // Check if the section is within the viewport (hasn't been completely scrolled past)
       if (sTop >= offseGap && sTop < offset + height) {
