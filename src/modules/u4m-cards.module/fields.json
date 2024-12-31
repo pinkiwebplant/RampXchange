@@ -541,7 +541,7 @@
     "reordering_enabled" : true,
     "preset" : null,
     "type" : "choice",
-    "default" : "h4"
+    "default" : "h3"
   }, {
     "id" : "524b8395-59dc-086e-212c-61f67c5b3731",
     "name" : "heading",
@@ -772,7 +772,7 @@
     "include_eyebrow_text" : true,
     "eyebrow_text" : "Optional Eyebrow Text",
     "include_heading" : true,
-    "heading_size" : "h4",
+    "heading_size" : "h3",
     "heading" : "Simplify Compliance with Expert Support",
     "include_content" : true,
     "content" : "<p>RAMPxchange’s cybersecurity professional advisors provides hands-on support for creating RFPs, navigating compliance frameworks, and managing post-award vendor relationships.</p>",
@@ -820,7 +820,7 @@
     "include_eyebrow_text" : true,
     "eyebrow_text" : "Optional Eyebrow Text",
     "include_heading" : true,
-    "heading_size" : "h4",
+    "heading_size" : "h3",
     "heading" : "Simplify Compliance with Expert Support",
     "include_content" : true,
     "content" : "<p>RAMPxchange’s cybersecurity professional advisors provides hands-on support for creating RFPs, navigating compliance frameworks, and managing post-award vendor relationships.</p>",
@@ -868,7 +868,7 @@
     "include_eyebrow_text" : true,
     "eyebrow_text" : "Optional Eyebrow Text",
     "include_heading" : true,
-    "heading_size" : "h4",
+    "heading_size" : "h3",
     "heading" : "Simplify Compliance with Expert Support",
     "include_content" : true,
     "content" : "<p>RAMPxchange’s cybersecurity professional advisors provides hands-on support for creating RFPs, navigating compliance frameworks, and managing post-award vendor relationships.</p>",

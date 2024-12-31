@@ -31,6 +31,8 @@
     position: relative;
     z-index: 9;
     .row {
+     @include centerSmall;
+     padding: 0;
       .tabber_top_tabs {
         @include tabletvert {
           display: none;
@@ -45,9 +47,10 @@
           background: $airwhite;
           text-align: center;
           border-radius: 12px;
+          justify-content: space-between;
           li {
             border-radius: 12px;
-            max-width: 220px;
+            max-width: 185px;
             @include navbreak {
               max-width: unset;
             }
@@ -154,9 +157,12 @@
               width: 100%;
               margin-bottom: 40px;
             }
-            h3 {
+            h3 { 
               @include size32;
               margin-bottom: 20px;
+              @include tabletvert{
+              @include size22; 
+              }
               br {
                 display: none;
               }
