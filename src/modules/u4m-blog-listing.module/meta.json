@@ -1,5 +1,5 @@
 {
-  "global": true,
+  "global": false,
   "smart_type": "NOT_SMART",
   "host_template_types": ["BLOG_POST", "BLOG_LISTING"],
   "label": "Blog Listing",
