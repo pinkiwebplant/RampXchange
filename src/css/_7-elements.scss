@@ -653,7 +653,7 @@ section[class*="u4m-"] {
   background-color: $white;
 }
 
-// text Color 
+// text Color
 .forest_green_text {
   color: $action1;
 }
@@ -679,7 +679,6 @@ section[class*="u4m-"] {
   color: $white;
 }
 
-
 .bg_image {
   background-position: center center;
   background-repeat: no-repeat;
@@ -702,4 +701,8 @@ section[class*="u4m-"] {
 }
 .gradient5 {
   background-image: $gradient5;
+}
+
+form {
+  @include form;
 }
