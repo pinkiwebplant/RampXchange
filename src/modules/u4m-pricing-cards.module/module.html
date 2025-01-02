@@ -1,4 +1,4 @@
-{% set moduleName = 'u4m-base-module' %}
+{% set moduleName = 'u4m-pricing-cards' %}
 {% set ExtramoduleClass = '' %}
 {% include "../partials/u4-module-includes.html" %}
 
@@ -6,10 +6,41 @@
 	<div class="intro_wrapp">
 		{{macros.introGroup(module.intro_content)}}
 	</div>
+	<div class="btmCntt">
+		<div class="btms">
+			{% for item in module.items_group %}
+			<div class="items">
+				<div class="innerCntt {{ module.module_settings.card_group.card_bg_clr }} {% if module.module_settings.card_group.card_reverse_text %}card_reverse_text{% endif %} {{ module.module_settings.card_group.content_alignment }}_cnt ">
+					<div class="img">
+						{% if item.image_field.src %}
+						{% set sizeAttrs = 'width="{{ item.image_field.width|escape_attr }}" height="{{ item.image_field.height|escape_attr }}"' %}
+						{% if item.image_field.size_type == 'auto' %}
+						{% set sizeAttrs = 'width="{{ item.image_field.width|escape_attr }}" height="{{ item.image_field.height|escape_attr }}" style="max-width: 100%; height: auto;"' %}
+						{% elif item.image_field.size_type == 'auto_custom_max' %}
+						{% set sizeAttrs = 'width="{{ item.image_field.max_width|escape_attr }}" height="{{ item.image_field.max_height|escape_attr }}" style="max-width: 100%; height: auto;"' %}
+						{% endif %}
+						{% set loadingAttr = item.image_field.loading != 'disabled' ? 'loading="{{ item.image_field.loading|escape_attr }}"' : '' %}
+						<img src="{{ item.image_field.src|escape_url }}" alt="{{ item.image_field.alt|escape_attr }}" {{ loadingAttr }} {{ sizeAttrs }}>
+						{% endif %}
+					</div>
+					<div class="cntt">
+						{{ item.content }}
+					</div>
+					<hr>
+					<div class="features">
+						{% for item2 in item.features_items_group %}
+						<div class="features_items  {{ module.module_settings.card_group.features_icon_background_color }}_icon_bg {{ module.module_settings.card_group.features_icon_color }}_textclr">
+							{{ module.module_settings.card_group.features_icon }}
+							{{ item2.text_field }}
+						</div>
+						{% endfor %}
+					</div>
+				</div>
+			</div>
+			{% endfor %}
+		</div> </div>
 </div>
 </section>
-
-
 
 
 

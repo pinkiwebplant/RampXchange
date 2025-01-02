@@ -293,6 +293,288 @@
     } ]
   }
 }, {
+  "id" : "dde2076c-d2a9-34b3-3c31-499a945e2bd9",
+  "name" : "items_group",
+  "display_width" : null,
+  "label" : "Items Group",
+  "required" : false,
+  "locked" : false,
+  "occurrence" : {
+    "min" : null,
+    "max" : null,
+    "sorting_label_field" : "625bc767-bfe1-d40d-5ff2-20614b9fdb70",
+    "default" : 4
+  },
+  "children" : [ {
+    "id" : "369fa526-5881-ee76-61fc-2478ff19454a",
+    "name" : "image_field",
+    "display_width" : null,
+    "label" : "Image",
+    "required" : false,
+    "locked" : false,
+    "responsive" : true,
+    "resizable" : false,
+    "show_loading" : false,
+    "type" : "image",
+    "default" : {
+      "size_type" : "auto",
+      "src" : "https://23543895.fs1.hubspotusercontent-na1.net/hubfs/23543895/RampXchange/images/CocaCola.png",
+      "alt" : "CocaCola",
+      "loading" : "lazy",
+      "width" : 230,
+      "height" : 79,
+      "max_width" : 230,
+      "max_height" : 79
+    }
+  }, {
+    "id" : "625bc767-bfe1-d40d-5ff2-20614b9fdb70",
+    "name" : "content",
+    "display_width" : null,
+    "label" : "Content",
+    "required" : false,
+    "locked" : false,
+    "type" : "richtext",
+    "default" : "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>"
+  }, {
+    "id" : "50679851-6e99-36e7-a0b7-df20cbd02110",
+    "name" : "features_items_group",
+    "display_width" : null,
+    "label" : "Features Items Group",
+    "required" : false,
+    "locked" : false,
+    "occurrence" : {
+      "min" : null,
+      "max" : null,
+      "sorting_label_field" : "f30198ad-835a-9022-b8b8-b577518f5d7d",
+      "default" : 3
+    },
+    "children" : [ {
+      "id" : "f30198ad-835a-9022-b8b8-b577518f5d7d",
+      "name" : "text_field",
+      "display_width" : null,
+      "label" : "Text",
+      "required" : false,
+      "locked" : false,
+      "validation_regex" : "",
+      "allow_new_line" : false,
+      "show_emoji_picker" : false,
+      "type" : "text",
+      "default" : "Trusted Advisors"
+    } ],
+    "tab" : "CONTENT",
+    "expanded" : false,
+    "group_occurrence_meta" : null,
+    "type" : "group",
+    "default" : [ {
+      "text_field" : "Trusted Advisors"
+    }, {
+      "text_field" : "Trusted Advisors"
+    }, {
+      "text_field" : "Trusted Advisors"
+    } ]
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "group_occurrence_meta" : null,
+  "type" : "group",
+  "default" : [ {
+    "image_field" : {
+      "size_type" : "auto",
+      "src" : "https://23543895.fs1.hubspotusercontent-na1.net/hubfs/23543895/RampXchange/images/CocaCola.png",
+      "alt" : "CocaCola",
+      "loading" : "lazy",
+      "width" : 230,
+      "height" : 79,
+      "max_width" : 230,
+      "max_height" : 79
+    },
+    "content" : "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>",
+    "features_items_group" : [ {
+      "text_field" : "Trusted Advisors"
+    }, {
+      "text_field" : "Trusted Advisors"
+    }, {
+      "text_field" : "Trusted Advisors"
+    } ]
+  }, {
+    "image_field" : {
+      "size_type" : "auto",
+      "src" : "https://23543895.fs1.hubspotusercontent-na1.net/hubfs/23543895/RampXchange/images/CocaCola.png",
+      "alt" : "CocaCola",
+      "loading" : "lazy",
+      "width" : 230,
+      "height" : 79,
+      "max_width" : 230,
+      "max_height" : 79
+    },
+    "content" : "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>",
+    "features_items_group" : [ {
+      "text_field" : "Trusted Advisors"
+    }, {
+      "text_field" : "Trusted Advisors"
+    }, {
+      "text_field" : "Trusted Advisors"
+    } ]
+  }, {
+    "image_field" : {
+      "size_type" : "auto",
+      "src" : "https://23543895.fs1.hubspotusercontent-na1.net/hubfs/23543895/RampXchange/images/CocaCola.png",
+      "alt" : "CocaCola",
+      "loading" : "lazy",
+      "width" : 230,
+      "height" : 79,
+      "max_width" : 230,
+      "max_height" : 79
+    },
+    "content" : "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>",
+    "features_items_group" : [ {
+      "text_field" : "Trusted Advisors"
+    }, {
+      "text_field" : "Trusted Advisors"
+    }, {
+      "text_field" : "Trusted Advisors"
+    } ]
+  }, {
+    "image_field" : {
+      "size_type" : "auto",
+      "src" : "https://23543895.fs1.hubspotusercontent-na1.net/hubfs/23543895/RampXchange/images/CocaCola.png",
+      "alt" : "CocaCola",
+      "loading" : "lazy",
+      "width" : 230,
+      "height" : 79,
+      "max_width" : 230,
+      "max_height" : 79
+    },
+    "content" : "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>",
+    "features_items_group" : [ {
+      "text_field" : "Trusted Advisors"
+    }, {
+      "text_field" : "Trusted Advisors"
+    }, {
+      "text_field" : "Trusted Advisors"
+    } ]
+  } ]
+}, {
+  "id" : "0d4cfde4-fcf2-aade-b361-ed960d2815f1",
+  "name" : "module_settings",
+  "display_width" : null,
+  "label" : "Module Settings",
+  "required" : false,
+  "locked" : false,
+  "children" : [ {
+    "id" : "26361839-2ccc-a5bb-7fd7-11a8be04a04e",
+    "name" : "card_group",
+    "display_width" : null,
+    "label" : "Card Group",
+    "required" : false,
+    "locked" : false,
+    "children" : [ {
+      "id" : "cc6d485a-415f-d1dd-4589-0e9058c106cd",
+      "name" : "card_bg_clr",
+      "display_width" : null,
+      "label" : "Background Color",
+      "required" : false,
+      "locked" : false,
+      "display" : "select",
+      "choices" : [ [ "forest_green", "Forest Green" ], [ "dark_teal", "Dark Teal" ], [ "pale_green", "Pale Green" ], [ "silver_gray", "Silver Gray" ], [ "charcoal_gray", "Charcoal Gray" ], [ "golden_brown", "Golden Brown" ], [ "soft_white", "Soft White" ], [ "white_bg", "White" ] ],
+      "multiple" : false,
+      "reordering_enabled" : true,
+      "preset" : null,
+      "type" : "choice",
+      "default" : "soft_white"
+    }, {
+      "id" : "b5a1d901-d399-6015-3491-63431d455613",
+      "name" : "card_reverse_text",
+      "display_width" : null,
+      "label" : "Reverse Text",
+      "required" : false,
+      "locked" : false,
+      "display" : "checkbox",
+      "type" : "boolean",
+      "default" : false
+    }, {
+      "id" : "be5046c4-1a2c-31bb-2afc-8ad1c6309ed2",
+      "name" : "features_icon",
+      "display_width" : null,
+      "label" : "Features Icon",
+      "required" : false,
+      "locked" : false,
+      "validation_regex" : "",
+      "allow_new_line" : false,
+      "show_emoji_picker" : false,
+      "type" : "text",
+      "default" : "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"24\" height=\"25\" viewBox=\"0 0 24 25\" fill=\"none\"><circle cx=\"12\" cy=\"12.4023\" r=\"10\" fill=\"#C49E5B\"/><path d=\"M17.5309 8.5355L17.5296 8.53668L9.88778 15.2733L6.47078 12.261C6.47071 12.261 6.47064 12.2609 6.47056 12.2609C6.37155 12.173 6.23682 12.1235 6.09629 12.1235C5.95572 12.1235 5.82098 12.173 5.72196 12.2609C5.72191 12.261 5.72186 12.261 5.7218 12.261L5.15601 12.7598C5.15595 12.7599 5.15587 12.7599 5.1558 12.76C5.05608 12.8473 5 12.9661 5 13.0899C5 13.2139 5.05611 13.3327 5.15587 13.4199C5.15592 13.42 5.15596 13.42 5.15601 13.4201L9.51733 17.2648C9.51741 17.2649 9.5175 17.2649 9.51758 17.265C9.61659 17.3529 9.75131 17.4023 9.89183 17.4023C10.0323 17.4023 10.1671 17.3529 10.2661 17.265C10.2661 17.2649 10.2662 17.2649 10.2663 17.2648L18.844 9.70314C18.844 9.70312 18.8441 9.70309 18.8441 9.70307C18.9439 9.61577 19 9.49696 19 9.37302C19 9.24924 18.944 9.13058 18.8445 9.04331C18.8443 9.04317 18.8442 9.04303 18.844 9.04288L18.2785 8.53721V8.5372L18.2765 8.5355C18.0687 8.35796 17.7386 8.35796 17.5309 8.5355Z\" fill=\"white\"/></svg>"
+    }, {
+      "id" : "158b620b-26a8-bc58-e969-93e7e78a4394",
+      "name" : "features_icon_background_color",
+      "display_width" : null,
+      "label" : "Features  Icon Background Color",
+      "required" : false,
+      "locked" : false,
+      "display" : "select",
+      "choices" : [ [ "forest_green", "Forest Green" ], [ "dark_teal", "Dark Teal" ], [ "pale_green", "Pale Green" ], [ "silver_gray", "Silver Gray" ], [ "charcoal_gray", "Charcoal Gray" ], [ "golden_brown", "Golden Brown" ], [ "soft_white", "Soft White" ], [ "white_bg", "White" ] ],
+      "multiple" : false,
+      "reordering_enabled" : true,
+      "preset" : null,
+      "type" : "choice",
+      "default" : "golden_brown"
+    }, {
+      "id" : "0e7c0f7d-f822-14e5-f76e-1ae0f3282916",
+      "name" : "features_icon_color",
+      "display_width" : null,
+      "label" : "Features  Icon Color",
+      "required" : false,
+      "locked" : false,
+      "display" : "select",
+      "choices" : [ [ "forest_green", "Forest Green" ], [ "dark_teal", "Dark Teal" ], [ "pale_green", "Pale Green" ], [ "silver_gray", "Silver Gray" ], [ "charcoal_gray", "Charcoal Gray" ], [ "golden_brown", "Golden Brown" ], [ "soft_white", "Soft White" ], [ "white_bg", "White" ] ],
+      "multiple" : false,
+      "reordering_enabled" : true,
+      "preset" : null,
+      "type" : "choice",
+      "default" : "white_bg"
+    }, {
+      "id" : "91ea3594-2643-43fb-b019-a4deb7e287bf",
+      "name" : "content_alignment",
+      "display_width" : null,
+      "label" : "Content Alignment",
+      "required" : false,
+      "locked" : false,
+      "display" : "select",
+      "choices" : [ [ "left", "Left" ], [ "center", "Center" ], [ "right", "Right" ] ],
+      "multiple" : false,
+      "reordering_enabled" : true,
+      "preset" : null,
+      "type" : "choice",
+      "default" : "left"
+    } ],
+    "tab" : "CONTENT",
+    "expanded" : false,
+    "group_occurrence_meta" : null,
+    "type" : "group",
+    "default" : {
+      "card_bg_clr" : "soft_white",
+      "card_reverse_text" : false,
+      "features_icon" : "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"24\" height=\"25\" viewBox=\"0 0 24 25\" fill=\"none\"><circle cx=\"12\" cy=\"12.4023\" r=\"10\" fill=\"#C49E5B\"/><path d=\"M17.5309 8.5355L17.5296 8.53668L9.88778 15.2733L6.47078 12.261C6.47071 12.261 6.47064 12.2609 6.47056 12.2609C6.37155 12.173 6.23682 12.1235 6.09629 12.1235C5.95572 12.1235 5.82098 12.173 5.72196 12.2609C5.72191 12.261 5.72186 12.261 5.7218 12.261L5.15601 12.7598C5.15595 12.7599 5.15587 12.7599 5.1558 12.76C5.05608 12.8473 5 12.9661 5 13.0899C5 13.2139 5.05611 13.3327 5.15587 13.4199C5.15592 13.42 5.15596 13.42 5.15601 13.4201L9.51733 17.2648C9.51741 17.2649 9.5175 17.2649 9.51758 17.265C9.61659 17.3529 9.75131 17.4023 9.89183 17.4023C10.0323 17.4023 10.1671 17.3529 10.2661 17.265C10.2661 17.2649 10.2662 17.2649 10.2663 17.2648L18.844 9.70314C18.844 9.70312 18.8441 9.70309 18.8441 9.70307C18.9439 9.61577 19 9.49696 19 9.37302C19 9.24924 18.944 9.13058 18.8445 9.04331C18.8443 9.04317 18.8442 9.04303 18.844 9.04288L18.2785 8.53721V8.5372L18.2765 8.5355C18.0687 8.35796 17.7386 8.35796 17.5309 8.5355Z\" fill=\"white\"/></svg>",
+      "features_icon_background_color" : "golden_brown",
+      "features_icon_color" : "white_bg",
+      "content_alignment" : "left"
+    }
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "group_occurrence_meta" : null,
+  "type" : "group",
+  "default" : {
+    "card_group" : {
+      "card_bg_clr" : "soft_white",
+      "card_reverse_text" : false,
+      "features_icon" : "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"24\" height=\"25\" viewBox=\"0 0 24 25\" fill=\"none\"><circle cx=\"12\" cy=\"12.4023\" r=\"10\" fill=\"#C49E5B\"/><path d=\"M17.5309 8.5355L17.5296 8.53668L9.88778 15.2733L6.47078 12.261C6.47071 12.261 6.47064 12.2609 6.47056 12.2609C6.37155 12.173 6.23682 12.1235 6.09629 12.1235C5.95572 12.1235 5.82098 12.173 5.72196 12.2609C5.72191 12.261 5.72186 12.261 5.7218 12.261L5.15601 12.7598C5.15595 12.7599 5.15587 12.7599 5.1558 12.76C5.05608 12.8473 5 12.9661 5 13.0899C5 13.2139 5.05611 13.3327 5.15587 13.4199C5.15592 13.42 5.15596 13.42 5.15601 13.4201L9.51733 17.2648C9.51741 17.2649 9.5175 17.2649 9.51758 17.265C9.61659 17.3529 9.75131 17.4023 9.89183 17.4023C10.0323 17.4023 10.1671 17.3529 10.2661 17.265C10.2661 17.2649 10.2662 17.2649 10.2663 17.2648L18.844 9.70314C18.844 9.70312 18.8441 9.70309 18.8441 9.70307C18.9439 9.61577 19 9.49696 19 9.37302C19 9.24924 18.944 9.13058 18.8445 9.04331C18.8443 9.04317 18.8442 9.04303 18.844 9.04288L18.2785 8.53721V8.5372L18.2765 8.5355C18.0687 8.35796 17.7386 8.35796 17.5309 8.5355Z\" fill=\"white\"/></svg>",
+      "features_icon_background_color" : "golden_brown",
+      "features_icon_color" : "white_bg",
+      "content_alignment" : "left"
+    }
+  }
+}, {
   "id" : "module_overrides",
   "name" : "module_overrides",
   "display_width" : null,
