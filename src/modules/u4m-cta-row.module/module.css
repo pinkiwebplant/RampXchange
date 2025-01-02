@@ -256,6 +256,9 @@ html {
 .u4m-cta-row .row.cards_reverse_text .intro_btn_wrap .btn_item .arrow-link:hover {
   color: #ffffff !important;
 }
+.u4m-cta-row .row.cards_reverse_text form .hs-form-field > label {
+  color: #ffffff !important;
+}
 @media (max-width: 767px) {
   .u4m-cta-row .row {
     padding: 20px;

@@ -261,6 +261,13 @@ color: $white !important;
           }
         }
       }
+      form {
+        .hs-form-field {
+          & > label{
+            color: $white !important;
+          }
+        }
+      }
     }
     @include tabletvert{
 padding: 20px;
