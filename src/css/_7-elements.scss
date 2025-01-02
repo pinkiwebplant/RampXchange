@@ -680,6 +680,69 @@ section[class*="u4m-"] {
   color: $white;
 }
 
+// SVG  Color
+.forest_green_textclr  svg path{
+  fill: $action1;
+}
+.dark_teal_textclr  svg path{
+  fill: $heading;
+}
+.pale_green_textclr  svg path{
+  fill: $digitalgreen;
+}
+.silver_gray_textclr  svg path{
+  fill: $gray1;
+}
+.charcoal_gray_textclr  svg path{
+  fill: $gray2;
+}
+.golden_brown_textclr svg path {
+  fill: $bronze;
+}
+.soft_white_textclr svg path {
+  fill: $airwhite;
+}
+.white_bg_textclr  svg path{
+  fill: $white;
+}
+
+
+// SVG  Background Color
+.forest_green_icon_bg  svg circle{
+  fill: $action1;
+}
+.dark_teal_icon_bg  svg circle{
+  fill: $heading;
+}
+.pale_green_icon_bg  svg circle{
+  fill: $digitalgreen;
+}
+.silver_gray_icon_bg  svg circle{
+  fill: $gray1;
+}
+.charcoal_gray_icon_bg  svg circle{
+  fill: $gray2;
+}
+.golden_brown_icon_bg svg circle {
+  fill: $bronze;
+}
+.soft_white_icon_bg svg circle {
+  fill: $airwhite;
+}
+.white_bg_icon_bg  svg circle{
+  fill: $white;
+}
+
+
+
+
+
+
+
+
+
+
+
 .bg_image {
   background-position: center center;
   background-repeat: no-repeat;

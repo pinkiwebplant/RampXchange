@@ -178,7 +178,9 @@ section.u4m-subscribe div.inner .right form .input input[type=email] {
   background-color: #ffffff;
   padding: 12rem;
   width: 100%;
-  appearance: none;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
   color: #213944;
 }
 section.u4m-subscribe div.inner .left form.hs-form .input input[type=text]:focus,
@@ -250,6 +252,9 @@ section.u4m-subscribe div.inner .right form .input input[type=email].error,
 section.u4m-subscribe div.inner .right form .input input[type=email].invalid {
   border: 1rem solid red;
 }
+section.u4m-subscribe div.inner .left form.hs-form .input input[type=text]::-moz-placeholder, section.u4m-subscribe div.inner .left form.hs-form .input input[type=number]::-moz-placeholder, section.u4m-subscribe div.inner .left form.hs-form .input input[type=tel]::-moz-placeholder, section.u4m-subscribe div.inner .left form.hs-form .input input[type=email]::-moz-placeholder, section.u4m-subscribe div.inner .left form.mixitup-multifilter .input input[type=text]::-moz-placeholder, section.u4m-subscribe div.inner .left form.mixitup-multifilter .input input[type=number]::-moz-placeholder, section.u4m-subscribe div.inner .left form.mixitup-multifilter .input input[type=tel]::-moz-placeholder, section.u4m-subscribe div.inner .left form.mixitup-multifilter .input input[type=email]::-moz-placeholder, section.u4m-subscribe div.inner .left form .input input[type=text]::-moz-placeholder, section.u4m-subscribe div.inner .left form .input input[type=number]::-moz-placeholder, section.u4m-subscribe div.inner .left form .input input[type=tel]::-moz-placeholder, section.u4m-subscribe div.inner .left form .input input[type=email]::-moz-placeholder, section.u4m-subscribe div.inner .right form.hs-form .input input[type=text]::-moz-placeholder, section.u4m-subscribe div.inner .right form.hs-form .input input[type=number]::-moz-placeholder, section.u4m-subscribe div.inner .right form.hs-form .input input[type=tel]::-moz-placeholder, section.u4m-subscribe div.inner .right form.hs-form .input input[type=email]::-moz-placeholder, section.u4m-subscribe div.inner .right form.mixitup-multifilter .input input[type=text]::-moz-placeholder, section.u4m-subscribe div.inner .right form.mixitup-multifilter .input input[type=number]::-moz-placeholder, section.u4m-subscribe div.inner .right form.mixitup-multifilter .input input[type=tel]::-moz-placeholder, section.u4m-subscribe div.inner .right form.mixitup-multifilter .input input[type=email]::-moz-placeholder, section.u4m-subscribe div.inner .right form .input input[type=text]::-moz-placeholder, section.u4m-subscribe div.inner .right form .input input[type=number]::-moz-placeholder, section.u4m-subscribe div.inner .right form .input input[type=tel]::-moz-placeholder, section.u4m-subscribe div.inner .right form .input input[type=email]::-moz-placeholder {
+  color: #6e757c;
+}
 section.u4m-subscribe div.inner .left form.hs-form .input input[type=text]::placeholder,
 section.u4m-subscribe div.inner .left form.hs-form .input input[type=number]::placeholder,
 section.u4m-subscribe div.inner .left form.hs-form .input input[type=tel]::placeholder,
@@ -319,7 +324,9 @@ section.u4m-subscribe div.inner .left form.hs-form .input select, section.u4m-su
 section.u4m-subscribe div.inner .right form.hs-form .input select,
 section.u4m-subscribe div.inner .right form.mixitup-multifilter .input select,
 section.u4m-subscribe div.inner .right form .input select {
-  appearance: none;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
   background: url("/src/templates/images/nav-arrow.svg") no-repeat;
   background-size: 13rem 8rem;
   background-position: calc(100% - 20rem) center;
@@ -433,6 +440,9 @@ section.u4m-subscribe div.inner .right form.hs-form textarea:focus,
 section.u4m-subscribe div.inner .right form.mixitup-multifilter textarea:focus,
 section.u4m-subscribe div.inner .right form textarea:focus {
   border: 1rem solid #213944;
+}
+section.u4m-subscribe div.inner .left form.hs-form textarea::-moz-placeholder, section.u4m-subscribe div.inner .left form.mixitup-multifilter textarea::-moz-placeholder, section.u4m-subscribe div.inner .left form textarea::-moz-placeholder, section.u4m-subscribe div.inner .right form.hs-form textarea::-moz-placeholder, section.u4m-subscribe div.inner .right form.mixitup-multifilter textarea::-moz-placeholder, section.u4m-subscribe div.inner .right form textarea::-moz-placeholder {
+  color: #6e757c;
 }
 section.u4m-subscribe div.inner .left form.hs-form textarea::placeholder, section.u4m-subscribe div.inner .left form.mixitup-multifilter textarea::placeholder, section.u4m-subscribe div.inner .left form textarea::placeholder,
 section.u4m-subscribe div.inner .right form.hs-form textarea::placeholder,
