@@ -52,32 +52,42 @@
 
 
 		$(window).scroll(function(){
-		var navHeight = $('.btns_nav').height()
-		$('.u4mAnchorNavWrap').css('min-height', navHeight);
-		var addHeaderHeight = $('.header').outerHeight();
-		var elm = $('.u4mAnchorNavWrap').offset().top - addHeaderHeight;
-		var scrollAmt = $(this).scrollTop();
-		if(scrollAmt > elm) {
-		  $('.u4m-anchor-nav-bar').addClass('fixed');
-		} else {
-		  $('.u4m-anchor-nav-bar').removeClass('fixed');
-		}
-	  });
+			var navHeight = $('.btns_nav').height()
+			$('.u4mAnchorNavWrap').css('min-height', navHeight);
+			var addHeaderHeight = $('.header').outerHeight();
+			var elm = $('.u4mAnchorNavWrap').offset().top - addHeaderHeight;
+			var scrollAmt = $(this).scrollTop();
+			if(scrollAmt > elm) {
+				$('.u4m-anchor-nav-bar').addClass('fixed');
+			} else {
+				$('.u4m-anchor-nav-bar').removeClass('fixed');
+			}
+		});
 
 
 		var buttonsHeight  ;
 
+		function buttonsHeightGet(height){
+			var heightValue = height
+			return heightValue;
+			console.log(heightValue)
+		}
+
+
 		$(window).on('load resize', function(){
 			if($(window).outerWidth() > 1022){
 				buttonsHeight  = $('.u4mAnchorNavWrap').outerHeight() ;
+				buttonsHeightGet(buttonsHeight)
 				//         console.log('buttonsHeight 1022',buttonsHeight)
 			}
 			if($(window).outerWidth() < 1022){
 				buttonsHeight  = 0 ;
+				buttonsHeightGet(buttonsHeight)
 				//         console.log('buttonsHeight less than 1022',buttonsHeight)
 			}
 			else{
 				buttonsHeight  = $('.u4mAnchorNavWrap').outerHeight() ;
+				buttonsHeightGet(buttonsHeight)
 			}
 		})
 
@@ -88,10 +98,24 @@
 			var target = $($(this).attr('href'));
 			var headerHeight  = $('.header').outerHeight() ;
 
+			var getNavWrap = $('.u4m-anchor-nav-bar').outerHeight()
+
+			if(getNavWrap){
+				var checkGap =  headerHeight + getNavWrap  - 35
+				}
+			else{
+				var checkGap =  headerHeight
+				}
+
+
+
+
 			if(target){
-				var getOffset = target.offset().top - 50 ; 
+				var getOffset = target.offset().top ; 
+				var checkGapNew = getOffset - checkGap
+				console.log('checkGapNew',checkGapNew);
 				$('html, body').animate({
-					scrollTop: getOffset
+					scrollTop: checkGapNew
 				}, 1200);
 				e.preventDefault();
 			}
@@ -105,13 +129,26 @@
 
 		function scrFn() {
 			var sTop = $(window).scrollTop();
-			var headerHeight = $('.header').outerHeight() + buttonsHeight;
+			// 			var headerHeight = $('.header').outerHeight() + buttonsHeight;
+
+			var headerHeight  = $('.header').outerHeight() ;
+
+			var getNavWrap = $('.u4m-anchor-nav-bar').outerHeight()
+
+			if(getNavWrap){
+				var checkGap =  headerHeight + getNavWrap
+				}
+			else{
+				var checkGap =  headerHeight
+				}
+
+
 			$('.x').each(function() {
 				var id = $(this).attr('id'),
 						offset = $(this).offset().top,
 						//             offset =  offset_top ,
 						height = $(this).height(),
-						offseGap = offset - height ;
+						offseGap = offset - checkGap ;
 
 				if(id == ""){
 					$(this).removeAttr('id');
@@ -136,39 +173,51 @@
 	});
 
 
-$(function() {
-  var link = $('.cm_btn');
+	$(function() {
+		var link = $('.cm_btn');
 
-  function scrFnn() {
-    var sTop = $(window).scrollTop(); // Current scroll position
-    var winHeight = $(window).height(); // Height of the viewport
+		function scrFnn() {
+			var sTop = $(window).scrollTop(); // Current scroll position
+			var winHeight = $(window).height(); // Height of the viewport
 
-    $('section').each(function() {
-      var id = $(this).attr('id'); // Get the section's ID
-      var offset = $(this).offset().top; // Get the section's offset from the top
-      var height = $(this).outerHeight(); // Get the section's height
-      var offseGap = offset - height / 43; // This triggers when the section is in the middle of the viewport
+			var headerHeight  = $('.header').outerHeight() ;
 
-      // Check if the section is within the viewport (hasn't been completely scrolled past)
-      if (sTop >= offseGap && sTop < offset + height) {
-        link.removeClass('active'); // Remove 'active' class from all links
-        $('a[href="#' + id + '"]').addClass('active'); // Add 'active' to the corresponding link
-      } 
-      // Remove active class if the section is completely out of view (bottom of section is past the viewport)
-      else if (sTop >= offset + height || sTop + winHeight <= offset) {
-        $('a[href="#' + id + '"]').removeClass('active'); // Remove 'active' class
-      }
-    });
-  }
+			var getNavWrap = $('.u4m-anchor-nav-bar').outerHeight()
 
-  // Run the function on scroll
-  $(window).on('scroll', function() {
-    scrFnn();
-  });
+			if(getNavWrap){
+				var checkGap =  headerHeight + getNavWrap - 35
+				}
+			else{
+				var checkGap =  headerHeight
+				}
 
-  // Initial call to set the active link when the page loads
-  scrFnn();
-});
+
+			$('section').each(function() {
+				var id = $(this).attr('id'); // Get the section's ID
+				var offset = $(this).offset().top; // Get the section's offset from the top
+				var height = $(this).outerHeight(); // Get the section's height
+				var offseGap = offset - checkGap; // This triggers when the section is in the middle of the viewport
+
+				// Check if the section is within the viewport (hasn't been completely scrolled past)
+				if (sTop >= offseGap && sTop < offset + height) {
+					link.removeClass('active'); // Remove 'active' class from all links
+					$('a[href="#' + id + '"]').addClass('active link'); // Add 'active' to the corresponding link
+				} 
+				// Remove active class if the section is completely out of view (bottom of section is past the viewport)
+				else if (sTop >= offset + height || sTop + winHeight <= offset) {
+					$('a[href="#' + id + '"]').removeClass('active link'); // Remove 'active' class
+				}
+			});
+		}
+
+		// Run the function on scroll
+		$(window).on('scroll', function() {
+			scrFnn();
+		});
+
+		// Initial call to set the active link when the page loads
+		scrFnn();
+	});
 
 
 
