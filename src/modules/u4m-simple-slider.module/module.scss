@@ -113,9 +113,12 @@
             }
               .intro_desc {
                 margin-bottom: 32px;
-                p {
-                  @include size23;
+                @include size23; 
+                &> span{ 
+                  display: inline-block;
+                  font-family: initial;  
                 }
+                
               }
               .author-section {
                 font-weight: 500;

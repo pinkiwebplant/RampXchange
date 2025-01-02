@@ -180,15 +180,6 @@
     "type" : "text",
     "default" : "Customer Quotes Slider"
   }, {
-    "id" : "da7cdc5c-ef4e-f6cb-4f03-8c231ddf2cd5",
-    "name" : "quotes",
-    "display_width" : null,
-    "label" : "Quotes",
-    "required" : false,
-    "locked" : false,
-    "type" : "richtext",
-    "default" : "<p>“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.”</p>"
-  }, {
     "id" : "3fb24b1e-772f-4551-7f7c-93ea54e7c115",
     "name" : "author_name",
     "display_width" : null,
@@ -200,6 +191,18 @@
     "show_emoji_picker" : false,
     "type" : "text",
     "default" : "John Doe"
+  }, {
+    "id" : "4b7a87cf-00e4-1b8c-a0f7-7698c6843bf0",
+    "name" : "quotes",
+    "display_width" : null,
+    "label" : "Quotes",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
   }, {
     "id" : "26d1c6aa-490c-b802-d163-fa859b7f1e62",
     "name" : "designation",
@@ -262,7 +265,6 @@
   "default" : [ {
     "eyebrow_text" : "Optional Eyebrow Text",
     "title" : "Customer Quotes Slider",
-    "quotes" : "<p>“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.”</p>",
     "author_name" : "John Doe",
     "designation" : "Chief Executive Officer, Ingram Micro",
     "logo_image" : {
@@ -284,11 +286,11 @@
       "height" : 1212,
       "max_width" : 1818,
       "max_height" : 1212
-    }
+    },
+    "quotes" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
   }, {
     "eyebrow_text" : "Optional Eyebrow Text",
     "title" : "Customer Quotes Slider",
-    "quotes" : "<p>“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.”</p>",
     "author_name" : "John Doe",
     "designation" : "Chief Executive Officer, Ingram Micro",
     "logo_image" : {
@@ -310,11 +312,11 @@
       "height" : 1212,
       "max_width" : 1818,
       "max_height" : 1212
-    }
+    },
+    "quotes" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
   }, {
     "eyebrow_text" : "Optional Eyebrow Text",
     "title" : "Customer Quotes Slider",
-    "quotes" : "<p>“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.”</p>",
     "author_name" : "John Doe",
     "designation" : "Chief Executive Officer, Ingram Micro",
     "logo_image" : {
@@ -336,11 +338,11 @@
       "height" : 1212,
       "max_width" : 1818,
       "max_height" : 1212
-    }
+    },
+    "quotes" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
   }, {
     "eyebrow_text" : "Optional Eyebrow Text",
     "title" : "Customer Quotes Slider",
-    "quotes" : "<p>“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.”</p>",
     "author_name" : "John Doe",
     "designation" : "Chief Executive Officer, Ingram Micro",
     "logo_image" : {
@@ -362,7 +364,8 @@
       "height" : 1212,
       "max_width" : 1818,
       "max_height" : 1212
-    }
+    },
+    "quotes" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
   } ]
 }, {
   "id" : "ccfdd25a-f168-b2f1-a9e7-0b1d981ffa79",
