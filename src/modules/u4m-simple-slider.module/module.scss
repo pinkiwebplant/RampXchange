@@ -23,14 +23,14 @@
         background-position: center center;
         background-size: cover;
         margin-left: -11.2%;
-        @include tabletvert {
+        @include tablet {
           display: none;
         }
       }
       .row {
         display: flex;
         flex-wrap: wrap;
-        @include tabletvert {
+        @include tablet {
           flex-direction: column-reverse;
         }
         .leftColumn {
@@ -47,7 +47,7 @@
             gap: 20px;
             z-index: 221;
             right: 0;
-            @include tabletvert {
+            @include tablet {
               top: auto;
               justify-content: flex-start;
               bottom: 40px;
@@ -83,7 +83,7 @@
             }
           }
           width: 50%;
-          @include tabletvert {
+          @include tablet {
             width: 100%;
           }
           .slider_wrapper {
@@ -92,8 +92,8 @@
             .left_section {
               position: relative;
               z-index: 99;
-              padding: 89px 0;
-              @include tabletvert {
+              padding: 89px 0 70px;
+              @include tablet {
                 padding: 40px 0 120px;
               }
               .topSec{
@@ -102,7 +102,7 @@
                     max-width: 100%;
                     padding-right: 120px;
                 }
-                @include tabletvert {
+                @include tablet {
                   padding-right: 0;
                 }
               .eyebrow_text {
@@ -136,7 +136,7 @@
           width: calc(50% + 38px);
           margin-left: -38px;
           display: flex;
-          @include tabletvert {
+          @include tablet {
             width: 100%;
             margin-left: 0;
           }
@@ -154,13 +154,20 @@
                       display: block;
 
                 .media_section {
-                  height: 100%;
-                  display: block;
-                  background-size: cover;
-                  background-position: center;
-                  background-repeat: no-repeat;
-                  @include tabletvert {
-                    min-height: 50vw;
+                  position: absolute;
+                  top: -179px;
+                  left: -50px;
+                  min-width: 747px;
+                  @include tablet {
+                    position: static;
+                    min-width: 100%;
+                    img {
+                      mask: none !important;
+                      -webkit-mask-box-image: none !important;
+                      width: 100%;
+                      height: auto;
+                      object-position: inherit;
+                    }
                   }
                 }
                   }
