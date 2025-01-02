@@ -10412,6 +10412,13 @@ section.u4m-blog-post div.comments div.content form .hs-button:hover, section.u4
     margin-top: 20px;
   }
 }
+.footer-wrapper.no_nav .footer .bottom-footer {
+  border: none;
+  padding: 0;
+}
+.footer-wrapper.no_nav .footer .bottom-footer .copyright {
+  margin-top: 0;
+}
 
 .header-wrapper ul {
   list-style: none;

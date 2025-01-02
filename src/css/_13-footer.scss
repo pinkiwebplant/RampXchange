@@ -212,4 +212,13 @@
       }
     }
   }
+  &.no_nav{
+    .footer .bottom-footer{
+      border: none;
+      padding: 0;
+    }
+    .footer .bottom-footer .copyright{
+      margin-top: 0;
+    }
+  }
 }
