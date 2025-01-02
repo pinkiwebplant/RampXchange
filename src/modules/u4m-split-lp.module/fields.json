@@ -501,12 +501,30 @@
     "type" : "richtext",
     "default" : "<h3>Form Heading</h3>\n<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.</p>"
   }, {
+    "id" : "ef053b73-1b23-4c4c-e852-a5afe27911f1",
+    "name" : "include_form",
+    "display_width" : null,
+    "label" : "Include Form",
+    "required" : false,
+    "locked" : false,
+    "display" : "checkbox",
+    "type" : "boolean",
+    "default" : true
+  }, {
     "id" : "b26e4b09-2de0-f426-3b49-c15f20335764",
     "name" : "select_form",
     "display_width" : null,
     "label" : "Select Form",
     "required" : false,
     "locked" : false,
+    "visibility" : {
+      "controlling_field" : null,
+      "controlling_field_path" : "form_section.include_form",
+      "controlling_value_regex" : "true",
+      "property" : null,
+      "operator" : "EQUAL",
+      "access" : null
+    },
     "type" : "form",
     "default" : {
       "form_id" : "e43e392c-c7e0-4b10-a278-1fdd71c04e94",
@@ -524,6 +542,7 @@
   "type" : "group",
   "default" : {
     "content" : "<h3>Form Heading</h3>\n<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.</p>",
+    "include_form" : true,
     "select_form" : {
       "form_id" : "e43e392c-c7e0-4b10-a278-1fdd71c04e94",
       "response_type" : "inline",

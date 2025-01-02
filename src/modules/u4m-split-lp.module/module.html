@@ -26,6 +26,7 @@
 				{% if module.form_section.content %}
 				<div class="formContent">{{ module.form_section.content }}</div>
 				{% endif %}
+				{% if module.form_section.include_form %}
 				<div class="formSec">
 					{% form
 						form_to_use="{{ module.form_section.select_form.form_id }}"
@@ -36,6 +37,7 @@
 						gotowebinar_webinar_key="{{ module.form_section.select_form.gotowebinar_webinar_key }}"
 					%}
 				</div>
+				{% endif %}
 			</div>
 		</div>
 	</div>
