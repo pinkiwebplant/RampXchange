@@ -160,11 +160,15 @@ html {
   margin: 0;
 }
 .u4m-cta-row .row .media_section form {
+  align-items: center;
   display: flex;
-  margin: 0;
   gap: 8px;
-  align-items: end;
+  margin: 0;
   position: relative;
+  max-width: 100%;
+  background: transparent;
+  padding: 0;
+  overflow: visible;
 }
 .u4m-cta-row .row .media_section form .hs_error_rollup {
   position: absolute;
