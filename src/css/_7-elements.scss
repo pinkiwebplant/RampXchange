@@ -402,21 +402,22 @@ form {
 }
 
 ::-webkit-input-placeholder {
-  color: $gray3;
+  color: $gray2;
+
   opacity: 1;
   font-weight: normal;
 }
 
 /* Webkit input placeholders */
 ::-moz-placeholder {
-  color: $gray3;
+  color: $gray2;
   opacity: 1;
   font-weight: normal;
 }
 
 /* Firefox input placeholders */
 :-ms-input-placeholder {
-  color: $gray3;
+  color: $gray2;
   opacity: 1;
   font-weight: normal;
 }

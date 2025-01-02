@@ -3491,21 +3491,21 @@ form {
 }
 
 ::-webkit-input-placeholder {
-  color: #eeeeee;
+  color: #6e757c;
   opacity: 1;
   font-weight: normal;
 }
 
 /* Webkit input placeholders */
 ::-moz-placeholder {
-  color: #eeeeee;
+  color: #6e757c;
   opacity: 1;
   font-weight: normal;
 }
 
 /* Firefox input placeholders */
 :-ms-input-placeholder {
-  color: #eeeeee;
+  color: #6e757c;
   opacity: 1;
   font-weight: normal;
 }
@@ -5341,6 +5341,8 @@ section.u4m-password-prompt form {
   border-radius: 12rem;
   float: none;
   overflow: auto;
+  margin-left: auto;
+  margin-right: auto;
   text-align: left;
   padding-bottom: 50rem;
 }
@@ -7679,19 +7681,39 @@ section.u4m-password-prompt form .hs-richtext p {
   font-size: 11rem;
   color: #6e757c;
 }
+section.u4m-membership-login form .hs-form-field > label,
+section.u4m-membership-register form .hs-form-field > label,
+section.u4m-membership-reset-password-request form .hs-form-field > label,
+section.u4m-membership-reset-password form .hs-form-field > label,
+section.u4m-password-prompt form .hs-form-field > label {
+  display: inline-block;
+}
+section.u4m-membership-login form .hs-form-field > label + a,
+section.u4m-membership-register form .hs-form-field > label + a,
+section.u4m-membership-reset-password-request form .hs-form-field > label + a,
+section.u4m-membership-reset-password form .hs-form-field > label + a,
+section.u4m-password-prompt form .hs-form-field > label + a {
+  display: inline-block;
+}
 section.u4m-membership-login form input,
 section.u4m-membership-register form input,
 section.u4m-membership-reset-password-request form input,
 section.u4m-membership-reset-password form input,
 section.u4m-password-prompt form input {
-  border: 1rem solid transparent;
+  border: 1rem solid #213944;
   border-radius: 4rem;
   margin-top: 2rem;
   margin-bottom: 20rem;
   font-size: 16rem !important;
   padding: 16rem !important;
-  width: 100% !important;
   background-color: #ffffff;
+}
+section.u4m-membership-login form input:not([type=checkbox]):not([type=radio]),
+section.u4m-membership-register form input:not([type=checkbox]):not([type=radio]),
+section.u4m-membership-reset-password-request form input:not([type=checkbox]):not([type=radio]),
+section.u4m-membership-reset-password form input:not([type=checkbox]):not([type=radio]),
+section.u4m-password-prompt form input:not([type=checkbox]):not([type=radio]) {
+  width: 100% !important;
 }
 section.u4m-membership-login form input#hs-login-widget-remember,
 section.u4m-membership-register form input#hs-login-widget-remember,
@@ -7709,6 +7731,13 @@ section.u4m-password-prompt form a {
   display: block;
   font-weight: bold;
   font-size: 12rem;
+}
+section.u4m-membership-login form .hs-button,
+section.u4m-membership-register form .hs-button,
+section.u4m-membership-reset-password-request form .hs-button,
+section.u4m-membership-reset-password form .hs-button,
+section.u4m-password-prompt form .hs-button {
+  margin-top: 20px;
 }
 section.u4m-membership-login p a,
 section.u4m-membership-register p a,
@@ -10477,6 +10506,27 @@ section.u4m-blog-post div.comments div.content form .hs-button:hover, section.u4
   margin-top: 0;
 }
 
+.header-wrapper header.header {
+  min-height: 120px;
+}
+@media (min-width: 768px) {
+  .header-wrapper header.header {
+    min-height: 123px;
+  }
+}
+@media (min-width: 1025px) {
+  .header-wrapper header.header {
+    min-height: 144px;
+  }
+}
+.header-wrapper.no-nav header.header {
+  min-height: 79px;
+}
+@media (min-width: 1025px) {
+  .header-wrapper.no-nav header.header {
+    min-height: 104px;
+  }
+}
 .header-wrapper ul {
   list-style: none;
   margin: 0;

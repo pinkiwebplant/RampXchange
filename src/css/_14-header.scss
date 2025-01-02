@@ -1,5 +1,21 @@
 .header-wrapper {
-    
+    header.header {
+        min-height: 120px;
+        @include tabletvertmin {
+            min-height: 123px;
+        }
+        @include tabletMin {
+            min-height: 144px;
+        }
+    }
+    &.no-nav {
+        header.header {
+            min-height: 79px;
+            @include tabletMin {
+                min-height: 104px;
+            }
+        }
+    }
     ul {
         list-style: none;
         margin: 0;
@@ -77,14 +93,13 @@
                     .site_logo_inn {
                         width: calc(100% - 50px);
                     }
-                } 
+                }
                 img {
                     max-width: 100%;
                     width: 325.71px !important;
                     @include tabletvert {
                         width: 200px !important;
                     }
-                    
                 }
             }
             .main_menu {
@@ -133,13 +148,13 @@
                             width: 100%;
                             @include size16;
                         }
-                        li { 
+                        li {
                             padding-right: 20px;
                             position: relative;
                             float: none;
                             letter-spacing: normal;
                             margin-bottom: 0;
-                            @include navbreak{
+                            @include navbreak {
                                 padding-right: 10px;
                             }
                             &:last-child {
@@ -298,7 +313,7 @@
                         transition:
                             transform 0.3s ease,
                             opacity 0.3s ease;
-                    } 
+                    }
                     &.trigger-open {
                         height: 18px;
                         span {
@@ -358,12 +373,10 @@
             }
         }
     }
-    .header-inner{
+    .header-inner {
         position: fixed;
         width: 100%;
         top: 0;
-        z-index: 99; 
-        
+        z-index: 99;
     }
 }
- 
