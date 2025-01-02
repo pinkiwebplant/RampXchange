@@ -1,86 +1,109 @@
+html {
+  font-size: 1px;
+}
+
+/* auto scale down elements on mobile */
+@media (max-width: 580px) {
+  html {
+    font-size: 1px;
+  }
+}
+
+/* auto scale up elements on large displays */
+@media (min-width: 2560px) {
+  html {
+    font-size: 1px;
+  }
+}
+
 .u4m-pricing-cards .intro_content {
-	margin-bottom: 60rem;
+  margin-bottom: 60rem;
 }
-
 .u4m-pricing-cards .btms {
-	display: flex;
-	margin: 0 -10px;
+  display: flex;
+  margin: 0 -10px;
+  flex-wrap: wrap;
+  row-gap: 20px;
 }
-
 .u4m-pricing-cards .btms .items {
-	padding: 0 20px;
+  width: 25%;
+  max-width: 100%;
+  padding: 0 10px;
 }
-
 .u4m-pricing-cards .btms .items .innerCntt {
-	padding: 36px 24px;
-	border-radius: 12px;
-	overflow: hidden;
-	height: 100%;
+  padding: 36px 24px;
+  border-radius: 12px;
+  overflow: hidden;
+  height: 100%;
 }
-
 .u4m-pricing-cards .btms .items .innerCntt .img {
-	margin-bottom: 32px;
+  margin-bottom: 32px;
 }
-
 .u4m-pricing-cards .btms .items .innerCntt .img img {
-	height: 40px !important;
-	width: auto;
-	object-fit: cover;
+  height: 40px !important;
+  width: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
-
 .u4m-pricing-cards .btms .items .innerCntt .cntt {
-	margin-bottom: 32px;
+  margin-bottom: 32px;
 }
-.u4m-pricing-cards .btms .items .innerCntt .cntt > *{
-	color:$heading;
-}
-.u4m-pricing-cards .btms .items .innerCntt.card_reverse_text .cntt > *{
-	color:$white;
-}
-.u4m-pricing-cards .btms .items .innerCntt hr {
-	margin: 0;
-	border-top: 1rem solid $gray1;
-}
-.u4m-pricing-cards .btms .items .innerCntt.card_reverse_text hr{
-	border-color:$white;
-}
-.u4m-pricing-cards .btms .items .innerCntt .features {
-	padding-top: 32px;
-}
-
-.u4m-pricing-cards .btms .items .innerCntt .features .features_items {
-	display: flex;
-	align-items: center;
-	gap: 8px;
-}
-
-.u4m-pricing-cards .btms .items .innerCntt.left_cnt {
-	text-align: left;
-}
-
-.u4m-pricing-cards .btms .items .innerCntt.right_cnt {
-	text-align: right;
-}
-.u4m-pricing-cards .btms .items .innerCntt.center_cnt {
-	text-align: center;
-}
-
-.u4m-pricing-cards .btms .items .innerCntt.right_cnt .features .features_items {
-	justify-content:right;
-}
-
-.u4m-pricing-cards .btms .items .innerCntt.left_cnt .features .features_items {
-	justify-content:left;
-}
-.u4m-pricing-cards .btms .items .innerCntt.center_cnt .features .features_items {
-	justify-content:center;
-}
-.u4m-pricing-cards .btms .items .innerCntt .features .features_items{
-	color:$heading;
-}
-.u4m-pricing-cards .btms .items .innerCntt.card_reverse_text .features .features_items{
-	color:$white;
+.u4m-pricing-cards .btms .items .innerCntt .cntt > * {
+  color: #213944;
 }
 .u4m-pricing-cards .btms .items .innerCntt .cntt p:last-child {
-	margin: 0;
+  margin: 0;
+}
+.u4m-pricing-cards .btms .items .innerCntt hr {
+  margin: 0;
+  border-top: 1rem solid #dbdbdb;
+}
+.u4m-pricing-cards .btms .items .innerCntt .features {
+  padding-top: 32px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.u4m-pricing-cards .btms .items .innerCntt .features .features_items {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #213944;
+}
+.u4m-pricing-cards .btms .items .innerCntt.card_reverse_text .cntt > * {
+  color: #ffffff;
+}
+.u4m-pricing-cards .btms .items .innerCntt.card_reverse_text hr {
+  border-color: #ffffff;
+}
+.u4m-pricing-cards .btms .items .innerCntt.card_reverse_text .features .features_items {
+  color: #ffffff;
+}
+.u4m-pricing-cards .btms .items .innerCntt.left_cnt {
+  text-align: left;
+}
+.u4m-pricing-cards .btms .items .innerCntt.left_cnt .features .features_items {
+  justify-content: left;
+}
+.u4m-pricing-cards .btms .items .innerCntt.right_cnt {
+  text-align: right;
+}
+.u4m-pricing-cards .btms .items .innerCntt.right_cnt .features .features_items {
+  justify-content: right;
+}
+.u4m-pricing-cards .btms .items .innerCntt.center_cnt {
+  text-align: center;
+}
+.u4m-pricing-cards .btms .items .innerCntt.center_cnt .features .features_items {
+  justify-content: center;
+}
+@media (max-width: 991px) {
+  .u4m-pricing-cards .btms .items {
+    width: 50%;
+  }
+}
+@media (max-width: 767px) {
+  .u4m-pricing-cards .btms .items {
+    width: 100%;
+  }
 }
