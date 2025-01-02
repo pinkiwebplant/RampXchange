@@ -35,7 +35,7 @@ width: 100%;
       gap: 30px;
       flex-direction: column-reverse;
       &.form{
-        flex-direction: row-reverse;
+        flex-direction: row-reverse !important;
       }
     }
 

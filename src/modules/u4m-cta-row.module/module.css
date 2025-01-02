@@ -49,7 +49,7 @@ html {
     flex-direction: column-reverse;
   }
   .u4m-cta-row .row.form {
-    flex-direction: row-reverse;
+    flex-direction: row-reverse !important;
   }
 }
 .u4m-cta-row .row.right_col {
