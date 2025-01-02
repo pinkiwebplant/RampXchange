@@ -83,6 +83,9 @@
                 color: $heading;
                 font-weight: 600;
                 line-height: 1.3;
+                &:hover{
+                  color: $action1;
+                }
               }
             }
           }
@@ -154,6 +157,9 @@
                 color: $heading;
                 font-weight: 600;
                 line-height: 1.3;
+                &:hover{
+                  color: $action1;
+                }
               }
             }
           }
@@ -189,6 +195,9 @@
               color: $heading;
               font-weight: 600;
               line-height: 1.3;
+              &:hover{
+                color: $action1;
+              }
             }
           }
         }

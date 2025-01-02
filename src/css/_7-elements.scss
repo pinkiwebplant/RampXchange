@@ -777,3 +777,15 @@ form {
     height: 60px;
   }
 }
+
+
+.intro_btn_wrap a.sec-btn, .intro_btn_wrap .hs-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+}
+
+.intro_btn_wrap a.sec-btn svg path, .intro_btn_wrap .hs-button svg path {
+  fill: currentColor;
+}
