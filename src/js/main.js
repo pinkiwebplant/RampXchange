@@ -77,3 +77,11 @@ $(function () {
 		return false;
 	});
 });
+
+$(document).ready(function () {
+  function headerHeight() {
+    var elm = $('.header-inner').outerHeight(true);
+    $('header.header').css('min-height', elm);
+  }
+  $(window).on('load resize', headerHeight);
+});

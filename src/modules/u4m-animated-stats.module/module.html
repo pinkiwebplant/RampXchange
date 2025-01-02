@@ -25,7 +25,8 @@
 					<div class="stats-item-inn">
 						<span class="number {{ module.card_settings.select_count_text_color }}">
 							<span class="prefix">{{ item.prefix }}</span>
-							<span class="counter-value" data-count="{{ item.numeric_stat }}">0</span>
+{# 							<span class="counter-value counter" data-count="{{ item.numeric_stat }}">0</span> #}
+														<span class="counter-value counter" data-count="{{ item.numeric_stat }}">{{ item.numeric_stat }}</span>
 							<span class="suffix">{{ item.suffix }}</span>
 						</span>
 						<span class="caption {{ module.card_settings.select_content_text_color }}">{{ item.caption }}</span>
@@ -66,29 +67,35 @@
 
 		var oTop = $('.{{name}}.u4m-animated-stats .statistics-items').offset().top - window.innerHeight;
 								 if (a == 0 && $(window).scrollTop() > oTop) {
-			$('.counter-value').each(function() {
-				var $this = $(this),
-						countTo = $this.attr('data-count');
-				$({
-					countNum: $this.text()
-				}).animate({
-					countNum: countTo
-				},
+// 			$('.counter-value').each(function() {
+// 				var $this = $(this),
+// 						countTo = $this.attr('data-count');
+// 				$({
+// 					countNum: $this.text()
+// 				}).animate({
+// 					countNum: countTo
+// 				},
 
-									 {
+// 									 {
 
-					duration: 5000,
-					easing: 'swing',
-					step: function() {
-						$this.text(Math.floor(this.countNum));
-					},
-					complete: function() {
-						$this.text(this.countNum);
-						//alert('finished');
-					}
+// 					duration: 5000,
+// 					easing: 'swing',
+// 					step: function() {
+// 						$this.text(Math.floor(this.countNum));
+// 					},
+// 					complete: function() {
+// 						$this.text(this.countNum);
+// 						//alert('finished');
+// 					}
 
-				});
-			});
+// 				});
+// 			});
+			
+			      $('.counter').counterUp({
+                delay: 10,
+                time: 1000
+            });
+			
 			a = 1;
 		}
 
