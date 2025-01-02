@@ -77,7 +77,8 @@ a {
 abbr[title] {
   border-bottom: none; /* 1 */
   text-decoration: underline; /* 2 */
-  text-decoration: underline dotted; /* 2 */
+  -webkit-text-decoration: underline dotted;
+          text-decoration: underline dotted; /* 2 */
 }
 
 /**
@@ -407,7 +408,6 @@ select {
   padding: 6px;
   display: inline-block;
   width: 100%;
-  -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
 
@@ -2183,11 +2183,9 @@ body {
   box-sizing: border-box;
   -webkit-user-select: none;
   -moz-user-select: none;
-  -ms-user-select: none;
   user-select: none;
   -webkit-touch-callout: none;
   -khtml-user-select: none;
-  -ms-touch-action: pan-y;
   touch-action: pan-y;
   -webkit-tap-highlight-color: transparent;
 }
@@ -2211,10 +2209,6 @@ body {
 
 .slick-slider .slick-track,
 .slick-slider .slick-list {
-  -webkit-transform: translate3d(0, 0, 0);
-  -moz-transform: translate3d(0, 0, 0);
-  -ms-transform: translate3d(0, 0, 0);
-  -o-transform: translate3d(0, 0, 0);
   transform: translate3d(0, 0, 0);
 }
 
@@ -2294,8 +2288,6 @@ body {
   width: 20px;
   height: 20px;
   padding: 0;
-  -webkit-transform: translate(0, -50%);
-  -ms-transform: translate(0, -50%);
   transform: translate(0, -50%);
   cursor: pointer;
   color: transparent;
@@ -2474,8 +2466,6 @@ body {
   left: 0;
   top: 0;
   padding: 0 8px;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
 
@@ -2509,15 +2499,11 @@ body {
 }
 
 .mfp-zoom-out-cur, .mfp-zoom-out-cur .mfp-image-holder .mfp-close {
-  cursor: -moz-zoom-out;
-  cursor: -webkit-zoom-out;
   cursor: zoom-out;
 }
 
 .mfp-zoom {
   cursor: pointer;
-  cursor: -webkit-zoom-in;
-  cursor: -moz-zoom-in;
   cursor: zoom-in;
 }
 
@@ -2573,7 +2559,6 @@ button.mfp-arrow, button.mfp-close {
   outline: 0;
   padding: 0;
   z-index: 1046;
-  -webkit-box-shadow: none;
   box-shadow: none;
 }
 
@@ -2743,8 +2728,6 @@ img.mfp-img {
   height: auto;
   display: block;
   line-height: 0;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
   box-sizing: border-box;
   padding: 40px 0;
   margin: 0 auto;
@@ -2828,8 +2811,6 @@ img.mfp-img {
     top: auto;
     padding: 3px 5px;
     position: fixed;
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
     box-sizing: border-box;
   }
   .mfp-img-mobile .mfp-bottom-bar:empty {
@@ -2853,15 +2834,12 @@ img.mfp-img {
 }
 @media all and (max-width: 900px) {
   .mfp-arrow {
-    -webkit-transform: scale(0.75);
     transform: scale(0.75);
   }
   .mfp-arrow-left {
-    -webkit-transform-origin: 0;
     transform-origin: 0;
   }
   .mfp-arrow-right {
-    -webkit-transform-origin: 100%;
     transform-origin: 100%;
   }
   .mfp-container {
@@ -4048,7 +4026,9 @@ form .input input[type=email] {
   outline: none !important;
   padding: 13rem 12rem;
   width: 100%;
-  appearance: none;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
   color: #213944;
 }
 form.hs-form .input input[type=text]:focus,
@@ -4083,6 +4063,9 @@ form .input input[type=tel].invalid,
 form .input input[type=email].error,
 form .input input[type=email].invalid {
   border: 1rem solid red;
+}
+form.hs-form .input input[type=text]::-moz-placeholder, form.hs-form .input input[type=number]::-moz-placeholder, form.hs-form .input input[type=tel]::-moz-placeholder, form.hs-form .input input[type=email]::-moz-placeholder, form.mixitup-multifilter .input input[type=text]::-moz-placeholder, form.mixitup-multifilter .input input[type=number]::-moz-placeholder, form.mixitup-multifilter .input input[type=tel]::-moz-placeholder, form.mixitup-multifilter .input input[type=email]::-moz-placeholder, form .input input[type=text]::-moz-placeholder, form .input input[type=number]::-moz-placeholder, form .input input[type=tel]::-moz-placeholder, form .input input[type=email]::-moz-placeholder {
+  color: #6e757c;
 }
 form.hs-form .input input[type=text]::placeholder,
 form.hs-form .input input[type=number]::placeholder,
@@ -4159,7 +4142,9 @@ form .input input[type=radio] {
   margin: 0;
   height: 20px;
   width: 20px !important;
-  appearance: none;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
   outline: none !important;
 }
 form.hs-form .input input[type=checkbox]:checked + *:before, form.hs-form .input input[type=checkbox]:checked + *:before,
@@ -4201,7 +4186,9 @@ form.hs-form .input input[type=file], form.mixitup-multifilter .input input[type
   margin-bottom: 20rem;
 }
 form.hs-form .input select, form.mixitup-multifilter .input select, form .input select {
-  appearance: none;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
   background-position: calc(100% - 20rem) center;
   border: 1rem solid #6e757c;
   border-radius: 4rem;
@@ -4293,6 +4280,10 @@ form.hs-form textarea, form.mixitup-multifilter textarea, form textarea {
 }
 form.hs-form textarea:focus, form.mixitup-multifilter textarea:focus, form textarea:focus {
   border: 1rem solid #213944;
+}
+form.hs-form textarea::-moz-placeholder, form.mixitup-multifilter textarea::-moz-placeholder, form textarea::-moz-placeholder {
+  color: #6e757c;
+  font-size: 13rem;
 }
 form.hs-form textarea::placeholder, form.mixitup-multifilter textarea::placeholder, form textarea::placeholder {
   color: #6e757c;
@@ -4757,7 +4748,9 @@ section.u4m-backup-unsubscribe form .input input[type=email] {
   outline: none !important;
   padding: 13rem 12rem;
   width: 100%;
-  appearance: none;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
   color: #213944;
 }
 section.u4m-backup-unsubscribe form.hs-form .input input[type=text]:focus,
@@ -4792,6 +4785,9 @@ section.u4m-backup-unsubscribe form .input input[type=tel].invalid,
 section.u4m-backup-unsubscribe form .input input[type=email].error,
 section.u4m-backup-unsubscribe form .input input[type=email].invalid {
   border: 1rem solid red;
+}
+section.u4m-backup-unsubscribe form.hs-form .input input[type=text]::-moz-placeholder, section.u4m-backup-unsubscribe form.hs-form .input input[type=number]::-moz-placeholder, section.u4m-backup-unsubscribe form.hs-form .input input[type=tel]::-moz-placeholder, section.u4m-backup-unsubscribe form.hs-form .input input[type=email]::-moz-placeholder, section.u4m-backup-unsubscribe form.mixitup-multifilter .input input[type=text]::-moz-placeholder, section.u4m-backup-unsubscribe form.mixitup-multifilter .input input[type=number]::-moz-placeholder, section.u4m-backup-unsubscribe form.mixitup-multifilter .input input[type=tel]::-moz-placeholder, section.u4m-backup-unsubscribe form.mixitup-multifilter .input input[type=email]::-moz-placeholder, section.u4m-backup-unsubscribe form .input input[type=text]::-moz-placeholder, section.u4m-backup-unsubscribe form .input input[type=number]::-moz-placeholder, section.u4m-backup-unsubscribe form .input input[type=tel]::-moz-placeholder, section.u4m-backup-unsubscribe form .input input[type=email]::-moz-placeholder {
+  color: #6e757c;
 }
 section.u4m-backup-unsubscribe form.hs-form .input input[type=text]::placeholder,
 section.u4m-backup-unsubscribe form.hs-form .input input[type=number]::placeholder,
@@ -4868,7 +4864,9 @@ section.u4m-backup-unsubscribe form .input input[type=radio] {
   margin: 0;
   height: 20px;
   width: 20px !important;
-  appearance: none;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
   outline: none !important;
 }
 section.u4m-backup-unsubscribe form.hs-form .input input[type=checkbox]:checked + *:before, section.u4m-backup-unsubscribe form.hs-form .input input[type=checkbox]:checked + *:before,
@@ -4910,7 +4908,9 @@ section.u4m-backup-unsubscribe form.hs-form .input input[type=file], section.u4m
   margin-bottom: 20rem;
 }
 section.u4m-backup-unsubscribe form.hs-form .input select, section.u4m-backup-unsubscribe form.mixitup-multifilter .input select, section.u4m-backup-unsubscribe form .input select {
-  appearance: none;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
   background-position: calc(100% - 20rem) center;
   border: 1rem solid #6e757c;
   border-radius: 4rem;
@@ -5002,6 +5002,10 @@ section.u4m-backup-unsubscribe form.hs-form textarea, section.u4m-backup-unsubsc
 }
 section.u4m-backup-unsubscribe form.hs-form textarea:focus, section.u4m-backup-unsubscribe form.mixitup-multifilter textarea:focus, section.u4m-backup-unsubscribe form textarea:focus {
   border: 1rem solid #213944;
+}
+section.u4m-backup-unsubscribe form.hs-form textarea::-moz-placeholder, section.u4m-backup-unsubscribe form.mixitup-multifilter textarea::-moz-placeholder, section.u4m-backup-unsubscribe form textarea::-moz-placeholder {
+  color: #6e757c;
+  font-size: 13rem;
 }
 section.u4m-backup-unsubscribe form.hs-form textarea::placeholder, section.u4m-backup-unsubscribe form.mixitup-multifilter textarea::placeholder, section.u4m-backup-unsubscribe form textarea::placeholder {
   color: #6e757c;
@@ -5611,7 +5615,9 @@ section.u4m-password-prompt form .input input[type=email] {
   outline: none !important;
   padding: 13rem 12rem;
   width: 100%;
-  appearance: none;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
   color: #213944;
 }
 section.u4m-membership-login form.hs-form .input input[type=text]:focus,
@@ -5790,6 +5796,9 @@ section.u4m-password-prompt form .input input[type=tel].invalid,
 section.u4m-password-prompt form .input input[type=email].error,
 section.u4m-password-prompt form .input input[type=email].invalid {
   border: 1rem solid red;
+}
+section.u4m-membership-login form.hs-form .input input[type=text]::-moz-placeholder, section.u4m-membership-login form.hs-form .input input[type=number]::-moz-placeholder, section.u4m-membership-login form.hs-form .input input[type=tel]::-moz-placeholder, section.u4m-membership-login form.hs-form .input input[type=email]::-moz-placeholder, section.u4m-membership-login form.mixitup-multifilter .input input[type=text]::-moz-placeholder, section.u4m-membership-login form.mixitup-multifilter .input input[type=number]::-moz-placeholder, section.u4m-membership-login form.mixitup-multifilter .input input[type=tel]::-moz-placeholder, section.u4m-membership-login form.mixitup-multifilter .input input[type=email]::-moz-placeholder, section.u4m-membership-login form .input input[type=text]::-moz-placeholder, section.u4m-membership-login form .input input[type=number]::-moz-placeholder, section.u4m-membership-login form .input input[type=tel]::-moz-placeholder, section.u4m-membership-login form .input input[type=email]::-moz-placeholder, section.u4m-membership-register form.hs-form .input input[type=text]::-moz-placeholder, section.u4m-membership-register form.hs-form .input input[type=number]::-moz-placeholder, section.u4m-membership-register form.hs-form .input input[type=tel]::-moz-placeholder, section.u4m-membership-register form.hs-form .input input[type=email]::-moz-placeholder, section.u4m-membership-register form.mixitup-multifilter .input input[type=text]::-moz-placeholder, section.u4m-membership-register form.mixitup-multifilter .input input[type=number]::-moz-placeholder, section.u4m-membership-register form.mixitup-multifilter .input input[type=tel]::-moz-placeholder, section.u4m-membership-register form.mixitup-multifilter .input input[type=email]::-moz-placeholder, section.u4m-membership-register form .input input[type=text]::-moz-placeholder, section.u4m-membership-register form .input input[type=number]::-moz-placeholder, section.u4m-membership-register form .input input[type=tel]::-moz-placeholder, section.u4m-membership-register form .input input[type=email]::-moz-placeholder, section.u4m-membership-reset-password-request form.hs-form .input input[type=text]::-moz-placeholder, section.u4m-membership-reset-password-request form.hs-form .input input[type=number]::-moz-placeholder, section.u4m-membership-reset-password-request form.hs-form .input input[type=tel]::-moz-placeholder, section.u4m-membership-reset-password-request form.hs-form .input input[type=email]::-moz-placeholder, section.u4m-membership-reset-password-request form.mixitup-multifilter .input input[type=text]::-moz-placeholder, section.u4m-membership-reset-password-request form.mixitup-multifilter .input input[type=number]::-moz-placeholder, section.u4m-membership-reset-password-request form.mixitup-multifilter .input input[type=tel]::-moz-placeholder, section.u4m-membership-reset-password-request form.mixitup-multifilter .input input[type=email]::-moz-placeholder, section.u4m-membership-reset-password-request form .input input[type=text]::-moz-placeholder, section.u4m-membership-reset-password-request form .input input[type=number]::-moz-placeholder, section.u4m-membership-reset-password-request form .input input[type=tel]::-moz-placeholder, section.u4m-membership-reset-password-request form .input input[type=email]::-moz-placeholder, section.u4m-membership-reset-password form.hs-form .input input[type=text]::-moz-placeholder, section.u4m-membership-reset-password form.hs-form .input input[type=number]::-moz-placeholder, section.u4m-membership-reset-password form.hs-form .input input[type=tel]::-moz-placeholder, section.u4m-membership-reset-password form.hs-form .input input[type=email]::-moz-placeholder, section.u4m-membership-reset-password form.mixitup-multifilter .input input[type=text]::-moz-placeholder, section.u4m-membership-reset-password form.mixitup-multifilter .input input[type=number]::-moz-placeholder, section.u4m-membership-reset-password form.mixitup-multifilter .input input[type=tel]::-moz-placeholder, section.u4m-membership-reset-password form.mixitup-multifilter .input input[type=email]::-moz-placeholder, section.u4m-membership-reset-password form .input input[type=text]::-moz-placeholder, section.u4m-membership-reset-password form .input input[type=number]::-moz-placeholder, section.u4m-membership-reset-password form .input input[type=tel]::-moz-placeholder, section.u4m-membership-reset-password form .input input[type=email]::-moz-placeholder, section.u4m-password-prompt form.hs-form .input input[type=text]::-moz-placeholder, section.u4m-password-prompt form.hs-form .input input[type=number]::-moz-placeholder, section.u4m-password-prompt form.hs-form .input input[type=tel]::-moz-placeholder, section.u4m-password-prompt form.hs-form .input input[type=email]::-moz-placeholder, section.u4m-password-prompt form.mixitup-multifilter .input input[type=text]::-moz-placeholder, section.u4m-password-prompt form.mixitup-multifilter .input input[type=number]::-moz-placeholder, section.u4m-password-prompt form.mixitup-multifilter .input input[type=tel]::-moz-placeholder, section.u4m-password-prompt form.mixitup-multifilter .input input[type=email]::-moz-placeholder, section.u4m-password-prompt form .input input[type=text]::-moz-placeholder, section.u4m-password-prompt form .input input[type=number]::-moz-placeholder, section.u4m-password-prompt form .input input[type=tel]::-moz-placeholder, section.u4m-password-prompt form .input input[type=email]::-moz-placeholder {
+  color: #6e757c;
 }
 section.u4m-membership-login form.hs-form .input input[type=text]::placeholder,
 section.u4m-membership-login form.hs-form .input input[type=number]::placeholder,
@@ -6046,7 +6055,9 @@ section.u4m-password-prompt form .input input[type=radio] {
   margin: 0;
   height: 20px;
   width: 20px !important;
-  appearance: none;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
   outline: none !important;
 }
 section.u4m-membership-login form.hs-form .input input[type=checkbox]:checked + *:before, section.u4m-membership-login form.hs-form .input input[type=checkbox]:checked + *:before,
@@ -6232,7 +6243,9 @@ section.u4m-membership-reset-password form .input select,
 section.u4m-password-prompt form.hs-form .input select,
 section.u4m-password-prompt form.mixitup-multifilter .input select,
 section.u4m-password-prompt form .input select {
-  appearance: none;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
   background-position: calc(100% - 20rem) center;
   border: 1rem solid #6e757c;
   border-radius: 4rem;
@@ -6456,6 +6469,10 @@ section.u4m-password-prompt form.hs-form textarea:focus,
 section.u4m-password-prompt form.mixitup-multifilter textarea:focus,
 section.u4m-password-prompt form textarea:focus {
   border: 1rem solid #213944;
+}
+section.u4m-membership-login form.hs-form textarea::-moz-placeholder, section.u4m-membership-login form.mixitup-multifilter textarea::-moz-placeholder, section.u4m-membership-login form textarea::-moz-placeholder, section.u4m-membership-register form.hs-form textarea::-moz-placeholder, section.u4m-membership-register form.mixitup-multifilter textarea::-moz-placeholder, section.u4m-membership-register form textarea::-moz-placeholder, section.u4m-membership-reset-password-request form.hs-form textarea::-moz-placeholder, section.u4m-membership-reset-password-request form.mixitup-multifilter textarea::-moz-placeholder, section.u4m-membership-reset-password-request form textarea::-moz-placeholder, section.u4m-membership-reset-password form.hs-form textarea::-moz-placeholder, section.u4m-membership-reset-password form.mixitup-multifilter textarea::-moz-placeholder, section.u4m-membership-reset-password form textarea::-moz-placeholder, section.u4m-password-prompt form.hs-form textarea::-moz-placeholder, section.u4m-password-prompt form.mixitup-multifilter textarea::-moz-placeholder, section.u4m-password-prompt form textarea::-moz-placeholder {
+  color: #6e757c;
+  font-size: 13rem;
 }
 section.u4m-membership-login form.hs-form textarea::placeholder, section.u4m-membership-login form.mixitup-multifilter textarea::placeholder, section.u4m-membership-login form textarea::placeholder,
 section.u4m-membership-register form.hs-form textarea::placeholder,
@@ -7833,7 +7850,9 @@ section.u4m-subscription-preferences form .input input[type=email] {
   outline: none !important;
   padding: 13rem 12rem;
   width: 100%;
-  appearance: none;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
   color: #213944;
 }
 section.u4m-subscription-preferences form.hs-form .input input[type=text]:focus,
@@ -7868,6 +7887,9 @@ section.u4m-subscription-preferences form .input input[type=tel].invalid,
 section.u4m-subscription-preferences form .input input[type=email].error,
 section.u4m-subscription-preferences form .input input[type=email].invalid {
   border: 1rem solid red;
+}
+section.u4m-subscription-preferences form.hs-form .input input[type=text]::-moz-placeholder, section.u4m-subscription-preferences form.hs-form .input input[type=number]::-moz-placeholder, section.u4m-subscription-preferences form.hs-form .input input[type=tel]::-moz-placeholder, section.u4m-subscription-preferences form.hs-form .input input[type=email]::-moz-placeholder, section.u4m-subscription-preferences form.mixitup-multifilter .input input[type=text]::-moz-placeholder, section.u4m-subscription-preferences form.mixitup-multifilter .input input[type=number]::-moz-placeholder, section.u4m-subscription-preferences form.mixitup-multifilter .input input[type=tel]::-moz-placeholder, section.u4m-subscription-preferences form.mixitup-multifilter .input input[type=email]::-moz-placeholder, section.u4m-subscription-preferences form .input input[type=text]::-moz-placeholder, section.u4m-subscription-preferences form .input input[type=number]::-moz-placeholder, section.u4m-subscription-preferences form .input input[type=tel]::-moz-placeholder, section.u4m-subscription-preferences form .input input[type=email]::-moz-placeholder {
+  color: #6e757c;
 }
 section.u4m-subscription-preferences form.hs-form .input input[type=text]::placeholder,
 section.u4m-subscription-preferences form.hs-form .input input[type=number]::placeholder,
@@ -7944,7 +7966,9 @@ section.u4m-subscription-preferences form .input input[type=radio] {
   margin: 0;
   height: 20px;
   width: 20px !important;
-  appearance: none;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
   outline: none !important;
 }
 section.u4m-subscription-preferences form.hs-form .input input[type=checkbox]:checked + *:before, section.u4m-subscription-preferences form.hs-form .input input[type=checkbox]:checked + *:before,
@@ -7986,7 +8010,9 @@ section.u4m-subscription-preferences form.hs-form .input input[type=file], secti
   margin-bottom: 20rem;
 }
 section.u4m-subscription-preferences form.hs-form .input select, section.u4m-subscription-preferences form.mixitup-multifilter .input select, section.u4m-subscription-preferences form .input select {
-  appearance: none;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
   background-position: calc(100% - 20rem) center;
   border: 1rem solid #6e757c;
   border-radius: 4rem;
@@ -8078,6 +8104,10 @@ section.u4m-subscription-preferences form.hs-form textarea, section.u4m-subscrip
 }
 section.u4m-subscription-preferences form.hs-form textarea:focus, section.u4m-subscription-preferences form.mixitup-multifilter textarea:focus, section.u4m-subscription-preferences form textarea:focus {
   border: 1rem solid #213944;
+}
+section.u4m-subscription-preferences form.hs-form textarea::-moz-placeholder, section.u4m-subscription-preferences form.mixitup-multifilter textarea::-moz-placeholder, section.u4m-subscription-preferences form textarea::-moz-placeholder {
+  color: #6e757c;
+  font-size: 13rem;
 }
 section.u4m-subscription-preferences form.hs-form textarea::placeholder, section.u4m-subscription-preferences form.mixitup-multifilter textarea::placeholder, section.u4m-subscription-preferences form textarea::placeholder {
   color: #6e757c;
@@ -8494,7 +8524,9 @@ section.u4m-drag-and-drop-area form .input input[type=email] {
   outline: none !important;
   padding: 13rem 12rem;
   width: 100%;
-  appearance: none;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
   color: #213944;
 }
 section.u4m-drag-and-drop-area form.hs-form .input input[type=text]:focus,
@@ -8529,6 +8561,9 @@ section.u4m-drag-and-drop-area form .input input[type=tel].invalid,
 section.u4m-drag-and-drop-area form .input input[type=email].error,
 section.u4m-drag-and-drop-area form .input input[type=email].invalid {
   border: 1rem solid red;
+}
+section.u4m-drag-and-drop-area form.hs-form .input input[type=text]::-moz-placeholder, section.u4m-drag-and-drop-area form.hs-form .input input[type=number]::-moz-placeholder, section.u4m-drag-and-drop-area form.hs-form .input input[type=tel]::-moz-placeholder, section.u4m-drag-and-drop-area form.hs-form .input input[type=email]::-moz-placeholder, section.u4m-drag-and-drop-area form.mixitup-multifilter .input input[type=text]::-moz-placeholder, section.u4m-drag-and-drop-area form.mixitup-multifilter .input input[type=number]::-moz-placeholder, section.u4m-drag-and-drop-area form.mixitup-multifilter .input input[type=tel]::-moz-placeholder, section.u4m-drag-and-drop-area form.mixitup-multifilter .input input[type=email]::-moz-placeholder, section.u4m-drag-and-drop-area form .input input[type=text]::-moz-placeholder, section.u4m-drag-and-drop-area form .input input[type=number]::-moz-placeholder, section.u4m-drag-and-drop-area form .input input[type=tel]::-moz-placeholder, section.u4m-drag-and-drop-area form .input input[type=email]::-moz-placeholder {
+  color: #6e757c;
 }
 section.u4m-drag-and-drop-area form.hs-form .input input[type=text]::placeholder,
 section.u4m-drag-and-drop-area form.hs-form .input input[type=number]::placeholder,
@@ -8605,7 +8640,9 @@ section.u4m-drag-and-drop-area form .input input[type=radio] {
   margin: 0;
   height: 20px;
   width: 20px !important;
-  appearance: none;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
   outline: none !important;
 }
 section.u4m-drag-and-drop-area form.hs-form .input input[type=checkbox]:checked + *:before, section.u4m-drag-and-drop-area form.hs-form .input input[type=checkbox]:checked + *:before,
@@ -8647,7 +8684,9 @@ section.u4m-drag-and-drop-area form.hs-form .input input[type=file], section.u4m
   margin-bottom: 20rem;
 }
 section.u4m-drag-and-drop-area form.hs-form .input select, section.u4m-drag-and-drop-area form.mixitup-multifilter .input select, section.u4m-drag-and-drop-area form .input select {
-  appearance: none;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
   background-position: calc(100% - 20rem) center;
   border: 1rem solid #6e757c;
   border-radius: 4rem;
@@ -8739,6 +8778,10 @@ section.u4m-drag-and-drop-area form.hs-form textarea, section.u4m-drag-and-drop-
 }
 section.u4m-drag-and-drop-area form.hs-form textarea:focus, section.u4m-drag-and-drop-area form.mixitup-multifilter textarea:focus, section.u4m-drag-and-drop-area form textarea:focus {
   border: 1rem solid #213944;
+}
+section.u4m-drag-and-drop-area form.hs-form textarea::-moz-placeholder, section.u4m-drag-and-drop-area form.mixitup-multifilter textarea::-moz-placeholder, section.u4m-drag-and-drop-area form textarea::-moz-placeholder {
+  color: #6e757c;
+  font-size: 13rem;
 }
 section.u4m-drag-and-drop-area form.hs-form textarea::placeholder, section.u4m-drag-and-drop-area form.mixitup-multifilter textarea::placeholder, section.u4m-drag-and-drop-area form textarea::placeholder {
   color: #6e757c;
@@ -9084,7 +9127,8 @@ section.u4m-drag-and-drop-area form .hs-richtext p {
 .visually-hidden,
 .sr-only {
   clip: rect(0 0 0 0);
-  clip-path: inset(50%);
+  -webkit-clip-path: inset(50%);
+          clip-path: inset(50%);
   height: 1px;
   overflow: hidden;
   position: absolute;
@@ -9608,7 +9652,9 @@ section.u4m-blog-post div.comments div.content form .input input[type=email] {
   outline: none !important;
   padding: 13rem 12rem;
   width: 100%;
-  appearance: none;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
   color: #213944;
 }
 section.u4m-blog-post div.comments div.content form.hs-form .input input[type=text]:focus,
@@ -9643,6 +9689,9 @@ section.u4m-blog-post div.comments div.content form .input input[type=tel].inval
 section.u4m-blog-post div.comments div.content form .input input[type=email].error,
 section.u4m-blog-post div.comments div.content form .input input[type=email].invalid {
   border: 1rem solid red;
+}
+section.u4m-blog-post div.comments div.content form.hs-form .input input[type=text]::-moz-placeholder, section.u4m-blog-post div.comments div.content form.hs-form .input input[type=number]::-moz-placeholder, section.u4m-blog-post div.comments div.content form.hs-form .input input[type=tel]::-moz-placeholder, section.u4m-blog-post div.comments div.content form.hs-form .input input[type=email]::-moz-placeholder, section.u4m-blog-post div.comments div.content form.mixitup-multifilter .input input[type=text]::-moz-placeholder, section.u4m-blog-post div.comments div.content form.mixitup-multifilter .input input[type=number]::-moz-placeholder, section.u4m-blog-post div.comments div.content form.mixitup-multifilter .input input[type=tel]::-moz-placeholder, section.u4m-blog-post div.comments div.content form.mixitup-multifilter .input input[type=email]::-moz-placeholder, section.u4m-blog-post div.comments div.content form .input input[type=text]::-moz-placeholder, section.u4m-blog-post div.comments div.content form .input input[type=number]::-moz-placeholder, section.u4m-blog-post div.comments div.content form .input input[type=tel]::-moz-placeholder, section.u4m-blog-post div.comments div.content form .input input[type=email]::-moz-placeholder {
+  color: #6e757c;
 }
 section.u4m-blog-post div.comments div.content form.hs-form .input input[type=text]::placeholder,
 section.u4m-blog-post div.comments div.content form.hs-form .input input[type=number]::placeholder,
@@ -9719,7 +9768,9 @@ section.u4m-blog-post div.comments div.content form .input input[type=radio] {
   margin: 0;
   height: 20px;
   width: 20px !important;
-  appearance: none;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
   outline: none !important;
 }
 section.u4m-blog-post div.comments div.content form.hs-form .input input[type=checkbox]:checked + *:before, section.u4m-blog-post div.comments div.content form.hs-form .input input[type=checkbox]:checked + *:before,
@@ -9761,7 +9812,9 @@ section.u4m-blog-post div.comments div.content form.hs-form .input input[type=fi
   margin-bottom: 20rem;
 }
 section.u4m-blog-post div.comments div.content form.hs-form .input select, section.u4m-blog-post div.comments div.content form.mixitup-multifilter .input select, section.u4m-blog-post div.comments div.content form .input select {
-  appearance: none;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
   background-position: calc(100% - 20rem) center;
   border: 1rem solid #6e757c;
   border-radius: 4rem;
@@ -9853,6 +9906,10 @@ section.u4m-blog-post div.comments div.content form.hs-form textarea, section.u4
 }
 section.u4m-blog-post div.comments div.content form.hs-form textarea:focus, section.u4m-blog-post div.comments div.content form.mixitup-multifilter textarea:focus, section.u4m-blog-post div.comments div.content form textarea:focus {
   border: 1rem solid #213944;
+}
+section.u4m-blog-post div.comments div.content form.hs-form textarea::-moz-placeholder, section.u4m-blog-post div.comments div.content form.mixitup-multifilter textarea::-moz-placeholder, section.u4m-blog-post div.comments div.content form textarea::-moz-placeholder {
+  color: #6e757c;
+  font-size: 13rem;
 }
 section.u4m-blog-post div.comments div.content form.hs-form textarea::placeholder, section.u4m-blog-post div.comments div.content form.mixitup-multifilter textarea::placeholder, section.u4m-blog-post div.comments div.content form textarea::placeholder {
   color: #6e757c;
@@ -10769,15 +10826,11 @@ section.u4m-blog-post div.comments div.content form .hs-button:hover, section.u4
     position: relative;
     top: 50%;
     margin: 0 auto !important;
-    -webkit-transform: rotate(0);
-    -ms-transform: rotate(0);
     transform: rotate(0);
   }
   .header-wrapper .main-header .row-fluid .child-trigger i:after {
     content: "";
     position: absolute;
-    -webkit-transform: rotate(-90deg);
-    -ms-transform: rotate(-90deg);
     transform: rotate(-90deg);
   }
   .header-wrapper .main-header .row-fluid .child-trigger i,
@@ -10791,8 +10844,6 @@ section.u4m-blog-post div.comments div.content form .hs-button:hover, section.u4
     text-decoration: none;
   }
   .header-wrapper .main-header .row-fluid .child-trigger.child-open i:after {
-    -webkit-transform: rotate(-180deg);
-    -ms-transform: rotate(-180deg);
     transform: rotate(-180deg);
   }
 }

@@ -50,17 +50,20 @@
 <script>
 	$(function() {
 
+
 		$(window).scroll(function(){
-			var navHeight = $('.btns_nav').height()
-			$('.u4mAnchorNavWrap').css('min-height', navHeight);
-			var elm = $('.u4mAnchorNavWrap').offset().top;
-			var scrollAmt = $(this).scrollTop();
-			if(scrollAmt > elm) {
-				$('.u4m-anchor-nav-bar').addClass('fixed');
-			} else {
-				$('.u4m-anchor-nav-bar').removeClass('fixed');
-			}
-		});
+		var navHeight = $('.btns_nav').height()
+		$('.u4mAnchorNavWrap').css('min-height', navHeight);
+		var addHeaderHeight = $('.header').outerHeight();
+		var elm = $('.u4mAnchorNavWrap').offset().top - addHeaderHeight;
+		var scrollAmt = $(this).scrollTop();
+		if(scrollAmt > elm) {
+		  $('.u4m-anchor-nav-bar').addClass('fixed');
+		} else {
+		  $('.u4m-anchor-nav-bar').removeClass('fixed');
+		}
+	  });
+
 
 		var buttonsHeight  ;
 
@@ -102,13 +105,13 @@
 
 		function scrFn() {
 			var sTop = $(window).scrollTop();
-			var headerHeight = $('.header-main').outerHeight() + buttonsHeight;
+			var headerHeight = $('.header').outerHeight() + buttonsHeight;
 			$('.x').each(function() {
 				var id = $(this).attr('id'),
 						offset = $(this).offset().top,
 						//             offset =  offset_top ,
 						height = $(this).height(),
-						offseGap = offset - height  / 2;
+						offseGap = offset - height ;
 
 				if(id == ""){
 					$(this).removeAttr('id');
@@ -144,7 +147,7 @@ $(function() {
       var id = $(this).attr('id'); // Get the section's ID
       var offset = $(this).offset().top; // Get the section's offset from the top
       var height = $(this).outerHeight(); // Get the section's height
-      var offseGap = offset - height / 5; // This triggers when the section is in the middle of the viewport
+      var offseGap = offset - height / 43; // This triggers when the section is in the middle of the viewport
 
       // Check if the section is within the viewport (hasn't been completely scrolled past)
       if (sTop >= offseGap && sTop < offset + height) {

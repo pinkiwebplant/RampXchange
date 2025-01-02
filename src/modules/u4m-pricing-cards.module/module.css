@@ -25,6 +25,45 @@ html {
   flex-wrap: wrap;
   row-gap: 20px;
 }
+.u4m-pricing-cards .btms.three_col .items {
+  width: 33.3%;
+}
+@media (max-width: 991px) {
+  .u4m-pricing-cards .btms.three_col .items {
+    width: 50%;
+  }
+}
+@media (max-width: 767px) {
+  .u4m-pricing-cards .btms.three_col .items {
+    width: 100%;
+  }
+}
+.u4m-pricing-cards .btms.two_col .items {
+  width: 50%;
+}
+@media (max-width: 991px) {
+  .u4m-pricing-cards .btms.two_col .items {
+    width: 50%;
+  }
+}
+@media (max-width: 767px) {
+  .u4m-pricing-cards .btms.two_col .items {
+    width: 100%;
+  }
+}
+.u4m-pricing-cards .btms.one_col .items {
+  width: 100%;
+}
+@media (max-width: 991px) {
+  .u4m-pricing-cards .btms.one_col .items {
+    width: 100%;
+  }
+}
+@media (max-width: 767px) {
+  .u4m-pricing-cards .btms.one_col .items {
+    width: 100%;
+  }
+}
 .u4m-pricing-cards .btms .items {
   width: 25%;
   max-width: 100%;
@@ -42,7 +81,8 @@ html {
 .u4m-pricing-cards .btms .items .innerCntt .img img {
   height: 40px !important;
   width: auto;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .u4m-pricing-cards .btms .items .innerCntt .cntt {
   margin-bottom: 32px;

@@ -36,9 +36,9 @@
 	width: 100%;
 	right: 0;
 	left: 0;
-	top: 0;
+	top: 143px;
 	z-index: 999;
-	@include tabletvert{
+	@include tabletmid{
 position: unset;
 	}
 }
