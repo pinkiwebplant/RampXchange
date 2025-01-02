@@ -7,6 +7,11 @@ section.u4m-hero {
       color: $digitalgreen;
     }
   }
+
+  .intro_btn_wrap {
+    margin-top: 36px;
+    gap: 10px 20px;
+  }
   .page-center {
     display: flex;
     flex-wrap: wrap;
@@ -21,7 +26,12 @@ section.u4m-hero {
           text-align: center;
         }
         .intro_btn_wrap {
+          margin-top: 36px;
           justify-content: center;
+        }
+
+        @include tabletmid {
+          order: 1;
         }
       }
       .media-col {
@@ -40,15 +50,16 @@ section.u4m-hero {
     &.no-media {
       row-gap: 0px;
     }
-    @include tabletvert {
+    @include tabletmid {
       column-gap: 0;
-      flex-direction: column-reverse;
     }
   }
   .content-column {
     width: calc(50% - 30px);
-    @include tabletvert {
+    @include tabletmid {
       width: 100%;
+      order: 1;
+      margin-bottom: 20px;
     }
     .intro_content {
       padding: 0;
@@ -69,12 +80,15 @@ section.u4m-hero {
   }
   .media-col {
     width: calc(50% - 30px);
-    @include tabletvert {
+    @include tabletmid {
       width: 100%;
       margin-bottom: 20px;
+      margin-bottom: 0;
+      order: 2;
     }
     .mediaCol {
       position: relative;
+      box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.25);
       .playIcon {
         position: absolute;
         top: 0;
@@ -88,13 +102,14 @@ section.u4m-hero {
       }
     }
     .cardVideoPoster {
-      min-height: 380px;
+      // min-height: 300px;
       background-repeat: no-repeat;
       background-size: cover;
+      padding-bottom: 66.7%;
     }
 
     .cardVideo {
-      min-height: 380px;
+      // min-height: 380px;
     }
   }
 
@@ -124,7 +139,7 @@ section.u4m-hero {
       iframe {
         width: 100%;
         min-height: 600px;
-        @include tabletvert {
+        @include tabletmid {
           min-height: 400px;
         }
       }

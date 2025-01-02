@@ -23,6 +23,10 @@ section.u4m-hero {
 section.u4m-hero.reverse-text .intro_title {
   color: #b5dda5;
 }
+section.u4m-hero .intro_btn_wrap {
+  margin-top: 36px;
+  gap: 10px 20px;
+}
 section.u4m-hero .page-center {
   display: flex;
   flex-wrap: wrap;
@@ -41,7 +45,13 @@ section.u4m-hero .page-center.center .content-column .intro_content {
   text-align: center;
 }
 section.u4m-hero .page-center.center .content-column .intro_btn_wrap {
+  margin-top: 36px;
   justify-content: center;
+}
+@media (max-width: 991px) {
+  section.u4m-hero .page-center.center .content-column {
+    order: 1;
+  }
 }
 section.u4m-hero .page-center.center .media-col {
   width: 100%;
@@ -59,19 +69,20 @@ section.u4m-hero .page-center.center .media-col .mediaItem img {
 section.u4m-hero .page-center.no-media {
   row-gap: 0px;
 }
-@media (max-width: 767px) {
+@media (max-width: 991px) {
   section.u4m-hero .page-center {
     -moz-column-gap: 0;
          column-gap: 0;
-    flex-direction: column-reverse;
   }
 }
 section.u4m-hero .content-column {
   width: calc(50% - 30px);
 }
-@media (max-width: 767px) {
+@media (max-width: 991px) {
   section.u4m-hero .content-column {
     width: 100%;
+    order: 1;
+    margin-bottom: 20px;
   }
 }
 section.u4m-hero .content-column .intro_content {
@@ -93,14 +104,17 @@ section.u4m-hero .content-column .intro_btn_wrap .sec-btn {
 section.u4m-hero .media-col {
   width: calc(50% - 30px);
 }
-@media (max-width: 767px) {
+@media (max-width: 991px) {
   section.u4m-hero .media-col {
     width: 100%;
     margin-bottom: 20px;
+    margin-bottom: 0;
+    order: 2;
   }
 }
 section.u4m-hero .media-col .mediaCol {
   position: relative;
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.25);
 }
 section.u4m-hero .media-col .mediaCol .playIcon {
   position: absolute;
@@ -114,12 +128,9 @@ section.u4m-hero .media-col .mediaCol .playIcon {
   cursor: pointer;
 }
 section.u4m-hero .media-col .cardVideoPoster {
-  min-height: 380px;
   background-repeat: no-repeat;
   background-size: cover;
-}
-section.u4m-hero .media-col .cardVideo {
-  min-height: 380px;
+  padding-bottom: 66.7%;
 }
 section.u4m-hero .cardVideoPopup {
   position: fixed;
@@ -148,7 +159,7 @@ section.u4m-hero .cardVideoPopupInr .iframe_wrap iframe {
   width: 100%;
   min-height: 600px;
 }
-@media (max-width: 767px) {
+@media (max-width: 991px) {
   section.u4m-hero .cardVideoPopupInr .iframe_wrap iframe {
     min-height: 400px;
   }

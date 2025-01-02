@@ -182,6 +182,24 @@
       "type" : "choice",
       "default" : "hs-button"
     }, {
+      "id" : "d7f546d8-3ad4-e6d8-2402-9344198c279b",
+      "name" : "include_arrow_icon",
+      "display_width" : null,
+      "label" : "Include Arrow Icon",
+      "required" : false,
+      "locked" : false,
+      "visibility" : {
+        "controlling_field" : null,
+        "controlling_field_path" : "intro_content.button_group.button_type",
+        "controlling_value_regex" : "std",
+        "property" : null,
+        "operator" : "EQUAL",
+        "access" : null
+      },
+      "display" : "checkbox",
+      "type" : "boolean",
+      "default" : false
+    }, {
       "id" : "105bbd69-dccc-fd6b-3d3d-3f4063128744",
       "name" : "button_text",
       "display_width" : null,
@@ -261,7 +279,8 @@
         },
         "open_in_new_tab" : false,
         "no_follow" : false
-      }
+      },
+      "boolean_field" : false
     }, {
       "button_type" : "std",
       "button_style" : "hs-button",
@@ -274,7 +293,8 @@
         },
         "open_in_new_tab" : false,
         "no_follow" : false
-      }
+      },
+      "boolean_field" : false
     } ]
   } ],
   "tab" : "CONTENT",
@@ -302,7 +322,8 @@
         },
         "open_in_new_tab" : false,
         "no_follow" : false
-      }
+      },
+      "boolean_field" : false
     }, {
       "button_type" : "std",
       "button_style" : "hs-button",
@@ -315,7 +336,8 @@
         },
         "open_in_new_tab" : false,
         "no_follow" : false
-      }
+      },
+      "boolean_field" : false
     } ]
   }
 }, {
