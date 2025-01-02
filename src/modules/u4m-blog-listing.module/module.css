@@ -342,14 +342,6 @@ section.u4m-blog-listing .featCardsListWrap .cardSctn .cardItems .cardItem .item
   margin: auto 0 0;
   justify-content: start;
 }
-section.u4m-blog-listing .featCardsListWrap .cardSctn .cardItems .cardItem .itemInr .itemCnWrap .itemCntSec .itemTags {
-  margin-bottom: 32px;
-}
-section.u4m-blog-listing .featCardsListWrap .cardSctn .cardItems .statusCnt {
-  width: 100%;
-  text-align: center;
-  margin: 0;
-}
 section.u4m-blog-listing .featCardsListWrap .blog-pagination {
   margin: 0;
   padding: 0;

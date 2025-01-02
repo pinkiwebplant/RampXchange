@@ -308,13 +308,25 @@
     "locked" : false,
     "type" : "hubdbtable",
     "default" : 105234052
+  }, {
+    "id" : "a62f398c-cc41-327d-acde-e7ed4a2c562b",
+    "name" : "number_of_posts",
+    "display_width" : null,
+    "label" : "Number of Posts Per Page",
+    "required" : false,
+    "locked" : false,
+    "display" : "text",
+    "step" : 1,
+    "type" : "number",
+    "default" : 9
   } ],
   "tab" : "CONTENT",
   "expanded" : false,
   "group_occurrence_meta" : null,
   "type" : "group",
   "default" : {
-    "select_hubdb_table" : 105234052
+    "select_hubdb_table" : 105234052,
+    "number_of_posts" : 9
   }
 }, {
   "id" : "4ad4dab1-bfe8-979e-975e-f27866e9d308",
@@ -324,18 +336,6 @@
   "required" : false,
   "locked" : false,
   "children" : [ {
-    "id" : "494b7df6-7de4-4e57-976f-0ed8daa1cb1d",
-    "name" : "button_text",
-    "display_width" : null,
-    "label" : "Button Text",
-    "required" : false,
-    "locked" : false,
-    "validation_regex" : "",
-    "allow_new_line" : false,
-    "show_emoji_picker" : false,
-    "type" : "text",
-    "default" : "Read More"
-  }, {
     "id" : "fda05819-59de-af27-6153-f9bf7f7a9aa6",
     "name" : "select_card_theme",
     "display_width" : null,
@@ -365,7 +365,6 @@
   "group_occurrence_meta" : null,
   "type" : "group",
   "default" : {
-    "button_text" : "Read More",
     "select_card_theme" : "soft_white",
     "reverse_text" : false
   }

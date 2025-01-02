@@ -402,9 +402,9 @@
   "locked" : false,
   "children" : [ {
     "id" : "494b7df6-7de4-4e57-976f-0ed8daa1cb1d",
-    "name" : "button_text",
+    "name" : "read_more",
     "display_width" : null,
-    "label" : "Button Text",
+    "label" : "Read More Text",
     "required" : false,
     "locked" : false,
     "validation_regex" : "",
@@ -442,7 +442,7 @@
   "group_occurrence_meta" : null,
   "type" : "group",
   "default" : {
-    "button_text" : "Read More",
+    "read_more" : "Read More",
     "select_card_theme" : "soft_white",
     "reverse_text" : false
   }

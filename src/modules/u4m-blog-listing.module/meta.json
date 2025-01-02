@@ -1,6 +1,6 @@
 {
   "global" : false,
-  "content_types" : [ "LANDING_PAGE", "SITE_PAGE" ],
+  "content_types" : [ "BLOG_LISTING" ],
   "icon" : "https://8292614.fs1.hubspotusercontent-na1.net/hubfs/8292614/4.svg",
   "host_template_types" : [ "PAGE" ],
   "module_id" : 184398430637,
