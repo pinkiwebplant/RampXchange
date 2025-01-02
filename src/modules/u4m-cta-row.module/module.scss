@@ -1,55 +1,276 @@
 @import "../../css/_module-imports";
-section.u4m-cta-row {
-  margin-bottom: 100rem;
-  &.reverse-text {
-    color: $white;
-  }
-  div.inner {
-    @include center;
+.u4m-cta-row {
+  .row {
     display: flex;
-    justify-content: center;
+    gap: 60px;
+    flex-wrap: wrap;
     align-items: center;
-    @include phone {
-      display: block;
+    padding: 40px;
+    border-radius: 12px;
+    overflow: hidden;
+&.widther{
+  padding: 0;
+  .left-section{
+width: 100%;
+.intro_wrapp {
+  .intro_content{
+    text-align: center;
+    .intro_desc{
+      margin-bottom: 40px !important;
     }
-    &.centered {
-      display: block;
-      div.copy,
-      div.image {
+    .intro_btn_wrap{
+      justify-content: center !important;
+    }
+  }
+}
+
+  }
+}
+&.form{
+  .media_section{
+    overflow: visible;
+  }
+}
+    @include tabletvert {
+      gap: 30px;
+      flex-direction: column-reverse;
+      &.form{
+        flex-direction: row-reverse !important;
+      }
+    }
+
+    &.right_col {
+      flex-direction: row-reverse;
+      @include tabletvert {
+        flex-direction: column-reverse;
+      }
+    }
+
+    .left-section {
+      width: calc(50% - 30px);
+
+      @include tabletvert {
         width: 100%;
-        text-align: center;
       }
-      div.image {
-        margin-top: 50rem;
-      }
-    }
-    div.copy {
-      width: 50%;
-      .heading {
-        @include h2;
-      }
-      div.cta {
-        a {
-          @include button;
-        }
-      }
-      @include phone {
-        width: 100%;
-        text-align: center;
-      }
-    }
-    div.image {
-      width: 50%;
-      text-align: right;
-      img {
-        max-width: 400rem;
-        @include tabletvert {
+
+      .intro_wrapp {
+        .intro_content {
+          margin-bottom: 0;
           max-width: 100%;
+          padding: 0;
+          text-align: left;
+          width: 100%;
+
+          .intro__inner {
+            .eyebrow_text {
+              @include size14;
+              color: $heading;
+            }
+            .intro_title{
+              color: $heading;
+            }
+            .intro_desc {
+              > *{
+                color: $heading;
+              }
+            }
+            .intro_btn_wrap{
+margin-top: 32px;
+            }
+            .intro_btn_wrap {
+              justify-content: flex-start;
+              .btn_item {
+                .arrow-link{
+color: $action1;
+&:hover{
+  color: $heading;
+}
+                }
+                a.sec-btn {
+                  margin: 0;
+                }
+              }
+            }
+          }
         }
       }
-      @include phone {
-        margin: 20rem auto 0 auto;
+    }
+
+    .media_section {
+      border-radius: 12px;
+      overflow: hidden;
+      width: calc(50% - 30px);
+      @include tabletvert {
+        width: 100%;
       }
+      .vid_section {
+        min-height: 390px;
+        padding-bottom: 56%;
+        position: relative;
+        .poster_img {
+          cursor: pointer;
+          left: 0;
+          position: absolute;
+          top: -1px;
+          z-index: 9;
+          height: 100%;
+          width: 100%;
+          img {
+            object-fit: cover;
+            height: 100%;
+            width: 100%;
+          }
+          .playIcon {
+            left: 50%;
+            position: absolute;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            z-index: 9;
+          }
+        }
+        .hubspot_video {
+          video {
+            height: 100%;
+            left: 0;
+            -o-object-fit: cover;
+            object-fit: cover;
+            position: absolute;
+            top: 0;
+            width: 100%;
+          }
+        }
+        .external_vid {
+          .iframe {
+            height: 100%;
+            left: 0;
+            position: absolute;
+            top: 0;
+            width: 100%;
+          }
+        }
+        &.video-enable {
+          .poster_img {
+            display: none;
+          }
+        }
+      }
+      .form-title{
+        &:empty{
+        margin: 0;
+        }
+    }
+      form {
+        align-items: center;
+        display: flex
+    ;
+        gap: 8px;
+        margin: 0;
+        position: relative;
+        max-width: 100%;
+        background: transparent;
+        padding: 0;
+        overflow: visible;
+    
+        .hs_error_rollup {
+          position: absolute;
+          left: 0;
+          top: 0;
+          z-index: 9999;
+          width: 100%;
+          display: none;
+          top: 70px;
+        }
+        ul.no-list.hs-error-msgs.inputs-list {
+          margin: 0;
+          text-align: left;
+          padding: 0;
+          padding-top: 10px;
+          position: absolute;
+          left: 0;
+          right: 0;
+          border: 0;
+          @include navbreak{
+position: unset;
+          }
+        }
+        .hs-form-field {
+          >label {
+            font-weight: 500;
+            @include size13; line-height: 100%;
+            color: $heading;
+            margin-bottom: 8px;
+            display: block;
+          }
+          max-width: 395px;
+          width: 100%;
+          @include navbreak{
+            max-width: 100%;
+          }
+        }
+        .hs_submit.hs-submit {
+          width: calc(100% - 395px);
+          max-width: 100%;
+          input.hs-button {
+            min-height: 48px;
+            width: 100%;
+          }
+          @include navbreak{
+            width: 100%;
+            display: inline-flex
+            ;
+          }
+        }
+        .input{
+          input {
+            min-height: 48px;
+            background: $white;
+            border: 1px solid $gray2;
+            border-radius: 12px;
+            padding: 12px !important;
+            outline: none;
+          }
+        }
+
+        @include navbreak{
+          flex-wrap: wrap;
+        }
+      }
+    
+    }
+    &.cards_reverse_text{
+      .eyebrow_text{
+        color: $white !important;
+      }
+     .intro_title{
+      color: $white !important;
+      }
+
+      .intro_desc{
+        > *{
+          color: $white !important;
+        }
+      }
+      .intro_btn_wrap {
+        justify-content: flex-start;
+        .btn_item {
+          .arrow-link{
+            color: $white !important;
+&:hover{
+color: $white !important;
+}
+          }
+        }
+      }
+      form {
+        .hs-form-field {
+          & > label{
+            color: $white !important;
+          }
+        }
+      }
+    }
+    @include tabletvert{
+padding: 20px;
     }
   }
 }

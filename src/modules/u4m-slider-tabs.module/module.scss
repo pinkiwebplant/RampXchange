@@ -1,0 +1,237 @@
+@import "../../css/_module-imports";
+.u4m-slider-tabs {
+  &.reverse-text {
+    .tabber_section {
+      .row {
+        .tab-section {
+          .tab-item {
+            &.acc-open {
+              .tab-inner {
+                h4 {
+                  opacity: 1;
+                  color: $white;
+                }
+              }
+            }
+            .tab-inner {
+              h4 {
+                color: $white;
+                opacity: 0.7;
+                &:hover {
+                  color: $white;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  .intro_wrapp {
+    .eyebrow_text {
+      @include size14;
+      margin-bottom: 12px;
+    }
+    .intro_title {
+      margin-bottom: 12px;
+    }
+  }
+  .tabber_section {
+    position: relative;
+    z-index: 9;
+    .row {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      .tab-section {
+        width: 50%;
+        @include tabletvert {
+          width: 100%;
+        }
+
+        .tab-item {
+          padding: 16px 28px;
+          transition:
+            color 0.2s ease,
+            border 0.2s ease;
+          & * {
+            transition: inherit;
+          }
+          @include tabletvert {
+            padding: 16px 15px;
+          }
+          border-left: 2px solid $digitalgreen;
+
+          .slider_tab_title {
+            display: flex;
+            justify-content: space-between;
+
+            span {
+              display: none;
+            }
+            @include tabletvert {
+              span.plus {
+                display: block;
+              }
+            }
+          }
+
+          &.acc-open {
+            .slider_tab_title {
+              @include tabletvert {
+                span.minus {
+                  display: block;
+                }
+                span.plus {
+                  display: none;
+                }
+              }
+            }
+          }
+
+          .tab-inner {
+            h4 {
+              cursor: pointer;
+              color: $lightGrayishBlue;
+              margin: 0;
+              &:hover {
+                color: $heading;
+              }
+            }
+            .toggle_content {
+              display: none;
+              .content {
+                margin-top: 20px;
+              }
+              .tabber-btn {
+                margin-top: 32px;
+                .intro_btn_wrap {
+                  justify-content: flex-start;
+                  .btn_item {
+                    a {
+                      margin: 0;
+                    }
+                  }
+                }
+              }
+              .mobile_cnnt {
+                display: none;
+                @include tabletvert {
+                  display: block;
+                  width: 100%;
+                  .video_wrap {
+                    margin: 50px 0;
+                    padding-bottom: 62%;
+                  }
+                  .img_wrap {
+                    padding: 50px 0;
+                  }
+                }
+              }
+            }
+          }
+          &.acc-open {
+            border-color: #007c43;
+            .tab-inner {
+              h4 {
+                pointer-events: none;
+                color: $heading;
+              }
+              .toggle_content {
+                display: block;
+              }
+            }
+          }
+          .tab-inner {
+            .toggle_content {
+              display: none;
+            }
+          }
+        }
+      }
+
+      .tab-image-section {
+        @include tabletvert {
+          display: none;
+        }
+        width: 50%;
+        .img-item {
+          display: none;
+          border-radius: $borderRadius;
+          overflow: hidden;
+          &.acc-open {
+            display: block;
+          }
+
+          & > div {
+            opacity: 0;
+            transition: opacity 0.1s ease;
+          }
+          &.animate-media > div {
+            opacity: 1;
+            transition: opacity 0.65s ease;
+          }
+
+          .tab-inner {
+            @include tabletvertmin {
+              width: calc(100% - 35px);
+            }
+          }
+
+          .video_wrap {
+            &.video_play {
+              .poster_img {
+                display: none;
+              }
+            }
+            .poster_img {
+              position: absolute;
+              z-index: 9;
+              width: 100%;
+              cursor: pointer;
+              top: 0;
+              height: 100%;
+              img {
+                width: 100%;
+                object-fit: cover;
+                height: 100% !important;
+              }
+              .playIcon {
+                position: absolute;
+                z-index: 99;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+              }
+            }
+            position: relative;
+            padding-bottom: 56%;
+            .external_video {
+              position: absolute;
+              left: 0;
+              top: 0;
+              width: 100%;
+              height: 100%;
+              .iframe {
+                width: 100%;
+                height: 100%;
+                display: block;
+              }
+            }
+            .hubspot_video {
+              position: absolute;
+              width: 100%;
+              height: 100%;
+              video {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                display: block;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

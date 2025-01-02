@@ -1,102 +1,178 @@
 @import "../../css/_module-imports";
 
-section.u4m-cards {
-  margin-top: 100rem;
-  margin-bottom: 100rem;
 
-  &.reverse-text {
 
-    h2.heading,
-    h3.subheading {
-      color: $white;
-    }
-  }
+.u4m-cards {
+.intro_content {
+	.eyebrow_text {
+	@include size14;
+	}
+}
+.btmCntt {
+	.inner_wrpp.intro_content {
+		max-width: 100%;
+		margin: 0;
+		padding: 0;
+		display: flex;
+		gap: 20px;
+		flex-wrap: wrap;
+		&.img_cols{
+			gap: 32px;
+			.items{
+				width: calc(33.33% - 21.3px);
+				.innerWrpp{
+					padding: 0;
+					.btmcntt{
+						padding: 36px 24px;
+						}
+			}
+			@include tabletmid{
+				width: calc(50% - 16px);
+			}
+		
+			@include tabletvert{
+				width: 100%;
+			}
+			}
+			.btns{
+				margin-top: 20px !important;
+			}
+		}
+		.btmcntt{
+		    height: 100%;
+    display: flex
+;
+    flex-direction: column;
+			}
+	&.center{
+	text-align: center;
 
-  .heading {
-    @include center;
-    @include h2;
-    text-align: center;
-  }
+	.intro_btn_wrap{
+		justify-content: center;
+	}
+	
+	}
+	&.left{
+	text-align: left;
+	.intro_btn_wrap{
+		justify-content: flex-start;
+	}
+	}
+	&.right{
+	text-align: right;
+	.intro_btn_wrap{
+		justify-content: flex-end;
+	}
+	}
+		.items {
+			width: calc(33.33% - 13.366667px);
+			max-width: 100%;
+			border-radius: 12px;
+			overflow: hidden;
+			&.cards_reverse_text{
+				.eyebrow_text{
+					color: $white !important;
+				}
+				.intro_title{
+					color: $white !important;
+				}
+				.intro_desc > *{
+					color: $white !important;
+				}
 
-  .subheading {
-    @include center;
-    max-width: 1000rem;
-    @include b2;
-    font-weight: normal;
-    text-align: center;
-  }
+				.arrow-link {
+					color: $white !important;
+				
+				&:focus {
+					color: $white !important;
+				}
+				&:hover {
+					color: $white !important;
+				}
 
-  .link {
-    text-align: center;
+			}
 
-    a {
-      @include button;
-    }
-  }
+				
+			}
+			.innerWrpp {
+				padding: 36px 24px;
+				display: flex;
+				flex-direction: column;
+				height: 100%;
+				.icon {
+					margin-bottom: 32px;
+					svg {
+						fill: currentColor;
+						color: currentColor;
+						path {
+							fill: currentColor;
+							color: currentColor;
+						}
+					}
+				}
+				.icon.small {
+					svg {
+						width: 56px;
+						height: 56px;
+					}
+				}
+				.icon.large {
+					svg {
+						width: 100px;
+						height: 100px;
+					}
+				}
+				.icon.medium {
+					svg {
+						width: 64px;
+						height: 64px;
+					}
+				}
+				.intro_btn_wrap {
+					margin-top: auto;
+					.btns{
+margin-top: 34px;
+					}
+				}
+				.eyebrow_text{
+					color: $heading;
+				}
+				.intro_title{
+					color: $heading;
+				}
+				.intro_desc > *{
+					color: $heading;
+				}
+				.arrow-link {
+					color: $action1;
+				
+				&:focus {
+color: $heading;
+				}
+				&:hover {
+					color: $heading;
+				}
 
-  .wrapper {
-    @include center;
-    max-width: 1280rem;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+			}
+			}
+			.topcntt {
+				margin-bottom: 0;
+				display: flex
+;
+    flex-direction: column;
+    height: 100%;
+			}
+	@include tabletmid{
+		width: calc(50% - 10px);
+	}
 
-    @include phone {
-      display: block;
-    }
-
-    &.landscape {
-      div.card {
-        flex-direction: row;
-
-        @include tabletvert {
-          flex-direction: column;
-        }
-
-        div.image.filled {
-          min-width: 200rem;
-        }
-
-        div.content {
-          @include phone {
-            margin-bottom: 0;
-
-            span.teaser {
-              margin-bottom: 0;
-            }
-          }
-        }
-      }
-    }
-
-    div.card {
-      @include card;
-    }
-
-    &.two {
-      div.card {
-        flex-basis: calc(50% - 40rem);
-      }
-    }
-
-    &.three {
-      div.card {
-        flex-basis: calc(33.333% - 40rem);
-
-        @include tablet {
-          flex-basis: calc(50% - 40rem);
-        }
-      }
-    }
-
-    &.four {
-      div.card {
-        flex-basis: calc(25% - 40rem);
-
-        @include tablet {
-          flex-basis: calc(50% - 40rem);
-        }
-      }
-    }
-  }
+	@include tabletvert{
+		width: 100%;
+	}
+		}
+	@include tabletmid{
+	flex-wrap: wrap;
+	}
+	}
+}
 }

@@ -1,0 +1,227 @@
+<div class="u4mAnchorNavWrap">
+
+	{% set moduleName = 'u4m-anchor-nav-bar has-sticky' %}
+	{% set imageMax = 300 %}
+	{% include "../partials/u4-module-includes.html" %}
+	<div class="anchor-nav-inner">
+		<div class="page-center">
+			<div class="anchor-nav btns_nav_inr">
+				{% for item in module.anchor_link %}
+				{% set href = item.anchor_link.url.href %}
+				{% if item.anchor_link.url.type is equalto "EMAIL_ADDRESS" %}
+				{% set href = "mailto:" + href %}
+				{% endif %}
+				{% if item.anchor_link.url.type is equalto "CONTENT" %}
+				{% if item.bookmark_id %}
+				{% set newId = item.bookmark_id|replace(' ','-')|replace(',','')|replace('_','-')|replace('&','')%}
+				{% set href = href + '#'+ newId %}
+				{% else %}
+				{% set href = item.anchor_link.url.href %}
+				{% endif %}
+				{% endif %}
+
+				<a class="cm_btn single-anchor" 
+					 {% if item.anchor_link.url.type is equalto "CALL_TO_ACTION"  %}
+					 href="{{ href }}"
+					 {% else %}
+					 href="{{ href|escape_url }}"
+					 {% endif %}
+
+					 {% if item.anchor_link.open_in_new_tab %}
+					 target="_blank"
+					 {% endif %}
+					 {% if item.anchor_link.rel %}
+					 rel="{{ item.anchor_link.rel|escape_attr }}"
+					 {% endif %}
+					 data-scroll=" {{item.bookmark_id|replace('#','')}}">{{ item.text }}</a>
+				{% endfor %}
+			</div>
+		</div>
+	</div>
+
+	</section>
+</div>
+
+
+
+
+{% require_js %}
+
+<script>
+	$(function() {
+
+
+		$(window).scroll(function(){
+			var navHeight = $('.btns_nav').height()
+			$('.u4mAnchorNavWrap').css('min-height', navHeight);
+			var addHeaderHeight = $('.header').outerHeight();
+			var elm = $('.u4mAnchorNavWrap').offset().top - addHeaderHeight;
+			var scrollAmt = $(this).scrollTop();
+			if(scrollAmt > elm) {
+				$('.u4m-anchor-nav-bar').addClass('fixed');
+			} else {
+				$('.u4m-anchor-nav-bar').removeClass('fixed');
+			}
+		});
+
+
+		var buttonsHeight  ;
+
+		function buttonsHeightGet(height){
+			var heightValue = height
+			return heightValue;
+			console.log(heightValue)
+		}
+
+
+		$(window).on('load resize', function(){
+			if($(window).outerWidth() > 1022){
+				buttonsHeight  = $('.u4mAnchorNavWrap').outerHeight() ;
+				buttonsHeightGet(buttonsHeight)
+				//         console.log('buttonsHeight 1022',buttonsHeight)
+			}
+			if($(window).outerWidth() < 1022){
+				buttonsHeight  = 0 ;
+				buttonsHeightGet(buttonsHeight)
+				//         console.log('buttonsHeight less than 1022',buttonsHeight)
+			}
+			else{
+				buttonsHeight  = $('.u4mAnchorNavWrap').outerHeight() ;
+				buttonsHeightGet(buttonsHeight)
+			}
+		})
+
+		var link = $('.btns_nav_inr a.cm_btn');
+
+		// Move to specific section when click on menu link
+		link.on('click', function(e) {
+			var target = $($(this).attr('href'));
+			var headerHeight  = $('.header').outerHeight() ;
+
+			var getNavWrap = $('.u4m-anchor-nav-bar').outerHeight()
+
+			if(getNavWrap){
+				var checkGap =  headerHeight + getNavWrap  - 35
+				}
+			else{
+				var checkGap =  headerHeight
+				}
+
+
+
+
+			if(target){
+				var getOffset = target.offset().top ; 
+				var checkGapNew = getOffset - checkGap
+				console.log('checkGapNew',checkGapNew);
+				$('html, body').animate({
+					scrollTop: checkGapNew
+				}, 1200);
+				e.preventDefault();
+			}
+		});
+
+
+		$(window).on('scroll', function() {
+			scrFn();
+		});
+
+
+		function scrFn() {
+			var sTop = $(window).scrollTop();
+			// 			var headerHeight = $('.header').outerHeight() + buttonsHeight;
+
+			var headerHeight  = $('.header').outerHeight() ;
+
+			var getNavWrap = $('.u4m-anchor-nav-bar').outerHeight()
+
+			if(getNavWrap){
+				var checkGap =  headerHeight + getNavWrap
+				}
+			else{
+				var checkGap =  headerHeight
+				}
+
+
+			$('.x').each(function() {
+				var id = $(this).attr('id'),
+						offset = $(this).offset().top,
+						//             offset =  offset_top ,
+						height = $(this).height(),
+						offseGap = offset - checkGap ;
+
+				if(id == ""){
+					$(this).removeAttr('id');
+				}
+
+
+				if (sTop >= offseGap && sTop < offset + height) {
+					link.removeClass('active');
+					$('.btns_nav_inr').find('[data-scroll="' + id + '"]').addClass('active');
+				}
+			});
+		}
+		scrFn();
+	});
+
+	function headerHeight() {
+		var elm = $('.u4m-anchor-nav-bar').outerHeight(true);
+		$(' .u4mAnchorNavWrap').css('min-height', elm);
+	}
+	$(window).on('load resize', function () {
+		headerHeight();
+	});
+
+
+	$(function() {
+		var link = $('.cm_btn');
+
+		function scrFnn() {
+			var sTop = $(window).scrollTop(); // Current scroll position
+			var winHeight = $(window).height(); // Height of the viewport
+
+			var headerHeight  = $('.header').outerHeight() ;
+
+			var getNavWrap = $('.u4m-anchor-nav-bar').outerHeight()
+
+			if(getNavWrap){
+				var checkGap =  headerHeight + getNavWrap - 35
+				}
+			else{
+				var checkGap =  headerHeight
+				}
+
+
+			$('section').each(function() {
+				var id = $(this).attr('id'); // Get the section's ID
+				var offset = $(this).offset().top; // Get the section's offset from the top
+				var height = $(this).outerHeight(); // Get the section's height
+				var offseGap = offset - checkGap; // This triggers when the section is in the middle of the viewport
+
+				// Check if the section is within the viewport (hasn't been completely scrolled past)
+				if (sTop >= offseGap && sTop < offset + height) {
+					link.removeClass('active'); // Remove 'active' class from all links
+					$('a[href="#' + id + '"]').addClass('active link'); // Add 'active' to the corresponding link
+				} 
+				// Remove active class if the section is completely out of view (bottom of section is past the viewport)
+				else if (sTop >= offset + height || sTop + winHeight <= offset) {
+					$('a[href="#' + id + '"]').removeClass('active link'); // Remove 'active' class
+				}
+			});
+		}
+
+		// Run the function on scroll
+		$(window).on('scroll', function() {
+			scrFnn();
+		});
+
+		// Initial call to set the active link when the page loads
+		scrFnn();
+	});
+
+
+
+</script>
+
+{% end_require_js %}
+

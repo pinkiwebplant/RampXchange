@@ -15,21 +15,26 @@ isAvailableForNewContent: false
     {% if template_meta.label == "thank-you-page.html" %}<meta name="robots" content="noindex">{% endif %}
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    
 
 </head>
 <body class="{{ builtin_body_classes }} {% if request.full_url is string_containing "/author/" %} author-listing {% endif %}">
     {% block header %}
-        {% module 'u4m-header' path='../modules/u4m-header', label='U4M Header' %}
+    {% global_partial path='././partials/u4m-header.html' %}
     {% endblock header %}
 
     {% block body %}
     {% endblock body %}
-    
+
     {% block footer %}
-        {% module 'u4m-footer' path='../modules/u4m-footer', label='U4M Footer' %}
+    {% global_partial path='././partials/u4m-footer.html' %}
     {% endblock footer %}
-{{ require_js(get_asset_url('../js/main.js')) }}
-{{ standard_footer_includes }}
+    {{ require_js(get_asset_url('../js/jquery.js')) }} 
+    {{ require_js(get_asset_url('../js/aos.js')) }} 
+    {{ require_js(get_asset_url('../js/main.js')) }} 
+    {{ standard_footer_includes }}
 </body>
 </html>

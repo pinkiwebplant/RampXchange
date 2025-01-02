@@ -1,0 +1,53 @@
+[ {
+  "id" : "d182ba6c-3c1e-7688-2222-455362140c7c",
+  "name" : "social_items",
+  "display_width" : null,
+  "label" : "Social Items",
+  "required" : false,
+  "locked" : false,
+  "occurrence" : {
+    "min" : null,
+    "max" : null,
+    "sorting_label_field" : "29a55f51-b015-aabc-bdc9-3059c717ee89",
+    "default" : null
+  },
+  "children" : [ {
+    "id" : "29a55f51-b015-aabc-bdc9-3059c717ee89",
+    "name" : "social_icon",
+    "display_width" : null,
+    "label" : "Social Icon",
+    "required" : false,
+    "locked" : false,
+    "icon_set" : "fontawesome-6.4.2",
+    "type" : "icon",
+    "default" : {
+      "name" : "LinkedIn",
+      "unicode" : "f08c",
+      "type" : "REGULAR"
+    }
+  }, {
+    "id" : "4bafe244-3004-35f3-8d31-db855bd0ab99",
+    "name" : "social_link",
+    "display_width" : null,
+    "label" : "Social Link",
+    "required" : false,
+    "locked" : false,
+    "supported_types" : [ "EXTERNAL", "CONTENT", "FILE", "EMAIL_ADDRESS", "BLOG", "CALL_TO_ACTION", "PHONE_NUMBER", "PAYMENT" ],
+    "show_advanced_rel_options" : false,
+    "type" : "link",
+    "default" : {
+      "url" : {
+        "content_id" : null,
+        "type" : "EXTERNAL",
+        "href" : ""
+      },
+      "open_in_new_tab" : true,
+      "no_follow" : false
+    }
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "group_occurrence_meta" : null,
+  "type" : "group",
+  "default" : [ ]
+} ]

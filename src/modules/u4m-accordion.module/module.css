@@ -16,98 +16,63 @@ html {
   }
 }
 
-section.u4m-accordion .intro {
-  float: none;
-  margin-left: auto;
-  margin-right: auto;
-  max-width: 1240rem;
-  padding-left: 20rem;
-  padding-right: 20rem;
-  max-width: 768rem;
-  text-align: center;
+.u4m-accordion .accordionItemsContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
 }
-section.u4m-accordion .intro h2 {
-  font-family: "Montserrat";
-  font-size: 44rem;
-  font-weight: bold;
-  letter-spacing: 0.25rem;
-  margin-bottom: 30rem;
-  line-height: 1.2;
+.u4m-accordion .accordionItemsContainer .accItem {
+  padding: 20px 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  border-radius: 4px;
+  overflow: hidden;
 }
-@media (max-width: 1024px) {
-  section.u4m-accordion .intro h2 {
-    font-size: 38rem;
-  }
-}
-@media (max-width: 580px) {
-  section.u4m-accordion .intro h2 {
-    font-size: 32rem;
-    margin-bottom: 20rem;
-  }
-}
-section.u4m-accordion .intro p {
-  font-family: "Montserrat";
-  font-size: 18rem;
-  line-height: 1.6;
-  letter-spacing: 0.25rem;
-  margin-bottom: 20rem;
-}
-@media (max-width: 580px) {
-  section.u4m-accordion .intro p {
-    font-size: 16rem;
-  }
-}
-section.u4m-accordion .accordions {
-  float: none;
-  margin-left: auto;
-  margin-right: auto;
-  max-width: 1240rem;
-  padding-left: 20rem;
-  padding-right: 20rem;
-  margin: 50rem auto;
-}
-section.u4m-accordion .accordions details {
-  border-top: 1rem solid #cbd6e2;
-  transition: background-color 0.2s;
-  cursor: pointer;
-}
-section.u4m-accordion .accordions details summary {
-  font-family: "Montserrat";
-  font-size: 18rem;
-  line-height: 1.6;
-  letter-spacing: 0.25rem;
-  margin-bottom: 20rem;
-  font-weight: bold;
+.u4m-accordion .accordionItemsContainer .accItem h6 {
   margin: 0;
-  padding: 20rem 40rem 20rem 20rem;
-  position: relative;
-  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  cursor: pointer;
+  gap: 10px;
+  align-items: center;
+  color: #213944;
 }
-@media (max-width: 580px) {
-  section.u4m-accordion .accordions details summary {
-    font-size: 16rem;
-  }
+.u4m-accordion .accordionItemsContainer .accItem h6 svg.remove {
+  display: none;
 }
-section.u4m-accordion .accordions details summary:after {
-  content: "+";
-  font-size: 30rem;
-  font-weight: normal;
-  line-height: 1;
-  position: absolute;
-  right: 5%;
-  top: 50%;
-  transform: translateY(-50%);
-  transition: transform 0.2s ease-in-out;
+.u4m-accordion .accordionItemsContainer .accItem h6 svg.add {
+  display: block;
 }
-section.u4m-accordion .accordions details[open] summary:after {
-  transform: translateY(-50%) rotate(45deg);
+.u4m-accordion .accordionItemsContainer .accItem h6 svg {
+  fill: currentColor;
+  color: currentColor;
 }
-section.u4m-accordion .accordions details:hover {
-  background-color: #edf0f2;
+.u4m-accordion .accordionItemsContainer .accItem h6 svg path {
+  fill: currentColor;
+  color: currentColor;
 }
-section.u4m-accordion .accordions details:last-child {
-  border-bottom: 1rem solid #cbd6e2;
+.u4m-accordion .accordionItemsContainer .accItem .accCont {
+  display: none;
 }
-section.u4m-accordion .accordions details div {
-  padding: 20rem;
+.u4m-accordion .accordionItemsContainer .accItem .accContDesc {
+  padding-top: 12px;
+}
+.u4m-accordion .accordionItemsContainer .accItem .accContDesc > * {
+  color: #213944;
+}
+.u4m-accordion .accordionItemsContainer .accItem .accContDesc p:last-child {
+  margin: 0;
+}
+.u4m-accordion .accordionItemsContainer .accItem.accordion_reverse_text h6 {
+  color: #ffffff;
+}
+.u4m-accordion .accordionItemsContainer .accItem.accordion_reverse_text .accContDesc > * {
+  color: #ffffff;
+}
+.u4m-accordion .accordionItemsContainer .accItem.activeAcc h6 svg.add {
+  display: none;
+}
+.u4m-accordion .accordionItemsContainer .accItem.activeAcc h6 svg.remove {
+  display: block;
 }

@@ -1,0 +1,22 @@
+@import "../../css/_module-imports";
+
+.footer-social {
+  ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    li {
+      margin: 0;
+      margin-right: 10px;
+      svg {
+        vertical-align: middle;
+        width: 23px;
+        height: 23px;
+        color: $action1;
+        fill: $action1;
+      }
+    }
+  }
+}

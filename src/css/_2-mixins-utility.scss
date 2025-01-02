@@ -5,8 +5,13 @@
   }
 }
 
+@mixin tabletvertmin {
+  @media (min-width: 768px) {
+    @content;
+  }
+}
 @mixin tabletvert {
-  @media (max-width: 768px) {
+  @media (max-width: 767px) {
     @content;
   }
 }
@@ -16,9 +21,20 @@
     @content;
   }
 }
+@mixin tabletmidmin {
+  @media (min-width: 992px) {
+    @content;
+  }
+}
+
+@mixin tabletmid {
+  @media (max-width: 991px) {
+    @content;
+  }
+}
 
 @mixin tabletMin {
-  @media (min-width: 1024px) {
+  @media (min-width: 1025px) {
     @content;
   }
 }
@@ -47,16 +63,26 @@
   }
 }
 
-@mixin ie {
+@mixin tabminpoint($min-width) {
+  @media (min-width: $min-width) {
+    @content;
+  }
+}
 
-  @media all and (-ms-high-contrast: none),
-  (-ms-high-contrast: active) {
+@mixin tabbreakpoint($min-width, $max-width) {
+  @media (min-width: $min-width) and (max-width: $max-width) {
+    @content;
+  }
+}
+
+@mixin ie {
+  @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
     @content;
   }
 }
 
 @mixin safari {
-  @media not all and (min-resolution:.001dpcm) {
+  @media not all and (min-resolution: 0.001dpcm) {
     @supports (-webkit-appearance: none) {
       @content;
     }
@@ -108,16 +134,16 @@
 
 @mixin centerSmall {
   @include center;
-  max-width: 900rem;
+  max-width: 1000rem;
 }
 
 // Links
 @mixin link {
-  text-decoration: none;
-  /* Remove default underline */
   color: $action1;
   transition: $animation1;
   display: inline-block;
+  text-decoration-thickness: 2px;
+  text-underline-offset: 4px;
 
   &:hover {
     color: $action1;

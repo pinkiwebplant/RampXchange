@@ -1,7 +1,7 @@
 <!--
   templateType: blog_post
   isAvailableForNewContent: true
-  label: rampxchange - Blog Post
+  label: Rampxchange - Blog Post
 -->
 {% extends './base.html' %}
 
@@ -34,7 +34,8 @@
       <div class="content">{{ content.post_body }}</div>
       <div class="topics">
         <span class="label">Tag(s):</span> 
-        {% for topic in content.topic_list %} 
+				 {% set included_topics = content.topic_list | rejectattr("slug", "equalto", "featured") | list %}
+        {% for topic in included_topics %} 
         <a class="link" href="{{ blog_tag_url(group.id, topic.slug) }}">{{ topic.name }}</a> 
         {% if not loop.last %}, {% endif %} 
         {% endfor %}
@@ -77,10 +78,35 @@
     #}
   
   </section>
-
-  {% module 'u4m-blog-post-primary-tag' path='../modules/u4m-blog-post-primary-tag', label='Blog Post Primary Tag' %}
-  {% module 'u4m-blog-post-cards' path='../modules/u4m-blog-post-cards', label='Blog Post Cards' %}
-  {% module 'u4m-subscribe' path='../modules/u4m-subscribe', label='Blog Subscribe' %}
+  {% module "blog_posts" path='./../modules/u4m-blog-posts', label="Blog Posts",
+	intro_content={
+    "include_eyebrow_text" : false,
+		"eyebrow_text" : "",
+    "include_heading" : true,
+    "heading_size" : "h2",
+    "heading" : "More from the blog",
+    "include_button" : true,
+    "button_group" : {
+      "button_type" : "std",
+      "button_style" : "sec-btn",
+      "button_text" : "View All Posts",
+      "link" : {
+        "url" : {
+          "content_id" : null,
+          "type" : "EXTERNAL",
+          "href" : ""
+        },
+        "open_in_new_tab" : false,
+        "no_follow" : false
+      }
+    }
+  },
+	blog_cards={
+    "feed_type" : "related",
+    "number_of_posts" : 3
+  }
+	
+	%}
 </main>
 {% endblock body %}
 

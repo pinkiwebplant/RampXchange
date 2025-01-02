@@ -1,75 +1,111 @@
 {% set moduleName = 'u4m-animated-stats' %}
-  {% set bgImageMax = 1920 %}
-  
-  {% include "../partials/u4-module-includes.html" %}
-  <h2 class="heading">{{ module.animated_stats_heading }}</h2>
-  {% if module.include_intro %}
-  <div class="intro">{{ module.intro_text }}</div>
-  {% endif %}
-  <div class="statistics items-{{module.items_per_row}}">
-    {% for item in module.statistic_group %}
-    <div class="statistics__item">
-      {% if item.include_image %}
-      <div class="image">
-        <img loading="lazy" src="{{ item.image_field.src }}" width="80" alt="{{ item.image_field.alt }}">
-      </div>
-      {% endif %}
-      {% if item.show_top_caption %}<span class="caption ">{{ item.top_caption }}</span>{% endif %}
-      {% if item.show_currency_label %}<span class="currency">{{ item.currency_label }}</span>{% endif %}        
-      <span class="number {% unless item.disable_animation %}count{% endunless %}">{{ item.numeric_stat }}</span>
-      {% if item.show_stat_unit %}<span class="unit">{{ item.stat_unit }}</span>{% endif %}
-      {% if item.show_bottom_caption %}<span class="caption ">{{ item.bottom_caption }}</span>{% endif %}
-    </div>
-    {% endfor %}
-  </div>
-  </section>
-  
-  
-  
-  
-  {% require_js %}
-  <script>
-    {
-      const onScroll = (entries, obs) => {
-        entries.forEach(entry => {
-          if (!entry.isIntersecting) entry.target.classList.remove('is-in-viewport');
-          else {
-            entry.target.classList.add('is-in-viewport');
-  
-            $('.count').each(function () {
-              $(this).prop('Counter',0).animate({
-                Counter: $(this).text()
-              }, {
-                duration: 4000,
-                easing: 'swing',
-                step: function (now) {
-                  // $(this).text(Math.ceil(now));
-                  $(this).text(Math.ceil(now).toString().replace(/(\d)(?=(\d\d\d)+(?!\d))/g, "$1,"));
-                  $(this).removeClass( "count" )
-                }
-              });
+{% set ExtramoduleClass = '' %}
+{% include "../partials/u4-module-includes.html" %}
+
+<div class="page-center ">
+	<div class="intro_wrapp">
+		{{macros.introGroup(module.intro_content)}}
+	</div>
+	<div class="animated-stats-row">
+		<div class="statistics-items flex-row">
+			{% for item in module.statistic_group %}
+			<div class="animated-stats-item span3">
+				<div class="stats-item bg_{{ module.card_settings.background_settings.background_type }} bg_pos_{{ module.card_settings.background_settings.select_background_position }}">
+					{% if module.card_settings.background_settings.background_type == "color" %}
+					<div
+							 class="bg_overlay bg_color {{ module.card_settings.background_settings.select_color }}"></div>
+					{% endif %}
+					{% if module.card_settings.background_settings.background_type == "gradient" %}
+					<div
+							 class="bg_overlay bg_color {{ module.card_settings.background_settings.select_gradient }}"></div>
+					{% endif %}
+					{% if module.card_settings.background_settings.background_type == "image" %}
+					<div class="bg_overlay bg_card_image"></div>
+					{% endif %}
+					<div class="stats-item-inn">
+						<span class="number {{ module.card_settings.select_count_text_color }}">
+							<span class="prefix">{{ item.prefix }}</span>
+{# 							<span class="counter-value counter" data-count="{{ item.numeric_stat }}">0</span> #}
+														<span class="counter-value counter" data-count="{{ item.numeric_stat }}">{{ item.numeric_stat }}</span>
+							<span class="suffix">{{ item.suffix }}</span>
+						</span>
+						<span class="caption {{ module.card_settings.select_content_text_color }}">{{ item.caption }}</span>
+					</div>
+				</div>
+			</div>
+			{% endfor %}
+		</div>
+	</div>
+
+</div>
+</section>
+
+{% require_css %}
+
+<style>
+
+	{% if module.card_settings.background_settings.background_type == "image" %}
+	{% if module.card_settings.background_settings.background_image.src %}
+	.{{name}}.u4m-animated-stats .animated-stats-item .bg_card_image{
+		background-image:url({{ module.card_settings.background_settings.background_image.src }});
+		    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+	}
+	{% endif %}
+	{% endif %}
+
+</style>
+{% end_require_css %}
+
+
+{% require_js %}
+
+<script>
+	var a = 0;
+	$(window).scroll(function() {
+
+		var oTop = $('.{{name}}.u4m-animated-stats .statistics-items').offset().top - window.innerHeight;
+								 if (a == 0 && $(window).scrollTop() > oTop) {
+// 			$('.counter-value').each(function() {
+// 				var $this = $(this),
+// 						countTo = $this.attr('data-count');
+// 				$({
+// 					countNum: $this.text()
+// 				}).animate({
+// 					countNum: countTo
+// 				},
+
+// 									 {
+
+// 					duration: 5000,
+// 					easing: 'swing',
+// 					step: function() {
+// 						$this.text(Math.floor(this.countNum));
+// 					},
+// 					complete: function() {
+// 						$this.text(this.countNum);
+// 						//alert('finished');
+// 					}
+
+// 				});
+// 			});
+			
+			      $('.counter').counterUp({
+                delay: 10,
+                time: 1000
             });
-  
-          }
-        });
-      };
-  
-      const options = {
-        threshold: .75 // 50% of element in view
-      }
-  
-      const observer = new IntersectionObserver(onScroll, options);
-      document.querySelectorAll("section.{{moduleName}}.{{name}}").forEach(section => observer.observe(section));
-  
-                                }
-  
-  
-  </script>
-  {% end_require_js %}
-  
-  
-  
-  
-  
-  
-  
+			
+			a = 1;
+		}
+
+	});
+</script>
+
+{% end_require_js %}
+
+
+
+
+
+

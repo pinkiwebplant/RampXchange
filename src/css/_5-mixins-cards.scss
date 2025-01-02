@@ -309,3 +309,114 @@
     margin: 0 0 20px;
   }
 }
+
+// *********************************************************** card Item *******************************************************************************
+
+@mixin cardItem {
+  .cardItems {
+    margin: 0 -10px;
+    row-gap: 20px;
+    .cardItem {
+      padding: 0 10px;
+      width: 100%;
+      @include tabletvertmin {
+        width: 50%;
+      }
+      @include tabletmidmin {
+        width: 33.33%;
+      }
+      .itemInr {
+        border-radius: 12px;
+        overflow: hidden;
+        &.cardColor {
+          * {
+            color: $white;
+          }
+          .itemCnWrap {
+            .itemCntSec {
+              .itemTags {
+                span {
+                  background: $white;
+                }
+              }
+            }
+          }
+        }
+        a {
+          text-decoration: none;
+        }
+        a:not(.arrow-link) {
+          color: inherit;
+        }
+        .itemImg {
+          .itemImgin {
+            position: relative;
+            padding-bottom: 258px;
+            background-size: cover;
+            background-position: center;
+            @include phone {
+              padding-bottom: 56.66%;
+            }
+            .absltLink {
+              position: absolute;
+              height: 100%;
+              width: 100%;
+              top: 0;
+            }
+          }
+        }
+        .itemCnWrap {
+          display: flex;
+          flex-direction: column;
+          padding: 36px 24px;
+          @include tabletvertmin {
+            height: calc(100% - 258px);
+          }
+          .itemCntSec {
+            margin-bottom: 32px;
+            .itemTitle {
+              h4 {
+                margin: 0;
+              }
+            }
+            .itemTags {
+              display: flex;
+              gap: 5px;
+              align-items: center;
+              @include size13;
+              font-weight: 500;
+              line-height: 1;
+              margin-bottom: 8px;
+              flex-wrap: nowrap;
+              @include phone {
+                flex-wrap: wrap;
+              }
+              span {
+                width: 4px;
+                height: 4px;
+                background: $heading;
+                border-radius: 100%;
+              }
+            }
+            .itemMeta {
+              @include size13;
+              line-height: 1;
+              margin-bottom: 32px;
+              text-transform: uppercase;
+              display: flex;
+              gap: 7px;
+              flex-wrap: nowrap;
+              @include phone {
+                flex-wrap: wrap;
+              }
+            }
+          }
+          .intro_btn_wrap {
+            margin: auto 0 0;
+            justify-content: start;
+          }
+        }
+      }
+    }
+  }
+}

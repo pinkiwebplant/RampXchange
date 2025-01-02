@@ -1,0 +1,28 @@
+@import "../../css/_module-imports";
+
+.u4m-blog-cards {
+    .intro_wrapp {
+        .intro_content {
+            max-width: 100%;
+            padding: 0;
+            text-align: left;
+            display: flex;
+            gap: 20px;
+            justify-content: space-between;
+            flex-wrap: nowrap;
+            @include phone {
+                flex-direction: column;
+            }
+            .intro_title {
+                margin: 0;
+            }
+        }
+        .intro_btn_wrap {
+            margin: 0;
+            justify-content: start;
+        }
+    }
+    .CardWrap {
+        @include cardItem;
+    }
+}

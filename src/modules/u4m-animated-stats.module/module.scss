@@ -1,77 +1,111 @@
 @import "../../css/_module-imports";
-section.u4m-animated-stats {
-  margin-top: 100rem;
-  margin-bottom: 100rem;
+.u4m-animated-stats {
   &.reverse-text {
     color: $white;
   }
-  .heading {
-    @include center;
-    @include h2;
-    text-align: center;
-  }
-  .intro {
-    @include center;
-  }
-  div.statistics {
-    @include center;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    &.items-four {
-      div.statistics__item {
-        flex-basis: calc(25% - 40rem);
-        @include tablet {
-          flex-basis: calc(50% - 40rem);
+  .statistics-items {
+    margin-left: -10px;
+    margin-right: -10px;
+    row-gap: 20px;
+    .animated-stats-item {
+      padding-left: 10px;
+      padding-right: 10px;
+      @include tabletmid {
+        width: 50%;
+      }
+      @include tabletvert {
+        width: 100%;
+      }
+      .stats-item {
+        position: relative;
+        padding: 36px 24px;
+        border-radius: 12px;
+        overflow: hidden;
+
+        @include tabletvert {
+          padding: 30px 24px;
         }
-        @include phone {
-          flex: 0 0 100%;
-        }
-      }
-    }
-    div.statistics__item {
-      text-align: center;
-      margin: 20rem;
-      flex-basis: calc(33.333% - 40rem);
-      flex-grow: 0;
-      flex-shrink: 0;
-      @include tablet {
-        flex-basis: calc(50% - 40rem);
-      }
-      @include phone {
-        flex: 0 0 100%;
-      }
-      .image {
-        min-height: 70rem;
-        img {
-          max-width: 80rem;
+
+        .stats-item-inn {
+          position: relative;
+          z-index: 9;
+          display: flex;
+          flex-wrap: wrap;
+          flex-direction: column;
+          align-items: center;
+          row-gap: 20px;
           text-align: center;
-          margin: 0 auto;
-          display: block;
+          .number {
+            @include h2;
+            margin-bottom: 0;
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            gap: 2px;
+            @include phone {
+              margin-bottom: 0;
+            }
+            .prefix,
+            .suffix {
+              @include h6;
+              margin-bottom: 0;
+              @include phone {
+                margin-bottom: 0;
+              }
+            }
+
+            @include tabletmid {
+              font-size: 40rem;
+            }
+
+            @include tabletvert {
+              font-size: 40rem;
+            }
+          }
+          .caption {
+            @include h6;
+            margin-bottom: 0;
+            font-weight: 500;
+          }
         }
       }
-      .count,
-      .number {
-        font-size: 50rem;
-        font-weight: bold;
-      }
-      .currency {
-        padding-right: 5rem;
-        //vertical-align: text-bottom;
-        font-size: 50rem;
-        font-weight: bold;
-      }
-      .unit {
-        padding-left: 5rem;
-        //vertical-align: text-bottom;
-        font-size: 50rem;
-        font-weight: bold;
-      }
-      .caption {
-        display: block;
-        font-weight: bold;
-      }
     }
+  }
+
+  .lime_green {
+    color: $action1;
+  }
+  .strong_cyan {
+    color: $action2;
+  }
+  .black {
+    color: $black;
+  }
+  .white {
+    color: $white;
+  }
+  .soft_green {
+    color: $digitalgreen;
+  }
+  .dark_desaturated_blue {
+    color: $heading;
+  }
+  .light_gray {
+    color: $gray1;
+  }
+  .dark_grayish_blue {
+    color: $gray2;
+  }
+  .moderate_orange {
+    color: $bronze;
+  }
+  .light_grayish_green {
+    color: $airwhite;
+  }
+  .desaturated_blue {
+    color: $statblue;
+  }
+  .very_light_gray {
+    color: $gray3;
   }
 }

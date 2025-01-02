@@ -1,0 +1,57 @@
+{% set moduleName = 'u4m-split-lp' %}
+{% set ExtramoduleClass = '' %}
+{% include "../partials/u4-module-includes.html" %}
+
+<div class="page-center ">
+	<div class="flex_row">
+		<div class="leftSec">
+			<div class="intro_wrapp">
+				{{macros.introGroup(module.intro_content)}}
+				{% if module.intro_content.include_featured %}
+				<div class="featuredSec">
+					<h5>{{ module.intro_content.featured_content.title }}</h5>
+					<div class="featured">
+						<ul class="featuredItems">
+							{% for item in module.intro_content.featured_content.items %}
+							<li class="featuredItem"><span class="material-symbols-outlined {{ module.intro_content.featured_content.icon_settings.icon_color }} {{ module.intro_content.featured_content.icon_settings.select_icon_theme }}">{{ module.intro_content.featured_content.icon }}</span>{{ item.text }}</li>
+							{% endfor %}
+						</ul>
+					</div>
+				</div>
+				{% endif %}
+			</div>
+		</div>
+		<div class="rightSec">
+			<div class="rightSecin">
+				{% if module.form_section.content %}
+				<div class="formContent">{{ module.form_section.content }}</div>
+				{% endif %}
+				{% if module.form_section.include_form %}
+				<div class="formSec">
+					{% form
+						form_to_use="{{ module.form_section.select_form.form_id }}"
+						response_response_type="{{ module.form_section.select_form.response_type }}"
+						response_message="{{ module.form_section.select_form.message }}"
+						response_redirect_id="{{ module.form_section.select_form.redirect_id }}"
+						response_redirect_url="{{module.form_section.select_form.redirect_url}}"
+						gotowebinar_webinar_key="{{ module.form_section.select_form.gotowebinar_webinar_key }}"
+					%}
+				</div>
+				{% endif %}
+			</div>
+		</div>
+	</div>
+</div>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
