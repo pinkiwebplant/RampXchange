@@ -1,41 +1,43 @@
 @import "../../css/_module-imports";
 
-
 .u4m-accordion {
-	.accordionItemsContainer {
-		.accItem {
-			padding: 20px 24px;
-			display: flex;
-			flex-direction: column;
-			gap: 12px;
-			border-radius: 4px;
-			overflow: hidden;
-			h6 {
-				margin: 0;
-				display: flex;
-				justify-content: space-between;
-				cursor: pointer;
-				gap: 10px;
-				align-items: center;
+  .accordionItemsContainer {
+    .accItem {
+      padding: 20px 24px;
+      display: flex;
+      flex-direction: column;
+      gap: 0;
+      border-radius: 4px;
+      overflow: hidden;
+      h6 {
+        margin: 0;
+        display: flex;
+        justify-content: space-between;
+        cursor: pointer;
+        gap: 10px;
+        align-items: center;
         color: $heading;
-				svg.remove {
-					display: none;
-				}
-				svg.add {
-					display: block;
-				}
-        svg{
+        svg.remove {
+          display: none;
+        }
+        svg.add {
+          display: block;
+        }
+        svg {
           fill: currentColor;
           color: currentColor;
-          path{
+          path {
             fill: currentColor;
             color: currentColor;
           }
         }
-			}
-			.accCont {
-				display: none;
-			}
+      }
+      .accCont {
+        display: none;
+      }
+      .accContDesc {
+        padding-top: 12px;
+      }
       .accContDesc {
         > * {
           color: $heading;
@@ -46,9 +48,9 @@
           }
         }
       }
-      &.accordion_reverse_text{
+      &.accordion_reverse_text {
         h6 {
-color: $white;
+          color: $white;
         }
         .accContDesc {
           > * {
@@ -56,20 +58,19 @@ color: $white;
           }
         }
       }
-		}
-		display: flex;
-		flex-direction: column;
-		gap: 12px;
-		.accItem.activeAcc {
-			h6 {
-				svg.add {
-					display: none;
-				}
-				svg.remove {
-					display: block;
-				}
-			}
-		}
-
-	}
+    }
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    .accItem.activeAcc {
+      h6 {
+        svg.add {
+          display: none;
+        }
+        svg.remove {
+          display: block;
+        }
+      }
+    }
+  }
 }
