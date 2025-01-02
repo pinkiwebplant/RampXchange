@@ -28,6 +28,9 @@ html {
     flex-direction: column-reverse;
   }
 }
+.u4m-alternating-content .row.con {
+  align-items: start;
+}
 .u4m-alternating-content .row.right_col {
   flex-direction: row-reverse;
 }
@@ -116,4 +119,7 @@ html {
 }
 .u4m-alternating-content .row .media_section .vid_section.video-enable .poster_img {
   display: none;
+}
+.u4m-alternating-content .row .media_section .media_content :is(h1.h2, h3, h4, h5, h6) {
+  margin-bottom: 20rem;
 }

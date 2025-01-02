@@ -3,7 +3,7 @@
 {% include "../partials/u4-module-includes.html" %}
 
 <div class="page-center ">
-	<div class="row {{ module.module_settings.select_content_alignment }}">
+	<div class="row {{ module.module_settings.select_content_alignment }} {{ module.media_section.select_media_type }}">
 		<div class="left-section">
 			<div class="intro_wrapp">
 				{{macros.introGroup(module.intro_content)}}
@@ -43,6 +43,10 @@
 					</div>
 				</div>
 				{% endif %}
+			</div>
+			{% elif module.media_section.select_media_type=="con"%}
+			<div class="media_content">
+{{ module.media_section.content }}
 			</div>
 			{% endif %}
 		</div>

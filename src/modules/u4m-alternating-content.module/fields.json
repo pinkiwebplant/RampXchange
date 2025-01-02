@@ -307,7 +307,7 @@
     "required" : false,
     "locked" : false,
     "display" : "select",
-    "choices" : [ [ "img", "Image" ], [ "vd", "Video" ] ],
+    "choices" : [ [ "img", "Image" ], [ "vd", "Video" ], [ "con", "Content" ] ],
     "multiple" : false,
     "reordering_enabled" : true,
     "preset" : null,
@@ -431,6 +431,23 @@
     "show_emoji_picker" : false,
     "type" : "text",
     "default" : "https://www.youtube.com/embed/29BQhSVPFpo?autoplay=1"
+  }, {
+    "id" : "bba7649c-091c-1da4-0c60-508b116b59e1",
+    "name" : "content",
+    "display_width" : null,
+    "label" : "Content",
+    "required" : false,
+    "locked" : false,
+    "visibility" : {
+      "controlling_field" : null,
+      "controlling_field_path" : "media_section.select_media_type",
+      "controlling_value_regex" : "con",
+      "property" : null,
+      "operator" : "EQUAL",
+      "access" : null
+    },
+    "type" : "richtext",
+    "default" : "<h5>Alternating Content Module</h5>\n<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>\n<ul>\n<li>Lorem ipsum dolor sit amet, consectetur adipiscing elit</li>\n<li>Lorem ipsum dolor sit amet, consectetur adipiscing elit</li>\n<li>Lorem ipsum dolor sit amet, consectetur adipiscing elit</li>\n</ul>"
   } ],
   "tab" : "CONTENT",
   "expanded" : false,
@@ -460,7 +477,8 @@
     },
     "select_video_type" : "",
     "select_video" : "https://23543895.fs1.hubspotusercontent-na1.net/hubfs/23543895/RampXchange/videos/mov_bbb.mp4",
-    "embed_url" : "https://www.youtube.com/embed/29BQhSVPFpo?autoplay=1"
+    "embed_url" : "https://www.youtube.com/embed/29BQhSVPFpo?autoplay=1",
+    "content" : "<h5>Alternating Content Module</h5>\n<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>\n<ul>\n<li>Lorem ipsum dolor sit amet, consectetur adipiscing elit</li>\n<li>Lorem ipsum dolor sit amet, consectetur adipiscing elit</li>\n<li>Lorem ipsum dolor sit amet, consectetur adipiscing elit</li>\n</ul>"
   }
 }, {
   "id" : "22527ae0-a6f1-e03f-404a-87451006191b",
