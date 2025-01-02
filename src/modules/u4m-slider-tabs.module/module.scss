@@ -157,6 +157,8 @@
         width: 50%;
         .img-item {
           display: none;
+          border-radius: $borderRadius;
+          overflow: hidden;
           &.acc-open {
             display: block;
           }

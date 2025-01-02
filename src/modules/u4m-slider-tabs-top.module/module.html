@@ -14,16 +14,16 @@
 				<ul class="tab-list">
 					{% for item in module.tabber_items %}
 					<li class="{% if loop.first %}active{% endif %}">
-						<a href="javascrpipt:void(0);" data-tab="tab{{ loop.index }}">{{ item.content_section.title }}</a>
+						<a href="javascript:void(0);" data-tab="tab{{ loop.index }}">{{ item.content_section.title }}</a>
 					</li>
 					{% endfor %}
 				</ul>
-			</div>
+			</div> 
 			<div class="tabber_tab_content">
 				{% for item in module.tabber_items %}
 				<div class="tabber_cntnt {% if loop.first %}active{% endif %} {{ item.content_alignment }}" content-id="tab{{ loop.index }}">
 					<div class="toggle_btn">
-						<a href="javascrpipt:void(0);">{{ item.content_section.title }} <span class="plus">+</span><span class="minus">-</span></a>
+						<a href="javascript:void(0);">{{ item.content_section.title }} <span class="plus">+</span><span class="minus">-</span></a>
 					</div>
 					<div class="tabber_cntnt_row">
 						<div class="left_wrapper">
