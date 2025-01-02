@@ -428,6 +428,7 @@
       "name" : "speed",
       "display_width" : null,
       "label" : "Speed",
+      "help_text" : "Milliseconds",
       "required" : false,
       "locked" : false,
       "display" : "slider",

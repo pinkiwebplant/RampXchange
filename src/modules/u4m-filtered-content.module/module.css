@@ -16,6 +16,10 @@ html {
   }
 }
 
+section.u4m-filtered-content.reverse-text .featCardsListWrap .pagination nav button.prevnext {
+  border: 1px solid #ffffff;
+  color: #ffffff;
+}
 section.u4m-filtered-content .topSec .flex_row {
   gap: 40px;
 }
@@ -224,7 +228,9 @@ section.u4m-filtered-content .featCardsListWrap .filterWrap .flex_row .selctArro
 section.u4m-filtered-content .featCardsListWrap .filterWrap .flex_row .selctArrow select {
   background-size: 12px;
   background-repeat: no-repeat;
-  appearance: none;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
   background-position: calc(100% - 30px) center;
   padding: 12.5px 64px 12.5px 24px;
   border-radius: 12px;

@@ -1,6 +1,19 @@
 @import "../../css/_module-imports";
 
 section.u4m-filtered-content {
+  &.reverse-text {
+    .featCardsListWrap {
+      .pagination {
+        nav {
+          button.prevnext {
+            border: 1px solid $white;
+            color: $white;
+          }
+        }
+      }
+    }
+  }
+
   .topSec {
     .flex_row {
       @include tabletmidmin {
