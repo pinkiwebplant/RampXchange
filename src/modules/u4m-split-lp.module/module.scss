@@ -15,7 +15,7 @@
         @include tabletmidmin {
             margin: 0 -20px;
         }
-        @include tabletMin {
+        @include tabminpoint(1340px) {
             margin: 0 -40px;
         }
         > * {
@@ -24,7 +24,7 @@
                 max-width: 50%;
                 padding: 0 20px;
             }
-            @include tabletMin {
+            @include tabminpoint(1340px) {
                 padding: 0 40px;
             }
         }
@@ -70,12 +70,9 @@
         }
         .rightSec {
             .rightSecin {
-                background-color: $white;
-                border-radius: 12rem;
-                float: none;
+                @include formBase;
+                overflow: visible;
                 max-width: 100%;
-                overflow: auto;
-                padding: 40rem;
                 .formContent {
                     margin-bottom: 20px;
                     p {
@@ -96,140 +93,6 @@
                         overflow: visible;
                         margin: 0;
                         color: $heading;
-                        .hs-form-field {
-                            margin-bottom: 20px;
-                            > label {
-                                display: block;
-                            }
-                        }
-                        textarea {
-                            display: block;
-                        }
-                        .input {
-                            margin-right: 0 !important;
-                            select {
-                                line-height: 1;
-                                padding: 16.5rem 12rem;
-                                background-image: url(https://23543895.fs1.hubspotusercontent-na1.net/hubfs/23543895/RampXchange/images/selectArrow.png);
-                                background-size: 12rem 7rem;
-                                margin-bottom: 0;
-                            }
-                            & + .hs-error-msg {
-                                text-align: left;
-                            }
-                            > ul.inputs-list {
-                                margin: 0;
-                                > li {
-                                    display: block;
-                                    margin-right: 0;
-                                    letter-spacing: 0;
-                                    margin-bottom: 8px;
-                                    line-height: 1;
-                                    font-size: 13rem;
-                                    &:last-child {
-                                        margin-bottom: 0;
-                                    }
-                                    label {
-                                        display: flex;
-                                        align-items: center;
-                                        gap: 10px;
-                                        position: relative;
-                                        > span {
-                                            font-size: 13rem;
-                                            line-height: 1;
-                                            color: $gray2;
-                                            position: static;
-                                            &:after {
-                                                content: "";
-                                                height: 20px;
-                                                width: 20px;
-                                                display: block;
-                                                position: absolute;
-                                                left: 0;
-                                                top: 0;
-                                                opacity: 0;
-                                                background-image: url(https://23543895.fs1.hubspotusercontent-na1.net/hubfs/23543895/RampXchange/images/formCheck.png);
-                                                background-repeat: no-repeat;
-                                                background-position: center;
-                                            }
-                                            &:before {
-                                                content: "";
-                                                height: 20px;
-                                                width: 20px;
-                                                display: block;
-                                                position: absolute;
-                                                left: 0;
-                                                top: 0;
-                                                border: 1px solid $gray2;
-                                            }
-                                        }
-                                    }
-                                }
-                            }
-                            input[type="checkbox"],
-                            input[type="radio"] {
-                                position: static;
-                                margin: 0;
-                                height: 20px;
-                                width: 20px !important;
-                                appearance: none;
-                                outline: none !important;
-                                &:checked + *:before,
-                                &:checked + *:before {
-                                    background: $heading;
-                                }
-                                &:checked + *:after,
-                                &:checked + *:after {
-                                    opacity: 1;
-                                }
-                            }
-                        }
-
-                        .hs-fieldtype-radio {
-                            .input {
-                                > ul.inputs-list {
-                                    > {
-                                        li {
-                                            label {
-                                                > span:before {
-                                                    border-radius: 100%;
-                                                }
-                                            }
-                                        }
-                                    }
-                                }
-                            }
-                        }
-                        fieldset.form-columns-2 {
-                            margin: 0 -10px;
-                            > .hs-form-field {
-                                padding: 0 10px;
-                                &:last-of-type {
-                                    margin-left: 0;
-                                }
-                            }
-                        }
-                        fieldset.form-columns-1 {
-                            .input {
-                                margin: 0;
-                            }
-                            .hs-input {
-                                width: 100% !important;
-                                margin-bottom: 0;
-                            }
-                        }
-                        .hs-input:not(input[type="checkbox"]):not(input[type="radio"]) {
-                            outline: none !important;
-                            line-height: 1;
-                            padding: 13rem 12rem;
-                            margin-bottom: 0;
-                        }
-                        .hs-richtext {
-                            p {
-                                font-size: 11rem;
-                                color: $gray2;
-                            }
-                        }
                         .hs_submit.hs-submit {
                             text-align: center;
                         }

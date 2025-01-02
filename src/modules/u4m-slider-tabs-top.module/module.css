@@ -90,6 +90,7 @@ html {
   display: flex;
   gap: 60px;
   align-items: center;
+  align-items: flex-start;
 }
 @media (max-width: 767px) {
   .u4m-slider-tabs-top .slider-tabs-top-wrapper .row .tabber_tab_content .tabber_cntnt_row {

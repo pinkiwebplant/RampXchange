@@ -187,6 +187,9 @@ section.u4m-landing-page-sign-up .form-wrap.hs-form .hs_error_rollup ul.hs-error
   font-weight: normal;
   text-transform: none;
 }
+section.u4m-landing-page-sign-up .form-wrap.hs-form .hs-form-field, section.u4m-landing-page-sign-up .form-wrap.mixitup-multifilter .hs-form-field, section.u4m-landing-page-sign-up .form-wrap .hs-form-field {
+  margin-bottom: 20px;
+}
 section.u4m-landing-page-sign-up .form-wrap.hs-form .hs-form-field > label, section.u4m-landing-page-sign-up .form-wrap.mixitup-multifilter .hs-form-field > label, section.u4m-landing-page-sign-up .form-wrap .hs-form-field > label {
   font-size: 13rem;
   font-weight: 500;
@@ -194,6 +197,10 @@ section.u4m-landing-page-sign-up .form-wrap.hs-form .hs-form-field > label, sect
   letter-spacing: 0;
   pointer-events: auto;
   margin-bottom: 8rem;
+  display: block;
+}
+section.u4m-landing-page-sign-up .form-wrap.hs-form .input, section.u4m-landing-page-sign-up .form-wrap.mixitup-multifilter .input, section.u4m-landing-page-sign-up .form-wrap .input {
+  margin-right: 0 !important;
 }
 section.u4m-landing-page-sign-up .form-wrap.hs-form .input input[type=text],
 section.u4m-landing-page-sign-up .form-wrap.hs-form .input input[type=number],
@@ -207,10 +214,12 @@ section.u4m-landing-page-sign-up .form-wrap .input input[type=tel],
 section.u4m-landing-page-sign-up .form-wrap .input input[type=email] {
   border: 1rem solid #6e757c;
   border-radius: 4rem;
-  margin-bottom: 20rem;
   font-size: 16rem;
   background-color: #ffffff;
-  padding: 12rem;
+  line-height: 1;
+  margin-bottom: 0;
+  outline: none !important;
+  padding: 13rem 12rem;
   width: 100%;
   -webkit-appearance: none;
      -moz-appearance: none;
@@ -265,11 +274,91 @@ section.u4m-landing-page-sign-up .form-wrap .input input[type=tel]::placeholder,
 section.u4m-landing-page-sign-up .form-wrap .input input[type=email]::placeholder {
   color: #6e757c;
 }
+section.u4m-landing-page-sign-up .form-wrap.hs-form .input ul.inputs-list, section.u4m-landing-page-sign-up .form-wrap.mixitup-multifilter .input ul.inputs-list, section.u4m-landing-page-sign-up .form-wrap .input ul.inputs-list {
+  margin: 0;
+}
+section.u4m-landing-page-sign-up .form-wrap.hs-form .input ul.inputs-list > li, section.u4m-landing-page-sign-up .form-wrap.mixitup-multifilter .input ul.inputs-list > li, section.u4m-landing-page-sign-up .form-wrap .input ul.inputs-list > li {
+  display: block;
+  margin-right: 0;
+  letter-spacing: 0;
+  margin-bottom: 8px;
+  line-height: 1;
+  font-size: 13rem;
+}
+section.u4m-landing-page-sign-up .form-wrap.hs-form .input ul.inputs-list > li:last-child, section.u4m-landing-page-sign-up .form-wrap.mixitup-multifilter .input ul.inputs-list > li:last-child, section.u4m-landing-page-sign-up .form-wrap .input ul.inputs-list > li:last-child {
+  margin-bottom: 0;
+}
+section.u4m-landing-page-sign-up .form-wrap.hs-form .input ul.inputs-list > li label, section.u4m-landing-page-sign-up .form-wrap.mixitup-multifilter .input ul.inputs-list > li label, section.u4m-landing-page-sign-up .form-wrap .input ul.inputs-list > li label {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  position: relative;
+}
+section.u4m-landing-page-sign-up .form-wrap.hs-form .input ul.inputs-list > li label > span, section.u4m-landing-page-sign-up .form-wrap.mixitup-multifilter .input ul.inputs-list > li label > span, section.u4m-landing-page-sign-up .form-wrap .input ul.inputs-list > li label > span {
+  font-size: 13rem;
+  line-height: 1;
+  color: #6e757c;
+  position: static;
+}
+section.u4m-landing-page-sign-up .form-wrap.hs-form .input ul.inputs-list > li label > span:after, section.u4m-landing-page-sign-up .form-wrap.mixitup-multifilter .input ul.inputs-list > li label > span:after, section.u4m-landing-page-sign-up .form-wrap .input ul.inputs-list > li label > span:after {
+  content: "";
+  height: 20px;
+  width: 20px;
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  opacity: 0;
+  background-image: url(https://23543895.fs1.hubspotusercontent-na1.net/hubfs/23543895/RampXchange/images/formCheck.png);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+section.u4m-landing-page-sign-up .form-wrap.hs-form .input ul.inputs-list > li label > span:before, section.u4m-landing-page-sign-up .form-wrap.mixitup-multifilter .input ul.inputs-list > li label > span:before, section.u4m-landing-page-sign-up .form-wrap .input ul.inputs-list > li label > span:before {
+  content: "";
+  height: 20px;
+  width: 20px;
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  border: 1px solid #6e757c;
+}
 section.u4m-landing-page-sign-up .form-wrap.hs-form .input input[type=checkbox],
 section.u4m-landing-page-sign-up .form-wrap.hs-form .input input[type=radio], section.u4m-landing-page-sign-up .form-wrap.mixitup-multifilter .input input[type=checkbox],
 section.u4m-landing-page-sign-up .form-wrap.mixitup-multifilter .input input[type=radio], section.u4m-landing-page-sign-up .form-wrap .input input[type=checkbox],
 section.u4m-landing-page-sign-up .form-wrap .input input[type=radio] {
   width: auto;
+}
+section.u4m-landing-page-sign-up .form-wrap.hs-form .input input[type=checkbox],
+section.u4m-landing-page-sign-up .form-wrap.hs-form .input input[type=radio], section.u4m-landing-page-sign-up .form-wrap.mixitup-multifilter .input input[type=checkbox],
+section.u4m-landing-page-sign-up .form-wrap.mixitup-multifilter .input input[type=radio], section.u4m-landing-page-sign-up .form-wrap .input input[type=checkbox],
+section.u4m-landing-page-sign-up .form-wrap .input input[type=radio] {
+  position: static;
+  margin: 0;
+  height: 20px;
+  width: 20px !important;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  outline: none !important;
+}
+section.u4m-landing-page-sign-up .form-wrap.hs-form .input input[type=checkbox]:checked + *:before, section.u4m-landing-page-sign-up .form-wrap.hs-form .input input[type=checkbox]:checked + *:before,
+section.u4m-landing-page-sign-up .form-wrap.hs-form .input input[type=radio]:checked + *:before,
+section.u4m-landing-page-sign-up .form-wrap.hs-form .input input[type=radio]:checked + *:before, section.u4m-landing-page-sign-up .form-wrap.mixitup-multifilter .input input[type=checkbox]:checked + *:before, section.u4m-landing-page-sign-up .form-wrap.mixitup-multifilter .input input[type=checkbox]:checked + *:before,
+section.u4m-landing-page-sign-up .form-wrap.mixitup-multifilter .input input[type=radio]:checked + *:before,
+section.u4m-landing-page-sign-up .form-wrap.mixitup-multifilter .input input[type=radio]:checked + *:before, section.u4m-landing-page-sign-up .form-wrap .input input[type=checkbox]:checked + *:before, section.u4m-landing-page-sign-up .form-wrap .input input[type=checkbox]:checked + *:before,
+section.u4m-landing-page-sign-up .form-wrap .input input[type=radio]:checked + *:before,
+section.u4m-landing-page-sign-up .form-wrap .input input[type=radio]:checked + *:before {
+  background: #213944;
+}
+section.u4m-landing-page-sign-up .form-wrap.hs-form .input input[type=checkbox]:checked + *:after, section.u4m-landing-page-sign-up .form-wrap.hs-form .input input[type=checkbox]:checked + *:after,
+section.u4m-landing-page-sign-up .form-wrap.hs-form .input input[type=radio]:checked + *:after,
+section.u4m-landing-page-sign-up .form-wrap.hs-form .input input[type=radio]:checked + *:after, section.u4m-landing-page-sign-up .form-wrap.mixitup-multifilter .input input[type=checkbox]:checked + *:after, section.u4m-landing-page-sign-up .form-wrap.mixitup-multifilter .input input[type=checkbox]:checked + *:after,
+section.u4m-landing-page-sign-up .form-wrap.mixitup-multifilter .input input[type=radio]:checked + *:after,
+section.u4m-landing-page-sign-up .form-wrap.mixitup-multifilter .input input[type=radio]:checked + *:after, section.u4m-landing-page-sign-up .form-wrap .input input[type=checkbox]:checked + *:after, section.u4m-landing-page-sign-up .form-wrap .input input[type=checkbox]:checked + *:after,
+section.u4m-landing-page-sign-up .form-wrap .input input[type=radio]:checked + *:after,
+section.u4m-landing-page-sign-up .form-wrap .input input[type=radio]:checked + *:after {
+  opacity: 1;
 }
 section.u4m-landing-page-sign-up .form-wrap.hs-form .input input select, section.u4m-landing-page-sign-up .form-wrap.mixitup-multifilter .input input select, section.u4m-landing-page-sign-up .form-wrap .input input select {
   border: 1rem solid #6e757c;
@@ -295,16 +384,19 @@ section.u4m-landing-page-sign-up .form-wrap.hs-form .input select, section.u4m-l
   -webkit-appearance: none;
      -moz-appearance: none;
           appearance: none;
-  background: url("/src/templates/images/nav-arrow.svg") no-repeat;
-  background-size: 13rem 8rem;
   background-position: calc(100% - 20rem) center;
   border: 1rem solid #6e757c;
   border-radius: 4rem;
-  margin-bottom: 20rem;
   font-size: 13rem;
   background-color: #ffffff;
-  padding: 17.5rem 12rem;
   color: #6e757c;
+  line-height: 1;
+  padding: 16.5rem 12rem;
+  background-image: url(https://23543895.fs1.hubspotusercontent-na1.net/hubfs/23543895/RampXchange/images/selectArrow.png);
+  background-repeat: no-repeat;
+  background-size: 12rem 7rem;
+  margin-bottom: 0;
+  outline: none !important;
 }
 section.u4m-landing-page-sign-up .form-wrap.hs-form .input select:focus, section.u4m-landing-page-sign-up .form-wrap.mixitup-multifilter .input select:focus, section.u4m-landing-page-sign-up .form-wrap .input select:focus {
   border: 1rem solid #213944;
@@ -314,8 +406,8 @@ section.u4m-landing-page-sign-up .form-wrap.hs-form .input + .hs-error-msgs, sec
   width: 100%;
   padding-left: 0;
   list-style: none;
-  text-align: center;
-  margin: 0rem 0 20rem;
+  text-align: left;
+  margin: 8rem 0 20rem;
   padding: 0;
   animation: fadeIn1 0.3s ease;
 }
@@ -329,7 +421,7 @@ section.u4m-landing-page-sign-up .form-wrap.hs-form .input + .hs-error-msgs li, 
   text-align: center;
   background: red;
   display: inline-block;
-  color: white;
+  color: #ffffff;
   border-radius: 5rem;
   padding: 5rem 8rem;
   line-height: 1.2;
@@ -363,27 +455,34 @@ section.u4m-landing-page-sign-up .form-wrap.hs-form .input + .hs-error-msgs li l
     font-size: 12rem;
   }
 }
+section.u4m-landing-page-sign-up .form-wrap.hs-form .hs-fieldtype-radio .input > ul.inputs-list > li label > span:before, section.u4m-landing-page-sign-up .form-wrap.mixitup-multifilter .hs-fieldtype-radio .input > ul.inputs-list > li label > span:before, section.u4m-landing-page-sign-up .form-wrap .hs-fieldtype-radio .input > ul.inputs-list > li label > span:before {
+  border-radius: 100%;
+}
 section.u4m-landing-page-sign-up .form-wrap.hs-form .hs_upload_resume, section.u4m-landing-page-sign-up .form-wrap.mixitup-multifilter .hs_upload_resume, section.u4m-landing-page-sign-up .form-wrap .hs_upload_resume {
   margin-bottom: -3rem;
 }
 section.u4m-landing-page-sign-up .form-wrap.hs-form textarea, section.u4m-landing-page-sign-up .form-wrap.mixitup-multifilter textarea, section.u4m-landing-page-sign-up .form-wrap textarea {
   border: 1rem solid #6e757c;
   border-radius: 4rem;
-  font-size: 13rem;
-  margin-bottom: 20rem;
+  font-size: 16rem;
   min-height: 96rem;
   background-color: #ffffff;
   width: 100%;
   color: #213944;
+  display: block;
+  outline: none;
+  padding: 12rem;
 }
 section.u4m-landing-page-sign-up .form-wrap.hs-form textarea:focus, section.u4m-landing-page-sign-up .form-wrap.mixitup-multifilter textarea:focus, section.u4m-landing-page-sign-up .form-wrap textarea:focus {
   border: 1rem solid #213944;
 }
 section.u4m-landing-page-sign-up .form-wrap.hs-form textarea::-moz-placeholder, section.u4m-landing-page-sign-up .form-wrap.mixitup-multifilter textarea::-moz-placeholder, section.u4m-landing-page-sign-up .form-wrap textarea::-moz-placeholder {
   color: #6e757c;
+  font-size: 13rem;
 }
 section.u4m-landing-page-sign-up .form-wrap.hs-form textarea::placeholder, section.u4m-landing-page-sign-up .form-wrap.mixitup-multifilter textarea::placeholder, section.u4m-landing-page-sign-up .form-wrap textarea::placeholder {
   color: #6e757c;
+  font-size: 13rem;
 }
 section.u4m-landing-page-sign-up .form-wrap.hs-form textarea.invalid, section.u4m-landing-page-sign-up .form-wrap.mixitup-multifilter textarea.invalid, section.u4m-landing-page-sign-up .form-wrap textarea.invalid {
   border: 1px solid red;
@@ -481,10 +580,7 @@ section.u4m-landing-page-sign-up .form-wrap .form-columns-1 .hs-form-radio input
 section.u4m-landing-page-sign-up .form-wrap .form-columns-2 .hs-form-radio input,
 section.u4m-landing-page-sign-up .form-wrap .form-columns-3 .hs-form-radio input {
   width: auto;
-  margin-right: 10rem;
-  margin-left: 2rem;
   position: relative;
-  top: -2rem;
 }
 section.u4m-landing-page-sign-up .form-wrap.hs-form .hs-form-radio span,
 section.u4m-landing-page-sign-up .form-wrap.hs-form .form-columns-1 .hs-form-radio span,
@@ -527,8 +623,12 @@ section.u4m-landing-page-sign-up .form-wrap .form-columns-3 .hs-form-radio span 
     top: 2rem;
   }
 }
+section.u4m-landing-page-sign-up .form-wrap.hs-form .form-columns-3, section.u4m-landing-page-sign-up .form-wrap.mixitup-multifilter .form-columns-3, section.u4m-landing-page-sign-up .form-wrap .form-columns-3 {
+  margin: 0 -10rem;
+}
 section.u4m-landing-page-sign-up .form-wrap.hs-form .form-columns-3 .hs-form-field, section.u4m-landing-page-sign-up .form-wrap.mixitup-multifilter .form-columns-3 .hs-form-field, section.u4m-landing-page-sign-up .form-wrap .form-columns-3 .hs-form-field {
   width: 33.05%;
+  padding: 0 10rem;
 }
 @media (max-width: 1024px) {
   section.u4m-landing-page-sign-up .form-wrap.hs-form .form-columns-3 .hs-form-field, section.u4m-landing-page-sign-up .form-wrap.mixitup-multifilter .form-columns-3 .hs-form-field, section.u4m-landing-page-sign-up .form-wrap .form-columns-3 .hs-form-field {
@@ -543,8 +643,17 @@ section.u4m-landing-page-sign-up .form-wrap.hs-form .form-columns-3 .hs-form-fie
 section.u4m-landing-page-sign-up .form-wrap.hs-form .form-columns-3 div:last-child div, section.u4m-landing-page-sign-up .form-wrap.mixitup-multifilter .form-columns-3 div:last-child div, section.u4m-landing-page-sign-up .form-wrap .form-columns-3 div:last-child div {
   margin-right: 0;
 }
+section.u4m-landing-page-sign-up .form-wrap.hs-form .form-columns-2, section.u4m-landing-page-sign-up .form-wrap.mixitup-multifilter .form-columns-2, section.u4m-landing-page-sign-up .form-wrap .form-columns-2 {
+  margin: 0 -10px;
+}
+section.u4m-landing-page-sign-up .form-wrap.hs-form .form-columns-2 > .hs-form-field, section.u4m-landing-page-sign-up .form-wrap.mixitup-multifilter .form-columns-2 > .hs-form-field, section.u4m-landing-page-sign-up .form-wrap .form-columns-2 > .hs-form-field {
+  padding: 0 10px;
+}
+section.u4m-landing-page-sign-up .form-wrap.hs-form .form-columns-2 > .hs-form-field:last-of-type, section.u4m-landing-page-sign-up .form-wrap.mixitup-multifilter .form-columns-2 > .hs-form-field:last-of-type, section.u4m-landing-page-sign-up .form-wrap .form-columns-2 > .hs-form-field:last-of-type {
+  margin-left: 0;
+}
 @media (max-width: 580px) {
-  section.u4m-landing-page-sign-up .form-wrap.hs-form .form-columns-2 .hs-form-field, section.u4m-landing-page-sign-up .form-wrap.mixitup-multifilter .form-columns-2 .hs-form-field, section.u4m-landing-page-sign-up .form-wrap .form-columns-2 .hs-form-field {
+  section.u4m-landing-page-sign-up .form-wrap.hs-form .form-columns-2 > .hs-form-field, section.u4m-landing-page-sign-up .form-wrap.mixitup-multifilter .form-columns-2 > .hs-form-field, section.u4m-landing-page-sign-up .form-wrap .form-columns-2 > .hs-form-field {
     width: 100%;
   }
 }
@@ -616,6 +725,13 @@ section.u4m-landing-page-sign-up .form-wrap.hs-form .form-columns-2 > div:last-o
     margin-left: 0;
   }
 }
+section.u4m-landing-page-sign-up .form-wrap.hs-form fieldset.form-columns-1 .input, section.u4m-landing-page-sign-up .form-wrap.mixitup-multifilter fieldset.form-columns-1 .input, section.u4m-landing-page-sign-up .form-wrap fieldset.form-columns-1 .input {
+  margin: 0;
+}
+section.u4m-landing-page-sign-up .form-wrap.hs-form fieldset.form-columns-1 .hs-input, section.u4m-landing-page-sign-up .form-wrap.mixitup-multifilter fieldset.form-columns-1 .hs-input, section.u4m-landing-page-sign-up .form-wrap fieldset.form-columns-1 .hs-input {
+  width: 100% !important;
+  margin-bottom: 0;
+}
 section.u4m-landing-page-sign-up .form-wrap.hs-form .hs-button, section.u4m-landing-page-sign-up .form-wrap.mixitup-multifilter .hs-button, section.u4m-landing-page-sign-up .form-wrap .hs-button {
   display: inline-block;
   font-family: "Inter";
@@ -636,6 +752,10 @@ section.u4m-landing-page-sign-up .form-wrap.hs-form .hs-button, section.u4m-land
 section.u4m-landing-page-sign-up .form-wrap.hs-form .hs-button:hover, section.u4m-landing-page-sign-up .form-wrap.hs-form .hs-button:focus, section.u4m-landing-page-sign-up .form-wrap.mixitup-multifilter .hs-button:hover, section.u4m-landing-page-sign-up .form-wrap.mixitup-multifilter .hs-button:focus, section.u4m-landing-page-sign-up .form-wrap .hs-button:hover, section.u4m-landing-page-sign-up .form-wrap .hs-button:focus {
   background-color: #ffffff;
   color: #007c43;
+}
+section.u4m-landing-page-sign-up .form-wrap .hs-richtext p {
+  font-size: 11rem;
+  color: #6e757c;
 }
 section.u4m-landing-page-sign-up .form-wrap form {
   display: flex;

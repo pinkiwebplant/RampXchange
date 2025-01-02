@@ -13,7 +13,7 @@ html.menu-open {
 html {
   display: block;
   opacity: 1;
-} 
+}
 
 /* make html visible after Firefox flash in hack */
 body {
@@ -681,19 +681,19 @@ section[class*="u4m-"] {
 }
 
 // SVG  Color
-.forest_green_textclr  svg path{
+.forest_green_textclr svg path {
   fill: $action1;
 }
-.dark_teal_textclr  svg path{
+.dark_teal_textclr svg path {
   fill: $heading;
 }
-.pale_green_textclr  svg path{
+.pale_green_textclr svg path {
   fill: $digitalgreen;
 }
-.silver_gray_textclr  svg path{
+.silver_gray_textclr svg path {
   fill: $gray1;
 }
-.charcoal_gray_textclr  svg path{
+.charcoal_gray_textclr svg path {
   fill: $gray2;
 }
 .golden_brown_textclr svg path {
@@ -702,25 +702,24 @@ section[class*="u4m-"] {
 .soft_white_textclr svg path {
   fill: $airwhite;
 }
-.white_bg_textclr  svg path{
+.white_bg_textclr svg path {
   fill: $white;
 }
 
-
 // SVG  Background Color
-.forest_green_icon_bg  svg circle{
+.forest_green_icon_bg svg circle {
   fill: $action1;
 }
-.dark_teal_icon_bg  svg circle{
+.dark_teal_icon_bg svg circle {
   fill: $heading;
 }
-.pale_green_icon_bg  svg circle{
+.pale_green_icon_bg svg circle {
   fill: $digitalgreen;
 }
-.silver_gray_icon_bg  svg circle{
+.silver_gray_icon_bg svg circle {
   fill: $gray1;
 }
-.charcoal_gray_icon_bg  svg circle{
+.charcoal_gray_icon_bg svg circle {
   fill: $gray2;
 }
 .golden_brown_icon_bg svg circle {
@@ -729,19 +728,9 @@ section[class*="u4m-"] {
 .soft_white_icon_bg svg circle {
   fill: $airwhite;
 }
-.white_bg_icon_bg  svg circle{
+.white_bg_icon_bg svg circle {
   fill: $white;
 }
-
-
-
-
-
-
-
-
-
-
 
 .bg_image {
   background-position: center center;
@@ -766,6 +755,9 @@ section[class*="u4m-"] {
 .gradient5 {
   background-image: $gradient5;
 }
+.form-title:empty {
+  display: none;
+}
 
 form {
   @include form;
@@ -778,14 +770,15 @@ form {
   }
 }
 
-
-.intro_btn_wrap a.sec-btn, .intro_btn_wrap .hs-button {
+.intro_btn_wrap a.sec-btn,
+.intro_btn_wrap .hs-button {
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 12px;
 }
 
-.intro_btn_wrap a.sec-btn svg path, .intro_btn_wrap .hs-button svg path {
+.intro_btn_wrap a.sec-btn svg path,
+.intro_btn_wrap .hs-button svg path {
   fill: currentColor;
 }

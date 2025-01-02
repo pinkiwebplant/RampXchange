@@ -3919,6 +3919,10 @@ section[class*=u4m-] {
   background-image: linear-gradient(180deg, #315363 0%, #213944 100%);
 }
 
+.form-title:empty {
+  display: none;
+}
+
 form {
   background-color: #ffffff;
   padding: 40rem;
@@ -3988,6 +3992,9 @@ form.hs-form .hs_error_rollup ul.hs-error-msgs li label, form.mixitup-multifilte
   font-weight: normal;
   text-transform: none;
 }
+form.hs-form .hs-form-field, form.mixitup-multifilter .hs-form-field, form .hs-form-field {
+  margin-bottom: 20px;
+}
 form.hs-form .hs-form-field > label, form.mixitup-multifilter .hs-form-field > label, form .hs-form-field > label {
   font-size: 13rem;
   font-weight: 500;
@@ -3995,6 +4002,10 @@ form.hs-form .hs-form-field > label, form.mixitup-multifilter .hs-form-field > l
   letter-spacing: 0;
   pointer-events: auto;
   margin-bottom: 8rem;
+  display: block;
+}
+form.hs-form .input, form.mixitup-multifilter .input, form .input {
+  margin-right: 0 !important;
 }
 form.hs-form .input input[type=text],
 form.hs-form .input input[type=number],
@@ -4008,10 +4019,12 @@ form .input input[type=tel],
 form .input input[type=email] {
   border: 1rem solid #6e757c;
   border-radius: 4rem;
-  margin-bottom: 20rem;
   font-size: 16rem;
   background-color: #ffffff;
-  padding: 12rem;
+  line-height: 1;
+  margin-bottom: 0;
+  outline: none !important;
+  padding: 13rem 12rem;
   width: 100%;
   -webkit-appearance: none;
      -moz-appearance: none;
@@ -4066,11 +4079,91 @@ form .input input[type=tel]::placeholder,
 form .input input[type=email]::placeholder {
   color: #6e757c;
 }
+form.hs-form .input ul.inputs-list, form.mixitup-multifilter .input ul.inputs-list, form .input ul.inputs-list {
+  margin: 0;
+}
+form.hs-form .input ul.inputs-list > li, form.mixitup-multifilter .input ul.inputs-list > li, form .input ul.inputs-list > li {
+  display: block;
+  margin-right: 0;
+  letter-spacing: 0;
+  margin-bottom: 8px;
+  line-height: 1;
+  font-size: 13rem;
+}
+form.hs-form .input ul.inputs-list > li:last-child, form.mixitup-multifilter .input ul.inputs-list > li:last-child, form .input ul.inputs-list > li:last-child {
+  margin-bottom: 0;
+}
+form.hs-form .input ul.inputs-list > li label, form.mixitup-multifilter .input ul.inputs-list > li label, form .input ul.inputs-list > li label {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  position: relative;
+}
+form.hs-form .input ul.inputs-list > li label > span, form.mixitup-multifilter .input ul.inputs-list > li label > span, form .input ul.inputs-list > li label > span {
+  font-size: 13rem;
+  line-height: 1;
+  color: #6e757c;
+  position: static;
+}
+form.hs-form .input ul.inputs-list > li label > span:after, form.mixitup-multifilter .input ul.inputs-list > li label > span:after, form .input ul.inputs-list > li label > span:after {
+  content: "";
+  height: 20px;
+  width: 20px;
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  opacity: 0;
+  background-image: url(https://23543895.fs1.hubspotusercontent-na1.net/hubfs/23543895/RampXchange/images/formCheck.png);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+form.hs-form .input ul.inputs-list > li label > span:before, form.mixitup-multifilter .input ul.inputs-list > li label > span:before, form .input ul.inputs-list > li label > span:before {
+  content: "";
+  height: 20px;
+  width: 20px;
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  border: 1px solid #6e757c;
+}
 form.hs-form .input input[type=checkbox],
 form.hs-form .input input[type=radio], form.mixitup-multifilter .input input[type=checkbox],
 form.mixitup-multifilter .input input[type=radio], form .input input[type=checkbox],
 form .input input[type=radio] {
   width: auto;
+}
+form.hs-form .input input[type=checkbox],
+form.hs-form .input input[type=radio], form.mixitup-multifilter .input input[type=checkbox],
+form.mixitup-multifilter .input input[type=radio], form .input input[type=checkbox],
+form .input input[type=radio] {
+  position: static;
+  margin: 0;
+  height: 20px;
+  width: 20px !important;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  outline: none !important;
+}
+form.hs-form .input input[type=checkbox]:checked + *:before, form.hs-form .input input[type=checkbox]:checked + *:before,
+form.hs-form .input input[type=radio]:checked + *:before,
+form.hs-form .input input[type=radio]:checked + *:before, form.mixitup-multifilter .input input[type=checkbox]:checked + *:before, form.mixitup-multifilter .input input[type=checkbox]:checked + *:before,
+form.mixitup-multifilter .input input[type=radio]:checked + *:before,
+form.mixitup-multifilter .input input[type=radio]:checked + *:before, form .input input[type=checkbox]:checked + *:before, form .input input[type=checkbox]:checked + *:before,
+form .input input[type=radio]:checked + *:before,
+form .input input[type=radio]:checked + *:before {
+  background: #213944;
+}
+form.hs-form .input input[type=checkbox]:checked + *:after, form.hs-form .input input[type=checkbox]:checked + *:after,
+form.hs-form .input input[type=radio]:checked + *:after,
+form.hs-form .input input[type=radio]:checked + *:after, form.mixitup-multifilter .input input[type=checkbox]:checked + *:after, form.mixitup-multifilter .input input[type=checkbox]:checked + *:after,
+form.mixitup-multifilter .input input[type=radio]:checked + *:after,
+form.mixitup-multifilter .input input[type=radio]:checked + *:after, form .input input[type=checkbox]:checked + *:after, form .input input[type=checkbox]:checked + *:after,
+form .input input[type=radio]:checked + *:after,
+form .input input[type=radio]:checked + *:after {
+  opacity: 1;
 }
 form.hs-form .input input select, form.mixitup-multifilter .input input select, form .input input select {
   border: 1rem solid #6e757c;
@@ -4096,16 +4189,19 @@ form.hs-form .input select, form.mixitup-multifilter .input select, form .input 
   -webkit-appearance: none;
      -moz-appearance: none;
           appearance: none;
-  background: url("/src/templates/images/nav-arrow.svg") no-repeat;
-  background-size: 13rem 8rem;
   background-position: calc(100% - 20rem) center;
   border: 1rem solid #6e757c;
   border-radius: 4rem;
-  margin-bottom: 20rem;
   font-size: 13rem;
   background-color: #ffffff;
-  padding: 17.5rem 12rem;
   color: #6e757c;
+  line-height: 1;
+  padding: 16.5rem 12rem;
+  background-image: url(https://23543895.fs1.hubspotusercontent-na1.net/hubfs/23543895/RampXchange/images/selectArrow.png);
+  background-repeat: no-repeat;
+  background-size: 12rem 7rem;
+  margin-bottom: 0;
+  outline: none !important;
 }
 form.hs-form .input select:focus, form.mixitup-multifilter .input select:focus, form .input select:focus {
   border: 1rem solid #213944;
@@ -4115,8 +4211,8 @@ form.hs-form .input + .hs-error-msgs, form.mixitup-multifilter .input + .hs-erro
   width: 100%;
   padding-left: 0;
   list-style: none;
-  text-align: center;
-  margin: 0rem 0 20rem;
+  text-align: left;
+  margin: 8rem 0 20rem;
   padding: 0;
   animation: fadeIn1 0.3s ease;
 }
@@ -4130,7 +4226,7 @@ form.hs-form .input + .hs-error-msgs li, form.mixitup-multifilter .input + .hs-e
   text-align: center;
   background: red;
   display: inline-block;
-  color: white;
+  color: #ffffff;
   border-radius: 5rem;
   padding: 5rem 8rem;
   line-height: 1.2;
@@ -4164,27 +4260,34 @@ form.hs-form .input + .hs-error-msgs li label, form.mixitup-multifilter .input +
     font-size: 12rem;
   }
 }
+form.hs-form .hs-fieldtype-radio .input > ul.inputs-list > li label > span:before, form.mixitup-multifilter .hs-fieldtype-radio .input > ul.inputs-list > li label > span:before, form .hs-fieldtype-radio .input > ul.inputs-list > li label > span:before {
+  border-radius: 100%;
+}
 form.hs-form .hs_upload_resume, form.mixitup-multifilter .hs_upload_resume, form .hs_upload_resume {
   margin-bottom: -3rem;
 }
 form.hs-form textarea, form.mixitup-multifilter textarea, form textarea {
   border: 1rem solid #6e757c;
   border-radius: 4rem;
-  font-size: 13rem;
-  margin-bottom: 20rem;
+  font-size: 16rem;
   min-height: 96rem;
   background-color: #ffffff;
   width: 100%;
   color: #213944;
+  display: block;
+  outline: none;
+  padding: 12rem;
 }
 form.hs-form textarea:focus, form.mixitup-multifilter textarea:focus, form textarea:focus {
   border: 1rem solid #213944;
 }
 form.hs-form textarea::-moz-placeholder, form.mixitup-multifilter textarea::-moz-placeholder, form textarea::-moz-placeholder {
   color: #6e757c;
+  font-size: 13rem;
 }
 form.hs-form textarea::placeholder, form.mixitup-multifilter textarea::placeholder, form textarea::placeholder {
   color: #6e757c;
+  font-size: 13rem;
 }
 form.hs-form textarea.invalid, form.mixitup-multifilter textarea.invalid, form textarea.invalid {
   border: 1px solid red;
@@ -4282,10 +4385,7 @@ form .form-columns-1 .hs-form-radio input,
 form .form-columns-2 .hs-form-radio input,
 form .form-columns-3 .hs-form-radio input {
   width: auto;
-  margin-right: 10rem;
-  margin-left: 2rem;
   position: relative;
-  top: -2rem;
 }
 form.hs-form .hs-form-radio span,
 form.hs-form .form-columns-1 .hs-form-radio span,
@@ -4328,8 +4428,12 @@ form .form-columns-3 .hs-form-radio span {
     top: 2rem;
   }
 }
+form.hs-form .form-columns-3, form.mixitup-multifilter .form-columns-3, form .form-columns-3 {
+  margin: 0 -10rem;
+}
 form.hs-form .form-columns-3 .hs-form-field, form.mixitup-multifilter .form-columns-3 .hs-form-field, form .form-columns-3 .hs-form-field {
   width: 33.05%;
+  padding: 0 10rem;
 }
 @media (max-width: 1024px) {
   form.hs-form .form-columns-3 .hs-form-field, form.mixitup-multifilter .form-columns-3 .hs-form-field, form .form-columns-3 .hs-form-field {
@@ -4344,8 +4448,17 @@ form.hs-form .form-columns-3 .hs-form-field, form.mixitup-multifilter .form-colu
 form.hs-form .form-columns-3 div:last-child div, form.mixitup-multifilter .form-columns-3 div:last-child div, form .form-columns-3 div:last-child div {
   margin-right: 0;
 }
+form.hs-form .form-columns-2, form.mixitup-multifilter .form-columns-2, form .form-columns-2 {
+  margin: 0 -10px;
+}
+form.hs-form .form-columns-2 > .hs-form-field, form.mixitup-multifilter .form-columns-2 > .hs-form-field, form .form-columns-2 > .hs-form-field {
+  padding: 0 10px;
+}
+form.hs-form .form-columns-2 > .hs-form-field:last-of-type, form.mixitup-multifilter .form-columns-2 > .hs-form-field:last-of-type, form .form-columns-2 > .hs-form-field:last-of-type {
+  margin-left: 0;
+}
 @media (max-width: 580px) {
-  form.hs-form .form-columns-2 .hs-form-field, form.mixitup-multifilter .form-columns-2 .hs-form-field, form .form-columns-2 .hs-form-field {
+  form.hs-form .form-columns-2 > .hs-form-field, form.mixitup-multifilter .form-columns-2 > .hs-form-field, form .form-columns-2 > .hs-form-field {
     width: 100%;
   }
 }
@@ -4417,6 +4530,13 @@ form.hs-form .form-columns-2 > div:last-of-type, form.mixitup-multifilter .form-
     margin-left: 0;
   }
 }
+form.hs-form fieldset.form-columns-1 .input, form.mixitup-multifilter fieldset.form-columns-1 .input, form fieldset.form-columns-1 .input {
+  margin: 0;
+}
+form.hs-form fieldset.form-columns-1 .hs-input, form.mixitup-multifilter fieldset.form-columns-1 .hs-input, form fieldset.form-columns-1 .hs-input {
+  width: 100% !important;
+  margin-bottom: 0;
+}
 form.hs-form .hs-button, form.mixitup-multifilter .hs-button, form .hs-button {
   display: inline-block;
   font-family: "Inter";
@@ -4438,6 +4558,10 @@ form.hs-form .hs-button:hover, form.hs-form .hs-button:focus, form.mixitup-multi
   background-color: #ffffff;
   color: #007c43;
 }
+form .hs-richtext p {
+  font-size: 11rem;
+  color: #6e757c;
+}
 
 @media (max-width: 767px) {
   .playIcon svg {
@@ -4446,14 +4570,16 @@ form.hs-form .hs-button:hover, form.hs-form .hs-button:focus, form.mixitup-multi
   }
 }
 
-.intro_btn_wrap a.sec-btn, .intro_btn_wrap .hs-button {
+.intro_btn_wrap a.sec-btn,
+.intro_btn_wrap .hs-button {
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 12px;
 }
 
-.intro_btn_wrap a.sec-btn svg path, .intro_btn_wrap .hs-button svg path {
+.intro_btn_wrap a.sec-btn svg path,
+.intro_btn_wrap .hs-button svg path {
   fill: currentColor;
 }
 
@@ -4584,6 +4710,9 @@ section.u4m-backup-unsubscribe form.hs-form .hs_error_rollup ul.hs-error-msgs li
   font-weight: normal;
   text-transform: none;
 }
+section.u4m-backup-unsubscribe form.hs-form .hs-form-field, section.u4m-backup-unsubscribe form.mixitup-multifilter .hs-form-field, section.u4m-backup-unsubscribe form .hs-form-field {
+  margin-bottom: 20px;
+}
 section.u4m-backup-unsubscribe form.hs-form .hs-form-field > label, section.u4m-backup-unsubscribe form.mixitup-multifilter .hs-form-field > label, section.u4m-backup-unsubscribe form .hs-form-field > label {
   font-size: 13rem;
   font-weight: 500;
@@ -4591,6 +4720,10 @@ section.u4m-backup-unsubscribe form.hs-form .hs-form-field > label, section.u4m-
   letter-spacing: 0;
   pointer-events: auto;
   margin-bottom: 8rem;
+  display: block;
+}
+section.u4m-backup-unsubscribe form.hs-form .input, section.u4m-backup-unsubscribe form.mixitup-multifilter .input, section.u4m-backup-unsubscribe form .input {
+  margin-right: 0 !important;
 }
 section.u4m-backup-unsubscribe form.hs-form .input input[type=text],
 section.u4m-backup-unsubscribe form.hs-form .input input[type=number],
@@ -4604,10 +4737,12 @@ section.u4m-backup-unsubscribe form .input input[type=tel],
 section.u4m-backup-unsubscribe form .input input[type=email] {
   border: 1rem solid #6e757c;
   border-radius: 4rem;
-  margin-bottom: 20rem;
   font-size: 16rem;
   background-color: #ffffff;
-  padding: 12rem;
+  line-height: 1;
+  margin-bottom: 0;
+  outline: none !important;
+  padding: 13rem 12rem;
   width: 100%;
   -webkit-appearance: none;
      -moz-appearance: none;
@@ -4662,11 +4797,91 @@ section.u4m-backup-unsubscribe form .input input[type=tel]::placeholder,
 section.u4m-backup-unsubscribe form .input input[type=email]::placeholder {
   color: #6e757c;
 }
+section.u4m-backup-unsubscribe form.hs-form .input ul.inputs-list, section.u4m-backup-unsubscribe form.mixitup-multifilter .input ul.inputs-list, section.u4m-backup-unsubscribe form .input ul.inputs-list {
+  margin: 0;
+}
+section.u4m-backup-unsubscribe form.hs-form .input ul.inputs-list > li, section.u4m-backup-unsubscribe form.mixitup-multifilter .input ul.inputs-list > li, section.u4m-backup-unsubscribe form .input ul.inputs-list > li {
+  display: block;
+  margin-right: 0;
+  letter-spacing: 0;
+  margin-bottom: 8px;
+  line-height: 1;
+  font-size: 13rem;
+}
+section.u4m-backup-unsubscribe form.hs-form .input ul.inputs-list > li:last-child, section.u4m-backup-unsubscribe form.mixitup-multifilter .input ul.inputs-list > li:last-child, section.u4m-backup-unsubscribe form .input ul.inputs-list > li:last-child {
+  margin-bottom: 0;
+}
+section.u4m-backup-unsubscribe form.hs-form .input ul.inputs-list > li label, section.u4m-backup-unsubscribe form.mixitup-multifilter .input ul.inputs-list > li label, section.u4m-backup-unsubscribe form .input ul.inputs-list > li label {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  position: relative;
+}
+section.u4m-backup-unsubscribe form.hs-form .input ul.inputs-list > li label > span, section.u4m-backup-unsubscribe form.mixitup-multifilter .input ul.inputs-list > li label > span, section.u4m-backup-unsubscribe form .input ul.inputs-list > li label > span {
+  font-size: 13rem;
+  line-height: 1;
+  color: #6e757c;
+  position: static;
+}
+section.u4m-backup-unsubscribe form.hs-form .input ul.inputs-list > li label > span:after, section.u4m-backup-unsubscribe form.mixitup-multifilter .input ul.inputs-list > li label > span:after, section.u4m-backup-unsubscribe form .input ul.inputs-list > li label > span:after {
+  content: "";
+  height: 20px;
+  width: 20px;
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  opacity: 0;
+  background-image: url(https://23543895.fs1.hubspotusercontent-na1.net/hubfs/23543895/RampXchange/images/formCheck.png);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+section.u4m-backup-unsubscribe form.hs-form .input ul.inputs-list > li label > span:before, section.u4m-backup-unsubscribe form.mixitup-multifilter .input ul.inputs-list > li label > span:before, section.u4m-backup-unsubscribe form .input ul.inputs-list > li label > span:before {
+  content: "";
+  height: 20px;
+  width: 20px;
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  border: 1px solid #6e757c;
+}
 section.u4m-backup-unsubscribe form.hs-form .input input[type=checkbox],
 section.u4m-backup-unsubscribe form.hs-form .input input[type=radio], section.u4m-backup-unsubscribe form.mixitup-multifilter .input input[type=checkbox],
 section.u4m-backup-unsubscribe form.mixitup-multifilter .input input[type=radio], section.u4m-backup-unsubscribe form .input input[type=checkbox],
 section.u4m-backup-unsubscribe form .input input[type=radio] {
   width: auto;
+}
+section.u4m-backup-unsubscribe form.hs-form .input input[type=checkbox],
+section.u4m-backup-unsubscribe form.hs-form .input input[type=radio], section.u4m-backup-unsubscribe form.mixitup-multifilter .input input[type=checkbox],
+section.u4m-backup-unsubscribe form.mixitup-multifilter .input input[type=radio], section.u4m-backup-unsubscribe form .input input[type=checkbox],
+section.u4m-backup-unsubscribe form .input input[type=radio] {
+  position: static;
+  margin: 0;
+  height: 20px;
+  width: 20px !important;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  outline: none !important;
+}
+section.u4m-backup-unsubscribe form.hs-form .input input[type=checkbox]:checked + *:before, section.u4m-backup-unsubscribe form.hs-form .input input[type=checkbox]:checked + *:before,
+section.u4m-backup-unsubscribe form.hs-form .input input[type=radio]:checked + *:before,
+section.u4m-backup-unsubscribe form.hs-form .input input[type=radio]:checked + *:before, section.u4m-backup-unsubscribe form.mixitup-multifilter .input input[type=checkbox]:checked + *:before, section.u4m-backup-unsubscribe form.mixitup-multifilter .input input[type=checkbox]:checked + *:before,
+section.u4m-backup-unsubscribe form.mixitup-multifilter .input input[type=radio]:checked + *:before,
+section.u4m-backup-unsubscribe form.mixitup-multifilter .input input[type=radio]:checked + *:before, section.u4m-backup-unsubscribe form .input input[type=checkbox]:checked + *:before, section.u4m-backup-unsubscribe form .input input[type=checkbox]:checked + *:before,
+section.u4m-backup-unsubscribe form .input input[type=radio]:checked + *:before,
+section.u4m-backup-unsubscribe form .input input[type=radio]:checked + *:before {
+  background: #213944;
+}
+section.u4m-backup-unsubscribe form.hs-form .input input[type=checkbox]:checked + *:after, section.u4m-backup-unsubscribe form.hs-form .input input[type=checkbox]:checked + *:after,
+section.u4m-backup-unsubscribe form.hs-form .input input[type=radio]:checked + *:after,
+section.u4m-backup-unsubscribe form.hs-form .input input[type=radio]:checked + *:after, section.u4m-backup-unsubscribe form.mixitup-multifilter .input input[type=checkbox]:checked + *:after, section.u4m-backup-unsubscribe form.mixitup-multifilter .input input[type=checkbox]:checked + *:after,
+section.u4m-backup-unsubscribe form.mixitup-multifilter .input input[type=radio]:checked + *:after,
+section.u4m-backup-unsubscribe form.mixitup-multifilter .input input[type=radio]:checked + *:after, section.u4m-backup-unsubscribe form .input input[type=checkbox]:checked + *:after, section.u4m-backup-unsubscribe form .input input[type=checkbox]:checked + *:after,
+section.u4m-backup-unsubscribe form .input input[type=radio]:checked + *:after,
+section.u4m-backup-unsubscribe form .input input[type=radio]:checked + *:after {
+  opacity: 1;
 }
 section.u4m-backup-unsubscribe form.hs-form .input input select, section.u4m-backup-unsubscribe form.mixitup-multifilter .input input select, section.u4m-backup-unsubscribe form .input input select {
   border: 1rem solid #6e757c;
@@ -4692,16 +4907,19 @@ section.u4m-backup-unsubscribe form.hs-form .input select, section.u4m-backup-un
   -webkit-appearance: none;
      -moz-appearance: none;
           appearance: none;
-  background: url("/src/templates/images/nav-arrow.svg") no-repeat;
-  background-size: 13rem 8rem;
   background-position: calc(100% - 20rem) center;
   border: 1rem solid #6e757c;
   border-radius: 4rem;
-  margin-bottom: 20rem;
   font-size: 13rem;
   background-color: #ffffff;
-  padding: 17.5rem 12rem;
   color: #6e757c;
+  line-height: 1;
+  padding: 16.5rem 12rem;
+  background-image: url(https://23543895.fs1.hubspotusercontent-na1.net/hubfs/23543895/RampXchange/images/selectArrow.png);
+  background-repeat: no-repeat;
+  background-size: 12rem 7rem;
+  margin-bottom: 0;
+  outline: none !important;
 }
 section.u4m-backup-unsubscribe form.hs-form .input select:focus, section.u4m-backup-unsubscribe form.mixitup-multifilter .input select:focus, section.u4m-backup-unsubscribe form .input select:focus {
   border: 1rem solid #213944;
@@ -4711,8 +4929,8 @@ section.u4m-backup-unsubscribe form.hs-form .input + .hs-error-msgs, section.u4m
   width: 100%;
   padding-left: 0;
   list-style: none;
-  text-align: center;
-  margin: 0rem 0 20rem;
+  text-align: left;
+  margin: 8rem 0 20rem;
   padding: 0;
   animation: fadeIn1 0.3s ease;
 }
@@ -4726,7 +4944,7 @@ section.u4m-backup-unsubscribe form.hs-form .input + .hs-error-msgs li, section.
   text-align: center;
   background: red;
   display: inline-block;
-  color: white;
+  color: #ffffff;
   border-radius: 5rem;
   padding: 5rem 8rem;
   line-height: 1.2;
@@ -4760,27 +4978,34 @@ section.u4m-backup-unsubscribe form.hs-form .input + .hs-error-msgs li label, se
     font-size: 12rem;
   }
 }
+section.u4m-backup-unsubscribe form.hs-form .hs-fieldtype-radio .input > ul.inputs-list > li label > span:before, section.u4m-backup-unsubscribe form.mixitup-multifilter .hs-fieldtype-radio .input > ul.inputs-list > li label > span:before, section.u4m-backup-unsubscribe form .hs-fieldtype-radio .input > ul.inputs-list > li label > span:before {
+  border-radius: 100%;
+}
 section.u4m-backup-unsubscribe form.hs-form .hs_upload_resume, section.u4m-backup-unsubscribe form.mixitup-multifilter .hs_upload_resume, section.u4m-backup-unsubscribe form .hs_upload_resume {
   margin-bottom: -3rem;
 }
 section.u4m-backup-unsubscribe form.hs-form textarea, section.u4m-backup-unsubscribe form.mixitup-multifilter textarea, section.u4m-backup-unsubscribe form textarea {
   border: 1rem solid #6e757c;
   border-radius: 4rem;
-  font-size: 13rem;
-  margin-bottom: 20rem;
+  font-size: 16rem;
   min-height: 96rem;
   background-color: #ffffff;
   width: 100%;
   color: #213944;
+  display: block;
+  outline: none;
+  padding: 12rem;
 }
 section.u4m-backup-unsubscribe form.hs-form textarea:focus, section.u4m-backup-unsubscribe form.mixitup-multifilter textarea:focus, section.u4m-backup-unsubscribe form textarea:focus {
   border: 1rem solid #213944;
 }
 section.u4m-backup-unsubscribe form.hs-form textarea::-moz-placeholder, section.u4m-backup-unsubscribe form.mixitup-multifilter textarea::-moz-placeholder, section.u4m-backup-unsubscribe form textarea::-moz-placeholder {
   color: #6e757c;
+  font-size: 13rem;
 }
 section.u4m-backup-unsubscribe form.hs-form textarea::placeholder, section.u4m-backup-unsubscribe form.mixitup-multifilter textarea::placeholder, section.u4m-backup-unsubscribe form textarea::placeholder {
   color: #6e757c;
+  font-size: 13rem;
 }
 section.u4m-backup-unsubscribe form.hs-form textarea.invalid, section.u4m-backup-unsubscribe form.mixitup-multifilter textarea.invalid, section.u4m-backup-unsubscribe form textarea.invalid {
   border: 1px solid red;
@@ -4878,10 +5103,7 @@ section.u4m-backup-unsubscribe form .form-columns-1 .hs-form-radio input,
 section.u4m-backup-unsubscribe form .form-columns-2 .hs-form-radio input,
 section.u4m-backup-unsubscribe form .form-columns-3 .hs-form-radio input {
   width: auto;
-  margin-right: 10rem;
-  margin-left: 2rem;
   position: relative;
-  top: -2rem;
 }
 section.u4m-backup-unsubscribe form.hs-form .hs-form-radio span,
 section.u4m-backup-unsubscribe form.hs-form .form-columns-1 .hs-form-radio span,
@@ -4924,8 +5146,12 @@ section.u4m-backup-unsubscribe form .form-columns-3 .hs-form-radio span {
     top: 2rem;
   }
 }
+section.u4m-backup-unsubscribe form.hs-form .form-columns-3, section.u4m-backup-unsubscribe form.mixitup-multifilter .form-columns-3, section.u4m-backup-unsubscribe form .form-columns-3 {
+  margin: 0 -10rem;
+}
 section.u4m-backup-unsubscribe form.hs-form .form-columns-3 .hs-form-field, section.u4m-backup-unsubscribe form.mixitup-multifilter .form-columns-3 .hs-form-field, section.u4m-backup-unsubscribe form .form-columns-3 .hs-form-field {
   width: 33.05%;
+  padding: 0 10rem;
 }
 @media (max-width: 1024px) {
   section.u4m-backup-unsubscribe form.hs-form .form-columns-3 .hs-form-field, section.u4m-backup-unsubscribe form.mixitup-multifilter .form-columns-3 .hs-form-field, section.u4m-backup-unsubscribe form .form-columns-3 .hs-form-field {
@@ -4940,8 +5166,17 @@ section.u4m-backup-unsubscribe form.hs-form .form-columns-3 .hs-form-field, sect
 section.u4m-backup-unsubscribe form.hs-form .form-columns-3 div:last-child div, section.u4m-backup-unsubscribe form.mixitup-multifilter .form-columns-3 div:last-child div, section.u4m-backup-unsubscribe form .form-columns-3 div:last-child div {
   margin-right: 0;
 }
+section.u4m-backup-unsubscribe form.hs-form .form-columns-2, section.u4m-backup-unsubscribe form.mixitup-multifilter .form-columns-2, section.u4m-backup-unsubscribe form .form-columns-2 {
+  margin: 0 -10px;
+}
+section.u4m-backup-unsubscribe form.hs-form .form-columns-2 > .hs-form-field, section.u4m-backup-unsubscribe form.mixitup-multifilter .form-columns-2 > .hs-form-field, section.u4m-backup-unsubscribe form .form-columns-2 > .hs-form-field {
+  padding: 0 10px;
+}
+section.u4m-backup-unsubscribe form.hs-form .form-columns-2 > .hs-form-field:last-of-type, section.u4m-backup-unsubscribe form.mixitup-multifilter .form-columns-2 > .hs-form-field:last-of-type, section.u4m-backup-unsubscribe form .form-columns-2 > .hs-form-field:last-of-type {
+  margin-left: 0;
+}
 @media (max-width: 580px) {
-  section.u4m-backup-unsubscribe form.hs-form .form-columns-2 .hs-form-field, section.u4m-backup-unsubscribe form.mixitup-multifilter .form-columns-2 .hs-form-field, section.u4m-backup-unsubscribe form .form-columns-2 .hs-form-field {
+  section.u4m-backup-unsubscribe form.hs-form .form-columns-2 > .hs-form-field, section.u4m-backup-unsubscribe form.mixitup-multifilter .form-columns-2 > .hs-form-field, section.u4m-backup-unsubscribe form .form-columns-2 > .hs-form-field {
     width: 100%;
   }
 }
@@ -5013,6 +5248,13 @@ section.u4m-backup-unsubscribe form.hs-form .form-columns-2 > div:last-of-type, 
     margin-left: 0;
   }
 }
+section.u4m-backup-unsubscribe form.hs-form fieldset.form-columns-1 .input, section.u4m-backup-unsubscribe form.mixitup-multifilter fieldset.form-columns-1 .input, section.u4m-backup-unsubscribe form fieldset.form-columns-1 .input {
+  margin: 0;
+}
+section.u4m-backup-unsubscribe form.hs-form fieldset.form-columns-1 .hs-input, section.u4m-backup-unsubscribe form.mixitup-multifilter fieldset.form-columns-1 .hs-input, section.u4m-backup-unsubscribe form fieldset.form-columns-1 .hs-input {
+  width: 100% !important;
+  margin-bottom: 0;
+}
 section.u4m-backup-unsubscribe form.hs-form .hs-button, section.u4m-backup-unsubscribe form.mixitup-multifilter .hs-button, section.u4m-backup-unsubscribe form .hs-button {
   display: inline-block;
   font-family: "Inter";
@@ -5033,6 +5275,10 @@ section.u4m-backup-unsubscribe form.hs-form .hs-button, section.u4m-backup-unsub
 section.u4m-backup-unsubscribe form.hs-form .hs-button:hover, section.u4m-backup-unsubscribe form.hs-form .hs-button:focus, section.u4m-backup-unsubscribe form.mixitup-multifilter .hs-button:hover, section.u4m-backup-unsubscribe form.mixitup-multifilter .hs-button:focus, section.u4m-backup-unsubscribe form .hs-button:hover, section.u4m-backup-unsubscribe form .hs-button:focus {
   background-color: #ffffff;
   color: #007c43;
+}
+section.u4m-backup-unsubscribe form .hs-richtext p {
+  font-size: 11rem;
+  color: #6e757c;
 }
 section.u4m-backup-unsubscribe form h3 {
   font-size: 12rem;
@@ -5247,6 +5493,21 @@ section.u4m-password-prompt form .hs_error_rollup ul.hs-error-msgs li label {
   font-weight: normal;
   text-transform: none;
 }
+section.u4m-membership-login form.hs-form .hs-form-field, section.u4m-membership-login form.mixitup-multifilter .hs-form-field, section.u4m-membership-login form .hs-form-field,
+section.u4m-membership-register form.hs-form .hs-form-field,
+section.u4m-membership-register form.mixitup-multifilter .hs-form-field,
+section.u4m-membership-register form .hs-form-field,
+section.u4m-membership-reset-password-request form.hs-form .hs-form-field,
+section.u4m-membership-reset-password-request form.mixitup-multifilter .hs-form-field,
+section.u4m-membership-reset-password-request form .hs-form-field,
+section.u4m-membership-reset-password form.hs-form .hs-form-field,
+section.u4m-membership-reset-password form.mixitup-multifilter .hs-form-field,
+section.u4m-membership-reset-password form .hs-form-field,
+section.u4m-password-prompt form.hs-form .hs-form-field,
+section.u4m-password-prompt form.mixitup-multifilter .hs-form-field,
+section.u4m-password-prompt form .hs-form-field {
+  margin-bottom: 20px;
+}
 section.u4m-membership-login form.hs-form .hs-form-field > label, section.u4m-membership-login form.mixitup-multifilter .hs-form-field > label, section.u4m-membership-login form .hs-form-field > label,
 section.u4m-membership-register form.hs-form .hs-form-field > label,
 section.u4m-membership-register form.mixitup-multifilter .hs-form-field > label,
@@ -5266,6 +5527,22 @@ section.u4m-password-prompt form .hs-form-field > label {
   letter-spacing: 0;
   pointer-events: auto;
   margin-bottom: 8rem;
+  display: block;
+}
+section.u4m-membership-login form.hs-form .input, section.u4m-membership-login form.mixitup-multifilter .input, section.u4m-membership-login form .input,
+section.u4m-membership-register form.hs-form .input,
+section.u4m-membership-register form.mixitup-multifilter .input,
+section.u4m-membership-register form .input,
+section.u4m-membership-reset-password-request form.hs-form .input,
+section.u4m-membership-reset-password-request form.mixitup-multifilter .input,
+section.u4m-membership-reset-password-request form .input,
+section.u4m-membership-reset-password form.hs-form .input,
+section.u4m-membership-reset-password form.mixitup-multifilter .input,
+section.u4m-membership-reset-password form .input,
+section.u4m-password-prompt form.hs-form .input,
+section.u4m-password-prompt form.mixitup-multifilter .input,
+section.u4m-password-prompt form .input {
+  margin-right: 0 !important;
 }
 section.u4m-membership-login form.hs-form .input input[type=text],
 section.u4m-membership-login form.hs-form .input input[type=number],
@@ -5327,10 +5604,12 @@ section.u4m-password-prompt form .input input[type=tel],
 section.u4m-password-prompt form .input input[type=email] {
   border: 1rem solid #6e757c;
   border-radius: 4rem;
-  margin-bottom: 20rem;
   font-size: 16rem;
   background-color: #ffffff;
-  padding: 12rem;
+  line-height: 1;
+  margin-bottom: 0;
+  outline: none !important;
+  padding: 13rem 12rem;
   width: 100%;
   -webkit-appearance: none;
      -moz-appearance: none;
@@ -5577,6 +5856,139 @@ section.u4m-password-prompt form .input input[type=tel]::placeholder,
 section.u4m-password-prompt form .input input[type=email]::placeholder {
   color: #6e757c;
 }
+section.u4m-membership-login form.hs-form .input ul.inputs-list, section.u4m-membership-login form.mixitup-multifilter .input ul.inputs-list, section.u4m-membership-login form .input ul.inputs-list,
+section.u4m-membership-register form.hs-form .input ul.inputs-list,
+section.u4m-membership-register form.mixitup-multifilter .input ul.inputs-list,
+section.u4m-membership-register form .input ul.inputs-list,
+section.u4m-membership-reset-password-request form.hs-form .input ul.inputs-list,
+section.u4m-membership-reset-password-request form.mixitup-multifilter .input ul.inputs-list,
+section.u4m-membership-reset-password-request form .input ul.inputs-list,
+section.u4m-membership-reset-password form.hs-form .input ul.inputs-list,
+section.u4m-membership-reset-password form.mixitup-multifilter .input ul.inputs-list,
+section.u4m-membership-reset-password form .input ul.inputs-list,
+section.u4m-password-prompt form.hs-form .input ul.inputs-list,
+section.u4m-password-prompt form.mixitup-multifilter .input ul.inputs-list,
+section.u4m-password-prompt form .input ul.inputs-list {
+  margin: 0;
+}
+section.u4m-membership-login form.hs-form .input ul.inputs-list > li, section.u4m-membership-login form.mixitup-multifilter .input ul.inputs-list > li, section.u4m-membership-login form .input ul.inputs-list > li,
+section.u4m-membership-register form.hs-form .input ul.inputs-list > li,
+section.u4m-membership-register form.mixitup-multifilter .input ul.inputs-list > li,
+section.u4m-membership-register form .input ul.inputs-list > li,
+section.u4m-membership-reset-password-request form.hs-form .input ul.inputs-list > li,
+section.u4m-membership-reset-password-request form.mixitup-multifilter .input ul.inputs-list > li,
+section.u4m-membership-reset-password-request form .input ul.inputs-list > li,
+section.u4m-membership-reset-password form.hs-form .input ul.inputs-list > li,
+section.u4m-membership-reset-password form.mixitup-multifilter .input ul.inputs-list > li,
+section.u4m-membership-reset-password form .input ul.inputs-list > li,
+section.u4m-password-prompt form.hs-form .input ul.inputs-list > li,
+section.u4m-password-prompt form.mixitup-multifilter .input ul.inputs-list > li,
+section.u4m-password-prompt form .input ul.inputs-list > li {
+  display: block;
+  margin-right: 0;
+  letter-spacing: 0;
+  margin-bottom: 8px;
+  line-height: 1;
+  font-size: 13rem;
+}
+section.u4m-membership-login form.hs-form .input ul.inputs-list > li:last-child, section.u4m-membership-login form.mixitup-multifilter .input ul.inputs-list > li:last-child, section.u4m-membership-login form .input ul.inputs-list > li:last-child,
+section.u4m-membership-register form.hs-form .input ul.inputs-list > li:last-child,
+section.u4m-membership-register form.mixitup-multifilter .input ul.inputs-list > li:last-child,
+section.u4m-membership-register form .input ul.inputs-list > li:last-child,
+section.u4m-membership-reset-password-request form.hs-form .input ul.inputs-list > li:last-child,
+section.u4m-membership-reset-password-request form.mixitup-multifilter .input ul.inputs-list > li:last-child,
+section.u4m-membership-reset-password-request form .input ul.inputs-list > li:last-child,
+section.u4m-membership-reset-password form.hs-form .input ul.inputs-list > li:last-child,
+section.u4m-membership-reset-password form.mixitup-multifilter .input ul.inputs-list > li:last-child,
+section.u4m-membership-reset-password form .input ul.inputs-list > li:last-child,
+section.u4m-password-prompt form.hs-form .input ul.inputs-list > li:last-child,
+section.u4m-password-prompt form.mixitup-multifilter .input ul.inputs-list > li:last-child,
+section.u4m-password-prompt form .input ul.inputs-list > li:last-child {
+  margin-bottom: 0;
+}
+section.u4m-membership-login form.hs-form .input ul.inputs-list > li label, section.u4m-membership-login form.mixitup-multifilter .input ul.inputs-list > li label, section.u4m-membership-login form .input ul.inputs-list > li label,
+section.u4m-membership-register form.hs-form .input ul.inputs-list > li label,
+section.u4m-membership-register form.mixitup-multifilter .input ul.inputs-list > li label,
+section.u4m-membership-register form .input ul.inputs-list > li label,
+section.u4m-membership-reset-password-request form.hs-form .input ul.inputs-list > li label,
+section.u4m-membership-reset-password-request form.mixitup-multifilter .input ul.inputs-list > li label,
+section.u4m-membership-reset-password-request form .input ul.inputs-list > li label,
+section.u4m-membership-reset-password form.hs-form .input ul.inputs-list > li label,
+section.u4m-membership-reset-password form.mixitup-multifilter .input ul.inputs-list > li label,
+section.u4m-membership-reset-password form .input ul.inputs-list > li label,
+section.u4m-password-prompt form.hs-form .input ul.inputs-list > li label,
+section.u4m-password-prompt form.mixitup-multifilter .input ul.inputs-list > li label,
+section.u4m-password-prompt form .input ul.inputs-list > li label {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  position: relative;
+}
+section.u4m-membership-login form.hs-form .input ul.inputs-list > li label > span, section.u4m-membership-login form.mixitup-multifilter .input ul.inputs-list > li label > span, section.u4m-membership-login form .input ul.inputs-list > li label > span,
+section.u4m-membership-register form.hs-form .input ul.inputs-list > li label > span,
+section.u4m-membership-register form.mixitup-multifilter .input ul.inputs-list > li label > span,
+section.u4m-membership-register form .input ul.inputs-list > li label > span,
+section.u4m-membership-reset-password-request form.hs-form .input ul.inputs-list > li label > span,
+section.u4m-membership-reset-password-request form.mixitup-multifilter .input ul.inputs-list > li label > span,
+section.u4m-membership-reset-password-request form .input ul.inputs-list > li label > span,
+section.u4m-membership-reset-password form.hs-form .input ul.inputs-list > li label > span,
+section.u4m-membership-reset-password form.mixitup-multifilter .input ul.inputs-list > li label > span,
+section.u4m-membership-reset-password form .input ul.inputs-list > li label > span,
+section.u4m-password-prompt form.hs-form .input ul.inputs-list > li label > span,
+section.u4m-password-prompt form.mixitup-multifilter .input ul.inputs-list > li label > span,
+section.u4m-password-prompt form .input ul.inputs-list > li label > span {
+  font-size: 13rem;
+  line-height: 1;
+  color: #6e757c;
+  position: static;
+}
+section.u4m-membership-login form.hs-form .input ul.inputs-list > li label > span:after, section.u4m-membership-login form.mixitup-multifilter .input ul.inputs-list > li label > span:after, section.u4m-membership-login form .input ul.inputs-list > li label > span:after,
+section.u4m-membership-register form.hs-form .input ul.inputs-list > li label > span:after,
+section.u4m-membership-register form.mixitup-multifilter .input ul.inputs-list > li label > span:after,
+section.u4m-membership-register form .input ul.inputs-list > li label > span:after,
+section.u4m-membership-reset-password-request form.hs-form .input ul.inputs-list > li label > span:after,
+section.u4m-membership-reset-password-request form.mixitup-multifilter .input ul.inputs-list > li label > span:after,
+section.u4m-membership-reset-password-request form .input ul.inputs-list > li label > span:after,
+section.u4m-membership-reset-password form.hs-form .input ul.inputs-list > li label > span:after,
+section.u4m-membership-reset-password form.mixitup-multifilter .input ul.inputs-list > li label > span:after,
+section.u4m-membership-reset-password form .input ul.inputs-list > li label > span:after,
+section.u4m-password-prompt form.hs-form .input ul.inputs-list > li label > span:after,
+section.u4m-password-prompt form.mixitup-multifilter .input ul.inputs-list > li label > span:after,
+section.u4m-password-prompt form .input ul.inputs-list > li label > span:after {
+  content: "";
+  height: 20px;
+  width: 20px;
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  opacity: 0;
+  background-image: url(https://23543895.fs1.hubspotusercontent-na1.net/hubfs/23543895/RampXchange/images/formCheck.png);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+section.u4m-membership-login form.hs-form .input ul.inputs-list > li label > span:before, section.u4m-membership-login form.mixitup-multifilter .input ul.inputs-list > li label > span:before, section.u4m-membership-login form .input ul.inputs-list > li label > span:before,
+section.u4m-membership-register form.hs-form .input ul.inputs-list > li label > span:before,
+section.u4m-membership-register form.mixitup-multifilter .input ul.inputs-list > li label > span:before,
+section.u4m-membership-register form .input ul.inputs-list > li label > span:before,
+section.u4m-membership-reset-password-request form.hs-form .input ul.inputs-list > li label > span:before,
+section.u4m-membership-reset-password-request form.mixitup-multifilter .input ul.inputs-list > li label > span:before,
+section.u4m-membership-reset-password-request form .input ul.inputs-list > li label > span:before,
+section.u4m-membership-reset-password form.hs-form .input ul.inputs-list > li label > span:before,
+section.u4m-membership-reset-password form.mixitup-multifilter .input ul.inputs-list > li label > span:before,
+section.u4m-membership-reset-password form .input ul.inputs-list > li label > span:before,
+section.u4m-password-prompt form.hs-form .input ul.inputs-list > li label > span:before,
+section.u4m-password-prompt form.mixitup-multifilter .input ul.inputs-list > li label > span:before,
+section.u4m-password-prompt form .input ul.inputs-list > li label > span:before {
+  content: "";
+  height: 20px;
+  width: 20px;
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  border: 1px solid #6e757c;
+}
 section.u4m-membership-login form.hs-form .input input[type=checkbox],
 section.u4m-membership-login form.hs-form .input input[type=radio], section.u4m-membership-login form.mixitup-multifilter .input input[type=checkbox],
 section.u4m-membership-login form.mixitup-multifilter .input input[type=radio], section.u4m-membership-login form .input input[type=checkbox],
@@ -5606,6 +6018,157 @@ section.u4m-password-prompt form.mixitup-multifilter .input input[type=radio],
 section.u4m-password-prompt form .input input[type=checkbox],
 section.u4m-password-prompt form .input input[type=radio] {
   width: auto;
+}
+section.u4m-membership-login form.hs-form .input input[type=checkbox],
+section.u4m-membership-login form.hs-form .input input[type=radio], section.u4m-membership-login form.mixitup-multifilter .input input[type=checkbox],
+section.u4m-membership-login form.mixitup-multifilter .input input[type=radio], section.u4m-membership-login form .input input[type=checkbox],
+section.u4m-membership-login form .input input[type=radio],
+section.u4m-membership-register form.hs-form .input input[type=checkbox],
+section.u4m-membership-register form.hs-form .input input[type=radio],
+section.u4m-membership-register form.mixitup-multifilter .input input[type=checkbox],
+section.u4m-membership-register form.mixitup-multifilter .input input[type=radio],
+section.u4m-membership-register form .input input[type=checkbox],
+section.u4m-membership-register form .input input[type=radio],
+section.u4m-membership-reset-password-request form.hs-form .input input[type=checkbox],
+section.u4m-membership-reset-password-request form.hs-form .input input[type=radio],
+section.u4m-membership-reset-password-request form.mixitup-multifilter .input input[type=checkbox],
+section.u4m-membership-reset-password-request form.mixitup-multifilter .input input[type=radio],
+section.u4m-membership-reset-password-request form .input input[type=checkbox],
+section.u4m-membership-reset-password-request form .input input[type=radio],
+section.u4m-membership-reset-password form.hs-form .input input[type=checkbox],
+section.u4m-membership-reset-password form.hs-form .input input[type=radio],
+section.u4m-membership-reset-password form.mixitup-multifilter .input input[type=checkbox],
+section.u4m-membership-reset-password form.mixitup-multifilter .input input[type=radio],
+section.u4m-membership-reset-password form .input input[type=checkbox],
+section.u4m-membership-reset-password form .input input[type=radio],
+section.u4m-password-prompt form.hs-form .input input[type=checkbox],
+section.u4m-password-prompt form.hs-form .input input[type=radio],
+section.u4m-password-prompt form.mixitup-multifilter .input input[type=checkbox],
+section.u4m-password-prompt form.mixitup-multifilter .input input[type=radio],
+section.u4m-password-prompt form .input input[type=checkbox],
+section.u4m-password-prompt form .input input[type=radio] {
+  position: static;
+  margin: 0;
+  height: 20px;
+  width: 20px !important;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  outline: none !important;
+}
+section.u4m-membership-login form.hs-form .input input[type=checkbox]:checked + *:before, section.u4m-membership-login form.hs-form .input input[type=checkbox]:checked + *:before,
+section.u4m-membership-login form.hs-form .input input[type=radio]:checked + *:before,
+section.u4m-membership-login form.hs-form .input input[type=radio]:checked + *:before, section.u4m-membership-login form.mixitup-multifilter .input input[type=checkbox]:checked + *:before, section.u4m-membership-login form.mixitup-multifilter .input input[type=checkbox]:checked + *:before,
+section.u4m-membership-login form.mixitup-multifilter .input input[type=radio]:checked + *:before,
+section.u4m-membership-login form.mixitup-multifilter .input input[type=radio]:checked + *:before, section.u4m-membership-login form .input input[type=checkbox]:checked + *:before, section.u4m-membership-login form .input input[type=checkbox]:checked + *:before,
+section.u4m-membership-login form .input input[type=radio]:checked + *:before,
+section.u4m-membership-login form .input input[type=radio]:checked + *:before,
+section.u4m-membership-register form.hs-form .input input[type=checkbox]:checked + *:before,
+section.u4m-membership-register form.hs-form .input input[type=checkbox]:checked + *:before,
+section.u4m-membership-register form.hs-form .input input[type=radio]:checked + *:before,
+section.u4m-membership-register form.hs-form .input input[type=radio]:checked + *:before,
+section.u4m-membership-register form.mixitup-multifilter .input input[type=checkbox]:checked + *:before,
+section.u4m-membership-register form.mixitup-multifilter .input input[type=checkbox]:checked + *:before,
+section.u4m-membership-register form.mixitup-multifilter .input input[type=radio]:checked + *:before,
+section.u4m-membership-register form.mixitup-multifilter .input input[type=radio]:checked + *:before,
+section.u4m-membership-register form .input input[type=checkbox]:checked + *:before,
+section.u4m-membership-register form .input input[type=checkbox]:checked + *:before,
+section.u4m-membership-register form .input input[type=radio]:checked + *:before,
+section.u4m-membership-register form .input input[type=radio]:checked + *:before,
+section.u4m-membership-reset-password-request form.hs-form .input input[type=checkbox]:checked + *:before,
+section.u4m-membership-reset-password-request form.hs-form .input input[type=checkbox]:checked + *:before,
+section.u4m-membership-reset-password-request form.hs-form .input input[type=radio]:checked + *:before,
+section.u4m-membership-reset-password-request form.hs-form .input input[type=radio]:checked + *:before,
+section.u4m-membership-reset-password-request form.mixitup-multifilter .input input[type=checkbox]:checked + *:before,
+section.u4m-membership-reset-password-request form.mixitup-multifilter .input input[type=checkbox]:checked + *:before,
+section.u4m-membership-reset-password-request form.mixitup-multifilter .input input[type=radio]:checked + *:before,
+section.u4m-membership-reset-password-request form.mixitup-multifilter .input input[type=radio]:checked + *:before,
+section.u4m-membership-reset-password-request form .input input[type=checkbox]:checked + *:before,
+section.u4m-membership-reset-password-request form .input input[type=checkbox]:checked + *:before,
+section.u4m-membership-reset-password-request form .input input[type=radio]:checked + *:before,
+section.u4m-membership-reset-password-request form .input input[type=radio]:checked + *:before,
+section.u4m-membership-reset-password form.hs-form .input input[type=checkbox]:checked + *:before,
+section.u4m-membership-reset-password form.hs-form .input input[type=checkbox]:checked + *:before,
+section.u4m-membership-reset-password form.hs-form .input input[type=radio]:checked + *:before,
+section.u4m-membership-reset-password form.hs-form .input input[type=radio]:checked + *:before,
+section.u4m-membership-reset-password form.mixitup-multifilter .input input[type=checkbox]:checked + *:before,
+section.u4m-membership-reset-password form.mixitup-multifilter .input input[type=checkbox]:checked + *:before,
+section.u4m-membership-reset-password form.mixitup-multifilter .input input[type=radio]:checked + *:before,
+section.u4m-membership-reset-password form.mixitup-multifilter .input input[type=radio]:checked + *:before,
+section.u4m-membership-reset-password form .input input[type=checkbox]:checked + *:before,
+section.u4m-membership-reset-password form .input input[type=checkbox]:checked + *:before,
+section.u4m-membership-reset-password form .input input[type=radio]:checked + *:before,
+section.u4m-membership-reset-password form .input input[type=radio]:checked + *:before,
+section.u4m-password-prompt form.hs-form .input input[type=checkbox]:checked + *:before,
+section.u4m-password-prompt form.hs-form .input input[type=checkbox]:checked + *:before,
+section.u4m-password-prompt form.hs-form .input input[type=radio]:checked + *:before,
+section.u4m-password-prompt form.hs-form .input input[type=radio]:checked + *:before,
+section.u4m-password-prompt form.mixitup-multifilter .input input[type=checkbox]:checked + *:before,
+section.u4m-password-prompt form.mixitup-multifilter .input input[type=checkbox]:checked + *:before,
+section.u4m-password-prompt form.mixitup-multifilter .input input[type=radio]:checked + *:before,
+section.u4m-password-prompt form.mixitup-multifilter .input input[type=radio]:checked + *:before,
+section.u4m-password-prompt form .input input[type=checkbox]:checked + *:before,
+section.u4m-password-prompt form .input input[type=checkbox]:checked + *:before,
+section.u4m-password-prompt form .input input[type=radio]:checked + *:before,
+section.u4m-password-prompt form .input input[type=radio]:checked + *:before {
+  background: #213944;
+}
+section.u4m-membership-login form.hs-form .input input[type=checkbox]:checked + *:after, section.u4m-membership-login form.hs-form .input input[type=checkbox]:checked + *:after,
+section.u4m-membership-login form.hs-form .input input[type=radio]:checked + *:after,
+section.u4m-membership-login form.hs-form .input input[type=radio]:checked + *:after, section.u4m-membership-login form.mixitup-multifilter .input input[type=checkbox]:checked + *:after, section.u4m-membership-login form.mixitup-multifilter .input input[type=checkbox]:checked + *:after,
+section.u4m-membership-login form.mixitup-multifilter .input input[type=radio]:checked + *:after,
+section.u4m-membership-login form.mixitup-multifilter .input input[type=radio]:checked + *:after, section.u4m-membership-login form .input input[type=checkbox]:checked + *:after, section.u4m-membership-login form .input input[type=checkbox]:checked + *:after,
+section.u4m-membership-login form .input input[type=radio]:checked + *:after,
+section.u4m-membership-login form .input input[type=radio]:checked + *:after,
+section.u4m-membership-register form.hs-form .input input[type=checkbox]:checked + *:after,
+section.u4m-membership-register form.hs-form .input input[type=checkbox]:checked + *:after,
+section.u4m-membership-register form.hs-form .input input[type=radio]:checked + *:after,
+section.u4m-membership-register form.hs-form .input input[type=radio]:checked + *:after,
+section.u4m-membership-register form.mixitup-multifilter .input input[type=checkbox]:checked + *:after,
+section.u4m-membership-register form.mixitup-multifilter .input input[type=checkbox]:checked + *:after,
+section.u4m-membership-register form.mixitup-multifilter .input input[type=radio]:checked + *:after,
+section.u4m-membership-register form.mixitup-multifilter .input input[type=radio]:checked + *:after,
+section.u4m-membership-register form .input input[type=checkbox]:checked + *:after,
+section.u4m-membership-register form .input input[type=checkbox]:checked + *:after,
+section.u4m-membership-register form .input input[type=radio]:checked + *:after,
+section.u4m-membership-register form .input input[type=radio]:checked + *:after,
+section.u4m-membership-reset-password-request form.hs-form .input input[type=checkbox]:checked + *:after,
+section.u4m-membership-reset-password-request form.hs-form .input input[type=checkbox]:checked + *:after,
+section.u4m-membership-reset-password-request form.hs-form .input input[type=radio]:checked + *:after,
+section.u4m-membership-reset-password-request form.hs-form .input input[type=radio]:checked + *:after,
+section.u4m-membership-reset-password-request form.mixitup-multifilter .input input[type=checkbox]:checked + *:after,
+section.u4m-membership-reset-password-request form.mixitup-multifilter .input input[type=checkbox]:checked + *:after,
+section.u4m-membership-reset-password-request form.mixitup-multifilter .input input[type=radio]:checked + *:after,
+section.u4m-membership-reset-password-request form.mixitup-multifilter .input input[type=radio]:checked + *:after,
+section.u4m-membership-reset-password-request form .input input[type=checkbox]:checked + *:after,
+section.u4m-membership-reset-password-request form .input input[type=checkbox]:checked + *:after,
+section.u4m-membership-reset-password-request form .input input[type=radio]:checked + *:after,
+section.u4m-membership-reset-password-request form .input input[type=radio]:checked + *:after,
+section.u4m-membership-reset-password form.hs-form .input input[type=checkbox]:checked + *:after,
+section.u4m-membership-reset-password form.hs-form .input input[type=checkbox]:checked + *:after,
+section.u4m-membership-reset-password form.hs-form .input input[type=radio]:checked + *:after,
+section.u4m-membership-reset-password form.hs-form .input input[type=radio]:checked + *:after,
+section.u4m-membership-reset-password form.mixitup-multifilter .input input[type=checkbox]:checked + *:after,
+section.u4m-membership-reset-password form.mixitup-multifilter .input input[type=checkbox]:checked + *:after,
+section.u4m-membership-reset-password form.mixitup-multifilter .input input[type=radio]:checked + *:after,
+section.u4m-membership-reset-password form.mixitup-multifilter .input input[type=radio]:checked + *:after,
+section.u4m-membership-reset-password form .input input[type=checkbox]:checked + *:after,
+section.u4m-membership-reset-password form .input input[type=checkbox]:checked + *:after,
+section.u4m-membership-reset-password form .input input[type=radio]:checked + *:after,
+section.u4m-membership-reset-password form .input input[type=radio]:checked + *:after,
+section.u4m-password-prompt form.hs-form .input input[type=checkbox]:checked + *:after,
+section.u4m-password-prompt form.hs-form .input input[type=checkbox]:checked + *:after,
+section.u4m-password-prompt form.hs-form .input input[type=radio]:checked + *:after,
+section.u4m-password-prompt form.hs-form .input input[type=radio]:checked + *:after,
+section.u4m-password-prompt form.mixitup-multifilter .input input[type=checkbox]:checked + *:after,
+section.u4m-password-prompt form.mixitup-multifilter .input input[type=checkbox]:checked + *:after,
+section.u4m-password-prompt form.mixitup-multifilter .input input[type=radio]:checked + *:after,
+section.u4m-password-prompt form.mixitup-multifilter .input input[type=radio]:checked + *:after,
+section.u4m-password-prompt form .input input[type=checkbox]:checked + *:after,
+section.u4m-password-prompt form .input input[type=checkbox]:checked + *:after,
+section.u4m-password-prompt form .input input[type=radio]:checked + *:after,
+section.u4m-password-prompt form .input input[type=radio]:checked + *:after {
+  opacity: 1;
 }
 section.u4m-membership-login form.hs-form .input input select, section.u4m-membership-login form.mixitup-multifilter .input input select, section.u4m-membership-login form .input input select,
 section.u4m-membership-register form.hs-form .input input select,
@@ -5679,16 +6242,19 @@ section.u4m-password-prompt form .input select {
   -webkit-appearance: none;
      -moz-appearance: none;
           appearance: none;
-  background: url("/src/templates/images/nav-arrow.svg") no-repeat;
-  background-size: 13rem 8rem;
   background-position: calc(100% - 20rem) center;
   border: 1rem solid #6e757c;
   border-radius: 4rem;
-  margin-bottom: 20rem;
   font-size: 13rem;
   background-color: #ffffff;
-  padding: 17.5rem 12rem;
   color: #6e757c;
+  line-height: 1;
+  padding: 16.5rem 12rem;
+  background-image: url(https://23543895.fs1.hubspotusercontent-na1.net/hubfs/23543895/RampXchange/images/selectArrow.png);
+  background-repeat: no-repeat;
+  background-size: 12rem 7rem;
+  margin-bottom: 0;
+  outline: none !important;
 }
 section.u4m-membership-login form.hs-form .input select:focus, section.u4m-membership-login form.mixitup-multifilter .input select:focus, section.u4m-membership-login form .input select:focus,
 section.u4m-membership-register form.hs-form .input select:focus,
@@ -5722,8 +6288,8 @@ section.u4m-password-prompt form .input + .hs-error-msgs {
   width: 100%;
   padding-left: 0;
   list-style: none;
-  text-align: center;
-  margin: 0rem 0 20rem;
+  text-align: left;
+  margin: 8rem 0 20rem;
   padding: 0;
   animation: fadeIn1 0.3s ease;
 }
@@ -5761,7 +6327,7 @@ section.u4m-password-prompt form .input + .hs-error-msgs li {
   text-align: center;
   background: red;
   display: inline-block;
-  color: white;
+  color: #ffffff;
   border-radius: 5rem;
   padding: 5rem 8rem;
   line-height: 1.2;
@@ -5831,6 +6397,21 @@ section.u4m-password-prompt form .input + .hs-error-msgs li label {
     font-size: 12rem;
   }
 }
+section.u4m-membership-login form.hs-form .hs-fieldtype-radio .input > ul.inputs-list > li label > span:before, section.u4m-membership-login form.mixitup-multifilter .hs-fieldtype-radio .input > ul.inputs-list > li label > span:before, section.u4m-membership-login form .hs-fieldtype-radio .input > ul.inputs-list > li label > span:before,
+section.u4m-membership-register form.hs-form .hs-fieldtype-radio .input > ul.inputs-list > li label > span:before,
+section.u4m-membership-register form.mixitup-multifilter .hs-fieldtype-radio .input > ul.inputs-list > li label > span:before,
+section.u4m-membership-register form .hs-fieldtype-radio .input > ul.inputs-list > li label > span:before,
+section.u4m-membership-reset-password-request form.hs-form .hs-fieldtype-radio .input > ul.inputs-list > li label > span:before,
+section.u4m-membership-reset-password-request form.mixitup-multifilter .hs-fieldtype-radio .input > ul.inputs-list > li label > span:before,
+section.u4m-membership-reset-password-request form .hs-fieldtype-radio .input > ul.inputs-list > li label > span:before,
+section.u4m-membership-reset-password form.hs-form .hs-fieldtype-radio .input > ul.inputs-list > li label > span:before,
+section.u4m-membership-reset-password form.mixitup-multifilter .hs-fieldtype-radio .input > ul.inputs-list > li label > span:before,
+section.u4m-membership-reset-password form .hs-fieldtype-radio .input > ul.inputs-list > li label > span:before,
+section.u4m-password-prompt form.hs-form .hs-fieldtype-radio .input > ul.inputs-list > li label > span:before,
+section.u4m-password-prompt form.mixitup-multifilter .hs-fieldtype-radio .input > ul.inputs-list > li label > span:before,
+section.u4m-password-prompt form .hs-fieldtype-radio .input > ul.inputs-list > li label > span:before {
+  border-radius: 100%;
+}
 section.u4m-membership-login form.hs-form .hs_upload_resume, section.u4m-membership-login form.mixitup-multifilter .hs_upload_resume, section.u4m-membership-login form .hs_upload_resume,
 section.u4m-membership-register form.hs-form .hs_upload_resume,
 section.u4m-membership-register form.mixitup-multifilter .hs_upload_resume,
@@ -5861,12 +6442,14 @@ section.u4m-password-prompt form.mixitup-multifilter textarea,
 section.u4m-password-prompt form textarea {
   border: 1rem solid #6e757c;
   border-radius: 4rem;
-  font-size: 13rem;
-  margin-bottom: 20rem;
+  font-size: 16rem;
   min-height: 96rem;
   background-color: #ffffff;
   width: 100%;
   color: #213944;
+  display: block;
+  outline: none;
+  padding: 12rem;
 }
 section.u4m-membership-login form.hs-form textarea:focus, section.u4m-membership-login form.mixitup-multifilter textarea:focus, section.u4m-membership-login form textarea:focus,
 section.u4m-membership-register form.hs-form textarea:focus,
@@ -5885,6 +6468,7 @@ section.u4m-password-prompt form textarea:focus {
 }
 section.u4m-membership-login form.hs-form textarea::-moz-placeholder, section.u4m-membership-login form.mixitup-multifilter textarea::-moz-placeholder, section.u4m-membership-login form textarea::-moz-placeholder, section.u4m-membership-register form.hs-form textarea::-moz-placeholder, section.u4m-membership-register form.mixitup-multifilter textarea::-moz-placeholder, section.u4m-membership-register form textarea::-moz-placeholder, section.u4m-membership-reset-password-request form.hs-form textarea::-moz-placeholder, section.u4m-membership-reset-password-request form.mixitup-multifilter textarea::-moz-placeholder, section.u4m-membership-reset-password-request form textarea::-moz-placeholder, section.u4m-membership-reset-password form.hs-form textarea::-moz-placeholder, section.u4m-membership-reset-password form.mixitup-multifilter textarea::-moz-placeholder, section.u4m-membership-reset-password form textarea::-moz-placeholder, section.u4m-password-prompt form.hs-form textarea::-moz-placeholder, section.u4m-password-prompt form.mixitup-multifilter textarea::-moz-placeholder, section.u4m-password-prompt form textarea::-moz-placeholder {
   color: #6e757c;
+  font-size: 13rem;
 }
 section.u4m-membership-login form.hs-form textarea::placeholder, section.u4m-membership-login form.mixitup-multifilter textarea::placeholder, section.u4m-membership-login form textarea::placeholder,
 section.u4m-membership-register form.hs-form textarea::placeholder,
@@ -5900,6 +6484,7 @@ section.u4m-password-prompt form.hs-form textarea::placeholder,
 section.u4m-password-prompt form.mixitup-multifilter textarea::placeholder,
 section.u4m-password-prompt form textarea::placeholder {
   color: #6e757c;
+  font-size: 13rem;
 }
 section.u4m-membership-login form.hs-form textarea.invalid, section.u4m-membership-login form.mixitup-multifilter textarea.invalid, section.u4m-membership-login form textarea.invalid,
 section.u4m-membership-register form.hs-form textarea.invalid,
@@ -6345,10 +6930,7 @@ section.u4m-password-prompt form .form-columns-1 .hs-form-radio input,
 section.u4m-password-prompt form .form-columns-2 .hs-form-radio input,
 section.u4m-password-prompt form .form-columns-3 .hs-form-radio input {
   width: auto;
-  margin-right: 10rem;
-  margin-left: 2rem;
   position: relative;
-  top: -2rem;
 }
 section.u4m-membership-login form.hs-form .hs-form-radio span,
 section.u4m-membership-login form.hs-form .form-columns-1 .hs-form-radio span,
@@ -6535,6 +7117,21 @@ section.u4m-password-prompt form .form-columns-3 .hs-form-radio span {
     top: 2rem;
   }
 }
+section.u4m-membership-login form.hs-form .form-columns-3, section.u4m-membership-login form.mixitup-multifilter .form-columns-3, section.u4m-membership-login form .form-columns-3,
+section.u4m-membership-register form.hs-form .form-columns-3,
+section.u4m-membership-register form.mixitup-multifilter .form-columns-3,
+section.u4m-membership-register form .form-columns-3,
+section.u4m-membership-reset-password-request form.hs-form .form-columns-3,
+section.u4m-membership-reset-password-request form.mixitup-multifilter .form-columns-3,
+section.u4m-membership-reset-password-request form .form-columns-3,
+section.u4m-membership-reset-password form.hs-form .form-columns-3,
+section.u4m-membership-reset-password form.mixitup-multifilter .form-columns-3,
+section.u4m-membership-reset-password form .form-columns-3,
+section.u4m-password-prompt form.hs-form .form-columns-3,
+section.u4m-password-prompt form.mixitup-multifilter .form-columns-3,
+section.u4m-password-prompt form .form-columns-3 {
+  margin: 0 -10rem;
+}
 section.u4m-membership-login form.hs-form .form-columns-3 .hs-form-field, section.u4m-membership-login form.mixitup-multifilter .form-columns-3 .hs-form-field, section.u4m-membership-login form .form-columns-3 .hs-form-field,
 section.u4m-membership-register form.hs-form .form-columns-3 .hs-form-field,
 section.u4m-membership-register form.mixitup-multifilter .form-columns-3 .hs-form-field,
@@ -6549,6 +7146,7 @@ section.u4m-password-prompt form.hs-form .form-columns-3 .hs-form-field,
 section.u4m-password-prompt form.mixitup-multifilter .form-columns-3 .hs-form-field,
 section.u4m-password-prompt form .form-columns-3 .hs-form-field {
   width: 33.05%;
+  padding: 0 10rem;
 }
 @media (max-width: 1024px) {
   section.u4m-membership-login form.hs-form .form-columns-3 .hs-form-field, section.u4m-membership-login form.mixitup-multifilter .form-columns-3 .hs-form-field, section.u4m-membership-login form .form-columns-3 .hs-form-field,
@@ -6599,20 +7197,65 @@ section.u4m-password-prompt form.mixitup-multifilter .form-columns-3 div:last-ch
 section.u4m-password-prompt form .form-columns-3 div:last-child div {
   margin-right: 0;
 }
+section.u4m-membership-login form.hs-form .form-columns-2, section.u4m-membership-login form.mixitup-multifilter .form-columns-2, section.u4m-membership-login form .form-columns-2,
+section.u4m-membership-register form.hs-form .form-columns-2,
+section.u4m-membership-register form.mixitup-multifilter .form-columns-2,
+section.u4m-membership-register form .form-columns-2,
+section.u4m-membership-reset-password-request form.hs-form .form-columns-2,
+section.u4m-membership-reset-password-request form.mixitup-multifilter .form-columns-2,
+section.u4m-membership-reset-password-request form .form-columns-2,
+section.u4m-membership-reset-password form.hs-form .form-columns-2,
+section.u4m-membership-reset-password form.mixitup-multifilter .form-columns-2,
+section.u4m-membership-reset-password form .form-columns-2,
+section.u4m-password-prompt form.hs-form .form-columns-2,
+section.u4m-password-prompt form.mixitup-multifilter .form-columns-2,
+section.u4m-password-prompt form .form-columns-2 {
+  margin: 0 -10px;
+}
+section.u4m-membership-login form.hs-form .form-columns-2 > .hs-form-field, section.u4m-membership-login form.mixitup-multifilter .form-columns-2 > .hs-form-field, section.u4m-membership-login form .form-columns-2 > .hs-form-field,
+section.u4m-membership-register form.hs-form .form-columns-2 > .hs-form-field,
+section.u4m-membership-register form.mixitup-multifilter .form-columns-2 > .hs-form-field,
+section.u4m-membership-register form .form-columns-2 > .hs-form-field,
+section.u4m-membership-reset-password-request form.hs-form .form-columns-2 > .hs-form-field,
+section.u4m-membership-reset-password-request form.mixitup-multifilter .form-columns-2 > .hs-form-field,
+section.u4m-membership-reset-password-request form .form-columns-2 > .hs-form-field,
+section.u4m-membership-reset-password form.hs-form .form-columns-2 > .hs-form-field,
+section.u4m-membership-reset-password form.mixitup-multifilter .form-columns-2 > .hs-form-field,
+section.u4m-membership-reset-password form .form-columns-2 > .hs-form-field,
+section.u4m-password-prompt form.hs-form .form-columns-2 > .hs-form-field,
+section.u4m-password-prompt form.mixitup-multifilter .form-columns-2 > .hs-form-field,
+section.u4m-password-prompt form .form-columns-2 > .hs-form-field {
+  padding: 0 10px;
+}
+section.u4m-membership-login form.hs-form .form-columns-2 > .hs-form-field:last-of-type, section.u4m-membership-login form.mixitup-multifilter .form-columns-2 > .hs-form-field:last-of-type, section.u4m-membership-login form .form-columns-2 > .hs-form-field:last-of-type,
+section.u4m-membership-register form.hs-form .form-columns-2 > .hs-form-field:last-of-type,
+section.u4m-membership-register form.mixitup-multifilter .form-columns-2 > .hs-form-field:last-of-type,
+section.u4m-membership-register form .form-columns-2 > .hs-form-field:last-of-type,
+section.u4m-membership-reset-password-request form.hs-form .form-columns-2 > .hs-form-field:last-of-type,
+section.u4m-membership-reset-password-request form.mixitup-multifilter .form-columns-2 > .hs-form-field:last-of-type,
+section.u4m-membership-reset-password-request form .form-columns-2 > .hs-form-field:last-of-type,
+section.u4m-membership-reset-password form.hs-form .form-columns-2 > .hs-form-field:last-of-type,
+section.u4m-membership-reset-password form.mixitup-multifilter .form-columns-2 > .hs-form-field:last-of-type,
+section.u4m-membership-reset-password form .form-columns-2 > .hs-form-field:last-of-type,
+section.u4m-password-prompt form.hs-form .form-columns-2 > .hs-form-field:last-of-type,
+section.u4m-password-prompt form.mixitup-multifilter .form-columns-2 > .hs-form-field:last-of-type,
+section.u4m-password-prompt form .form-columns-2 > .hs-form-field:last-of-type {
+  margin-left: 0;
+}
 @media (max-width: 580px) {
-  section.u4m-membership-login form.hs-form .form-columns-2 .hs-form-field, section.u4m-membership-login form.mixitup-multifilter .form-columns-2 .hs-form-field, section.u4m-membership-login form .form-columns-2 .hs-form-field,
-  section.u4m-membership-register form.hs-form .form-columns-2 .hs-form-field,
-  section.u4m-membership-register form.mixitup-multifilter .form-columns-2 .hs-form-field,
-  section.u4m-membership-register form .form-columns-2 .hs-form-field,
-  section.u4m-membership-reset-password-request form.hs-form .form-columns-2 .hs-form-field,
-  section.u4m-membership-reset-password-request form.mixitup-multifilter .form-columns-2 .hs-form-field,
-  section.u4m-membership-reset-password-request form .form-columns-2 .hs-form-field,
-  section.u4m-membership-reset-password form.hs-form .form-columns-2 .hs-form-field,
-  section.u4m-membership-reset-password form.mixitup-multifilter .form-columns-2 .hs-form-field,
-  section.u4m-membership-reset-password form .form-columns-2 .hs-form-field,
-  section.u4m-password-prompt form.hs-form .form-columns-2 .hs-form-field,
-  section.u4m-password-prompt form.mixitup-multifilter .form-columns-2 .hs-form-field,
-  section.u4m-password-prompt form .form-columns-2 .hs-form-field {
+  section.u4m-membership-login form.hs-form .form-columns-2 > .hs-form-field, section.u4m-membership-login form.mixitup-multifilter .form-columns-2 > .hs-form-field, section.u4m-membership-login form .form-columns-2 > .hs-form-field,
+  section.u4m-membership-register form.hs-form .form-columns-2 > .hs-form-field,
+  section.u4m-membership-register form.mixitup-multifilter .form-columns-2 > .hs-form-field,
+  section.u4m-membership-register form .form-columns-2 > .hs-form-field,
+  section.u4m-membership-reset-password-request form.hs-form .form-columns-2 > .hs-form-field,
+  section.u4m-membership-reset-password-request form.mixitup-multifilter .form-columns-2 > .hs-form-field,
+  section.u4m-membership-reset-password-request form .form-columns-2 > .hs-form-field,
+  section.u4m-membership-reset-password form.hs-form .form-columns-2 > .hs-form-field,
+  section.u4m-membership-reset-password form.mixitup-multifilter .form-columns-2 > .hs-form-field,
+  section.u4m-membership-reset-password form .form-columns-2 > .hs-form-field,
+  section.u4m-password-prompt form.hs-form .form-columns-2 > .hs-form-field,
+  section.u4m-password-prompt form.mixitup-multifilter .form-columns-2 > .hs-form-field,
+  section.u4m-password-prompt form .form-columns-2 > .hs-form-field {
     width: 100%;
   }
 }
@@ -6936,6 +7579,37 @@ section.u4m-password-prompt form .form-columns-2 > div:last-of-type {
     margin-left: 0;
   }
 }
+section.u4m-membership-login form.hs-form fieldset.form-columns-1 .input, section.u4m-membership-login form.mixitup-multifilter fieldset.form-columns-1 .input, section.u4m-membership-login form fieldset.form-columns-1 .input,
+section.u4m-membership-register form.hs-form fieldset.form-columns-1 .input,
+section.u4m-membership-register form.mixitup-multifilter fieldset.form-columns-1 .input,
+section.u4m-membership-register form fieldset.form-columns-1 .input,
+section.u4m-membership-reset-password-request form.hs-form fieldset.form-columns-1 .input,
+section.u4m-membership-reset-password-request form.mixitup-multifilter fieldset.form-columns-1 .input,
+section.u4m-membership-reset-password-request form fieldset.form-columns-1 .input,
+section.u4m-membership-reset-password form.hs-form fieldset.form-columns-1 .input,
+section.u4m-membership-reset-password form.mixitup-multifilter fieldset.form-columns-1 .input,
+section.u4m-membership-reset-password form fieldset.form-columns-1 .input,
+section.u4m-password-prompt form.hs-form fieldset.form-columns-1 .input,
+section.u4m-password-prompt form.mixitup-multifilter fieldset.form-columns-1 .input,
+section.u4m-password-prompt form fieldset.form-columns-1 .input {
+  margin: 0;
+}
+section.u4m-membership-login form.hs-form fieldset.form-columns-1 .hs-input, section.u4m-membership-login form.mixitup-multifilter fieldset.form-columns-1 .hs-input, section.u4m-membership-login form fieldset.form-columns-1 .hs-input,
+section.u4m-membership-register form.hs-form fieldset.form-columns-1 .hs-input,
+section.u4m-membership-register form.mixitup-multifilter fieldset.form-columns-1 .hs-input,
+section.u4m-membership-register form fieldset.form-columns-1 .hs-input,
+section.u4m-membership-reset-password-request form.hs-form fieldset.form-columns-1 .hs-input,
+section.u4m-membership-reset-password-request form.mixitup-multifilter fieldset.form-columns-1 .hs-input,
+section.u4m-membership-reset-password-request form fieldset.form-columns-1 .hs-input,
+section.u4m-membership-reset-password form.hs-form fieldset.form-columns-1 .hs-input,
+section.u4m-membership-reset-password form.mixitup-multifilter fieldset.form-columns-1 .hs-input,
+section.u4m-membership-reset-password form fieldset.form-columns-1 .hs-input,
+section.u4m-password-prompt form.hs-form fieldset.form-columns-1 .hs-input,
+section.u4m-password-prompt form.mixitup-multifilter fieldset.form-columns-1 .hs-input,
+section.u4m-password-prompt form fieldset.form-columns-1 .hs-input {
+  width: 100% !important;
+  margin-bottom: 0;
+}
 section.u4m-membership-login form.hs-form .hs-button, section.u4m-membership-login form.mixitup-multifilter .hs-button, section.u4m-membership-login form .hs-button,
 section.u4m-membership-register form.hs-form .hs-button,
 section.u4m-membership-register form.mixitup-multifilter .hs-button,
@@ -6992,6 +7666,14 @@ section.u4m-password-prompt form .hs-button:hover,
 section.u4m-password-prompt form .hs-button:focus {
   background-color: #ffffff;
   color: #007c43;
+}
+section.u4m-membership-login form .hs-richtext p,
+section.u4m-membership-register form .hs-richtext p,
+section.u4m-membership-reset-password-request form .hs-richtext p,
+section.u4m-membership-reset-password form .hs-richtext p,
+section.u4m-password-prompt form .hs-richtext p {
+  font-size: 11rem;
+  color: #6e757c;
 }
 section.u4m-membership-login form input,
 section.u4m-membership-register form input,
@@ -7130,6 +7812,9 @@ section.u4m-subscription-preferences form.hs-form .hs_error_rollup ul.hs-error-m
   font-weight: normal;
   text-transform: none;
 }
+section.u4m-subscription-preferences form.hs-form .hs-form-field, section.u4m-subscription-preferences form.mixitup-multifilter .hs-form-field, section.u4m-subscription-preferences form .hs-form-field {
+  margin-bottom: 20px;
+}
 section.u4m-subscription-preferences form.hs-form .hs-form-field > label, section.u4m-subscription-preferences form.mixitup-multifilter .hs-form-field > label, section.u4m-subscription-preferences form .hs-form-field > label {
   font-size: 13rem;
   font-weight: 500;
@@ -7137,6 +7822,10 @@ section.u4m-subscription-preferences form.hs-form .hs-form-field > label, sectio
   letter-spacing: 0;
   pointer-events: auto;
   margin-bottom: 8rem;
+  display: block;
+}
+section.u4m-subscription-preferences form.hs-form .input, section.u4m-subscription-preferences form.mixitup-multifilter .input, section.u4m-subscription-preferences form .input {
+  margin-right: 0 !important;
 }
 section.u4m-subscription-preferences form.hs-form .input input[type=text],
 section.u4m-subscription-preferences form.hs-form .input input[type=number],
@@ -7150,10 +7839,12 @@ section.u4m-subscription-preferences form .input input[type=tel],
 section.u4m-subscription-preferences form .input input[type=email] {
   border: 1rem solid #6e757c;
   border-radius: 4rem;
-  margin-bottom: 20rem;
   font-size: 16rem;
   background-color: #ffffff;
-  padding: 12rem;
+  line-height: 1;
+  margin-bottom: 0;
+  outline: none !important;
+  padding: 13rem 12rem;
   width: 100%;
   -webkit-appearance: none;
      -moz-appearance: none;
@@ -7208,11 +7899,91 @@ section.u4m-subscription-preferences form .input input[type=tel]::placeholder,
 section.u4m-subscription-preferences form .input input[type=email]::placeholder {
   color: #6e757c;
 }
+section.u4m-subscription-preferences form.hs-form .input ul.inputs-list, section.u4m-subscription-preferences form.mixitup-multifilter .input ul.inputs-list, section.u4m-subscription-preferences form .input ul.inputs-list {
+  margin: 0;
+}
+section.u4m-subscription-preferences form.hs-form .input ul.inputs-list > li, section.u4m-subscription-preferences form.mixitup-multifilter .input ul.inputs-list > li, section.u4m-subscription-preferences form .input ul.inputs-list > li {
+  display: block;
+  margin-right: 0;
+  letter-spacing: 0;
+  margin-bottom: 8px;
+  line-height: 1;
+  font-size: 13rem;
+}
+section.u4m-subscription-preferences form.hs-form .input ul.inputs-list > li:last-child, section.u4m-subscription-preferences form.mixitup-multifilter .input ul.inputs-list > li:last-child, section.u4m-subscription-preferences form .input ul.inputs-list > li:last-child {
+  margin-bottom: 0;
+}
+section.u4m-subscription-preferences form.hs-form .input ul.inputs-list > li label, section.u4m-subscription-preferences form.mixitup-multifilter .input ul.inputs-list > li label, section.u4m-subscription-preferences form .input ul.inputs-list > li label {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  position: relative;
+}
+section.u4m-subscription-preferences form.hs-form .input ul.inputs-list > li label > span, section.u4m-subscription-preferences form.mixitup-multifilter .input ul.inputs-list > li label > span, section.u4m-subscription-preferences form .input ul.inputs-list > li label > span {
+  font-size: 13rem;
+  line-height: 1;
+  color: #6e757c;
+  position: static;
+}
+section.u4m-subscription-preferences form.hs-form .input ul.inputs-list > li label > span:after, section.u4m-subscription-preferences form.mixitup-multifilter .input ul.inputs-list > li label > span:after, section.u4m-subscription-preferences form .input ul.inputs-list > li label > span:after {
+  content: "";
+  height: 20px;
+  width: 20px;
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  opacity: 0;
+  background-image: url(https://23543895.fs1.hubspotusercontent-na1.net/hubfs/23543895/RampXchange/images/formCheck.png);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+section.u4m-subscription-preferences form.hs-form .input ul.inputs-list > li label > span:before, section.u4m-subscription-preferences form.mixitup-multifilter .input ul.inputs-list > li label > span:before, section.u4m-subscription-preferences form .input ul.inputs-list > li label > span:before {
+  content: "";
+  height: 20px;
+  width: 20px;
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  border: 1px solid #6e757c;
+}
 section.u4m-subscription-preferences form.hs-form .input input[type=checkbox],
 section.u4m-subscription-preferences form.hs-form .input input[type=radio], section.u4m-subscription-preferences form.mixitup-multifilter .input input[type=checkbox],
 section.u4m-subscription-preferences form.mixitup-multifilter .input input[type=radio], section.u4m-subscription-preferences form .input input[type=checkbox],
 section.u4m-subscription-preferences form .input input[type=radio] {
   width: auto;
+}
+section.u4m-subscription-preferences form.hs-form .input input[type=checkbox],
+section.u4m-subscription-preferences form.hs-form .input input[type=radio], section.u4m-subscription-preferences form.mixitup-multifilter .input input[type=checkbox],
+section.u4m-subscription-preferences form.mixitup-multifilter .input input[type=radio], section.u4m-subscription-preferences form .input input[type=checkbox],
+section.u4m-subscription-preferences form .input input[type=radio] {
+  position: static;
+  margin: 0;
+  height: 20px;
+  width: 20px !important;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  outline: none !important;
+}
+section.u4m-subscription-preferences form.hs-form .input input[type=checkbox]:checked + *:before, section.u4m-subscription-preferences form.hs-form .input input[type=checkbox]:checked + *:before,
+section.u4m-subscription-preferences form.hs-form .input input[type=radio]:checked + *:before,
+section.u4m-subscription-preferences form.hs-form .input input[type=radio]:checked + *:before, section.u4m-subscription-preferences form.mixitup-multifilter .input input[type=checkbox]:checked + *:before, section.u4m-subscription-preferences form.mixitup-multifilter .input input[type=checkbox]:checked + *:before,
+section.u4m-subscription-preferences form.mixitup-multifilter .input input[type=radio]:checked + *:before,
+section.u4m-subscription-preferences form.mixitup-multifilter .input input[type=radio]:checked + *:before, section.u4m-subscription-preferences form .input input[type=checkbox]:checked + *:before, section.u4m-subscription-preferences form .input input[type=checkbox]:checked + *:before,
+section.u4m-subscription-preferences form .input input[type=radio]:checked + *:before,
+section.u4m-subscription-preferences form .input input[type=radio]:checked + *:before {
+  background: #213944;
+}
+section.u4m-subscription-preferences form.hs-form .input input[type=checkbox]:checked + *:after, section.u4m-subscription-preferences form.hs-form .input input[type=checkbox]:checked + *:after,
+section.u4m-subscription-preferences form.hs-form .input input[type=radio]:checked + *:after,
+section.u4m-subscription-preferences form.hs-form .input input[type=radio]:checked + *:after, section.u4m-subscription-preferences form.mixitup-multifilter .input input[type=checkbox]:checked + *:after, section.u4m-subscription-preferences form.mixitup-multifilter .input input[type=checkbox]:checked + *:after,
+section.u4m-subscription-preferences form.mixitup-multifilter .input input[type=radio]:checked + *:after,
+section.u4m-subscription-preferences form.mixitup-multifilter .input input[type=radio]:checked + *:after, section.u4m-subscription-preferences form .input input[type=checkbox]:checked + *:after, section.u4m-subscription-preferences form .input input[type=checkbox]:checked + *:after,
+section.u4m-subscription-preferences form .input input[type=radio]:checked + *:after,
+section.u4m-subscription-preferences form .input input[type=radio]:checked + *:after {
+  opacity: 1;
 }
 section.u4m-subscription-preferences form.hs-form .input input select, section.u4m-subscription-preferences form.mixitup-multifilter .input input select, section.u4m-subscription-preferences form .input input select {
   border: 1rem solid #6e757c;
@@ -7238,16 +8009,19 @@ section.u4m-subscription-preferences form.hs-form .input select, section.u4m-sub
   -webkit-appearance: none;
      -moz-appearance: none;
           appearance: none;
-  background: url("/src/templates/images/nav-arrow.svg") no-repeat;
-  background-size: 13rem 8rem;
   background-position: calc(100% - 20rem) center;
   border: 1rem solid #6e757c;
   border-radius: 4rem;
-  margin-bottom: 20rem;
   font-size: 13rem;
   background-color: #ffffff;
-  padding: 17.5rem 12rem;
   color: #6e757c;
+  line-height: 1;
+  padding: 16.5rem 12rem;
+  background-image: url(https://23543895.fs1.hubspotusercontent-na1.net/hubfs/23543895/RampXchange/images/selectArrow.png);
+  background-repeat: no-repeat;
+  background-size: 12rem 7rem;
+  margin-bottom: 0;
+  outline: none !important;
 }
 section.u4m-subscription-preferences form.hs-form .input select:focus, section.u4m-subscription-preferences form.mixitup-multifilter .input select:focus, section.u4m-subscription-preferences form .input select:focus {
   border: 1rem solid #213944;
@@ -7257,8 +8031,8 @@ section.u4m-subscription-preferences form.hs-form .input + .hs-error-msgs, secti
   width: 100%;
   padding-left: 0;
   list-style: none;
-  text-align: center;
-  margin: 0rem 0 20rem;
+  text-align: left;
+  margin: 8rem 0 20rem;
   padding: 0;
   animation: fadeIn1 0.3s ease;
 }
@@ -7272,7 +8046,7 @@ section.u4m-subscription-preferences form.hs-form .input + .hs-error-msgs li, se
   text-align: center;
   background: red;
   display: inline-block;
-  color: white;
+  color: #ffffff;
   border-radius: 5rem;
   padding: 5rem 8rem;
   line-height: 1.2;
@@ -7306,27 +8080,34 @@ section.u4m-subscription-preferences form.hs-form .input + .hs-error-msgs li lab
     font-size: 12rem;
   }
 }
+section.u4m-subscription-preferences form.hs-form .hs-fieldtype-radio .input > ul.inputs-list > li label > span:before, section.u4m-subscription-preferences form.mixitup-multifilter .hs-fieldtype-radio .input > ul.inputs-list > li label > span:before, section.u4m-subscription-preferences form .hs-fieldtype-radio .input > ul.inputs-list > li label > span:before {
+  border-radius: 100%;
+}
 section.u4m-subscription-preferences form.hs-form .hs_upload_resume, section.u4m-subscription-preferences form.mixitup-multifilter .hs_upload_resume, section.u4m-subscription-preferences form .hs_upload_resume {
   margin-bottom: -3rem;
 }
 section.u4m-subscription-preferences form.hs-form textarea, section.u4m-subscription-preferences form.mixitup-multifilter textarea, section.u4m-subscription-preferences form textarea {
   border: 1rem solid #6e757c;
   border-radius: 4rem;
-  font-size: 13rem;
-  margin-bottom: 20rem;
+  font-size: 16rem;
   min-height: 96rem;
   background-color: #ffffff;
   width: 100%;
   color: #213944;
+  display: block;
+  outline: none;
+  padding: 12rem;
 }
 section.u4m-subscription-preferences form.hs-form textarea:focus, section.u4m-subscription-preferences form.mixitup-multifilter textarea:focus, section.u4m-subscription-preferences form textarea:focus {
   border: 1rem solid #213944;
 }
 section.u4m-subscription-preferences form.hs-form textarea::-moz-placeholder, section.u4m-subscription-preferences form.mixitup-multifilter textarea::-moz-placeholder, section.u4m-subscription-preferences form textarea::-moz-placeholder {
   color: #6e757c;
+  font-size: 13rem;
 }
 section.u4m-subscription-preferences form.hs-form textarea::placeholder, section.u4m-subscription-preferences form.mixitup-multifilter textarea::placeholder, section.u4m-subscription-preferences form textarea::placeholder {
   color: #6e757c;
+  font-size: 13rem;
 }
 section.u4m-subscription-preferences form.hs-form textarea.invalid, section.u4m-subscription-preferences form.mixitup-multifilter textarea.invalid, section.u4m-subscription-preferences form textarea.invalid {
   border: 1px solid red;
@@ -7424,10 +8205,7 @@ section.u4m-subscription-preferences form .form-columns-1 .hs-form-radio input,
 section.u4m-subscription-preferences form .form-columns-2 .hs-form-radio input,
 section.u4m-subscription-preferences form .form-columns-3 .hs-form-radio input {
   width: auto;
-  margin-right: 10rem;
-  margin-left: 2rem;
   position: relative;
-  top: -2rem;
 }
 section.u4m-subscription-preferences form.hs-form .hs-form-radio span,
 section.u4m-subscription-preferences form.hs-form .form-columns-1 .hs-form-radio span,
@@ -7470,8 +8248,12 @@ section.u4m-subscription-preferences form .form-columns-3 .hs-form-radio span {
     top: 2rem;
   }
 }
+section.u4m-subscription-preferences form.hs-form .form-columns-3, section.u4m-subscription-preferences form.mixitup-multifilter .form-columns-3, section.u4m-subscription-preferences form .form-columns-3 {
+  margin: 0 -10rem;
+}
 section.u4m-subscription-preferences form.hs-form .form-columns-3 .hs-form-field, section.u4m-subscription-preferences form.mixitup-multifilter .form-columns-3 .hs-form-field, section.u4m-subscription-preferences form .form-columns-3 .hs-form-field {
   width: 33.05%;
+  padding: 0 10rem;
 }
 @media (max-width: 1024px) {
   section.u4m-subscription-preferences form.hs-form .form-columns-3 .hs-form-field, section.u4m-subscription-preferences form.mixitup-multifilter .form-columns-3 .hs-form-field, section.u4m-subscription-preferences form .form-columns-3 .hs-form-field {
@@ -7486,8 +8268,17 @@ section.u4m-subscription-preferences form.hs-form .form-columns-3 .hs-form-field
 section.u4m-subscription-preferences form.hs-form .form-columns-3 div:last-child div, section.u4m-subscription-preferences form.mixitup-multifilter .form-columns-3 div:last-child div, section.u4m-subscription-preferences form .form-columns-3 div:last-child div {
   margin-right: 0;
 }
+section.u4m-subscription-preferences form.hs-form .form-columns-2, section.u4m-subscription-preferences form.mixitup-multifilter .form-columns-2, section.u4m-subscription-preferences form .form-columns-2 {
+  margin: 0 -10px;
+}
+section.u4m-subscription-preferences form.hs-form .form-columns-2 > .hs-form-field, section.u4m-subscription-preferences form.mixitup-multifilter .form-columns-2 > .hs-form-field, section.u4m-subscription-preferences form .form-columns-2 > .hs-form-field {
+  padding: 0 10px;
+}
+section.u4m-subscription-preferences form.hs-form .form-columns-2 > .hs-form-field:last-of-type, section.u4m-subscription-preferences form.mixitup-multifilter .form-columns-2 > .hs-form-field:last-of-type, section.u4m-subscription-preferences form .form-columns-2 > .hs-form-field:last-of-type {
+  margin-left: 0;
+}
 @media (max-width: 580px) {
-  section.u4m-subscription-preferences form.hs-form .form-columns-2 .hs-form-field, section.u4m-subscription-preferences form.mixitup-multifilter .form-columns-2 .hs-form-field, section.u4m-subscription-preferences form .form-columns-2 .hs-form-field {
+  section.u4m-subscription-preferences form.hs-form .form-columns-2 > .hs-form-field, section.u4m-subscription-preferences form.mixitup-multifilter .form-columns-2 > .hs-form-field, section.u4m-subscription-preferences form .form-columns-2 > .hs-form-field {
     width: 100%;
   }
 }
@@ -7559,6 +8350,13 @@ section.u4m-subscription-preferences form.hs-form .form-columns-2 > div:last-of-
     margin-left: 0;
   }
 }
+section.u4m-subscription-preferences form.hs-form fieldset.form-columns-1 .input, section.u4m-subscription-preferences form.mixitup-multifilter fieldset.form-columns-1 .input, section.u4m-subscription-preferences form fieldset.form-columns-1 .input {
+  margin: 0;
+}
+section.u4m-subscription-preferences form.hs-form fieldset.form-columns-1 .hs-input, section.u4m-subscription-preferences form.mixitup-multifilter fieldset.form-columns-1 .hs-input, section.u4m-subscription-preferences form fieldset.form-columns-1 .hs-input {
+  width: 100% !important;
+  margin-bottom: 0;
+}
 section.u4m-subscription-preferences form.hs-form .hs-button, section.u4m-subscription-preferences form.mixitup-multifilter .hs-button, section.u4m-subscription-preferences form .hs-button {
   display: inline-block;
   font-family: "Inter";
@@ -7579,6 +8377,10 @@ section.u4m-subscription-preferences form.hs-form .hs-button, section.u4m-subscr
 section.u4m-subscription-preferences form.hs-form .hs-button:hover, section.u4m-subscription-preferences form.hs-form .hs-button:focus, section.u4m-subscription-preferences form.mixitup-multifilter .hs-button:hover, section.u4m-subscription-preferences form.mixitup-multifilter .hs-button:focus, section.u4m-subscription-preferences form .hs-button:hover, section.u4m-subscription-preferences form .hs-button:focus {
   background-color: #ffffff;
   color: #007c43;
+}
+section.u4m-subscription-preferences form .hs-richtext p {
+  font-size: 11rem;
+  color: #6e757c;
 }
 section.u4m-subscription-preferences form div.item {
   border-bottom: 2rem solid #6e757c;
@@ -7684,6 +8486,9 @@ section.u4m-drag-and-drop-area form.hs-form .hs_error_rollup ul.hs-error-msgs li
   font-weight: normal;
   text-transform: none;
 }
+section.u4m-drag-and-drop-area form.hs-form .hs-form-field, section.u4m-drag-and-drop-area form.mixitup-multifilter .hs-form-field, section.u4m-drag-and-drop-area form .hs-form-field {
+  margin-bottom: 20px;
+}
 section.u4m-drag-and-drop-area form.hs-form .hs-form-field > label, section.u4m-drag-and-drop-area form.mixitup-multifilter .hs-form-field > label, section.u4m-drag-and-drop-area form .hs-form-field > label {
   font-size: 13rem;
   font-weight: 500;
@@ -7691,6 +8496,10 @@ section.u4m-drag-and-drop-area form.hs-form .hs-form-field > label, section.u4m-
   letter-spacing: 0;
   pointer-events: auto;
   margin-bottom: 8rem;
+  display: block;
+}
+section.u4m-drag-and-drop-area form.hs-form .input, section.u4m-drag-and-drop-area form.mixitup-multifilter .input, section.u4m-drag-and-drop-area form .input {
+  margin-right: 0 !important;
 }
 section.u4m-drag-and-drop-area form.hs-form .input input[type=text],
 section.u4m-drag-and-drop-area form.hs-form .input input[type=number],
@@ -7704,10 +8513,12 @@ section.u4m-drag-and-drop-area form .input input[type=tel],
 section.u4m-drag-and-drop-area form .input input[type=email] {
   border: 1rem solid #6e757c;
   border-radius: 4rem;
-  margin-bottom: 20rem;
   font-size: 16rem;
   background-color: #ffffff;
-  padding: 12rem;
+  line-height: 1;
+  margin-bottom: 0;
+  outline: none !important;
+  padding: 13rem 12rem;
   width: 100%;
   -webkit-appearance: none;
      -moz-appearance: none;
@@ -7762,11 +8573,91 @@ section.u4m-drag-and-drop-area form .input input[type=tel]::placeholder,
 section.u4m-drag-and-drop-area form .input input[type=email]::placeholder {
   color: #6e757c;
 }
+section.u4m-drag-and-drop-area form.hs-form .input ul.inputs-list, section.u4m-drag-and-drop-area form.mixitup-multifilter .input ul.inputs-list, section.u4m-drag-and-drop-area form .input ul.inputs-list {
+  margin: 0;
+}
+section.u4m-drag-and-drop-area form.hs-form .input ul.inputs-list > li, section.u4m-drag-and-drop-area form.mixitup-multifilter .input ul.inputs-list > li, section.u4m-drag-and-drop-area form .input ul.inputs-list > li {
+  display: block;
+  margin-right: 0;
+  letter-spacing: 0;
+  margin-bottom: 8px;
+  line-height: 1;
+  font-size: 13rem;
+}
+section.u4m-drag-and-drop-area form.hs-form .input ul.inputs-list > li:last-child, section.u4m-drag-and-drop-area form.mixitup-multifilter .input ul.inputs-list > li:last-child, section.u4m-drag-and-drop-area form .input ul.inputs-list > li:last-child {
+  margin-bottom: 0;
+}
+section.u4m-drag-and-drop-area form.hs-form .input ul.inputs-list > li label, section.u4m-drag-and-drop-area form.mixitup-multifilter .input ul.inputs-list > li label, section.u4m-drag-and-drop-area form .input ul.inputs-list > li label {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  position: relative;
+}
+section.u4m-drag-and-drop-area form.hs-form .input ul.inputs-list > li label > span, section.u4m-drag-and-drop-area form.mixitup-multifilter .input ul.inputs-list > li label > span, section.u4m-drag-and-drop-area form .input ul.inputs-list > li label > span {
+  font-size: 13rem;
+  line-height: 1;
+  color: #6e757c;
+  position: static;
+}
+section.u4m-drag-and-drop-area form.hs-form .input ul.inputs-list > li label > span:after, section.u4m-drag-and-drop-area form.mixitup-multifilter .input ul.inputs-list > li label > span:after, section.u4m-drag-and-drop-area form .input ul.inputs-list > li label > span:after {
+  content: "";
+  height: 20px;
+  width: 20px;
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  opacity: 0;
+  background-image: url(https://23543895.fs1.hubspotusercontent-na1.net/hubfs/23543895/RampXchange/images/formCheck.png);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+section.u4m-drag-and-drop-area form.hs-form .input ul.inputs-list > li label > span:before, section.u4m-drag-and-drop-area form.mixitup-multifilter .input ul.inputs-list > li label > span:before, section.u4m-drag-and-drop-area form .input ul.inputs-list > li label > span:before {
+  content: "";
+  height: 20px;
+  width: 20px;
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  border: 1px solid #6e757c;
+}
 section.u4m-drag-and-drop-area form.hs-form .input input[type=checkbox],
 section.u4m-drag-and-drop-area form.hs-form .input input[type=radio], section.u4m-drag-and-drop-area form.mixitup-multifilter .input input[type=checkbox],
 section.u4m-drag-and-drop-area form.mixitup-multifilter .input input[type=radio], section.u4m-drag-and-drop-area form .input input[type=checkbox],
 section.u4m-drag-and-drop-area form .input input[type=radio] {
   width: auto;
+}
+section.u4m-drag-and-drop-area form.hs-form .input input[type=checkbox],
+section.u4m-drag-and-drop-area form.hs-form .input input[type=radio], section.u4m-drag-and-drop-area form.mixitup-multifilter .input input[type=checkbox],
+section.u4m-drag-and-drop-area form.mixitup-multifilter .input input[type=radio], section.u4m-drag-and-drop-area form .input input[type=checkbox],
+section.u4m-drag-and-drop-area form .input input[type=radio] {
+  position: static;
+  margin: 0;
+  height: 20px;
+  width: 20px !important;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  outline: none !important;
+}
+section.u4m-drag-and-drop-area form.hs-form .input input[type=checkbox]:checked + *:before, section.u4m-drag-and-drop-area form.hs-form .input input[type=checkbox]:checked + *:before,
+section.u4m-drag-and-drop-area form.hs-form .input input[type=radio]:checked + *:before,
+section.u4m-drag-and-drop-area form.hs-form .input input[type=radio]:checked + *:before, section.u4m-drag-and-drop-area form.mixitup-multifilter .input input[type=checkbox]:checked + *:before, section.u4m-drag-and-drop-area form.mixitup-multifilter .input input[type=checkbox]:checked + *:before,
+section.u4m-drag-and-drop-area form.mixitup-multifilter .input input[type=radio]:checked + *:before,
+section.u4m-drag-and-drop-area form.mixitup-multifilter .input input[type=radio]:checked + *:before, section.u4m-drag-and-drop-area form .input input[type=checkbox]:checked + *:before, section.u4m-drag-and-drop-area form .input input[type=checkbox]:checked + *:before,
+section.u4m-drag-and-drop-area form .input input[type=radio]:checked + *:before,
+section.u4m-drag-and-drop-area form .input input[type=radio]:checked + *:before {
+  background: #213944;
+}
+section.u4m-drag-and-drop-area form.hs-form .input input[type=checkbox]:checked + *:after, section.u4m-drag-and-drop-area form.hs-form .input input[type=checkbox]:checked + *:after,
+section.u4m-drag-and-drop-area form.hs-form .input input[type=radio]:checked + *:after,
+section.u4m-drag-and-drop-area form.hs-form .input input[type=radio]:checked + *:after, section.u4m-drag-and-drop-area form.mixitup-multifilter .input input[type=checkbox]:checked + *:after, section.u4m-drag-and-drop-area form.mixitup-multifilter .input input[type=checkbox]:checked + *:after,
+section.u4m-drag-and-drop-area form.mixitup-multifilter .input input[type=radio]:checked + *:after,
+section.u4m-drag-and-drop-area form.mixitup-multifilter .input input[type=radio]:checked + *:after, section.u4m-drag-and-drop-area form .input input[type=checkbox]:checked + *:after, section.u4m-drag-and-drop-area form .input input[type=checkbox]:checked + *:after,
+section.u4m-drag-and-drop-area form .input input[type=radio]:checked + *:after,
+section.u4m-drag-and-drop-area form .input input[type=radio]:checked + *:after {
+  opacity: 1;
 }
 section.u4m-drag-and-drop-area form.hs-form .input input select, section.u4m-drag-and-drop-area form.mixitup-multifilter .input input select, section.u4m-drag-and-drop-area form .input input select {
   border: 1rem solid #6e757c;
@@ -7792,16 +8683,19 @@ section.u4m-drag-and-drop-area form.hs-form .input select, section.u4m-drag-and-
   -webkit-appearance: none;
      -moz-appearance: none;
           appearance: none;
-  background: url("/src/templates/images/nav-arrow.svg") no-repeat;
-  background-size: 13rem 8rem;
   background-position: calc(100% - 20rem) center;
   border: 1rem solid #6e757c;
   border-radius: 4rem;
-  margin-bottom: 20rem;
   font-size: 13rem;
   background-color: #ffffff;
-  padding: 17.5rem 12rem;
   color: #6e757c;
+  line-height: 1;
+  padding: 16.5rem 12rem;
+  background-image: url(https://23543895.fs1.hubspotusercontent-na1.net/hubfs/23543895/RampXchange/images/selectArrow.png);
+  background-repeat: no-repeat;
+  background-size: 12rem 7rem;
+  margin-bottom: 0;
+  outline: none !important;
 }
 section.u4m-drag-and-drop-area form.hs-form .input select:focus, section.u4m-drag-and-drop-area form.mixitup-multifilter .input select:focus, section.u4m-drag-and-drop-area form .input select:focus {
   border: 1rem solid #213944;
@@ -7811,8 +8705,8 @@ section.u4m-drag-and-drop-area form.hs-form .input + .hs-error-msgs, section.u4m
   width: 100%;
   padding-left: 0;
   list-style: none;
-  text-align: center;
-  margin: 0rem 0 20rem;
+  text-align: left;
+  margin: 8rem 0 20rem;
   padding: 0;
   animation: fadeIn1 0.3s ease;
 }
@@ -7826,7 +8720,7 @@ section.u4m-drag-and-drop-area form.hs-form .input + .hs-error-msgs li, section.
   text-align: center;
   background: red;
   display: inline-block;
-  color: white;
+  color: #ffffff;
   border-radius: 5rem;
   padding: 5rem 8rem;
   line-height: 1.2;
@@ -7860,27 +8754,34 @@ section.u4m-drag-and-drop-area form.hs-form .input + .hs-error-msgs li label, se
     font-size: 12rem;
   }
 }
+section.u4m-drag-and-drop-area form.hs-form .hs-fieldtype-radio .input > ul.inputs-list > li label > span:before, section.u4m-drag-and-drop-area form.mixitup-multifilter .hs-fieldtype-radio .input > ul.inputs-list > li label > span:before, section.u4m-drag-and-drop-area form .hs-fieldtype-radio .input > ul.inputs-list > li label > span:before {
+  border-radius: 100%;
+}
 section.u4m-drag-and-drop-area form.hs-form .hs_upload_resume, section.u4m-drag-and-drop-area form.mixitup-multifilter .hs_upload_resume, section.u4m-drag-and-drop-area form .hs_upload_resume {
   margin-bottom: -3rem;
 }
 section.u4m-drag-and-drop-area form.hs-form textarea, section.u4m-drag-and-drop-area form.mixitup-multifilter textarea, section.u4m-drag-and-drop-area form textarea {
   border: 1rem solid #6e757c;
   border-radius: 4rem;
-  font-size: 13rem;
-  margin-bottom: 20rem;
+  font-size: 16rem;
   min-height: 96rem;
   background-color: #ffffff;
   width: 100%;
   color: #213944;
+  display: block;
+  outline: none;
+  padding: 12rem;
 }
 section.u4m-drag-and-drop-area form.hs-form textarea:focus, section.u4m-drag-and-drop-area form.mixitup-multifilter textarea:focus, section.u4m-drag-and-drop-area form textarea:focus {
   border: 1rem solid #213944;
 }
 section.u4m-drag-and-drop-area form.hs-form textarea::-moz-placeholder, section.u4m-drag-and-drop-area form.mixitup-multifilter textarea::-moz-placeholder, section.u4m-drag-and-drop-area form textarea::-moz-placeholder {
   color: #6e757c;
+  font-size: 13rem;
 }
 section.u4m-drag-and-drop-area form.hs-form textarea::placeholder, section.u4m-drag-and-drop-area form.mixitup-multifilter textarea::placeholder, section.u4m-drag-and-drop-area form textarea::placeholder {
   color: #6e757c;
+  font-size: 13rem;
 }
 section.u4m-drag-and-drop-area form.hs-form textarea.invalid, section.u4m-drag-and-drop-area form.mixitup-multifilter textarea.invalid, section.u4m-drag-and-drop-area form textarea.invalid {
   border: 1px solid red;
@@ -7978,10 +8879,7 @@ section.u4m-drag-and-drop-area form .form-columns-1 .hs-form-radio input,
 section.u4m-drag-and-drop-area form .form-columns-2 .hs-form-radio input,
 section.u4m-drag-and-drop-area form .form-columns-3 .hs-form-radio input {
   width: auto;
-  margin-right: 10rem;
-  margin-left: 2rem;
   position: relative;
-  top: -2rem;
 }
 section.u4m-drag-and-drop-area form.hs-form .hs-form-radio span,
 section.u4m-drag-and-drop-area form.hs-form .form-columns-1 .hs-form-radio span,
@@ -8024,8 +8922,12 @@ section.u4m-drag-and-drop-area form .form-columns-3 .hs-form-radio span {
     top: 2rem;
   }
 }
+section.u4m-drag-and-drop-area form.hs-form .form-columns-3, section.u4m-drag-and-drop-area form.mixitup-multifilter .form-columns-3, section.u4m-drag-and-drop-area form .form-columns-3 {
+  margin: 0 -10rem;
+}
 section.u4m-drag-and-drop-area form.hs-form .form-columns-3 .hs-form-field, section.u4m-drag-and-drop-area form.mixitup-multifilter .form-columns-3 .hs-form-field, section.u4m-drag-and-drop-area form .form-columns-3 .hs-form-field {
   width: 33.05%;
+  padding: 0 10rem;
 }
 @media (max-width: 1024px) {
   section.u4m-drag-and-drop-area form.hs-form .form-columns-3 .hs-form-field, section.u4m-drag-and-drop-area form.mixitup-multifilter .form-columns-3 .hs-form-field, section.u4m-drag-and-drop-area form .form-columns-3 .hs-form-field {
@@ -8040,8 +8942,17 @@ section.u4m-drag-and-drop-area form.hs-form .form-columns-3 .hs-form-field, sect
 section.u4m-drag-and-drop-area form.hs-form .form-columns-3 div:last-child div, section.u4m-drag-and-drop-area form.mixitup-multifilter .form-columns-3 div:last-child div, section.u4m-drag-and-drop-area form .form-columns-3 div:last-child div {
   margin-right: 0;
 }
+section.u4m-drag-and-drop-area form.hs-form .form-columns-2, section.u4m-drag-and-drop-area form.mixitup-multifilter .form-columns-2, section.u4m-drag-and-drop-area form .form-columns-2 {
+  margin: 0 -10px;
+}
+section.u4m-drag-and-drop-area form.hs-form .form-columns-2 > .hs-form-field, section.u4m-drag-and-drop-area form.mixitup-multifilter .form-columns-2 > .hs-form-field, section.u4m-drag-and-drop-area form .form-columns-2 > .hs-form-field {
+  padding: 0 10px;
+}
+section.u4m-drag-and-drop-area form.hs-form .form-columns-2 > .hs-form-field:last-of-type, section.u4m-drag-and-drop-area form.mixitup-multifilter .form-columns-2 > .hs-form-field:last-of-type, section.u4m-drag-and-drop-area form .form-columns-2 > .hs-form-field:last-of-type {
+  margin-left: 0;
+}
 @media (max-width: 580px) {
-  section.u4m-drag-and-drop-area form.hs-form .form-columns-2 .hs-form-field, section.u4m-drag-and-drop-area form.mixitup-multifilter .form-columns-2 .hs-form-field, section.u4m-drag-and-drop-area form .form-columns-2 .hs-form-field {
+  section.u4m-drag-and-drop-area form.hs-form .form-columns-2 > .hs-form-field, section.u4m-drag-and-drop-area form.mixitup-multifilter .form-columns-2 > .hs-form-field, section.u4m-drag-and-drop-area form .form-columns-2 > .hs-form-field {
     width: 100%;
   }
 }
@@ -8113,6 +9024,13 @@ section.u4m-drag-and-drop-area form.hs-form .form-columns-2 > div:last-of-type, 
     margin-left: 0;
   }
 }
+section.u4m-drag-and-drop-area form.hs-form fieldset.form-columns-1 .input, section.u4m-drag-and-drop-area form.mixitup-multifilter fieldset.form-columns-1 .input, section.u4m-drag-and-drop-area form fieldset.form-columns-1 .input {
+  margin: 0;
+}
+section.u4m-drag-and-drop-area form.hs-form fieldset.form-columns-1 .hs-input, section.u4m-drag-and-drop-area form.mixitup-multifilter fieldset.form-columns-1 .hs-input, section.u4m-drag-and-drop-area form fieldset.form-columns-1 .hs-input {
+  width: 100% !important;
+  margin-bottom: 0;
+}
 section.u4m-drag-and-drop-area form.hs-form .hs-button, section.u4m-drag-and-drop-area form.mixitup-multifilter .hs-button, section.u4m-drag-and-drop-area form .hs-button {
   display: inline-block;
   font-family: "Inter";
@@ -8133,6 +9051,10 @@ section.u4m-drag-and-drop-area form.hs-form .hs-button, section.u4m-drag-and-dro
 section.u4m-drag-and-drop-area form.hs-form .hs-button:hover, section.u4m-drag-and-drop-area form.hs-form .hs-button:focus, section.u4m-drag-and-drop-area form.mixitup-multifilter .hs-button:hover, section.u4m-drag-and-drop-area form.mixitup-multifilter .hs-button:focus, section.u4m-drag-and-drop-area form .hs-button:hover, section.u4m-drag-and-drop-area form .hs-button:focus {
   background-color: #ffffff;
   color: #007c43;
+}
+section.u4m-drag-and-drop-area form .hs-richtext p {
+  font-size: 11rem;
+  color: #6e757c;
 }
 
 .dnd_padd,
@@ -8692,6 +9614,9 @@ section.u4m-blog-post div.comments div.content form.hs-form .hs_error_rollup ul.
   font-weight: normal;
   text-transform: none;
 }
+section.u4m-blog-post div.comments div.content form.hs-form .hs-form-field, section.u4m-blog-post div.comments div.content form.mixitup-multifilter .hs-form-field, section.u4m-blog-post div.comments div.content form .hs-form-field {
+  margin-bottom: 20px;
+}
 section.u4m-blog-post div.comments div.content form.hs-form .hs-form-field > label, section.u4m-blog-post div.comments div.content form.mixitup-multifilter .hs-form-field > label, section.u4m-blog-post div.comments div.content form .hs-form-field > label {
   font-size: 13rem;
   font-weight: 500;
@@ -8699,6 +9624,10 @@ section.u4m-blog-post div.comments div.content form.hs-form .hs-form-field > lab
   letter-spacing: 0;
   pointer-events: auto;
   margin-bottom: 8rem;
+  display: block;
+}
+section.u4m-blog-post div.comments div.content form.hs-form .input, section.u4m-blog-post div.comments div.content form.mixitup-multifilter .input, section.u4m-blog-post div.comments div.content form .input {
+  margin-right: 0 !important;
 }
 section.u4m-blog-post div.comments div.content form.hs-form .input input[type=text],
 section.u4m-blog-post div.comments div.content form.hs-form .input input[type=number],
@@ -8712,10 +9641,12 @@ section.u4m-blog-post div.comments div.content form .input input[type=tel],
 section.u4m-blog-post div.comments div.content form .input input[type=email] {
   border: 1rem solid #6e757c;
   border-radius: 4rem;
-  margin-bottom: 20rem;
   font-size: 16rem;
   background-color: #ffffff;
-  padding: 12rem;
+  line-height: 1;
+  margin-bottom: 0;
+  outline: none !important;
+  padding: 13rem 12rem;
   width: 100%;
   -webkit-appearance: none;
      -moz-appearance: none;
@@ -8770,11 +9701,91 @@ section.u4m-blog-post div.comments div.content form .input input[type=tel]::plac
 section.u4m-blog-post div.comments div.content form .input input[type=email]::placeholder {
   color: #6e757c;
 }
+section.u4m-blog-post div.comments div.content form.hs-form .input ul.inputs-list, section.u4m-blog-post div.comments div.content form.mixitup-multifilter .input ul.inputs-list, section.u4m-blog-post div.comments div.content form .input ul.inputs-list {
+  margin: 0;
+}
+section.u4m-blog-post div.comments div.content form.hs-form .input ul.inputs-list > li, section.u4m-blog-post div.comments div.content form.mixitup-multifilter .input ul.inputs-list > li, section.u4m-blog-post div.comments div.content form .input ul.inputs-list > li {
+  display: block;
+  margin-right: 0;
+  letter-spacing: 0;
+  margin-bottom: 8px;
+  line-height: 1;
+  font-size: 13rem;
+}
+section.u4m-blog-post div.comments div.content form.hs-form .input ul.inputs-list > li:last-child, section.u4m-blog-post div.comments div.content form.mixitup-multifilter .input ul.inputs-list > li:last-child, section.u4m-blog-post div.comments div.content form .input ul.inputs-list > li:last-child {
+  margin-bottom: 0;
+}
+section.u4m-blog-post div.comments div.content form.hs-form .input ul.inputs-list > li label, section.u4m-blog-post div.comments div.content form.mixitup-multifilter .input ul.inputs-list > li label, section.u4m-blog-post div.comments div.content form .input ul.inputs-list > li label {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  position: relative;
+}
+section.u4m-blog-post div.comments div.content form.hs-form .input ul.inputs-list > li label > span, section.u4m-blog-post div.comments div.content form.mixitup-multifilter .input ul.inputs-list > li label > span, section.u4m-blog-post div.comments div.content form .input ul.inputs-list > li label > span {
+  font-size: 13rem;
+  line-height: 1;
+  color: #6e757c;
+  position: static;
+}
+section.u4m-blog-post div.comments div.content form.hs-form .input ul.inputs-list > li label > span:after, section.u4m-blog-post div.comments div.content form.mixitup-multifilter .input ul.inputs-list > li label > span:after, section.u4m-blog-post div.comments div.content form .input ul.inputs-list > li label > span:after {
+  content: "";
+  height: 20px;
+  width: 20px;
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  opacity: 0;
+  background-image: url(https://23543895.fs1.hubspotusercontent-na1.net/hubfs/23543895/RampXchange/images/formCheck.png);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+section.u4m-blog-post div.comments div.content form.hs-form .input ul.inputs-list > li label > span:before, section.u4m-blog-post div.comments div.content form.mixitup-multifilter .input ul.inputs-list > li label > span:before, section.u4m-blog-post div.comments div.content form .input ul.inputs-list > li label > span:before {
+  content: "";
+  height: 20px;
+  width: 20px;
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  border: 1px solid #6e757c;
+}
 section.u4m-blog-post div.comments div.content form.hs-form .input input[type=checkbox],
 section.u4m-blog-post div.comments div.content form.hs-form .input input[type=radio], section.u4m-blog-post div.comments div.content form.mixitup-multifilter .input input[type=checkbox],
 section.u4m-blog-post div.comments div.content form.mixitup-multifilter .input input[type=radio], section.u4m-blog-post div.comments div.content form .input input[type=checkbox],
 section.u4m-blog-post div.comments div.content form .input input[type=radio] {
   width: auto;
+}
+section.u4m-blog-post div.comments div.content form.hs-form .input input[type=checkbox],
+section.u4m-blog-post div.comments div.content form.hs-form .input input[type=radio], section.u4m-blog-post div.comments div.content form.mixitup-multifilter .input input[type=checkbox],
+section.u4m-blog-post div.comments div.content form.mixitup-multifilter .input input[type=radio], section.u4m-blog-post div.comments div.content form .input input[type=checkbox],
+section.u4m-blog-post div.comments div.content form .input input[type=radio] {
+  position: static;
+  margin: 0;
+  height: 20px;
+  width: 20px !important;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  outline: none !important;
+}
+section.u4m-blog-post div.comments div.content form.hs-form .input input[type=checkbox]:checked + *:before, section.u4m-blog-post div.comments div.content form.hs-form .input input[type=checkbox]:checked + *:before,
+section.u4m-blog-post div.comments div.content form.hs-form .input input[type=radio]:checked + *:before,
+section.u4m-blog-post div.comments div.content form.hs-form .input input[type=radio]:checked + *:before, section.u4m-blog-post div.comments div.content form.mixitup-multifilter .input input[type=checkbox]:checked + *:before, section.u4m-blog-post div.comments div.content form.mixitup-multifilter .input input[type=checkbox]:checked + *:before,
+section.u4m-blog-post div.comments div.content form.mixitup-multifilter .input input[type=radio]:checked + *:before,
+section.u4m-blog-post div.comments div.content form.mixitup-multifilter .input input[type=radio]:checked + *:before, section.u4m-blog-post div.comments div.content form .input input[type=checkbox]:checked + *:before, section.u4m-blog-post div.comments div.content form .input input[type=checkbox]:checked + *:before,
+section.u4m-blog-post div.comments div.content form .input input[type=radio]:checked + *:before,
+section.u4m-blog-post div.comments div.content form .input input[type=radio]:checked + *:before {
+  background: #213944;
+}
+section.u4m-blog-post div.comments div.content form.hs-form .input input[type=checkbox]:checked + *:after, section.u4m-blog-post div.comments div.content form.hs-form .input input[type=checkbox]:checked + *:after,
+section.u4m-blog-post div.comments div.content form.hs-form .input input[type=radio]:checked + *:after,
+section.u4m-blog-post div.comments div.content form.hs-form .input input[type=radio]:checked + *:after, section.u4m-blog-post div.comments div.content form.mixitup-multifilter .input input[type=checkbox]:checked + *:after, section.u4m-blog-post div.comments div.content form.mixitup-multifilter .input input[type=checkbox]:checked + *:after,
+section.u4m-blog-post div.comments div.content form.mixitup-multifilter .input input[type=radio]:checked + *:after,
+section.u4m-blog-post div.comments div.content form.mixitup-multifilter .input input[type=radio]:checked + *:after, section.u4m-blog-post div.comments div.content form .input input[type=checkbox]:checked + *:after, section.u4m-blog-post div.comments div.content form .input input[type=checkbox]:checked + *:after,
+section.u4m-blog-post div.comments div.content form .input input[type=radio]:checked + *:after,
+section.u4m-blog-post div.comments div.content form .input input[type=radio]:checked + *:after {
+  opacity: 1;
 }
 section.u4m-blog-post div.comments div.content form.hs-form .input input select, section.u4m-blog-post div.comments div.content form.mixitup-multifilter .input input select, section.u4m-blog-post div.comments div.content form .input input select {
   border: 1rem solid #6e757c;
@@ -8800,16 +9811,19 @@ section.u4m-blog-post div.comments div.content form.hs-form .input select, secti
   -webkit-appearance: none;
      -moz-appearance: none;
           appearance: none;
-  background: url("/src/templates/images/nav-arrow.svg") no-repeat;
-  background-size: 13rem 8rem;
   background-position: calc(100% - 20rem) center;
   border: 1rem solid #6e757c;
   border-radius: 4rem;
-  margin-bottom: 20rem;
   font-size: 13rem;
   background-color: #ffffff;
-  padding: 17.5rem 12rem;
   color: #6e757c;
+  line-height: 1;
+  padding: 16.5rem 12rem;
+  background-image: url(https://23543895.fs1.hubspotusercontent-na1.net/hubfs/23543895/RampXchange/images/selectArrow.png);
+  background-repeat: no-repeat;
+  background-size: 12rem 7rem;
+  margin-bottom: 0;
+  outline: none !important;
 }
 section.u4m-blog-post div.comments div.content form.hs-form .input select:focus, section.u4m-blog-post div.comments div.content form.mixitup-multifilter .input select:focus, section.u4m-blog-post div.comments div.content form .input select:focus {
   border: 1rem solid #213944;
@@ -8819,8 +9833,8 @@ section.u4m-blog-post div.comments div.content form.hs-form .input + .hs-error-m
   width: 100%;
   padding-left: 0;
   list-style: none;
-  text-align: center;
-  margin: 0rem 0 20rem;
+  text-align: left;
+  margin: 8rem 0 20rem;
   padding: 0;
   animation: fadeIn1 0.3s ease;
 }
@@ -8834,7 +9848,7 @@ section.u4m-blog-post div.comments div.content form.hs-form .input + .hs-error-m
   text-align: center;
   background: red;
   display: inline-block;
-  color: white;
+  color: #ffffff;
   border-radius: 5rem;
   padding: 5rem 8rem;
   line-height: 1.2;
@@ -8868,27 +9882,34 @@ section.u4m-blog-post div.comments div.content form.hs-form .input + .hs-error-m
     font-size: 12rem;
   }
 }
+section.u4m-blog-post div.comments div.content form.hs-form .hs-fieldtype-radio .input > ul.inputs-list > li label > span:before, section.u4m-blog-post div.comments div.content form.mixitup-multifilter .hs-fieldtype-radio .input > ul.inputs-list > li label > span:before, section.u4m-blog-post div.comments div.content form .hs-fieldtype-radio .input > ul.inputs-list > li label > span:before {
+  border-radius: 100%;
+}
 section.u4m-blog-post div.comments div.content form.hs-form .hs_upload_resume, section.u4m-blog-post div.comments div.content form.mixitup-multifilter .hs_upload_resume, section.u4m-blog-post div.comments div.content form .hs_upload_resume {
   margin-bottom: -3rem;
 }
 section.u4m-blog-post div.comments div.content form.hs-form textarea, section.u4m-blog-post div.comments div.content form.mixitup-multifilter textarea, section.u4m-blog-post div.comments div.content form textarea {
   border: 1rem solid #6e757c;
   border-radius: 4rem;
-  font-size: 13rem;
-  margin-bottom: 20rem;
+  font-size: 16rem;
   min-height: 96rem;
   background-color: #ffffff;
   width: 100%;
   color: #213944;
+  display: block;
+  outline: none;
+  padding: 12rem;
 }
 section.u4m-blog-post div.comments div.content form.hs-form textarea:focus, section.u4m-blog-post div.comments div.content form.mixitup-multifilter textarea:focus, section.u4m-blog-post div.comments div.content form textarea:focus {
   border: 1rem solid #213944;
 }
 section.u4m-blog-post div.comments div.content form.hs-form textarea::-moz-placeholder, section.u4m-blog-post div.comments div.content form.mixitup-multifilter textarea::-moz-placeholder, section.u4m-blog-post div.comments div.content form textarea::-moz-placeholder {
   color: #6e757c;
+  font-size: 13rem;
 }
 section.u4m-blog-post div.comments div.content form.hs-form textarea::placeholder, section.u4m-blog-post div.comments div.content form.mixitup-multifilter textarea::placeholder, section.u4m-blog-post div.comments div.content form textarea::placeholder {
   color: #6e757c;
+  font-size: 13rem;
 }
 section.u4m-blog-post div.comments div.content form.hs-form textarea.invalid, section.u4m-blog-post div.comments div.content form.mixitup-multifilter textarea.invalid, section.u4m-blog-post div.comments div.content form textarea.invalid {
   border: 1px solid red;
@@ -8986,10 +10007,7 @@ section.u4m-blog-post div.comments div.content form .form-columns-1 .hs-form-rad
 section.u4m-blog-post div.comments div.content form .form-columns-2 .hs-form-radio input,
 section.u4m-blog-post div.comments div.content form .form-columns-3 .hs-form-radio input {
   width: auto;
-  margin-right: 10rem;
-  margin-left: 2rem;
   position: relative;
-  top: -2rem;
 }
 section.u4m-blog-post div.comments div.content form.hs-form .hs-form-radio span,
 section.u4m-blog-post div.comments div.content form.hs-form .form-columns-1 .hs-form-radio span,
@@ -9032,8 +10050,12 @@ section.u4m-blog-post div.comments div.content form .form-columns-3 .hs-form-rad
     top: 2rem;
   }
 }
+section.u4m-blog-post div.comments div.content form.hs-form .form-columns-3, section.u4m-blog-post div.comments div.content form.mixitup-multifilter .form-columns-3, section.u4m-blog-post div.comments div.content form .form-columns-3 {
+  margin: 0 -10rem;
+}
 section.u4m-blog-post div.comments div.content form.hs-form .form-columns-3 .hs-form-field, section.u4m-blog-post div.comments div.content form.mixitup-multifilter .form-columns-3 .hs-form-field, section.u4m-blog-post div.comments div.content form .form-columns-3 .hs-form-field {
   width: 33.05%;
+  padding: 0 10rem;
 }
 @media (max-width: 1024px) {
   section.u4m-blog-post div.comments div.content form.hs-form .form-columns-3 .hs-form-field, section.u4m-blog-post div.comments div.content form.mixitup-multifilter .form-columns-3 .hs-form-field, section.u4m-blog-post div.comments div.content form .form-columns-3 .hs-form-field {
@@ -9048,8 +10070,17 @@ section.u4m-blog-post div.comments div.content form.hs-form .form-columns-3 .hs-
 section.u4m-blog-post div.comments div.content form.hs-form .form-columns-3 div:last-child div, section.u4m-blog-post div.comments div.content form.mixitup-multifilter .form-columns-3 div:last-child div, section.u4m-blog-post div.comments div.content form .form-columns-3 div:last-child div {
   margin-right: 0;
 }
+section.u4m-blog-post div.comments div.content form.hs-form .form-columns-2, section.u4m-blog-post div.comments div.content form.mixitup-multifilter .form-columns-2, section.u4m-blog-post div.comments div.content form .form-columns-2 {
+  margin: 0 -10px;
+}
+section.u4m-blog-post div.comments div.content form.hs-form .form-columns-2 > .hs-form-field, section.u4m-blog-post div.comments div.content form.mixitup-multifilter .form-columns-2 > .hs-form-field, section.u4m-blog-post div.comments div.content form .form-columns-2 > .hs-form-field {
+  padding: 0 10px;
+}
+section.u4m-blog-post div.comments div.content form.hs-form .form-columns-2 > .hs-form-field:last-of-type, section.u4m-blog-post div.comments div.content form.mixitup-multifilter .form-columns-2 > .hs-form-field:last-of-type, section.u4m-blog-post div.comments div.content form .form-columns-2 > .hs-form-field:last-of-type {
+  margin-left: 0;
+}
 @media (max-width: 580px) {
-  section.u4m-blog-post div.comments div.content form.hs-form .form-columns-2 .hs-form-field, section.u4m-blog-post div.comments div.content form.mixitup-multifilter .form-columns-2 .hs-form-field, section.u4m-blog-post div.comments div.content form .form-columns-2 .hs-form-field {
+  section.u4m-blog-post div.comments div.content form.hs-form .form-columns-2 > .hs-form-field, section.u4m-blog-post div.comments div.content form.mixitup-multifilter .form-columns-2 > .hs-form-field, section.u4m-blog-post div.comments div.content form .form-columns-2 > .hs-form-field {
     width: 100%;
   }
 }
@@ -9121,6 +10152,13 @@ section.u4m-blog-post div.comments div.content form.hs-form .form-columns-2 > di
     margin-left: 0;
   }
 }
+section.u4m-blog-post div.comments div.content form.hs-form fieldset.form-columns-1 .input, section.u4m-blog-post div.comments div.content form.mixitup-multifilter fieldset.form-columns-1 .input, section.u4m-blog-post div.comments div.content form fieldset.form-columns-1 .input {
+  margin: 0;
+}
+section.u4m-blog-post div.comments div.content form.hs-form fieldset.form-columns-1 .hs-input, section.u4m-blog-post div.comments div.content form.mixitup-multifilter fieldset.form-columns-1 .hs-input, section.u4m-blog-post div.comments div.content form fieldset.form-columns-1 .hs-input {
+  width: 100% !important;
+  margin-bottom: 0;
+}
 section.u4m-blog-post div.comments div.content form.hs-form .hs-button, section.u4m-blog-post div.comments div.content form.mixitup-multifilter .hs-button, section.u4m-blog-post div.comments div.content form .hs-button {
   display: inline-block;
   font-family: "Inter";
@@ -9141,6 +10179,10 @@ section.u4m-blog-post div.comments div.content form.hs-form .hs-button, section.
 section.u4m-blog-post div.comments div.content form.hs-form .hs-button:hover, section.u4m-blog-post div.comments div.content form.hs-form .hs-button:focus, section.u4m-blog-post div.comments div.content form.mixitup-multifilter .hs-button:hover, section.u4m-blog-post div.comments div.content form.mixitup-multifilter .hs-button:focus, section.u4m-blog-post div.comments div.content form .hs-button:hover, section.u4m-blog-post div.comments div.content form .hs-button:focus {
   background-color: #ffffff;
   color: #007c43;
+}
+section.u4m-blog-post div.comments div.content form .hs-richtext p {
+  font-size: 11rem;
+  color: #6e757c;
 }
 section.u4m-blog-post div.comments div.content form .hs-button {
   display: inline-block;

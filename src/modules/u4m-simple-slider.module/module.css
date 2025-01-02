@@ -192,11 +192,13 @@ html {
     min-width: 100%;
   }
   .u4m-simple-slider .simple-slider-wrapper .page-center .row .rightColumn .bgImageNav .slick-list .slick-track .slick-slide > div .media_section img {
-    mask: none !important;
+    -webkit-mask: none !important;
+            mask: none !important;
     -webkit-mask-box-image: none !important;
     width: 100%;
     height: auto;
-    object-position: inherit;
+    -o-object-position: inherit;
+       object-position: inherit;
   }
 }
 .u4m-simple-slider .simple-slider-wrapper.fw .row .leftColumn {

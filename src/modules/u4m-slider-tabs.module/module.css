@@ -146,6 +146,8 @@ html {
 }
 .u4m-slider-tabs .tabber_section .row .tab-image-section .img-item {
   display: none;
+  border-radius: 12rem;
+  overflow: hidden;
 }
 .u4m-slider-tabs .tabber_section .row .tab-image-section .img-item.acc-open {
   display: block;
