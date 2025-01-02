@@ -191,16 +191,22 @@
             }
             .media_sec {
               padding-bottom: 56%;
-              position: relative;
-              min-height: 367px;
+              position: relative;  
+              border-radius: $borderRadius; 
+                overflow: hidden;
+              .img_section{
+                overflow: hidden;
+                border-radius: $borderRadius; 
+              }
               @include tabletvert {
                 padding-bottom: 66.6%;
                 min-height: unset;
               }
-              .vid_section {
+              .vid_section { 
+                
                 &.video-enable {
                   .poster_img {
-                    display: none;
+                    display: none; 
                   }
                 }
               }
@@ -210,6 +216,7 @@
                 z-index: 9;
                 top: -1px;
                 left: 0;
+                height: 100%;
                 .playIcon {
                   position: absolute;
                   left: 50%;
