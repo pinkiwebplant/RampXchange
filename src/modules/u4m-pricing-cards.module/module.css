@@ -42,8 +42,7 @@ html {
 .u4m-pricing-cards .btms .items .innerCntt .img img {
   height: 40px !important;
   width: auto;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 .u4m-pricing-cards .btms .items .innerCntt .cntt {
   margin-bottom: 32px;

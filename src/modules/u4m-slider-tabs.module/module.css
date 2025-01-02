@@ -182,8 +182,7 @@ html {
 }
 .u4m-slider-tabs .tabber_section .row .tab-image-section .img-item .video_wrap .poster_img img {
   width: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   height: 100% !important;
 }
 .u4m-slider-tabs .tabber_section .row .tab-image-section .img-item .video_wrap .poster_img .playIcon {
@@ -213,7 +212,6 @@ html {
 .u4m-slider-tabs .tabber_section .row .tab-image-section .img-item .video_wrap .hubspot_video video {
   width: 100%;
   height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   display: block;
 }

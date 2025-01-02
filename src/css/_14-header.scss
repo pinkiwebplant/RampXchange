@@ -1,4 +1,5 @@
 .header-wrapper {
+    
     ul {
         list-style: none;
         margin: 0;
@@ -76,16 +77,14 @@
                     .site_logo_inn {
                         width: calc(100% - 50px);
                     }
-                }
+                } 
                 img {
                     max-width: 100%;
                     width: 325.71px !important;
-                    @include tabletmid {
-                        // width: 100% !important;
+                    @include tabletvert {
+                        width: 200px !important;
                     }
-                    @include phone {
-                        // width: 90% !important;
-                    }
+                    
                 }
             }
             .main_menu {
@@ -134,12 +133,15 @@
                             width: 100%;
                             @include size16;
                         }
-                        li {
+                        li { 
                             padding-right: 20px;
                             position: relative;
                             float: none;
                             letter-spacing: normal;
                             margin-bottom: 0;
+                            @include navbreak{
+                                padding-right: 10px;
+                            }
                             &:last-child {
                                 padding-right: 0;
                             }
@@ -184,6 +186,7 @@
                                     @include size16;
                                     padding-top: 10px;
                                     padding-bottom: 10px;
+                                    display: block;
                                 }
                                 &:hover {
                                     color: $action1;
@@ -222,9 +225,10 @@
                                         @include tabletvert {
                                             color: $heading;
                                             padding: 10px 0;
+                                            width: 100%;
                                         }
                                         &:hover {
-                                            color: $white;
+                                            color: $action1;
                                         }
                                     }
                                 }
@@ -250,7 +254,7 @@
                     .hs-button {
                         margin-top: 0;
                         margin-bottom: 0;
-                        @include tabletmid {
+                        @include navbreak {
                             @include size12;
                             padding-left: 14rem;
                             padding-right: 14rem;
@@ -294,12 +298,7 @@
                         transition:
                             transform 0.3s ease,
                             opacity 0.3s ease;
-                    }
-                    &:hover {
-                        span {
-                            background-color: #007bff;
-                        }
-                    }
+                    } 
                     &.trigger-open {
                         height: 18px;
                         span {
@@ -359,4 +358,12 @@
             }
         }
     }
+    .header-inner{
+        position: fixed;
+        width: 100%;
+        top: 0;
+        z-index: 99; 
+        
+    }
 }
+ 

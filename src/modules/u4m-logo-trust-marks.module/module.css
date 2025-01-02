@@ -55,8 +55,7 @@ html {
 .u4m-logo-trust-marks .logo-trust-marks .page-center .row .logo-wrapper .slick-list .slick-track .slick-slide img {
   padding: 0 20px;
   width: 180px;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   filter: grayscale(1);
 }
 .u4m-logo-trust-marks .logo-trust-marks .page-center .row .logo-wrapper .slick-list .slick-track .slick-slide img:hover {

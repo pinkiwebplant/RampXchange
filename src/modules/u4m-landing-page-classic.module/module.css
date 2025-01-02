@@ -283,9 +283,7 @@ section.u4m-landing-page-classic .right-column .form-wrap .input input[type=emai
   outline: none !important;
   padding: 13rem 12rem;
   width: 100%;
-  -webkit-appearance: none;
-     -moz-appearance: none;
-          appearance: none;
+  appearance: none;
   color: #213944;
 }
 section.u4m-landing-page-classic .right-column .form-wrap.hs-form .input input[type=text]:focus,
@@ -320,9 +318,6 @@ section.u4m-landing-page-classic .right-column .form-wrap .input input[type=tel]
 section.u4m-landing-page-classic .right-column .form-wrap .input input[type=email].error,
 section.u4m-landing-page-classic .right-column .form-wrap .input input[type=email].invalid {
   border: 1rem solid red;
-}
-section.u4m-landing-page-classic .right-column .form-wrap.hs-form .input input[type=text]::-moz-placeholder, section.u4m-landing-page-classic .right-column .form-wrap.hs-form .input input[type=number]::-moz-placeholder, section.u4m-landing-page-classic .right-column .form-wrap.hs-form .input input[type=tel]::-moz-placeholder, section.u4m-landing-page-classic .right-column .form-wrap.hs-form .input input[type=email]::-moz-placeholder, section.u4m-landing-page-classic .right-column .form-wrap.mixitup-multifilter .input input[type=text]::-moz-placeholder, section.u4m-landing-page-classic .right-column .form-wrap.mixitup-multifilter .input input[type=number]::-moz-placeholder, section.u4m-landing-page-classic .right-column .form-wrap.mixitup-multifilter .input input[type=tel]::-moz-placeholder, section.u4m-landing-page-classic .right-column .form-wrap.mixitup-multifilter .input input[type=email]::-moz-placeholder, section.u4m-landing-page-classic .right-column .form-wrap .input input[type=text]::-moz-placeholder, section.u4m-landing-page-classic .right-column .form-wrap .input input[type=number]::-moz-placeholder, section.u4m-landing-page-classic .right-column .form-wrap .input input[type=tel]::-moz-placeholder, section.u4m-landing-page-classic .right-column .form-wrap .input input[type=email]::-moz-placeholder {
-  color: #6e757c;
 }
 section.u4m-landing-page-classic .right-column .form-wrap.hs-form .input input[type=text]::placeholder,
 section.u4m-landing-page-classic .right-column .form-wrap.hs-form .input input[type=number]::placeholder,
@@ -399,9 +394,7 @@ section.u4m-landing-page-classic .right-column .form-wrap .input input[type=radi
   margin: 0;
   height: 20px;
   width: 20px !important;
-  -webkit-appearance: none;
-     -moz-appearance: none;
-          appearance: none;
+  appearance: none;
   outline: none !important;
 }
 section.u4m-landing-page-classic .right-column .form-wrap.hs-form .input input[type=checkbox]:checked + *:before, section.u4m-landing-page-classic .right-column .form-wrap.hs-form .input input[type=checkbox]:checked + *:before,
@@ -443,9 +436,7 @@ section.u4m-landing-page-classic .right-column .form-wrap.hs-form .input input[t
   margin-bottom: 20rem;
 }
 section.u4m-landing-page-classic .right-column .form-wrap.hs-form .input select, section.u4m-landing-page-classic .right-column .form-wrap.mixitup-multifilter .input select, section.u4m-landing-page-classic .right-column .form-wrap .input select {
-  -webkit-appearance: none;
-     -moz-appearance: none;
-          appearance: none;
+  appearance: none;
   background-position: calc(100% - 20rem) center;
   border: 1rem solid #6e757c;
   border-radius: 4rem;
@@ -537,10 +528,6 @@ section.u4m-landing-page-classic .right-column .form-wrap.hs-form textarea, sect
 }
 section.u4m-landing-page-classic .right-column .form-wrap.hs-form textarea:focus, section.u4m-landing-page-classic .right-column .form-wrap.mixitup-multifilter textarea:focus, section.u4m-landing-page-classic .right-column .form-wrap textarea:focus {
   border: 1rem solid #213944;
-}
-section.u4m-landing-page-classic .right-column .form-wrap.hs-form textarea::-moz-placeholder, section.u4m-landing-page-classic .right-column .form-wrap.mixitup-multifilter textarea::-moz-placeholder, section.u4m-landing-page-classic .right-column .form-wrap textarea::-moz-placeholder {
-  color: #6e757c;
-  font-size: 13rem;
 }
 section.u4m-landing-page-classic .right-column .form-wrap.hs-form textarea::placeholder, section.u4m-landing-page-classic .right-column .form-wrap.mixitup-multifilter textarea::placeholder, section.u4m-landing-page-classic .right-column .form-wrap textarea::placeholder {
   color: #6e757c;
