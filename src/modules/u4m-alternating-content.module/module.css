@@ -89,8 +89,7 @@ html {
   width: 100%;
 }
 .u4m-alternating-content .row .media_section .vid_section .poster_img img {
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   height: 100%;
   width: 100%;
 }
