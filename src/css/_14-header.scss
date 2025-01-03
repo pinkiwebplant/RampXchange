@@ -1,382 +1,382 @@
 .header-wrapper {
+  header.header {
+    min-height: 120px;
+    @include tabletvertmin {
+      min-height: 123px;
+    }
+    @include tabletMin {
+      min-height: 144px;
+    }
+  }
+  &.no-nav {
     header.header {
-        min-height: 120px;
-        @include tabletvertmin {
-            min-height: 123px;
-        }
-        @include tabletMin {
-            min-height: 144px;
-        }
+      min-height: 79px;
+      @include tabletMin {
+        min-height: 104px;
+      }
     }
-    &.no-nav {
-        header.header {
-            min-height: 79px;
-            @include tabletMin {
-                min-height: 104px;
-            }
-        }
-    }
-    ul {
-        list-style: none;
+  }
+  ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  .header-top {
+    background-color: $airwhite;
+    padding-top: 12px;
+    padding-bottom: 12px;
+  }
+  .header-top-menu {
+    .hs-menu-wrapper {
+      ul {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-end;
         margin: 0;
-        padding: 0;
-    }
-    .header-top {
-        background-color: $airwhite;
-        padding-top: 12px;
-        padding-bottom: 12px;
-    }
-    .header-top-menu {
-        .hs-menu-wrapper {
-            ul {
-                display: flex;
-                flex-wrap: wrap;
-                justify-content: flex-end;
-                margin: 0;
-                font-family: $font1;
-                line-height: 1;
-                @include size16;
-                font-weight: 600;
-                letter-spacing: normal;
-                li {
-                    float: none;
-                    margin: 0;
-                    letter-spacing: normal;
-                    padding-right: 20px;
-                    width: auto;
-                    &:last-child {
-                        padding-right: 0;
-                    }
-                    a {
-                        color: $heading;
-                        padding: 0;
-                        text-decoration: none;
-                        overflow: visible;
-                        max-width: 100%;
-                        white-space: normal;
-                        text-overflow: unset;
-                        &:hover {
-                            color: $action1;
-                        }
-                    }
-                }
+        font-family: $font1;
+        line-height: 1;
+        @include size16;
+        font-weight: 600;
+        letter-spacing: normal;
+        li {
+          float: none;
+          margin: 0;
+          letter-spacing: normal;
+          padding-right: 20px;
+          width: auto;
+          &:last-child {
+            padding-right: 0;
+          }
+          a {
+            color: $heading;
+            padding: 0;
+            text-decoration: none;
+            overflow: visible;
+            max-width: 100%;
+            white-space: normal;
+            text-overflow: unset;
+            &:hover {
+              color: $action1;
             }
+          }
         }
+      }
     }
-    .main-header {
-        background-color: $white;
-        padding-top: 20px;
-        padding-bottom: 20px;
-        position: relative;
-        z-index: 100;
-        .row-fluid {
+  }
+  .main-header {
+    background-color: $white;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    position: relative;
+    z-index: 100;
+    .row-fluid {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      align-items: center;
+      a {
+        cursor: pointer;
+      }
+      .site_logo {
+        @include tabletmid {
+          width: 25%;
+        }
+
+        @include tabletvert {
+          width: 100%;
+          display: flex;
+          align-items: center;
+          flex-wrap: wrap;
+          justify-content: space-between;
+        }
+        @include phone {
+          .site_logo_inn {
+            width: calc(100% - 50px);
+          }
+        }
+        img {
+          max-width: 100%;
+          width: 325.71px !important;
+          @include tabletvert {
+            width: 200px !important;
+          }
+        }
+      }
+      .main_menu {
+        @include tabletmid {
+          width: 75%;
+        }
+        @include tabletvert {
+          width: 100%;
+        }
+      }
+      .main_menu_inn {
+        padding-left: 30px;
+        @include tabletmid {
+          padding-left: 10px;
+        }
+        @include tabletvert {
+          padding-left: 0;
+        }
+      }
+      .site_menu {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: flex-end;
+        @include tabletvert {
+          display: block;
+          width: 100%;
+        }
+        .hs-menu-wrapper {
+          ul {
             display: flex;
-            flex-direction: row;
             flex-wrap: wrap;
+            font-family: $font1;
+            @include size16;
+            font-weight: 600;
+            justify-content: flex-end;
+            letter-spacing: normal;
+            line-height: 1;
+            margin: 0;
             align-items: center;
-            a {
-                cursor: pointer;
-            }
-            .site_logo {
-                @include tabletmid {
-                    width: 25%;
-                }
-
-                @include tabletvert {
-                    width: 100%;
-                    display: flex;
-                    align-items: center;
-                    flex-wrap: wrap;
-                    justify-content: space-between;
-                }
-                @include phone {
-                    .site_logo_inn {
-                        width: calc(100% - 50px);
-                    }
-                }
-                img {
-                    max-width: 100%;
-                    width: 325.71px !important;
-                    @include tabletvert {
-                        width: 200px !important;
-                    }
-                }
-            }
-            .main_menu {
-                @include tabletmid {
-                    width: 75%;
-                }
-                @include tabletvert {
-                    width: 100%;
-                }
-            }
-            .main_menu_inn {
-                padding-left: 30px;
-                @include tabletmid {
-                    padding-left: 10px;
-                }
-                @include tabletvert {
-                    padding-left: 0;
-                }
-            }
-            .site_menu {
-                display: flex;
-                flex-wrap: wrap;
-                align-items: center;
-                justify-content: flex-end;
-                @include tabletvert {
-                    display: block;
-                    width: 100%;
-                }
-                .hs-menu-wrapper {
-                    ul {
-                        display: flex;
-                        flex-wrap: wrap;
-                        font-family: $font1;
-                        @include size16;
-                        font-weight: 600;
-                        justify-content: flex-end;
-                        letter-spacing: normal;
-                        line-height: 1;
-                        margin: 0;
-                        align-items: center;
-                        @include tabletmid {
-                            @include size14;
-                        }
-                        @include tabletvert {
-                            display: block;
-                            width: 100%;
-                            @include size16;
-                        }
-                        li {
-                            padding-right: 20px;
-                            position: relative;
-                            float: none;
-                            letter-spacing: normal;
-                            margin-bottom: 0;
-                            @include navbreak {
-                                padding-right: 10px;
-                            }
-                            &:last-child {
-                                padding-right: 0;
-                            }
-                            &.hs-item-has-children {
-                                a {
-                                    &:after {
-                                        content: "";
-                                        background-image: url("https://23543895.fs1.hubspotusercontent-na1.net/hubfs/23543895/RampXchange/images/nav-arrow.svg");
-                                        width: 12px;
-                                        display: inline-block;
-                                        background-position: center;
-                                        background-size: contain;
-                                        background-repeat: no-repeat;
-                                        height: 7px;
-                                        margin: 7.5px 6px 8.5px 10px;
-                                        vertical-align: middle;
-
-                                        @include tabletvert {
-                                            display: none;
-                                        }
-                                    }
-                                }
-                            }
-                            @include tabletmid {
-                                padding-right: 10px;
-                            }
-                            a {
-                                @include size16;
-                                line-height: 1;
-                                color: $heading;
-                                max-width: 100%;
-                                overflow: visible;
-                                padding: 10px 0;
-                                text-decoration: none;
-                                text-overflow: unset;
-                                white-space: normal;
-
-                                @include tabletmid {
-                                    @include size12;
-                                }
-                                @include tabletvert {
-                                    @include size16;
-                                    padding-top: 10px;
-                                    padding-bottom: 10px;
-                                    display: block;
-                                }
-                                &:hover {
-                                    color: $action1;
-                                }
-                            }
-                            ul.hs-menu-children-wrapper {
-                                top: 100%;
-                                background-color: $heading;
-                                padding: 15px;
-                                opacity: 0;
-                                visibility: hidden;
-                                transition: all 0.3s ease;
-                                @include tabletvert {
-                                    position: static;
-                                    display: none;
-                                    opacity: 1;
-                                    visibility: visible;
-                                    padding: 0;
-                                    background-color: transparent;
-                                    padding-left: 15px;
-                                    transition: none;
-                                }
-                                li {
-                                    padding: 0;
-                                    margin: 0;
-                                    margin-bottom: 10px;
-                                    &:last-child {
-                                        margin-bottom: 0;
-                                    }
-                                    @include tabletvert {
-                                        margin-bottom: 0;
-                                    }
-                                    a {
-                                        color: $white;
-                                        padding: 10px 0;
-                                        @include tabletvert {
-                                            color: $heading;
-                                            padding: 10px 0;
-                                            width: 100%;
-                                        }
-                                        &:hover {
-                                            color: $action1;
-                                        }
-                                    }
-                                }
-                            }
-                            &:hover {
-                                ul.hs-menu-children-wrapper {
-                                    opacity: 1;
-                                    visibility: visible;
-                                }
-                            }
-                        }
-                    }
-                }
-                .header_btn {
-                    padding-left: 20px;
-                    @include tabletmid {
-                        padding-left: 10px;
-                    }
-                    @include tabletvert {
-                        padding-left: 0;
-                        margin-top: 0;
-                    }
-                    .hs-button {
-                        margin-top: 0;
-                        margin-bottom: 0;
-                        @include navbreak {
-                            @include size12;
-                            padding-left: 14rem;
-                            padding-right: 14rem;
-                        }
-                        @include tabletvert {
-                            @include size16;
-                            padding-left: 24rem;
-                            padding-right: 24rem;
-                            margin-top: 10px;
-                        }
-                    }
-                }
+            @include tabletmid {
+              @include size14;
             }
             @include tabletvert {
-                .main_menu_inn {
-                    position: absolute;
-                    top: 100%;
-                    left: 0;
-                    z-index: 9;
-                    padding-left: 20px;
-                    padding-right: 20px;
-                    background-color: $white;
-                    padding-bottom: 30px;
-                    width: 100%;
-                    display: none;
-                }
+              display: block;
+              width: 100%;
+              @include size16;
+            }
+            li {
+              padding-right: 20px;
+              position: relative;
+              float: none;
+              letter-spacing: normal;
+              margin-bottom: 0;
+              @include navbreak {
+                padding-right: 10px;
+              }
+              &:last-child {
+                padding-right: 0;
+              }
+              &.hs-item-has-children {
+                a {
+                  &:after {
+                    content: "";
+                    background-image: url("https://47484996.fs1.hubspotusercontent-na1.net/hubfs/47484996/RampXchange-u4m/images/nav-arrow.svg");
+                    width: 12px;
+                    display: inline-block;
+                    background-position: center;
+                    background-size: contain;
+                    background-repeat: no-repeat;
+                    height: 7px;
+                    margin: 7.5px 6px 8.5px 10px;
+                    vertical-align: middle;
 
-                .menu-trigger {
-                    display: flex;
-                    flex-direction: column;
-                    justify-content: space-between;
-                    width: 30px;
-                    height: 20px;
-                    cursor: pointer;
-                    span {
-                        display: block;
-                        width: 100%;
-                        height: 4px;
-                        background-color: $heading;
-                        border-radius: 2px;
-                        transition:
-                            transform 0.3s ease,
-                            opacity 0.3s ease;
+                    @include tabletvert {
+                      display: none;
                     }
-                    &.trigger-open {
-                        height: 18px;
-                        span {
-                            &:nth-child(1) {
-                                transform: translateY(7px) rotate(45deg);
-                            }
-                            &:nth-child(2) {
-                                opacity: 0;
-                            }
-                            &:nth-child(3) {
-                                transform: translateY(-7px) rotate(-45deg);
-                            }
-                        }
-                    }
+                  }
                 }
+              }
+              @include tabletmid {
+                padding-right: 10px;
+              }
+              a {
+                @include size16;
+                line-height: 1;
+                color: $heading;
+                max-width: 100%;
+                overflow: visible;
+                padding: 10px 0;
+                text-decoration: none;
+                text-overflow: unset;
+                white-space: normal;
 
-                .child-trigger {
-                    display: block !important;
-                    cursor: pointer;
-                    position: absolute;
-                    top: 0px;
-                    right: 0px;
-                    width: 35px !important;
-                    height: 36px !important;
-                    padding: 0 !important;
-                    i {
-                        position: relative;
-                        top: 50%;
-                        margin: 0 auto !important;
-                        -webkit-transform: rotate(0);
-                        -ms-transform: rotate(0);
-                        transform: rotate(0);
-                        &:after {
-                            content: "";
-                            position: absolute;
-                            -webkit-transform: rotate(-90deg);
-                            -ms-transform: rotate(-90deg);
-                            transform: rotate(-90deg);
-                        }
-                    }
-                    i,
-                    i:after {
-                        width: 10px;
-                        height: 2px;
-                        background-color: $heading;
-                        display: block;
+                @include tabletmid {
+                  @include size12;
+                }
+                @include tabletvert {
+                  @include size16;
+                  padding-top: 10px;
+                  padding-bottom: 10px;
+                  display: block;
+                }
+                &:hover {
+                  color: $action1;
+                }
+              }
+              ul.hs-menu-children-wrapper {
+                top: 100%;
+                background-color: $heading;
+                padding: 15px;
+                opacity: 0;
+                visibility: hidden;
+                transition: all 0.3s ease;
+                @include tabletvert {
+                  position: static;
+                  display: none;
+                  opacity: 1;
+                  visibility: visible;
+                  padding: 0;
+                  background-color: transparent;
+                  padding-left: 15px;
+                  transition: none;
+                }
+                li {
+                  padding: 0;
+                  margin: 0;
+                  margin-bottom: 10px;
+                  &:last-child {
+                    margin-bottom: 0;
+                  }
+                  @include tabletvert {
+                    margin-bottom: 0;
+                  }
+                  a {
+                    color: $white;
+                    padding: 10px 0;
+                    @include tabletvert {
+                      color: $heading;
+                      padding: 10px 0;
+                      width: 100%;
                     }
                     &:hover {
-                        text-decoration: none;
+                      color: $action1;
                     }
-                    &.child-open i:after {
-                        -webkit-transform: rotate(-180deg);
-                        -ms-transform: rotate(-180deg);
-                        transform: rotate(-180deg);
-                    }
+                  }
                 }
+              }
+              &:hover {
+                ul.hs-menu-children-wrapper {
+                  opacity: 1;
+                  visibility: visible;
+                }
+              }
             }
+          }
         }
+        .header_btn {
+          padding-left: 20px;
+          @include tabletmid {
+            padding-left: 10px;
+          }
+          @include tabletvert {
+            padding-left: 0;
+            margin-top: 0;
+          }
+          .hs-button {
+            margin-top: 0;
+            margin-bottom: 0;
+            @include navbreak {
+              @include size12;
+              padding-left: 14rem;
+              padding-right: 14rem;
+            }
+            @include tabletvert {
+              @include size16;
+              padding-left: 24rem;
+              padding-right: 24rem;
+              margin-top: 10px;
+            }
+          }
+        }
+      }
+      @include tabletvert {
+        .main_menu_inn {
+          position: absolute;
+          top: 100%;
+          left: 0;
+          z-index: 9;
+          padding-left: 20px;
+          padding-right: 20px;
+          background-color: $white;
+          padding-bottom: 30px;
+          width: 100%;
+          display: none;
+        }
+
+        .menu-trigger {
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+          width: 30px;
+          height: 20px;
+          cursor: pointer;
+          span {
+            display: block;
+            width: 100%;
+            height: 4px;
+            background-color: $heading;
+            border-radius: 2px;
+            transition:
+              transform 0.3s ease,
+              opacity 0.3s ease;
+          }
+          &.trigger-open {
+            height: 18px;
+            span {
+              &:nth-child(1) {
+                transform: translateY(7px) rotate(45deg);
+              }
+              &:nth-child(2) {
+                opacity: 0;
+              }
+              &:nth-child(3) {
+                transform: translateY(-7px) rotate(-45deg);
+              }
+            }
+          }
+        }
+
+        .child-trigger {
+          display: block !important;
+          cursor: pointer;
+          position: absolute;
+          top: 0px;
+          right: 0px;
+          width: 35px !important;
+          height: 36px !important;
+          padding: 0 !important;
+          i {
+            position: relative;
+            top: 50%;
+            margin: 0 auto !important;
+            -webkit-transform: rotate(0);
+            -ms-transform: rotate(0);
+            transform: rotate(0);
+            &:after {
+              content: "";
+              position: absolute;
+              -webkit-transform: rotate(-90deg);
+              -ms-transform: rotate(-90deg);
+              transform: rotate(-90deg);
+            }
+          }
+          i,
+          i:after {
+            width: 10px;
+            height: 2px;
+            background-color: $heading;
+            display: block;
+          }
+          &:hover {
+            text-decoration: none;
+          }
+          &.child-open i:after {
+            -webkit-transform: rotate(-180deg);
+            -ms-transform: rotate(-180deg);
+            transform: rotate(-180deg);
+          }
+        }
+      }
     }
-    .header-inner {
-        position: fixed;
-        width: 100%;
-        top: 0;
-        z-index: 999;
-    }
+  }
+  .header-inner {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 999;
+  }
 }

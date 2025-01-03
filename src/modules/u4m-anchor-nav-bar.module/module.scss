@@ -1,44 +1,43 @@
 @import "../../css/module-imports";
 
 .u4m-anchor-nav-bar {
-   &.reverse-text{
+  &.reverse-text {
     .btns_nav_inr {
-		a.cm_btn {
-           color: $white;
-        }
+      a.cm_btn {
+        color: $white;
+      }
     }
-        
+  }
+  .btns_nav_inr {
+    display: flex;
+    gap: 40px;
+    justify-content: center;
+    padding: 20px;
+    flex-wrap: wrap;
+    row-gap: 20px;
+    a.cm_btn {
+      font-weight: 600;
+      text-decoration: none;
+      color: $heading;
+      position: relative;
+      z-index: 99;
+      border-bottom: 2px solid transparent;
     }
-	.btns_nav_inr {
-		display: flex;
-		gap: 40px;
-		justify-content: center;
-		padding: 20px;
-		flex-wrap: wrap;
-		row-gap: 20px;
-		a.cm_btn {
-			font-weight: 600;
-			text-decoration: none;
-			color: $heading;
-			position: relative;
-			z-index: 99;
-			border-bottom: 2px solid transparent;
-		}
-		a.cm_btn.active {
-			border-bottom: 2px solid;
-			border-color: $heading;
-		}
-	}
-	transition: all .3s ease;
+    a.cm_btn.active {
+      border-bottom: 2px solid;
+      border-color: $heading;
+    }
+  }
+  transition: all 0.3s ease;
 }
 .u4m-anchor-nav-bar.fixed {
-	position: fixed;
-	width: 100%;
-	right: 0;
-	left: 0;
-	top: 143px;
-    z-index: 999;
-	@include tabletmid{
-position: unset;
-	}
+  position: fixed;
+  width: 100%;
+  right: 0;
+  left: 0;
+  top: 143px;
+  z-index: 12;
+  @include tabletmid {
+    position: unset;
+  }
 }

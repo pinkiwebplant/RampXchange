@@ -300,14 +300,14 @@
   "required" : false,
   "locked" : false,
   "children" : [ {
-    "id" : "7e25e2e2-5723-1e28-0f44-caac74c73097",
+    "id" : "5037e297-002a-76b2-e4e4-54b954eba920",
     "name" : "select_hubdb_table",
     "display_width" : null,
     "label" : "Select Hubdb Table",
     "required" : false,
     "locked" : false,
     "type" : "hubdbtable",
-    "default" : 105234052
+    "default" : 105503810
   }, {
     "id" : "a62f398c-cc41-327d-acde-e7ed4a2c562b",
     "name" : "number_of_posts",
@@ -325,7 +325,7 @@
   "group_occurrence_meta" : null,
   "type" : "group",
   "default" : {
-    "select_hubdb_table" : 105234052,
+    "select_hubdb_table" : 105503810,
     "number_of_posts" : 9
   }
 }, {

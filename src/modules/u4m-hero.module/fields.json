@@ -382,7 +382,7 @@
     "type" : "image",
     "default" : {
       "size_type" : "auto",
-      "src" : "https://23543895.fs1.hubspotusercontent-na1.net/hubfs/23543895/RampXchange/images/Poster%20Image.png",
+      "src" : "https://47484996.fs1.hubspotusercontent-na1.net/hubfs/47484996/RampXchange-u4m/images/Poster%20Image.png",
       "alt" : "Poster Image",
       "loading" : "lazy",
       "width" : 855,
@@ -432,7 +432,7 @@
       "type" : "image",
       "default" : {
         "size_type" : "auto",
-        "src" : "https://23543895.fs1.hubspotusercontent-na1.net/hubfs/23543895/RampXchange/images/Poster%20Image.png",
+        "src" : "https://47484996.fs1.hubspotusercontent-na1.net/hubfs/47484996/RampXchange-u4m/images/Poster%20Image.png",
         "alt" : "Poster Image",
         "loading" : "lazy",
         "width" : 855,
@@ -457,7 +457,7 @@
         "access" : null
       },
       "type" : "file",
-      "default" : "https://23543895.fs1.hubspotusercontent-na1.net/hubfs/23543895/AcadDyno/video/big_buck_bunny_720p_1mb.mp4"
+      "default" : "https://47484996.fs1.hubspotusercontent-na1.net/hubfs/47484996/RampXchange-u4m/videos/big_buck_bunny_720p_1mb.mp4"
     }, {
       "id" : "55bd8c65-b2bf-ec0d-caa7-c7e21ba4b87d",
       "name" : "embed_url",
@@ -487,7 +487,7 @@
       "video_type" : "file",
       "poster_image" : {
         "size_type" : "auto",
-        "src" : "https://23543895.fs1.hubspotusercontent-na1.net/hubfs/23543895/RampXchange/images/Poster%20Image.png",
+        "src" : "https://47484996.fs1.hubspotusercontent-na1.net/hubfs/47484996/RampXchange-u4m/images/Poster%20Image.png",
         "alt" : "Poster Image",
         "loading" : "lazy",
         "width" : 855,
@@ -495,7 +495,7 @@
         "max_width" : 855,
         "max_height" : 571
       },
-      "video" : "https://23543895.fs1.hubspotusercontent-na1.net/hubfs/23543895/AcadDyno/video/big_buck_bunny_720p_1mb.mp4",
+      "video" : "https://47484996.fs1.hubspotusercontent-na1.net/hubfs/47484996/RampXchange-u4m/videos/big_buck_bunny_720p_1mb.mp4",
       "embed_url" : "https://www.youtube.com/embed/9xwazD5SyVg"
     }
   } ],
@@ -507,7 +507,7 @@
     "type" : "video",
     "image" : {
       "size_type" : "auto",
-      "src" : "https://23543895.fs1.hubspotusercontent-na1.net/hubfs/23543895/RampXchange/images/Poster%20Image.png",
+      "src" : "https://47484996.fs1.hubspotusercontent-na1.net/hubfs/47484996/RampXchange-u4m/images/Poster%20Image.png",
       "alt" : "Poster Image",
       "loading" : "lazy",
       "width" : 855,
@@ -519,7 +519,7 @@
       "video_type" : "file",
       "poster_image" : {
         "size_type" : "auto",
-        "src" : "https://23543895.fs1.hubspotusercontent-na1.net/hubfs/23543895/RampXchange/images/Poster%20Image.png",
+        "src" : "https://47484996.fs1.hubspotusercontent-na1.net/hubfs/47484996/RampXchange-u4m/images/Poster%20Image.png",
         "alt" : "Poster Image",
         "loading" : "lazy",
         "width" : 855,
@@ -527,7 +527,7 @@
         "max_width" : 855,
         "max_height" : 571
       },
-      "video" : "https://23543895.fs1.hubspotusercontent-na1.net/hubfs/23543895/AcadDyno/video/big_buck_bunny_720p_1mb.mp4",
+      "video" : "https://47484996.fs1.hubspotusercontent-na1.net/hubfs/47484996/RampXchange-u4m/videos/big_buck_bunny_720p_1mb.mp4",
       "embed_url" : "https://www.youtube.com/embed/9xwazD5SyVg"
     }
   }

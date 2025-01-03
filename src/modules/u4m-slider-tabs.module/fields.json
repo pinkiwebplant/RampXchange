@@ -518,7 +518,7 @@
     "type" : "image",
     "default" : {
       "size_type" : "exact",
-      "src" : "https://23543895.fs1.hubspotusercontent-na1.net/hubfs/23543895/RampXchange/images/wecome--back.jpg",
+      "src" : "https://47484996.fs1.hubspotusercontent-na1.net/hubfs/47484996/RampXchange-u4m/images/wecome--back.jpg",
       "alt" : "Welcome Image",
       "loading" : "lazy",
       "width" : 891,
@@ -545,7 +545,7 @@
     "type" : "image",
     "default" : {
       "size_type" : "auto",
-      "src" : "https://23543895.fs1.hubspotusercontent-na1.net/hubfs/23543895/RampXchange/images/Poster%20Image.png",
+      "src" : "https://47484996.fs1.hubspotusercontent-na1.net/hubfs/47484996/RampXchange-u4m/images/Poster%20Image.png",
       "alt" : "Poster Image",
       "loading" : "lazy",
       "width" : 855,
@@ -592,7 +592,7 @@
       "access" : null
     },
     "type" : "file",
-    "default" : "https://23543895.fs1.hubspotusercontent-na1.net/hubfs/23543895/RampXchange/videos/mov_bbb.mp4"
+    "default" : "https://47484996.fs1.hubspotusercontent-na1.net/hubfs/47484996/RampXchange-u4m/videos/mov_bbb.mp4"
   }, {
     "id" : "2558b8ca-268d-30f4-ed1e-169ac6cff1dd",
     "name" : "embed_url",
@@ -612,7 +612,7 @@
     "allow_new_line" : false,
     "show_emoji_picker" : false,
     "type" : "text",
-    "default" : "https://www.youtube.com/embed/29BQhSVPFpo?autoplay=1"
+    "default" : "https://www.youtube.com/embed/EngW7tLk6R8?autoplay=1"
   } ],
   "tab" : "CONTENT",
   "expanded" : false,
@@ -638,7 +638,7 @@
     "media_type" : "img",
     "image_field" : {
       "size_type" : "exact",
-      "src" : "https://23543895.fs1.hubspotusercontent-na1.net/hubfs/23543895/RampXchange/images/wecome--back.jpg",
+      "src" : "https://47484996.fs1.hubspotusercontent-na1.net/hubfs/47484996/RampXchange-u4m/images/wecome--back.jpg",
       "alt" : "Welcome Image",
       "loading" : "lazy",
       "width" : 891,
@@ -646,7 +646,7 @@
     },
     "poster_image" : {
       "size_type" : "auto",
-      "src" : "https://23543895.fs1.hubspotusercontent-na1.net/hubfs/23543895/RampXchange/images/Poster%20Image.png",
+      "src" : "https://47484996.fs1.hubspotusercontent-na1.net/hubfs/47484996/RampXchange-u4m/images/Poster%20Image.png",
       "alt" : "Poster Image",
       "loading" : "lazy",
       "width" : 855,
@@ -655,8 +655,8 @@
       "max_height" : 571
     },
     "video_type" : "",
-    "select_video" : "https://23543895.fs1.hubspotusercontent-na1.net/hubfs/23543895/RampXchange/videos/mov_bbb.mp4",
-    "embed_url" : "https://www.youtube.com/embed/29BQhSVPFpo?autoplay=1"
+    "select_video" : "https://47484996.fs1.hubspotusercontent-na1.net/hubfs/47484996/RampXchange-u4m/videos/mov_bbb.mp4",
+    "embed_url" : "https://www.youtube.com/embed/EngW7tLk6R8?autoplay=1"
   }, {
     "tab_title" : "Guided Support",
     "content" : "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.</p>",
@@ -677,7 +677,7 @@
     "media_type" : "img",
     "image_field" : {
       "size_type" : "exact",
-      "src" : "https://23543895.fs1.hubspotusercontent-na1.net/hubfs/23543895/RampXchange/images/wecome--back.jpg",
+      "src" : "https://47484996.fs1.hubspotusercontent-na1.net/hubfs/47484996/RampXchange-u4m/images/wecome--back.jpg",
       "alt" : "Welcome Image",
       "loading" : "lazy",
       "width" : 891,
@@ -685,7 +685,7 @@
     },
     "poster_image" : {
       "size_type" : "auto",
-      "src" : "https://23543895.fs1.hubspotusercontent-na1.net/hubfs/23543895/RampXchange/images/Poster%20Image.png",
+      "src" : "https://47484996.fs1.hubspotusercontent-na1.net/hubfs/47484996/RampXchange-u4m/images/Poster%20Image.png",
       "alt" : "Poster Image",
       "loading" : "lazy",
       "width" : 855,
@@ -694,8 +694,8 @@
       "max_height" : 571
     },
     "video_type" : "",
-    "select_video" : "https://23543895.fs1.hubspotusercontent-na1.net/hubfs/23543895/RampXchange/videos/mov_bbb.mp4",
-    "embed_url" : "https://www.youtube.com/embed/29BQhSVPFpo?autoplay=1"
+    "select_video" : "https://47484996.fs1.hubspotusercontent-na1.net/hubfs/47484996/RampXchange-u4m/videos/mov_bbb.mp4",
+    "embed_url" : "https://www.youtube.com/embed/EngW7tLk6R8?autoplay=1"
   }, {
     "tab_title" : "Guided Support",
     "content" : "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.</p>",
@@ -716,7 +716,7 @@
     "media_type" : "img",
     "image_field" : {
       "size_type" : "exact",
-      "src" : "https://23543895.fs1.hubspotusercontent-na1.net/hubfs/23543895/RampXchange/images/wecome--back.jpg",
+      "src" : "https://47484996.fs1.hubspotusercontent-na1.net/hubfs/47484996/RampXchange-u4m/images/wecome--back.jpg",
       "alt" : "Welcome Image",
       "loading" : "lazy",
       "width" : 891,
@@ -724,7 +724,7 @@
     },
     "poster_image" : {
       "size_type" : "auto",
-      "src" : "https://23543895.fs1.hubspotusercontent-na1.net/hubfs/23543895/RampXchange/images/Poster%20Image.png",
+      "src" : "https://47484996.fs1.hubspotusercontent-na1.net/hubfs/47484996/RampXchange-u4m/images/Poster%20Image.png",
       "alt" : "Poster Image",
       "loading" : "lazy",
       "width" : 855,
@@ -733,8 +733,8 @@
       "max_height" : 571
     },
     "video_type" : "",
-    "select_video" : "https://23543895.fs1.hubspotusercontent-na1.net/hubfs/23543895/RampXchange/videos/mov_bbb.mp4",
-    "embed_url" : "https://www.youtube.com/embed/29BQhSVPFpo?autoplay=1"
+    "select_video" : "https://47484996.fs1.hubspotusercontent-na1.net/hubfs/47484996/RampXchange-u4m/videos/mov_bbb.mp4",
+    "embed_url" : "https://www.youtube.com/embed/EngW7tLk6R8?autoplay=1"
   }, {
     "tab_title" : "Guided Support",
     "content" : "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.</p>",
@@ -755,7 +755,7 @@
     "media_type" : "img",
     "image_field" : {
       "size_type" : "exact",
-      "src" : "https://23543895.fs1.hubspotusercontent-na1.net/hubfs/23543895/RampXchange/images/wecome--back.jpg",
+      "src" : "https://47484996.fs1.hubspotusercontent-na1.net/hubfs/47484996/RampXchange-u4m/images/wecome--back.jpg",
       "alt" : "Welcome Image",
       "loading" : "lazy",
       "width" : 891,
@@ -763,7 +763,7 @@
     },
     "poster_image" : {
       "size_type" : "auto",
-      "src" : "https://23543895.fs1.hubspotusercontent-na1.net/hubfs/23543895/RampXchange/images/Poster%20Image.png",
+      "src" : "https://47484996.fs1.hubspotusercontent-na1.net/hubfs/47484996/RampXchange-u4m/images/Poster%20Image.png",
       "alt" : "Poster Image",
       "loading" : "lazy",
       "width" : 855,
@@ -772,8 +772,8 @@
       "max_height" : 571
     },
     "video_type" : "",
-    "select_video" : "https://23543895.fs1.hubspotusercontent-na1.net/hubfs/23543895/RampXchange/videos/mov_bbb.mp4",
-    "embed_url" : "https://www.youtube.com/embed/29BQhSVPFpo?autoplay=1"
+    "select_video" : "https://47484996.fs1.hubspotusercontent-na1.net/hubfs/47484996/RampXchange-u4m/videos/mov_bbb.mp4",
+    "embed_url" : "https://www.youtube.com/embed/EngW7tLk6R8?autoplay=1"
   }, {
     "tab_title" : "Guided Support",
     "content" : "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.</p>",
@@ -794,7 +794,7 @@
     "media_type" : "img",
     "image_field" : {
       "size_type" : "exact",
-      "src" : "https://23543895.fs1.hubspotusercontent-na1.net/hubfs/23543895/RampXchange/images/wecome--back.jpg",
+      "src" : "https://47484996.fs1.hubspotusercontent-na1.net/hubfs/47484996/RampXchange-u4m/images/wecome--back.jpg",
       "alt" : "Welcome Image",
       "loading" : "lazy",
       "width" : 891,
@@ -802,7 +802,7 @@
     },
     "poster_image" : {
       "size_type" : "auto",
-      "src" : "https://23543895.fs1.hubspotusercontent-na1.net/hubfs/23543895/RampXchange/images/Poster%20Image.png",
+      "src" : "https://47484996.fs1.hubspotusercontent-na1.net/hubfs/47484996/RampXchange-u4m/images/Poster%20Image.png",
       "alt" : "Poster Image",
       "loading" : "lazy",
       "width" : 855,
@@ -811,8 +811,8 @@
       "max_height" : 571
     },
     "video_type" : "",
-    "select_video" : "https://23543895.fs1.hubspotusercontent-na1.net/hubfs/23543895/RampXchange/videos/mov_bbb.mp4",
-    "embed_url" : "https://www.youtube.com/embed/29BQhSVPFpo?autoplay=1"
+    "select_video" : "https://47484996.fs1.hubspotusercontent-na1.net/hubfs/47484996/RampXchange-u4m/videos/mov_bbb.mp4",
+    "embed_url" : "https://www.youtube.com/embed/EngW7tLk6R8?autoplay=1"
   } ]
 }, {
   "id" : "module_overrides",

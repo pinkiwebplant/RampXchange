@@ -24,7 +24,7 @@
 //     select {
 //       line-height: 1;
 //       padding: 16.5rem 12rem;
-//       background-image: url(https://23543895.fs1.hubspotusercontent-na1.net/hubfs/23543895/RampXchange/images/selectArrow.png);
+//       background-image: url(https://47484996.fs1.hubspotusercontent-na1.net/hubfs/47484996/RampXchange-u4m/images/selectArrow.png);
 //       background-size: 12rem 7rem;
 //       margin-bottom: 0;
 //     }
@@ -62,7 +62,7 @@
 //               left: 0;
 //               top: 0;
 //               opacity: 0;
-//               background-image: url(https://23543895.fs1.hubspotusercontent-na1.net/hubfs/23543895/RampXchange/images/formCheck.png);
+//               background-image: url(https://47484996.fs1.hubspotusercontent-na1.net/hubfs/47484996/RampXchange-u4m/images/formCheck.png);
 //               background-repeat: no-repeat;
 //               background-position: center;
 //             }
@@ -156,6 +156,12 @@
     .hs-form-booleancheckbox label {
       @include b6;
     }
+  }
+
+  .legal-consent-container {
+    margin-bottom: 20px;
+    font-size: 11rem;
+    color: $gray2;
   }
 
   &.hs-form,
@@ -265,7 +271,7 @@
                 left: 0;
                 top: 0;
                 opacity: 0;
-                background-image: url(https://23543895.fs1.hubspotusercontent-na1.net/hubfs/23543895/RampXchange/images/formCheck.png);
+                background-image: url(https://47484996.fs1.hubspotusercontent-na1.net/hubfs/47484996/RampXchange-u4m/images/formCheck.png);
                 background-repeat: no-repeat;
                 background-position: center;
               }
@@ -339,7 +345,7 @@
         color: $gray2;
         line-height: 1;
         padding: 16.5rem 12rem;
-        background-image: url(https://23543895.fs1.hubspotusercontent-na1.net/hubfs/23543895/RampXchange/images/selectArrow.png);
+        background-image: url(https://47484996.fs1.hubspotusercontent-na1.net/hubfs/47484996/RampXchange-u4m/images/selectArrow.png);
         background-repeat: no-repeat;
         background-size: 12rem 7rem;
         margin-bottom: 0;
