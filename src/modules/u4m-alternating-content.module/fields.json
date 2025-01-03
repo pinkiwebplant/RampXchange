@@ -334,7 +334,7 @@
     "type" : "image",
     "default" : {
       "size_type" : "auto",
-      "src" : "https://23543895.fs1.hubspotusercontent-na1.net/hubfs/23543895/RampXchange/images/Media.png",
+      "src" : "https://47484996.fs1.hubspotusercontent-na1.net/hubfs/47484996/RampXchange-u4m/images/Media.png",
       "alt" : "Media",
       "loading" : "lazy",
       "width" : 903,
@@ -363,7 +363,7 @@
     "type" : "image",
     "default" : {
       "size_type" : "auto",
-      "src" : "https://23543895.fs1.hubspotusercontent-na1.net/hubfs/23543895/RampXchange/images/IOmage.png",
+      "src" : "https://47484996.fs1.hubspotusercontent-na1.net/hubfs/47484996/RampXchange-u4m/images/IOmage.png",
       "alt" : "IOmage",
       "loading" : "lazy",
       "width" : 1818,
@@ -410,7 +410,7 @@
       "access" : null
     },
     "type" : "file",
-    "default" : "https://23543895.fs1.hubspotusercontent-na1.net/hubfs/23543895/RampXchange/videos/mov_bbb.mp4"
+    "default" : "https://47484996.fs1.hubspotusercontent-na1.net/hubfs/47484996/RampXchange-u4m/videos/mov_bbb.mp4"
   }, {
     "id" : "96018813-e167-8ce0-7c7f-5bda848f1d2f",
     "name" : "embed_url",
@@ -430,7 +430,7 @@
     "allow_new_line" : false,
     "show_emoji_picker" : false,
     "type" : "text",
-    "default" : "https://www.youtube.com/embed/29BQhSVPFpo?autoplay=1"
+    "default" : "https://www.youtube.com/embed/EngW7tLk6R8?autoplay=1"
   }, {
     "id" : "bba7649c-091c-1da4-0c60-508b116b59e1",
     "name" : "content",
@@ -457,7 +457,7 @@
     "select_media_type" : "img",
     "image" : {
       "size_type" : "auto",
-      "src" : "https://23543895.fs1.hubspotusercontent-na1.net/hubfs/23543895/RampXchange/images/Media.png",
+      "src" : "https://47484996.fs1.hubspotusercontent-na1.net/hubfs/47484996/RampXchange-u4m/images/Media.png",
       "alt" : "Media",
       "loading" : "lazy",
       "width" : 903,
@@ -467,7 +467,7 @@
     },
     "poster_image" : {
       "size_type" : "auto",
-      "src" : "https://23543895.fs1.hubspotusercontent-na1.net/hubfs/23543895/RampXchange/images/IOmage.png",
+      "src" : "https://47484996.fs1.hubspotusercontent-na1.net/hubfs/47484996/RampXchange-u4m/images/IOmage.png",
       "alt" : "IOmage",
       "loading" : "lazy",
       "width" : 1818,
@@ -476,8 +476,8 @@
       "max_height" : 1212
     },
     "select_video_type" : "",
-    "select_video" : "https://23543895.fs1.hubspotusercontent-na1.net/hubfs/23543895/RampXchange/videos/mov_bbb.mp4",
-    "embed_url" : "https://www.youtube.com/embed/29BQhSVPFpo?autoplay=1",
+    "select_video" : "https://47484996.fs1.hubspotusercontent-na1.net/hubfs/47484996/RampXchange-u4m/videos/mov_bbb.mp4",
+    "embed_url" : "https://www.youtube.com/embed/EngW7tLk6R8?autoplay=1",
     "content" : "<h5>Alternating Content Module</h5>\n<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>\n<ul>\n<li>Lorem ipsum dolor sit amet, consectetur adipiscing elit</li>\n<li>Lorem ipsum dolor sit amet, consectetur adipiscing elit</li>\n<li>Lorem ipsum dolor sit amet, consectetur adipiscing elit</li>\n</ul>"
   }
 }, {

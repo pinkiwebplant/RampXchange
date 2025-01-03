@@ -352,7 +352,7 @@
     "type" : "image",
     "default" : {
       "size_type" : "auto",
-      "src" : "https://23543895.fs1.hubspotusercontent-na1.net/hubfs/23543895/RampXchange/images/Featured%20Image.png",
+      "src" : "https://47484996.fs1.hubspotusercontent-na1.net/hubfs/47484996/RampXchange-u4m/images/Featured%20Image.png",
       "alt" : "Featured Image",
       "loading" : "lazy",
       "width" : 758,
@@ -410,7 +410,7 @@
       "type" : "image",
       "default" : {
         "size_type" : "auto",
-        "src" : "https://23543895.fs1.hubspotusercontent-na1.net/hubfs/23543895/RampXchange/images/Frame%2042.png",
+        "src" : "https://47484996.fs1.hubspotusercontent-na1.net/hubfs/47484996/RampXchange-u4m/images/Frame%2042.png",
         "alt" : "Icon",
         "loading" : "lazy",
         "width" : 129,
@@ -469,7 +469,7 @@
       "icon_type" : "svg",
       "image_icon" : {
         "size_type" : "auto",
-        "src" : "https://23543895.fs1.hubspotusercontent-na1.net/hubfs/23543895/RampXchange/images/Frame%2042.png",
+        "src" : "https://47484996.fs1.hubspotusercontent-na1.net/hubfs/47484996/RampXchange-u4m/images/Frame%2042.png",
         "alt" : "Icon",
         "loading" : "lazy",
         "width" : 129,
@@ -746,7 +746,7 @@
   "default" : [ {
     "image_field" : {
       "size_type" : "auto",
-      "src" : "https://23543895.fs1.hubspotusercontent-na1.net/hubfs/23543895/RampXchange/images/Featured%20Image.png",
+      "src" : "https://47484996.fs1.hubspotusercontent-na1.net/hubfs/47484996/RampXchange-u4m/images/Featured%20Image.png",
       "alt" : "Featured Image",
       "loading" : "lazy",
       "width" : 758,
@@ -758,7 +758,7 @@
       "icon_type" : "svg",
       "image_icon" : {
         "size_type" : "auto",
-        "src" : "https://23543895.fs1.hubspotusercontent-na1.net/hubfs/23543895/RampXchange/images/Frame%2042.png",
+        "src" : "https://47484996.fs1.hubspotusercontent-na1.net/hubfs/47484996/RampXchange-u4m/images/Frame%2042.png",
         "alt" : "Icon",
         "loading" : "lazy",
         "width" : 129,
@@ -794,7 +794,7 @@
   }, {
     "image_field" : {
       "size_type" : "auto",
-      "src" : "https://23543895.fs1.hubspotusercontent-na1.net/hubfs/23543895/RampXchange/images/Featured%20Image.png",
+      "src" : "https://47484996.fs1.hubspotusercontent-na1.net/hubfs/47484996/RampXchange-u4m/images/Featured%20Image.png",
       "alt" : "Featured Image",
       "loading" : "lazy",
       "width" : 758,
@@ -806,7 +806,7 @@
       "icon_type" : "svg",
       "image_icon" : {
         "size_type" : "auto",
-        "src" : "https://23543895.fs1.hubspotusercontent-na1.net/hubfs/23543895/RampXchange/images/Frame%2042.png",
+        "src" : "https://47484996.fs1.hubspotusercontent-na1.net/hubfs/47484996/RampXchange-u4m/images/Frame%2042.png",
         "alt" : "Icon",
         "loading" : "lazy",
         "width" : 129,
@@ -842,7 +842,7 @@
   }, {
     "image_field" : {
       "size_type" : "auto",
-      "src" : "https://23543895.fs1.hubspotusercontent-na1.net/hubfs/23543895/RampXchange/images/Featured%20Image.png",
+      "src" : "https://47484996.fs1.hubspotusercontent-na1.net/hubfs/47484996/RampXchange-u4m/images/Featured%20Image.png",
       "alt" : "Featured Image",
       "loading" : "lazy",
       "width" : 758,
@@ -854,7 +854,7 @@
       "icon_type" : "svg",
       "image_icon" : {
         "size_type" : "auto",
-        "src" : "https://23543895.fs1.hubspotusercontent-na1.net/hubfs/23543895/RampXchange/images/Frame%2042.png",
+        "src" : "https://47484996.fs1.hubspotusercontent-na1.net/hubfs/47484996/RampXchange-u4m/images/Frame%2042.png",
         "alt" : "Icon",
         "loading" : "lazy",
         "width" : 129,
@@ -1348,7 +1348,7 @@
       "type" : "image",
       "default" : {
         "size_type" : "auto_custom_max",
-        "src" : "https://23543895.fs1.hubspotusercontent-na1.net/hubfs/23543895/RampXchange/images/Bg.png",
+        "src" : "https://47484996.fs1.hubspotusercontent-na1.net/hubfs/47484996/RampXchange-u4m/images/Bg.png",
         "alt" : "Background Image",
         "loading" : "lazy",
         "width" : 2880,
@@ -1409,7 +1409,7 @@
       "background_type" : "image",
       "background_image" : {
         "size_type" : "auto_custom_max",
-        "src" : "https://23543895.fs1.hubspotusercontent-na1.net/hubfs/23543895/RampXchange/images/Bg.png",
+        "src" : "https://47484996.fs1.hubspotusercontent-na1.net/hubfs/47484996/RampXchange-u4m/images/Bg.png",
         "alt" : "Background Image",
         "loading" : "lazy",
         "width" : 2880,
@@ -1504,7 +1504,7 @@
       "background_type" : "image",
       "background_image" : {
         "size_type" : "auto_custom_max",
-        "src" : "https://23543895.fs1.hubspotusercontent-na1.net/hubfs/23543895/RampXchange/images/Bg.png",
+        "src" : "https://47484996.fs1.hubspotusercontent-na1.net/hubfs/47484996/RampXchange-u4m/images/Bg.png",
         "alt" : "Background Image",
         "loading" : "lazy",
         "width" : 2880,

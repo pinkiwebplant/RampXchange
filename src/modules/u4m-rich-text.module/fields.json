@@ -326,7 +326,7 @@
   "required" : false,
   "locked" : false,
   "type" : "richtext",
-  "default" : "<img src=\"https://23543895.fs1.hubspotusercontent-na1.net/hubfs/23543895/RampXchange/images/Featured%20Image-1.png\" loading=\"lazy\" alt=\"Featured Image\" style=\"height: auto; max-width: 100%;\">"
+  "default" : "<img src=\"https://47484996.fs1.hubspotusercontent-na1.net/hubfs/47484996/RampXchange-u4m/images/Featured%20Image-1.png\" loading=\"lazy\" alt=\"Featured Image\" style=\"height: auto; max-width: 100%;\">"
 }, {
   "id" : "module_overrides",
   "name" : "module_overrides",

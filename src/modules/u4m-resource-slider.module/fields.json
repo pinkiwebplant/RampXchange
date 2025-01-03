@@ -279,7 +279,7 @@
     "type" : "choice",
     "default" : "recent"
   }, {
-    "id" : "b93a6b04-51b5-1d54-4e64-70a033b966d1",
+    "id" : "0dc2a67f-302c-6f9e-2757-4610cd7c9e85",
     "name" : "resource_table",
     "display_width" : null,
     "label" : "Resource Table",
@@ -294,7 +294,7 @@
       "access" : null
     },
     "type" : "hubdbtable",
-    "default" : 105234052
+    "default" : 105503810
   }, {
     "id" : "bd4bba01-6204-3769-03e5-1e6024823fc3",
     "name" : "category_name",
@@ -355,13 +355,13 @@
       "access" : null
     },
     "children" : [ {
-      "id" : "2499795b-ffe2-e725-c8b9-92edbc757800",
+      "id" : "bc1309e4-3ca2-8457-affc-587198769ea1",
       "name" : "select_row",
       "display_width" : null,
       "label" : "Select row",
       "required" : false,
       "locked" : false,
-      "table_name_or_id" : "105234052",
+      "table_name_or_id" : "105503810",
       "columns_to_fetch" : [ "image", "featured", "name", "link", "topic", "description", "type", "read_more_text" ],
       "display_columns" : [ "name" ],
       "type" : "hubdbrow",
@@ -381,7 +381,7 @@
   "type" : "group",
   "default" : {
     "resource_type" : "recent",
-    "resource_table" : 105234052,
+    "resource_table" : 105503810,
     "count" : 6,
     "resouce_items" : [ ]
   }

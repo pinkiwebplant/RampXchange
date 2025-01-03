@@ -1,33 +1,17 @@
 <!--
-templateType: page
-isAvailableForNewContent: true
-label: rampxchange - Landing Page
-screenshotPath: images/u4-landing-page.jpg
+  templateType: page
+  isAvailableForNewContent: true
+  label: RampXchange - Landing Page
+  screenshotPath: images/u4-landing-page.jpg
 -->
-{% extends './base.html' %}
-
-{% block header %}
-{% global_partial path='././partials/u4m-header-no-navigation.html' %}
-{% endblock header %} 
-
-{% block body %}
-<main id="main-content"> 
-{% dnd_area "rampxchange_dnd_area" %}
-{% dnd_section 
-full_width=true
-%}
-{% dnd_column %}
-{% dnd_row %}
-  {% dnd_module path='../modules/u4m-split-lp', label='split LP' width="12" %}
-  {% end_dnd_module %}
-{% end_dnd_row %}
-{% end_dnd_column %}
-{% end_dnd_section %}
-{% end_dnd_area %}  
+{% extends './base.html' %} {% block header %} {% global_partial
+path='././partials/u4m-header-no-navigation.html' %} {% endblock header %} {%
+block body %}
+<main id="main-content">
+  {% dnd_area "rampxchange_dnd_area" %} {% dnd_section full_width=true %} {%
+  dnd_column %} {% dnd_row %} {% dnd_module path='../modules/u4m-split-lp',
+  label='split LP' width="12" %} {% end_dnd_module %} {% end_dnd_row %} {%
+  end_dnd_column %} {% end_dnd_section %} {% end_dnd_area %}
 </main>
-{% endblock body %}
-
-
-{% block footer %}
-{% global_partial path='././partials/u4m-footer-no-navigation.html' %}
-{% endblock footer %}
+{% endblock body %} {% block footer %} {% global_partial
+path='././partials/u4m-footer-no-navigation.html' %} {% endblock footer %}

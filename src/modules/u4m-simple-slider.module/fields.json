@@ -13,7 +13,7 @@
   "type" : "choice",
   "default" : "custom"
 }, {
-  "id" : "b5fd993e-8e3c-acda-d620-191f2f88cbe8",
+  "id" : "983ba011-077d-e23a-9f83-2e1f2a48d35d",
   "name" : "select_table",
   "display_width" : null,
   "label" : "Select Table",
@@ -28,7 +28,7 @@
     "access" : null
   },
   "type" : "hubdbtable",
-  "default" : 105095237
+  "default" : 105503811
 }, {
   "id" : "fd5097b3-ceb6-5b0e-23b8-d1560201fa5e",
   "name" : "select_type",
@@ -92,14 +92,14 @@
     "access" : null
   },
   "children" : [ {
-    "id" : "f4a6ed13-e302-627d-b9cd-e81ec2e6860b",
+    "id" : "de4f7c1a-97b1-1a0e-b0f7-34f3cb12faa3",
     "name" : "select_title",
     "display_width" : null,
     "label" : "Select Title",
     "required" : false,
     "locked" : false,
-    "table_name_or_id" : "105095237",
-    "columns_to_fetch" : [ "author_name", "feature_image", "eyebrow_text", "name", "designation", "logo_image", "quotes" ],
+    "table_name_or_id" : "105503811",
+    "columns_to_fetch" : [ "author_name", "feature_image", "eyebrow_text", "name", "categories", "designation", "logo_image", "quotes" ],
     "display_columns" : [ "name" ],
     "type" : "hubdbrow",
     "default" : {
@@ -228,7 +228,7 @@
     "type" : "image",
     "default" : {
       "size_type" : "auto",
-      "src" : "https://23543895.fs1.hubspotusercontent-na1.net/hubfs/23543895/RampXchange/images/Ingram.png",
+      "src" : "https://47484996.fs1.hubspotusercontent-na1.net/hubfs/47484996/RampXchange-u4m/images/Ingram.png",
       "alt" : "Ingram",
       "loading" : "lazy",
       "width" : 230,
@@ -249,7 +249,7 @@
     "type" : "image",
     "default" : {
       "size_type" : "auto",
-      "src" : "https://23543895.fs1.hubspotusercontent-na1.net/hubfs/23543895/RampXchange/images/IOmage.png",
+      "src" : "https://47484996.fs1.hubspotusercontent-na1.net/hubfs/47484996/RampXchange-u4m/images/IOmage.png",
       "alt" : "Slider Image",
       "loading" : "lazy",
       "width" : 1818,
@@ -269,7 +269,7 @@
     "designation" : "Chief Executive Officer, Ingram Micro",
     "logo_image" : {
       "size_type" : "auto",
-      "src" : "https://23543895.fs1.hubspotusercontent-na1.net/hubfs/23543895/RampXchange/images/Ingram.png",
+      "src" : "https://47484996.fs1.hubspotusercontent-na1.net/hubfs/47484996/RampXchange-u4m/images/Ingram.png",
       "alt" : "Ingram",
       "loading" : "lazy",
       "width" : 230,
@@ -279,7 +279,7 @@
     },
     "image_field" : {
       "size_type" : "auto",
-      "src" : "https://23543895.fs1.hubspotusercontent-na1.net/hubfs/23543895/RampXchange/images/IOmage.png",
+      "src" : "https://47484996.fs1.hubspotusercontent-na1.net/hubfs/47484996/RampXchange-u4m/images/IOmage.png",
       "alt" : "Slider Image",
       "loading" : "lazy",
       "width" : 1818,
@@ -295,7 +295,7 @@
     "designation" : "Chief Executive Officer, Ingram Micro",
     "logo_image" : {
       "size_type" : "auto",
-      "src" : "https://23543895.fs1.hubspotusercontent-na1.net/hubfs/23543895/RampXchange/images/Ingram.png",
+      "src" : "https://47484996.fs1.hubspotusercontent-na1.net/hubfs/47484996/RampXchange-u4m/images/Ingram.png",
       "alt" : "Ingram",
       "loading" : "lazy",
       "width" : 230,
@@ -305,7 +305,7 @@
     },
     "image_field" : {
       "size_type" : "auto",
-      "src" : "https://23543895.fs1.hubspotusercontent-na1.net/hubfs/23543895/RampXchange/images/IOmage.png",
+      "src" : "https://47484996.fs1.hubspotusercontent-na1.net/hubfs/47484996/RampXchange-u4m/images/IOmage.png",
       "alt" : "Slider Image",
       "loading" : "lazy",
       "width" : 1818,
@@ -321,7 +321,7 @@
     "designation" : "Chief Executive Officer, Ingram Micro",
     "logo_image" : {
       "size_type" : "auto",
-      "src" : "https://23543895.fs1.hubspotusercontent-na1.net/hubfs/23543895/RampXchange/images/Ingram.png",
+      "src" : "https://47484996.fs1.hubspotusercontent-na1.net/hubfs/47484996/RampXchange-u4m/images/Ingram.png",
       "alt" : "Ingram",
       "loading" : "lazy",
       "width" : 230,
@@ -331,7 +331,7 @@
     },
     "image_field" : {
       "size_type" : "auto",
-      "src" : "https://23543895.fs1.hubspotusercontent-na1.net/hubfs/23543895/RampXchange/images/IOmage.png",
+      "src" : "https://47484996.fs1.hubspotusercontent-na1.net/hubfs/47484996/RampXchange-u4m/images/IOmage.png",
       "alt" : "Slider Image",
       "loading" : "lazy",
       "width" : 1818,
@@ -347,7 +347,7 @@
     "designation" : "Chief Executive Officer, Ingram Micro",
     "logo_image" : {
       "size_type" : "auto",
-      "src" : "https://23543895.fs1.hubspotusercontent-na1.net/hubfs/23543895/RampXchange/images/Ingram.png",
+      "src" : "https://47484996.fs1.hubspotusercontent-na1.net/hubfs/47484996/RampXchange-u4m/images/Ingram.png",
       "alt" : "Ingram",
       "loading" : "lazy",
       "width" : 230,
@@ -357,7 +357,7 @@
     },
     "image_field" : {
       "size_type" : "auto",
-      "src" : "https://23543895.fs1.hubspotusercontent-na1.net/hubfs/23543895/RampXchange/images/IOmage.png",
+      "src" : "https://47484996.fs1.hubspotusercontent-na1.net/hubfs/47484996/RampXchange-u4m/images/IOmage.png",
       "alt" : "Slider Image",
       "loading" : "lazy",
       "width" : 1818,

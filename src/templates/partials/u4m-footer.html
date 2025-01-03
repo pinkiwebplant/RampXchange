@@ -4,42 +4,55 @@
 -->
 
 <div class="footer-wrapper">
-	<div class="footer">
-		<div class="page-center">
-			<div class="footer-top">
-				<div class="footer-top-inner">
-					<div class="footer-logo-col">
-						<div class="footer-logo">
-							{% set logo_file =  get_asset_url('../../templates/images/mainLogo.png') %}
-							{% module "footer_logo" path="@hubspot/logo", label="Footer Logo", link="/", img={src="{{logo_file}}?noresize", width="326", alt="RampXchange" override_inherited_src= true} %}
-							<div class="company-details">
-								{% module_block module "company-details" path="@hubspot/rich_text" label="Company Details" %}
-								{% module_attribute "html" %}
-								<p>RAMPxchange connects organizations with cybersecurity experts and solutions. Simplify your cybersecurity journey and stay compliant with tailored resources and trusted partnerships.</p>
-								{% end_module_attribute %}
-								{% end_module_block %}
-							</div>
-						</div>
-						<div class="social-wrap">
-							{% module "social_icon" path="../../modules/u4m-footer-social-icon", label="Social Icon" %}
-						</div>
-						<div class="login-menu">
-							{% menu "login-menu" id=184230369376, flyouts='false', max_levels='1', label='Login Menu' %}
-						</div>
-					</div>
-					<div class="footer-menu">
-						{% menu "footer-menu" id=184230369196, flyouts='false', max_levels='5', label='Footer Menu' %}
-					</div>
-				</div>
-			</div>
-			<div class="bottom-footer">
-				<div class="privacy-menu">
-					{% menu "primary-menu" id=184230032447, flyouts='false', max_levels='2', label='Privacy Menu' %}
-				</div>
-				<div class="copyright">
-					{% text "copyright" label="Copyright", value="© 2024 RAMPxchange" no_wrapper=true %}
-				</div>
-			</div>
-		</div>
-	</div>
+  <div class="footer">
+    <div class="page-center">
+      <div class="footer-top">
+        <div class="footer-top-inner">
+          <div class="footer-logo-col">
+            <div class="footer-logo">
+              {% set logo_file =
+              get_asset_url('../../templates/images/mainLogo.png') %} {% module
+              "footer_logo" path="@hubspot/logo", label="Footer Logo", link="/",
+              img={src="{{logo_file}}?noresize", width="326", alt="RampXchange"
+              override_inherited_src= true} %}
+              <div class="company-details">
+                {% module_block module "company-details"
+                path="@hubspot/rich_text" label="Company Details" %} {%
+                module_attribute "html" %}
+                <p>
+                  RAMPxchange connects organizations with cybersecurity experts
+                  and solutions. Simplify your cybersecurity journey and stay
+                  compliant with tailored resources and trusted partnerships.
+                </p>
+                {% end_module_attribute %} {% end_module_block %}
+              </div>
+            </div>
+            <div class="social-wrap">
+              {% module "social_icon"
+              path="../../modules/u4m-footer-social-icon", label="Social Icon"
+              %}
+            </div>
+            <div class="login-menu">
+              {% menu "login-menu" id=184485672285, flyouts='false',
+              max_levels='1', label='Login Menu' %}
+            </div>
+          </div>
+          <div class="footer-menu">
+            {% menu "footer-menu" id=184488293392, flyouts='false',
+            max_levels='5', label='Footer Menu' %}
+          </div>
+        </div>
+      </div>
+      <div class="bottom-footer">
+        <div class="privacy-menu">
+          {% menu "primary-menu" id=184485672355, flyouts='false',
+          max_levels='2', label='Privacy Menu' %}
+        </div>
+        <div class="copyright">
+          {% text "copyright" label="Copyright", value="© 2024 RAMPxchange"
+          no_wrapper=true %}
+        </div>
+      </div>
+    </div>
+  </div>
 </div>
