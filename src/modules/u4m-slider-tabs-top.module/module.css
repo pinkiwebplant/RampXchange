@@ -80,6 +80,7 @@ html {
   text-decoration: none;
   color: #213944;
   display: inline-block;
+  font-weight: 500;
 }
 @media (max-width: 1280px) {
   .u4m-slider-tabs-top .slider-tabs-top-wrapper .row .tabber_top_tabs ul li a {

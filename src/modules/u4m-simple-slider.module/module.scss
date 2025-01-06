@@ -45,7 +45,7 @@
             display: flex;
             justify-content: flex-end;
             gap: 20px;
-            z-index: 221;
+            z-index: 99;
             right: 0;
             @include tablet {
               top: auto;
@@ -116,7 +116,7 @@
                 @include size23; 
                 &> span{ 
                   display: inline-block;
-                  font-family: initial;  
+                  font-weight: 500;
                 }
                 
               }
@@ -157,20 +157,22 @@
                       display: block;
 
                 .media_section {
-                  position: absolute;
-                  top: -179px;
-                  left: -50px;
-                  min-width: 747px;
+                  background-position: 50%;
+                  background-repeat: no-repeat;
+                  background-size: cover;
+                  display: block;
+                  height: 100%;
                   @include tablet {
                     position: static;
                     min-width: 100%;
-                    img {
-                      mask: none !important;
-                      -webkit-mask-box-image: none !important;
-                      width: 100%;
-                      height: auto;
-                      object-position: inherit;
-                    }
+                    min-height: 50vw;
+                    // img {
+                    //   mask: none !important;
+                    //   -webkit-mask-box-image: none !important;
+                    //   width: 100%;
+                    //   height: auto;
+                    //   object-position: inherit;
+                    // }
                   }
                 }
                   }

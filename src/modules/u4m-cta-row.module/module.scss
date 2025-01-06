@@ -97,11 +97,13 @@ color: $action1;
     }
 
     .media_section {
-      border-radius: 12px;
-      overflow: hidden;
       width: calc(50% - 30px);
       @include tabletvert {
         width: 100%;
+      }
+      img{
+        border-radius: $borderRadius;
+        filter: $dropshadow;
       }
       .vid_section {
         min-height: 390px;

@@ -3448,8 +3448,7 @@ ol {
 }
 
 li {
-  margin-bottom: 5rem;
-  letter-spacing: 0.5rem;
+  margin-bottom: 8rem;
   list-style: none;
   padding: 0;
   margin-left: 0;
@@ -3749,7 +3748,7 @@ section[class*=u4m-] {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  gap: 10px 36px;
+  gap: 10px 20px;
   align-items: center;
 }
 
@@ -3989,6 +3988,11 @@ form div.legal-consent-container .hs-form-booleancheckbox label {
     font-size: 12rem;
   }
 }
+form .legal-consent-container {
+  margin-bottom: 20px;
+  font-size: 11rem;
+  color: #6e757c;
+}
 form.hs-form fieldset, form.mixitup-multifilter fieldset, form fieldset {
   max-width: none;
 }
@@ -4131,7 +4135,7 @@ form.hs-form .input ul.inputs-list > li label > span:after, form.mixitup-multifi
   left: 0;
   top: 0;
   opacity: 0;
-  background-image: url(https://23543895.fs1.hubspotusercontent-na1.net/hubfs/23543895/RampXchange/images/formCheck.png);
+  background-image: url(https://47484996.fs1.hubspotusercontent-na1.net/hubfs/47484996/RampXchange-u4m/images/formCheck.png);
   background-repeat: no-repeat;
   background-position: center;
 }
@@ -4210,7 +4214,7 @@ form.hs-form .input select, form.mixitup-multifilter .input select, form .input 
   color: #6e757c;
   line-height: 1;
   padding: 16.5rem 12rem;
-  background-image: url(https://23543895.fs1.hubspotusercontent-na1.net/hubfs/23543895/RampXchange/images/selectArrow.png);
+  background-image: url(https://47484996.fs1.hubspotusercontent-na1.net/hubfs/47484996/RampXchange-u4m/images/selectArrow.png);
   background-repeat: no-repeat;
   background-size: 12rem 7rem;
   margin-bottom: 0;
@@ -4596,6 +4600,10 @@ ol li {
   list-style: inherit;
 }
 
+iframe {
+  border: none;
+}
+
 section.u4m-404-error,
 section.u4m-500-error {
   float: none;
@@ -4697,6 +4705,11 @@ section.u4m-backup-unsubscribe form div.legal-consent-container .hs-form-boolean
   section.u4m-backup-unsubscribe form div.legal-consent-container .hs-form-booleancheckbox label {
     font-size: 12rem;
   }
+}
+section.u4m-backup-unsubscribe form .legal-consent-container {
+  margin-bottom: 20px;
+  font-size: 11rem;
+  color: #6e757c;
 }
 section.u4m-backup-unsubscribe form.hs-form fieldset, section.u4m-backup-unsubscribe form.mixitup-multifilter fieldset, section.u4m-backup-unsubscribe form fieldset {
   max-width: none;
@@ -4840,7 +4853,7 @@ section.u4m-backup-unsubscribe form.hs-form .input ul.inputs-list > li label > s
   left: 0;
   top: 0;
   opacity: 0;
-  background-image: url(https://23543895.fs1.hubspotusercontent-na1.net/hubfs/23543895/RampXchange/images/formCheck.png);
+  background-image: url(https://47484996.fs1.hubspotusercontent-na1.net/hubfs/47484996/RampXchange-u4m/images/formCheck.png);
   background-repeat: no-repeat;
   background-position: center;
 }
@@ -4919,7 +4932,7 @@ section.u4m-backup-unsubscribe form.hs-form .input select, section.u4m-backup-un
   color: #6e757c;
   line-height: 1;
   padding: 16.5rem 12rem;
-  background-image: url(https://23543895.fs1.hubspotusercontent-na1.net/hubfs/23543895/RampXchange/images/selectArrow.png);
+  background-image: url(https://47484996.fs1.hubspotusercontent-na1.net/hubfs/47484996/RampXchange-u4m/images/selectArrow.png);
   background-repeat: no-repeat;
   background-size: 12rem 7rem;
   margin-bottom: 0;
@@ -5409,6 +5422,15 @@ section.u4m-password-prompt form div.legal-consent-container .hs-form-booleanche
   section.u4m-password-prompt form div.legal-consent-container .hs-form-booleancheckbox label {
     font-size: 12rem;
   }
+}
+section.u4m-membership-login form .legal-consent-container,
+section.u4m-membership-register form .legal-consent-container,
+section.u4m-membership-reset-password-request form .legal-consent-container,
+section.u4m-membership-reset-password form .legal-consent-container,
+section.u4m-password-prompt form .legal-consent-container {
+  margin-bottom: 20px;
+  font-size: 11rem;
+  color: #6e757c;
 }
 section.u4m-membership-login form.hs-form fieldset, section.u4m-membership-login form.mixitup-multifilter fieldset, section.u4m-membership-login form fieldset,
 section.u4m-membership-register form.hs-form fieldset,
@@ -5960,7 +5982,7 @@ section.u4m-password-prompt form .input ul.inputs-list > li label > span:after {
   left: 0;
   top: 0;
   opacity: 0;
-  background-image: url(https://23543895.fs1.hubspotusercontent-na1.net/hubfs/23543895/RampXchange/images/formCheck.png);
+  background-image: url(https://47484996.fs1.hubspotusercontent-na1.net/hubfs/47484996/RampXchange-u4m/images/formCheck.png);
   background-repeat: no-repeat;
   background-position: center;
 }
@@ -6243,7 +6265,7 @@ section.u4m-password-prompt form .input select {
   color: #6e757c;
   line-height: 1;
   padding: 16.5rem 12rem;
-  background-image: url(https://23543895.fs1.hubspotusercontent-na1.net/hubfs/23543895/RampXchange/images/selectArrow.png);
+  background-image: url(https://47484996.fs1.hubspotusercontent-na1.net/hubfs/47484996/RampXchange-u4m/images/selectArrow.png);
   background-repeat: no-repeat;
   background-size: 12rem 7rem;
   margin-bottom: 0;
@@ -7803,6 +7825,11 @@ section.u4m-subscription-preferences form div.legal-consent-container .hs-form-b
     font-size: 12rem;
   }
 }
+section.u4m-subscription-preferences form .legal-consent-container {
+  margin-bottom: 20px;
+  font-size: 11rem;
+  color: #6e757c;
+}
 section.u4m-subscription-preferences form.hs-form fieldset, section.u4m-subscription-preferences form.mixitup-multifilter fieldset, section.u4m-subscription-preferences form fieldset {
   max-width: none;
 }
@@ -7945,7 +7972,7 @@ section.u4m-subscription-preferences form.hs-form .input ul.inputs-list > li lab
   left: 0;
   top: 0;
   opacity: 0;
-  background-image: url(https://23543895.fs1.hubspotusercontent-na1.net/hubfs/23543895/RampXchange/images/formCheck.png);
+  background-image: url(https://47484996.fs1.hubspotusercontent-na1.net/hubfs/47484996/RampXchange-u4m/images/formCheck.png);
   background-repeat: no-repeat;
   background-position: center;
 }
@@ -8024,7 +8051,7 @@ section.u4m-subscription-preferences form.hs-form .input select, section.u4m-sub
   color: #6e757c;
   line-height: 1;
   padding: 16.5rem 12rem;
-  background-image: url(https://23543895.fs1.hubspotusercontent-na1.net/hubfs/23543895/RampXchange/images/selectArrow.png);
+  background-image: url(https://47484996.fs1.hubspotusercontent-na1.net/hubfs/47484996/RampXchange-u4m/images/selectArrow.png);
   background-repeat: no-repeat;
   background-size: 12rem 7rem;
   margin-bottom: 0;
@@ -8411,6 +8438,17 @@ section.u4m-subscriptions-confirmation div.success {
   font-weight: bold;
 }
 
+.hs-search-results__pagination {
+  gap: 5px;
+  flex-wrap: wrap;
+}
+.hs-search-results__pagination a {
+  display: inline-flex;
+  padding: 3px 5px;
+  align-items: center;
+  justify-content: center;
+}
+
 section.u4m-drag-and-drop-area {
   float: none;
   margin-left: auto;
@@ -8463,6 +8501,11 @@ section.u4m-drag-and-drop-area form div.legal-consent-container .hs-form-boolean
   section.u4m-drag-and-drop-area form div.legal-consent-container .hs-form-booleancheckbox label {
     font-size: 12rem;
   }
+}
+section.u4m-drag-and-drop-area form .legal-consent-container {
+  margin-bottom: 20px;
+  font-size: 11rem;
+  color: #6e757c;
 }
 section.u4m-drag-and-drop-area form.hs-form fieldset, section.u4m-drag-and-drop-area form.mixitup-multifilter fieldset, section.u4m-drag-and-drop-area form fieldset {
   max-width: none;
@@ -8606,7 +8649,7 @@ section.u4m-drag-and-drop-area form.hs-form .input ul.inputs-list > li label > s
   left: 0;
   top: 0;
   opacity: 0;
-  background-image: url(https://23543895.fs1.hubspotusercontent-na1.net/hubfs/23543895/RampXchange/images/formCheck.png);
+  background-image: url(https://47484996.fs1.hubspotusercontent-na1.net/hubfs/47484996/RampXchange-u4m/images/formCheck.png);
   background-repeat: no-repeat;
   background-position: center;
 }
@@ -8685,7 +8728,7 @@ section.u4m-drag-and-drop-area form.hs-form .input select, section.u4m-drag-and-
   color: #6e757c;
   line-height: 1;
   padding: 16.5rem 12rem;
-  background-image: url(https://23543895.fs1.hubspotusercontent-na1.net/hubfs/23543895/RampXchange/images/selectArrow.png);
+  background-image: url(https://47484996.fs1.hubspotusercontent-na1.net/hubfs/47484996/RampXchange-u4m/images/selectArrow.png);
   background-repeat: no-repeat;
   background-size: 12rem 7rem;
   margin-bottom: 0;
@@ -9578,6 +9621,11 @@ section.u4m-blog-post div.comments div.content form div.legal-consent-container 
     font-size: 12rem;
   }
 }
+section.u4m-blog-post div.comments div.content form .legal-consent-container {
+  margin-bottom: 20px;
+  font-size: 11rem;
+  color: #6e757c;
+}
 section.u4m-blog-post div.comments div.content form.hs-form fieldset, section.u4m-blog-post div.comments div.content form.mixitup-multifilter fieldset, section.u4m-blog-post div.comments div.content form fieldset {
   max-width: none;
 }
@@ -9720,7 +9768,7 @@ section.u4m-blog-post div.comments div.content form.hs-form .input ul.inputs-lis
   left: 0;
   top: 0;
   opacity: 0;
-  background-image: url(https://23543895.fs1.hubspotusercontent-na1.net/hubfs/23543895/RampXchange/images/formCheck.png);
+  background-image: url(https://47484996.fs1.hubspotusercontent-na1.net/hubfs/47484996/RampXchange-u4m/images/formCheck.png);
   background-repeat: no-repeat;
   background-position: center;
 }
@@ -9799,7 +9847,7 @@ section.u4m-blog-post div.comments div.content form.hs-form .input select, secti
   color: #6e757c;
   line-height: 1;
   padding: 16.5rem 12rem;
-  background-image: url(https://23543895.fs1.hubspotusercontent-na1.net/hubfs/23543895/RampXchange/images/selectArrow.png);
+  background-image: url(https://47484996.fs1.hubspotusercontent-na1.net/hubfs/47484996/RampXchange-u4m/images/selectArrow.png);
   background-repeat: no-repeat;
   background-size: 12rem 7rem;
   margin-bottom: 0;
@@ -10631,9 +10679,9 @@ section.u4m-blog-post div.comments div.content form .hs-button:hover, section.u4
 .header-wrapper .main-header .row-fluid .site_menu .hs-menu-wrapper ul li:last-child {
   padding-right: 0;
 }
-.header-wrapper .main-header .row-fluid .site_menu .hs-menu-wrapper ul li.hs-item-has-children a:after {
+.header-wrapper .main-header .row-fluid .site_menu .hs-menu-wrapper ul li.hs-item-has-children > a:after {
   content: "";
-  background-image: url("https://23543895.fs1.hubspotusercontent-na1.net/hubfs/23543895/RampXchange/images/nav-arrow.svg");
+  background-image: url("https://47484996.fs1.hubspotusercontent-na1.net/hubfs/47484996/RampXchange-u4m/images/nav-arrow.svg");
   width: 12px;
   display: inline-block;
   background-position: center;
@@ -10644,7 +10692,7 @@ section.u4m-blog-post div.comments div.content form .hs-button:hover, section.u4
   vertical-align: middle;
 }
 @media (max-width: 767px) {
-  .header-wrapper .main-header .row-fluid .site_menu .hs-menu-wrapper ul li.hs-item-has-children a:after {
+  .header-wrapper .main-header .row-fluid .site_menu .hs-menu-wrapper ul li.hs-item-has-children > a:after {
     display: none;
   }
 }
@@ -10682,7 +10730,7 @@ section.u4m-blog-post div.comments div.content form .hs-button:hover, section.u4
 }
 .header-wrapper .main-header .row-fluid .site_menu .hs-menu-wrapper ul li ul.hs-menu-children-wrapper {
   top: 100%;
-  background-color: #213944;
+  background-color: #f7f8f6;
   padding: 15px;
   opacity: 0;
   visibility: hidden;
@@ -10714,7 +10762,6 @@ section.u4m-blog-post div.comments div.content form .hs-button:hover, section.u4
   }
 }
 .header-wrapper .main-header .row-fluid .site_menu .hs-menu-wrapper ul li ul.hs-menu-children-wrapper li a {
-  color: #ffffff;
   padding: 10px 0;
 }
 @media (max-width: 767px) {

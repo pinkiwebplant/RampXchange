@@ -109,6 +109,9 @@
 							color: currentColor;
 						}
 					}
+					img{
+						border-radius: $borderRadius;
+					}
 				}
 				.icon.small {
 					svg {

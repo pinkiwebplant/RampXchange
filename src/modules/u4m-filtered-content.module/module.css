@@ -197,9 +197,6 @@ section.u4m-filtered-content .topSec .flex_row .featCardsOuter .cardItems .cardI
     padding-bottom: 56.66%;
   }
 }
-section.u4m-filtered-content .topSec .flex_row .featCardsOuter .cardItems .cardItem .itemInr .itemCnWrap .itemCntSec .itemTags {
-  margin-bottom: 32px;
-}
 section.u4m-filtered-content .topSec .flex_row .featCardsOuter .cardItems .cardItem .itemInr .itemCnWrap .itemCntSec .itemTitle {
   margin-bottom: 8px;
 }
@@ -345,9 +342,6 @@ section.u4m-filtered-content .featCardsListWrap .cardSctn .cardItems .cardItem .
 section.u4m-filtered-content .featCardsListWrap .cardSctn .cardItems .cardItem .itemInr .itemCnWrap .intro_btn_wrap {
   margin: auto 0 0;
   justify-content: start;
-}
-section.u4m-filtered-content .featCardsListWrap .cardSctn .cardItems .cardItem .itemInr .itemCnWrap .itemCntSec .itemTags {
-  margin-bottom: 32px;
 }
 section.u4m-filtered-content .featCardsListWrap .cardSctn .cardItems .statusCnt {
   width: 100%;

@@ -70,18 +70,5 @@
     }
     .CardWrap {
         @include cardItem;
-        .cardItems {
-            .cardItem {
-                .itemInr {
-                    .itemCnWrap {
-                        .itemCntSec {
-                            .itemTags {
-                                margin-bottom: 32px;
-                            }
-                        }
-                    }
-                }
-            }
-        }
     }
 }

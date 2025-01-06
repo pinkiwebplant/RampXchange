@@ -166,8 +166,8 @@
 <!-- Hubdb cards -->
 
 
-{% macro hubDBcards(item,moduleSetting) %}
-{% if item %}
+{% macro hubDBcards(row,moduleSetting) %}
+{% if row %}
 <div class="cmCol3 cardItem">
 	<div class="itemInr {{ moduleSetting.select_card_theme }} {% if moduleSetting.reverse_text %}cardColor{% endif %}">
 		{% if row.image.url %}
@@ -177,9 +177,26 @@
 		{% endif %}
 		<div class="itemCnWrap">
 			<div class="itemCntSec">
-				{% if row.topic.name %}
+				{# {% if row.topic.name %}
 				<div class="itemTags">{{ row.topic.name|capitalize }}</div>
-				{% endif %}
+				{% endif %} #}
+			<div class="itemTags">{% for tag in row.topic %}{{ tag.name|capitalize }} {% if not loop.last %}<span class="dots"></span>{% endif %} {% endfor %}</div>
+            <div class="itemMeta">
+          <span class="reading-minutes">
+
+            {% set initialPostWords = row.description|striptags|wordcount %}
+              {% set calculatedPostWords = initialPostWords / 100 %}
+              {% set finishedPostWords = calculatedPostWords|divide(300)|round(2) %}
+              {% set number = finishedPostWords|round %}
+              {% if number < 1 %}
+              Less than one min
+              {% else %}
+              {{ finishedPostWords|round }} minute read
+              {% endif %}
+          </span>
+           | <span class="itemDate">{{ row.date|datetimeformat('%B %e, %Y') }}</span>
+        </div>
+
 				{% if row.name %}
 				<div class="itemTitle">
 					<h4 class="restitle">

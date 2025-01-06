@@ -101,14 +101,16 @@ html {
   margin: 0;
 }
 .u4m-cta-row .row .media_section {
-  border-radius: 12px;
-  overflow: hidden;
   width: calc(50% - 30px);
 }
 @media (max-width: 767px) {
   .u4m-cta-row .row .media_section {
     width: 100%;
   }
+}
+.u4m-cta-row .row .media_section img {
+  border-radius: 12rem;
+  filter: drop-shadow(0px 8px 16px rgba(0, 0, 0, 0.25));
 }
 .u4m-cta-row .row .media_section .vid_section {
   min-height: 390px;

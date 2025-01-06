@@ -445,7 +445,7 @@
     "locked" : false,
     "display" : "checkbox",
     "type" : "boolean",
-    "default" : false
+    "default" : true
   }, {
     "id" : "module_overrides.section_id",
     "name" : "section_id",
@@ -866,7 +866,7 @@
       "reordering_enabled" : true,
       "preset" : null,
       "type" : "choice",
-      "default" : "theme"
+      "default" : "custom"
     }, {
       "id" : "b9865f26-0901-d5ad-66a2-7c6ecacec658",
       "name" : "custom_size",
@@ -888,15 +888,15 @@
       "step" : 1,
       "suffix" : "px",
       "type" : "number",
-      "default" : 1296
+      "default" : 1040
     } ],
     "tab" : "CONTENT",
     "expanded" : false,
     "group_occurrence_meta" : null,
     "type" : "group",
     "default" : {
-      "size" : "theme",
-      "custom_size" : 1296
+      "size" : "custom",
+      "custom_size" : 1040
     }
   } ],
   "tab" : "CONTENT",
@@ -904,7 +904,7 @@
   "group_occurrence_meta" : null,
   "type" : "group",
   "default" : {
-    "enable_overrides" : false,
+    "enable_overrides" : true,
     "top_margin" : "top-margin-none",
     "custom_top_margin" : 100,
     "custom_top_margin_mobile" : 50,
@@ -930,8 +930,8 @@
       "select_gradient" : "gradient5"
     },
     "container" : {
-      "size" : "theme",
-      "custom_size" : 1296
+      "size" : "custom",
+      "custom_size" : 1040
     }
   }
 } ]
