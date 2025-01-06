@@ -45,7 +45,7 @@
             display: flex;
             justify-content: flex-end;
             gap: 20px;
-            z-index: 221;
+            z-index: 99;
             right: 0;
             @include tablet {
               top: auto;

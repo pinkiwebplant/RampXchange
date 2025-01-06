@@ -75,9 +75,9 @@ section.u4m-filtered-content {
               }
               .itemCnWrap {
                 .itemCntSec {
-                  .itemTags {
-                    margin-bottom: 32px;
-                  }
+                  // .itemTags {
+                  //   margin-bottom: 32px;
+                  // }
                   .itemTitle {
                     margin-bottom: 8px;
                   }
@@ -124,17 +124,17 @@ section.u4m-filtered-content {
       margin-bottom: 60px;
       @include cardItem;
       .cardItems {
-        .cardItem {
-          .itemInr {
-            .itemCnWrap {
-              .itemCntSec {
-                .itemTags {
-                  margin-bottom: 32px;
-                }
-              }
-            }
-          }
-        }
+        // .cardItem {
+        //   .itemInr {
+        //     .itemCnWrap {
+        //       .itemCntSec {
+        //         .itemTags {
+        //           margin-bottom: 32px;
+        //         }
+        //       }
+        //     }
+        //   }
+        // }
         .statusCnt {
           width: 100%;
           text-align: center;

@@ -161,7 +161,7 @@
                 padding-right: 0;
               }
               &.hs-item-has-children {
-                a {
+                > a {
                   &:after {
                     content: "";
                     background-image: url("https://47484996.fs1.hubspotusercontent-na1.net/hubfs/47484996/RampXchange-u4m/images/nav-arrow.svg");
@@ -209,7 +209,7 @@
               }
               ul.hs-menu-children-wrapper {
                 top: 100%;
-                background-color: $heading;
+                background-color: $airwhite;
                 padding: 15px;
                 opacity: 0;
                 visibility: hidden;
@@ -235,7 +235,6 @@
                     margin-bottom: 0;
                   }
                   a {
-                    color: $white;
                     padding: 10px 0;
                     @include tabletvert {
                       color: $heading;

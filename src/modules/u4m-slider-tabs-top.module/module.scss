@@ -69,6 +69,7 @@
               text-decoration: none;
               color: $heading;
               display: inline-block;
+              font-weight: 500;
               @include navbreak {
                 @include size14;
               }

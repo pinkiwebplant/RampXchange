@@ -108,6 +108,11 @@ html {
   gap: 8px;
   color: #213944;
 }
+.u4m-pricing-cards .btms .items .innerCntt .features .features_items svg {
+  width: 24px;
+  height: 24px;
+  flex-shrink: 0;
+}
 .u4m-pricing-cards .btms .items .innerCntt.card_reverse_text .cntt > * {
   color: #ffffff;
 }
