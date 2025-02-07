@@ -5,12 +5,14 @@
   color: $white;
   background-color: $action1;
   border: 1px solid $action1;
-  border-radius: $border1;
+  border-radius: $borderRadius;
   padding: 11rem 24rem;
+  padding: 15rem 24rem;
   margin: 0;
   transition: $animation1;
   font-weight: 600;
   font-size: 16rem;
+  line-height: 1.5;
   line-height: 1;
   text-decoration: none;
   cursor: pointer;

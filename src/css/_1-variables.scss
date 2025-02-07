@@ -14,31 +14,58 @@ $gray3: #eeeeee;
 $gradientbg3: #f7f8f6;
 $lightGrayishBlue: #b0b7ba;
 
-$gradient1: linear-gradient(278.27deg, $statblue 0%, $heading 100%);
-$gradient2: linear-gradient(278.27deg, $gray3 0%, $gray1 100%);
-$gradient3: linear-gradient(
+$lightBronze: #f5f0e7;
+
+//
+
+$rampGreen: #007c43;
+// $statBlue: #213944;
+// $digitalGreen: #b5dda5;
+
+$cyberGray: #dbdbdb;
+$changeGray: #6e757c;
+// $bronze: #c49e5b;
+// $airWhite: #f7f8f6;
+
+$colornew1: #ddecd6;
+$colornew2: #f7f8f6;
+
+//
+
+$gradient1: linear-gradient(278.27deg, $gray3 0%, $gray1 100%);
+$gradient2: linear-gradient(
   360deg,
   rgba($action1, 0.07) 0.01%,
   rgba($digitalgreen, 0.07) 99.97%
 );
-$gradient4: linear-gradient(341.11deg, $statblue 12.77%, $heading 87.28%);
+$gradient3: linear-gradient(90.16deg, $white 0.14%, $lightBronze 99.86%);
+
+$gradient4: linear-gradient(360deg, $colornew1 0.01%, $colornew2 99.97%);
+
+// $gradient3: linear-gradient(278.27deg, $statblue 0%, $heading 100%);
+// $gradient4: linear-gradient(341.11deg, $statblue 12.77%, $heading 87.28%);
 $gradient5: linear-gradient(180deg, $statblue 0%, $heading 100%);
 
-$font1: "Inter";
-$baseFontSize: 16rem;
-$baseLineHeight: 1.3; // Golden ratio
+//
+
+$font1: "Aktive Grotesk, Arial, sans serif";
+$baseFontSize: 15rem;
+$baseLineHeight: 1.5; // Golden ratio
 // Border Radius
 $border1: 12rem;
 $border2: 5rem;
 $border3: 10rem;
-$borderRadius: 12rem;
+
+$borderRadius: 4rem;
 // Shadow
 $shadow1: 0rem 1rem 12rem 0 rgba($black, 0.1);
 $shadow2: 0 5rem 25rem 0 rgba($black, 0.2);
 $shadow3: 0 10rem 50rem 0 rgba($black, 0.3);
 $textShadow1: 0 0 4rem rgba($black, 0.3);
 
-$dropshadow: drop-shadow(0px 8px 16px rgba($black, 0.25));
+// $dropshadow: drop-shadow(0px 8px 16px rgba($black, 0.25));
+$dropshadow: 0px 0px 20px rgba($black, 0.15);
+
 // Animation
 $animation1: 0.1s ease-in;
 $animation2: 0.25s ease-in;

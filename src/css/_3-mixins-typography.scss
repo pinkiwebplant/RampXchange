@@ -152,11 +152,12 @@
 }
 @mixin eyebrow {
   font-family: $font1;
-  font-size: 14rem;
-  font-weight: 500;
+  font-size: 16rem;
+  font-weight: 600;
   line-height: 1;
   display: block;
   margin-bottom: 10rem;
+  color: $rampGreen;
 }
 @mixin caption {
   font-family: $font1;
