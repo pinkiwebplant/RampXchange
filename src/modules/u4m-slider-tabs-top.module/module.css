@@ -205,12 +205,12 @@ html {
 .u4m-slider-tabs-top .slider-tabs-top-wrapper .row .tabber_tab_content .tabber_cntnt .right_section .media_sec {
   padding-bottom: 56%;
   position: relative;
-  border-radius: 12rem;
+  border-radius: 4rem;
   overflow: hidden;
 }
 .u4m-slider-tabs-top .slider-tabs-top-wrapper .row .tabber_tab_content .tabber_cntnt .right_section .media_sec .img_section {
   overflow: hidden;
-  border-radius: 12rem;
+  border-radius: 4rem;
 }
 @media (max-width: 767px) {
   .u4m-slider-tabs-top .slider-tabs-top-wrapper .row .tabber_tab_content .tabber_cntnt .right_section .media_sec {

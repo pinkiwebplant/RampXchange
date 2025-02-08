@@ -60,7 +60,7 @@ html {
   text-align: center;
 }
 .u4m-animated-stats .statistics-items .animated-stats-item .stats-item .stats-item-inn .number {
-  font-family: "Inter";
+  font-family: "Aktive Grotesk, Arial, sans serif";
   font-size: 40rem;
   font-weight: 600;
   margin-bottom: 30rem;
@@ -89,7 +89,7 @@ html {
 }
 .u4m-animated-stats .statistics-items .animated-stats-item .stats-item .stats-item-inn .number .prefix,
 .u4m-animated-stats .statistics-items .animated-stats-item .stats-item .stats-item-inn .number .suffix {
-  font-family: "Inter";
+  font-family: "Aktive Grotesk, Arial, sans serif";
   font-size: 19rem;
   font-weight: 600;
   margin-bottom: 30rem;
@@ -126,7 +126,7 @@ html {
   }
 }
 .u4m-animated-stats .statistics-items .animated-stats-item .stats-item .stats-item-inn .caption {
-  font-family: "Inter";
+  font-family: "Aktive Grotesk, Arial, sans serif";
   font-size: 19rem;
   font-weight: 600;
   margin-bottom: 30rem;

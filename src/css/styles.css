@@ -2968,9 +2968,9 @@ html {
 
 /* make html visible after Firefox flash in hack */
 body {
-  font-family: "Inter";
-  font-size: 16rem;
-  line-height: 1.3;
+  font-family: "Aktive Grotesk, Arial, sans serif";
+  font-size: 15rem;
+  line-height: 1.5;
   color: #213944;
   font-weight: normal;
   -webkit-font-smoothing: antialiased;
@@ -2995,7 +2995,7 @@ h6 {
 }
 
 h1 {
-  font-family: "Inter";
+  font-family: "Aktive Grotesk, Arial, sans serif";
   font-size: 48rem;
   font-weight: 600;
   margin-bottom: 30rem;
@@ -3015,7 +3015,7 @@ h1 {
 }
 
 h2 {
-  font-family: "Inter";
+  font-family: "Aktive Grotesk, Arial, sans serif";
   font-size: 40rem;
   font-weight: 600;
   margin-bottom: 30rem;
@@ -3034,7 +3034,7 @@ h2 {
 }
 
 h3 {
-  font-family: "Inter";
+  font-family: "Aktive Grotesk, Arial, sans serif";
   font-size: 33rem;
   font-weight: 600;
   margin-bottom: 30rem;
@@ -3053,7 +3053,7 @@ h3 {
 }
 
 h4 {
-  font-family: "Inter";
+  font-family: "Aktive Grotesk, Arial, sans serif";
   font-size: 28rem;
   font-weight: 600;
   margin-bottom: 30rem;
@@ -3072,7 +3072,7 @@ h4 {
 }
 
 h5 {
-  font-family: "Inter";
+  font-family: "Aktive Grotesk, Arial, sans serif";
   font-size: 23rem;
   font-weight: 600;
   margin-bottom: 30rem;
@@ -3091,7 +3091,7 @@ h5 {
 }
 
 h6 {
-  font-family: "Inter";
+  font-family: "Aktive Grotesk, Arial, sans serif";
   font-size: 19rem;
   font-weight: 600;
   margin-bottom: 30rem;
@@ -3335,9 +3335,9 @@ div#hs-eu-cookie-confirmation.hs-cookie-notification-position-bottom.can-use-gra
   max-width: 1240rem;
 }
 div#hs-eu-cookie-confirmation.hs-cookie-notification-position-bottom.can-use-gradients div#hs-eu-cookie-confirmation-inner p {
-  font-family: "Inter";
+  font-family: "Aktive Grotesk, Arial, sans serif";
   font-size: 14rem;
-  line-height: 1.3;
+  line-height: 1.5;
   margin-bottom: 20rem;
   margin-bottom: 0;
 }
@@ -3352,16 +3352,18 @@ div#hs-eu-cookie-confirmation.hs-cookie-notification-position-bottom.can-use-gra
 }
 div#hs-eu-cookie-confirmation.hs-cookie-notification-position-bottom.can-use-gradients div#hs-eu-cookie-confirmation-inner div#hs-en-cookie-confirmation-buttons-area a#hs-eu-confirmation-button {
   display: inline-block;
-  font-family: "Inter";
+  font-family: "Aktive Grotesk, Arial, sans serif";
   color: #ffffff;
   background-color: #007c43;
   border: 1px solid #007c43;
-  border-radius: 12rem;
+  border-radius: 4rem;
   padding: 11rem 24rem;
+  padding: 15rem 24rem;
   margin: 0;
   transition: 0.1s ease-in;
   font-weight: 600;
   font-size: 16rem;
+  line-height: 1.5;
   line-height: 1;
   text-decoration: none;
   cursor: pointer;
@@ -3381,9 +3383,9 @@ div#hs-eu-cookie-confirmation.hs-cookie-notification-position-bottom.can-use-gra
 }
 
 p {
-  font-family: "Inter";
+  font-family: "Aktive Grotesk, Arial, sans serif";
   font-size: 16rem;
-  line-height: 1.3;
+  line-height: 1.5;
   margin-bottom: 20rem;
 }
 
@@ -3400,10 +3402,10 @@ a:hover {
 
 blockquote,
 blockquote p {
-  font-family: "Inter";
+  font-family: "Aktive Grotesk, Arial, sans serif";
   font-size: 30rem;
   font-weight: bold;
-  line-height: 1.3;
+  line-height: 1.5;
   letter-spacing: 1rem;
   margin: 50rem auto;
   color: #007c43;
@@ -3426,9 +3428,9 @@ strong {
 }
 
 ul {
-  font-family: "Inter";
+  font-family: "Aktive Grotesk, Arial, sans serif";
   font-size: 16rem;
-  line-height: 1.3;
+  line-height: 1.5;
   margin-bottom: 20rem;
   list-style: disc;
   padding-left: 34rem;
@@ -3437,9 +3439,9 @@ ul {
 }
 
 ol {
-  font-family: "Inter";
+  font-family: "Aktive Grotesk, Arial, sans serif";
   font-size: 16rem;
-  line-height: 1.3;
+  line-height: 1.5;
   margin-bottom: 20rem;
   list-style: decimal;
   padding-left: 40rem;
@@ -3498,11 +3500,11 @@ ol ul {
 }
 
 input {
-  font-family: "Inter";
+  font-family: "Aktive Grotesk, Arial, sans serif";
 }
 
 button {
-  font-family: "Inter";
+  font-family: "Aktive Grotesk, Arial, sans serif";
   cursor: pointer;
 }
 
@@ -3656,16 +3658,18 @@ section[class*=u4m-] {
 
 .hs-button {
   display: inline-block;
-  font-family: "Inter";
+  font-family: "Aktive Grotesk, Arial, sans serif";
   color: #ffffff;
   background-color: #007c43;
   border: 1px solid #007c43;
-  border-radius: 12rem;
+  border-radius: 4rem;
   padding: 11rem 24rem;
+  padding: 15rem 24rem;
   margin: 0;
   transition: 0.1s ease-in;
   font-weight: 600;
   font-size: 16rem;
+  line-height: 1.5;
   line-height: 1;
   text-decoration: none;
   cursor: pointer;
@@ -3678,16 +3682,18 @@ section[class*=u4m-] {
 
 .sec-btn {
   display: inline-block;
-  font-family: "Inter";
+  font-family: "Aktive Grotesk, Arial, sans serif";
   color: #ffffff;
   background-color: #007c43;
   border: 1px solid #007c43;
-  border-radius: 12rem;
+  border-radius: 4rem;
   padding: 11rem 24rem;
+  padding: 15rem 24rem;
   margin: 0;
   transition: 0.1s ease-in;
   font-weight: 600;
   font-size: 16rem;
+  line-height: 1.5;
   line-height: 1;
   text-decoration: none;
   cursor: pointer;
@@ -3726,12 +3732,13 @@ section[class*=u4m-] {
   padding: 0 20px;
 }
 .intro_content .eyebrow_text {
-  font-family: "Inter";
-  font-size: 14rem;
-  font-weight: 500;
+  font-family: "Aktive Grotesk, Arial, sans serif";
+  font-size: 16rem;
+  font-weight: 600;
   line-height: 1;
   display: block;
   margin-bottom: 10rem;
+  color: #007c43;
   margin-bottom: 8rem;
 }
 .intro_content .intro_title {
@@ -3921,19 +3928,19 @@ section[class*=u4m-] {
 }
 
 .gradient1 {
-  background-image: linear-gradient(278.27deg, #315363 0%, #213944 100%);
-}
-
-.gradient2 {
   background-image: linear-gradient(278.27deg, #eeeeee 0%, #dbdbdb 100%);
 }
 
-.gradient3 {
+.gradient2 {
   background-image: linear-gradient(360deg, rgba(0, 124, 67, 0.07) 0.01%, rgba(181, 221, 165, 0.07) 99.97%);
 }
 
+.gradient3 {
+  background-image: linear-gradient(90.16deg, #ffffff 0.14%, #f5f0e7 99.86%);
+}
+
 .gradient4 {
-  background-image: linear-gradient(341.11deg, #315363 12.77%, #213944 87.28%);
+  background-image: linear-gradient(360deg, #ddecd6 0.01%, #f7f8f6 99.97%);
 }
 
 .gradient5 {
@@ -3958,7 +3965,7 @@ form {
   }
 }
 form h3 {
-  font-family: "Inter";
+  font-family: "Aktive Grotesk, Arial, sans serif";
   font-size: 19rem;
   font-weight: 600;
   margin-bottom: 30rem;
@@ -3977,9 +3984,9 @@ form h3 {
 }
 form div.legal-consent-container p,
 form div.legal-consent-container .hs-form-booleancheckbox label {
-  font-family: "Inter";
+  font-family: "Aktive Grotesk, Arial, sans serif";
   font-size: 11rem;
-  line-height: 1.3;
+  line-height: 1.5;
   margin-bottom: 10rem;
 }
 @media (max-width: 580px) {
@@ -4198,7 +4205,7 @@ form.hs-form .input input select:focus, form.mixitup-multifilter .input input se
 }
 form.hs-form .input input[type=file], form.mixitup-multifilter .input input[type=file], form .input input[type=file] {
   font-size: 16rem;
-  font-family: "Inter";
+  font-family: "Aktive Grotesk, Arial, sans serif";
   background-color: transparent;
   position: relative;
   font-weight: bold;
@@ -4263,7 +4270,7 @@ form.hs-form .input + .hs-error-msgs li:before, form.mixitup-multifilter .input 
 }
 form.hs-form .input + .hs-error-msgs li label, form.mixitup-multifilter .input + .hs-error-msgs li label, form .input + .hs-error-msgs li label {
   font-size: 12rem;
-  font-family: "Inter";
+  font-family: "Aktive Grotesk, Arial, sans serif";
   text-transform: uppercase;
   letter-spacing: 1rem;
   display: inline-block;
@@ -4552,16 +4559,18 @@ form.hs-form fieldset.form-columns-1 .hs-input, form.mixitup-multifilter fieldse
 }
 form.hs-form .hs-button, form.mixitup-multifilter .hs-button, form .hs-button {
   display: inline-block;
-  font-family: "Inter";
+  font-family: "Aktive Grotesk, Arial, sans serif";
   color: #ffffff;
   background-color: #007c43;
   border: 1px solid #007c43;
-  border-radius: 12rem;
+  border-radius: 4rem;
   padding: 11rem 24rem;
+  padding: 15rem 24rem;
   margin: 0;
   transition: 0.1s ease-in;
   font-weight: 600;
   font-size: 16rem;
+  line-height: 1.5;
   line-height: 1;
   text-decoration: none;
   cursor: pointer;
@@ -4617,9 +4626,9 @@ section.u4m-500-error {
 }
 section.u4m-404-error p,
 section.u4m-500-error p {
-  font-family: "Inter";
+  font-family: "Aktive Grotesk, Arial, sans serif";
   font-size: 22rem;
-  line-height: 1.3;
+  line-height: 1.5;
   margin-bottom: 20rem;
 }
 @media (max-width: 580px) {
@@ -4651,9 +4660,9 @@ section.u4m-backup-unsubscribe {
   }
 }
 section.u4m-backup-unsubscribe p {
-  font-family: "Inter";
+  font-family: "Aktive Grotesk, Arial, sans serif";
   font-size: 22rem;
-  line-height: 1.3;
+  line-height: 1.5;
   margin-bottom: 20rem;
 }
 @media (max-width: 580px) {
@@ -4676,7 +4685,7 @@ section.u4m-backup-unsubscribe form {
   }
 }
 section.u4m-backup-unsubscribe form h3 {
-  font-family: "Inter";
+  font-family: "Aktive Grotesk, Arial, sans serif";
   font-size: 19rem;
   font-weight: 600;
   margin-bottom: 30rem;
@@ -4695,9 +4704,9 @@ section.u4m-backup-unsubscribe form h3 {
 }
 section.u4m-backup-unsubscribe form div.legal-consent-container p,
 section.u4m-backup-unsubscribe form div.legal-consent-container .hs-form-booleancheckbox label {
-  font-family: "Inter";
+  font-family: "Aktive Grotesk, Arial, sans serif";
   font-size: 11rem;
-  line-height: 1.3;
+  line-height: 1.5;
   margin-bottom: 10rem;
 }
 @media (max-width: 580px) {
@@ -4916,7 +4925,7 @@ section.u4m-backup-unsubscribe form.hs-form .input input select:focus, section.u
 }
 section.u4m-backup-unsubscribe form.hs-form .input input[type=file], section.u4m-backup-unsubscribe form.mixitup-multifilter .input input[type=file], section.u4m-backup-unsubscribe form .input input[type=file] {
   font-size: 16rem;
-  font-family: "Inter";
+  font-family: "Aktive Grotesk, Arial, sans serif";
   background-color: transparent;
   position: relative;
   font-weight: bold;
@@ -4981,7 +4990,7 @@ section.u4m-backup-unsubscribe form.hs-form .input + .hs-error-msgs li:before, s
 }
 section.u4m-backup-unsubscribe form.hs-form .input + .hs-error-msgs li label, section.u4m-backup-unsubscribe form.mixitup-multifilter .input + .hs-error-msgs li label, section.u4m-backup-unsubscribe form .input + .hs-error-msgs li label {
   font-size: 12rem;
-  font-family: "Inter";
+  font-family: "Aktive Grotesk, Arial, sans serif";
   text-transform: uppercase;
   letter-spacing: 1rem;
   display: inline-block;
@@ -5270,16 +5279,18 @@ section.u4m-backup-unsubscribe form.hs-form fieldset.form-columns-1 .hs-input, s
 }
 section.u4m-backup-unsubscribe form.hs-form .hs-button, section.u4m-backup-unsubscribe form.mixitup-multifilter .hs-button, section.u4m-backup-unsubscribe form .hs-button {
   display: inline-block;
-  font-family: "Inter";
+  font-family: "Aktive Grotesk, Arial, sans serif";
   color: #ffffff;
   background-color: #007c43;
   border: 1px solid #007c43;
-  border-radius: 12rem;
+  border-radius: 4rem;
   padding: 11rem 24rem;
+  padding: 15rem 24rem;
   margin: 0;
   transition: 0.1s ease-in;
   font-weight: 600;
   font-size: 16rem;
+  line-height: 1.5;
   line-height: 1;
   text-decoration: none;
   cursor: pointer;
@@ -5369,7 +5380,7 @@ section.u4m-membership-register form h3,
 section.u4m-membership-reset-password-request form h3,
 section.u4m-membership-reset-password form h3,
 section.u4m-password-prompt form h3 {
-  font-family: "Inter";
+  font-family: "Aktive Grotesk, Arial, sans serif";
   font-size: 19rem;
   font-weight: 600;
   margin-bottom: 30rem;
@@ -5404,9 +5415,9 @@ section.u4m-membership-reset-password form div.legal-consent-container p,
 section.u4m-membership-reset-password form div.legal-consent-container .hs-form-booleancheckbox label,
 section.u4m-password-prompt form div.legal-consent-container p,
 section.u4m-password-prompt form div.legal-consent-container .hs-form-booleancheckbox label {
-  font-family: "Inter";
+  font-family: "Aktive Grotesk, Arial, sans serif";
   font-size: 11rem;
-  line-height: 1.3;
+  line-height: 1.5;
   margin-bottom: 10rem;
 }
 @media (max-width: 580px) {
@@ -6237,7 +6248,7 @@ section.u4m-password-prompt form.hs-form .input input[type=file],
 section.u4m-password-prompt form.mixitup-multifilter .input input[type=file],
 section.u4m-password-prompt form .input input[type=file] {
   font-size: 16rem;
-  font-family: "Inter";
+  font-family: "Aktive Grotesk, Arial, sans serif";
   background-color: transparent;
   position: relative;
   font-weight: bold;
@@ -6386,7 +6397,7 @@ section.u4m-password-prompt form.hs-form .input + .hs-error-msgs li label,
 section.u4m-password-prompt form.mixitup-multifilter .input + .hs-error-msgs li label,
 section.u4m-password-prompt form .input + .hs-error-msgs li label {
   font-size: 12rem;
-  font-family: "Inter";
+  font-family: "Aktive Grotesk, Arial, sans serif";
   text-transform: uppercase;
   letter-spacing: 1rem;
   display: inline-block;
@@ -7635,16 +7646,18 @@ section.u4m-password-prompt form.hs-form .hs-button,
 section.u4m-password-prompt form.mixitup-multifilter .hs-button,
 section.u4m-password-prompt form .hs-button {
   display: inline-block;
-  font-family: "Inter";
+  font-family: "Aktive Grotesk, Arial, sans serif";
   color: #ffffff;
   background-color: #007c43;
   border: 1px solid #007c43;
-  border-radius: 12rem;
+  border-radius: 4rem;
   padding: 11rem 24rem;
+  padding: 15rem 24rem;
   margin: 0;
   transition: 0.1s ease-in;
   font-weight: 600;
   font-size: 16rem;
+  line-height: 1.5;
   line-height: 1;
   text-decoration: none;
   cursor: pointer;
@@ -7795,7 +7808,7 @@ section.u4m-subscription-preferences form {
   }
 }
 section.u4m-subscription-preferences form h3 {
-  font-family: "Inter";
+  font-family: "Aktive Grotesk, Arial, sans serif";
   font-size: 19rem;
   font-weight: 600;
   margin-bottom: 30rem;
@@ -7814,9 +7827,9 @@ section.u4m-subscription-preferences form h3 {
 }
 section.u4m-subscription-preferences form div.legal-consent-container p,
 section.u4m-subscription-preferences form div.legal-consent-container .hs-form-booleancheckbox label {
-  font-family: "Inter";
+  font-family: "Aktive Grotesk, Arial, sans serif";
   font-size: 11rem;
-  line-height: 1.3;
+  line-height: 1.5;
   margin-bottom: 10rem;
 }
 @media (max-width: 580px) {
@@ -8035,7 +8048,7 @@ section.u4m-subscription-preferences form.hs-form .input input select:focus, sec
 }
 section.u4m-subscription-preferences form.hs-form .input input[type=file], section.u4m-subscription-preferences form.mixitup-multifilter .input input[type=file], section.u4m-subscription-preferences form .input input[type=file] {
   font-size: 16rem;
-  font-family: "Inter";
+  font-family: "Aktive Grotesk, Arial, sans serif";
   background-color: transparent;
   position: relative;
   font-weight: bold;
@@ -8100,7 +8113,7 @@ section.u4m-subscription-preferences form.hs-form .input + .hs-error-msgs li:bef
 }
 section.u4m-subscription-preferences form.hs-form .input + .hs-error-msgs li label, section.u4m-subscription-preferences form.mixitup-multifilter .input + .hs-error-msgs li label, section.u4m-subscription-preferences form .input + .hs-error-msgs li label {
   font-size: 12rem;
-  font-family: "Inter";
+  font-family: "Aktive Grotesk, Arial, sans serif";
   text-transform: uppercase;
   letter-spacing: 1rem;
   display: inline-block;
@@ -8389,16 +8402,18 @@ section.u4m-subscription-preferences form.hs-form fieldset.form-columns-1 .hs-in
 }
 section.u4m-subscription-preferences form.hs-form .hs-button, section.u4m-subscription-preferences form.mixitup-multifilter .hs-button, section.u4m-subscription-preferences form .hs-button {
   display: inline-block;
-  font-family: "Inter";
+  font-family: "Aktive Grotesk, Arial, sans serif";
   color: #ffffff;
   background-color: #007c43;
   border: 1px solid #007c43;
-  border-radius: 12rem;
+  border-radius: 4rem;
   padding: 11rem 24rem;
+  padding: 15rem 24rem;
   margin: 0;
   transition: 0.1s ease-in;
   font-weight: 600;
   font-size: 16rem;
+  line-height: 1.5;
   line-height: 1;
   text-decoration: none;
   cursor: pointer;
@@ -8472,7 +8487,7 @@ section.u4m-drag-and-drop-area form {
   }
 }
 section.u4m-drag-and-drop-area form h3 {
-  font-family: "Inter";
+  font-family: "Aktive Grotesk, Arial, sans serif";
   font-size: 19rem;
   font-weight: 600;
   margin-bottom: 30rem;
@@ -8491,9 +8506,9 @@ section.u4m-drag-and-drop-area form h3 {
 }
 section.u4m-drag-and-drop-area form div.legal-consent-container p,
 section.u4m-drag-and-drop-area form div.legal-consent-container .hs-form-booleancheckbox label {
-  font-family: "Inter";
+  font-family: "Aktive Grotesk, Arial, sans serif";
   font-size: 11rem;
-  line-height: 1.3;
+  line-height: 1.5;
   margin-bottom: 10rem;
 }
 @media (max-width: 580px) {
@@ -8712,7 +8727,7 @@ section.u4m-drag-and-drop-area form.hs-form .input input select:focus, section.u
 }
 section.u4m-drag-and-drop-area form.hs-form .input input[type=file], section.u4m-drag-and-drop-area form.mixitup-multifilter .input input[type=file], section.u4m-drag-and-drop-area form .input input[type=file] {
   font-size: 16rem;
-  font-family: "Inter";
+  font-family: "Aktive Grotesk, Arial, sans serif";
   background-color: transparent;
   position: relative;
   font-weight: bold;
@@ -8777,7 +8792,7 @@ section.u4m-drag-and-drop-area form.hs-form .input + .hs-error-msgs li:before, s
 }
 section.u4m-drag-and-drop-area form.hs-form .input + .hs-error-msgs li label, section.u4m-drag-and-drop-area form.mixitup-multifilter .input + .hs-error-msgs li label, section.u4m-drag-and-drop-area form .input + .hs-error-msgs li label {
   font-size: 12rem;
-  font-family: "Inter";
+  font-family: "Aktive Grotesk, Arial, sans serif";
   text-transform: uppercase;
   letter-spacing: 1rem;
   display: inline-block;
@@ -9066,16 +9081,18 @@ section.u4m-drag-and-drop-area form.hs-form fieldset.form-columns-1 .hs-input, s
 }
 section.u4m-drag-and-drop-area form.hs-form .hs-button, section.u4m-drag-and-drop-area form.mixitup-multifilter .hs-button, section.u4m-drag-and-drop-area form .hs-button {
   display: inline-block;
-  font-family: "Inter";
+  font-family: "Aktive Grotesk, Arial, sans serif";
   color: #ffffff;
   background-color: #007c43;
   border: 1px solid #007c43;
-  border-radius: 12rem;
+  border-radius: 4rem;
   padding: 11rem 24rem;
+  padding: 15rem 24rem;
   margin: 0;
   transition: 0.1s ease-in;
   font-weight: 600;
   font-size: 16rem;
+  line-height: 1.5;
   line-height: 1;
   text-decoration: none;
   cursor: pointer;
@@ -9235,7 +9252,7 @@ section.u4m-blog-post div.hero div.content {
   max-width: 1000rem;
 }
 section.u4m-blog-post div.hero div.content h1.title {
-  font-family: "Inter";
+  font-family: "Aktive Grotesk, Arial, sans serif";
   font-size: 48rem;
   font-weight: 600;
   margin-bottom: 30rem;
@@ -9286,13 +9303,13 @@ section.u4m-blog-post div.body {
 section.u4m-blog-post div.body div.content p,
 section.u4m-blog-post div.body div.content ul,
 section.u4m-blog-post div.body div.content ol {
-  font-family: "Inter";
+  font-family: "Aktive Grotesk, Arial, sans serif";
   font-size: 16rem;
-  line-height: 1.3;
+  line-height: 1.5;
   margin-bottom: 20rem;
 }
 section.u4m-blog-post div.body div.content h1 {
-  font-family: "Inter";
+  font-family: "Aktive Grotesk, Arial, sans serif";
   font-size: 48rem;
   font-weight: 600;
   margin-bottom: 30rem;
@@ -9311,7 +9328,7 @@ section.u4m-blog-post div.body div.content h1 {
   }
 }
 section.u4m-blog-post div.body div.content h2 {
-  font-family: "Inter";
+  font-family: "Aktive Grotesk, Arial, sans serif";
   font-size: 40rem;
   font-weight: 600;
   margin-bottom: 30rem;
@@ -9329,7 +9346,7 @@ section.u4m-blog-post div.body div.content h2 {
   }
 }
 section.u4m-blog-post div.body div.content h3 {
-  font-family: "Inter";
+  font-family: "Aktive Grotesk, Arial, sans serif";
   font-size: 33rem;
   font-weight: 600;
   margin-bottom: 30rem;
@@ -9347,7 +9364,7 @@ section.u4m-blog-post div.body div.content h3 {
   }
 }
 section.u4m-blog-post div.body div.content h4 {
-  font-family: "Inter";
+  font-family: "Aktive Grotesk, Arial, sans serif";
   font-size: 28rem;
   font-weight: 600;
   margin-bottom: 30rem;
@@ -9365,7 +9382,7 @@ section.u4m-blog-post div.body div.content h4 {
   }
 }
 section.u4m-blog-post div.body div.content h5 {
-  font-family: "Inter";
+  font-family: "Aktive Grotesk, Arial, sans serif";
   font-size: 23rem;
   font-weight: 600;
   margin-bottom: 30rem;
@@ -9383,7 +9400,7 @@ section.u4m-blog-post div.body div.content h5 {
   }
 }
 section.u4m-blog-post div.body div.content h6 {
-  font-family: "Inter";
+  font-family: "Aktive Grotesk, Arial, sans serif";
   font-size: 19rem;
   font-weight: 600;
   margin-bottom: 30rem;
@@ -9401,10 +9418,10 @@ section.u4m-blog-post div.body div.content h6 {
   }
 }
 section.u4m-blog-post div.body div.content blockquote {
-  font-family: "Inter";
+  font-family: "Aktive Grotesk, Arial, sans serif";
   font-size: 30rem;
   font-weight: bold;
-  line-height: 1.3;
+  line-height: 1.5;
   letter-spacing: 1rem;
   margin: 50rem auto;
   color: #007c43;
@@ -9417,10 +9434,10 @@ section.u4m-blog-post div.body div.content blockquote {
   }
 }
 section.u4m-blog-post div.body div.content blockquote p {
-  font-family: "Inter";
+  font-family: "Aktive Grotesk, Arial, sans serif";
   font-size: 30rem;
   font-weight: bold;
-  line-height: 1.3;
+  line-height: 1.5;
   letter-spacing: 1rem;
   margin: 50rem auto;
   color: #007c43;
@@ -9474,7 +9491,7 @@ section.u4m-blog-post div.author div.meta div.avatar {
   }
 }
 section.u4m-blog-post div.author div.bio .name {
-  font-family: "Inter";
+  font-family: "Aktive Grotesk, Arial, sans serif";
   font-size: 23rem;
   font-weight: 600;
   margin-bottom: 30rem;
@@ -9493,9 +9510,9 @@ section.u4m-blog-post div.author div.bio .name {
   }
 }
 section.u4m-blog-post div.author div.bio p {
-  font-family: "Inter";
+  font-family: "Aktive Grotesk, Arial, sans serif";
   font-size: 13rem;
-  line-height: 1.3;
+  line-height: 1.5;
   margin-bottom: 20rem;
   margin-top: 20px;
 }
@@ -9505,9 +9522,9 @@ section.u4m-blog-post div.author div.bio p {
   }
 }
 section.u4m-blog-post div.author div.bio .social .label {
-  font-family: "Inter";
+  font-family: "Aktive Grotesk, Arial, sans serif";
   font-size: 14rem;
-  line-height: 1.3;
+  line-height: 1.5;
   margin-bottom: 20rem;
 }
 @media (max-width: 580px) {
@@ -9517,9 +9534,9 @@ section.u4m-blog-post div.author div.bio .social .label {
 }
 @media (max-width: 580px) {
   section.u4m-blog-post div.author div.bio .social .label {
-    font-family: "Inter";
+    font-family: "Aktive Grotesk, Arial, sans serif";
     font-size: 11rem;
-    line-height: 1.3;
+    line-height: 1.5;
     margin-bottom: 10rem;
   }
 }
@@ -9542,7 +9559,7 @@ section.u4m-blog-post div.comments {
   margin-bottom: 100rem;
 }
 section.u4m-blog-post div.comments h2.heading {
-  font-family: "Inter";
+  font-family: "Aktive Grotesk, Arial, sans serif";
   font-size: 33rem;
   font-weight: 600;
   margin-bottom: 30rem;
@@ -9591,7 +9608,7 @@ section.u4m-blog-post div.comments div.content form {
   }
 }
 section.u4m-blog-post div.comments div.content form h3 {
-  font-family: "Inter";
+  font-family: "Aktive Grotesk, Arial, sans serif";
   font-size: 19rem;
   font-weight: 600;
   margin-bottom: 30rem;
@@ -9610,9 +9627,9 @@ section.u4m-blog-post div.comments div.content form h3 {
 }
 section.u4m-blog-post div.comments div.content form div.legal-consent-container p,
 section.u4m-blog-post div.comments div.content form div.legal-consent-container .hs-form-booleancheckbox label {
-  font-family: "Inter";
+  font-family: "Aktive Grotesk, Arial, sans serif";
   font-size: 11rem;
-  line-height: 1.3;
+  line-height: 1.5;
   margin-bottom: 10rem;
 }
 @media (max-width: 580px) {
@@ -9831,7 +9848,7 @@ section.u4m-blog-post div.comments div.content form.hs-form .input input select:
 }
 section.u4m-blog-post div.comments div.content form.hs-form .input input[type=file], section.u4m-blog-post div.comments div.content form.mixitup-multifilter .input input[type=file], section.u4m-blog-post div.comments div.content form .input input[type=file] {
   font-size: 16rem;
-  font-family: "Inter";
+  font-family: "Aktive Grotesk, Arial, sans serif";
   background-color: transparent;
   position: relative;
   font-weight: bold;
@@ -9896,7 +9913,7 @@ section.u4m-blog-post div.comments div.content form.hs-form .input + .hs-error-m
 }
 section.u4m-blog-post div.comments div.content form.hs-form .input + .hs-error-msgs li label, section.u4m-blog-post div.comments div.content form.mixitup-multifilter .input + .hs-error-msgs li label, section.u4m-blog-post div.comments div.content form .input + .hs-error-msgs li label {
   font-size: 12rem;
-  font-family: "Inter";
+  font-family: "Aktive Grotesk, Arial, sans serif";
   text-transform: uppercase;
   letter-spacing: 1rem;
   display: inline-block;
@@ -10185,16 +10202,18 @@ section.u4m-blog-post div.comments div.content form.hs-form fieldset.form-column
 }
 section.u4m-blog-post div.comments div.content form.hs-form .hs-button, section.u4m-blog-post div.comments div.content form.mixitup-multifilter .hs-button, section.u4m-blog-post div.comments div.content form .hs-button {
   display: inline-block;
-  font-family: "Inter";
+  font-family: "Aktive Grotesk, Arial, sans serif";
   color: #ffffff;
   background-color: #007c43;
   border: 1px solid #007c43;
-  border-radius: 12rem;
+  border-radius: 4rem;
   padding: 11rem 24rem;
+  padding: 15rem 24rem;
   margin: 0;
   transition: 0.1s ease-in;
   font-weight: 600;
   font-size: 16rem;
+  line-height: 1.5;
   line-height: 1;
   text-decoration: none;
   cursor: pointer;
@@ -10210,16 +10229,18 @@ section.u4m-blog-post div.comments div.content form .hs-richtext p {
 }
 section.u4m-blog-post div.comments div.content form .hs-button {
   display: inline-block;
-  font-family: "Inter";
+  font-family: "Aktive Grotesk, Arial, sans serif";
   color: #ffffff;
   background-color: #007c43;
   border: 1px solid #007c43;
-  border-radius: 12rem;
+  border-radius: 4rem;
   padding: 11rem 24rem;
+  padding: 15rem 24rem;
   margin: 0;
   transition: 0.1s ease-in;
   font-weight: 600;
   font-size: 16rem;
+  line-height: 1.5;
   line-height: 1;
   text-decoration: none;
   cursor: pointer;
@@ -10533,7 +10554,7 @@ section.u4m-blog-post div.comments div.content form .hs-button:hover, section.u4
   flex-wrap: wrap;
   justify-content: flex-end;
   margin: 0;
-  font-family: "Inter";
+  font-family: "Aktive Grotesk, Arial, sans serif";
   line-height: 1;
   font-size: 16rem;
   font-weight: 600;
@@ -10643,7 +10664,7 @@ section.u4m-blog-post div.comments div.content form .hs-button:hover, section.u4
 .header-wrapper .main-header .row-fluid .site_menu .hs-menu-wrapper ul {
   display: flex;
   flex-wrap: wrap;
-  font-family: "Inter";
+  font-family: "Aktive Grotesk, Arial, sans serif";
   font-size: 16rem;
   font-weight: 600;
   justify-content: flex-end;
