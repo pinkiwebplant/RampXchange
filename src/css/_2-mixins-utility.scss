@@ -39,6 +39,12 @@
   }
 }
 
+@mixin navbreakMin {
+  @media (min-width: 1281px) {
+    @content;
+  }
+}
+
 @mixin navbreak {
   @media (max-width: 1280px) {
     @content;
@@ -127,7 +133,7 @@
   float: none;
   margin-left: auto;
   margin-right: auto;
-  max-width: 1240rem;
+  max-width: 1120rem;
   padding-left: 20rem;
   padding-right: 20rem;
 }

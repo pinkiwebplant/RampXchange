@@ -36,7 +36,6 @@
         font-family: $font1;
         line-height: 1;
         @include size16;
-        font-weight: 600;
         letter-spacing: normal;
         li {
           float: none;
@@ -46,6 +45,14 @@
           width: auto;
           &:last-child {
             padding-right: 0;
+            font-weight: 600;
+            a {
+              color: $action1;
+            }
+          }
+          &.active a {
+            font-weight: 600;
+            color: $action1;
           }
           a {
             color: $heading;
@@ -57,6 +64,7 @@
             text-overflow: unset;
             &:hover {
               color: $action1;
+              font-weight: 600;
             }
           }
         }
@@ -96,7 +104,7 @@
         }
         img {
           max-width: 100%;
-          width: 325.71px !important;
+          width: 200px !important;
           @include tabletvert {
             width: 200px !important;
           }
@@ -133,8 +141,6 @@
             display: flex;
             flex-wrap: wrap;
             font-family: $font1;
-            @include size16;
-            font-weight: 600;
             justify-content: flex-end;
             letter-spacing: normal;
             line-height: 1;
@@ -149,11 +155,14 @@
               @include size16;
             }
             li {
-              padding-right: 20px;
+              padding-right: 30px;
               position: relative;
               float: none;
               letter-spacing: normal;
               margin-bottom: 0;
+              &.active {
+                font-weight: 600;
+              }
               @include navbreak {
                 padding-right: 10px;
               }
@@ -184,7 +193,6 @@
                 padding-right: 10px;
               }
               a {
-                @include size16;
                 line-height: 1;
                 color: $heading;
                 max-width: 100%;
@@ -205,6 +213,7 @@
                 }
                 &:hover {
                   color: $action1;
+                  font-weight: 600;
                 }
               }
               ul.hs-menu-children-wrapper {
@@ -257,7 +266,7 @@
           }
         }
         .header_btn {
-          padding-left: 20px;
+          padding-left: 30px;
           @include tabletmid {
             padding-left: 10px;
           }
@@ -309,9 +318,7 @@
             height: 4px;
             background-color: $heading;
             border-radius: 2px;
-            transition:
-              transform 0.3s ease,
-              opacity 0.3s ease;
+            transition: transform 0.3s ease, opacity 0.3s ease;
           }
           &.trigger-open {
             height: 18px;

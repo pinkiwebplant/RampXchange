@@ -19,12 +19,12 @@
       <div class="main-header">
         <div class="page-center">
           <div class="row-fluid">
-            <div class="span4 site_logo">
+            <div class="span3 site_logo">
               <div class="site_logo_inn">
                 {% set logo_src =
                 get_asset_url('../../templates/images/mainLogo.png') %} {%
                 module "site_logo" path="@hubspot/logo", label="Site Logo",
-                link="/" img={src="{{logo_src}}?noresize", width=326,
+                link="/" img={src="{{logo_src}}?noresize", width=200,
                 open_in_new_tab=true ,override_inherited_src= true,
                 alt="rampXchange"} %}
               </div>
@@ -34,7 +34,7 @@
                 <span></span>
               </div>
             </div>
-            <div class="main_menu span8">
+            <div class="main_menu span9">
               <div class="main_menu_inn">
                 <div class="site_menu">
                   {% menu "site_menu" flyouts=false, label="Main Menu",

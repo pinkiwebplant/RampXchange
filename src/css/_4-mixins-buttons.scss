@@ -4,15 +4,13 @@
   font-family: $font1;
   color: $white;
   background-color: $action1;
-  border: 1px solid $action1;
-  border-radius: $borderRadius;
-  padding: 11rem 24rem;
-  padding: 15rem 24rem;
+  border: 2px solid $action1;
+  border-radius: $borderRadius; 
+  padding: 14rem 16rem;
   margin: 0;
   transition: $animation1;
   font-weight: 600;
-  font-size: 16rem;
-  line-height: 1.5;
+  font-size: 16rem; 
   line-height: 1;
   text-decoration: none;
   cursor: pointer;
@@ -28,7 +26,7 @@
 @mixin secondarybutton {
   @include button;
   color: $action1;
-  background-color: $white;
+  background-color: $white; 
   &:hover,
   &:focus {
     background-color: $action1;
@@ -40,7 +38,7 @@
   text-decoration: none;
   &:hover,
   &:focus {
-    color: $heading;
+    color: $action1;
   }
 }
 
@@ -270,7 +268,7 @@
     transition: 0.3s;
     position: relative;
   }
-
+ 
   .lines:before,
   .lines:after {
     display: inline-block;

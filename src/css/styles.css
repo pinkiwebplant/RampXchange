@@ -2996,10 +2996,10 @@ h6 {
 
 h1 {
   font-family: "Aktive Grotesk, Arial, sans serif";
-  font-size: 48rem;
-  font-weight: 600;
+  font-size: 36rem;
+  font-weight: 400;
   margin-bottom: 30rem;
-  line-height: 1;
+  line-height: 1.2;
   margin-top: 0;
 }
 @media (max-width: 1024px) {
@@ -3016,10 +3016,10 @@ h1 {
 
 h2 {
   font-family: "Aktive Grotesk, Arial, sans serif";
-  font-size: 40rem;
-  font-weight: 600;
+  font-size: 32rem;
+  font-weight: 400;
   margin-bottom: 30rem;
-  line-height: 1;
+  line-height: 1.2;
 }
 @media (max-width: 1024px) {
   h2 {
@@ -3035,10 +3035,10 @@ h2 {
 
 h3 {
   font-family: "Aktive Grotesk, Arial, sans serif";
-  font-size: 33rem;
-  font-weight: 600;
+  font-size: 28rem;
+  font-weight: 400;
   margin-bottom: 30rem;
-  line-height: 1;
+  line-height: 1.2;
 }
 @media (max-width: 1024px) {
   h3 {
@@ -3054,10 +3054,10 @@ h3 {
 
 h4 {
   font-family: "Aktive Grotesk, Arial, sans serif";
-  font-size: 28rem;
-  font-weight: 600;
+  font-size: 25rem;
+  font-weight: 400;
   margin-bottom: 30rem;
-  line-height: 1;
+  line-height: 1.2;
 }
 @media (max-width: 1024px) {
   h4 {
@@ -3066,17 +3066,17 @@ h4 {
 }
 @media (max-width: 580px) {
   h4 {
-    font-size: 20rem;
+    font-size: 22rem;
     margin-bottom: 20rem;
   }
 }
 
 h5 {
   font-family: "Aktive Grotesk, Arial, sans serif";
-  font-size: 23rem;
-  font-weight: 600;
+  font-size: 22rem;
+  font-weight: 400;
   margin-bottom: 30rem;
-  line-height: 1;
+  line-height: 1.2;
 }
 @media (max-width: 1024px) {
   h5 {
@@ -3093,9 +3093,9 @@ h5 {
 h6 {
   font-family: "Aktive Grotesk, Arial, sans serif";
   font-size: 19rem;
-  font-weight: 600;
+  font-weight: 400;
   margin-bottom: 30rem;
-  line-height: 1;
+  line-height: 1.2;
 }
 @media (max-width: 1024px) {
   h6 {
@@ -3354,16 +3354,14 @@ div#hs-eu-cookie-confirmation.hs-cookie-notification-position-bottom.can-use-gra
   display: inline-block;
   font-family: "Aktive Grotesk, Arial, sans serif";
   color: #ffffff;
-  background-color: #007c43;
-  border: 1px solid #007c43;
+  background-color: #006F3C;
+  border: 2px solid #006F3C;
   border-radius: 4rem;
-  padding: 11rem 24rem;
-  padding: 15rem 24rem;
+  padding: 14rem 16rem;
   margin: 0;
   transition: 0.1s ease-in;
   font-weight: 600;
   font-size: 16rem;
-  line-height: 1.5;
   line-height: 1;
   text-decoration: none;
   cursor: pointer;
@@ -3376,28 +3374,25 @@ div#hs-eu-cookie-confirmation.hs-cookie-notification-position-bottom.can-use-gra
 }
 div#hs-eu-cookie-confirmation.hs-cookie-notification-position-bottom.can-use-gradients div#hs-eu-cookie-confirmation-inner div#hs-en-cookie-confirmation-buttons-area a#hs-eu-confirmation-button:hover, div#hs-eu-cookie-confirmation.hs-cookie-notification-position-bottom.can-use-gradients div#hs-eu-cookie-confirmation-inner div#hs-en-cookie-confirmation-buttons-area a#hs-eu-confirmation-button:focus {
   background-color: #ffffff;
-  color: #007c43;
+  color: #006F3C;
 }
 div#hs-eu-cookie-confirmation.hs-cookie-notification-position-bottom.can-use-gradients div#hs-eu-cookie-confirmation-inner div#hs-en-cookie-confirmation-buttons-area a#hs-eu-confirmation-button:hover {
   background-color: #000000 !important;
 }
 
 p {
-  font-family: "Aktive Grotesk, Arial, sans serif";
-  font-size: 16rem;
-  line-height: 1.5;
   margin-bottom: 20rem;
 }
 
 a {
-  color: #007c43;
+  color: #006F3C;
   transition: 0.1s ease-in;
   display: inline-block;
   text-decoration-thickness: 2px;
   text-underline-offset: 4px;
 }
 a:hover {
-  color: #007c43;
+  color: #006F3C;
 }
 
 blockquote,
@@ -3408,7 +3403,7 @@ blockquote p {
   line-height: 1.5;
   letter-spacing: 1rem;
   margin: 50rem auto;
-  color: #007c43;
+  color: #006F3C;
   display: block;
   max-width: 90%;
 }
@@ -3428,10 +3423,6 @@ strong {
 }
 
 ul {
-  font-family: "Aktive Grotesk, Arial, sans serif";
-  font-size: 16rem;
-  line-height: 1.5;
-  margin-bottom: 20rem;
   list-style: disc;
   padding-left: 34rem;
   margin-top: 0;
@@ -3439,10 +3430,6 @@ ul {
 }
 
 ol {
-  font-family: "Aktive Grotesk, Arial, sans serif";
-  font-size: 16rem;
-  line-height: 1.5;
-  margin-bottom: 20rem;
   list-style: decimal;
   padding-left: 40rem;
   margin-top: 0;
@@ -3467,7 +3454,7 @@ li {
   font-family: "Material Symbols Outlined";
   font-weight: normal;
   font-style: normal;
-  font-size: 16px;
+  font-size: 15px;
   line-height: 1;
   letter-spacing: normal;
   text-transform: none;
@@ -3660,16 +3647,14 @@ section[class*=u4m-] {
   display: inline-block;
   font-family: "Aktive Grotesk, Arial, sans serif";
   color: #ffffff;
-  background-color: #007c43;
-  border: 1px solid #007c43;
+  background-color: #006F3C;
+  border: 2px solid #006F3C;
   border-radius: 4rem;
-  padding: 11rem 24rem;
-  padding: 15rem 24rem;
+  padding: 14rem 16rem;
   margin: 0;
   transition: 0.1s ease-in;
   font-weight: 600;
   font-size: 16rem;
-  line-height: 1.5;
   line-height: 1;
   text-decoration: none;
   cursor: pointer;
@@ -3677,45 +3662,43 @@ section[class*=u4m-] {
 }
 .hs-button:hover, .hs-button:focus {
   background-color: #ffffff;
-  color: #007c43;
+  color: #006F3C;
 }
 
 .sec-btn {
   display: inline-block;
   font-family: "Aktive Grotesk, Arial, sans serif";
   color: #ffffff;
-  background-color: #007c43;
-  border: 1px solid #007c43;
+  background-color: #006F3C;
+  border: 2px solid #006F3C;
   border-radius: 4rem;
-  padding: 11rem 24rem;
-  padding: 15rem 24rem;
+  padding: 14rem 16rem;
   margin: 0;
   transition: 0.1s ease-in;
   font-weight: 600;
   font-size: 16rem;
-  line-height: 1.5;
   line-height: 1;
   text-decoration: none;
   cursor: pointer;
   text-align: center;
-  color: #007c43;
+  color: #006F3C;
   background-color: #ffffff;
 }
 .sec-btn:hover, .sec-btn:focus {
   background-color: #ffffff;
-  color: #007c43;
+  color: #006F3C;
 }
 .sec-btn:hover, .sec-btn:focus {
-  background-color: #007c43;
+  background-color: #006F3C;
   color: #ffffff;
 }
 
 .arrow-link {
-  color: #007c43;
+  color: #006F3C;
   text-decoration: none;
 }
 .arrow-link:hover, .arrow-link:focus {
-  color: #213944;
+  color: #006F3C;
 }
 
 .intro_btn_wrap {
@@ -3738,7 +3721,7 @@ section[class*=u4m-] {
   line-height: 1;
   display: block;
   margin-bottom: 10rem;
-  color: #007c43;
+  color: #006F3C;
   margin-bottom: 8rem;
 }
 .intro_content .intro_title {
@@ -3767,15 +3750,27 @@ section[class*=u4m-] {
   padding: 0px;
   gap: 4px;
   font-weight: 600;
+  padding: 15px 16px;
+  padding-left: 0;
+}
+.arrow-link:hover {
+  font-weight: 700;
+}
+.arrow-link:hover svg {
+  left: 5px;
 }
 
 .arrow-link svg {
   width: 12px;
   height: 12px;
+  position: relative;
+  left: 0;
+  transition: 0.25s ease-in;
 }
 
 .arrow-link svg path {
   fill: currentColor;
+  stroke: currentColor;
 }
 
 .reverse-text {
@@ -3794,7 +3789,7 @@ section[class*=u4m-] {
 }
 
 .forest_green {
-  background-color: #007c43;
+  background-color: #006F3C;
 }
 
 .dark_teal {
@@ -3826,7 +3821,7 @@ section[class*=u4m-] {
 }
 
 .forest_green_text {
-  color: #007c43;
+  color: #006F3C;
 }
 
 .dark_teal_text {
@@ -3858,7 +3853,7 @@ section[class*=u4m-] {
 }
 
 .forest_green_textclr svg path {
-  fill: #007c43;
+  fill: #006F3C;
 }
 
 .dark_teal_textclr svg path {
@@ -3890,7 +3885,7 @@ section[class*=u4m-] {
 }
 
 .forest_green_icon_bg svg circle {
-  fill: #007c43;
+  fill: #006F3C;
 }
 
 .dark_teal_icon_bg svg circle {
@@ -3932,7 +3927,7 @@ section[class*=u4m-] {
 }
 
 .gradient2 {
-  background-image: linear-gradient(360deg, rgba(0, 124, 67, 0.07) 0.01%, rgba(181, 221, 165, 0.07) 99.97%);
+  background-image: linear-gradient(360deg, rgba(0, 111, 60, 0.07) 0.01%, rgba(181, 221, 165, 0.07) 99.97%);
 }
 
 .gradient3 {
@@ -3967,9 +3962,9 @@ form {
 form h3 {
   font-family: "Aktive Grotesk, Arial, sans serif";
   font-size: 19rem;
-  font-weight: 600;
+  font-weight: 400;
   margin-bottom: 30rem;
-  line-height: 1;
+  line-height: 1.2;
 }
 @media (max-width: 1024px) {
   form h3 {
@@ -4561,16 +4556,14 @@ form.hs-form .hs-button, form.mixitup-multifilter .hs-button, form .hs-button {
   display: inline-block;
   font-family: "Aktive Grotesk, Arial, sans serif";
   color: #ffffff;
-  background-color: #007c43;
-  border: 1px solid #007c43;
+  background-color: #006F3C;
+  border: 2px solid #006F3C;
   border-radius: 4rem;
-  padding: 11rem 24rem;
-  padding: 15rem 24rem;
+  padding: 14rem 16rem;
   margin: 0;
   transition: 0.1s ease-in;
   font-weight: 600;
   font-size: 16rem;
-  line-height: 1.5;
   line-height: 1;
   text-decoration: none;
   cursor: pointer;
@@ -4578,7 +4571,7 @@ form.hs-form .hs-button, form.mixitup-multifilter .hs-button, form .hs-button {
 }
 form.hs-form .hs-button:hover, form.hs-form .hs-button:focus, form.mixitup-multifilter .hs-button:hover, form.mixitup-multifilter .hs-button:focus, form .hs-button:hover, form .hs-button:focus {
   background-color: #ffffff;
-  color: #007c43;
+  color: #006F3C;
 }
 form .hs-richtext p {
   font-size: 11rem;
@@ -4618,7 +4611,7 @@ section.u4m-500-error {
   float: none;
   margin-left: auto;
   margin-right: auto;
-  max-width: 1240rem;
+  max-width: 1120rem;
   padding-left: 20rem;
   padding-right: 20rem;
   margin: 150rem auto;
@@ -4627,7 +4620,7 @@ section.u4m-500-error {
 section.u4m-404-error p,
 section.u4m-500-error p {
   font-family: "Aktive Grotesk, Arial, sans serif";
-  font-size: 22rem;
+  font-size: 15rem;
   line-height: 1.5;
   margin-bottom: 20rem;
 }
@@ -4648,7 +4641,7 @@ section.u4m-backup-unsubscribe {
   float: none;
   margin-left: auto;
   margin-right: auto;
-  max-width: 1240rem;
+  max-width: 1120rem;
   padding-left: 20rem;
   padding-right: 20rem;
   margin: 150rem auto;
@@ -4661,7 +4654,7 @@ section.u4m-backup-unsubscribe {
 }
 section.u4m-backup-unsubscribe p {
   font-family: "Aktive Grotesk, Arial, sans serif";
-  font-size: 22rem;
+  font-size: 15rem;
   line-height: 1.5;
   margin-bottom: 20rem;
 }
@@ -4687,9 +4680,9 @@ section.u4m-backup-unsubscribe form {
 section.u4m-backup-unsubscribe form h3 {
   font-family: "Aktive Grotesk, Arial, sans serif";
   font-size: 19rem;
-  font-weight: 600;
+  font-weight: 400;
   margin-bottom: 30rem;
-  line-height: 1;
+  line-height: 1.2;
 }
 @media (max-width: 1024px) {
   section.u4m-backup-unsubscribe form h3 {
@@ -5281,16 +5274,14 @@ section.u4m-backup-unsubscribe form.hs-form .hs-button, section.u4m-backup-unsub
   display: inline-block;
   font-family: "Aktive Grotesk, Arial, sans serif";
   color: #ffffff;
-  background-color: #007c43;
-  border: 1px solid #007c43;
+  background-color: #006F3C;
+  border: 2px solid #006F3C;
   border-radius: 4rem;
-  padding: 11rem 24rem;
-  padding: 15rem 24rem;
+  padding: 14rem 16rem;
   margin: 0;
   transition: 0.1s ease-in;
   font-weight: 600;
   font-size: 16rem;
-  line-height: 1.5;
   line-height: 1;
   text-decoration: none;
   cursor: pointer;
@@ -5298,7 +5289,7 @@ section.u4m-backup-unsubscribe form.hs-form .hs-button, section.u4m-backup-unsub
 }
 section.u4m-backup-unsubscribe form.hs-form .hs-button:hover, section.u4m-backup-unsubscribe form.hs-form .hs-button:focus, section.u4m-backup-unsubscribe form.mixitup-multifilter .hs-button:hover, section.u4m-backup-unsubscribe form.mixitup-multifilter .hs-button:focus, section.u4m-backup-unsubscribe form .hs-button:hover, section.u4m-backup-unsubscribe form .hs-button:focus {
   background-color: #ffffff;
-  color: #007c43;
+  color: #006F3C;
 }
 section.u4m-backup-unsubscribe form .hs-richtext p {
   font-size: 11rem;
@@ -5328,7 +5319,7 @@ section.u4m-password-prompt {
   float: none;
   margin-left: auto;
   margin-right: auto;
-  max-width: 1240rem;
+  max-width: 1120rem;
   padding-left: 20rem;
   padding-right: 20rem;
   margin: 150rem auto;
@@ -5382,9 +5373,9 @@ section.u4m-membership-reset-password form h3,
 section.u4m-password-prompt form h3 {
   font-family: "Aktive Grotesk, Arial, sans serif";
   font-size: 19rem;
-  font-weight: 600;
+  font-weight: 400;
   margin-bottom: 30rem;
-  line-height: 1;
+  line-height: 1.2;
 }
 @media (max-width: 1024px) {
   section.u4m-membership-login form h3,
@@ -7648,16 +7639,14 @@ section.u4m-password-prompt form .hs-button {
   display: inline-block;
   font-family: "Aktive Grotesk, Arial, sans serif";
   color: #ffffff;
-  background-color: #007c43;
-  border: 1px solid #007c43;
+  background-color: #006F3C;
+  border: 2px solid #006F3C;
   border-radius: 4rem;
-  padding: 11rem 24rem;
-  padding: 15rem 24rem;
+  padding: 14rem 16rem;
   margin: 0;
   transition: 0.1s ease-in;
   font-weight: 600;
   font-size: 16rem;
-  line-height: 1.5;
   line-height: 1;
   text-decoration: none;
   cursor: pointer;
@@ -7689,7 +7678,7 @@ section.u4m-password-prompt form.mixitup-multifilter .hs-button:focus,
 section.u4m-password-prompt form .hs-button:hover,
 section.u4m-password-prompt form .hs-button:focus {
   background-color: #ffffff;
-  color: #007c43;
+  color: #006F3C;
 }
 section.u4m-membership-login form .hs-richtext p,
 section.u4m-membership-register form .hs-richtext p,
@@ -7773,7 +7762,7 @@ section.u4m-search-results {
   float: none;
   margin-left: auto;
   margin-right: auto;
-  max-width: 1240rem;
+  max-width: 1120rem;
   padding-left: 20rem;
   padding-right: 20rem;
   max-width: 1000rem;
@@ -7787,7 +7776,7 @@ section.u4m-subscription-preferences {
   float: none;
   margin-left: auto;
   margin-right: auto;
-  max-width: 1240rem;
+  max-width: 1120rem;
   padding-left: 20rem;
   padding-right: 20rem;
   margin: 100rem auto;
@@ -7810,9 +7799,9 @@ section.u4m-subscription-preferences form {
 section.u4m-subscription-preferences form h3 {
   font-family: "Aktive Grotesk, Arial, sans serif";
   font-size: 19rem;
-  font-weight: 600;
+  font-weight: 400;
   margin-bottom: 30rem;
-  line-height: 1;
+  line-height: 1.2;
 }
 @media (max-width: 1024px) {
   section.u4m-subscription-preferences form h3 {
@@ -8404,16 +8393,14 @@ section.u4m-subscription-preferences form.hs-form .hs-button, section.u4m-subscr
   display: inline-block;
   font-family: "Aktive Grotesk, Arial, sans serif";
   color: #ffffff;
-  background-color: #007c43;
-  border: 1px solid #007c43;
+  background-color: #006F3C;
+  border: 2px solid #006F3C;
   border-radius: 4rem;
-  padding: 11rem 24rem;
-  padding: 15rem 24rem;
+  padding: 14rem 16rem;
   margin: 0;
   transition: 0.1s ease-in;
   font-weight: 600;
   font-size: 16rem;
-  line-height: 1.5;
   line-height: 1;
   text-decoration: none;
   cursor: pointer;
@@ -8421,7 +8408,7 @@ section.u4m-subscription-preferences form.hs-form .hs-button, section.u4m-subscr
 }
 section.u4m-subscription-preferences form.hs-form .hs-button:hover, section.u4m-subscription-preferences form.hs-form .hs-button:focus, section.u4m-subscription-preferences form.mixitup-multifilter .hs-button:hover, section.u4m-subscription-preferences form.mixitup-multifilter .hs-button:focus, section.u4m-subscription-preferences form .hs-button:hover, section.u4m-subscription-preferences form .hs-button:focus {
   background-color: #ffffff;
-  color: #007c43;
+  color: #006F3C;
 }
 section.u4m-subscription-preferences form .hs-richtext p {
   font-size: 11rem;
@@ -8442,7 +8429,7 @@ section.u4m-subscriptions-confirmation {
   float: none;
   margin-left: auto;
   margin-right: auto;
-  max-width: 1240rem;
+  max-width: 1120rem;
   padding-left: 20rem;
   padding-right: 20rem;
   max-width: 1000rem;
@@ -8468,7 +8455,7 @@ section.u4m-drag-and-drop-area {
   float: none;
   margin-left: auto;
   margin-right: auto;
-  max-width: 1240rem;
+  max-width: 1120rem;
   padding-left: 20rem;
   padding-right: 20rem;
   margin: 100rem auto;
@@ -8489,9 +8476,9 @@ section.u4m-drag-and-drop-area form {
 section.u4m-drag-and-drop-area form h3 {
   font-family: "Aktive Grotesk, Arial, sans serif";
   font-size: 19rem;
-  font-weight: 600;
+  font-weight: 400;
   margin-bottom: 30rem;
-  line-height: 1;
+  line-height: 1.2;
 }
 @media (max-width: 1024px) {
   section.u4m-drag-and-drop-area form h3 {
@@ -9083,16 +9070,14 @@ section.u4m-drag-and-drop-area form.hs-form .hs-button, section.u4m-drag-and-dro
   display: inline-block;
   font-family: "Aktive Grotesk, Arial, sans serif";
   color: #ffffff;
-  background-color: #007c43;
-  border: 1px solid #007c43;
+  background-color: #006F3C;
+  border: 2px solid #006F3C;
   border-radius: 4rem;
-  padding: 11rem 24rem;
-  padding: 15rem 24rem;
+  padding: 14rem 16rem;
   margin: 0;
   transition: 0.1s ease-in;
   font-weight: 600;
   font-size: 16rem;
-  line-height: 1.5;
   line-height: 1;
   text-decoration: none;
   cursor: pointer;
@@ -9100,7 +9085,7 @@ section.u4m-drag-and-drop-area form.hs-form .hs-button, section.u4m-drag-and-dro
 }
 section.u4m-drag-and-drop-area form.hs-form .hs-button:hover, section.u4m-drag-and-drop-area form.hs-form .hs-button:focus, section.u4m-drag-and-drop-area form.mixitup-multifilter .hs-button:hover, section.u4m-drag-and-drop-area form.mixitup-multifilter .hs-button:focus, section.u4m-drag-and-drop-area form .hs-button:hover, section.u4m-drag-and-drop-area form .hs-button:focus {
   background-color: #ffffff;
-  color: #007c43;
+  color: #006F3C;
 }
 section.u4m-drag-and-drop-area form .hs-richtext p {
   font-size: 11rem;
@@ -9109,7 +9094,7 @@ section.u4m-drag-and-drop-area form .hs-richtext p {
 
 .dnd_padd,
 .dnd-section {
-  padding: 80rem 0;
+  padding: 100rem 0;
 }
 @media (max-width: 1024px) {
   .dnd_padd,
@@ -9141,7 +9126,7 @@ section.u4m-drag-and-drop-area form .hs-richtext p {
   float: none;
   margin-left: auto;
   margin-right: auto;
-  max-width: 1240rem;
+  max-width: 1120rem;
   padding-left: 20rem;
   padding-right: 20rem;
   margin: 0 auto;
@@ -9244,7 +9229,7 @@ section.u4m-blog-post div.hero div.content {
   float: none;
   margin-left: auto;
   margin-right: auto;
-  max-width: 1240rem;
+  max-width: 1120rem;
   padding-left: 20rem;
   padding-right: 20rem;
   max-width: 1000rem;
@@ -9253,10 +9238,10 @@ section.u4m-blog-post div.hero div.content {
 }
 section.u4m-blog-post div.hero div.content h1.title {
   font-family: "Aktive Grotesk, Arial, sans serif";
-  font-size: 48rem;
-  font-weight: 600;
+  font-size: 36rem;
+  font-weight: 400;
   margin-bottom: 30rem;
-  line-height: 1;
+  line-height: 1.2;
   margin-top: 0;
   margin: 0;
 }
@@ -9295,7 +9280,7 @@ section.u4m-blog-post div.body {
   float: none;
   margin-left: auto;
   margin-right: auto;
-  max-width: 1240rem;
+  max-width: 1120rem;
   padding-left: 20rem;
   padding-right: 20rem;
   max-width: 1000rem;
@@ -9310,10 +9295,10 @@ section.u4m-blog-post div.body div.content ol {
 }
 section.u4m-blog-post div.body div.content h1 {
   font-family: "Aktive Grotesk, Arial, sans serif";
-  font-size: 48rem;
-  font-weight: 600;
+  font-size: 36rem;
+  font-weight: 400;
   margin-bottom: 30rem;
-  line-height: 1;
+  line-height: 1.2;
   margin-top: 0;
 }
 @media (max-width: 1024px) {
@@ -9329,10 +9314,10 @@ section.u4m-blog-post div.body div.content h1 {
 }
 section.u4m-blog-post div.body div.content h2 {
   font-family: "Aktive Grotesk, Arial, sans serif";
-  font-size: 40rem;
-  font-weight: 600;
+  font-size: 32rem;
+  font-weight: 400;
   margin-bottom: 30rem;
-  line-height: 1;
+  line-height: 1.2;
 }
 @media (max-width: 1024px) {
   section.u4m-blog-post div.body div.content h2 {
@@ -9347,10 +9332,10 @@ section.u4m-blog-post div.body div.content h2 {
 }
 section.u4m-blog-post div.body div.content h3 {
   font-family: "Aktive Grotesk, Arial, sans serif";
-  font-size: 33rem;
-  font-weight: 600;
+  font-size: 28rem;
+  font-weight: 400;
   margin-bottom: 30rem;
-  line-height: 1;
+  line-height: 1.2;
 }
 @media (max-width: 1024px) {
   section.u4m-blog-post div.body div.content h3 {
@@ -9365,10 +9350,10 @@ section.u4m-blog-post div.body div.content h3 {
 }
 section.u4m-blog-post div.body div.content h4 {
   font-family: "Aktive Grotesk, Arial, sans serif";
-  font-size: 28rem;
-  font-weight: 600;
+  font-size: 25rem;
+  font-weight: 400;
   margin-bottom: 30rem;
-  line-height: 1;
+  line-height: 1.2;
 }
 @media (max-width: 1024px) {
   section.u4m-blog-post div.body div.content h4 {
@@ -9377,16 +9362,16 @@ section.u4m-blog-post div.body div.content h4 {
 }
 @media (max-width: 580px) {
   section.u4m-blog-post div.body div.content h4 {
-    font-size: 20rem;
+    font-size: 22rem;
     margin-bottom: 20rem;
   }
 }
 section.u4m-blog-post div.body div.content h5 {
   font-family: "Aktive Grotesk, Arial, sans serif";
-  font-size: 23rem;
-  font-weight: 600;
+  font-size: 22rem;
+  font-weight: 400;
   margin-bottom: 30rem;
-  line-height: 1;
+  line-height: 1.2;
 }
 @media (max-width: 1024px) {
   section.u4m-blog-post div.body div.content h5 {
@@ -9402,9 +9387,9 @@ section.u4m-blog-post div.body div.content h5 {
 section.u4m-blog-post div.body div.content h6 {
   font-family: "Aktive Grotesk, Arial, sans serif";
   font-size: 19rem;
-  font-weight: 600;
+  font-weight: 400;
   margin-bottom: 30rem;
-  line-height: 1;
+  line-height: 1.2;
 }
 @media (max-width: 1024px) {
   section.u4m-blog-post div.body div.content h6 {
@@ -9424,7 +9409,7 @@ section.u4m-blog-post div.body div.content blockquote {
   line-height: 1.5;
   letter-spacing: 1rem;
   margin: 50rem auto;
-  color: #007c43;
+  color: #006F3C;
   display: block;
   max-width: 90%;
 }
@@ -9440,7 +9425,7 @@ section.u4m-blog-post div.body div.content blockquote p {
   line-height: 1.5;
   letter-spacing: 1rem;
   margin: 50rem auto;
-  color: #007c43;
+  color: #006F3C;
   display: block;
   max-width: 90%;
 }
@@ -9459,7 +9444,7 @@ section.u4m-blog-post div.author {
   float: none;
   margin-left: auto;
   margin-right: auto;
-  max-width: 1240rem;
+  max-width: 1120rem;
   padding-left: 20rem;
   padding-right: 20rem;
   max-width: 1000rem;
@@ -9492,10 +9477,10 @@ section.u4m-blog-post div.author div.meta div.avatar {
 }
 section.u4m-blog-post div.author div.bio .name {
   font-family: "Aktive Grotesk, Arial, sans serif";
-  font-size: 23rem;
-  font-weight: 600;
+  font-size: 22rem;
+  font-weight: 400;
   margin-bottom: 30rem;
-  line-height: 1;
+  line-height: 1.2;
   margin: 0;
 }
 @media (max-width: 1024px) {
@@ -9560,14 +9545,14 @@ section.u4m-blog-post div.comments {
 }
 section.u4m-blog-post div.comments h2.heading {
   font-family: "Aktive Grotesk, Arial, sans serif";
-  font-size: 33rem;
-  font-weight: 600;
+  font-size: 28rem;
+  font-weight: 400;
   margin-bottom: 30rem;
-  line-height: 1;
+  line-height: 1.2;
   float: none;
   margin-left: auto;
   margin-right: auto;
-  max-width: 1240rem;
+  max-width: 1120rem;
   padding-left: 20rem;
   padding-right: 20rem;
   text-align: center;
@@ -9588,7 +9573,7 @@ section.u4m-blog-post div.comments div.content {
   float: none;
   margin-left: auto;
   margin-right: auto;
-  max-width: 1240rem;
+  max-width: 1120rem;
   padding-left: 20rem;
   padding-right: 20rem;
   max-width: 1000rem;
@@ -9610,9 +9595,9 @@ section.u4m-blog-post div.comments div.content form {
 section.u4m-blog-post div.comments div.content form h3 {
   font-family: "Aktive Grotesk, Arial, sans serif";
   font-size: 19rem;
-  font-weight: 600;
+  font-weight: 400;
   margin-bottom: 30rem;
-  line-height: 1;
+  line-height: 1.2;
 }
 @media (max-width: 1024px) {
   section.u4m-blog-post div.comments div.content form h3 {
@@ -10204,16 +10189,14 @@ section.u4m-blog-post div.comments div.content form.hs-form .hs-button, section.
   display: inline-block;
   font-family: "Aktive Grotesk, Arial, sans serif";
   color: #ffffff;
-  background-color: #007c43;
-  border: 1px solid #007c43;
+  background-color: #006F3C;
+  border: 2px solid #006F3C;
   border-radius: 4rem;
-  padding: 11rem 24rem;
-  padding: 15rem 24rem;
+  padding: 14rem 16rem;
   margin: 0;
   transition: 0.1s ease-in;
   font-weight: 600;
   font-size: 16rem;
-  line-height: 1.5;
   line-height: 1;
   text-decoration: none;
   cursor: pointer;
@@ -10221,7 +10204,7 @@ section.u4m-blog-post div.comments div.content form.hs-form .hs-button, section.
 }
 section.u4m-blog-post div.comments div.content form.hs-form .hs-button:hover, section.u4m-blog-post div.comments div.content form.hs-form .hs-button:focus, section.u4m-blog-post div.comments div.content form.mixitup-multifilter .hs-button:hover, section.u4m-blog-post div.comments div.content form.mixitup-multifilter .hs-button:focus, section.u4m-blog-post div.comments div.content form .hs-button:hover, section.u4m-blog-post div.comments div.content form .hs-button:focus {
   background-color: #ffffff;
-  color: #007c43;
+  color: #006F3C;
 }
 section.u4m-blog-post div.comments div.content form .hs-richtext p {
   font-size: 11rem;
@@ -10231,16 +10214,14 @@ section.u4m-blog-post div.comments div.content form .hs-button {
   display: inline-block;
   font-family: "Aktive Grotesk, Arial, sans serif";
   color: #ffffff;
-  background-color: #007c43;
-  border: 1px solid #007c43;
+  background-color: #006F3C;
+  border: 2px solid #006F3C;
   border-radius: 4rem;
-  padding: 11rem 24rem;
-  padding: 15rem 24rem;
+  padding: 14rem 16rem;
   margin: 0;
   transition: 0.1s ease-in;
   font-weight: 600;
   font-size: 16rem;
-  line-height: 1.5;
   line-height: 1;
   text-decoration: none;
   cursor: pointer;
@@ -10248,7 +10229,7 @@ section.u4m-blog-post div.comments div.content form .hs-button {
 }
 section.u4m-blog-post div.comments div.content form .hs-button:hover, section.u4m-blog-post div.comments div.content form .hs-button:focus {
   background-color: #ffffff;
-  color: #007c43;
+  color: #006F3C;
 }
 
 @keyframes fadeIn1 {
@@ -10286,7 +10267,6 @@ section.u4m-blog-post div.comments div.content form .hs-button:hover, section.u4
 }
 .footer-wrapper .footer ul {
   line-height: normal;
-  font-size: 16rem;
 }
 @media (max-width: 767px) {
   .footer-wrapper .footer ul {
@@ -10378,11 +10358,12 @@ section.u4m-blog-post div.comments div.content form .hs-button:hover, section.u4
   white-space: normal;
   overflow: inherit;
   color: #213944;
-  font-weight: 600;
+  font-weight: 400;
   line-height: 1.3;
 }
 .footer-wrapper .footer .footer-top-inner .footer-logo-col .login-menu ul li a:hover {
-  color: #007c43;
+  color: #006F3C;
+  font-weight: 600;
 }
 .footer-wrapper .footer .footer-top-inner .footer-menu {
   width: calc(100% - 453px);
@@ -10406,6 +10387,11 @@ section.u4m-blog-post div.comments div.content form .hs-button:hover, section.u4
   margin: 0;
   width: 100%;
   row-gap: 40px;
+}
+@media (min-width: 1281px) {
+  .footer-wrapper .footer .footer-top-inner .footer-menu .hs-menu-wrapper > ul {
+    flex-wrap: nowrap;
+  }
 }
 @media (max-width: 767px) {
   .footer-wrapper .footer .footer-top-inner .footer-menu .hs-menu-wrapper > ul {
@@ -10460,11 +10446,12 @@ section.u4m-blog-post div.comments div.content form .hs-button:hover, section.u4
 }
 .footer-wrapper .footer .footer-top-inner .footer-menu .hs-menu-wrapper > ul > li .hs-menu-children-wrapper > li > a {
   color: #213944;
-  font-weight: 600;
+  font-weight: 400;
   line-height: 1.3;
 }
 .footer-wrapper .footer .footer-top-inner .footer-menu .hs-menu-wrapper > ul > li .hs-menu-children-wrapper > li > a:hover {
-  color: #007c43;
+  color: #006F3C;
+  font-weight: 600;
 }
 .footer-wrapper .footer .bottom-footer {
   border-top: 1px solid #dbdbdb;
@@ -10494,11 +10481,12 @@ section.u4m-blog-post div.comments div.content form .hs-button:hover, section.u4
   white-space: normal;
   overflow: inherit;
   color: #213944;
-  font-weight: 600;
+  font-weight: 400;
   line-height: 1.3;
 }
 .footer-wrapper .footer .bottom-footer .privacy-menu ul > li > a:hover {
-  color: #007c43;
+  color: #006F3C;
+  font-weight: 600;
 }
 .footer-wrapper .footer .bottom-footer .copyright {
   margin-top: 28px;
@@ -10557,7 +10545,6 @@ section.u4m-blog-post div.comments div.content form .hs-button:hover, section.u4
   font-family: "Aktive Grotesk, Arial, sans serif";
   line-height: 1;
   font-size: 16rem;
-  font-weight: 600;
   letter-spacing: normal;
 }
 .header-wrapper .header-top-menu .hs-menu-wrapper ul li {
@@ -10569,6 +10556,14 @@ section.u4m-blog-post div.comments div.content form .hs-button:hover, section.u4
 }
 .header-wrapper .header-top-menu .hs-menu-wrapper ul li:last-child {
   padding-right: 0;
+  font-weight: 600;
+}
+.header-wrapper .header-top-menu .hs-menu-wrapper ul li:last-child a {
+  color: #006F3C;
+}
+.header-wrapper .header-top-menu .hs-menu-wrapper ul li.active a {
+  font-weight: 600;
+  color: #006F3C;
 }
 .header-wrapper .header-top-menu .hs-menu-wrapper ul li a {
   color: #213944;
@@ -10580,7 +10575,8 @@ section.u4m-blog-post div.comments div.content form .hs-button:hover, section.u4
   text-overflow: unset;
 }
 .header-wrapper .header-top-menu .hs-menu-wrapper ul li a:hover {
-  color: #007c43;
+  color: #006F3C;
+  font-weight: 600;
 }
 .header-wrapper .main-header {
   background-color: #ffffff;
@@ -10619,7 +10615,7 @@ section.u4m-blog-post div.comments div.content form .hs-button:hover, section.u4
 }
 .header-wrapper .main-header .row-fluid .site_logo img {
   max-width: 100%;
-  width: 325.71px !important;
+  width: 200px !important;
 }
 @media (max-width: 767px) {
   .header-wrapper .main-header .row-fluid .site_logo img {
@@ -10665,8 +10661,6 @@ section.u4m-blog-post div.comments div.content form .hs-button:hover, section.u4
   display: flex;
   flex-wrap: wrap;
   font-family: "Aktive Grotesk, Arial, sans serif";
-  font-size: 16rem;
-  font-weight: 600;
   justify-content: flex-end;
   letter-spacing: normal;
   line-height: 1;
@@ -10686,11 +10680,14 @@ section.u4m-blog-post div.comments div.content form .hs-button:hover, section.u4
   }
 }
 .header-wrapper .main-header .row-fluid .site_menu .hs-menu-wrapper ul li {
-  padding-right: 20px;
+  padding-right: 30px;
   position: relative;
   float: none;
   letter-spacing: normal;
   margin-bottom: 0;
+}
+.header-wrapper .main-header .row-fluid .site_menu .hs-menu-wrapper ul li.active {
+  font-weight: 600;
 }
 @media (max-width: 1280px) {
   .header-wrapper .main-header .row-fluid .site_menu .hs-menu-wrapper ul li {
@@ -10723,7 +10720,6 @@ section.u4m-blog-post div.comments div.content form .hs-button:hover, section.u4
   }
 }
 .header-wrapper .main-header .row-fluid .site_menu .hs-menu-wrapper ul li a {
-  font-size: 16rem;
   line-height: 1;
   color: #213944;
   max-width: 100%;
@@ -10747,7 +10743,8 @@ section.u4m-blog-post div.comments div.content form .hs-button:hover, section.u4
   }
 }
 .header-wrapper .main-header .row-fluid .site_menu .hs-menu-wrapper ul li a:hover {
-  color: #007c43;
+  color: #006F3C;
+  font-weight: 600;
 }
 .header-wrapper .main-header .row-fluid .site_menu .hs-menu-wrapper ul li ul.hs-menu-children-wrapper {
   top: 100%;
@@ -10793,14 +10790,14 @@ section.u4m-blog-post div.comments div.content form .hs-button:hover, section.u4
   }
 }
 .header-wrapper .main-header .row-fluid .site_menu .hs-menu-wrapper ul li ul.hs-menu-children-wrapper li a:hover {
-  color: #007c43;
+  color: #006F3C;
 }
 .header-wrapper .main-header .row-fluid .site_menu .hs-menu-wrapper ul li:hover ul.hs-menu-children-wrapper {
   opacity: 1;
   visibility: visible;
 }
 .header-wrapper .main-header .row-fluid .site_menu .header_btn {
-  padding-left: 20px;
+  padding-left: 30px;
 }
 @media (max-width: 991px) {
   .header-wrapper .main-header .row-fluid .site_menu .header_btn {

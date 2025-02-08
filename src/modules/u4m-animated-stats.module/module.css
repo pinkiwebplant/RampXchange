@@ -61,10 +61,10 @@ html {
 }
 .u4m-animated-stats .statistics-items .animated-stats-item .stats-item .stats-item-inn .number {
   font-family: "Aktive Grotesk, Arial, sans serif";
-  font-size: 40rem;
-  font-weight: 600;
+  font-size: 32rem;
+  font-weight: 400;
   margin-bottom: 30rem;
-  line-height: 1;
+  line-height: 1.2;
   margin-bottom: 0;
   display: flex;
   flex-wrap: wrap;
@@ -91,9 +91,9 @@ html {
 .u4m-animated-stats .statistics-items .animated-stats-item .stats-item .stats-item-inn .number .suffix {
   font-family: "Aktive Grotesk, Arial, sans serif";
   font-size: 19rem;
-  font-weight: 600;
+  font-weight: 400;
   margin-bottom: 30rem;
-  line-height: 1;
+  line-height: 1.2;
   margin-bottom: 0;
 }
 @media (max-width: 1024px) {
@@ -128,9 +128,9 @@ html {
 .u4m-animated-stats .statistics-items .animated-stats-item .stats-item .stats-item-inn .caption {
   font-family: "Aktive Grotesk, Arial, sans serif";
   font-size: 19rem;
-  font-weight: 600;
+  font-weight: 400;
   margin-bottom: 30rem;
-  line-height: 1;
+  line-height: 1.2;
   margin-bottom: 0;
   font-weight: 500;
 }
@@ -146,7 +146,7 @@ html {
   }
 }
 .u4m-animated-stats .lime_green {
-  color: #007c43;
+  color: #006F3C;
 }
 .u4m-animated-stats .strong_cyan {
   color: #00a4bd;
