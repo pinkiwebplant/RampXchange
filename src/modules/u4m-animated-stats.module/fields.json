@@ -427,7 +427,7 @@
       "reordering_enabled" : true,
       "preset" : null,
       "type" : "choice",
-      "default" : "gradient"
+      "default" : ""
     }, {
       "id" : "2171d9e6-823e-48c9-16d4-b37c977c4c08",
       "name" : "background_image",
@@ -526,7 +526,7 @@
     "reordering_enabled" : true,
     "preset" : null,
     "type" : "choice",
-    "default" : "soft_green"
+    "default" : ""
   }, {
     "id" : "16f243a2-30d8-4269-e65b-47b74d21dabb",
     "name" : "select_content_text_color",
@@ -535,12 +535,12 @@
     "required" : false,
     "locked" : false,
     "display" : "select",
-    "choices" : [ [ "lime_green", "Lime Green" ], [ "strong_cyan", "Strong Cyan" ], [ "black", "Black" ], [ "white", "White" ], [ "soft_green", "Soft Green" ], [ "dark_desaturated_blue", "Dark Desaturated Blue" ], [ "light_gray", "Light Gray" ], [ "dark_grayish_blue", "Dark Grayish Blue" ], [ "moderate_orange", "Moderate Orange" ], [ "light_grayish_green", "Light Grayish Green" ], [ "desaturated_blue", "Desaturated Blue" ], [ "very_light_gray", " Very Light Gray" ] ],
+    "choices" : [ [ "lime_green", "Ramp Green" ], [ "strong_cyan", "Strong Cyan" ], [ "black", "Black" ], [ "white", "White" ], [ "soft_green", "Soft Green" ], [ "dark_desaturated_blue", "Dark Desaturated Blue" ], [ "light_gray", "Light Gray" ], [ "dark_grayish_blue", "Dark Grayish Blue" ], [ "moderate_orange", "Moderate Orange" ], [ "light_grayish_green", "Light Grayish Green" ], [ "desaturated_blue", "Desaturated Blue" ], [ "very_light_gray", " Very Light Gray" ] ],
     "multiple" : false,
     "reordering_enabled" : true,
     "preset" : null,
     "type" : "choice",
-    "default" : "white"
+    "default" : "lime_green"
   } ],
   "tab" : "CONTENT",
   "expanded" : false,

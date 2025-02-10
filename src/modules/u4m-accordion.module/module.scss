@@ -9,6 +9,7 @@
       gap: 0;
       border-radius: 4px;
       overflow: hidden;
+      cursor: pointer;
       h6 {
         margin: 0;
         display: flex;
@@ -17,6 +18,7 @@
         gap: 10px;
         align-items: center;
         color: $heading;
+        font-weight: 600;
         svg.remove {
           display: none;
         }

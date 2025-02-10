@@ -3095,7 +3095,7 @@ h6 {
   font-size: 19rem;
   font-weight: 400;
   margin-bottom: 30rem;
-  line-height: 1.2;
+  line-height: 1;
 }
 @media (max-width: 1024px) {
   h6 {
@@ -3964,7 +3964,7 @@ form h3 {
   font-size: 19rem;
   font-weight: 400;
   margin-bottom: 30rem;
-  line-height: 1.2;
+  line-height: 1;
 }
 @media (max-width: 1024px) {
   form h3 {
@@ -4682,7 +4682,7 @@ section.u4m-backup-unsubscribe form h3 {
   font-size: 19rem;
   font-weight: 400;
   margin-bottom: 30rem;
-  line-height: 1.2;
+  line-height: 1;
 }
 @media (max-width: 1024px) {
   section.u4m-backup-unsubscribe form h3 {
@@ -5375,7 +5375,7 @@ section.u4m-password-prompt form h3 {
   font-size: 19rem;
   font-weight: 400;
   margin-bottom: 30rem;
-  line-height: 1.2;
+  line-height: 1;
 }
 @media (max-width: 1024px) {
   section.u4m-membership-login form h3,
@@ -7801,7 +7801,7 @@ section.u4m-subscription-preferences form h3 {
   font-size: 19rem;
   font-weight: 400;
   margin-bottom: 30rem;
-  line-height: 1.2;
+  line-height: 1;
 }
 @media (max-width: 1024px) {
   section.u4m-subscription-preferences form h3 {
@@ -8478,7 +8478,7 @@ section.u4m-drag-and-drop-area form h3 {
   font-size: 19rem;
   font-weight: 400;
   margin-bottom: 30rem;
-  line-height: 1.2;
+  line-height: 1;
 }
 @media (max-width: 1024px) {
   section.u4m-drag-and-drop-area form h3 {
@@ -9389,7 +9389,7 @@ section.u4m-blog-post div.body div.content h6 {
   font-size: 19rem;
   font-weight: 400;
   margin-bottom: 30rem;
-  line-height: 1.2;
+  line-height: 1;
 }
 @media (max-width: 1024px) {
   section.u4m-blog-post div.body div.content h6 {
@@ -9597,7 +9597,7 @@ section.u4m-blog-post div.comments div.content form h3 {
   font-size: 19rem;
   font-weight: 400;
   margin-bottom: 30rem;
-  line-height: 1.2;
+  line-height: 1;
 }
 @media (max-width: 1024px) {
   section.u4m-blog-post div.comments div.content form h3 {

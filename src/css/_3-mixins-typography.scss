@@ -75,7 +75,7 @@
   font-size: 19rem;
   font-weight: 400;
   margin-bottom: 30rem;
-  line-height: 1.2;
+  line-height: 1;
   @include tablet {
     font-size: 19rem;
   }
@@ -211,4 +211,7 @@
 }
 @mixin size10 {
   font-size: 10rem;
+}
+@mixin size50 {
+  font-size: 50rem;
 }
