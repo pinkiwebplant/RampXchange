@@ -16,9 +16,6 @@ html {
   }
 }
 
-.u4m-cards .intro_content .eyebrow_text {
-  font-size: 14rem;
-}
 .u4m-cards .btmCntt .inner_wrpp.intro_content {
   max-width: 100%;
   margin: 0;
@@ -30,8 +27,47 @@ html {
 .u4m-cards .btmCntt .inner_wrpp.intro_content.img_cols {
   gap: 32px;
 }
-.u4m-cards .btmCntt .inner_wrpp.intro_content.img_cols .items {
-  width: calc(33.33% - 21.3px);
+.u4m-cards .btmCntt .inner_wrpp.intro_content.img_cols.cols_two .items {
+  width: 100%;
+}
+@media (min-width: 768px) {
+  .u4m-cards .btmCntt .inner_wrpp.intro_content.img_cols.cols_two .items {
+    width: calc((100% - 32px) / 2);
+  }
+}
+.u4m-cards .btmCntt .inner_wrpp.intro_content.img_cols.cols_three .items {
+  width: 100%;
+}
+@media (min-width: 768px) {
+  .u4m-cards .btmCntt .inner_wrpp.intro_content.img_cols.cols_three .items {
+    width: calc((100% - 32px) / 2);
+  }
+}
+@media (min-width: 992px) {
+  .u4m-cards .btmCntt .inner_wrpp.intro_content.img_cols.cols_three .items {
+    width: calc((100% - 64px) / 3);
+  }
+}
+.u4m-cards .btmCntt .inner_wrpp.intro_content.img_cols.cols_four {
+  gap: 20px;
+}
+.u4m-cards .btmCntt .inner_wrpp.intro_content.img_cols.cols_four .items {
+  width: 100%;
+}
+@media (min-width: 768px) {
+  .u4m-cards .btmCntt .inner_wrpp.intro_content.img_cols.cols_four .items {
+    width: calc((100% - 20px) / 2);
+  }
+}
+@media (min-width: 992px) {
+  .u4m-cards .btmCntt .inner_wrpp.intro_content.img_cols.cols_four .items {
+    width: calc((100% - 40px) / 3);
+  }
+}
+@media (min-width: 1281px) {
+  .u4m-cards .btmCntt .inner_wrpp.intro_content.img_cols.cols_four .items {
+    width: calc((100% - 60px) / 4);
+  }
 }
 .u4m-cards .btmCntt .inner_wrpp.intro_content.img_cols .items .innerWrpp {
   padding: 0;
@@ -39,18 +75,50 @@ html {
 .u4m-cards .btmCntt .inner_wrpp.intro_content.img_cols .items .innerWrpp .btmcntt {
   padding: 36px 24px;
 }
-@media (max-width: 991px) {
-  .u4m-cards .btmCntt .inner_wrpp.intro_content.img_cols .items {
-    width: calc(50% - 16px);
-  }
-}
-@media (max-width: 767px) {
-  .u4m-cards .btmCntt .inner_wrpp.intro_content.img_cols .items {
-    width: 100%;
-  }
-}
 .u4m-cards .btmCntt .inner_wrpp.intro_content.img_cols .btns {
   margin-top: 20px !important;
+}
+.u4m-cards .btmCntt .inner_wrpp.intro_content.icons_cols.cols_two {
+  gap: 32px;
+}
+.u4m-cards .btmCntt .inner_wrpp.intro_content.icons_cols.cols_two .items {
+  width: 100%;
+}
+@media (min-width: 768px) {
+  .u4m-cards .btmCntt .inner_wrpp.intro_content.icons_cols.cols_two .items {
+    width: calc((100% - 32px) / 2);
+  }
+}
+.u4m-cards .btmCntt .inner_wrpp.intro_content.icons_cols.cols_three .items {
+  width: 100%;
+}
+@media (min-width: 768px) {
+  .u4m-cards .btmCntt .inner_wrpp.intro_content.icons_cols.cols_three .items {
+    width: calc((100% - 20px) / 2);
+  }
+}
+@media (min-width: 992px) {
+  .u4m-cards .btmCntt .inner_wrpp.intro_content.icons_cols.cols_three .items {
+    width: calc((100% - 40px) / 3);
+  }
+}
+.u4m-cards .btmCntt .inner_wrpp.intro_content.icons_cols.cols_four .items {
+  width: 100%;
+}
+@media (min-width: 768px) {
+  .u4m-cards .btmCntt .inner_wrpp.intro_content.icons_cols.cols_four .items {
+    width: calc((100% - 20px) / 2);
+  }
+}
+@media (min-width: 992px) {
+  .u4m-cards .btmCntt .inner_wrpp.intro_content.icons_cols.cols_four .items {
+    width: calc((100% - 40px) / 3);
+  }
+}
+@media (min-width: 1281px) {
+  .u4m-cards .btmCntt .inner_wrpp.intro_content.icons_cols.cols_four .items {
+    width: calc((100% - 60px) / 4);
+  }
 }
 .u4m-cards .btmCntt .inner_wrpp.intro_content .btmcntt {
   height: 100%;
@@ -76,9 +144,8 @@ html {
   justify-content: flex-end;
 }
 .u4m-cards .btmCntt .inner_wrpp.intro_content .items {
-  width: calc(33.33% - 13.366667px);
   max-width: 100%;
-  border-radius: 12px;
+  border-radius: 4rem;
   overflow: hidden;
 }
 .u4m-cards .btmCntt .inner_wrpp.intro_content .items.cards_reverse_text .eyebrow_text {
@@ -104,6 +171,17 @@ html {
   display: flex;
   flex-direction: column;
   height: 100%;
+}
+.u4m-cards .btmCntt .inner_wrpp.intro_content .items .innerWrpp .topcnttimg {
+  padding-bottom: 56.66%;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+@media (min-width: 768px) {
+  .u4m-cards .btmCntt .inner_wrpp.intro_content .items .innerWrpp .topcnttimg {
+    padding-bottom: 252px;
+  }
 }
 .u4m-cards .btmCntt .inner_wrpp.intro_content .items .innerWrpp .icon {
   margin-bottom: 32px;
@@ -137,8 +215,9 @@ html {
 .u4m-cards .btmCntt .inner_wrpp.intro_content .items .innerWrpp .intro_btn_wrap .btns {
   margin-top: 34px;
 }
-.u4m-cards .btmCntt .inner_wrpp.intro_content .items .innerWrpp .eyebrow_text {
-  color: #213944;
+.u4m-cards .btmCntt .inner_wrpp.intro_content .items .innerWrpp .eyebrow_text.sm {
+  font-size: 13rem;
+  color: #006f3c;
 }
 .u4m-cards .btmCntt .inner_wrpp.intro_content .items .innerWrpp .intro_title {
   color: #213944;
@@ -146,8 +225,12 @@ html {
 .u4m-cards .btmCntt .inner_wrpp.intro_content .items .innerWrpp .intro_desc > * {
   color: #213944;
 }
+.u4m-cards .btmCntt .inner_wrpp.intro_content .items .innerWrpp .btn_item {
+  margin-top: 20px;
+}
 .u4m-cards .btmCntt .inner_wrpp.intro_content .items .innerWrpp .arrow-link {
   color: #006f3c;
+  padding: 0;
 }
 .u4m-cards .btmCntt .inner_wrpp.intro_content .items .innerWrpp .arrow-link:focus {
   color: #213944;
@@ -161,15 +244,27 @@ html {
   flex-direction: column;
   height: 100%;
 }
-@media (max-width: 991px) {
-  .u4m-cards .btmCntt .inner_wrpp.intro_content .items {
-    width: calc(50% - 10px);
-  }
+.u4m-cards .btmCntt .inner_wrpp.intro_content .items .topcntt.left {
+  flex-direction: row;
+  gap: 12px;
 }
-@media (max-width: 767px) {
-  .u4m-cards .btmCntt .inner_wrpp.intro_content .items {
-    width: 100%;
-  }
+.u4m-cards .btmCntt .inner_wrpp.intro_content .items .topcntt.left .icons_wrpp {
+  max-width: 64px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.u4m-cards .btmCntt .inner_wrpp.intro_content .items .topcntt.left .btmcntt {
+  max-width: calc(100% - 64px);
+}
+.u4m-cards .btmCntt .inner_wrpp.intro_content .items .topcntt.left .btmcntt .intro_title {
+  margin-bottom: 10rem;
+}
+.u4m-cards .btmCntt .inner_wrpp.intro_content .items .topcntt.left .btmcntt .innerWrpp .icon {
+  margin: 0;
+}
+.u4m-cards .btmCntt .inner_wrpp.intro_content .items.dropShadow {
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.15);
 }
 @media (max-width: 991px) {
   .u4m-cards .btmCntt .inner_wrpp.intro_content {

@@ -3,118 +3,65 @@
 {% include "../partials/u4-module-includes.html" %}
 
 <div class="page-center ">
-	<div class="intro_wrapp">
-		{{macros.introGroup(module.intro_content)}}
-	</div>
-	<div class="btmCntt ">
+  <div class="intro_wrapp">
+    {{macros.introGroup(module.intro_content)}}
+  </div>
+  <div class="btmCntt ">
 
-		<div class="inner_wrpp intro_content 	{{ module.module_settings.cards_group.media_type }}_cols  {{ module.module_settings.cards_group.content_alignment }}">
-			{% for item in module.cards_items_group %}
-			<div class="items  {{ module.module_settings.cards_group.cards_background_color }} {% if module.module_settings.cards_group.reverse_text %} cards_reverse_text {% endif %}">
-				<div class="innerWrpp">
-					<div class="topcntt">
-						{% if  module.module_settings.cards_group.media_type  == 'img'%}
-						{% if item.image_field.src %}
-						{% set sizeAttrs = 'width="{{ item.image_field.width|escape_attr }}" height="{{ item.image_field.height|escape_attr }}"' %}
-						{% if item.image_field.size_type == 'auto' %}
-						{% set sizeAttrs = 'width="{{ item.image_field.width|escape_attr }}" height="{{ item.image_field.height|escape_attr }}" style="max-width: 100%; height: auto;"' %}
-						{% elif item.image_field.size_type == 'auto_custom_max' %}
-						{% set sizeAttrs = 'width="{{ item.image_field.max_width|escape_attr }}" height="{{ item.image_field.max_height|escape_attr }}" style="max-width: 100%; height: auto;"' %}
-						{% endif %}
-						{% set loadingAttr = item.image_field.loading != 'disabled' ? 'loading="{{ item.image_field.loading|escape_attr }}"' : '' %}
-						<img src="{{ item.image_field.src|escape_url }}" alt="{{ item.image_field.alt|escape_attr }}" {{ loadingAttr }} {{ sizeAttrs }}>
-						{% endif %}
-						{% endif %}
-						{% if  module.module_settings.cards_group.media_type  == 'icons'%}
-						<div class="icons_wrpp">
-							{% if item.icon_group.icon_type == 'Image' %}
-							<div class="icon">
-								{% if item.icon_group.image_icon.src %}
-								{% set sizeAttrs = 'width="{{ item.icon_group.image_icon.width|escape_attr }}" height="{{ item.icon_group.image_icon.height|escape_attr }}"' %}
-								{% if item.icon_group.image_icon.size_type == 'auto' %}
-								{% set sizeAttrs = 'width="{{ item.icon_group.image_icon.width|escape_attr }}" height="{{ item.icon_group.image_icon.height|escape_attr }}" style="max-width: 100%; height: auto;"' %}
-								{% elif item.icon_group.image_icon.size_type == 'auto_custom_max' %}
-								{% set sizeAttrs = 'width="{{ item.icon_group.image_icon.max_width|escape_attr }}" height="{{ item.icon_group.image_icon.max_height|escape_attr }}" style="max-width: 100%; height: auto;"' %}
-								{% endif %}
-								{% set loadingAttr = item.icon_group.image_icon.loading != 'disabled' ? 'loading="{{ item.icon_group.image_icon.loading|escape_attr }}"' : '' %}
-								<img src="{{ item.icon_group.image_icon.src|escape_url }}" alt="{{ item.icon_group.image_icon.alt|escape_attr }}" {{ loadingAttr }} {{ sizeAttrs }}>
-								{% endif %}
-							</div>
-							{% elif item.icon_group.icon_type == 'svg' %}
-							<div class="icon {{ module.module_settings.cards_group.icon_color }}_text		{{ item.icon_group.svg_icon_size_type }}">
-								{% inline_text field="icon_group.svg_icon" value="{{ item.icon_group.svg_icon }}" %}
-							</div>
-							{% endif %}
-						</div>
-						{% endif %}
-						<div class="btmcntt">
-							{% if item.include_eyebrow_text %}
-							<div class="eyebrow_text">
-								{{ item.eyebrow_text }}
-							</div>
-							{% endif %}
-							{% if item.include_heading %}
-							<{{item.heading_size }} class="intro_title">{{ item.heading }}</{{ item.heading_size }}>
-								{% endif %}
-								{% if item.include_content %}
-								<div class="intro_desc "> {{ item.content }} </div>
-						{% endif %}
-					{% if item.include_button %}
+    <div class="inner_wrpp intro_content 	{{ module.module_settings.cards_group.media_type }}_cols  {{ module.module_settings.cards_group.content_alignment }} cols_{{ module.module_settings.cards_group.column_type }}">
+      {% for item in module.cards_items_group %}
+      <div class="items  {{ module.module_settings.cards_group.cards_background_color }} {% if module.module_settings.cards_group.reverse_text %} cards_reverse_text {% endif %} {% if module.module_settings.cards_group.enabled_drop_shadow %}dropShadow{% endif %}">
+        <div class="innerWrpp">
+          <div class="topcntt {{ module.module_settings.cards_group.icon_alignment }}">
+            {% if  module.module_settings.cards_group.media_type  == 'img'%}
+            {% if item.image_field.src %}
+            <div class="topcnttimg" style="background-image:url({{ item.image_field.src }});"></div>
+<!--             <img src="{{ item.image_field.src }}" alt="{{ item.image_field.alt }}"> -->
+            {% endif %}
+            {% endif %}
+            {% if  module.module_settings.cards_group.media_type  == 'icons'%}
+            <div class="icons_wrpp">
+              {% if item.icon_group.icon_type == 'Image' %}
+              <div class="icon">
+                {% if item.icon_group.image_icon.src %}
+                {% set sizeAttrs = 'width="{{ item.icon_group.image_icon.width|escape_attr }}" height="{{ item.icon_group.image_icon.height|escape_attr }}"' %}
+                <img src="{{ item.icon_group.image_icon.src }}" alt="{{ item.icon_group.image_icon.alt }}"  {{ sizeAttrs }}>
+                {% endif %}
+              </div>
+              {% elif item.icon_group.icon_type == 'svg' %}
+              <div class="icon {{ module.module_settings.cards_group.icon_color }}_text		{{ item.icon_group.svg_icon_size_type }}">
+                {% inline_text field="icon_group.svg_icon" value="{{ item.icon_group.svg_icon }}" %}
+              </div>
+              {% endif %}
+            </div>
+            {% endif %}
+            <div class="btmcntt">
+              {% if item.include_eyebrow_text %}
+              <div class="eyebrow_text {{ module.module_settings.cards_group.eyebow_text_style }}">
+                {{ item.eyebrow_text }}
+              </div>
+              {% endif %}
+              {% if item.include_heading %}
+              <{{item.heading_size }} class="intro_title">{{ item.heading }}</{{ item.heading_size }}>
+                {% endif %}
+                {% if item.include_content %}
+                <div class="intro_desc "> {{ item.content }} </div>
+            {% endif %}
 
-					<div class="intro_btn_wrap">
-						<div class="btns">
-							{% for item2 in item.button_group %}
-							<div class="btn_item">
-								{% if item2.button_type == "std" %}
-								{% set href = item2.link.url.href %}
-								{% if item2.link.url.type is equalto "EMAIL_ADDRESS" %}
-								{% set href = "mailto:" + href %}
-								{% endif %}
-								<a
-									 {% if item2.link.url.type is equalto "CALL_TO_ACTION"  %}
-									 href="{{ href }}" {# The href here is not escaped as it is not editable and functions as a JavaScript call to the associated CTA #}
-									 {% else %}
-									 href="{{ href|escape_url }}"
-									 {% endif %}
-									 {% if item2.link.open_in_new_tab %}
-									 target="_blank"
-									 {% endif %}
-									 {% if item2.link.rel %}
-									 rel="{{ item2.link.rel|escape_attr }}"
-									 {% endif %}
-									 class="		{{ item2.button_style ? item2.button_style : "hs-button" }}" >
-
-
-									<span>{{ item2.button_text }}</span>
-									{% if item2.button_style=="arrow-link" %}
-									<svg width="7" height="12" viewBox="0 0 7 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-										<path fill-rule="evenodd" clip-rule="evenodd" d="M6.83814 5.62106C7.05396 5.83037 7.05396 6.16965 6.83814 6.37896L1.2039 11.843C0.988082 12.0523 0.638231 12.0523 0.422411 11.843L0.161865 11.5904C-0.053955 11.3811 -0.053955 11.0417 0.161865 10.8324L5.14481 6.00001L0.161865 1.16755C-0.0539548 0.958242 -0.0539548 0.618957 0.161865 0.409655L0.422411 0.156977C0.638231 -0.0523252 0.988082 -0.0523252 1.2039 0.156977L6.83814 5.62106Z" fill="#007C43"/>
-									</svg>
-									{% endif %}
-								</a>
-								{% endif %}
-								{% if item2.button_type == "cta" %}
-								{% cta guid="{{ item2.cta }}" %}
-								{% endif %}
-							</div>
-							{% endfor %}
-						</div>
-					</div>
-						
-					{% endif %}
-										</div>
-				</div>
-			</div>
-		</div>
-		{% endfor %}
-	</div>
+            {% if item.include_button %}
+            {{macros.singleButton(item.button_group)}}
+            {% endif %}
+          </div>
+        </div>
+      </div>
+    </div>
+    {% endfor %}
+  </div>
 
 
 </div>
 </div>
 </section>
-
-
 
 
 
