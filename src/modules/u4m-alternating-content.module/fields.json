@@ -250,7 +250,7 @@
     "display_width" : null,
     "default" : [ {
       "button_type" : "std",
-      "button_style" : "hs-button",
+      "button_style" : "sec-btn",
       "button_text" : "Learn More",
       "link" : {
         "url" : {
@@ -279,7 +279,7 @@
     "include_button" : true,
     "button_group" : [ {
       "button_type" : "std",
-      "button_style" : "hs-button",
+      "button_style" : "sec-btn",
       "button_text" : "Learn More",
       "link" : {
         "url" : {
