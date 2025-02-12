@@ -13,7 +13,7 @@ $statblue: #315363;
 $gray3: #eeeeee;
 $gradientbg3: #f7f8f6;
 $lightGrayishBlue: #b0b7ba;
-
+$lightgreen: #dcecd6;
 $lightBronze: #f5f0e7;
 $eyebrowtext: #006f3c;
 
@@ -21,7 +21,8 @@ $rampGreen: #006f3c;
 $cyberGray: #dbdbdb;
 $changeGray: #6e757c;
 $gray4: #fcfcfc;
-
+$gray5: #f9fbf9;
+$lightestgreen: #e6f1e2;
 $colornew1: #ddecd6;
 $colornew2: #f7f8f6;
 
@@ -34,15 +35,11 @@ $gradientnew1: linear-gradient(
   $white 34.45%,
   $lightBronze 96.4%
 );
-$gradient2: linear-gradient(
-  360deg,
-  rgba($rampGreen, 0.07) 0.01%,
-  rgba($digitalgreen, 0.07) 99.97%
-);
-$gradient3: linear-gradient(90.16deg, $white 0.14%, $lightBronze 99.86%);
+$gradient2: linear-gradient(180deg, $airwhite 0%, $lightgreen 100%);
+$gradient3: linear-gradient(180deg, $airwhite 0%, $lightestgreen 100%);
 
-$gradient4: linear-gradient(360deg, $colornew1 0.01%, $colornew2 99.97%);
-$gradient5: linear-gradient(180deg, $statblue 0%, $heading 100%);
+$gradient4: linear-gradient(180deg, $white 0%, $gray5 100%);
+$gradient5: linear-gradient(278.27deg, $statblue 0%, $heading 100%);
 
 //
 $font1: "Aktive Grotesk, Arial, sans serif";

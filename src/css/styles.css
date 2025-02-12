@@ -3470,13 +3470,17 @@ li {
   top: 0;
   width: 20px;
   height: 20px;
-  background: #c49e5b;
+  background: #dcecd6;
   border-radius: 100%;
   text-align: center;
   display: flex;
   align-items: center;
   justify-content: center;
+  color: #006f3c;
+}
+#main-content .reverse-text ul:not([class]) li:not([class])::before {
   color: #ffffff;
+  background: #c49e5b;
 }
 
 ul ul,
@@ -3927,19 +3931,19 @@ section[class*=u4m-] {
 }
 
 .gradient2 {
-  background-image: linear-gradient(360deg, rgba(0, 111, 60, 0.07) 0.01%, rgba(181, 221, 165, 0.07) 99.97%);
+  background-image: linear-gradient(180deg, #f7f8f6 0%, #dcecd6 100%);
 }
 
 .gradient3 {
-  background-image: linear-gradient(90.16deg, #ffffff 0.14%, #f5f0e7 99.86%);
+  background-image: linear-gradient(180deg, #f7f8f6 0%, #e6f1e2 100%);
 }
 
 .gradient4 {
-  background-image: linear-gradient(360deg, #ddecd6 0.01%, #f7f8f6 99.97%);
+  background-image: linear-gradient(180deg, #ffffff 0%, #f9fbf9 100%);
 }
 
 .gradient5 {
-  background-image: linear-gradient(180deg, #315363 0%, #213944 100%);
+  background-image: linear-gradient(278.27deg, #315363 0%, #213944 100%);
 }
 
 .form-title:empty {

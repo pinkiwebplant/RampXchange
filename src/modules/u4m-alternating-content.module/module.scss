@@ -1,5 +1,11 @@
 @import "../../css/_module-imports";
 .u4m-alternating-content {
+  position: relative;
+
+  .gradient1 {
+    background-image: $gradientnew1;
+  }
+
   .row {
     display: flex;
     gap: 60px;
@@ -61,7 +67,7 @@
       @include tabletvert {
         width: 100%;
       }
-      img{
+      img {
         border-radius: $borderRadius;
         filter: $dropshadow;
       }

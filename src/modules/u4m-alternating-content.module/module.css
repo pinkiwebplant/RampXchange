@@ -16,6 +16,12 @@ html {
   }
 }
 
+.u4m-alternating-content {
+  position: relative;
+}
+.u4m-alternating-content .gradient1 {
+  background-image: linear-gradient(89.85deg, rgba(247, 248, 246, 0) 0.75%, rgba(252, 252, 252, 0.626667) 20.58%, #ffffff 34.45%, #f5f0e7 96.4%);
+}
 .u4m-alternating-content .row {
   display: flex;
   gap: 60px;

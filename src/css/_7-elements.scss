@@ -367,15 +367,19 @@ li {
         top: 0;
         width: 20px;
         height: 20px;
-        background: $bronze;
+        background: $lightgreen;
         border-radius: 100%;
         text-align: center;
         display: flex;
         align-items: center;
         justify-content: center;
-        color: $white;
+        color: $rampGreen;
       }
     }
+  }
+  .reverse-text ul:not([class]) li:not([class])::before {
+    color: $white;
+    background: $bronze;
   }
 }
 ul ul,
@@ -754,6 +758,7 @@ section[class*="u4m-"] {
 .gradient1 {
   background-image: $gradientnew1;
 }
+
 .gradient2 {
   background-image: $gradient2;
 }
