@@ -1,5 +1,5 @@
 // Colors - For transparency use rgba($action1, 0.5) = 50% opaque
-$action1: #006F3C;
+$action1: #006f3c;
 $action2: #00a4bd;
 $black: #000000;
 $white: #ffffff;
@@ -15,21 +15,25 @@ $gradientbg3: #f7f8f6;
 $lightGrayishBlue: #b0b7ba;
 
 $lightBronze: #f5f0e7;
-$eyebrowtext: #006F3C;
+$eyebrowtext: #006f3c;
 
-$rampGreen: #006F3C; 
-
+$rampGreen: #006f3c;
 $cyberGray: #dbdbdb;
 $changeGray: #6e757c;
-// $bronze: #c49e5b;
-// $airWhite: #f7f8f6;
+$gray4: #fcfcfc;
 
 $colornew1: #ddecd6;
 $colornew2: #f7f8f6;
 
 //
 
-$gradient1: linear-gradient(278.27deg, $gray3 0%, $gray1 100%);
+$gradientnew1: linear-gradient(
+  89.85deg,
+  rgba($airwhite, 0) 0.75%,
+  rgba($gray4, 0.626667) 20.58%,
+  $white 34.45%,
+  $lightBronze 96.4%
+);
 $gradient2: linear-gradient(
   360deg,
   rgba($rampGreen, 0.07) 0.01%,
@@ -38,13 +42,9 @@ $gradient2: linear-gradient(
 $gradient3: linear-gradient(90.16deg, $white 0.14%, $lightBronze 99.86%);
 
 $gradient4: linear-gradient(360deg, $colornew1 0.01%, $colornew2 99.97%);
-
-// $gradient3: linear-gradient(278.27deg, $statblue 0%, $heading 100%);
-// $gradient4: linear-gradient(341.11deg, $statblue 12.77%, $heading 87.28%);
 $gradient5: linear-gradient(180deg, $statblue 0%, $heading 100%);
 
 //
-
 $font1: "Aktive Grotesk, Arial, sans serif";
 $baseFontSize: 15rem;
 $baseLineHeight: 1.5; // Golden ratio

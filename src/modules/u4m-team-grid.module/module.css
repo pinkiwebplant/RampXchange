@@ -58,7 +58,7 @@ html {
 }
 .u4m-team-grid .team_grid_row .team_item .bio_popup_text a {
   gap: 4px;
-  color: #006F3C;
+  color: #006f3c;
   display: flex;
 }
 .u4m-team-grid .team_grid_row .team_item .bio_popup_text a:hover {
@@ -87,7 +87,7 @@ html {
   display: block;
   width: 24px;
   height: 24px;
-  color: #006F3C;
+  color: #006f3c;
 }
 .u4m-team-grid .team_grid_row .team_item .member_share ul li a img {
   object-fit: cover;
@@ -208,7 +208,7 @@ html {
   display: none !important;
 }
 .u4m-team-grid .team_popup .team_popup_container .flex_row.team_popup_inn .popup_cnt .member_share ul li a {
-  color: #006F3C;
+  color: #006f3c;
   display: block;
   height: 24px;
   width: 24px;
