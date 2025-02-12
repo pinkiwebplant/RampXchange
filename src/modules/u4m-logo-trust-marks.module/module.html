@@ -1,113 +1,112 @@
 {% set moduleName = 'u4m-logo-trust-marks' %}
 {% set ExtramoduleClass = '' %}
 {% include "../partials/u4-module-includes.html" %}
+<div class="logostying {{ module.logos_style }}">
 
-<div class="page-center ">
-	<div class="intro_wrapp">
-		{{macros.introGroup(module.intro_content)}}
-	</div>
-</div>
-
-<div class="logo-trust-marks {{ module.module_settings.select_gradient }}">
-	<div class="page-center">
-		<div class="row">
-			<div class="logo-wrapper">
-				{% if module.select_logo == "custom" %}
-				{% for item in module.logo_items %}
-				<div class="logo-item">
-					{% set href = item.link_field.url.href %}
-					{% if item.link_field.url.type is equalto "EMAIL_ADDRESS" %}
-					{% set href = "mailto:" + href %}
-					{% endif %}
-					<a
-						 {% if item.link_field.url.type is equalto "CALL_TO_ACTION"  %}
-						 href="{{ href }}" {# The href here is not escaped as it is not editable and functions as a JavaScript call to the associated CTA #}
-						 {% else %}
-						 href="{{ href|escape_url }}"
-						 {% endif %}
-						 {% if item.link_field.open_in_new_tab %}
-						 target="_blank"
-						 {% endif %}
-						 {% if item.link_field.rel %}
-						 rel="{{ item.link_field.rel|escape_attr }}"
-						 {% endif %}
-						 >
-						{% if item.image_field.src %}
-						{% set sizeAttrs = 'width="{{ item.image_field.width|escape_attr }}" height="{{ item.image_field.height|escape_attr }}"' %}
-						{% if item.image_field.size_type == 'auto' %}
-						{% set sizeAttrs = 'width="{{ item.image_field.width|escape_attr }}" height="{{ item.image_field.height|escape_attr }}" style="max-width: 100%; height: auto;"' %}
-						{% elif item.image_field.size_type == 'auto_custom_max' %}
-						{% set sizeAttrs = 'width="{{ item.image_field.max_width|escape_attr }}" height="{{ item.image_field.max_height|escape_attr }}" style="max-width: 100%; height: auto;"' %}
-						{% endif %}
-						{% set loadingAttr = item.image_field.loading != 'disabled' ? 'loading="{{ item.image_field.loading|escape_attr }}"' : '' %}
-						<img src="{{ item.image_field.src|escape_url }}" alt="{{ item.image_field.alt|escape_attr }}" {{ loadingAttr }} {{ sizeAttrs }}>
-						{% endif %}
-					</a>
-				</div>
-				{% endfor %}
-				{% endif %}
-				{% if module.select_logo == "hubdb" %}
-				{% set table = hubdb_table_rows(module.select_table) %}
-				{% for item in table %}
-				<div class="logo-item splide__slide">
-					{% if item.logo_image.url %}
-					<a href="{{ item.link }}">
-						<img src="{{ item.logo_image.url }}" alt="{{ item.name }}">
-					</a>
-					{% endif %}
-				</div>
-				{% endfor %}
-				{% endif %}
-			</div>
-		</div>
-	</div>	
+  <div class="topSec">
+    <div class="page-center ">
+      <div class="intro_wrapp">
+        {{macros.introGroup(module.intro_content)}}
+      </div>
+    </div>
+  </div>
+  <div class="logo-trust-marks {{ module.module_settings.select_gradient }}">
+    <div class="page-center">
+      <div class="row">
+        <div class="logo-wrapper">
+          {% if module.select_logo == "custom" %}
+          {% for item in module.logo_items %}
+          <div class="logo-item">
+            {% set href = item.link_field.url.href %}
+            {% if item.link_field.url.type is equalto "EMAIL_ADDRESS" %}
+            {% set href = "mailto:" + href %}
+            {% endif %}
+            <a
+               {% if item.link_field.url.type is equalto "CALL_TO_ACTION"  %}
+               href="{{ href }}" {# The href here is not escaped as it is not editable and functions as a JavaScript call to the associated CTA #}
+               {% else %}
+               href="{{ href|escape_url }}"
+               {% endif %}
+               {% if item.link_field.open_in_new_tab %}
+               target="_blank"
+               {% endif %}
+               {% if item.link_field.rel %}
+               rel="{{ item.link_field.rel|escape_attr }}"
+               {% endif %}
+               >
+              {% if item.image_field.src %}
+              {% set sizeAttrs = 'width="{{ item.image_field.width|escape_attr }}" height="{{ item.image_field.height|escape_attr }}"' %}
+              {% if item.image_field.size_type == 'auto' %}
+              {% set sizeAttrs = 'width="{{ item.image_field.width|escape_attr }}" height="{{ item.image_field.height|escape_attr }}" style="max-width: 100%; height: auto;"' %}
+              {% elif item.image_field.size_type == 'auto_custom_max' %}
+              {% set sizeAttrs = 'width="{{ item.image_field.max_width|escape_attr }}" height="{{ item.image_field.max_height|escape_attr }}" style="max-width: 100%; height: auto;"' %}
+              {% endif %}
+              {% set loadingAttr = item.image_field.loading != 'disabled' ? 'loading="{{ item.image_field.loading|escape_attr }}"' : '' %}
+              <img src="{{ item.image_field.src|escape_url }}" alt="{{ item.image_field.alt|escape_attr }}" {{ loadingAttr }} {{ sizeAttrs }}>
+              {% endif %}
+            </a>
+          </div>
+          {% endfor %}
+          {% endif %}
+          {% if module.select_logo == "hubdb" %}
+          {% set table = hubdb_table_rows(module.select_table) %}
+          {% for item in table %}
+          <div class="logo-item splide__slide">
+            {% if item.logo_image.url %}
+            <a href="{{ item.link }}">
+              <img src="{{ item.logo_image.url }}" alt="{{ item.name }}">
+            </a>
+            {% endif %}
+          </div>
+          {% endfor %}
+          {% endif %}
+        </div>
+      </div>
+    </div>	
+  </div>
 </div>
 </section>
 
 {% require_js %}
 <script>
-	
 
-	$('.{{ name }} .logo-wrapper').slick({
-		speed: 5000, // Reduced speed for better readability
-		autoplay: true,
-		autoplaySpeed: 100,
-		cssEase: 'linear',
-		slidesToShow: 8,
-		slidesToScroll: 1,
-		variableWidth: true,
-		rtl: false, // Adjust according to language
-		mobileFirst: true,
-		rows: 1, // Single row for better alignment
-		arrows: false,
-		dots: false,
-		accessibility: true, // Enable for better usability
-		draggable: true, // Enable dragging
-		pauseOnHover: true, // Pause slider on hover
-		swipe: true, // Allow swipe gestures
-		touchMove: true, // Enable touch gestures
-		infinite: true,
-		responsive: [
-		{
-		breakpoint: 1024,
-		settings: {
-		slidesToShow: 8
-		}
-	},
-		{
-			breakpoint: 768,
-				settings: {
-					slidesToShow: 4
-				}
-		},
-			{
-				breakpoint: 480,
-					settings: {
-						slidesToShow: 2
-					}
-			}
-	]
-	}); 
+
+  $('.{{ name }} .logo-wrapper').slick({
+    slidesToShow: {{ module.slider_settings.slides_to_show }},
+    slidesToScroll: {{ module.slider_settings.slides_to_scroll }},
+    variableWidth: true,
+    arrows: true,
+    dots: false,
+    infinite: true,
+    prevArrow:'<div class="button-prev"><span class="material-symbols-outlined">arrow_back</span></div>',
+    nextArrow:'<div class="button-next"><span class="material-symbols-outlined">arrow_forward</span></div>',
+    responsive: [
+    {
+    breakpoint: 1024,
+    settings: {
+    slidesToShow: 5
+    }
+  },
+    {
+      breakpoint: 768,
+        settings: {
+          slidesToShow: 4
+        }
+    },
+      {
+        breakpoint: 575,
+          settings: {
+            slidesToShow: 2
+          }
+      },
+        {
+          breakpoint: 480,
+            settings: {
+              slidesToShow: 1
+            }
+        }
+  ]
+  }); 
 
 </script>
 {% end_require_js %}

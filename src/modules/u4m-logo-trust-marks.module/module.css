@@ -16,22 +16,48 @@ html {
   }
 }
 
-.u4m-logo-trust-marks .intro_content {
-  margin-bottom: 17px;
+@media (min-width: 1281px) {
+  .u4m-logo-trust-marks {
+    padding-left: 50rem;
+    padding-right: 50rem;
+  }
 }
-.u4m-logo-trust-marks .intro_content .eyebrow_text {
-  font-size: 14rem;
-}
-.u4m-logo-trust-marks .logo-trust-marks {
-  padding: 23px 13px 17px 13px;
+.u4m-logo-trust-marks .logostying {
   position: relative;
   z-index: 9;
 }
-.u4m-logo-trust-marks .logo-trust-marks.type_one .page-center:after {
-  background: linear-gradient(90deg, #f7f8f6 0%, rgba(247, 248, 246, 0) 50%, #f7f8f6 100%);
+@media (min-width: 1281px) {
+  .u4m-logo-trust-marks .logostying.style2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 1021px;
+    margin: 0 auto;
+  }
+  .u4m-logo-trust-marks .logostying.style2 .topSec .page-center {
+    padding-left: 0;
+    padding-right: 45px;
+  }
+  .u4m-logo-trust-marks .logostying.style2 .intro_content {
+    margin: 0;
+    padding: 0;
+  }
+  .u4m-logo-trust-marks .logostying.style2 .intro_content .intro_title {
+    margin: 0;
+  }
+  .u4m-logo-trust-marks .logostying.style2 .logo-trust-marks {
+    max-width: 854px;
+  }
 }
-.u4m-logo-trust-marks .logo-trust-marks.type_two .page-center:after {
-  background: linear-gradient(90deg, #dbdbdb 0%, rgba(219, 219, 219, 0) 50%, #dbdbdb 100%);
+.u4m-logo-trust-marks .logo-trust-marks {
+  position: relative;
+  z-index: 9;
+}
+@media (max-width: 1280px) {
+  .u4m-logo-trust-marks .logo-trust-marks {
+    padding-left: 50rem;
+    padding-right: 50rem;
+  }
 }
 .u4m-logo-trust-marks .logo-trust-marks .page-center {
   position: relative;
@@ -46,18 +72,73 @@ html {
   pointer-events: none;
 }
 .u4m-logo-trust-marks .logo-trust-marks .page-center .row {
-  margin: 0 -20px;
+  margin: 0 -22px;
 }
 .u4m-logo-trust-marks .logo-trust-marks .page-center .row .logo-wrapper .slick-list .slick-track {
   display: flex;
   align-items: center;
+  margin: 0 -22px;
 }
-.u4m-logo-trust-marks .logo-trust-marks .page-center .row .logo-wrapper .slick-list .slick-track .slick-slide img {
-  padding: 0 20px;
-  width: 180px;
-  object-fit: cover;
-  filter: grayscale(1);
+.u4m-logo-trust-marks .logo-trust-marks .page-center .row .logo-wrapper .slick-list .slick-track .slick-slide {
+  line-height: 0;
+  padding: 0 22px;
 }
-.u4m-logo-trust-marks .logo-trust-marks .page-center .row .logo-wrapper .slick-list .slick-track .slick-slide img:hover {
-  filter: none;
+.u4m-logo-trust-marks .logo-trust-marks .page-center .row .logo-wrapper .slick-list .slick-track .slick-slide .logo-item img {
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.u4m-logo-trust-marks .logo-trust-marks .page-center .row .logo-wrapper .slick-list .slick-track::before {
+  display: none;
+}
+.u4m-logo-trust-marks .logo-trust-marks .page-center .row .logo-wrapper .slick-list .slick-track::after {
+  display: none;
+}
+.u4m-logo-trust-marks .logo-trust-marks .page-center .row .logo-wrapper .slick-arrow {
+  border: 1px solid #213944;
+  width: 44px;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 100%;
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+@media (max-width: 1280px) {
+  .u4m-logo-trust-marks .logo-trust-marks .page-center .row .logo-wrapper .slick-arrow {
+    width: 30px;
+    height: 30px;
+  }
+}
+@media (max-width: 1280px) {
+  .u4m-logo-trust-marks .logo-trust-marks .page-center .row .logo-wrapper .slick-arrow span {
+    font-size: 20px;
+  }
+}
+.u4m-logo-trust-marks .logo-trust-marks .page-center .row .logo-wrapper .slick-arrow.button-prev {
+  left: -50px;
+  display: none !important;
+}
+.u4m-logo-trust-marks .logo-trust-marks .page-center .row .logo-wrapper .slick-arrow.button-next {
+  right: -85px;
+}
+@media (min-width: 1281px) and (max-width: 1400px) {
+  .u4m-logo-trust-marks .logo-trust-marks .page-center .row .logo-wrapper .slick-arrow.button-next {
+    right: -60px;
+  }
+}
+@media (max-width: 1280px) {
+  .u4m-logo-trust-marks .logo-trust-marks .page-center .row .logo-wrapper .slick-arrow.button-next {
+    right: -45px;
+  }
+}
+@media (max-width: 991px) {
+  .u4m-logo-trust-marks .logo-trust-marks .page-center .row .logo-wrapper .slick-arrow.button-next {
+    right: -35px;
+  }
+}
+.u4m-logo-trust-marks .gradient6 {
+  background: linear-gradient(90deg, #ffffff 41.5%, #f5f0e7 100%);
 }
