@@ -29,6 +29,11 @@ html {
     background: rgba(255, 255, 255, 0.8) !important;
   }
 }
+@media (max-width: 767px) {
+  .u4m-alternating-content .bg_image {
+    background-size: cover !important;
+  }
+}
 .u4m-alternating-content.left_col .bg_image {
   background-position: top right;
   background-size: contain;

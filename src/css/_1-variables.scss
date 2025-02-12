@@ -26,6 +26,8 @@ $lightestgreen: #e6f1e2;
 $colornew1: #ddecd6;
 $colornew2: #f7f8f6;
 $tabBg: #faf9f7;
+$hdBg: #f9f5ee;
+$ftBg: #f2f2f2;
 //
 
 $gradientnew1: linear-gradient(
@@ -40,7 +42,12 @@ $gradient3: linear-gradient(180deg, $airwhite 0%, $lightestgreen 100%);
 
 $gradient4: linear-gradient(180deg, $white 54%, $gray5 97%);
 $gradient5: linear-gradient(278.27deg, $statblue 0%, $heading 100%);
-
+$hdgradient: linear-gradient(89.99deg, $white 61%, $hdBg 100%);
+$hdscrollgradient: linear-gradient(
+  89.99deg,
+  rgba($white, 80%) 61%,
+  rgba($hdBg, 80%) 100%
+);
 //
 $font1: "Aktive Grotesk, Arial, sans serif";
 $baseFontSize: 15rem;

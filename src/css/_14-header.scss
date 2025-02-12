@@ -22,7 +22,7 @@
     padding: 0;
   }
   .header-top {
-    background-color: $airwhite;
+    background-color: $white;
     padding-top: 12px;
     padding-bottom: 12px;
   }
@@ -72,7 +72,7 @@
     }
   }
   .main-header {
-    background-color: $white;
+    background: $hdgradient;
     padding-top: 20px;
     padding-bottom: 20px;
     position: relative;
@@ -384,5 +384,16 @@
     width: 100%;
     top: 0;
     z-index: 999;
+  }
+}
+
+.page-scrolled {
+  .header-wrapper .main-header {
+    background: $hdscrollgradient;
+    backdrop-filter: blur(2px);
+  }
+  .header-wrapper .header-top {
+    background: rgba($white, 90%);
+    backdrop-filter: blur(2px);
   }
 }

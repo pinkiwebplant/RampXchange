@@ -572,6 +572,9 @@ section[class*="u4m-"] {
   margin-left: auto;
   margin-right: auto;
   padding: 0 20px;
+  @include tabletvert {
+    padding: 0;
+  }
 
   .eyebrow_text {
     @include eyebrow;

@@ -9,6 +9,11 @@
       background: rgba($white, 0.8) !important;
     }
   }
+  @include tabletvert {
+    .bg_image {
+      background-size: cover !important;
+    }
+  }
   &.left_col {
     .bg_image {
       background-position: top right;
