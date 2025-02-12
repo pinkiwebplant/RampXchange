@@ -1,7 +1,11 @@
 {% set moduleName = 'u4m-alternating-content' %}
-{% set ExtramoduleClass =  module.module_overrides.background_settings.image_position  %}
+{% set ExtramoduleClass =  module.module_settings.select_content_alignment  %}
 {% include "../partials/u4-module-includes.html" %}
-
+{% if module.module_overrides.background_settings.background_type == 'image' %}
+{% if module.module_overrides.background_settings.apply_overlay %}
+ <div class="bg_overlay bg_overlayColor"></div>
+{% endif %}
+{% endif %}
 <div class="page-center ">
 	<div class="row {{ module.module_settings.select_content_alignment }} {{ module.media_section.select_media_type }}">
 		<div class="left-section">

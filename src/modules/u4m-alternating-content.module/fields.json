@@ -332,14 +332,7 @@
     "type" : "image",
     "display_width" : null,
     "default" : {
-      "size_type" : "auto",
-      "src" : "https://47484996.fs1.hubspotusercontent-na1.net/hubfs/47484996/RampXchange-u4m/images/Media-3.png",
-      "alt" : "Media-3",
-      "loading" : "lazy",
-      "width" : 570,
-      "height" : 380,
-      "max_width" : 570,
-      "max_height" : 380
+      "src" : ""
     }
   }, {
     "id" : "ed7a363f-931c-0a6c-1f52-2742280b4fba",
@@ -456,14 +449,7 @@
   "default" : {
     "select_media_type" : "img",
     "image" : {
-      "size_type" : "auto",
-      "src" : "https://47484996.fs1.hubspotusercontent-na1.net/hubfs/47484996/RampXchange-u4m/images/Media-3.png",
-      "alt" : "Media-3",
-      "loading" : "lazy",
-      "width" : 570,
-      "height" : 380,
-      "max_width" : 570,
-      "max_height" : 380
+      "src" : ""
     },
     "poster_image" : {
       "size_type" : "auto",
@@ -864,7 +850,7 @@
     }, {
       "id" : "2daa32c8-c4bb-07a6-ceff-2a8ba1f1f7ef",
       "name" : "apply_overlay",
-      "label" : "Apply Overlay",
+      "label" : "Enable Overlay",
       "required" : false,
       "locked" : false,
       "visibility" : {
@@ -923,19 +909,6 @@
       "type" : "choice",
       "display_width" : null,
       "default" : ""
-    }, {
-      "id" : "70a3d5cc-f582-ee3d-473e-f993605e3235",
-      "name" : "image_position",
-      "label" : "Image Position",
-      "required" : false,
-      "locked" : false,
-      "display" : "select",
-      "choices" : [ [ "pos_left", "Left Top" ], [ "pos_right", "Right Top" ], [ "pos_center", "Center" ] ],
-      "multiple" : false,
-      "reordering_enabled" : true,
-      "preset" : null,
-      "type" : "choice",
-      "display_width" : null
     } ],
     "tab" : "CONTENT",
     "expanded" : true,
