@@ -226,30 +226,34 @@
 					display: flex;
 					flex-direction: column;
 					height: 100%;
+
 					&.left {
-						flex-direction: row;
-						gap: 12px;
-						.icons_wrpp {
-							max-width: 64px;
-							width: 100%;
-							display: flex;
-							justify-content: center;
-						}
-						.btmcntt {
-							max-width: calc(100% - 64px);
-							.intro_title {
-								margin-bottom: 10rem;
+						@include phoneMin {
+							flex-direction: row;
+							gap: 12px;
+							.icons_wrpp {
+								max-width: 64px;
+								width: 100%;
+								display: flex;
+								justify-content: center;
 							}
-							.innerWrpp {
-								.icon {
-									margin: 0;
+							.btmcntt {
+								max-width: calc(100% - 64px);
+								.intro_title {
+									margin-bottom: 10rem;
+								}
+								.innerWrpp {
+									.icon {
+										margin: 0;
+									}
 								}
 							}
 						}
 					}
 				}
+
 				&.dropShadow {
-					box-shadow: $dropshadow;
+					filter: $dropshadow;
 				}
 			}
 			@include tabletmid {

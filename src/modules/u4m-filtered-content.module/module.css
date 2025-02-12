@@ -75,8 +75,9 @@ section.u4m-filtered-content .topSec .flex_row .featCardsOuter .cardItems .cardI
   }
 }
 section.u4m-filtered-content .topSec .flex_row .featCardsOuter .cardItems .cardItem .itemInr {
-  border-radius: 12px;
+  border-radius: 4rem;
   overflow: hidden;
+  filter: drop-shadow(0px 0px 20px rgba(0, 0, 0, 0.15));
 }
 section.u4m-filtered-content .topSec .flex_row .featCardsOuter .cardItems .cardItem .itemInr.cardColor * {
   color: #ffffff;
@@ -89,6 +90,9 @@ section.u4m-filtered-content .topSec .flex_row .featCardsOuter .cardItems .cardI
 }
 section.u4m-filtered-content .topSec .flex_row .featCardsOuter .cardItems .cardItem .itemInr a:not(.arrow-link) {
   color: inherit;
+}
+section.u4m-filtered-content .topSec .flex_row .featCardsOuter .cardItems .cardItem .itemInr a.arrow-link {
+  padding: 0;
 }
 section.u4m-filtered-content .topSec .flex_row .featCardsOuter .cardItems .cardItem .itemInr .itemImg .itemImgin {
   position: relative;
@@ -120,6 +124,9 @@ section.u4m-filtered-content .topSec .flex_row .featCardsOuter .cardItems .cardI
 section.u4m-filtered-content .topSec .flex_row .featCardsOuter .cardItems .cardItem .itemInr .itemCnWrap .itemCntSec {
   margin-bottom: 32px;
 }
+section.u4m-filtered-content .topSec .flex_row .featCardsOuter .cardItems .cardItem .itemInr .itemCnWrap .itemCntSec .itemMetain {
+  margin-bottom: 32px;
+}
 section.u4m-filtered-content .topSec .flex_row .featCardsOuter .cardItems .cardItem .itemInr .itemCnWrap .itemCntSec .itemTitle h4 {
   margin: 0;
 }
@@ -132,6 +139,7 @@ section.u4m-filtered-content .topSec .flex_row .featCardsOuter .cardItems .cardI
   line-height: 1;
   margin-bottom: 8px;
   flex-wrap: nowrap;
+  color: #006f3c;
 }
 @media (max-width: 580px) {
   section.u4m-filtered-content .topSec .flex_row .featCardsOuter .cardItems .cardItem .itemInr .itemCnWrap .itemCntSec .itemTags {
@@ -225,7 +233,9 @@ section.u4m-filtered-content .featCardsListWrap .filterWrap .flex_row .selctArro
 section.u4m-filtered-content .featCardsListWrap .filterWrap .flex_row .selctArrow select {
   background-size: 12px;
   background-repeat: no-repeat;
-  appearance: none;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
   background-position: calc(100% - 30px) center;
   padding: 12.5px 64px 12.5px 24px;
   border-radius: 12px;
@@ -256,8 +266,9 @@ section.u4m-filtered-content .featCardsListWrap .cardSctn .cardItems .cardItem {
   }
 }
 section.u4m-filtered-content .featCardsListWrap .cardSctn .cardItems .cardItem .itemInr {
-  border-radius: 12px;
+  border-radius: 4rem;
   overflow: hidden;
+  filter: drop-shadow(0px 0px 20px rgba(0, 0, 0, 0.15));
 }
 section.u4m-filtered-content .featCardsListWrap .cardSctn .cardItems .cardItem .itemInr.cardColor * {
   color: #ffffff;
@@ -270,6 +281,9 @@ section.u4m-filtered-content .featCardsListWrap .cardSctn .cardItems .cardItem .
 }
 section.u4m-filtered-content .featCardsListWrap .cardSctn .cardItems .cardItem .itemInr a:not(.arrow-link) {
   color: inherit;
+}
+section.u4m-filtered-content .featCardsListWrap .cardSctn .cardItems .cardItem .itemInr a.arrow-link {
+  padding: 0;
 }
 section.u4m-filtered-content .featCardsListWrap .cardSctn .cardItems .cardItem .itemInr .itemImg .itemImgin {
   position: relative;
@@ -301,6 +315,9 @@ section.u4m-filtered-content .featCardsListWrap .cardSctn .cardItems .cardItem .
 section.u4m-filtered-content .featCardsListWrap .cardSctn .cardItems .cardItem .itemInr .itemCnWrap .itemCntSec {
   margin-bottom: 32px;
 }
+section.u4m-filtered-content .featCardsListWrap .cardSctn .cardItems .cardItem .itemInr .itemCnWrap .itemCntSec .itemMetain {
+  margin-bottom: 32px;
+}
 section.u4m-filtered-content .featCardsListWrap .cardSctn .cardItems .cardItem .itemInr .itemCnWrap .itemCntSec .itemTitle h4 {
   margin: 0;
 }
@@ -313,6 +330,7 @@ section.u4m-filtered-content .featCardsListWrap .cardSctn .cardItems .cardItem .
   line-height: 1;
   margin-bottom: 8px;
   flex-wrap: nowrap;
+  color: #006f3c;
 }
 @media (max-width: 580px) {
   section.u4m-filtered-content .featCardsListWrap .cardSctn .cardItems .cardItem .itemInr .itemCnWrap .itemCntSec .itemTags {
