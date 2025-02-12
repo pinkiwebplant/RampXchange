@@ -469,7 +469,7 @@
         "access" : null
       },
       "display" : "select",
-      "choices" : [ [ "forest_green", "Forest Green" ], [ "dark_teal", "Dark Teal" ], [ "pale_green", "Pale Green" ], [ "silver_gray", "Silver Gray" ], [ "charcoal_gray", "Charcoal Gray" ], [ "golden_brown", "Golden Brown" ], [ "soft_white", "Soft White" ], [ "white_bg", "White" ] ],
+      "choices" : [ [ "forest_green", "Ramp Green" ], [ "dark_teal", "State Blue" ], [ "pale_green", "Digital Green" ], [ "silver_gray", "Cyber Gray" ], [ "charcoal_gray", "Change Gray" ], [ "golden_brown", "Bronze" ], [ "soft_white", "Air White" ], [ "white_bg", "White" ] ],
       "multiple" : false,
       "reordering_enabled" : true,
       "preset" : null,
@@ -927,7 +927,7 @@
         "access" : null
       },
       "display" : "select",
-      "choices" : [ [ "forest_green", "Forest Green" ], [ "dark_teal", "Dark Teal" ], [ "pale_green", "Pale Green" ], [ "silver_gray", "Silver Gray" ], [ "charcoal_gray", "Charcoal Gray" ], [ "golden_brown", "Golden Brown" ], [ "soft_white", "Soft White" ], [ "white_bg", "White" ] ],
+      "choices" : [ [ "forest_green", "Ramp Green" ], [ "dark_teal", "State Blue" ], [ "pale_green", "Digital Green" ], [ "silver_gray", "Cyber Gray" ], [ "charcoal_gray", "Change Gray" ], [ "golden_brown", "Bronze" ], [ "soft_white", "Air White" ], [ "white_bg", "White" ] ],
       "multiple" : false,
       "reordering_enabled" : true,
       "preset" : null,
