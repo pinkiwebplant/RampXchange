@@ -264,7 +264,7 @@ html {
   margin: 0;
 }
 .u4m-cards .btmCntt .inner_wrpp.intro_content .items.dropShadow {
-  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.15);
+  box-shadow: drop-shadow(0px 0px 20px rgba(0, 0, 0, 0.15));
 }
 @media (max-width: 991px) {
   .u4m-cards .btmCntt .inner_wrpp.intro_content {

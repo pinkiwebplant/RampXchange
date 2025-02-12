@@ -72,10 +72,11 @@
 }
 @mixin h6 {
   font-family: $font1;
-  font-size: 19rem;
-  font-weight: 400;
+  font-size: 20rem;
+  font-weight: 600;
   margin-bottom: 30rem;
   line-height: 1;
+  color: $rampGreen;
   @include tablet {
     font-size: 19rem;
   }

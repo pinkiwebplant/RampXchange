@@ -3092,10 +3092,11 @@ h5 {
 
 h6 {
   font-family: "Aktive Grotesk, Arial, sans serif";
-  font-size: 19rem;
-  font-weight: 400;
+  font-size: 20rem;
+  font-weight: 600;
   margin-bottom: 30rem;
   line-height: 1;
+  color: #006f3c;
 }
 @media (max-width: 1024px) {
   h6 {
@@ -3939,7 +3940,7 @@ section[class*=u4m-] {
 }
 
 .gradient4 {
-  background-image: linear-gradient(180deg, #ffffff 0%, #f9fbf9 100%);
+  background-image: linear-gradient(180deg, #ffffff 54%, #f9fbf9 97%);
 }
 
 .gradient5 {
@@ -3965,10 +3966,11 @@ form {
 }
 form h3 {
   font-family: "Aktive Grotesk, Arial, sans serif";
-  font-size: 19rem;
-  font-weight: 400;
+  font-size: 20rem;
+  font-weight: 600;
   margin-bottom: 30rem;
   line-height: 1;
+  color: #006f3c;
 }
 @media (max-width: 1024px) {
   form h3 {
@@ -4683,10 +4685,11 @@ section.u4m-backup-unsubscribe form {
 }
 section.u4m-backup-unsubscribe form h3 {
   font-family: "Aktive Grotesk, Arial, sans serif";
-  font-size: 19rem;
-  font-weight: 400;
+  font-size: 20rem;
+  font-weight: 600;
   margin-bottom: 30rem;
   line-height: 1;
+  color: #006f3c;
 }
 @media (max-width: 1024px) {
   section.u4m-backup-unsubscribe form h3 {
@@ -5376,10 +5379,11 @@ section.u4m-membership-reset-password-request form h3,
 section.u4m-membership-reset-password form h3,
 section.u4m-password-prompt form h3 {
   font-family: "Aktive Grotesk, Arial, sans serif";
-  font-size: 19rem;
-  font-weight: 400;
+  font-size: 20rem;
+  font-weight: 600;
   margin-bottom: 30rem;
   line-height: 1;
+  color: #006f3c;
 }
 @media (max-width: 1024px) {
   section.u4m-membership-login form h3,
@@ -7802,10 +7806,11 @@ section.u4m-subscription-preferences form {
 }
 section.u4m-subscription-preferences form h3 {
   font-family: "Aktive Grotesk, Arial, sans serif";
-  font-size: 19rem;
-  font-weight: 400;
+  font-size: 20rem;
+  font-weight: 600;
   margin-bottom: 30rem;
   line-height: 1;
+  color: #006f3c;
 }
 @media (max-width: 1024px) {
   section.u4m-subscription-preferences form h3 {
@@ -8479,10 +8484,11 @@ section.u4m-drag-and-drop-area form {
 }
 section.u4m-drag-and-drop-area form h3 {
   font-family: "Aktive Grotesk, Arial, sans serif";
-  font-size: 19rem;
-  font-weight: 400;
+  font-size: 20rem;
+  font-weight: 600;
   margin-bottom: 30rem;
   line-height: 1;
+  color: #006f3c;
 }
 @media (max-width: 1024px) {
   section.u4m-drag-and-drop-area form h3 {
@@ -9390,10 +9396,11 @@ section.u4m-blog-post div.body div.content h5 {
 }
 section.u4m-blog-post div.body div.content h6 {
   font-family: "Aktive Grotesk, Arial, sans serif";
-  font-size: 19rem;
-  font-weight: 400;
+  font-size: 20rem;
+  font-weight: 600;
   margin-bottom: 30rem;
   line-height: 1;
+  color: #006f3c;
 }
 @media (max-width: 1024px) {
   section.u4m-blog-post div.body div.content h6 {
@@ -9598,10 +9605,11 @@ section.u4m-blog-post div.comments div.content form {
 }
 section.u4m-blog-post div.comments div.content form h3 {
   font-family: "Aktive Grotesk, Arial, sans serif";
-  font-size: 19rem;
-  font-weight: 400;
+  font-size: 20rem;
+  font-weight: 600;
   margin-bottom: 30rem;
   line-height: 1;
+  color: #006f3c;
 }
 @media (max-width: 1024px) {
   section.u4m-blog-post div.comments div.content form h3 {

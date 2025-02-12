@@ -92,10 +92,11 @@ html {
 .u4m-animated-stats .statistics-items .animated-stats-item .stats-item .stats-item-inn .number .prefix,
 .u4m-animated-stats .statistics-items .animated-stats-item .stats-item .stats-item-inn .number .suffix {
   font-family: "Aktive Grotesk, Arial, sans serif";
-  font-size: 19rem;
-  font-weight: 400;
+  font-size: 20rem;
+  font-weight: 600;
   margin-bottom: 30rem;
   line-height: 1;
+  color: #006f3c;
   margin-bottom: 0;
   font-weight: 600;
 }
