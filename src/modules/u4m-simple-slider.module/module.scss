@@ -30,8 +30,10 @@
       .row {
         display: flex;
         flex-wrap: wrap;
+        padding: 80px 0;
         @include tablet {
           flex-direction: column-reverse;
+          padding: 40px 0;
         }
         .leftColumn {
           position: relative;
@@ -39,14 +41,14 @@
           padding: 0 20rem;
           .cutomArrows {
             position: absolute;
-            position: absolute;
             width: 100%;
-            top: 89rem;
+            top: 0;
             display: flex;
             justify-content: flex-end;
             gap: 20px;
-            z-index: 99;
+            z-index: 100;
             right: 0;
+            max-width: 130px;
             @include tablet {
               top: auto;
               justify-content: flex-start;
@@ -92,12 +94,11 @@
             .left_section {
               position: relative;
               z-index: 99;
-              padding: 89px 0 70px;
-              @include tablet {
-                padding: 40px 0 120px;
-              }
               .topSec{
                 max-width: 422px;
+                margin-left: 0;
+                text-align: left;
+                padding: 0;
                 @include tablet {
                     max-width: 100%;
                     padding-right: 120px;
@@ -121,6 +122,7 @@
                 
               }
               .author-section {
+                @include eyebrow;
                 font-weight: 500;
                 margin-bottom: 32px;
                 span {
@@ -136,12 +138,16 @@
           }
         }
         .rightColumn {
-          width: calc(50% + 38px);
-          margin-left: -38px;
+          width: 50%;
+          position: relative;
+          z-index: 1;
           display: flex;
           @include tablet {
             width: 100%;
             margin-left: 0;
+            margin-bottom: 10px;
+            padding-left: 20rem;
+            padding-right: 20rem;
           }
           .bgImageNav {
             height: 100%;
@@ -186,8 +192,42 @@
         }
       }
     }
+    &.tc {
+      .page-center {
+        .row {
+          > * {
+            padding-left: 30rem;
+            padding-right: 30rem;
+            @include tablet {
+              padding-left: 20rem;
+              padding-right: 20rem;
+            }
+            .cutomArrows {
+              right: 20px;
+              @include tablet {
+                top: auto;
+                justify-content: flex-start;
+                bottom: 10px;
+                padding-left: 20px;
+                right: auto;
+                left: 0;
+              }
+            }
+          }
+          .leftColumn {
+            @include tablet {
+              padding-bottom: 80rem;
+            }
+          }
+        }
+      }
+    }
     &.fw {
       .row {
+        padding: 80px 0;
+        @include tablet {
+          padding: 40px 0;
+        }
         .leftColumn {
           width: 100%;  
           text-align: center;
@@ -199,12 +239,12 @@
           .cutomArrows {
             position: static;
             justify-content: center;
-            margin: 40px 0 80px;
+            margin: 40px 0 0;
+            max-width: 100%;
           }
           .slider_wrapper {
             width: 100%;
             .left_section {
-              padding: 80px 0 0;
               .logo_img {
                 text-align: center;
                 img {
@@ -215,6 +255,7 @@
               .topSec {
                 max-width: 100% !important;
                 padding: 0 !important;
+                text-align: center;
               }
             }
         }

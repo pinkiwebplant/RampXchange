@@ -49,10 +49,12 @@ html {
 .u4m-simple-slider .simple-slider-wrapper .page-center .row {
   display: flex;
   flex-wrap: wrap;
+  padding: 80px 0;
 }
 @media (max-width: 1024px) {
   .u4m-simple-slider .simple-slider-wrapper .page-center .row {
     flex-direction: column-reverse;
+    padding: 40px 0;
   }
 }
 .u4m-simple-slider .simple-slider-wrapper .page-center .row .leftColumn {
@@ -62,14 +64,14 @@ html {
 }
 .u4m-simple-slider .simple-slider-wrapper .page-center .row .leftColumn .cutomArrows {
   position: absolute;
-  position: absolute;
   width: 100%;
-  top: 89rem;
+  top: 0;
   display: flex;
   justify-content: flex-end;
   gap: 20px;
-  z-index: 99;
+  z-index: 100;
   right: 0;
+  max-width: 130px;
 }
 @media (max-width: 1024px) {
   .u4m-simple-slider .simple-slider-wrapper .page-center .row .leftColumn .cutomArrows {
@@ -109,15 +111,12 @@ html {
 .u4m-simple-slider .simple-slider-wrapper .page-center .row .leftColumn .slider_wrapper .left_section {
   position: relative;
   z-index: 99;
-  padding: 89px 0 70px;
-}
-@media (max-width: 1024px) {
-  .u4m-simple-slider .simple-slider-wrapper .page-center .row .leftColumn .slider_wrapper .left_section {
-    padding: 40px 0 120px;
-  }
 }
 .u4m-simple-slider .simple-slider-wrapper .page-center .row .leftColumn .slider_wrapper .left_section .topSec {
   max-width: 422px;
+  margin-left: 0;
+  text-align: left;
+  padding: 0;
 }
 @media (max-width: 1024px) {
   .u4m-simple-slider .simple-slider-wrapper .page-center .row .leftColumn .slider_wrapper .left_section .topSec {
@@ -143,6 +142,13 @@ html {
   font-weight: 500;
 }
 .u4m-simple-slider .simple-slider-wrapper .page-center .row .leftColumn .slider_wrapper .left_section .author-section {
+  font-family: "Aktive Grotesk, Arial, sans serif";
+  font-size: 16rem;
+  font-weight: 600;
+  line-height: 1;
+  display: block;
+  margin-bottom: 10rem;
+  color: #006f3c;
   font-weight: 500;
   margin-bottom: 32px;
 }
@@ -153,14 +159,18 @@ html {
   width: 148px;
 }
 .u4m-simple-slider .simple-slider-wrapper .page-center .row .rightColumn {
-  width: calc(50% + 38px);
-  margin-left: -38px;
+  width: 50%;
+  position: relative;
+  z-index: 1;
   display: flex;
 }
 @media (max-width: 1024px) {
   .u4m-simple-slider .simple-slider-wrapper .page-center .row .rightColumn {
     width: 100%;
     margin-left: 0;
+    margin-bottom: 10px;
+    padding-left: 20rem;
+    padding-right: 20rem;
   }
 }
 .u4m-simple-slider .simple-slider-wrapper .page-center .row .rightColumn .bgImageNav {
@@ -194,6 +204,42 @@ html {
     min-height: 50vw;
   }
 }
+.u4m-simple-slider .simple-slider-wrapper.tc .page-center .row > * {
+  padding-left: 30rem;
+  padding-right: 30rem;
+}
+@media (max-width: 1024px) {
+  .u4m-simple-slider .simple-slider-wrapper.tc .page-center .row > * {
+    padding-left: 20rem;
+    padding-right: 20rem;
+  }
+}
+.u4m-simple-slider .simple-slider-wrapper.tc .page-center .row > * .cutomArrows {
+  right: 20px;
+}
+@media (max-width: 1024px) {
+  .u4m-simple-slider .simple-slider-wrapper.tc .page-center .row > * .cutomArrows {
+    top: auto;
+    justify-content: flex-start;
+    bottom: 10px;
+    padding-left: 20px;
+    right: auto;
+    left: 0;
+  }
+}
+@media (max-width: 1024px) {
+  .u4m-simple-slider .simple-slider-wrapper.tc .page-center .row .leftColumn {
+    padding-bottom: 80rem;
+  }
+}
+.u4m-simple-slider .simple-slider-wrapper.fw .row {
+  padding: 80px 0;
+}
+@media (max-width: 1024px) {
+  .u4m-simple-slider .simple-slider-wrapper.fw .row {
+    padding: 40px 0;
+  }
+}
 .u4m-simple-slider .simple-slider-wrapper.fw .row .leftColumn {
   width: 100%;
   text-align: center;
@@ -206,13 +252,11 @@ html {
 .u4m-simple-slider .simple-slider-wrapper.fw .row .leftColumn .cutomArrows {
   position: static;
   justify-content: center;
-  margin: 40px 0 80px;
+  margin: 40px 0 0;
+  max-width: 100%;
 }
 .u4m-simple-slider .simple-slider-wrapper.fw .row .leftColumn .slider_wrapper {
   width: 100%;
-}
-.u4m-simple-slider .simple-slider-wrapper.fw .row .leftColumn .slider_wrapper .left_section {
-  padding: 80px 0 0;
 }
 .u4m-simple-slider .simple-slider-wrapper.fw .row .leftColumn .slider_wrapper .left_section .logo_img {
   text-align: center;
@@ -224,4 +268,5 @@ html {
 .u4m-simple-slider .simple-slider-wrapper.fw .row .leftColumn .slider_wrapper .left_section .topSec {
   max-width: 100% !important;
   padding: 0 !important;
+  text-align: center;
 }

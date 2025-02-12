@@ -1,7 +1,6 @@
 [ {
   "id" : "7454dd4d-75ab-dd6a-d941-7318c86b2b7d",
   "name" : "select_content_type",
-  "display_width" : null,
   "label" : "Select Content Type",
   "required" : false,
   "locked" : false,
@@ -11,11 +10,11 @@
   "reordering_enabled" : true,
   "preset" : null,
   "type" : "choice",
+  "display_width" : null,
   "default" : "custom"
 }, {
   "id" : "983ba011-077d-e23a-9f83-2e1f2a48d35d",
   "name" : "select_table",
-  "display_width" : null,
   "label" : "Select Table",
   "required" : false,
   "locked" : false,
@@ -28,11 +27,11 @@
     "access" : null
   },
   "type" : "hubdbtable",
+  "display_width" : null,
   "default" : 105503811
 }, {
   "id" : "fd5097b3-ceb6-5b0e-23b8-d1560201fa5e",
   "name" : "select_type",
-  "display_width" : null,
   "label" : "Select Type",
   "required" : false,
   "locked" : false,
@@ -49,11 +48,11 @@
   "multiple" : false,
   "reordering_enabled" : true,
   "preset" : null,
-  "type" : "choice"
+  "type" : "choice",
+  "display_width" : null
 }, {
   "id" : "2b3d1000-271d-4262-2447-9d24d936c7e3",
   "name" : "category_name",
-  "display_width" : null,
   "label" : "Category Name",
   "inline_help_text" : "Enter the category name from the table such as \\\"Case Studies\\\" , \\\"Videos\\\", etc.",
   "required" : false,
@@ -69,11 +68,11 @@
   },
   "allow_new_line" : false,
   "show_emoji_picker" : false,
-  "type" : "text"
+  "type" : "text",
+  "display_width" : null
 }, {
   "id" : "1004faaf-3d7f-5783-2caa-e682a3e83d6b",
   "name" : "post_by_title",
-  "display_width" : null,
   "label" : "Post By Title",
   "required" : false,
   "locked" : false,
@@ -94,7 +93,6 @@
   "children" : [ {
     "id" : "de4f7c1a-97b1-1a0e-b0f7-34f3cb12faa3",
     "name" : "select_title",
-    "display_width" : null,
     "label" : "Select Title",
     "required" : false,
     "locked" : false,
@@ -102,6 +100,7 @@
     "columns_to_fetch" : [ "author_name", "feature_image", "eyebrow_text", "name", "categories", "designation", "logo_image", "quotes" ],
     "display_columns" : [ "name" ],
     "type" : "hubdbrow",
+    "display_width" : null,
     "default" : {
       "id" : null
     }
@@ -110,6 +109,7 @@
   "expanded" : false,
   "group_occurrence_meta" : null,
   "type" : "group",
+  "display_width" : null,
   "default" : [ {
     "select_title" : {
       "id" : null
@@ -118,7 +118,6 @@
 }, {
   "id" : "34e34b36-3c8b-a605-6cf1-e9da4bdfb817",
   "name" : "count",
-  "display_width" : null,
   "label" : "Count",
   "required" : false,
   "locked" : false,
@@ -133,11 +132,11 @@
   "display" : "text",
   "step" : 1,
   "type" : "number",
+  "display_width" : null,
   "default" : 6
 }, {
   "id" : "febd9718-9953-9877-44b5-2e29e3f8099d",
   "name" : "slider_items",
-  "display_width" : null,
   "label" : "Slider Items",
   "required" : false,
   "locked" : false,
@@ -158,7 +157,6 @@
   "children" : [ {
     "id" : "e29b5fa6-e418-a789-700c-23b4c52fdfe5",
     "name" : "eyebrow_text",
-    "display_width" : null,
     "label" : "Eyebrow Text",
     "required" : false,
     "locked" : false,
@@ -166,11 +164,11 @@
     "allow_new_line" : false,
     "show_emoji_picker" : false,
     "type" : "text",
+    "display_width" : null,
     "default" : "Optional Eyebrow Text"
   }, {
     "id" : "34e78072-5c5e-fa2e-a11f-a9b213e502c1",
     "name" : "title",
-    "display_width" : null,
     "label" : "Title",
     "required" : false,
     "locked" : false,
@@ -178,11 +176,11 @@
     "allow_new_line" : false,
     "show_emoji_picker" : false,
     "type" : "text",
+    "display_width" : null,
     "default" : "Customer Quotes Slider"
   }, {
     "id" : "3fb24b1e-772f-4551-7f7c-93ea54e7c115",
     "name" : "author_name",
-    "display_width" : null,
     "label" : "Author Name",
     "required" : false,
     "locked" : false,
@@ -190,11 +188,11 @@
     "allow_new_line" : false,
     "show_emoji_picker" : false,
     "type" : "text",
+    "display_width" : null,
     "default" : "John Doe"
   }, {
     "id" : "4b7a87cf-00e4-1b8c-a0f7-7698c6843bf0",
     "name" : "quotes",
-    "display_width" : null,
     "label" : "Quotes",
     "required" : false,
     "locked" : false,
@@ -202,11 +200,11 @@
     "allow_new_line" : false,
     "show_emoji_picker" : false,
     "type" : "text",
+    "display_width" : null,
     "default" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
   }, {
     "id" : "26d1c6aa-490c-b802-d163-fa859b7f1e62",
     "name" : "designation",
-    "display_width" : null,
     "label" : "Designation",
     "required" : false,
     "locked" : false,
@@ -214,11 +212,11 @@
     "allow_new_line" : false,
     "show_emoji_picker" : false,
     "type" : "text",
+    "display_width" : null,
     "default" : "Chief Executive Officer, Ingram Micro"
   }, {
     "id" : "91e7f4f9-ea06-4595-ca14-05b33dbf8d66",
     "name" : "logo_image",
-    "display_width" : null,
     "label" : "Logo Image",
     "required" : false,
     "locked" : false,
@@ -226,6 +224,7 @@
     "resizable" : false,
     "show_loading" : false,
     "type" : "image",
+    "display_width" : null,
     "default" : {
       "size_type" : "auto",
       "src" : "https://47484996.fs1.hubspotusercontent-na1.net/hubfs/47484996/RampXchange-u4m/images/Ingram.png",
@@ -239,7 +238,6 @@
   }, {
     "id" : "396c3f8b-8bec-35a7-4285-c3efe5e0efa8",
     "name" : "image_field",
-    "display_width" : null,
     "label" : "Image",
     "required" : false,
     "locked" : false,
@@ -247,6 +245,7 @@
     "resizable" : false,
     "show_loading" : false,
     "type" : "image",
+    "display_width" : null,
     "default" : {
       "size_type" : "auto",
       "src" : "https://47484996.fs1.hubspotusercontent-na1.net/hubfs/47484996/RampXchange-u4m/images/IOmage.png",
@@ -262,6 +261,7 @@
   "expanded" : false,
   "group_occurrence_meta" : null,
   "type" : "group",
+  "display_width" : null,
   "default" : [ {
     "eyebrow_text" : "Optional Eyebrow Text",
     "title" : "Customer Quotes Slider",
@@ -370,14 +370,12 @@
 }, {
   "id" : "ccfdd25a-f168-b2f1-a9e7-0b1d981ffa79",
   "name" : "module_setting",
-  "display_width" : null,
   "label" : "Module Setting",
   "required" : false,
   "locked" : false,
   "children" : [ {
     "id" : "e37103e9-9847-5821-af83-ad86829df87f",
     "name" : "content_type",
-    "display_width" : null,
     "label" : "Content Type",
     "required" : false,
     "locked" : false,
@@ -387,37 +385,37 @@
     "reordering_enabled" : true,
     "preset" : null,
     "type" : "choice",
-    "default" : "tc"
+    "display_width" : null,
+    "default" : "fw"
   } ],
   "tab" : "CONTENT",
   "expanded" : false,
   "group_occurrence_meta" : null,
   "type" : "group",
+  "display_width" : null,
   "default" : {
-    "content_type" : "tc"
+    "content_type" : "fw"
   }
 }, {
   "id" : "module_overrides",
   "name" : "module_overrides",
-  "display_width" : null,
   "label" : "Module Overrides",
   "required" : false,
   "locked" : false,
   "children" : [ {
     "id" : "enable_overrides",
     "name" : "enable_overrides",
-    "display_width" : null,
     "label" : "Enable Overrides",
     "help_text" : "Toggle to override section ID and vertical margin. ",
     "required" : false,
     "locked" : false,
     "display" : "checkbox",
     "type" : "boolean",
+    "display_width" : null,
     "default" : true
   }, {
     "id" : "module_overrides.section_id",
     "name" : "section_id",
-    "display_width" : null,
     "label" : "Section ID",
     "help_text" : "The value you type here will be the anchor link for this section. Should be all lowercase and include dashes instead of spaces. This should be a unique value per module.",
     "required" : false,
@@ -433,11 +431,11 @@
     },
     "allow_new_line" : false,
     "show_emoji_picker" : false,
-    "type" : "text"
+    "type" : "text",
+    "display_width" : null
   }, {
     "id" : "module_overrides.top_margin",
     "name" : "top_margin",
-    "display_width" : null,
     "label" : "Top Margin",
     "required" : false,
     "locked" : false,
@@ -455,11 +453,11 @@
     "reordering_enabled" : true,
     "preset" : null,
     "type" : "choice",
+    "display_width" : null,
     "default" : "top-margin-none"
   }, {
     "id" : "custom_top_margin",
     "name" : "custom_top_margin",
-    "display_width" : null,
     "label" : "Custom Top Margin",
     "required" : false,
     "locked" : false,
@@ -474,11 +472,11 @@
     "display" : "text",
     "step" : 1,
     "type" : "number",
+    "display_width" : null,
     "default" : 100
   }, {
     "id" : "custom_top_margin_mobile",
     "name" : "custom_top_margin_mobile",
-    "display_width" : null,
     "label" : "Custom Top Margin Mobile",
     "required" : false,
     "locked" : false,
@@ -493,11 +491,11 @@
     "display" : "text",
     "step" : 1,
     "type" : "number",
+    "display_width" : null,
     "default" : 50
   }, {
     "id" : "module_overrides.bottom_margin",
     "name" : "bottom_margin",
-    "display_width" : null,
     "label" : "Bottom Margin",
     "required" : false,
     "locked" : false,
@@ -515,11 +513,11 @@
     "reordering_enabled" : true,
     "preset" : null,
     "type" : "choice",
+    "display_width" : null,
     "default" : "bottom-margin-none"
   }, {
     "id" : "custom_bottom_margin",
     "name" : "custom_bottom_margin",
-    "display_width" : null,
     "label" : "Custom Bottom Margin",
     "required" : false,
     "locked" : false,
@@ -534,11 +532,11 @@
     "display" : "text",
     "step" : 1,
     "type" : "number",
+    "display_width" : null,
     "default" : 100
   }, {
     "id" : "custom_bottom_margin_mobile",
     "name" : "custom_bottom_margin_mobile",
-    "display_width" : null,
     "label" : "Custom Bottom Margin Mobile",
     "required" : false,
     "locked" : false,
@@ -553,11 +551,11 @@
     "display" : "text",
     "step" : 1,
     "type" : "number",
+    "display_width" : null,
     "default" : 50
   }, {
     "id" : "module_overrides.top_padding",
     "name" : "top_padding",
-    "display_width" : null,
     "label" : "Top Padding",
     "required" : false,
     "locked" : false,
@@ -575,11 +573,11 @@
     "reordering_enabled" : true,
     "preset" : null,
     "type" : "choice",
+    "display_width" : null,
     "default" : "top-padding-none"
   }, {
     "id" : "custom_top_padding",
     "name" : "custom_top_padding",
-    "display_width" : null,
     "label" : "Custom Top Padding",
     "required" : false,
     "locked" : false,
@@ -594,11 +592,11 @@
     "display" : "text",
     "step" : 1,
     "type" : "number",
+    "display_width" : null,
     "default" : 100
   }, {
     "id" : "custom_top_padding_mobile",
     "name" : "custom_top_padding_mobile",
-    "display_width" : null,
     "label" : "Custom Top Padding Mobile",
     "required" : false,
     "locked" : false,
@@ -613,11 +611,11 @@
     "display" : "text",
     "step" : 1,
     "type" : "number",
+    "display_width" : null,
     "default" : 50
   }, {
     "id" : "module_overrides.bottom_padding",
     "name" : "bottom_padding",
-    "display_width" : null,
     "label" : "Bottom Padding",
     "required" : false,
     "locked" : false,
@@ -635,11 +633,11 @@
     "reordering_enabled" : true,
     "preset" : null,
     "type" : "choice",
+    "display_width" : null,
     "default" : "bottom-padding-none"
   }, {
     "id" : "custom_bottom_padding",
     "name" : "custom_bottom_padding",
-    "display_width" : null,
     "label" : "Custom Bottom Padding",
     "required" : false,
     "locked" : false,
@@ -654,11 +652,11 @@
     "display" : "text",
     "step" : 1,
     "type" : "number",
+    "display_width" : null,
     "default" : 100
   }, {
     "id" : "custom_bottom_padding_mobile",
     "name" : "custom_bottom_padding_mobile",
-    "display_width" : null,
     "label" : "Custom Bottom Padding Mobile",
     "required" : false,
     "locked" : false,
@@ -673,11 +671,11 @@
     "display" : "text",
     "step" : 1,
     "type" : "number",
+    "display_width" : null,
     "default" : 50
   }, {
     "id" : "3eccf45d-b0dc-4bac-42a0-f923e4405158",
     "name" : "reverse_text",
-    "display_width" : null,
     "label" : "Reverse Text",
     "required" : false,
     "locked" : false,
@@ -691,11 +689,11 @@
     },
     "display" : "checkbox",
     "type" : "boolean",
+    "display_width" : null,
     "default" : false
   }, {
     "id" : "94e04306-ecc1-4735-09fd-9b66482a8101",
     "name" : "background_settings",
-    "display_width" : null,
     "label" : "Background Settings",
     "required" : false,
     "locked" : false,
@@ -710,7 +708,6 @@
     "children" : [ {
       "id" : "3c812905-0c66-421d-6e7e-7a7109acdd49",
       "name" : "background_type",
-      "display_width" : null,
       "label" : "Background Type",
       "required" : false,
       "locked" : false,
@@ -720,11 +717,11 @@
       "reordering_enabled" : true,
       "preset" : null,
       "type" : "choice",
-      "default" : "color"
+      "display_width" : null,
+      "default" : "image"
     }, {
       "id" : "5d97321e-e326-2d30-8757-51608da05ea6",
       "name" : "background_image",
-      "display_width" : null,
       "label" : "Background Image",
       "required" : false,
       "locked" : false,
@@ -740,16 +737,20 @@
       "resizable" : false,
       "show_loading" : false,
       "type" : "image",
+      "display_width" : null,
       "default" : {
         "size_type" : "auto",
-        "src" : "",
-        "alt" : null,
-        "loading" : "lazy"
+        "src" : "https://47484996.fs1.hubspotusercontent-na1.net/hubfs/47484996/RampXchange-u4m/images/sliderBG.png",
+        "alt" : "sliderBG",
+        "loading" : "lazy",
+        "width" : 1441,
+        "height" : 577,
+        "max_width" : 1441,
+        "max_height" : 577
       }
     }, {
       "id" : "4ea36da9-c8a6-adf2-7460-cbf4d98190fd",
       "name" : "select_color",
-      "display_width" : null,
       "label" : "Select Color",
       "required" : false,
       "locked" : false,
@@ -767,11 +768,11 @@
       "reordering_enabled" : true,
       "preset" : null,
       "type" : "choice",
+      "display_width" : null,
       "default" : "pale_green"
     }, {
       "id" : "2659085b-598d-e346-643e-6a9ebb3bae70",
       "name" : "select_gradient",
-      "display_width" : null,
       "label" : "Select Gradient",
       "required" : false,
       "locked" : false,
@@ -789,19 +790,25 @@
       "reordering_enabled" : true,
       "preset" : null,
       "type" : "choice",
+      "display_width" : null,
       "default" : "gradient5"
     } ],
     "tab" : "CONTENT",
     "expanded" : true,
     "group_occurrence_meta" : null,
     "type" : "group",
+    "display_width" : null,
     "default" : {
-      "background_type" : "color",
+      "background_type" : "image",
       "background_image" : {
         "size_type" : "auto",
-        "src" : "",
-        "alt" : null,
-        "loading" : "lazy"
+        "src" : "https://47484996.fs1.hubspotusercontent-na1.net/hubfs/47484996/RampXchange-u4m/images/sliderBG.png",
+        "alt" : "sliderBG",
+        "loading" : "lazy",
+        "width" : 1441,
+        "height" : 577,
+        "max_width" : 1441,
+        "max_height" : 577
       },
       "select_color" : "pale_green",
       "select_gradient" : "gradient5"
@@ -809,7 +816,6 @@
   }, {
     "id" : "c813f3af-99b7-d54e-7ce2-b074f008a27c",
     "name" : "container",
-    "display_width" : null,
     "label" : "Container",
     "required" : false,
     "locked" : false,
@@ -824,7 +830,6 @@
     "children" : [ {
       "id" : "87361475-d2b5-329d-45b2-227103ad95d9",
       "name" : "size",
-      "display_width" : null,
       "label" : "Size",
       "required" : false,
       "locked" : false,
@@ -834,11 +839,11 @@
       "reordering_enabled" : true,
       "preset" : null,
       "type" : "choice",
+      "display_width" : null,
       "default" : "theme"
     }, {
       "id" : "b9865f26-0901-d5ad-66a2-7c6ecacec658",
       "name" : "custom_size",
-      "display_width" : null,
       "label" : "Custom Size",
       "required" : false,
       "locked" : false,
@@ -856,12 +861,14 @@
       "step" : 1,
       "suffix" : "px",
       "type" : "number",
+      "display_width" : null,
       "default" : 1296
     } ],
     "tab" : "CONTENT",
     "expanded" : false,
     "group_occurrence_meta" : null,
     "type" : "group",
+    "display_width" : null,
     "default" : {
       "size" : "theme",
       "custom_size" : 1296
@@ -871,6 +878,7 @@
   "expanded" : false,
   "group_occurrence_meta" : null,
   "type" : "group",
+  "display_width" : null,
   "default" : {
     "enable_overrides" : true,
     "top_margin" : "top-margin-none",
@@ -887,12 +895,16 @@
     "custom_bottom_padding_mobile" : 50,
     "reverse_text" : false,
     "background_settings" : {
-      "background_type" : "color",
+      "background_type" : "image",
       "background_image" : {
         "size_type" : "auto",
-        "src" : "",
-        "alt" : null,
-        "loading" : "lazy"
+        "src" : "https://47484996.fs1.hubspotusercontent-na1.net/hubfs/47484996/RampXchange-u4m/images/sliderBG.png",
+        "alt" : "sliderBG",
+        "loading" : "lazy",
+        "width" : 1441,
+        "height" : 577,
+        "max_width" : 1441,
+        "max_height" : 577
       },
       "select_color" : "pale_green",
       "select_gradient" : "gradient5"
