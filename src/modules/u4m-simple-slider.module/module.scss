@@ -30,10 +30,8 @@
       .row {
         display: flex;
         flex-wrap: wrap;
-        padding: 80px 0;
         @include tablet {
           flex-direction: column-reverse;
-          padding: 40px 0;
         }
         .leftColumn {
           position: relative;
@@ -56,32 +54,32 @@
               padding-left: 20px;
             }
             .slick-arrow {
-                width: 44px;
-                height: 44px;
-                border: 1px solid $heading;
-                border-radius: 100%;
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                cursor: pointer;
-                color: $heading;
+              width: 44px;
+              height: 44px;
+              border: 1px solid $heading;
+              border-radius: 100%;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              cursor: pointer;
+              color: $heading;
+              // @include tablet {
+              //   width: 30px;
+              //   height: 30px;
+              //   }
+              &:hover {
+                background-color: $heading;
+                color: $white;
+              }
+              svg {
                 // @include tablet {
-                //   width: 30px;
-                //   height: 30px;
+                //   width: 10px;
+                //   height: 10px;
                 //   }
-                &:hover {
-                  background-color: $heading;
-                  color: $white;
+                path {
+                  fill: currentColor;
                 }
-                svg {
-                  // @include tablet {
-                  //   width: 10px;
-                  //   height: 10px;
-                  //   }
-                  path {
-                    fill: currentColor;
-                  }
-                }
+              }
             }
           }
           width: 50%;
@@ -94,37 +92,32 @@
             .left_section {
               position: relative;
               z-index: 99;
-              .topSec{
+              .topSec {
                 max-width: 422px;
                 margin-left: 0;
                 text-align: left;
                 padding: 0;
                 @include tablet {
-                    max-width: 100%;
-                    padding-right: 120px;
+                  max-width: 100%;
+                  padding-right: 120px;
                 }
                 @include tablet {
                   padding-right: 0;
                 }
-              .eyebrow_text {
-                margin-bottom: 8px;
-                font-size: 14px;
               }
-
-            }
               .intro_desc {
                 margin-bottom: 32px;
-                @include size23; 
-                &> span{ 
+                @include size23;
+                & > span {
                   display: inline-block;
                   font-weight: 500;
                 }
-                
               }
               .author-section {
                 @include eyebrow;
                 font-weight: 500;
                 margin-bottom: 32px;
+                line-height: 1.3;
                 span {
                   padding: 0 8px;
                 }
@@ -160,35 +153,32 @@
                   height: 100%;
                   > div {
                     height: 100%;
-                      display: block;
+                    display: block;
 
-                .media_section {
-                  background-position: 50%;
-                  background-repeat: no-repeat;
-                  background-size: cover;
-                  display: block;
-                  height: 100%;
-                  @include tablet {
-                    position: static;
-                    min-width: 100%;
-                    min-height: 50vw;
-                    // img {
-                    //   mask: none !important;
-                    //   -webkit-mask-box-image: none !important;
-                    //   width: 100%;
-                    //   height: auto;
-                    //   object-position: inherit;
-                    // }
+                    .media_section {
+                      background-position: 50%;
+                      background-repeat: no-repeat;
+                      background-size: cover;
+                      display: block;
+                      height: 100%;
+                      @include tablet {
+                        position: static;
+                        min-width: 100%;
+                        min-height: 50vw;
+                        // img {
+                        //   mask: none !important;
+                        //   -webkit-mask-box-image: none !important;
+                        //   width: 100%;
+                        //   height: auto;
+                        //   object-position: inherit;
+                        // }
+                      }
+                    }
                   }
                 }
-                  }
               }
-              
             }
-            
           }
-          
-        }
         }
       }
     }
@@ -224,12 +214,11 @@
     }
     &.fw {
       .row {
-        padding: 80px 0;
         @include tablet {
           padding: 40px 0;
         }
         .leftColumn {
-          width: 100%;  
+          width: 100%;
           text-align: center;
           max-width: 800px;
           margin: auto;
@@ -258,7 +247,7 @@
                 text-align: center;
               }
             }
-        }
+          }
         }
       }
     }

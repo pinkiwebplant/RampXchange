@@ -1,5 +1,7 @@
 {% set moduleName = 'u4m-alternating-content' %}
+	{% if module.module_overrides.background_settings.apply_overlay %}
 {% set ExtramoduleClass =  module.module_settings.select_content_alignment  %}
+{% endif %}
 {% include "../partials/u4-module-includes.html" %}
 {% if module.module_overrides.background_settings.background_type == 'image' %}
 {% if module.module_overrides.background_settings.apply_overlay %}
