@@ -77,8 +77,7 @@ a {
 abbr[title] {
   border-bottom: none; /* 1 */
   text-decoration: underline; /* 2 */
-  -webkit-text-decoration: underline dotted;
-          text-decoration: underline dotted; /* 2 */
+  text-decoration: underline dotted; /* 2 */
 }
 
 /**
@@ -408,6 +407,7 @@ select {
   padding: 6px;
   display: inline-block;
   width: 100%;
+  -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
 
@@ -2183,9 +2183,11 @@ body {
   box-sizing: border-box;
   -webkit-user-select: none;
   -moz-user-select: none;
+  -ms-user-select: none;
   user-select: none;
   -webkit-touch-callout: none;
   -khtml-user-select: none;
+  -ms-touch-action: pan-y;
   touch-action: pan-y;
   -webkit-tap-highlight-color: transparent;
 }
@@ -2209,6 +2211,10 @@ body {
 
 .slick-slider .slick-track,
 .slick-slider .slick-list {
+  -webkit-transform: translate3d(0, 0, 0);
+  -moz-transform: translate3d(0, 0, 0);
+  -ms-transform: translate3d(0, 0, 0);
+  -o-transform: translate3d(0, 0, 0);
   transform: translate3d(0, 0, 0);
 }
 
@@ -2288,6 +2294,8 @@ body {
   width: 20px;
   height: 20px;
   padding: 0;
+  -webkit-transform: translate(0, -50%);
+  -ms-transform: translate(0, -50%);
   transform: translate(0, -50%);
   cursor: pointer;
   color: transparent;
@@ -2466,6 +2474,8 @@ body {
   left: 0;
   top: 0;
   padding: 0 8px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
 
@@ -2499,11 +2509,15 @@ body {
 }
 
 .mfp-zoom-out-cur, .mfp-zoom-out-cur .mfp-image-holder .mfp-close {
+  cursor: -moz-zoom-out;
+  cursor: -webkit-zoom-out;
   cursor: zoom-out;
 }
 
 .mfp-zoom {
   cursor: pointer;
+  cursor: -webkit-zoom-in;
+  cursor: -moz-zoom-in;
   cursor: zoom-in;
 }
 
@@ -2559,6 +2573,7 @@ button.mfp-arrow, button.mfp-close {
   outline: 0;
   padding: 0;
   z-index: 1046;
+  -webkit-box-shadow: none;
   box-shadow: none;
 }
 
@@ -2728,6 +2743,8 @@ img.mfp-img {
   height: auto;
   display: block;
   line-height: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
   box-sizing: border-box;
   padding: 40px 0;
   margin: 0 auto;
@@ -2811,6 +2828,8 @@ img.mfp-img {
     top: auto;
     padding: 3px 5px;
     position: fixed;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
     box-sizing: border-box;
   }
   .mfp-img-mobile .mfp-bottom-bar:empty {
@@ -2834,12 +2853,15 @@ img.mfp-img {
 }
 @media all and (max-width: 900px) {
   .mfp-arrow {
+    -webkit-transform: scale(0.75);
     transform: scale(0.75);
   }
   .mfp-arrow-left {
+    -webkit-transform-origin: 0;
     transform-origin: 0;
   }
   .mfp-arrow-right {
+    -webkit-transform-origin: 100%;
     transform-origin: 100%;
   }
   .mfp-container {
@@ -2934,6 +2956,54 @@ html {
 }
 
 /* Keep background from scrolling when menu is open */
+@font-face {
+  font-family: "Aktive Grotesk";
+  src: url("https://use.typekit.net/af/63eba7/00000000000000007753ca4f/30/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3") format("woff2"), url("https://use.typekit.net/af/63eba7/00000000000000007753ca4f/30/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3") format("woff"), url("https://use.typekit.net/af/63eba7/00000000000000007753ca4f/30/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3") format("opentype");
+  font-display: auto;
+  font-style: normal;
+  font-weight: 400;
+  font-stretch: normal;
+}
+@font-face {
+  font-family: "Aktive Grotesk";
+  src: url("https://use.typekit.net/af/f7a8b2/00000000000000007753ca28/30/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i4&v=3") format("woff2"), url("https://use.typekit.net/af/f7a8b2/00000000000000007753ca28/30/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i4&v=3") format("woff"), url("https://use.typekit.net/af/f7a8b2/00000000000000007753ca28/30/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i4&v=3") format("opentype");
+  font-display: auto;
+  font-style: italic;
+  font-weight: 400;
+  font-stretch: normal;
+}
+@font-face {
+  font-family: "Aktive Grotesk";
+  src: url("https://use.typekit.net/af/2b93b6/00000000000000007753ca37/30/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3") format("woff2"), url("https://use.typekit.net/af/2b93b6/00000000000000007753ca37/30/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3") format("woff"), url("https://use.typekit.net/af/2b93b6/00000000000000007753ca37/30/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3") format("opentype");
+  font-display: auto;
+  font-style: normal;
+  font-weight: 700;
+  font-stretch: normal;
+}
+@font-face {
+  font-family: "Aktive Grotesk";
+  src: url("https://use.typekit.net/af/ae6138/00000000000000007753ca27/30/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i7&v=3") format("woff2"), url("https://use.typekit.net/af/ae6138/00000000000000007753ca27/30/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i7&v=3") format("woff"), url("https://use.typekit.net/af/ae6138/00000000000000007753ca27/30/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i7&v=3") format("opentype");
+  font-display: auto;
+  font-style: italic;
+  font-weight: 700;
+  font-stretch: normal;
+}
+@font-face {
+  font-family: "Aktive Grotesk";
+  src: url("https://use.typekit.net/af/434507/00000000000000007753ca2a/30/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n2&v=3") format("woff2"), url("https://use.typekit.net/af/434507/00000000000000007753ca2a/30/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n2&v=3") format("woff"), url("https://use.typekit.net/af/434507/00000000000000007753ca2a/30/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n2&v=3") format("opentype");
+  font-display: auto;
+  font-style: normal;
+  font-weight: 200;
+  font-stretch: normal;
+}
+@font-face {
+  font-family: "Aktive Grotesk";
+  src: url("https://use.typekit.net/af/0f6952/00000000000000007753ca4e/30/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i2&v=3") format("woff2"), url("https://use.typekit.net/af/0f6952/00000000000000007753ca4e/30/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i2&v=3") format("woff"), url("https://use.typekit.net/af/0f6952/00000000000000007753ca4e/30/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i2&v=3") format("opentype");
+  font-display: auto;
+  font-style: italic;
+  font-weight: 200;
+  font-stretch: normal;
+}
 html.menu-open {
   overflow-y: hidden;
 }
@@ -2946,7 +3016,7 @@ html {
 
 /* make html visible after Firefox flash in hack */
 body {
-  font-family: "Aktive Grotesk, Arial, sans serif";
+  font-family: "Aktive Grotesk", "Arial, sans serif";
   font-size: 15rem;
   line-height: 1.5;
   color: #213944;
@@ -2973,7 +3043,7 @@ h6 {
 }
 
 h1 {
-  font-family: "Aktive Grotesk, Arial, sans serif";
+  font-family: "Aktive Grotesk", "Arial, sans serif";
   font-size: 36rem;
   font-weight: 400;
   margin-bottom: 30rem;
@@ -2993,7 +3063,7 @@ h1 {
 }
 
 h2 {
-  font-family: "Aktive Grotesk, Arial, sans serif";
+  font-family: "Aktive Grotesk", "Arial, sans serif";
   font-size: 32rem;
   font-weight: 400;
   margin-bottom: 30rem;
@@ -3012,7 +3082,7 @@ h2 {
 }
 
 h3 {
-  font-family: "Aktive Grotesk, Arial, sans serif";
+  font-family: "Aktive Grotesk", "Arial, sans serif";
   font-size: 28rem;
   font-weight: 400;
   margin-bottom: 30rem;
@@ -3031,7 +3101,7 @@ h3 {
 }
 
 h4 {
-  font-family: "Aktive Grotesk, Arial, sans serif";
+  font-family: "Aktive Grotesk", "Arial, sans serif";
   font-size: 25rem;
   font-weight: 400;
   margin-bottom: 30rem;
@@ -3050,7 +3120,7 @@ h4 {
 }
 
 h5 {
-  font-family: "Aktive Grotesk, Arial, sans serif";
+  font-family: "Aktive Grotesk", "Arial, sans serif";
   font-size: 22rem;
   font-weight: 400;
   margin-bottom: 30rem;
@@ -3069,7 +3139,7 @@ h5 {
 }
 
 h6 {
-  font-family: "Aktive Grotesk, Arial, sans serif";
+  font-family: "Aktive Grotesk", "Arial, sans serif";
   font-size: 20rem;
   font-weight: 600;
   margin-bottom: 30rem;
@@ -3314,7 +3384,7 @@ div#hs-eu-cookie-confirmation.hs-cookie-notification-position-bottom.can-use-gra
   max-width: 1240rem;
 }
 div#hs-eu-cookie-confirmation.hs-cookie-notification-position-bottom.can-use-gradients div#hs-eu-cookie-confirmation-inner p {
-  font-family: "Aktive Grotesk, Arial, sans serif";
+  font-family: "Aktive Grotesk", "Arial, sans serif";
   font-size: 14rem;
   line-height: 1.5;
   margin-bottom: 20rem;
@@ -3331,7 +3401,7 @@ div#hs-eu-cookie-confirmation.hs-cookie-notification-position-bottom.can-use-gra
 }
 div#hs-eu-cookie-confirmation.hs-cookie-notification-position-bottom.can-use-gradients div#hs-eu-cookie-confirmation-inner div#hs-en-cookie-confirmation-buttons-area a#hs-eu-confirmation-button {
   display: inline-block;
-  font-family: "Aktive Grotesk, Arial, sans serif";
+  font-family: "Aktive Grotesk", "Arial, sans serif";
   color: #ffffff;
   background-color: #006f3c;
   border: 2px solid #006f3c;
@@ -3376,7 +3446,7 @@ a:hover {
 
 blockquote,
 blockquote p {
-  font-family: "Aktive Grotesk, Arial, sans serif";
+  font-family: "Aktive Grotesk", "Arial, sans serif";
   font-size: 30rem;
   font-weight: bold;
   line-height: 1.5;
@@ -3470,11 +3540,11 @@ ol ul {
 }
 
 input {
-  font-family: "Aktive Grotesk, Arial, sans serif";
+  font-family: "Aktive Grotesk", "Arial, sans serif";
 }
 
 button {
-  font-family: "Aktive Grotesk, Arial, sans serif";
+  font-family: "Aktive Grotesk", "Arial, sans serif";
   cursor: pointer;
 }
 
@@ -3628,7 +3698,7 @@ section[class*=u4m-] {
 
 .hs-button {
   display: inline-block;
-  font-family: "Aktive Grotesk, Arial, sans serif";
+  font-family: "Aktive Grotesk", "Arial, sans serif";
   color: #ffffff;
   background-color: #006f3c;
   border: 2px solid #006f3c;
@@ -3650,7 +3720,7 @@ section[class*=u4m-] {
 
 .sec-btn {
   display: inline-block;
-  font-family: "Aktive Grotesk, Arial, sans serif";
+  font-family: "Aktive Grotesk", "Arial, sans serif";
   color: #ffffff;
   background-color: #006f3c;
   border: 2px solid #006f3c;
@@ -3688,6 +3758,17 @@ section[class*=u4m-] {
   margin: 20rem 0 0 0;
 }
 
+.eyebrow_text {
+  font-family: "Aktive Grotesk", "Arial, sans serif";
+  font-size: 16rem;
+  font-weight: 600;
+  line-height: 1;
+  display: block;
+  margin-bottom: 10rem;
+  color: #006f3c;
+  margin-bottom: 8rem;
+}
+
 .intro_content {
   text-align: center;
   margin-bottom: 40rem;
@@ -3703,7 +3784,7 @@ section[class*=u4m-] {
   }
 }
 .intro_content .eyebrow_text {
-  font-family: "Aktive Grotesk, Arial, sans serif";
+  font-family: "Aktive Grotesk", "Arial, sans serif";
   font-size: 16rem;
   font-weight: 600;
   line-height: 1;
@@ -3930,6 +4011,10 @@ section[class*=u4m-] {
   background-image: linear-gradient(278.27deg, #315363 0%, #213944 100%);
 }
 
+.gradient6 {
+  background-image: linear-gradient(90deg, #ffffff 0%, #f9f5ee 99.93%);
+}
+
 .form-title:empty {
   display: none;
 }
@@ -3938,7 +4023,7 @@ form {
   background-color: #ffffff;
   padding: 40rem;
   max-width: 765rem;
-  border-radius: 12rem;
+  border-radius: 4rem;
   float: none;
   overflow: auto;
 }
@@ -3948,7 +4033,7 @@ form {
   }
 }
 form h3 {
-  font-family: "Aktive Grotesk, Arial, sans serif";
+  font-family: "Aktive Grotesk", "Arial, sans serif";
   font-size: 20rem;
   font-weight: 600;
   margin-bottom: 30rem;
@@ -3968,7 +4053,7 @@ form h3 {
 }
 form div.legal-consent-container p,
 form div.legal-consent-container .hs-form-booleancheckbox label {
-  font-family: "Aktive Grotesk, Arial, sans serif";
+  font-family: "Aktive Grotesk", "Arial, sans serif";
   font-size: 11rem;
   line-height: 1.5;
   margin-bottom: 10rem;
@@ -4036,16 +4121,13 @@ form .input input[type=tel],
 form .input input[type=email] {
   border: 1rem solid #6e757c;
   border-radius: 4rem;
-  font-size: 16rem;
   background-color: #ffffff;
-  line-height: 1;
   margin-bottom: 0;
   outline: none !important;
-  padding: 13rem 12rem;
+  padding: 12rem 12rem;
   width: 100%;
-  -webkit-appearance: none;
-     -moz-appearance: none;
-          appearance: none;
+  line-height: 1.5;
+  appearance: none;
   color: #213944;
 }
 form.hs-form .input input[type=text]:focus,
@@ -4080,9 +4162,6 @@ form .input input[type=tel].invalid,
 form .input input[type=email].error,
 form .input input[type=email].invalid {
   border: 1rem solid red;
-}
-form.hs-form .input input[type=text]::-moz-placeholder, form.hs-form .input input[type=number]::-moz-placeholder, form.hs-form .input input[type=tel]::-moz-placeholder, form.hs-form .input input[type=email]::-moz-placeholder, form.mixitup-multifilter .input input[type=text]::-moz-placeholder, form.mixitup-multifilter .input input[type=number]::-moz-placeholder, form.mixitup-multifilter .input input[type=tel]::-moz-placeholder, form.mixitup-multifilter .input input[type=email]::-moz-placeholder, form .input input[type=text]::-moz-placeholder, form .input input[type=number]::-moz-placeholder, form .input input[type=tel]::-moz-placeholder, form .input input[type=email]::-moz-placeholder {
-  color: #6e757c;
 }
 form.hs-form .input input[type=text]::placeholder,
 form.hs-form .input input[type=number]::placeholder,
@@ -4159,9 +4238,7 @@ form .input input[type=radio] {
   margin: 0;
   height: 20px;
   width: 20px !important;
-  -webkit-appearance: none;
-     -moz-appearance: none;
-          appearance: none;
+  appearance: none;
   outline: none !important;
 }
 form.hs-form .input input[type=checkbox]:checked + *:before, form.hs-form .input input[type=checkbox]:checked + *:before,
@@ -4196,16 +4273,14 @@ form.hs-form .input input select:focus, form.mixitup-multifilter .input input se
 }
 form.hs-form .input input[type=file], form.mixitup-multifilter .input input[type=file], form .input input[type=file] {
   font-size: 16rem;
-  font-family: "Aktive Grotesk, Arial, sans serif";
+  font-family: "Aktive Grotesk", "Arial, sans serif";
   background-color: transparent;
   position: relative;
   font-weight: bold;
   margin-bottom: 20rem;
 }
 form.hs-form .input select, form.mixitup-multifilter .input select, form .input select {
-  -webkit-appearance: none;
-     -moz-appearance: none;
-          appearance: none;
+  appearance: none;
   background-position: calc(100% - 20rem) center;
   border: 1rem solid #6e757c;
   border-radius: 4rem;
@@ -4263,7 +4338,7 @@ form.hs-form .input + .hs-error-msgs li:before, form.mixitup-multifilter .input 
 }
 form.hs-form .input + .hs-error-msgs li label, form.mixitup-multifilter .input + .hs-error-msgs li label, form .input + .hs-error-msgs li label {
   font-size: 12rem;
-  font-family: "Aktive Grotesk, Arial, sans serif";
+  font-family: "Aktive Grotesk", "Arial, sans serif";
   text-transform: uppercase;
   letter-spacing: 1rem;
   display: inline-block;
@@ -4297,10 +4372,6 @@ form.hs-form textarea, form.mixitup-multifilter textarea, form textarea {
 }
 form.hs-form textarea:focus, form.mixitup-multifilter textarea:focus, form textarea:focus {
   border: 1rem solid #213944;
-}
-form.hs-form textarea::-moz-placeholder, form.mixitup-multifilter textarea::-moz-placeholder, form textarea::-moz-placeholder {
-  color: #6e757c;
-  font-size: 13rem;
 }
 form.hs-form textarea::placeholder, form.mixitup-multifilter textarea::placeholder, form textarea::placeholder {
   color: #6e757c;
@@ -4556,7 +4627,7 @@ form.hs-form fieldset.form-columns-1 .hs-input, form.mixitup-multifilter fieldse
 }
 form.hs-form .hs-button, form.mixitup-multifilter .hs-button, form .hs-button {
   display: inline-block;
-  font-family: "Aktive Grotesk, Arial, sans serif";
+  font-family: "Aktive Grotesk", "Arial, sans serif";
   color: #ffffff;
   background-color: #006f3c;
   border: 2px solid #006f3c;
@@ -4621,7 +4692,7 @@ section.u4m-500-error {
 }
 section.u4m-404-error p,
 section.u4m-500-error p {
-  font-family: "Aktive Grotesk, Arial, sans serif";
+  font-family: "Aktive Grotesk", "Arial, sans serif";
   font-size: 15rem;
   line-height: 1.5;
   margin-bottom: 20rem;
@@ -4655,7 +4726,7 @@ section.u4m-backup-unsubscribe {
   }
 }
 section.u4m-backup-unsubscribe p {
-  font-family: "Aktive Grotesk, Arial, sans serif";
+  font-family: "Aktive Grotesk", "Arial, sans serif";
   font-size: 15rem;
   line-height: 1.5;
   margin-bottom: 20rem;
@@ -4669,7 +4740,7 @@ section.u4m-backup-unsubscribe form {
   background-color: #ffffff;
   padding: 40rem;
   max-width: 765rem;
-  border-radius: 12rem;
+  border-radius: 4rem;
   float: none;
   overflow: auto;
   padding-bottom: 50rem;
@@ -4680,7 +4751,7 @@ section.u4m-backup-unsubscribe form {
   }
 }
 section.u4m-backup-unsubscribe form h3 {
-  font-family: "Aktive Grotesk, Arial, sans serif";
+  font-family: "Aktive Grotesk", "Arial, sans serif";
   font-size: 20rem;
   font-weight: 600;
   margin-bottom: 30rem;
@@ -4700,7 +4771,7 @@ section.u4m-backup-unsubscribe form h3 {
 }
 section.u4m-backup-unsubscribe form div.legal-consent-container p,
 section.u4m-backup-unsubscribe form div.legal-consent-container .hs-form-booleancheckbox label {
-  font-family: "Aktive Grotesk, Arial, sans serif";
+  font-family: "Aktive Grotesk", "Arial, sans serif";
   font-size: 11rem;
   line-height: 1.5;
   margin-bottom: 10rem;
@@ -4768,16 +4839,13 @@ section.u4m-backup-unsubscribe form .input input[type=tel],
 section.u4m-backup-unsubscribe form .input input[type=email] {
   border: 1rem solid #6e757c;
   border-radius: 4rem;
-  font-size: 16rem;
   background-color: #ffffff;
-  line-height: 1;
   margin-bottom: 0;
   outline: none !important;
-  padding: 13rem 12rem;
+  padding: 12rem 12rem;
   width: 100%;
-  -webkit-appearance: none;
-     -moz-appearance: none;
-          appearance: none;
+  line-height: 1.5;
+  appearance: none;
   color: #213944;
 }
 section.u4m-backup-unsubscribe form.hs-form .input input[type=text]:focus,
@@ -4812,9 +4880,6 @@ section.u4m-backup-unsubscribe form .input input[type=tel].invalid,
 section.u4m-backup-unsubscribe form .input input[type=email].error,
 section.u4m-backup-unsubscribe form .input input[type=email].invalid {
   border: 1rem solid red;
-}
-section.u4m-backup-unsubscribe form.hs-form .input input[type=text]::-moz-placeholder, section.u4m-backup-unsubscribe form.hs-form .input input[type=number]::-moz-placeholder, section.u4m-backup-unsubscribe form.hs-form .input input[type=tel]::-moz-placeholder, section.u4m-backup-unsubscribe form.hs-form .input input[type=email]::-moz-placeholder, section.u4m-backup-unsubscribe form.mixitup-multifilter .input input[type=text]::-moz-placeholder, section.u4m-backup-unsubscribe form.mixitup-multifilter .input input[type=number]::-moz-placeholder, section.u4m-backup-unsubscribe form.mixitup-multifilter .input input[type=tel]::-moz-placeholder, section.u4m-backup-unsubscribe form.mixitup-multifilter .input input[type=email]::-moz-placeholder, section.u4m-backup-unsubscribe form .input input[type=text]::-moz-placeholder, section.u4m-backup-unsubscribe form .input input[type=number]::-moz-placeholder, section.u4m-backup-unsubscribe form .input input[type=tel]::-moz-placeholder, section.u4m-backup-unsubscribe form .input input[type=email]::-moz-placeholder {
-  color: #6e757c;
 }
 section.u4m-backup-unsubscribe form.hs-form .input input[type=text]::placeholder,
 section.u4m-backup-unsubscribe form.hs-form .input input[type=number]::placeholder,
@@ -4891,9 +4956,7 @@ section.u4m-backup-unsubscribe form .input input[type=radio] {
   margin: 0;
   height: 20px;
   width: 20px !important;
-  -webkit-appearance: none;
-     -moz-appearance: none;
-          appearance: none;
+  appearance: none;
   outline: none !important;
 }
 section.u4m-backup-unsubscribe form.hs-form .input input[type=checkbox]:checked + *:before, section.u4m-backup-unsubscribe form.hs-form .input input[type=checkbox]:checked + *:before,
@@ -4928,16 +4991,14 @@ section.u4m-backup-unsubscribe form.hs-form .input input select:focus, section.u
 }
 section.u4m-backup-unsubscribe form.hs-form .input input[type=file], section.u4m-backup-unsubscribe form.mixitup-multifilter .input input[type=file], section.u4m-backup-unsubscribe form .input input[type=file] {
   font-size: 16rem;
-  font-family: "Aktive Grotesk, Arial, sans serif";
+  font-family: "Aktive Grotesk", "Arial, sans serif";
   background-color: transparent;
   position: relative;
   font-weight: bold;
   margin-bottom: 20rem;
 }
 section.u4m-backup-unsubscribe form.hs-form .input select, section.u4m-backup-unsubscribe form.mixitup-multifilter .input select, section.u4m-backup-unsubscribe form .input select {
-  -webkit-appearance: none;
-     -moz-appearance: none;
-          appearance: none;
+  appearance: none;
   background-position: calc(100% - 20rem) center;
   border: 1rem solid #6e757c;
   border-radius: 4rem;
@@ -4995,7 +5056,7 @@ section.u4m-backup-unsubscribe form.hs-form .input + .hs-error-msgs li:before, s
 }
 section.u4m-backup-unsubscribe form.hs-form .input + .hs-error-msgs li label, section.u4m-backup-unsubscribe form.mixitup-multifilter .input + .hs-error-msgs li label, section.u4m-backup-unsubscribe form .input + .hs-error-msgs li label {
   font-size: 12rem;
-  font-family: "Aktive Grotesk, Arial, sans serif";
+  font-family: "Aktive Grotesk", "Arial, sans serif";
   text-transform: uppercase;
   letter-spacing: 1rem;
   display: inline-block;
@@ -5029,10 +5090,6 @@ section.u4m-backup-unsubscribe form.hs-form textarea, section.u4m-backup-unsubsc
 }
 section.u4m-backup-unsubscribe form.hs-form textarea:focus, section.u4m-backup-unsubscribe form.mixitup-multifilter textarea:focus, section.u4m-backup-unsubscribe form textarea:focus {
   border: 1rem solid #213944;
-}
-section.u4m-backup-unsubscribe form.hs-form textarea::-moz-placeholder, section.u4m-backup-unsubscribe form.mixitup-multifilter textarea::-moz-placeholder, section.u4m-backup-unsubscribe form textarea::-moz-placeholder {
-  color: #6e757c;
-  font-size: 13rem;
 }
 section.u4m-backup-unsubscribe form.hs-form textarea::placeholder, section.u4m-backup-unsubscribe form.mixitup-multifilter textarea::placeholder, section.u4m-backup-unsubscribe form textarea::placeholder {
   color: #6e757c;
@@ -5288,7 +5345,7 @@ section.u4m-backup-unsubscribe form.hs-form fieldset.form-columns-1 .hs-input, s
 }
 section.u4m-backup-unsubscribe form.hs-form .hs-button, section.u4m-backup-unsubscribe form.mixitup-multifilter .hs-button, section.u4m-backup-unsubscribe form .hs-button {
   display: inline-block;
-  font-family: "Aktive Grotesk, Arial, sans serif";
+  font-family: "Aktive Grotesk", "Arial, sans serif";
   color: #ffffff;
   background-color: #006f3c;
   border: 2px solid #006f3c;
@@ -5365,7 +5422,7 @@ section.u4m-password-prompt form {
   background-color: #ffffff;
   padding: 40rem;
   max-width: 765rem;
-  border-radius: 12rem;
+  border-radius: 4rem;
   float: none;
   overflow: auto;
   margin-left: auto;
@@ -5387,7 +5444,7 @@ section.u4m-membership-register form h3,
 section.u4m-membership-reset-password-request form h3,
 section.u4m-membership-reset-password form h3,
 section.u4m-password-prompt form h3 {
-  font-family: "Aktive Grotesk, Arial, sans serif";
+  font-family: "Aktive Grotesk", "Arial, sans serif";
   font-size: 20rem;
   font-weight: 600;
   margin-bottom: 30rem;
@@ -5423,7 +5480,7 @@ section.u4m-membership-reset-password form div.legal-consent-container p,
 section.u4m-membership-reset-password form div.legal-consent-container .hs-form-booleancheckbox label,
 section.u4m-password-prompt form div.legal-consent-container p,
 section.u4m-password-prompt form div.legal-consent-container .hs-form-booleancheckbox label {
-  font-family: "Aktive Grotesk, Arial, sans serif";
+  font-family: "Aktive Grotesk", "Arial, sans serif";
   font-size: 11rem;
   line-height: 1.5;
   margin-bottom: 10rem;
@@ -5647,16 +5704,13 @@ section.u4m-password-prompt form .input input[type=tel],
 section.u4m-password-prompt form .input input[type=email] {
   border: 1rem solid #6e757c;
   border-radius: 4rem;
-  font-size: 16rem;
   background-color: #ffffff;
-  line-height: 1;
   margin-bottom: 0;
   outline: none !important;
-  padding: 13rem 12rem;
+  padding: 12rem 12rem;
   width: 100%;
-  -webkit-appearance: none;
-     -moz-appearance: none;
-          appearance: none;
+  line-height: 1.5;
+  appearance: none;
   color: #213944;
 }
 section.u4m-membership-login form.hs-form .input input[type=text]:focus,
@@ -5835,9 +5889,6 @@ section.u4m-password-prompt form .input input[type=tel].invalid,
 section.u4m-password-prompt form .input input[type=email].error,
 section.u4m-password-prompt form .input input[type=email].invalid {
   border: 1rem solid red;
-}
-section.u4m-membership-login form.hs-form .input input[type=text]::-moz-placeholder, section.u4m-membership-login form.hs-form .input input[type=number]::-moz-placeholder, section.u4m-membership-login form.hs-form .input input[type=tel]::-moz-placeholder, section.u4m-membership-login form.hs-form .input input[type=email]::-moz-placeholder, section.u4m-membership-login form.mixitup-multifilter .input input[type=text]::-moz-placeholder, section.u4m-membership-login form.mixitup-multifilter .input input[type=number]::-moz-placeholder, section.u4m-membership-login form.mixitup-multifilter .input input[type=tel]::-moz-placeholder, section.u4m-membership-login form.mixitup-multifilter .input input[type=email]::-moz-placeholder, section.u4m-membership-login form .input input[type=text]::-moz-placeholder, section.u4m-membership-login form .input input[type=number]::-moz-placeholder, section.u4m-membership-login form .input input[type=tel]::-moz-placeholder, section.u4m-membership-login form .input input[type=email]::-moz-placeholder, section.u4m-membership-register form.hs-form .input input[type=text]::-moz-placeholder, section.u4m-membership-register form.hs-form .input input[type=number]::-moz-placeholder, section.u4m-membership-register form.hs-form .input input[type=tel]::-moz-placeholder, section.u4m-membership-register form.hs-form .input input[type=email]::-moz-placeholder, section.u4m-membership-register form.mixitup-multifilter .input input[type=text]::-moz-placeholder, section.u4m-membership-register form.mixitup-multifilter .input input[type=number]::-moz-placeholder, section.u4m-membership-register form.mixitup-multifilter .input input[type=tel]::-moz-placeholder, section.u4m-membership-register form.mixitup-multifilter .input input[type=email]::-moz-placeholder, section.u4m-membership-register form .input input[type=text]::-moz-placeholder, section.u4m-membership-register form .input input[type=number]::-moz-placeholder, section.u4m-membership-register form .input input[type=tel]::-moz-placeholder, section.u4m-membership-register form .input input[type=email]::-moz-placeholder, section.u4m-membership-reset-password-request form.hs-form .input input[type=text]::-moz-placeholder, section.u4m-membership-reset-password-request form.hs-form .input input[type=number]::-moz-placeholder, section.u4m-membership-reset-password-request form.hs-form .input input[type=tel]::-moz-placeholder, section.u4m-membership-reset-password-request form.hs-form .input input[type=email]::-moz-placeholder, section.u4m-membership-reset-password-request form.mixitup-multifilter .input input[type=text]::-moz-placeholder, section.u4m-membership-reset-password-request form.mixitup-multifilter .input input[type=number]::-moz-placeholder, section.u4m-membership-reset-password-request form.mixitup-multifilter .input input[type=tel]::-moz-placeholder, section.u4m-membership-reset-password-request form.mixitup-multifilter .input input[type=email]::-moz-placeholder, section.u4m-membership-reset-password-request form .input input[type=text]::-moz-placeholder, section.u4m-membership-reset-password-request form .input input[type=number]::-moz-placeholder, section.u4m-membership-reset-password-request form .input input[type=tel]::-moz-placeholder, section.u4m-membership-reset-password-request form .input input[type=email]::-moz-placeholder, section.u4m-membership-reset-password form.hs-form .input input[type=text]::-moz-placeholder, section.u4m-membership-reset-password form.hs-form .input input[type=number]::-moz-placeholder, section.u4m-membership-reset-password form.hs-form .input input[type=tel]::-moz-placeholder, section.u4m-membership-reset-password form.hs-form .input input[type=email]::-moz-placeholder, section.u4m-membership-reset-password form.mixitup-multifilter .input input[type=text]::-moz-placeholder, section.u4m-membership-reset-password form.mixitup-multifilter .input input[type=number]::-moz-placeholder, section.u4m-membership-reset-password form.mixitup-multifilter .input input[type=tel]::-moz-placeholder, section.u4m-membership-reset-password form.mixitup-multifilter .input input[type=email]::-moz-placeholder, section.u4m-membership-reset-password form .input input[type=text]::-moz-placeholder, section.u4m-membership-reset-password form .input input[type=number]::-moz-placeholder, section.u4m-membership-reset-password form .input input[type=tel]::-moz-placeholder, section.u4m-membership-reset-password form .input input[type=email]::-moz-placeholder, section.u4m-password-prompt form.hs-form .input input[type=text]::-moz-placeholder, section.u4m-password-prompt form.hs-form .input input[type=number]::-moz-placeholder, section.u4m-password-prompt form.hs-form .input input[type=tel]::-moz-placeholder, section.u4m-password-prompt form.hs-form .input input[type=email]::-moz-placeholder, section.u4m-password-prompt form.mixitup-multifilter .input input[type=text]::-moz-placeholder, section.u4m-password-prompt form.mixitup-multifilter .input input[type=number]::-moz-placeholder, section.u4m-password-prompt form.mixitup-multifilter .input input[type=tel]::-moz-placeholder, section.u4m-password-prompt form.mixitup-multifilter .input input[type=email]::-moz-placeholder, section.u4m-password-prompt form .input input[type=text]::-moz-placeholder, section.u4m-password-prompt form .input input[type=number]::-moz-placeholder, section.u4m-password-prompt form .input input[type=tel]::-moz-placeholder, section.u4m-password-prompt form .input input[type=email]::-moz-placeholder {
-  color: #6e757c;
 }
 section.u4m-membership-login form.hs-form .input input[type=text]::placeholder,
 section.u4m-membership-login form.hs-form .input input[type=number]::placeholder,
@@ -6094,9 +6145,7 @@ section.u4m-password-prompt form .input input[type=radio] {
   margin: 0;
   height: 20px;
   width: 20px !important;
-  -webkit-appearance: none;
-     -moz-appearance: none;
-          appearance: none;
+  appearance: none;
   outline: none !important;
 }
 section.u4m-membership-login form.hs-form .input input[type=checkbox]:checked + *:before, section.u4m-membership-login form.hs-form .input input[type=checkbox]:checked + *:before,
@@ -6263,7 +6312,7 @@ section.u4m-password-prompt form.hs-form .input input[type=file],
 section.u4m-password-prompt form.mixitup-multifilter .input input[type=file],
 section.u4m-password-prompt form .input input[type=file] {
   font-size: 16rem;
-  font-family: "Aktive Grotesk, Arial, sans serif";
+  font-family: "Aktive Grotesk", "Arial, sans serif";
   background-color: transparent;
   position: relative;
   font-weight: bold;
@@ -6282,9 +6331,7 @@ section.u4m-membership-reset-password form .input select,
 section.u4m-password-prompt form.hs-form .input select,
 section.u4m-password-prompt form.mixitup-multifilter .input select,
 section.u4m-password-prompt form .input select {
-  -webkit-appearance: none;
-     -moz-appearance: none;
-          appearance: none;
+  appearance: none;
   background-position: calc(100% - 20rem) center;
   border: 1rem solid #6e757c;
   border-radius: 4rem;
@@ -6414,7 +6461,7 @@ section.u4m-password-prompt form.hs-form .input + .hs-error-msgs li label,
 section.u4m-password-prompt form.mixitup-multifilter .input + .hs-error-msgs li label,
 section.u4m-password-prompt form .input + .hs-error-msgs li label {
   font-size: 12rem;
-  font-family: "Aktive Grotesk, Arial, sans serif";
+  font-family: "Aktive Grotesk", "Arial, sans serif";
   text-transform: uppercase;
   letter-spacing: 1rem;
   display: inline-block;
@@ -6508,10 +6555,6 @@ section.u4m-password-prompt form.hs-form textarea:focus,
 section.u4m-password-prompt form.mixitup-multifilter textarea:focus,
 section.u4m-password-prompt form textarea:focus {
   border: 1rem solid #213944;
-}
-section.u4m-membership-login form.hs-form textarea::-moz-placeholder, section.u4m-membership-login form.mixitup-multifilter textarea::-moz-placeholder, section.u4m-membership-login form textarea::-moz-placeholder, section.u4m-membership-register form.hs-form textarea::-moz-placeholder, section.u4m-membership-register form.mixitup-multifilter textarea::-moz-placeholder, section.u4m-membership-register form textarea::-moz-placeholder, section.u4m-membership-reset-password-request form.hs-form textarea::-moz-placeholder, section.u4m-membership-reset-password-request form.mixitup-multifilter textarea::-moz-placeholder, section.u4m-membership-reset-password-request form textarea::-moz-placeholder, section.u4m-membership-reset-password form.hs-form textarea::-moz-placeholder, section.u4m-membership-reset-password form.mixitup-multifilter textarea::-moz-placeholder, section.u4m-membership-reset-password form textarea::-moz-placeholder, section.u4m-password-prompt form.hs-form textarea::-moz-placeholder, section.u4m-password-prompt form.mixitup-multifilter textarea::-moz-placeholder, section.u4m-password-prompt form textarea::-moz-placeholder {
-  color: #6e757c;
-  font-size: 13rem;
 }
 section.u4m-membership-login form.hs-form textarea::placeholder, section.u4m-membership-login form.mixitup-multifilter textarea::placeholder, section.u4m-membership-login form textarea::placeholder,
 section.u4m-membership-register form.hs-form textarea::placeholder,
@@ -7667,7 +7710,7 @@ section.u4m-password-prompt form.hs-form .hs-button,
 section.u4m-password-prompt form.mixitup-multifilter .hs-button,
 section.u4m-password-prompt form .hs-button {
   display: inline-block;
-  font-family: "Aktive Grotesk, Arial, sans serif";
+  font-family: "Aktive Grotesk", "Arial, sans serif";
   color: #ffffff;
   background-color: #006f3c;
   border: 2px solid #006f3c;
@@ -7815,7 +7858,7 @@ section.u4m-subscription-preferences form {
   background-color: #ffffff;
   padding: 40rem;
   max-width: 765rem;
-  border-radius: 12rem;
+  border-radius: 4rem;
   float: none;
   overflow: auto;
   max-width: 1000rem;
@@ -7827,7 +7870,7 @@ section.u4m-subscription-preferences form {
   }
 }
 section.u4m-subscription-preferences form h3 {
-  font-family: "Aktive Grotesk, Arial, sans serif";
+  font-family: "Aktive Grotesk", "Arial, sans serif";
   font-size: 20rem;
   font-weight: 600;
   margin-bottom: 30rem;
@@ -7847,7 +7890,7 @@ section.u4m-subscription-preferences form h3 {
 }
 section.u4m-subscription-preferences form div.legal-consent-container p,
 section.u4m-subscription-preferences form div.legal-consent-container .hs-form-booleancheckbox label {
-  font-family: "Aktive Grotesk, Arial, sans serif";
+  font-family: "Aktive Grotesk", "Arial, sans serif";
   font-size: 11rem;
   line-height: 1.5;
   margin-bottom: 10rem;
@@ -7915,16 +7958,13 @@ section.u4m-subscription-preferences form .input input[type=tel],
 section.u4m-subscription-preferences form .input input[type=email] {
   border: 1rem solid #6e757c;
   border-radius: 4rem;
-  font-size: 16rem;
   background-color: #ffffff;
-  line-height: 1;
   margin-bottom: 0;
   outline: none !important;
-  padding: 13rem 12rem;
+  padding: 12rem 12rem;
   width: 100%;
-  -webkit-appearance: none;
-     -moz-appearance: none;
-          appearance: none;
+  line-height: 1.5;
+  appearance: none;
   color: #213944;
 }
 section.u4m-subscription-preferences form.hs-form .input input[type=text]:focus,
@@ -7959,9 +7999,6 @@ section.u4m-subscription-preferences form .input input[type=tel].invalid,
 section.u4m-subscription-preferences form .input input[type=email].error,
 section.u4m-subscription-preferences form .input input[type=email].invalid {
   border: 1rem solid red;
-}
-section.u4m-subscription-preferences form.hs-form .input input[type=text]::-moz-placeholder, section.u4m-subscription-preferences form.hs-form .input input[type=number]::-moz-placeholder, section.u4m-subscription-preferences form.hs-form .input input[type=tel]::-moz-placeholder, section.u4m-subscription-preferences form.hs-form .input input[type=email]::-moz-placeholder, section.u4m-subscription-preferences form.mixitup-multifilter .input input[type=text]::-moz-placeholder, section.u4m-subscription-preferences form.mixitup-multifilter .input input[type=number]::-moz-placeholder, section.u4m-subscription-preferences form.mixitup-multifilter .input input[type=tel]::-moz-placeholder, section.u4m-subscription-preferences form.mixitup-multifilter .input input[type=email]::-moz-placeholder, section.u4m-subscription-preferences form .input input[type=text]::-moz-placeholder, section.u4m-subscription-preferences form .input input[type=number]::-moz-placeholder, section.u4m-subscription-preferences form .input input[type=tel]::-moz-placeholder, section.u4m-subscription-preferences form .input input[type=email]::-moz-placeholder {
-  color: #6e757c;
 }
 section.u4m-subscription-preferences form.hs-form .input input[type=text]::placeholder,
 section.u4m-subscription-preferences form.hs-form .input input[type=number]::placeholder,
@@ -8038,9 +8075,7 @@ section.u4m-subscription-preferences form .input input[type=radio] {
   margin: 0;
   height: 20px;
   width: 20px !important;
-  -webkit-appearance: none;
-     -moz-appearance: none;
-          appearance: none;
+  appearance: none;
   outline: none !important;
 }
 section.u4m-subscription-preferences form.hs-form .input input[type=checkbox]:checked + *:before, section.u4m-subscription-preferences form.hs-form .input input[type=checkbox]:checked + *:before,
@@ -8075,16 +8110,14 @@ section.u4m-subscription-preferences form.hs-form .input input select:focus, sec
 }
 section.u4m-subscription-preferences form.hs-form .input input[type=file], section.u4m-subscription-preferences form.mixitup-multifilter .input input[type=file], section.u4m-subscription-preferences form .input input[type=file] {
   font-size: 16rem;
-  font-family: "Aktive Grotesk, Arial, sans serif";
+  font-family: "Aktive Grotesk", "Arial, sans serif";
   background-color: transparent;
   position: relative;
   font-weight: bold;
   margin-bottom: 20rem;
 }
 section.u4m-subscription-preferences form.hs-form .input select, section.u4m-subscription-preferences form.mixitup-multifilter .input select, section.u4m-subscription-preferences form .input select {
-  -webkit-appearance: none;
-     -moz-appearance: none;
-          appearance: none;
+  appearance: none;
   background-position: calc(100% - 20rem) center;
   border: 1rem solid #6e757c;
   border-radius: 4rem;
@@ -8142,7 +8175,7 @@ section.u4m-subscription-preferences form.hs-form .input + .hs-error-msgs li:bef
 }
 section.u4m-subscription-preferences form.hs-form .input + .hs-error-msgs li label, section.u4m-subscription-preferences form.mixitup-multifilter .input + .hs-error-msgs li label, section.u4m-subscription-preferences form .input + .hs-error-msgs li label {
   font-size: 12rem;
-  font-family: "Aktive Grotesk, Arial, sans serif";
+  font-family: "Aktive Grotesk", "Arial, sans serif";
   text-transform: uppercase;
   letter-spacing: 1rem;
   display: inline-block;
@@ -8176,10 +8209,6 @@ section.u4m-subscription-preferences form.hs-form textarea, section.u4m-subscrip
 }
 section.u4m-subscription-preferences form.hs-form textarea:focus, section.u4m-subscription-preferences form.mixitup-multifilter textarea:focus, section.u4m-subscription-preferences form textarea:focus {
   border: 1rem solid #213944;
-}
-section.u4m-subscription-preferences form.hs-form textarea::-moz-placeholder, section.u4m-subscription-preferences form.mixitup-multifilter textarea::-moz-placeholder, section.u4m-subscription-preferences form textarea::-moz-placeholder {
-  color: #6e757c;
-  font-size: 13rem;
 }
 section.u4m-subscription-preferences form.hs-form textarea::placeholder, section.u4m-subscription-preferences form.mixitup-multifilter textarea::placeholder, section.u4m-subscription-preferences form textarea::placeholder {
   color: #6e757c;
@@ -8435,7 +8464,7 @@ section.u4m-subscription-preferences form.hs-form fieldset.form-columns-1 .hs-in
 }
 section.u4m-subscription-preferences form.hs-form .hs-button, section.u4m-subscription-preferences form.mixitup-multifilter .hs-button, section.u4m-subscription-preferences form .hs-button {
   display: inline-block;
-  font-family: "Aktive Grotesk, Arial, sans serif";
+  font-family: "Aktive Grotesk", "Arial, sans serif";
   color: #ffffff;
   background-color: #006f3c;
   border: 2px solid #006f3c;
@@ -8508,7 +8537,7 @@ section.u4m-drag-and-drop-area form {
   background-color: #ffffff;
   padding: 40rem;
   max-width: 765rem;
-  border-radius: 12rem;
+  border-radius: 4rem;
   float: none;
   overflow: auto;
 }
@@ -8518,7 +8547,7 @@ section.u4m-drag-and-drop-area form {
   }
 }
 section.u4m-drag-and-drop-area form h3 {
-  font-family: "Aktive Grotesk, Arial, sans serif";
+  font-family: "Aktive Grotesk", "Arial, sans serif";
   font-size: 20rem;
   font-weight: 600;
   margin-bottom: 30rem;
@@ -8538,7 +8567,7 @@ section.u4m-drag-and-drop-area form h3 {
 }
 section.u4m-drag-and-drop-area form div.legal-consent-container p,
 section.u4m-drag-and-drop-area form div.legal-consent-container .hs-form-booleancheckbox label {
-  font-family: "Aktive Grotesk, Arial, sans serif";
+  font-family: "Aktive Grotesk", "Arial, sans serif";
   font-size: 11rem;
   line-height: 1.5;
   margin-bottom: 10rem;
@@ -8606,16 +8635,13 @@ section.u4m-drag-and-drop-area form .input input[type=tel],
 section.u4m-drag-and-drop-area form .input input[type=email] {
   border: 1rem solid #6e757c;
   border-radius: 4rem;
-  font-size: 16rem;
   background-color: #ffffff;
-  line-height: 1;
   margin-bottom: 0;
   outline: none !important;
-  padding: 13rem 12rem;
+  padding: 12rem 12rem;
   width: 100%;
-  -webkit-appearance: none;
-     -moz-appearance: none;
-          appearance: none;
+  line-height: 1.5;
+  appearance: none;
   color: #213944;
 }
 section.u4m-drag-and-drop-area form.hs-form .input input[type=text]:focus,
@@ -8650,9 +8676,6 @@ section.u4m-drag-and-drop-area form .input input[type=tel].invalid,
 section.u4m-drag-and-drop-area form .input input[type=email].error,
 section.u4m-drag-and-drop-area form .input input[type=email].invalid {
   border: 1rem solid red;
-}
-section.u4m-drag-and-drop-area form.hs-form .input input[type=text]::-moz-placeholder, section.u4m-drag-and-drop-area form.hs-form .input input[type=number]::-moz-placeholder, section.u4m-drag-and-drop-area form.hs-form .input input[type=tel]::-moz-placeholder, section.u4m-drag-and-drop-area form.hs-form .input input[type=email]::-moz-placeholder, section.u4m-drag-and-drop-area form.mixitup-multifilter .input input[type=text]::-moz-placeholder, section.u4m-drag-and-drop-area form.mixitup-multifilter .input input[type=number]::-moz-placeholder, section.u4m-drag-and-drop-area form.mixitup-multifilter .input input[type=tel]::-moz-placeholder, section.u4m-drag-and-drop-area form.mixitup-multifilter .input input[type=email]::-moz-placeholder, section.u4m-drag-and-drop-area form .input input[type=text]::-moz-placeholder, section.u4m-drag-and-drop-area form .input input[type=number]::-moz-placeholder, section.u4m-drag-and-drop-area form .input input[type=tel]::-moz-placeholder, section.u4m-drag-and-drop-area form .input input[type=email]::-moz-placeholder {
-  color: #6e757c;
 }
 section.u4m-drag-and-drop-area form.hs-form .input input[type=text]::placeholder,
 section.u4m-drag-and-drop-area form.hs-form .input input[type=number]::placeholder,
@@ -8729,9 +8752,7 @@ section.u4m-drag-and-drop-area form .input input[type=radio] {
   margin: 0;
   height: 20px;
   width: 20px !important;
-  -webkit-appearance: none;
-     -moz-appearance: none;
-          appearance: none;
+  appearance: none;
   outline: none !important;
 }
 section.u4m-drag-and-drop-area form.hs-form .input input[type=checkbox]:checked + *:before, section.u4m-drag-and-drop-area form.hs-form .input input[type=checkbox]:checked + *:before,
@@ -8766,16 +8787,14 @@ section.u4m-drag-and-drop-area form.hs-form .input input select:focus, section.u
 }
 section.u4m-drag-and-drop-area form.hs-form .input input[type=file], section.u4m-drag-and-drop-area form.mixitup-multifilter .input input[type=file], section.u4m-drag-and-drop-area form .input input[type=file] {
   font-size: 16rem;
-  font-family: "Aktive Grotesk, Arial, sans serif";
+  font-family: "Aktive Grotesk", "Arial, sans serif";
   background-color: transparent;
   position: relative;
   font-weight: bold;
   margin-bottom: 20rem;
 }
 section.u4m-drag-and-drop-area form.hs-form .input select, section.u4m-drag-and-drop-area form.mixitup-multifilter .input select, section.u4m-drag-and-drop-area form .input select {
-  -webkit-appearance: none;
-     -moz-appearance: none;
-          appearance: none;
+  appearance: none;
   background-position: calc(100% - 20rem) center;
   border: 1rem solid #6e757c;
   border-radius: 4rem;
@@ -8833,7 +8852,7 @@ section.u4m-drag-and-drop-area form.hs-form .input + .hs-error-msgs li:before, s
 }
 section.u4m-drag-and-drop-area form.hs-form .input + .hs-error-msgs li label, section.u4m-drag-and-drop-area form.mixitup-multifilter .input + .hs-error-msgs li label, section.u4m-drag-and-drop-area form .input + .hs-error-msgs li label {
   font-size: 12rem;
-  font-family: "Aktive Grotesk, Arial, sans serif";
+  font-family: "Aktive Grotesk", "Arial, sans serif";
   text-transform: uppercase;
   letter-spacing: 1rem;
   display: inline-block;
@@ -8867,10 +8886,6 @@ section.u4m-drag-and-drop-area form.hs-form textarea, section.u4m-drag-and-drop-
 }
 section.u4m-drag-and-drop-area form.hs-form textarea:focus, section.u4m-drag-and-drop-area form.mixitup-multifilter textarea:focus, section.u4m-drag-and-drop-area form textarea:focus {
   border: 1rem solid #213944;
-}
-section.u4m-drag-and-drop-area form.hs-form textarea::-moz-placeholder, section.u4m-drag-and-drop-area form.mixitup-multifilter textarea::-moz-placeholder, section.u4m-drag-and-drop-area form textarea::-moz-placeholder {
-  color: #6e757c;
-  font-size: 13rem;
 }
 section.u4m-drag-and-drop-area form.hs-form textarea::placeholder, section.u4m-drag-and-drop-area form.mixitup-multifilter textarea::placeholder, section.u4m-drag-and-drop-area form textarea::placeholder {
   color: #6e757c;
@@ -9126,7 +9141,7 @@ section.u4m-drag-and-drop-area form.hs-form fieldset.form-columns-1 .hs-input, s
 }
 section.u4m-drag-and-drop-area form.hs-form .hs-button, section.u4m-drag-and-drop-area form.mixitup-multifilter .hs-button, section.u4m-drag-and-drop-area form .hs-button {
   display: inline-block;
-  font-family: "Aktive Grotesk, Arial, sans serif";
+  font-family: "Aktive Grotesk", "Arial, sans serif";
   color: #ffffff;
   background-color: #006f3c;
   border: 2px solid #006f3c;
@@ -9216,8 +9231,7 @@ section.u4m-drag-and-drop-area form .hs-richtext p {
 .visually-hidden,
 .sr-only {
   clip: rect(0 0 0 0);
-  -webkit-clip-path: inset(50%);
-          clip-path: inset(50%);
+  clip-path: inset(50%);
   height: 1px;
   overflow: hidden;
   position: absolute;
@@ -9296,7 +9310,7 @@ section.u4m-blog-post div.hero div.content {
   max-width: 1000rem;
 }
 section.u4m-blog-post div.hero div.content h1.title {
-  font-family: "Aktive Grotesk, Arial, sans serif";
+  font-family: "Aktive Grotesk", "Arial, sans serif";
   font-size: 36rem;
   font-weight: 400;
   margin-bottom: 30rem;
@@ -9347,13 +9361,13 @@ section.u4m-blog-post div.body {
 section.u4m-blog-post div.body div.content p,
 section.u4m-blog-post div.body div.content ul,
 section.u4m-blog-post div.body div.content ol {
-  font-family: "Aktive Grotesk, Arial, sans serif";
+  font-family: "Aktive Grotesk", "Arial, sans serif";
   font-size: 16rem;
   line-height: 1.5;
   margin-bottom: 20rem;
 }
 section.u4m-blog-post div.body div.content h1 {
-  font-family: "Aktive Grotesk, Arial, sans serif";
+  font-family: "Aktive Grotesk", "Arial, sans serif";
   font-size: 36rem;
   font-weight: 400;
   margin-bottom: 30rem;
@@ -9372,7 +9386,7 @@ section.u4m-blog-post div.body div.content h1 {
   }
 }
 section.u4m-blog-post div.body div.content h2 {
-  font-family: "Aktive Grotesk, Arial, sans serif";
+  font-family: "Aktive Grotesk", "Arial, sans serif";
   font-size: 32rem;
   font-weight: 400;
   margin-bottom: 30rem;
@@ -9390,7 +9404,7 @@ section.u4m-blog-post div.body div.content h2 {
   }
 }
 section.u4m-blog-post div.body div.content h3 {
-  font-family: "Aktive Grotesk, Arial, sans serif";
+  font-family: "Aktive Grotesk", "Arial, sans serif";
   font-size: 28rem;
   font-weight: 400;
   margin-bottom: 30rem;
@@ -9408,7 +9422,7 @@ section.u4m-blog-post div.body div.content h3 {
   }
 }
 section.u4m-blog-post div.body div.content h4 {
-  font-family: "Aktive Grotesk, Arial, sans serif";
+  font-family: "Aktive Grotesk", "Arial, sans serif";
   font-size: 25rem;
   font-weight: 400;
   margin-bottom: 30rem;
@@ -9426,7 +9440,7 @@ section.u4m-blog-post div.body div.content h4 {
   }
 }
 section.u4m-blog-post div.body div.content h5 {
-  font-family: "Aktive Grotesk, Arial, sans serif";
+  font-family: "Aktive Grotesk", "Arial, sans serif";
   font-size: 22rem;
   font-weight: 400;
   margin-bottom: 30rem;
@@ -9444,7 +9458,7 @@ section.u4m-blog-post div.body div.content h5 {
   }
 }
 section.u4m-blog-post div.body div.content h6 {
-  font-family: "Aktive Grotesk, Arial, sans serif";
+  font-family: "Aktive Grotesk", "Arial, sans serif";
   font-size: 20rem;
   font-weight: 600;
   margin-bottom: 30rem;
@@ -9463,7 +9477,7 @@ section.u4m-blog-post div.body div.content h6 {
   }
 }
 section.u4m-blog-post div.body div.content blockquote {
-  font-family: "Aktive Grotesk, Arial, sans serif";
+  font-family: "Aktive Grotesk", "Arial, sans serif";
   font-size: 30rem;
   font-weight: bold;
   line-height: 1.5;
@@ -9479,7 +9493,7 @@ section.u4m-blog-post div.body div.content blockquote {
   }
 }
 section.u4m-blog-post div.body div.content blockquote p {
-  font-family: "Aktive Grotesk, Arial, sans serif";
+  font-family: "Aktive Grotesk", "Arial, sans serif";
   font-size: 30rem;
   font-weight: bold;
   line-height: 1.5;
@@ -9536,7 +9550,7 @@ section.u4m-blog-post div.author div.meta div.avatar {
   }
 }
 section.u4m-blog-post div.author div.bio .name {
-  font-family: "Aktive Grotesk, Arial, sans serif";
+  font-family: "Aktive Grotesk", "Arial, sans serif";
   font-size: 22rem;
   font-weight: 400;
   margin-bottom: 30rem;
@@ -9555,7 +9569,7 @@ section.u4m-blog-post div.author div.bio .name {
   }
 }
 section.u4m-blog-post div.author div.bio p {
-  font-family: "Aktive Grotesk, Arial, sans serif";
+  font-family: "Aktive Grotesk", "Arial, sans serif";
   font-size: 13rem;
   line-height: 1.5;
   margin-bottom: 20rem;
@@ -9567,7 +9581,7 @@ section.u4m-blog-post div.author div.bio p {
   }
 }
 section.u4m-blog-post div.author div.bio .social .label {
-  font-family: "Aktive Grotesk, Arial, sans serif";
+  font-family: "Aktive Grotesk", "Arial, sans serif";
   font-size: 14rem;
   line-height: 1.5;
   margin-bottom: 20rem;
@@ -9579,7 +9593,7 @@ section.u4m-blog-post div.author div.bio .social .label {
 }
 @media (max-width: 580px) {
   section.u4m-blog-post div.author div.bio .social .label {
-    font-family: "Aktive Grotesk, Arial, sans serif";
+    font-family: "Aktive Grotesk", "Arial, sans serif";
     font-size: 11rem;
     line-height: 1.5;
     margin-bottom: 10rem;
@@ -9604,7 +9618,7 @@ section.u4m-blog-post div.comments {
   margin-bottom: 100rem;
 }
 section.u4m-blog-post div.comments h2.heading {
-  font-family: "Aktive Grotesk, Arial, sans serif";
+  font-family: "Aktive Grotesk", "Arial, sans serif";
   font-size: 28rem;
   font-weight: 400;
   margin-bottom: 30rem;
@@ -9643,7 +9657,7 @@ section.u4m-blog-post div.comments div.content form {
   background-color: #ffffff;
   padding: 40rem;
   max-width: 765rem;
-  border-radius: 12rem;
+  border-radius: 4rem;
   float: none;
   overflow: auto;
 }
@@ -9653,7 +9667,7 @@ section.u4m-blog-post div.comments div.content form {
   }
 }
 section.u4m-blog-post div.comments div.content form h3 {
-  font-family: "Aktive Grotesk, Arial, sans serif";
+  font-family: "Aktive Grotesk", "Arial, sans serif";
   font-size: 20rem;
   font-weight: 600;
   margin-bottom: 30rem;
@@ -9673,7 +9687,7 @@ section.u4m-blog-post div.comments div.content form h3 {
 }
 section.u4m-blog-post div.comments div.content form div.legal-consent-container p,
 section.u4m-blog-post div.comments div.content form div.legal-consent-container .hs-form-booleancheckbox label {
-  font-family: "Aktive Grotesk, Arial, sans serif";
+  font-family: "Aktive Grotesk", "Arial, sans serif";
   font-size: 11rem;
   line-height: 1.5;
   margin-bottom: 10rem;
@@ -9741,16 +9755,13 @@ section.u4m-blog-post div.comments div.content form .input input[type=tel],
 section.u4m-blog-post div.comments div.content form .input input[type=email] {
   border: 1rem solid #6e757c;
   border-radius: 4rem;
-  font-size: 16rem;
   background-color: #ffffff;
-  line-height: 1;
   margin-bottom: 0;
   outline: none !important;
-  padding: 13rem 12rem;
+  padding: 12rem 12rem;
   width: 100%;
-  -webkit-appearance: none;
-     -moz-appearance: none;
-          appearance: none;
+  line-height: 1.5;
+  appearance: none;
   color: #213944;
 }
 section.u4m-blog-post div.comments div.content form.hs-form .input input[type=text]:focus,
@@ -9785,9 +9796,6 @@ section.u4m-blog-post div.comments div.content form .input input[type=tel].inval
 section.u4m-blog-post div.comments div.content form .input input[type=email].error,
 section.u4m-blog-post div.comments div.content form .input input[type=email].invalid {
   border: 1rem solid red;
-}
-section.u4m-blog-post div.comments div.content form.hs-form .input input[type=text]::-moz-placeholder, section.u4m-blog-post div.comments div.content form.hs-form .input input[type=number]::-moz-placeholder, section.u4m-blog-post div.comments div.content form.hs-form .input input[type=tel]::-moz-placeholder, section.u4m-blog-post div.comments div.content form.hs-form .input input[type=email]::-moz-placeholder, section.u4m-blog-post div.comments div.content form.mixitup-multifilter .input input[type=text]::-moz-placeholder, section.u4m-blog-post div.comments div.content form.mixitup-multifilter .input input[type=number]::-moz-placeholder, section.u4m-blog-post div.comments div.content form.mixitup-multifilter .input input[type=tel]::-moz-placeholder, section.u4m-blog-post div.comments div.content form.mixitup-multifilter .input input[type=email]::-moz-placeholder, section.u4m-blog-post div.comments div.content form .input input[type=text]::-moz-placeholder, section.u4m-blog-post div.comments div.content form .input input[type=number]::-moz-placeholder, section.u4m-blog-post div.comments div.content form .input input[type=tel]::-moz-placeholder, section.u4m-blog-post div.comments div.content form .input input[type=email]::-moz-placeholder {
-  color: #6e757c;
 }
 section.u4m-blog-post div.comments div.content form.hs-form .input input[type=text]::placeholder,
 section.u4m-blog-post div.comments div.content form.hs-form .input input[type=number]::placeholder,
@@ -9864,9 +9872,7 @@ section.u4m-blog-post div.comments div.content form .input input[type=radio] {
   margin: 0;
   height: 20px;
   width: 20px !important;
-  -webkit-appearance: none;
-     -moz-appearance: none;
-          appearance: none;
+  appearance: none;
   outline: none !important;
 }
 section.u4m-blog-post div.comments div.content form.hs-form .input input[type=checkbox]:checked + *:before, section.u4m-blog-post div.comments div.content form.hs-form .input input[type=checkbox]:checked + *:before,
@@ -9901,16 +9907,14 @@ section.u4m-blog-post div.comments div.content form.hs-form .input input select:
 }
 section.u4m-blog-post div.comments div.content form.hs-form .input input[type=file], section.u4m-blog-post div.comments div.content form.mixitup-multifilter .input input[type=file], section.u4m-blog-post div.comments div.content form .input input[type=file] {
   font-size: 16rem;
-  font-family: "Aktive Grotesk, Arial, sans serif";
+  font-family: "Aktive Grotesk", "Arial, sans serif";
   background-color: transparent;
   position: relative;
   font-weight: bold;
   margin-bottom: 20rem;
 }
 section.u4m-blog-post div.comments div.content form.hs-form .input select, section.u4m-blog-post div.comments div.content form.mixitup-multifilter .input select, section.u4m-blog-post div.comments div.content form .input select {
-  -webkit-appearance: none;
-     -moz-appearance: none;
-          appearance: none;
+  appearance: none;
   background-position: calc(100% - 20rem) center;
   border: 1rem solid #6e757c;
   border-radius: 4rem;
@@ -9968,7 +9972,7 @@ section.u4m-blog-post div.comments div.content form.hs-form .input + .hs-error-m
 }
 section.u4m-blog-post div.comments div.content form.hs-form .input + .hs-error-msgs li label, section.u4m-blog-post div.comments div.content form.mixitup-multifilter .input + .hs-error-msgs li label, section.u4m-blog-post div.comments div.content form .input + .hs-error-msgs li label {
   font-size: 12rem;
-  font-family: "Aktive Grotesk, Arial, sans serif";
+  font-family: "Aktive Grotesk", "Arial, sans serif";
   text-transform: uppercase;
   letter-spacing: 1rem;
   display: inline-block;
@@ -10002,10 +10006,6 @@ section.u4m-blog-post div.comments div.content form.hs-form textarea, section.u4
 }
 section.u4m-blog-post div.comments div.content form.hs-form textarea:focus, section.u4m-blog-post div.comments div.content form.mixitup-multifilter textarea:focus, section.u4m-blog-post div.comments div.content form textarea:focus {
   border: 1rem solid #213944;
-}
-section.u4m-blog-post div.comments div.content form.hs-form textarea::-moz-placeholder, section.u4m-blog-post div.comments div.content form.mixitup-multifilter textarea::-moz-placeholder, section.u4m-blog-post div.comments div.content form textarea::-moz-placeholder {
-  color: #6e757c;
-  font-size: 13rem;
 }
 section.u4m-blog-post div.comments div.content form.hs-form textarea::placeholder, section.u4m-blog-post div.comments div.content form.mixitup-multifilter textarea::placeholder, section.u4m-blog-post div.comments div.content form textarea::placeholder {
   color: #6e757c;
@@ -10261,7 +10261,7 @@ section.u4m-blog-post div.comments div.content form.hs-form fieldset.form-column
 }
 section.u4m-blog-post div.comments div.content form.hs-form .hs-button, section.u4m-blog-post div.comments div.content form.mixitup-multifilter .hs-button, section.u4m-blog-post div.comments div.content form .hs-button {
   display: inline-block;
-  font-family: "Aktive Grotesk, Arial, sans serif";
+  font-family: "Aktive Grotesk", "Arial, sans serif";
   color: #ffffff;
   background-color: #006f3c;
   border: 2px solid #006f3c;
@@ -10286,7 +10286,7 @@ section.u4m-blog-post div.comments div.content form .hs-richtext p {
 }
 section.u4m-blog-post div.comments div.content form .hs-button {
   display: inline-block;
-  font-family: "Aktive Grotesk, Arial, sans serif";
+  font-family: "Aktive Grotesk", "Arial, sans serif";
   color: #ffffff;
   background-color: #006f3c;
   border: 2px solid #006f3c;
@@ -10616,7 +10616,7 @@ section.u4m-blog-post div.comments div.content form .hs-button:hover, section.u4
   flex-wrap: wrap;
   justify-content: flex-end;
   margin: 0;
-  font-family: "Aktive Grotesk, Arial, sans serif";
+  font-family: "Aktive Grotesk", "Arial, sans serif";
   line-height: 1;
   font-size: 16rem;
   letter-spacing: normal;
@@ -10734,7 +10734,7 @@ section.u4m-blog-post div.comments div.content form .hs-button:hover, section.u4
 .header-wrapper .main-header .row-fluid .site_menu .hs-menu-wrapper ul {
   display: flex;
   flex-wrap: wrap;
-  font-family: "Aktive Grotesk, Arial, sans serif";
+  font-family: "Aktive Grotesk", "Arial, sans serif";
   justify-content: flex-end;
   letter-spacing: normal;
   line-height: 1;
@@ -10958,11 +10958,15 @@ section.u4m-blog-post div.comments div.content form .hs-button:hover, section.u4
     position: relative;
     top: 50%;
     margin: 0 auto !important;
+    -webkit-transform: rotate(0);
+    -ms-transform: rotate(0);
     transform: rotate(0);
   }
   .header-wrapper .main-header .row-fluid .child-trigger i:after {
     content: "";
     position: absolute;
+    -webkit-transform: rotate(-90deg);
+    -ms-transform: rotate(-90deg);
     transform: rotate(-90deg);
   }
   .header-wrapper .main-header .row-fluid .child-trigger i,
@@ -10976,6 +10980,8 @@ section.u4m-blog-post div.comments div.content form .hs-button:hover, section.u4
     text-decoration: none;
   }
   .header-wrapper .main-header .row-fluid .child-trigger.child-open i:after {
+    -webkit-transform: rotate(-180deg);
+    -ms-transform: rotate(-180deg);
     transform: rotate(-180deg);
   }
 }
@@ -10988,11 +10994,9 @@ section.u4m-blog-post div.comments div.content form .hs-button:hover, section.u4
 
 .page-scrolled .header-wrapper .main-header {
   background: linear-gradient(89.99deg, rgba(255, 255, 255, 0.8) 61%, rgba(249, 245, 238, 0.8) 100%);
-  -webkit-backdrop-filter: blur(2px);
-          backdrop-filter: blur(2px);
+  backdrop-filter: blur(2px);
 }
 .page-scrolled .header-wrapper .header-top {
   background: rgba(255, 255, 255, 0.9);
-  -webkit-backdrop-filter: blur(2px);
-          backdrop-filter: blur(2px);
+  backdrop-filter: blur(2px);
 }

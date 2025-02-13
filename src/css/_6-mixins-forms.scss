@@ -3,7 +3,7 @@
   background-color: $white;
   padding: 40rem;
   max-width: 765rem;
-  border-radius: 12rem;
+  border-radius: $borderRadius;
   @include tablet {
     padding: 20rem;
   }
@@ -218,13 +218,12 @@
       input[type="email"] {
         border: 1rem solid $gray2;
         border-radius: 4rem;
-        @include size16;
         background-color: $white;
-        line-height: 1;
         margin-bottom: 0;
         outline: none !important;
-        padding: 13rem 12rem;
+        padding: 12rem 12rem;
         width: 100%;
+        line-height: 1.5;
         appearance: none;
         color: $heading;
         &:focus {

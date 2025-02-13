@@ -48,8 +48,9 @@ $hdscrollgradient: linear-gradient(
   rgba($white, 80%) 61%,
   rgba($hdBg, 80%) 100%
 );
+$Anchorgradient: linear-gradient(90deg, $white 0%, $hdBg 99.93%);
 //
-$font1: "Aktive Grotesk, Arial, sans serif";
+$font1: "Aktive Grotesk", "Arial, sans serif";
 $baseFontSize: 15rem;
 $baseLineHeight: 1.5; // Golden ratio
 // Border Radius

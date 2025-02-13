@@ -58,7 +58,7 @@ html {
   row-gap: 10px;
 }
 .u4m-animated-stats .statistics-items .animated-stats-item .stats-item .stats-item-inn .number {
-  font-family: "Aktive Grotesk, Arial, sans serif";
+  font-family: "Aktive Grotesk", "Arial, sans serif";
   font-size: 32rem;
   font-weight: 400;
   margin-bottom: 30rem;
@@ -91,7 +91,7 @@ html {
 }
 .u4m-animated-stats .statistics-items .animated-stats-item .stats-item .stats-item-inn .number .prefix,
 .u4m-animated-stats .statistics-items .animated-stats-item .stats-item .stats-item-inn .number .suffix {
-  font-family: "Aktive Grotesk, Arial, sans serif";
+  font-family: "Aktive Grotesk", "Arial, sans serif";
   font-size: 20rem;
   font-weight: 600;
   margin-bottom: 30rem;

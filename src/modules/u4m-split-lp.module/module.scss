@@ -1,107 +1,109 @@
 @import "../../css/_module-imports";
 .u4m-split-lp {
-    &.reverse-text {
+  &.reverse-text {
+    .formContent {
+      * {
+        color: inherit;
+      }
+    }
+    .rightSec {
+      color: $heading;
+    }
+  }
+  .flex_row {
+    row-gap: 40px;
+    @include tabletmidmin {
+      margin: 0 -20px;
+    }
+    @include tabminpoint(1340px) {
+      margin: 0 -40px;
+    }
+    > * {
+      max-width: 100%;
+      @include tabletmidmin {
+        max-width: 50%;
+        padding: 0 20px;
+      }
+      @include tabminpoint(1340px) {
+        padding: 0 40px;
+      }
+    }
+    .leftSec {
+      .intro_content {
+        text-align: left;
+        padding: 0;
+        margin-bottom: 32rem;
+        max-width: 100%;
+        .intro_title {
+          color: $digitalgreen;
+        }
+        .intro_btn_wrap {
+          justify-content: start;
+        }
+      }
+      .featuredSec {
+        h5 {
+          margin-bottom: 20px;
+          font-weight: 600;
+        }
+        .featured {
+          ul {
+            margin: 0;
+            padding: 0;
+            li {
+              margin-bottom: 12px;
+              padding-left: 0;
+              letter-spacing: 0;
+              display: flex;
+              align-items: center;
+              gap: 10rem;
+              span {
+                border-radius: 100%;
+                font-size: 20px;
+                &.lt {
+                  color: $white;
+                }
+                &.drk {
+                  color: $heading;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    .rightSec {
+      .rightSecin {
+        @include formBase;
+        border-radius: $borderRadius;
+        overflow: visible;
+        max-width: 100%;
         .formContent {
-            * {
-                color: inherit;
-            }
+          margin-bottom: 20px;
+          p {
+            margin: 0;
+          }
+          :is(h1, h2, h3, h4, h5, h6) {
+            margin-bottom: 20px;
+          }
         }
-        .rightSec {
-            color: $heading;
-        }
-    }
-    .flex_row {
-        row-gap: 40px;
-        @include tabletmidmin {
-            margin: 0 -20px;
-        }
-        @include tabminpoint(1340px) {
-            margin: 0 -40px;
-        }
-        > * {
+        .formSec {
+          .form-title:empty {
+            display: none;
+          }
+          form {
+            padding: 0;
             max-width: 100%;
-            @include tabletmidmin {
-                max-width: 50%;
-                padding: 0 20px;
+            border-radius: 0;
+            overflow: visible;
+            margin: 0;
+            color: $heading;
+            .hs_submit.hs-submit {
+              text-align: center;
             }
-            @include tabminpoint(1340px) {
-                padding: 0 40px;
-            }
+          }
         }
-        .leftSec {
-            .intro_content {
-                text-align: left;
-                padding: 0;
-                margin-bottom: 32rem;
-                max-width: 100%;
-                .intro_title {
-                    color: $digitalgreen;
-                }
-                .intro_btn_wrap {
-                    justify-content: start;
-                }
-            }
-            .featuredSec {
-                h5 {
-                    margin-bottom: 20px;
-                }
-                .featured {
-                    ul {
-                        margin: 0;
-                        padding: 0;
-                        li {
-                            margin-bottom: 12px;
-                            padding-left: 0;
-                            letter-spacing: 0;
-                            display: flex;
-                            align-items: center;
-                            gap: 10rem;
-                            span {
-                                border-radius: 100%;
-                                font-size: 20px;
-                                &.lt {
-                                    color: $white;
-                                }
-                                &.drk {
-                                    color: $heading;
-                                }
-                            }
-                        }
-                    }
-                }
-            }
-        }
-        .rightSec {
-            .rightSecin {
-                @include formBase;
-                overflow: visible;
-                max-width: 100%;
-                .formContent {
-                    margin-bottom: 20px;
-                    p {
-                        margin: 0;
-                    }
-                    :is(h1, h2, h3, h4, h5, h6) {
-                        margin-bottom: 20px;
-                    }
-                }
-                .formSec {
-                    .form-title:empty {
-                        display: none;
-                    }
-                    form {
-                        padding: 0;
-                        max-width: 100%;
-                        border-radius: 0;
-                        overflow: visible;
-                        margin: 0;
-                        color: $heading;
-                        .hs_submit.hs-submit {
-                            text-align: center;
-                        }
-                    }
-                }
-            }
-        }
+      }
     }
+  }
 }

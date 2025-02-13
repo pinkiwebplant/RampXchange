@@ -22,7 +22,7 @@ html {
   flex-wrap: wrap;
   align-items: center;
   padding: 40px;
-  border-radius: 12px;
+  border-radius: 4rem;
   overflow: hidden;
 }
 .u4m-cta-row .row.widther {
@@ -75,10 +75,6 @@ html {
   text-align: left;
   width: 100%;
 }
-.u4m-cta-row .row .left-section .intro_wrapp .intro_content .intro__inner .eyebrow_text {
-  font-size: 14rem;
-  color: #213944;
-}
 .u4m-cta-row .row .left-section .intro_wrapp .intro_content .intro__inner .intro_title {
   color: #213944;
 }
@@ -127,8 +123,7 @@ html {
   width: 100%;
 }
 .u4m-cta-row .row .media_section .vid_section .poster_img img {
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   height: 100%;
   width: 100%;
 }
