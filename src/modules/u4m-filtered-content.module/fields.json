@@ -65,7 +65,7 @@
     "preset" : null,
     "type" : "choice",
     "display_width" : null,
-    "default" : "h2"
+    "default" : "h1"
   }, {
     "id" : "c7aa6b72-58e0-4caa-9b63-4da765e70069",
     "name" : "heading",
@@ -690,7 +690,7 @@
       "preset" : null,
       "type" : "choice",
       "display_width" : null,
-      "default" : ""
+      "default" : "color"
     }, {
       "id" : "5d97321e-e326-2d30-8757-51608da05ea6",
       "name" : "background_image",
@@ -737,7 +737,7 @@
       "preset" : null,
       "type" : "choice",
       "display_width" : null,
-      "default" : ""
+      "default" : "soft_white"
     }, {
       "id" : "2659085b-598d-e346-643e-6a9ebb3bae70",
       "name" : "select_gradient",
@@ -866,7 +866,7 @@
         "alt" : null,
         "loading" : "lazy"
       },
-      "select_color" : "",
+      "select_color" : "soft_white",
       "select_gradient" : "gradient5"
     },
     "container" : {

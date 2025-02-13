@@ -27,7 +27,7 @@ html {
 .u4m-team-grid .team_grid_row .team_item .team_item_inn {
   height: 100%;
   padding: 36px 24px;
-  border-radius: 12px;
+  border-radius: 4rem;
   text-align: center;
 }
 .u4m-team-grid .team_grid_row .team_item .team_item_inn .team_img {
@@ -46,20 +46,24 @@ html {
 }
 .u4m-team-grid .team_grid_row .team_item .team_item_inn .member_position {
   font-weight: 500;
-  margin-bottom: 24px;
+  margin-bottom: 20px;
   color: #213944;
 }
 .u4m-team-grid .team_grid_row .team_item .member_name {
   margin-bottom: 8px;
   color: #213944;
+  font-weight: 600;
+  font-size: 23rem;
+  line-height: 1;
 }
 .u4m-team-grid .team_grid_row .team_item .bio_popup_text {
-  margin-bottom: 20px;
+  margin-bottom: 0;
 }
 .u4m-team-grid .team_grid_row .team_item .bio_popup_text a {
   gap: 4px;
   color: #006f3c;
   display: flex;
+  padding: 0;
 }
 .u4m-team-grid .team_grid_row .team_item .bio_popup_text a:hover {
   color: #213944;
@@ -150,7 +154,7 @@ html {
 .u4m-team-grid .team_popup .team_popup_container .flex_row.team_popup_inn {
   gap: 32px;
   background: #ffffff;
-  border-radius: 12px;
+  border-radius: 4rem;
   overflow: hidden;
   padding: 36px 24px;
   width: 100%;
@@ -177,10 +181,14 @@ html {
 .u4m-team-grid .team_popup .team_popup_container .flex_row.team_popup_inn .popup_cnt .member_name {
   margin-bottom: 8px;
   color: #213944;
+  font-size: 23rem;
+  line-height: 1;
+  font-weight: 600;
 }
 .u4m-team-grid .team_popup .team_popup_container .flex_row.team_popup_inn .popup_cnt .member_position {
-  color: #213944;
-  font-weight: 500;
+  margin-bottom: 20px;
+}
+.u4m-team-grid .team_popup .team_popup_container .flex_row.team_popup_inn .popup_cnt .popup_cnt_inn {
   margin-bottom: 20px;
 }
 .u4m-team-grid .team_popup .team_popup_container .flex_row.team_popup_inn .popup_cnt .popup_cnt_inn p:last-child {
@@ -188,6 +196,10 @@ html {
 }
 .u4m-team-grid .team_popup .team_popup_container .flex_row.team_popup_inn .popup_cnt .popup_cnt_inn > * {
   color: #213944;
+}
+.u4m-team-grid .team_popup .team_popup_container .flex_row.team_popup_inn .popup_cnt .linkedin_textWrap .text.arrow-link {
+  justify-content: flex-start;
+  padding: 0;
 }
 .u4m-team-grid .team_popup .team_popup_container .flex_row.team_popup_inn .popup_cnt .member_share ul {
   flex-wrap: wrap;
@@ -243,6 +255,9 @@ html {
 }
 .u4m-team-grid .team_popup.team_open {
   display: flex;
+}
+.u4m-team-grid .arrow-link {
+  font-size: 16rem;
 }
 
 body.overflow-hidden {

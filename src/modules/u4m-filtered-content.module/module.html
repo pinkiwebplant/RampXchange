@@ -30,11 +30,11 @@
 								<div class="itemCntSec">
                     <div class="itemTags">{% for tag in row.topic %}{{ tag.name|capitalize }} {% if not loop.last %}<span class="dots"></span>{% endif %} {% endfor %}</div>
 									<div class="itemTitle ">
-										<h4 >
+										<h3 >
 											<a  href="{{ row.link }}">
 												{{ row.name }}
 											</a>
-										</h4>
+										</h3>
 									</div>  
 									{% if row.description %}
 									<div class="itemDescription">{{ row.description }}</div>  
@@ -119,11 +119,11 @@
         </div>
 								{% if row.name %}
 								<div class="itemTitle">
-									<h4 class="restitle">
+									<h3 class="restitle">
 										<a  href="{{ row.link }}">
 											{{ row.name }}
 										</a>
-									</h4>
+									</h3>
 								</div>  
 								{% endif %}
 							</div>

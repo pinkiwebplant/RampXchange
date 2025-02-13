@@ -166,7 +166,11 @@ section.u4m-filtered-content .topSec .flex_row .featCardsOuter .cardItems .cardI
     flex-wrap: wrap;
   }
 }
+section.u4m-filtered-content .topSec .flex_row .featCardsOuter .cardItems .cardItem .itemInr .itemCnWrap .itemCntSec .restitle {
+  margin-bottom: 0;
+}
 section.u4m-filtered-content .topSec .flex_row .featCardsOuter .cardItems .cardItem .itemInr .itemCnWrap .intro_btn_wrap {
+  font-size: 16rem;
   margin: auto 0 0;
   justify-content: start;
 }
@@ -205,8 +209,20 @@ section.u4m-filtered-content .topSec .flex_row .featCardsOuter .cardItems .cardI
     padding-bottom: 56.66%;
   }
 }
+section.u4m-filtered-content .topSec .flex_row .featCardsOuter .cardItems .cardItem .itemInr .itemCnWrap .itemCntSec .itemTags {
+  font-weight: 600;
+  font-size: 16rem;
+  margin-bottom: 32px;
+}
 section.u4m-filtered-content .topSec .flex_row .featCardsOuter .cardItems .cardItem .itemInr .itemCnWrap .itemCntSec .itemTitle {
   margin-bottom: 8px;
+  font-weight: 500;
+}
+section.u4m-filtered-content .topSec .flex_row .featCardsOuter .cardItems .cardItem .itemInr .itemCnWrap .itemCntSec .itemTitle h3 {
+  margin: 0;
+}
+section.u4m-filtered-content .topSec .flex_row .featCardsOuter .cardItems .cardItem .itemInr .itemCnWrap .intro_btn_wrap {
+  font-size: 16rem;
 }
 section.u4m-filtered-content .featCardsListWrap .filterWrap {
   padding: 60rem 0;
@@ -236,7 +252,7 @@ section.u4m-filtered-content .featCardsListWrap .filterWrap .flex_row .selctArro
   appearance: none;
   background-position: calc(100% - 30px) center;
   padding: 12.5px 64px 12.5px 24px;
-  border-radius: 12px;
+  border-radius: 4rem;
   border: 1px solid #6e757c;
   outline: none;
   color: #6e757c;
@@ -355,9 +371,23 @@ section.u4m-filtered-content .featCardsListWrap .cardSctn .cardItems .cardItem .
     flex-wrap: wrap;
   }
 }
+section.u4m-filtered-content .featCardsListWrap .cardSctn .cardItems .cardItem .itemInr .itemCnWrap .itemCntSec .restitle {
+  margin-bottom: 0;
+}
 section.u4m-filtered-content .featCardsListWrap .cardSctn .cardItems .cardItem .itemInr .itemCnWrap .intro_btn_wrap {
+  font-size: 16rem;
   margin: auto 0 0;
   justify-content: start;
+}
+section.u4m-filtered-content .featCardsListWrap .cardSctn .cardItems .cardItem .itemInr .itemCnWrap .itemCntSec .restitle {
+  font-weight: 600;
+  margin: 0;
+}
+section.u4m-filtered-content .featCardsListWrap .cardSctn .cardItems .cardItem .itemInr .itemCnWrap .itemCntSec .itemTags {
+  color: inherit;
+}
+section.u4m-filtered-content .featCardsListWrap .cardSctn .cardItems .cardItem .itemInr .itemCnWrap .intro_btn_wrap {
+  font-size: 16rem;
 }
 section.u4m-filtered-content .featCardsListWrap .cardSctn .cardItems .statusCnt {
   width: 100%;

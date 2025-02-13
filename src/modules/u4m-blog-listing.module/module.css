@@ -166,7 +166,11 @@ section.u4m-blog-listing .topSec .flex_row .featCardsOuter .cardItems .cardItem 
     flex-wrap: wrap;
   }
 }
+section.u4m-blog-listing .topSec .flex_row .featCardsOuter .cardItems .cardItem .itemInr .itemCnWrap .itemCntSec .restitle {
+  margin-bottom: 0;
+}
 section.u4m-blog-listing .topSec .flex_row .featCardsOuter .cardItems .cardItem .itemInr .itemCnWrap .intro_btn_wrap {
+  font-size: 16rem;
   margin: auto 0 0;
   justify-content: start;
 }
@@ -358,7 +362,11 @@ section.u4m-blog-listing .featCardsListWrap .cardSctn .cardItems .cardItem .item
     flex-wrap: wrap;
   }
 }
+section.u4m-blog-listing .featCardsListWrap .cardSctn .cardItems .cardItem .itemInr .itemCnWrap .itemCntSec .restitle {
+  margin-bottom: 0;
+}
 section.u4m-blog-listing .featCardsListWrap .cardSctn .cardItems .cardItem .itemInr .itemCnWrap .intro_btn_wrap {
+  font-size: 16rem;
   margin: auto 0 0;
   justify-content: start;
 }
