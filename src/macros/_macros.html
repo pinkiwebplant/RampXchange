@@ -169,7 +169,7 @@
 	{% macro hubDBcards(row,moduleSetting) %}
 	{% if row %}
 	<div class="cmCol3 cardItem">
-		<div class="itemInr {{ moduleSetting.select_card_theme }} {% if moduleSetting.reverse_text %}cardColor{% endif %}">
+		<div class="itemInr {{ moduleSetting.select_card_theme }} {% if moduleSetting.reverse_text %}cardColor{% endif %}" {% if moduleSetting.select_card_theme == "custom" %}style="background-color:{{ module.module_settings.background_color.rgba }}"{%  endif %}>
 			{% if row.image.url %}
 			<div class="itemImg">
 				<div class="itemImgin" style="background-image:url({{ row.image.url }})">	<a class="absltLink" href="{{ row.link }}"></a></div>

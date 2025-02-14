@@ -23,7 +23,7 @@ class="bg_overlay bg_color {{ module.module_overrides.background_settings.select
   {% if module.module_overrides.background_settings.enabled_overlay %}
   <div
     class="bg_overlay bg_clr {{ module.module_overrides.background_settings.overlay_color }}"
-    style="opacity:{{ module.module_overrides.background_settings.opacity }}"
+    style="{% if module.module_overrides.background_settings.overlay_color == 'custom' %}background-color:{{ module.module_overrides.background_settings.custom_overlay_color.rgba }};{% else %}opacity:{{ module.module_overrides.background_settings.opacity }};{% endif %}"
   ></div>
   {% endif %} {% endif %} {% if module.module_overrides.enable_overrides %} {%
   require_js %}

@@ -1,24 +1,22 @@
 [ {
   "id" : "081bfb60-a75d-a475-e7fb-44c8a8969c1a",
   "name" : "intro_content",
-  "display_width" : null,
   "label" : "Intro Content",
   "required" : false,
   "locked" : false,
   "children" : [ {
     "id" : "c5ccdda8-6960-e255-a51f-c61077a633ca",
     "name" : "include_eyebrow_text",
-    "display_width" : null,
     "label" : "Include Eyebrow Text",
     "required" : false,
     "locked" : false,
     "display" : "checkbox",
     "type" : "boolean",
+    "display_width" : null,
     "default" : true
   }, {
     "id" : "5baff6ad-02e1-6b84-3429-260a0ded7ef6",
     "name" : "eyebrow_text",
-    "display_width" : null,
     "label" : "Eyebrow Text",
     "required" : false,
     "locked" : false,
@@ -34,21 +32,21 @@
     "allow_new_line" : false,
     "show_emoji_picker" : false,
     "type" : "text",
+    "display_width" : null,
     "default" : "Optional Eyebrow Text"
   }, {
     "id" : "e1a83e2f-f82a-c168-4ab5-d2e59735e581",
     "name" : "include_heading",
-    "display_width" : null,
     "label" : "Include Heading",
     "required" : false,
     "locked" : false,
     "display" : "checkbox",
     "type" : "boolean",
+    "display_width" : null,
     "default" : true
   }, {
     "id" : "aef5e961-e297-2654-68e0-6128687770bf",
     "name" : "heading_size",
-    "display_width" : null,
     "label" : "Heading Size",
     "required" : false,
     "locked" : false,
@@ -66,11 +64,11 @@
     "reordering_enabled" : true,
     "preset" : null,
     "type" : "choice",
+    "display_width" : null,
     "default" : "h2"
   }, {
     "id" : "c7aa6b72-58e0-4caa-9b63-4da765e70069",
     "name" : "heading",
-    "display_width" : null,
     "label" : "Heading",
     "required" : false,
     "locked" : false,
@@ -86,21 +84,21 @@
     "allow_new_line" : false,
     "show_emoji_picker" : false,
     "type" : "text",
+    "display_width" : null,
     "default" : "Frequently Asked Questions"
   }, {
     "id" : "2f10bd6e-cf85-1cf6-5a4f-fa75e1e78238",
     "name" : "include_content",
-    "display_width" : null,
     "label" : "Include Content",
     "required" : false,
     "locked" : false,
     "display" : "checkbox",
     "type" : "boolean",
+    "display_width" : null,
     "default" : true
   }, {
     "id" : "0dc03814-a33d-3284-f2d6-b130f633f03d",
     "name" : "content",
-    "display_width" : null,
     "label" : "Content",
     "required" : false,
     "locked" : false,
@@ -113,21 +111,21 @@
       "access" : null
     },
     "type" : "richtext",
+    "display_width" : null,
     "default" : "<p>Quisque accumsan sed sapien non blandit. Nunc malesuada urna non malesuada mattis. Donec ut justo felis. Integer posuere aliquet libero id porta. Ut ac interdum leo.</p>"
   }, {
     "id" : "4a517c8a-8c15-a721-dca5-db7b58a8c2a7",
     "name" : "include_button",
-    "display_width" : null,
     "label" : "Include Button",
     "required" : false,
     "locked" : false,
     "display" : "checkbox",
     "type" : "boolean",
+    "display_width" : null,
     "default" : false
   }, {
     "id" : "3d861e2f-6981-78b6-57a8-d59863169561",
     "name" : "button_group",
-    "display_width" : null,
     "label" : "Button Group",
     "required" : false,
     "locked" : false,
@@ -148,7 +146,6 @@
     "children" : [ {
       "id" : "43e0936c-b29a-7bd7-61e3-b4671077ba62",
       "name" : "button_type",
-      "display_width" : null,
       "label" : "Button Type",
       "required" : false,
       "locked" : false,
@@ -158,11 +155,11 @@
       "reordering_enabled" : true,
       "preset" : null,
       "type" : "choice",
+      "display_width" : null,
       "default" : "std"
     }, {
       "id" : "9d5fe057-d461-68d1-9845-607ec6d892ff",
       "name" : "button_style",
-      "display_width" : null,
       "label" : "Button Style",
       "required" : false,
       "locked" : false,
@@ -180,11 +177,11 @@
       "reordering_enabled" : true,
       "preset" : null,
       "type" : "choice",
+      "display_width" : null,
       "default" : "hs-button"
     }, {
       "id" : "105bbd69-dccc-fd6b-3d3d-3f4063128744",
       "name" : "button_text",
-      "display_width" : null,
       "label" : "Button Text",
       "required" : false,
       "locked" : false,
@@ -200,11 +197,11 @@
       "allow_new_line" : false,
       "show_emoji_picker" : false,
       "type" : "text",
+      "display_width" : null,
       "default" : "Button"
     }, {
       "id" : "f1ccd7fd-a18d-1262-3c67-476cdf5424cd",
       "name" : "link",
-      "display_width" : null,
       "label" : "Link",
       "required" : false,
       "locked" : false,
@@ -219,6 +216,7 @@
       "supported_types" : [ "EXTERNAL", "CONTENT", "FILE", "EMAIL_ADDRESS", "PHONE_NUMBER" ],
       "show_advanced_rel_options" : false,
       "type" : "link",
+      "display_width" : null,
       "default" : {
         "url" : {
           "content_id" : null,
@@ -231,7 +229,6 @@
     }, {
       "id" : "ef46548d-bcc7-841c-4635-d4d035ae7022",
       "name" : "cta",
-      "display_width" : null,
       "label" : "CTA",
       "required" : false,
       "locked" : false,
@@ -243,12 +240,14 @@
         "operator" : "EQUAL",
         "access" : null
       },
-      "type" : "cta"
+      "type" : "cta",
+      "display_width" : null
     } ],
     "tab" : "CONTENT",
     "expanded" : false,
     "group_occurrence_meta" : null,
     "type" : "group",
+    "display_width" : null,
     "default" : [ {
       "button_type" : "std",
       "button_style" : "hs-button",
@@ -281,6 +280,7 @@
   "expanded" : false,
   "group_occurrence_meta" : null,
   "type" : "group",
+  "display_width" : null,
   "default" : {
     "include_eyebrow_text" : true,
     "eyebrow_text" : "Optional Eyebrow Text",
@@ -321,7 +321,6 @@
 }, {
   "id" : "9c355bdb-b26c-744e-79b4-b71c5733cb90",
   "name" : "accordion",
-  "display_width" : null,
   "label" : "Items Group",
   "required" : false,
   "locked" : false,
@@ -334,7 +333,6 @@
   "children" : [ {
     "id" : "be137bbc-6396-1284-7573-a913f4a5b40e",
     "name" : "title",
-    "display_width" : null,
     "label" : "Title",
     "required" : false,
     "locked" : false,
@@ -342,21 +340,23 @@
     "allow_new_line" : false,
     "show_emoji_picker" : false,
     "type" : "text",
+    "display_width" : null,
     "default" : "Title of Accordion Slide Here"
   }, {
     "id" : "419548e5-8660-2139-7290-77b04da89f00",
     "name" : "content",
-    "display_width" : null,
     "label" : "Content",
     "required" : false,
     "locked" : false,
     "type" : "richtext",
+    "display_width" : null,
     "default" : "<p>Quisque accumsan sed sapien non blandit. Nunc malesuada urna non malesuada mattis. Donec ut justo felis. Integer posuere aliquet libero id porta. Ut ac interdum leo. Maecenas porttitor urna risus, sed tincidunt dui mollis eu. Duis congue ornare lacus in dapibus. Sed eget odio mattis, molestie eros sit amet, maximus est.</p>"
   } ],
   "tab" : "CONTENT",
   "expanded" : false,
   "group_occurrence_meta" : null,
   "type" : "group",
+  "display_width" : null,
   "default" : [ {
     "title" : "Title of Accordion Slide Here",
     "content" : "<p>Quisque accumsan sed sapien non blandit. Nunc malesuada urna non malesuada mattis. Donec ut justo felis. Integer posuere aliquet libero id porta. Ut ac interdum leo. Maecenas porttitor urna risus, sed tincidunt dui mollis eu. Duis congue ornare lacus in dapibus. Sed eget odio mattis, molestie eros sit amet, maximus est.</p>"
@@ -373,21 +373,18 @@
 }, {
   "id" : "f415ec10-19b2-f246-3ac6-49031264d0ad",
   "name" : "module_settings",
-  "display_width" : null,
   "label" : "Module Settings",
   "required" : false,
   "locked" : false,
   "children" : [ {
     "id" : "ea0be14c-8419-7112-143a-5f969bdfeea9",
     "name" : "accordion_group",
-    "display_width" : null,
     "label" : "Accordion Group",
     "required" : false,
     "locked" : false,
     "children" : [ {
       "id" : "6347b497-f97e-8c50-1b2b-0f387c448d19",
       "name" : "background_color",
-      "display_width" : null,
       "label" : "Background Color",
       "required" : false,
       "locked" : false,
@@ -397,9 +394,9 @@
       "reordering_enabled" : true,
       "preset" : null,
       "type" : "choice",
+      "display_width" : null,
       "default" : "soft_white"
-    },
-    {
+    }, {
       "id" : "a34bb279-ff3a-c145-d0d1-7ed464f10e34",
       "name" : "select_background_color",
       "label" : "Select Background Color",
@@ -419,22 +416,22 @@
         "color" : null,
         "opacity" : null
       }
-    },
-     {
+    }, {
       "id" : "0294c22d-1a34-9048-1cf5-ea1631029a68",
       "name" : "accordion_reverse_text",
-      "display_width" : null,
       "label" : "Reverse Text",
       "required" : false,
       "locked" : false,
       "display" : "checkbox",
       "type" : "boolean",
+      "display_width" : null,
       "default" : false
     } ],
     "tab" : "CONTENT",
     "expanded" : false,
     "group_occurrence_meta" : null,
     "type" : "group",
+    "display_width" : null,
     "default" : {
       "background_color" : "soft_white",
       "accordion_reverse_text" : false
@@ -444,6 +441,7 @@
   "expanded" : false,
   "group_occurrence_meta" : null,
   "type" : "group",
+  "display_width" : null,
   "default" : {
     "accordion_group" : {
       "background_color" : "soft_white",
@@ -453,25 +451,23 @@
 }, {
   "id" : "module_overrides",
   "name" : "module_overrides",
-  "display_width" : null,
   "label" : "Module Overrides",
   "required" : false,
   "locked" : false,
   "children" : [ {
     "id" : "enable_overrides",
     "name" : "enable_overrides",
-    "display_width" : null,
     "label" : "Enable Overrides",
     "help_text" : "Toggle to override section ID and vertical margin. ",
     "required" : false,
     "locked" : false,
     "display" : "checkbox",
     "type" : "boolean",
+    "display_width" : null,
     "default" : true
   }, {
     "id" : "module_overrides.section_id",
     "name" : "section_id",
-    "display_width" : null,
     "label" : "Section ID",
     "help_text" : "The value you type here will be the anchor link for this section. Should be all lowercase and include dashes instead of spaces. This should be a unique value per module.",
     "required" : false,
@@ -487,11 +483,11 @@
     },
     "allow_new_line" : false,
     "show_emoji_picker" : false,
-    "type" : "text"
+    "type" : "text",
+    "display_width" : null
   }, {
     "id" : "module_overrides.top_margin",
     "name" : "top_margin",
-    "display_width" : null,
     "label" : "Top Margin",
     "required" : false,
     "locked" : false,
@@ -509,11 +505,11 @@
     "reordering_enabled" : true,
     "preset" : null,
     "type" : "choice",
+    "display_width" : null,
     "default" : "top-margin-none"
   }, {
     "id" : "custom_top_margin",
     "name" : "custom_top_margin",
-    "display_width" : null,
     "label" : "Custom Top Margin",
     "required" : false,
     "locked" : false,
@@ -528,11 +524,11 @@
     "display" : "text",
     "step" : 1,
     "type" : "number",
+    "display_width" : null,
     "default" : 100
   }, {
     "id" : "custom_top_margin_mobile",
     "name" : "custom_top_margin_mobile",
-    "display_width" : null,
     "label" : "Custom Top Margin Mobile",
     "required" : false,
     "locked" : false,
@@ -547,11 +543,11 @@
     "display" : "text",
     "step" : 1,
     "type" : "number",
+    "display_width" : null,
     "default" : 50
   }, {
     "id" : "module_overrides.bottom_margin",
     "name" : "bottom_margin",
-    "display_width" : null,
     "label" : "Bottom Margin",
     "required" : false,
     "locked" : false,
@@ -569,11 +565,11 @@
     "reordering_enabled" : true,
     "preset" : null,
     "type" : "choice",
+    "display_width" : null,
     "default" : "bottom-margin-none"
   }, {
     "id" : "custom_bottom_margin",
     "name" : "custom_bottom_margin",
-    "display_width" : null,
     "label" : "Custom Bottom Margin",
     "required" : false,
     "locked" : false,
@@ -588,11 +584,11 @@
     "display" : "text",
     "step" : 1,
     "type" : "number",
+    "display_width" : null,
     "default" : 100
   }, {
     "id" : "custom_bottom_margin_mobile",
     "name" : "custom_bottom_margin_mobile",
-    "display_width" : null,
     "label" : "Custom Bottom Margin Mobile",
     "required" : false,
     "locked" : false,
@@ -607,11 +603,11 @@
     "display" : "text",
     "step" : 1,
     "type" : "number",
+    "display_width" : null,
     "default" : 50
   }, {
     "id" : "module_overrides.top_padding",
     "name" : "top_padding",
-    "display_width" : null,
     "label" : "Top Padding",
     "required" : false,
     "locked" : false,
@@ -629,11 +625,11 @@
     "reordering_enabled" : true,
     "preset" : null,
     "type" : "choice",
+    "display_width" : null,
     "default" : "top-padding-default"
   }, {
     "id" : "custom_top_padding",
     "name" : "custom_top_padding",
-    "display_width" : null,
     "label" : "Custom Top Padding",
     "required" : false,
     "locked" : false,
@@ -648,11 +644,11 @@
     "display" : "text",
     "step" : 1,
     "type" : "number",
+    "display_width" : null,
     "default" : 100
   }, {
     "id" : "custom_top_padding_mobile",
     "name" : "custom_top_padding_mobile",
-    "display_width" : null,
     "label" : "Custom Top Padding Mobile",
     "required" : false,
     "locked" : false,
@@ -667,11 +663,11 @@
     "display" : "text",
     "step" : 1,
     "type" : "number",
+    "display_width" : null,
     "default" : 50
   }, {
     "id" : "module_overrides.bottom_padding",
     "name" : "bottom_padding",
-    "display_width" : null,
     "label" : "Bottom Padding",
     "required" : false,
     "locked" : false,
@@ -689,11 +685,11 @@
     "reordering_enabled" : true,
     "preset" : null,
     "type" : "choice",
+    "display_width" : null,
     "default" : "bottom-padding-default"
   }, {
     "id" : "custom_bottom_padding",
     "name" : "custom_bottom_padding",
-    "display_width" : null,
     "label" : "Custom Bottom Padding",
     "required" : false,
     "locked" : false,
@@ -708,11 +704,11 @@
     "display" : "text",
     "step" : 1,
     "type" : "number",
+    "display_width" : null,
     "default" : 100
   }, {
     "id" : "custom_bottom_padding_mobile",
     "name" : "custom_bottom_padding_mobile",
-    "display_width" : null,
     "label" : "Custom Bottom Padding Mobile",
     "required" : false,
     "locked" : false,
@@ -727,11 +723,11 @@
     "display" : "text",
     "step" : 1,
     "type" : "number",
+    "display_width" : null,
     "default" : 50
   }, {
     "id" : "3eccf45d-b0dc-4bac-42a0-f923e4405158",
     "name" : "reverse_text",
-    "display_width" : null,
     "label" : "Reverse Text",
     "required" : false,
     "locked" : false,
@@ -745,11 +741,11 @@
     },
     "display" : "checkbox",
     "type" : "boolean",
+    "display_width" : null,
     "default" : false
   }, {
     "id" : "94e04306-ecc1-4735-09fd-9b66482a8101",
     "name" : "background_settings",
-    "display_width" : null,
     "label" : "Background Settings",
     "required" : false,
     "locked" : false,
@@ -764,7 +760,6 @@
     "children" : [ {
       "id" : "3c812905-0c66-421d-6e7e-7a7109acdd49",
       "name" : "background_type",
-      "display_width" : null,
       "label" : "Background Type",
       "required" : false,
       "locked" : false,
@@ -774,11 +769,11 @@
       "reordering_enabled" : true,
       "preset" : null,
       "type" : "choice",
+      "display_width" : null,
       "default" : ""
     }, {
       "id" : "5d97321e-e326-2d30-8757-51608da05ea6",
       "name" : "background_image",
-      "display_width" : null,
       "label" : "Background Image",
       "required" : false,
       "locked" : false,
@@ -794,6 +789,7 @@
       "resizable" : false,
       "show_loading" : false,
       "type" : "image",
+      "display_width" : null,
       "default" : {
         "size_type" : "auto",
         "src" : "",
@@ -803,7 +799,6 @@
     }, {
       "id" : "4ea36da9-c8a6-adf2-7460-cbf4d98190fd",
       "name" : "select_color",
-      "display_width" : null,
       "label" : "Select Color",
       "required" : false,
       "locked" : false,
@@ -821,11 +816,11 @@
       "reordering_enabled" : true,
       "preset" : null,
       "type" : "choice",
+      "display_width" : null,
       "default" : ""
     }, {
       "id" : "2659085b-598d-e346-643e-6a9ebb3bae70",
       "name" : "select_gradient",
-      "display_width" : null,
       "label" : "Select Gradient",
       "required" : false,
       "locked" : false,
@@ -843,21 +838,61 @@
       "reordering_enabled" : true,
       "preset" : null,
       "type" : "choice",
+      "display_width" : null,
       "default" : "gradient5"
-      }, {
-        "id" : "a34bb279-ff3a-c145-d0d1-7ed464f10eca",
-        "name" : "select_background_color",
-        "label" : "Select Background Color",
+    }, {
+      "id" : "a34bb279-ff3a-c145-d0d1-7ed464f10eca",
+      "name" : "select_background_color",
+      "label" : "Select Background Color",
+      "required" : false,
+      "locked" : false,
+      "visibility" : {
+        "controlling_field" : null,
+        "controlling_field_path" : "module_overrides.background_settings.select_color",
+        "controlling_value_regex" : "custom",
+        "property" : null,
+        "operator" : "EQUAL",
+        "access" : null
+      },
+      "type" : "color",
+      "display_width" : null,
+      "default" : {
+        "color" : null,
+        "opacity" : null
+      }
+    }, {
+      "id" : "0e25b378-ee3f-50f9-cddb-ecdb8fcd69b4",
+      "name" : "gradient",
+      "label" : "Gradient",
+      "required" : false,
+      "locked" : false,
+      "visibility" : {
+        "controlling_field" : null,
+        "controlling_field_path" : "module_overrides.background_settings.select_gradient",
+        "controlling_value_regex" : "custom",
+        "property" : null,
+        "operator" : "EQUAL",
+        "access" : null
+      },
+      "children" : [ {
+        "id" : "6c790b6e-07a5-0f3c-3db6-491174f63419",
+        "name" : "direction",
+        "label" : "Direction",
         "required" : false,
         "locked" : false,
-        "visibility" : {
-          "controlling_field" : null,
-          "controlling_field_path" : "module_overrides.background_settings.select_color",
-          "controlling_value_regex" : "custom",
-          "property" : null,
-          "operator" : "EQUAL",
-          "access" : null
-        },
+        "display" : "select",
+        "choices" : [ [ "to top", "Bottom to top" ], [ "to bottom", "Top to bottom" ], [ "to right", "Left to right" ], [ "to left", "Right to left" ], [ "to bottom right", "Top left to bottom right" ], [ "to bottom left", "Top right to bottom left" ] ],
+        "multiple" : false,
+        "reordering_enabled" : true,
+        "preset" : null,
+        "type" : "choice",
+        "display_width" : null
+      }, {
+        "id" : "c53d899d-6007-89e7-a707-cb9a48d441de",
+        "name" : "start_gradient_color",
+        "label" : "Start Gradient Color",
+        "required" : false,
+        "locked" : false,
         "type" : "color",
         "display_width" : null,
         "default" : {
@@ -865,77 +900,39 @@
           "opacity" : null
         }
       }, {
-        "id" : "0e25b378-ee3f-50f9-cddb-ecdb8fcd69b4",
-        "name" : "gradient",
-        "label" : "Gradient",
+        "id" : "5a2f165e-c84d-3e77-8f83-df50a9df8c1d",
+        "name" : "end_gradient_color",
+        "label" : "End Gradient Color",
         "required" : false,
         "locked" : false,
-        "visibility" : {
-          "controlling_field" : null,
-          "controlling_field_path" : "module_overrides.background_settings.select_gradient",
-          "controlling_value_regex" : "custom",
-          "property" : null,
-          "operator" : "EQUAL",
-          "access" : null
-        },
-        "children" : [ {
-          "id" : "6c790b6e-07a5-0f3c-3db6-491174f63419",
-          "name" : "direction",
-          "label" : "Direction",
-          "required" : false,
-          "locked" : false,
-          "display" : "select",
-          "choices" : [ [ "to top", "Bottom to top" ], [ "to bottom", "Top to bottom" ], [ "to right", "Left to right" ], [ "to left", "Right to left" ], [ "to bottom right", "Top left to bottom right" ], [ "to bottom left", "Top right to bottom left" ] ],
-          "multiple" : false,
-          "reordering_enabled" : true,
-          "preset" : null,
-          "type" : "choice",
-          "display_width" : null
-        }, {
-          "id" : "c53d899d-6007-89e7-a707-cb9a48d441de",
-          "name" : "start_gradient_color",
-          "label" : "Start Gradient Color",
-          "required" : false,
-          "locked" : false,
-          "type" : "color",
-          "display_width" : null,
-          "default" : {
-            "color" : null,
-            "opacity" : null
-          }
-        }, {
-          "id" : "5a2f165e-c84d-3e77-8f83-df50a9df8c1d",
-          "name" : "end_gradient_color",
-          "label" : "End Gradient Color",
-          "required" : false,
-          "locked" : false,
-          "type" : "color",
-          "display_width" : null,
-          "default" : {
-            "color" : null,
-            "opacity" : null
-          }
-        } ],
-        "tab" : "CONTENT",
-        "expanded" : false,
-        "group_occurrence_meta" : null,
-        "type" : "group",
+        "type" : "color",
         "display_width" : null,
         "default" : {
-          "start_gradient_color" : {
-            "color" : null,
-            "opacity" : null
-          },
-          "end_gradient_color" : {
-            "color" : null,
-            "opacity" : null
-          }
+          "color" : null,
+          "opacity" : null
         }
+      } ],
+      "tab" : "CONTENT",
+      "expanded" : false,
+      "group_occurrence_meta" : null,
+      "type" : "group",
+      "display_width" : null,
+      "default" : {
+        "start_gradient_color" : {
+          "color" : null,
+          "opacity" : null
+        },
+        "end_gradient_color" : {
+          "color" : null,
+          "opacity" : null
+        }
+      }
     } ],
     "tab" : "CONTENT",
     "expanded" : true,
     "group_occurrence_meta" : null,
     "type" : "group",
+    "display_width" : null,
     "default" : {
       "background_type" : "",
       "background_image" : {
@@ -964,7 +961,6 @@
   }, {
     "id" : "c813f3af-99b7-d54e-7ce2-b074f008a27c",
     "name" : "container",
-    "display_width" : null,
     "label" : "Container",
     "required" : false,
     "locked" : false,
@@ -979,7 +975,6 @@
     "children" : [ {
       "id" : "87361475-d2b5-329d-45b2-227103ad95d9",
       "name" : "size",
-      "display_width" : null,
       "label" : "Size",
       "required" : false,
       "locked" : false,
@@ -989,11 +984,11 @@
       "reordering_enabled" : true,
       "preset" : null,
       "type" : "choice",
+      "display_width" : null,
       "default" : "custom"
     }, {
       "id" : "b9865f26-0901-d5ad-66a2-7c6ecacec658",
       "name" : "custom_size",
-      "display_width" : null,
       "label" : "Custom Size",
       "required" : false,
       "locked" : false,
@@ -1011,12 +1006,14 @@
       "step" : 1,
       "suffix" : "px",
       "type" : "number",
+      "display_width" : null,
       "default" : 1040
     } ],
     "tab" : "CONTENT",
     "expanded" : false,
     "group_occurrence_meta" : null,
     "type" : "group",
+    "display_width" : null,
     "default" : {
       "size" : "custom",
       "custom_size" : 1040
@@ -1026,6 +1023,7 @@
   "expanded" : false,
   "group_occurrence_meta" : null,
   "type" : "group",
+  "display_width" : null,
   "default" : {
     "enable_overrides" : true,
     "top_margin" : "top-margin-none",

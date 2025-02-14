@@ -748,13 +748,33 @@
     "required" : false,
     "locked" : false,
     "display" : "select",
-    "choices" : [ [ "forest_green", "Ramp Green" ], [ "dark_teal", "State Blue" ], [ "pale_green", "Digital Green" ], [ "silver_gray", "Cyber Gray" ], [ "charcoal_gray", "Change Gray" ], [ "golden_brown", "Bronze" ], [ "soft_white", "Air White" ], [ "white_bg", "White" ] ],
+    "choices" : [ [ "forest_green", "Ramp Green" ], [ "dark_teal", "State Blue" ], [ "pale_green", "Digital Green" ], [ "silver_gray", "Cyber Gray" ], [ "charcoal_gray", "Change Gray" ], [ "golden_brown", "Bronze" ], [ "soft_white", "Air White" ], [ "white_bg", "White" ], [ "custom", "Custom" ] ],
     "multiple" : false,
     "reordering_enabled" : true,
     "preset" : null,
     "type" : "choice",
     "display_width" : null,
     "default" : "white_bg"
+  }, {
+    "id" : "22ede030-2983-f301-14f1-a1aa080921e4",
+    "name" : "background_color",
+    "label" : "Background Color",
+    "required" : false,
+    "locked" : false,
+    "visibility" : {
+      "controlling_field" : null,
+      "controlling_field_path" : "module_settings.card_background_color",
+      "controlling_value_regex" : "custom",
+      "property" : null,
+      "operator" : "EQUAL",
+      "access" : null
+    },
+    "type" : "color",
+    "display_width" : null,
+    "default" : {
+      "color" : null,
+      "opacity" : null
+    }
   }, {
     "id" : "5a21b120-3343-ef84-93f5-a66bfb299d14",
     "name" : "card_reverse_text",
@@ -773,6 +793,10 @@
   "display_width" : null,
   "default" : {
     "card_background_color" : "white_bg",
+    "background_color" : {
+      "color" : null,
+      "opacity" : null
+    },
     "card_reverse_text" : false
   }
 }, {
@@ -1167,7 +1191,7 @@
       "type" : "choice",
       "display_width" : null,
       "default" : "gradient2"
-      }, {
+    }, {
       "id" : "a34bb279-ff3a-c145-d0d1-7ed464f10eca",
       "name" : "select_background_color",
       "label" : "Select Background Color",

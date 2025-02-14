@@ -972,20 +972,59 @@
       "type" : "choice",
       "display_width" : null,
       "default" : "gradient5"
-      }, {
-        "id" : "a34bb279-ff3a-c145-d0d1-7ed464f10eca",
-        "name" : "select_background_color",
-        "label" : "Select Background Color",
+    }, {
+      "id" : "a34bb279-ff3a-c145-d0d1-7ed464f10eca",
+      "name" : "select_background_color",
+      "label" : "Select Background Color",
+      "required" : false,
+      "locked" : false,
+      "visibility" : {
+        "controlling_field" : null,
+        "controlling_field_path" : "module_overrides.background_settings.select_color",
+        "controlling_value_regex" : "custom",
+        "property" : null,
+        "operator" : "EQUAL",
+        "access" : null
+      },
+      "type" : "color",
+      "display_width" : null,
+      "default" : {
+        "color" : null,
+        "opacity" : null
+      }
+    }, {
+      "id" : "0e25b378-ee3f-50f9-cddb-ecdb8fcd69b4",
+      "name" : "gradient",
+      "label" : "Gradient",
+      "required" : false,
+      "locked" : false,
+      "visibility" : {
+        "controlling_field" : null,
+        "controlling_field_path" : "module_overrides.background_settings.select_gradient",
+        "controlling_value_regex" : "custom",
+        "property" : null,
+        "operator" : "EQUAL",
+        "access" : null
+      },
+      "children" : [ {
+        "id" : "6c790b6e-07a5-0f3c-3db6-491174f63419",
+        "name" : "direction",
+        "label" : "Direction",
         "required" : false,
         "locked" : false,
-        "visibility" : {
-          "controlling_field" : null,
-          "controlling_field_path" : "module_overrides.background_settings.select_color",
-          "controlling_value_regex" : "custom",
-          "property" : null,
-          "operator" : "EQUAL",
-          "access" : null
-        },
+        "display" : "select",
+        "choices" : [ [ "to top", "Bottom to top" ], [ "to bottom", "Top to bottom" ], [ "to right", "Left to right" ], [ "to left", "Right to left" ], [ "to bottom right", "Top left to bottom right" ], [ "to bottom left", "Top right to bottom left" ] ],
+        "multiple" : false,
+        "reordering_enabled" : true,
+        "preset" : null,
+        "type" : "choice",
+        "display_width" : null
+      }, {
+        "id" : "c53d899d-6007-89e7-a707-cb9a48d441de",
+        "name" : "start_gradient_color",
+        "label" : "Start Gradient Color",
+        "required" : false,
+        "locked" : false,
         "type" : "color",
         "display_width" : null,
         "default" : {
@@ -993,72 +1032,33 @@
           "opacity" : null
         }
       }, {
-        "id" : "0e25b378-ee3f-50f9-cddb-ecdb8fcd69b4",
-        "name" : "gradient",
-        "label" : "Gradient",
+        "id" : "5a2f165e-c84d-3e77-8f83-df50a9df8c1d",
+        "name" : "end_gradient_color",
+        "label" : "End Gradient Color",
         "required" : false,
         "locked" : false,
-        "visibility" : {
-          "controlling_field" : null,
-          "controlling_field_path" : "module_overrides.background_settings.select_gradient",
-          "controlling_value_regex" : "custom",
-          "property" : null,
-          "operator" : "EQUAL",
-          "access" : null
-        },
-        "children" : [ {
-          "id" : "6c790b6e-07a5-0f3c-3db6-491174f63419",
-          "name" : "direction",
-          "label" : "Direction",
-          "required" : false,
-          "locked" : false,
-          "display" : "select",
-          "choices" : [ [ "to top", "Bottom to top" ], [ "to bottom", "Top to bottom" ], [ "to right", "Left to right" ], [ "to left", "Right to left" ], [ "to bottom right", "Top left to bottom right" ], [ "to bottom left", "Top right to bottom left" ] ],
-          "multiple" : false,
-          "reordering_enabled" : true,
-          "preset" : null,
-          "type" : "choice",
-          "display_width" : null
-        }, {
-          "id" : "c53d899d-6007-89e7-a707-cb9a48d441de",
-          "name" : "start_gradient_color",
-          "label" : "Start Gradient Color",
-          "required" : false,
-          "locked" : false,
-          "type" : "color",
-          "display_width" : null,
-          "default" : {
-            "color" : null,
-            "opacity" : null
-          }
-        }, {
-          "id" : "5a2f165e-c84d-3e77-8f83-df50a9df8c1d",
-          "name" : "end_gradient_color",
-          "label" : "End Gradient Color",
-          "required" : false,
-          "locked" : false,
-          "type" : "color",
-          "display_width" : null,
-          "default" : {
-            "color" : null,
-            "opacity" : null
-          }
-        } ],
-        "tab" : "CONTENT",
-        "expanded" : false,
-        "group_occurrence_meta" : null,
-        "type" : "group",
+        "type" : "color",
         "display_width" : null,
         "default" : {
-          "start_gradient_color" : {
-            "color" : null,
-            "opacity" : null
-          },
-          "end_gradient_color" : {
-            "color" : null,
-            "opacity" : null
-          }
+          "color" : null,
+          "opacity" : null
         }
+      } ],
+      "tab" : "CONTENT",
+      "expanded" : false,
+      "group_occurrence_meta" : null,
+      "type" : "group",
+      "display_width" : null,
+      "default" : {
+        "start_gradient_color" : {
+          "color" : null,
+          "opacity" : null
+        },
+        "end_gradient_color" : {
+          "color" : null,
+          "opacity" : null
+        }
+      }
     }, {
       "id" : "3d5ae8b7-8a2b-533c-624d-9b623db0784d",
       "name" : "enabled_overlay",
@@ -1092,13 +1092,33 @@
         "access" : null
       },
       "display" : "select",
-      "choices" : [ [ "forest_green", "Ramp Green" ], [ "dark_teal", "State Blue" ], [ "pale_green", "Digital Green" ], [ "silver_gray", "Cyber Gray" ], [ "charcoal_gray", "Change Gray" ], [ "golden_brown", "Bronze" ], [ "soft_white", "Air White" ], [ "white_bg", "White" ] ],
+      "choices" : [ [ "forest_green", "Ramp Green" ], [ "dark_teal", "State Blue" ], [ "pale_green", "Digital Green" ], [ "silver_gray", "Cyber Gray" ], [ "charcoal_gray", "Change Gray" ], [ "golden_brown", "Bronze" ], [ "soft_white", "Air White" ], [ "white_bg", "White" ], [ "custom", "Custom" ] ],
       "multiple" : false,
       "reordering_enabled" : true,
       "preset" : null,
       "type" : "choice",
       "display_width" : null,
       "default" : "forest_green"
+    }, {
+      "id" : "017d3292-8250-8a90-85d6-97552d565766",
+      "name" : "custom_overlay_color",
+      "label" : "Custom Overlay Color",
+      "required" : false,
+      "locked" : false,
+      "visibility" : {
+        "controlling_field" : null,
+        "controlling_field_path" : "module_overrides.background_settings.overlay_color",
+        "controlling_value_regex" : "custom",
+        "property" : null,
+        "operator" : "EQUAL",
+        "access" : null
+      },
+      "type" : "color",
+      "display_width" : null,
+      "default" : {
+        "color" : null,
+        "opacity" : null
+      }
     }, {
       "id" : "e2d05039-f92e-388f-6db7-61485a7e4dd9",
       "name" : "opacity",
@@ -1107,10 +1127,10 @@
       "locked" : false,
       "visibility" : {
         "controlling_field" : null,
-        "controlling_field_path" : "module_overrides.background_settings.enabled_overlay",
-        "controlling_value_regex" : "true",
+        "controlling_field_path" : "module_overrides.background_settings.overlay_color",
+        "controlling_value_regex" : "custom",
         "property" : null,
-        "operator" : "EQUAL",
+        "operator" : "NOT_EQUAL",
         "access" : null
       },
       "display" : "text",
@@ -1140,9 +1160,6 @@
       },
       "select_color" : "forest_green",
       "select_gradient" : "gradient5",
-      "enabled_overlay" : false,
-      "overlay_color" : "forest_green",
-      "opacity" : 0.4,
       "select_background_color" : {
         "color" : null,
         "opacity" : null
@@ -1156,7 +1173,14 @@
           "color" : null,
           "opacity" : null
         }
-      }
+      },
+      "enabled_overlay" : false,
+      "overlay_color" : "forest_green",
+      "custom_overlay_color" : {
+        "color" : null,
+        "opacity" : null
+      },
+      "opacity" : 0.4
     }
   }, {
     "id" : "c813f3af-99b7-d54e-7ce2-b074f008a27c",
@@ -1253,9 +1277,6 @@
       },
       "select_color" : "forest_green",
       "select_gradient" : "gradient5",
-      "enabled_overlay" : false,
-      "overlay_color" : "forest_green",
-      "opacity" : 0.4,
       "select_background_color" : {
         "color" : null,
         "opacity" : null
@@ -1269,7 +1290,14 @@
           "color" : null,
           "opacity" : null
         }
-      }
+      },
+      "enabled_overlay" : false,
+      "overlay_color" : "forest_green",
+      "custom_overlay_color" : {
+        "color" : null,
+        "opacity" : null
+      },
+      "opacity" : 0.4
     },
     "container" : {
       "size" : "theme",
