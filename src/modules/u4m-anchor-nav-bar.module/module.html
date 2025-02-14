@@ -5,7 +5,7 @@
 	{% include "../partials/u4-module-includes.html" %}
 	<div class="anchor-nav-inner">
 		<div class="page-center">
-			<div class="anchor-nav btns_nav_inr">
+			<div class="anchor-nav btns_nav_inr" >
 				{% for item in module.anchor_link %}
 				{% set href = item.anchor_link.url.href %}
 				{% if item.anchor_link.url.type is equalto "EMAIL_ADDRESS" %}
