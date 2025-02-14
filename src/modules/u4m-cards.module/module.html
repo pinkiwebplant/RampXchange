@@ -10,7 +10,7 @@
 
     <div class="inner_wrpp intro_content 	{{ module.module_settings.cards_group.media_type }}_cols  {{ module.module_settings.cards_group.content_alignment }} cols_{{ module.module_settings.cards_group.column_type }}">
       {% for item in module.cards_items_group %}
-      <div class="items  {{ module.module_settings.cards_group.cards_background_color }} {% if module.module_settings.cards_group.reverse_text %} cards_reverse_text {% endif %} {% if module.module_settings.cards_group.enabled_drop_shadow %}dropShadow{% endif %}">
+      <div class="items  {{ module.module_settings.cards_group.cards_background_color }} {% if module.module_settings.cards_group.reverse_text %} cards_reverse_text {% endif %} {% if module.module_settings.cards_group.enabled_drop_shadow %}dropShadow{% endif %}" {% if module.module_settings.cards_group.cards_background_color == "custom" %}style="background-color:{{ module.module_settings.cards_group.background_color.rgba }}"{%  endif %}>
         <div class="innerWrpp">
           <div class="topcntt {{ module.module_settings.cards_group.icon_alignment }}">
             {% if  module.module_settings.cards_group.media_type  == 'img'%}
@@ -29,7 +29,8 @@
                 {% endif %}
               </div>
               {% elif item.icon_group.icon_type == 'svg' %}
-              <div class="icon {{ module.module_settings.cards_group.icon_color }}_text		{{ item.icon_group.svg_icon_size_type }}">
+              <div class="icon {{ module.module_settings.cards_group.icon_color }}_text		{{ item.icon_group.svg_icon_size_type }}" {% if module.module_settings.cards_group.icon_color == "custom" %}style="color:{{ module.module_settings.cards_group.custom_icon_color.rgba }}"{%  endif %}
+>
                 {% inline_text field="icon_group.svg_icon" value="{{ item.icon_group.svg_icon }}" %}
               </div>
               {% endif %}
