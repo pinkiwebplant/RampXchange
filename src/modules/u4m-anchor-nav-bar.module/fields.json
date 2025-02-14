@@ -102,28 +102,6 @@
     "text" : "Unique Needs"
   } ]
 }, {
-  "id" : "fd87a953-3592-1444-7502-dcb6bb966aa2",
-  "name" : "style",
-  "label" : "Style",
-  "required" : false,
-  "locked" : false,
-  "children" : [ {
-    "id" : "0681ff02-cfbe-b237-e5f4-3d88d819bd47",
-    "name" : "gradient_field",
-    "label" : "Gradient",
-    "required" : false,
-    "locked" : false,
-    "type" : "gradient",
-    "display_width" : null,
-    "default" : { }
-  } ],
-  "tab" : "STYLE",
-  "expanded" : false,
-  "group_occurrence_meta" : null,
-  "type" : "group",
-  "display_width" : null,
-  "default" : { }
-}, {
   "id" : "module_overrides",
   "name" : "module_overrides",
   "label" : "Module Overrides",
@@ -744,4 +722,4 @@
       "custom_size" : 1296
     }
   }
-} ]
+} ] 
