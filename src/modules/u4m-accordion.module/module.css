@@ -39,6 +39,7 @@ html {
   align-items: center;
   color: #213944;
   font-weight: 600;
+  font-size: 19rem;
 }
 .u4m-accordion .accordionItemsContainer .accItem h6 svg.remove {
   display: none;

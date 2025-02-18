@@ -19,6 +19,7 @@
         align-items: center;
         color: $heading;
         font-weight: 600;
+        @include size19;
         svg.remove {
           display: none;
         }
