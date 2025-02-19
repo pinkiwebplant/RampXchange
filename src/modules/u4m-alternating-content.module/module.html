@@ -9,7 +9,7 @@
 {% endif %}
 {% endif %}
 <div class="page-center ">
-	<div class="row {{ module.module_settings.select_content_alignment }} {{ module.media_section.select_media_type }}">
+	<div class="row {{ module.module_settings.select_content_alignment }} {{ module.media_section.select_media_type }} {% if module.module_settings.select_content_alignment_mobile %}mb{{ module.module_settings.select_content_alignment_mobile }}{%  endif %}">
 		<div class="left-section">
 			<div class="intro_wrapp">
 				{{macros.introGroup(module.intro_content)}}

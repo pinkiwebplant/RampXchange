@@ -437,3 +437,15 @@ section.u4m-filtered-content .featCardsListWrap .pagination nav button:not(.prev
 section.u4m-filtered-content .featCardsListWrap .pagination nav button.active {
   border-bottom: 2px solid #006f3c;
 }
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.cardItem {
+  animation: fadeIn 2s ease-in-out;
+}

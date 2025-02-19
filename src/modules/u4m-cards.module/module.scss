@@ -125,6 +125,10 @@
         &.fullwdt .icons_wrpp {
           margin: -36px -24px 0;
         }
+        &.fullwdt .topcntt.top .icon {
+          width: 100%;
+          height: auto;
+        }
         &.cards_reverse_text {
           .eyebrow_text {
             color: $white !important;
@@ -229,7 +233,15 @@
           display: flex;
           flex-direction: column;
           height: 100%;
-
+          &.top .icon {
+            width: 64px;
+            height: 64px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-left: auto;
+            margin-right: auto;
+          }
           &.left {
             @include phoneMin {
               flex-direction: row;

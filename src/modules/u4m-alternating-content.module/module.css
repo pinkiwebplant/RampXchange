@@ -33,6 +33,12 @@ html {
     background-size: cover !important;
   }
 }
+.u4m-alternating-content .row.mbbottom {
+  flex-direction: column-reverse !important;
+}
+.u4m-alternating-content .row.mbtop {
+  flex-direction: column !important;
+}
 .u4m-alternating-content.left_col {
   max-width: 1440px;
 }

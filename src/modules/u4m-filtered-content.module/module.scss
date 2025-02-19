@@ -203,3 +203,16 @@ section.u4m-filtered-content {
     }
   }
 }
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.cardItem {
+  animation: fadeIn 2s ease-in-out;
+}

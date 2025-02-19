@@ -151,6 +151,10 @@ html {
 .u4m-cards .btmCntt .inner_wrpp.intro_content .items.fullwdt .icons_wrpp {
   margin: -36px -24px 0;
 }
+.u4m-cards .btmCntt .inner_wrpp.intro_content .items.fullwdt .topcntt.top .icon {
+  width: 100%;
+  height: auto;
+}
 .u4m-cards .btmCntt .inner_wrpp.intro_content .items.cards_reverse_text .eyebrow_text {
   color: #ffffff !important;
 }
@@ -246,6 +250,15 @@ html {
   display: flex;
   flex-direction: column;
   height: 100%;
+}
+.u4m-cards .btmCntt .inner_wrpp.intro_content .items .topcntt.top .icon {
+  width: 64px;
+  height: 64px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
 }
 @media (min-width: 581px) {
   .u4m-cards .btmCntt .inner_wrpp.intro_content .items .topcntt.left {
