@@ -366,6 +366,16 @@
     "display_width" : null,
     "default" : "%"
   }, {
+    "id" : "bf852eda-eb24-2003-97eb-909b812b9e9f",
+    "name" : "suffix_font_weight",
+    "label" : "Suffix Font Weight",
+    "required" : false,
+    "locked" : false,
+    "display" : "text",
+    "step" : 1,
+    "type" : "number",
+    "display_width" : null
+  }, {
     "id" : "87179d9d-1f6e-538e-284a-faa991f3f6bb",
     "name" : "caption",
     "label" : "Caption",

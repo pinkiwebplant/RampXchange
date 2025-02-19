@@ -76,9 +76,10 @@ section.u4m-filtered-content {
               .itemCnWrap {
                 .itemCntSec {
                   .itemTags {
-                    font-weight: 600;
+                    font-weight: 400;
                     @include size16;
                     margin-bottom: 32px;
+                    text-shadow: 1px 0 0 currentColor;
                   }
                   .itemTitle {
                     margin-bottom: 8px;

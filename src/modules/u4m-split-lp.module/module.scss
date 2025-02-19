@@ -1,6 +1,9 @@
 @import "../../css/_module-imports";
 .u4m-split-lp {
   &.reverse-text {
+    .flex_row .leftSec .intro_content .intro_title {
+      color: $white;
+    }
     .formContent {
       * {
         color: inherit;

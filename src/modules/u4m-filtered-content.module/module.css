@@ -210,9 +210,10 @@ section.u4m-filtered-content .topSec .flex_row .featCardsOuter .cardItems .cardI
   }
 }
 section.u4m-filtered-content .topSec .flex_row .featCardsOuter .cardItems .cardItem .itemInr .itemCnWrap .itemCntSec .itemTags {
-  font-weight: 600;
+  font-weight: 400;
   font-size: 16rem;
   margin-bottom: 32px;
+  text-shadow: 1px 0 0 currentColor;
 }
 section.u4m-filtered-content .topSec .flex_row .featCardsOuter .cardItems .cardItem .itemInr .itemCnWrap .itemCntSec .itemTitle {
   margin-bottom: 8px;

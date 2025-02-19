@@ -3796,8 +3796,18 @@ section[class*=u4m-] {
 .intro_content .intro_title {
   margin-bottom: 20rem;
 }
+@media (max-width: 1024px) {
+  .intro_content .intro_title br {
+    display: none;
+  }
+}
 .intro_content .intro_desc {
   margin-bottom: 0;
+}
+@media (max-width: 1024px) {
+  .intro_content .intro_desc br {
+    display: none;
+  }
 }
 .intro_content .intro_desc p:last-child {
   margin: 0;
@@ -10437,7 +10447,8 @@ section.u4m-blog-post div.comments div.content form .hs-button:hover, section.u4
 }
 .footer-wrapper .footer .footer-top-inner .footer-logo-col .login-menu ul li a:hover {
   color: #006f3c;
-  font-weight: 600;
+  text-shadow: 1px 0 0 currentColor;
+  text-decoration: underline;
 }
 .footer-wrapper .footer .footer-top-inner .footer-menu {
   width: calc(100% - 453px);
@@ -10525,7 +10536,8 @@ section.u4m-blog-post div.comments div.content form .hs-button:hover, section.u4
 }
 .footer-wrapper .footer .footer-top-inner .footer-menu .hs-menu-wrapper > ul > li .hs-menu-children-wrapper > li > a:hover {
   color: #006f3c;
-  font-weight: 600;
+  text-shadow: 1px 0 0 currentColor;
+  text-decoration: underline;
 }
 .footer-wrapper .footer .bottom-footer {
   border-top: 1px solid #dbdbdb;
@@ -10560,7 +10572,8 @@ section.u4m-blog-post div.comments div.content form .hs-button:hover, section.u4
 }
 .footer-wrapper .footer .bottom-footer .privacy-menu ul > li > a:hover {
   color: #006f3c;
-  font-weight: 600;
+  text-shadow: 1px 0 0 currentColor;
+  text-decoration: underline;
 }
 .footer-wrapper .footer .bottom-footer .copyright {
   margin-top: 28px;
@@ -10650,7 +10663,7 @@ section.u4m-blog-post div.comments div.content form .hs-button:hover, section.u4
 }
 .header-wrapper .header-top-menu .hs-menu-wrapper ul li a:hover {
   color: #006f3c;
-  font-weight: 600;
+  text-shadow: 1px 0 0 currentColor;
 }
 .header-wrapper .main-header {
   background: linear-gradient(89.99deg, #ffffff 61%, #f9f5ee 100%);
@@ -10761,7 +10774,7 @@ section.u4m-blog-post div.comments div.content form .hs-button:hover, section.u4
   margin-bottom: 0;
 }
 .header-wrapper .main-header .row-fluid .site_menu .hs-menu-wrapper ul li.active {
-  font-weight: 600;
+  text-shadow: 1px 0 0 currentColor;
 }
 @media (max-width: 1280px) {
   .header-wrapper .main-header .row-fluid .site_menu .hs-menu-wrapper ul li {
@@ -10818,7 +10831,7 @@ section.u4m-blog-post div.comments div.content form .hs-button:hover, section.u4
 }
 .header-wrapper .main-header .row-fluid .site_menu .hs-menu-wrapper ul li a:hover {
   color: #006f3c;
-  font-weight: 600;
+  text-shadow: 1px 0 0 currentColor;
 }
 .header-wrapper .main-header .row-fluid .site_menu .hs-menu-wrapper ul li ul.hs-menu-children-wrapper {
   top: 100%;

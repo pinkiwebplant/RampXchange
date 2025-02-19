@@ -23,7 +23,7 @@
       transition: $animation1;
       &:hover {
         color: $action1;
-        font-weight: 600;
+        text-shadow: 1px 0 0 currentColor;
       }
     }
     a.cm_btn.active {
@@ -39,7 +39,10 @@
   right: 0;
   left: 0;
   top: 128px;
-  z-index: 100;
+  z-index: 1000;
+  @include navbreak {
+    top: 124px;
+  }
   @include tabletmid {
     position: unset;
   }

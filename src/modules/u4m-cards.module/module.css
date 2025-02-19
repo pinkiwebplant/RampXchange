@@ -148,6 +148,9 @@ html {
   border-radius: 4rem;
   overflow: hidden;
 }
+.u4m-cards .btmCntt .inner_wrpp.intro_content .items.fullwdt .icons_wrpp {
+  margin: -36px -24px 0;
+}
 .u4m-cards .btmCntt .inner_wrpp.intro_content .items.cards_reverse_text .eyebrow_text {
   color: #ffffff !important;
 }
@@ -184,7 +187,7 @@ html {
   }
 }
 .u4m-cards .btmCntt .inner_wrpp.intro_content .items .innerWrpp .icon {
-  margin-bottom: 32px;
+  margin-bottom: 24px;
 }
 .u4m-cards .btmCntt .inner_wrpp.intro_content .items .innerWrpp .icon svg {
   fill: currentColor;

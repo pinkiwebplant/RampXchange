@@ -68,6 +68,9 @@ html {
 .u4m-team-grid .team_grid_row .team_item .bio_popup_text a:hover {
   color: #213944;
 }
+.u4m-team-grid .team_grid_row .team_item .member_share {
+  margin-top: 15px;
+}
 .u4m-team-grid .team_grid_row .team_item .member_share ul {
   list-style: none;
   margin: 0;

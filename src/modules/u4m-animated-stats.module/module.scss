@@ -52,6 +52,8 @@
               @include h6;
               margin-bottom: 0;
               font-weight: 600;
+              @include size25;
+              color: inherit;
               @include phone {
                 margin-bottom: 0;
               }

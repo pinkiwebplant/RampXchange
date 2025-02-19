@@ -1058,6 +1058,16 @@
       "type" : "boolean",
       "display_width" : null,
       "default" : true
+    }, {
+      "id" : "94b038ca-3fba-b842-10a2-1993551f40a0",
+      "name" : "apply_image_full_width",
+      "label" : "Apply Image Full Width",
+      "required" : false,
+      "locked" : false,
+      "display" : "checkbox",
+      "type" : "boolean",
+      "display_width" : null,
+      "default" : false
     } ],
     "tab" : "CONTENT",
     "expanded" : false,
@@ -1081,7 +1091,8 @@
         "opacity" : null
       },
       "content_alignment" : "center",
-      "enabled_drop_shadow" : true
+      "enabled_drop_shadow" : true,
+      "apply_image_full_width" : false
     }
   } ],
   "tab" : "CONTENT",
@@ -1107,7 +1118,8 @@
         "opacity" : null
       },
       "content_alignment" : "center",
-      "enabled_drop_shadow" : true
+      "enabled_drop_shadow" : true,
+      "apply_image_full_width" : false
     }
   }
 }, {

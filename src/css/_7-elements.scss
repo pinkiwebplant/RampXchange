@@ -672,11 +672,20 @@ section[class*="u4m-"] {
 
   .intro_title {
     margin-bottom: 20rem;
+    @include tablet {
+      br {
+        display: none;
+      }
+    }
   }
 
   .intro_desc {
     margin-bottom: 0;
-
+    @include tablet {
+      br {
+        display: none;
+      }
+    }
     p:last-child {
       margin: 0;
     }

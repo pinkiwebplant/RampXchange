@@ -1,264 +1,267 @@
 @import "../../css/_module-imports";
 
 .u4m-cards {
-	.btmCntt {
-		.inner_wrpp.intro_content {
-			max-width: 100%;
-			margin: 0;
-			padding: 0;
-			display: flex;
-			gap: 20px;
-			flex-wrap: wrap;
-			&.img_cols {
-				gap: 32px;
-				&.cols_two {
-					.items {
-						width: 100%;
-						@include tabletvertmin {
-							width: calc((100% - 32px) / 2);
-						}
-					}
-				}
-				&.cols_three {
-					.items {
-						width: 100%;
-						@include tabletvertmin {
-							width: calc((100% - 32px) / 2);
-						}
-						@include tabletmidmin {
-							width: calc((100% - 64px) / 3);
-						}
-					}
-				}
-				&.cols_four {
-					gap: 20px;
-					.items {
-						width: 100%;
-						@include tabletvertmin {
-							width: calc((100% - 20px) / 2);
-						}
-						@include tabletmidmin {
-							width: calc((100% - 40px) / 3);
-						}
-						@include navbreakMin {
-							width: calc((100% - 60px) / 4);
-						}
-					}
-				}
+  .btmCntt {
+    .inner_wrpp.intro_content {
+      max-width: 100%;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      gap: 20px;
+      flex-wrap: wrap;
+      &.img_cols {
+        gap: 32px;
+        &.cols_two {
+          .items {
+            width: 100%;
+            @include tabletvertmin {
+              width: calc((100% - 32px) / 2);
+            }
+          }
+        }
+        &.cols_three {
+          .items {
+            width: 100%;
+            @include tabletvertmin {
+              width: calc((100% - 32px) / 2);
+            }
+            @include tabletmidmin {
+              width: calc((100% - 64px) / 3);
+            }
+          }
+        }
+        &.cols_four {
+          gap: 20px;
+          .items {
+            width: 100%;
+            @include tabletvertmin {
+              width: calc((100% - 20px) / 2);
+            }
+            @include tabletmidmin {
+              width: calc((100% - 40px) / 3);
+            }
+            @include navbreakMin {
+              width: calc((100% - 60px) / 4);
+            }
+          }
+        }
 
-				.items {
-					.innerWrpp {
-						padding: 0;
-						.btmcntt {
-							padding: 36px 24px;
-						}
-					}
-				}
-				.btns {
-					margin-top: 20px !important;
-				}
-			}
-			&.icons_cols {
-				&.cols_two {
-					gap: 32px;
-					.items {
-						width: 100%;
-						@include tabletvertmin {
-							width: calc((100% - 32px) / 2);
-						}
-					}
-				}
-				&.cols_three {
-					.items {
-						width: 100%;
-						@include tabletvertmin {
-							width: calc((100% - 20px) / 2);
-						}
-						@include tabletmidmin {
-							width: calc((100% - 40px) / 3);
-						}
-					}
-				}
-				&.cols_four {
-					.items {
-						width: 100%;
-						@include tabletvertmin {
-							width: calc((100% - 20px) / 2);
-						}
-						@include tabletmidmin {
-							width: calc((100% - 40px) / 3);
-						}
-						@include navbreakMin {
-							width: calc((100% - 60px) / 4);
-						}
-					}
-				}
-			}
-			.btmcntt {
-				height: 100%;
-				display: flex;
-				flex-direction: column;
-			}
-			&.center {
-				text-align: center;
+        .items {
+          .innerWrpp {
+            padding: 0;
+            .btmcntt {
+              padding: 36px 24px;
+            }
+          }
+        }
+        .btns {
+          margin-top: 20px !important;
+        }
+      }
+      &.icons_cols {
+        &.cols_two {
+          gap: 32px;
+          .items {
+            width: 100%;
+            @include tabletvertmin {
+              width: calc((100% - 32px) / 2);
+            }
+          }
+        }
+        &.cols_three {
+          .items {
+            width: 100%;
+            @include tabletvertmin {
+              width: calc((100% - 20px) / 2);
+            }
+            @include tabletmidmin {
+              width: calc((100% - 40px) / 3);
+            }
+          }
+        }
+        &.cols_four {
+          .items {
+            width: 100%;
+            @include tabletvertmin {
+              width: calc((100% - 20px) / 2);
+            }
+            @include tabletmidmin {
+              width: calc((100% - 40px) / 3);
+            }
+            @include navbreakMin {
+              width: calc((100% - 60px) / 4);
+            }
+          }
+        }
+      }
+      .btmcntt {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+      }
+      &.center {
+        text-align: center;
 
-				.intro_btn_wrap {
-					justify-content: center;
-				}
-			}
-			&.left {
-				text-align: left;
-				.intro_btn_wrap {
-					justify-content: flex-start;
-				}
-			}
-			&.right {
-				text-align: right;
-				.intro_btn_wrap {
-					justify-content: flex-end;
-				}
-			}
-			.items {
-				max-width: 100%;
-				border-radius: $borderRadius;
-				overflow: hidden;
-				&.cards_reverse_text {
-					.eyebrow_text {
-						color: $white !important;
-					}
-					.intro_title {
-						color: $white !important;
-					}
-					.intro_desc > * {
-						color: $white !important;
-					}
+        .intro_btn_wrap {
+          justify-content: center;
+        }
+      }
+      &.left {
+        text-align: left;
+        .intro_btn_wrap {
+          justify-content: flex-start;
+        }
+      }
+      &.right {
+        text-align: right;
+        .intro_btn_wrap {
+          justify-content: flex-end;
+        }
+      }
+      .items {
+        max-width: 100%;
+        border-radius: $borderRadius;
+        overflow: hidden;
+        &.fullwdt .icons_wrpp {
+          margin: -36px -24px 0;
+        }
+        &.cards_reverse_text {
+          .eyebrow_text {
+            color: $white !important;
+          }
+          .intro_title {
+            color: $white !important;
+          }
+          .intro_desc > * {
+            color: $white !important;
+          }
 
-					.arrow-link {
-						color: $white !important;
+          .arrow-link {
+            color: $white !important;
 
-						&:focus {
-							color: $white !important;
-						}
-						&:hover {
-							color: $white !important;
-						}
-					}
-				}
-				.innerWrpp {
-					padding: 36px 24px;
-					display: flex;
-					flex-direction: column;
-					height: 100%;
-					.topcnttimg {
-						padding-bottom: 56.66%;
-						background-position: center;
-						background-size: cover;
-						background-repeat: no-repeat;
-						@include tabletvertmin {
-							padding-bottom: 252px;
-						}
-					}
-					.icon {
-						margin-bottom: 32px;
-						svg {
-							fill: currentColor;
-							color: currentColor;
-							path {
-								fill: currentColor;
-								color: currentColor;
-							}
-						}
-						img {
-							border-radius: $borderRadius;
-						}
-					}
-					.icon.small {
-						svg {
-							width: 56px;
-							height: 56px;
-						}
-					}
-					.icon.large {
-						svg {
-							width: 100px;
-							height: 100px;
-						}
-					}
-					.icon.medium {
-						svg {
-							width: 64px;
-							height: 64px;
-						}
-					}
-					.intro_btn_wrap {
-						margin-top: auto;
-						.btns {
-							margin-top: 34px;
-						}
-					}
-					.eyebrow_text.sm {
-						@include size13;
-						color: $action1;
-					}
-					.intro_title {
-						color: $heading;
-					}
-					.intro_desc > * {
-						color: $heading;
-					}
-					.btn_item {
-						margin-top: 20px;
-					}
-					.arrow-link {
-						color: $action1;
-						padding: 0;
+            &:focus {
+              color: $white !important;
+            }
+            &:hover {
+              color: $white !important;
+            }
+          }
+        }
+        .innerWrpp {
+          padding: 36px 24px;
+          display: flex;
+          flex-direction: column;
+          height: 100%;
+          .topcnttimg {
+            padding-bottom: 56.66%;
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            @include tabletvertmin {
+              padding-bottom: 252px;
+            }
+          }
+          .icon {
+            margin-bottom: 24px;
+            svg {
+              fill: currentColor;
+              color: currentColor;
+              path {
+                fill: currentColor;
+                color: currentColor;
+              }
+            }
+            img {
+              border-radius: $borderRadius;
+            }
+          }
+          .icon.small {
+            svg {
+              width: 56px;
+              height: 56px;
+            }
+          }
+          .icon.large {
+            svg {
+              width: 100px;
+              height: 100px;
+            }
+          }
+          .icon.medium {
+            svg {
+              width: 64px;
+              height: 64px;
+            }
+          }
+          .intro_btn_wrap {
+            margin-top: auto;
+            .btns {
+              margin-top: 34px;
+            }
+          }
+          .eyebrow_text.sm {
+            @include size13;
+            color: $action1;
+          }
+          .intro_title {
+            color: $heading;
+          }
+          .intro_desc > * {
+            color: $heading;
+          }
+          .btn_item {
+            margin-top: 20px;
+          }
+          .arrow-link {
+            color: $action1;
+            padding: 0;
 
-						&:focus {
-							color: $heading;
-						}
-						&:hover {
-							color: $heading;
-						}
-					}
-				}
-				.topcntt {
-					margin-bottom: 0;
-					display: flex;
-					flex-direction: column;
-					height: 100%;
+            &:focus {
+              color: $heading;
+            }
+            &:hover {
+              color: $heading;
+            }
+          }
+        }
+        .topcntt {
+          margin-bottom: 0;
+          display: flex;
+          flex-direction: column;
+          height: 100%;
 
-					&.left {
-						@include phoneMin {
-							flex-direction: row;
-							gap: 12px;
-							.icons_wrpp {
-								max-width: 64px;
-								width: 100%;
-								display: flex;
-								justify-content: center;
-							}
-							.btmcntt {
-								max-width: calc(100% - 64px);
-								.intro_title {
-									margin-bottom: 10rem;
-								}
-								.innerWrpp {
-									.icon {
-										margin: 0;
-									}
-								}
-							}
-						}
-					}
-				}
+          &.left {
+            @include phoneMin {
+              flex-direction: row;
+              gap: 12px;
+              .icons_wrpp {
+                max-width: 64px;
+                width: 100%;
+                display: flex;
+                justify-content: center;
+              }
+              .btmcntt {
+                max-width: calc(100% - 64px);
+                .intro_title {
+                  margin-bottom: 10rem;
+                }
+                .innerWrpp {
+                  .icon {
+                    margin: 0;
+                  }
+                }
+              }
+            }
+          }
+        }
 
-				&.dropShadow {
-					filter: $dropshadow;
-				}
-			}
-			@include tabletmid {
-				flex-wrap: wrap;
-			}
-		}
-	}
+        &.dropShadow {
+          filter: $dropshadow;
+        }
+      }
+      @include tabletmid {
+        flex-wrap: wrap;
+      }
+    }
+  }
 }

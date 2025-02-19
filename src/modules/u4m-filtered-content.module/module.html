@@ -92,7 +92,8 @@
 		<div class="cardSctn row-fluid">
 			<div class="flex_row cardItems resourceList">
 				{% for row in resouces %}
-				<div class="resourceCard cmCol3 cardItem {{ row.type.name|lower|replace(' ','-') }} {% for tag in row.topic %}{{ tag.name|lower|replace(' ','-') }} {% endfor %}">
+				<div class="resourceCard cmCol3 cardItem {{ row.type.name|lower|replace(' ','-') }} {% for tag in row.topic %}{{ tag.name|lower|replace(' ','-') }} {% endfor %}"   data-aos='fade-up'
+        data-aos-delay='{{ loop.index }}00'>
 					<div class="itemInr {{ module.module_settings.select_card_theme }} {% if module.module_settings.reverse_text %}cardColor{% endif %}" {% if module.module_settings.select_card_theme == "custom" %}style="background-color:{{ module.module_settings.background_color.rgba }}"{%  endif %}>
 						{% if row.image.url %}
 						<div class="itemImg">

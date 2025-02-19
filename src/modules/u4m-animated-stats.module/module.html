@@ -27,7 +27,7 @@
               <span class="prefix">{{ item.prefix }}</span>
               {# 							<span class="counter-value counter" data-count="{{ item.numeric_stat }}">0</span> #}
               <span class="counter-value counter" data-count="{{ item.numeric_stat }}">{{ item.numeric_stat }}</span>
-              <span class="suffix">{{ item.suffix }}</span>
+              <span class="suffix" style="font-weight:{{ item.suffix_font_weight }}">{{ item.suffix }}</span>
             </span>
             <span class="caption {{ module.card_settings.select_content_text_color }}" {% if module.card_settings.select_content_text_color == "custom" %}style="color:{{ module.card_settings.content_text_color.rgba }}"{%  endif %}>{{ item.caption }}</span>
           </div>

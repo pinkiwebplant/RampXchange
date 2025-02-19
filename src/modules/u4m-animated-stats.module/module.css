@@ -99,6 +99,8 @@ html {
   color: #006f3c;
   margin-bottom: 0;
   font-weight: 600;
+  font-size: 25rem;
+  color: inherit;
 }
 @media (max-width: 1024px) {
   .u4m-animated-stats .statistics-items .animated-stats-item .stats-item .stats-item-inn .number .prefix,
