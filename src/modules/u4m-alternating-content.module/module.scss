@@ -21,7 +21,6 @@
     flex-direction: column !important;
   }
   &.left_col {
-    max-width: 1440px;
     .bg_image {
       background-position: top right;
       background-size: contain;
@@ -31,7 +30,6 @@
     }
   }
   &.right_col {
-    max-width: 1440px;
     .bg_image {
       background-position: top left;
       background-size: contain;

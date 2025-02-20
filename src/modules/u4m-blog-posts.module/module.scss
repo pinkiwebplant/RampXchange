@@ -30,5 +30,10 @@
   }
   .CardWrap {
     @include cardItem;
+    .itemCntSec .tag_wrap {
+      display: flex;
+      align-items: flex-start;
+      gap: 7px;
+    }
   }
 }

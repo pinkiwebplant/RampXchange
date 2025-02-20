@@ -383,17 +383,15 @@
     position: fixed;
     width: 100%;
     top: 0;
-    z-index: 999;
+    z-index: 9999;
   }
 }
 
 .page-scrolled {
   .header-wrapper .main-header {
-    background: $hdscrollgradient;
-    backdrop-filter: blur(2px);
+    background: $white;
   }
   .header-wrapper .header-top {
-    background: rgba($white, 90%);
-    backdrop-filter: blur(2px);
+    background: $white;
   }
 }

@@ -39,18 +39,12 @@ html {
 .u4m-alternating-content .row.mbtop {
   flex-direction: column !important;
 }
-.u4m-alternating-content.left_col {
-  max-width: 1440px;
-}
 .u4m-alternating-content.left_col .bg_image {
   background-position: top right;
   background-size: contain;
 }
 .u4m-alternating-content.left_col .bg_overlayColor {
   background: linear-gradient(90.02deg, #ffffff 55.51%, rgba(255, 255, 255, 0) 90%);
-}
-.u4m-alternating-content.right_col {
-  max-width: 1440px;
 }
 .u4m-alternating-content.right_col .bg_image {
   background-position: top left;

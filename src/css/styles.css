@@ -11002,14 +11002,12 @@ section.u4m-blog-post div.comments div.content form .hs-button:hover, section.u4
   position: fixed;
   width: 100%;
   top: 0;
-  z-index: 999;
+  z-index: 9999;
 }
 
 .page-scrolled .header-wrapper .main-header {
-  background: linear-gradient(89.99deg, rgba(255, 255, 255, 0.8) 61%, rgba(249, 245, 238, 0.8) 100%);
-  backdrop-filter: blur(2px);
+  background: #ffffff;
 }
 .page-scrolled .header-wrapper .header-top {
-  background: rgba(255, 255, 255, 0.9);
-  backdrop-filter: blur(2px);
+  background: #ffffff;
 }

@@ -242,6 +242,7 @@
 			{% endif %}
 			<div class="itemCnWrap">
 				<div class="itemCntSec">
+				<div class="tag_wrap">
 					{% if item.topic_list %}
 					<div class="itemTags">
 						{% set included_topics = item.topic_list | rejectattr("slug", "equalto", "featured") | list %}
@@ -251,6 +252,7 @@
 					</div>
 					{% endif %}
 					<div class="itemMeta">
+					| 
 						<span class="reading-minutes">
 							{% set initialPostWords = item.post_body|striptags|wordcount %}
 							{% set calculatedPostWords = (initialPostWords/100) * 100 %}
@@ -261,6 +263,7 @@
 							{{ finishedPostWords|round }} minute read
 							{% endif %}
 						</span> | <span class="itemDate">{{ item.publish_date_local_time.strftime('%B %e, %Y') }}</span>
+					</div>
 					</div>
 					{% if item.name %}
 					<div class="itemTitle">

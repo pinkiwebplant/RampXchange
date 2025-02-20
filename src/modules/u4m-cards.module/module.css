@@ -131,6 +131,10 @@ html {
 .u4m-cards .btmCntt .inner_wrpp.intro_content.center .intro_btn_wrap {
   justify-content: center;
 }
+.u4m-cards .btmCntt .inner_wrpp.intro_content.center .topcntt.top .icon {
+  margin-left: auto;
+  margin-right: auto;
+}
 .u4m-cards .btmCntt .inner_wrpp.intro_content.left {
   text-align: left;
 }
@@ -142,6 +146,10 @@ html {
 }
 .u4m-cards .btmCntt .inner_wrpp.intro_content.right .intro_btn_wrap {
   justify-content: flex-end;
+}
+.u4m-cards .btmCntt .inner_wrpp.intro_content.right .topcntt.top .icon {
+  margin-left: auto;
+  margin-right: 0;
 }
 .u4m-cards .btmCntt .inner_wrpp.intro_content .items {
   max-width: 100%;
@@ -257,8 +265,6 @@ html {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-left: auto;
-  margin-right: auto;
 }
 @media (min-width: 581px) {
   .u4m-cards .btmCntt .inner_wrpp.intro_content .items .topcntt.left {
