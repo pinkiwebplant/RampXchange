@@ -2956,6 +2956,54 @@ html {
 }
 
 /* Keep background from scrolling when menu is open */
+@font-face {
+  font-family: "Aktive Grotesk";
+  src: url("https://use.typekit.net/af/63eba7/00000000000000007753ca4f/30/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3") format("woff2"), url("https://use.typekit.net/af/63eba7/00000000000000007753ca4f/30/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3") format("woff"), url("https://use.typekit.net/af/63eba7/00000000000000007753ca4f/30/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3") format("opentype");
+  font-display: auto;
+  font-style: normal;
+  font-weight: 400;
+  font-stretch: normal;
+}
+@font-face {
+  font-family: "Aktive Grotesk";
+  src: url("https://use.typekit.net/af/f7a8b2/00000000000000007753ca28/30/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i4&v=3") format("woff2"), url("https://use.typekit.net/af/f7a8b2/00000000000000007753ca28/30/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i4&v=3") format("woff"), url("https://use.typekit.net/af/f7a8b2/00000000000000007753ca28/30/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i4&v=3") format("opentype");
+  font-display: auto;
+  font-style: italic;
+  font-weight: 400;
+  font-stretch: normal;
+}
+@font-face {
+  font-family: "Aktive Grotesk";
+  src: url("https://use.typekit.net/af/2b93b6/00000000000000007753ca37/30/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3") format("woff2"), url("https://use.typekit.net/af/2b93b6/00000000000000007753ca37/30/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3") format("woff"), url("https://use.typekit.net/af/2b93b6/00000000000000007753ca37/30/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3") format("opentype");
+  font-display: auto;
+  font-style: normal;
+  font-weight: 700;
+  font-stretch: normal;
+}
+@font-face {
+  font-family: "Aktive Grotesk";
+  src: url("https://use.typekit.net/af/ae6138/00000000000000007753ca27/30/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i7&v=3") format("woff2"), url("https://use.typekit.net/af/ae6138/00000000000000007753ca27/30/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i7&v=3") format("woff"), url("https://use.typekit.net/af/ae6138/00000000000000007753ca27/30/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i7&v=3") format("opentype");
+  font-display: auto;
+  font-style: italic;
+  font-weight: 700;
+  font-stretch: normal;
+}
+@font-face {
+  font-family: "Aktive Grotesk";
+  src: url("https://use.typekit.net/af/434507/00000000000000007753ca2a/30/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n2&v=3") format("woff2"), url("https://use.typekit.net/af/434507/00000000000000007753ca2a/30/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n2&v=3") format("woff"), url("https://use.typekit.net/af/434507/00000000000000007753ca2a/30/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n2&v=3") format("opentype");
+  font-display: auto;
+  font-style: normal;
+  font-weight: 200;
+  font-stretch: normal;
+}
+@font-face {
+  font-family: "Aktive Grotesk";
+  src: url("https://use.typekit.net/af/0f6952/00000000000000007753ca4e/30/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i2&v=3") format("woff2"), url("https://use.typekit.net/af/0f6952/00000000000000007753ca4e/30/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i2&v=3") format("woff"), url("https://use.typekit.net/af/0f6952/00000000000000007753ca4e/30/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i2&v=3") format("opentype");
+  font-display: auto;
+  font-style: italic;
+  font-weight: 200;
+  font-stretch: normal;
+}
 html.menu-open {
   overflow-y: hidden;
 }
@@ -2968,9 +3016,9 @@ html {
 
 /* make html visible after Firefox flash in hack */
 body {
-  font-family: "Inter";
-  font-size: 16rem;
-  line-height: 1.3;
+  font-family: "Aktive Grotesk", "Arial, sans serif";
+  font-size: 15rem;
+  line-height: 1.5;
   color: #213944;
   font-weight: normal;
   -webkit-font-smoothing: antialiased;
@@ -2995,11 +3043,11 @@ h6 {
 }
 
 h1 {
-  font-family: "Inter";
-  font-size: 48rem;
-  font-weight: 600;
+  font-family: "Aktive Grotesk", "Arial, sans serif";
+  font-size: 36rem;
+  font-weight: 400;
   margin-bottom: 30rem;
-  line-height: 1;
+  line-height: 1.2;
   margin-top: 0;
 }
 @media (max-width: 1024px) {
@@ -3015,11 +3063,11 @@ h1 {
 }
 
 h2 {
-  font-family: "Inter";
-  font-size: 40rem;
-  font-weight: 600;
+  font-family: "Aktive Grotesk", "Arial, sans serif";
+  font-size: 32rem;
+  font-weight: 400;
   margin-bottom: 30rem;
-  line-height: 1;
+  line-height: 1.2;
 }
 @media (max-width: 1024px) {
   h2 {
@@ -3034,11 +3082,11 @@ h2 {
 }
 
 h3 {
-  font-family: "Inter";
-  font-size: 33rem;
-  font-weight: 600;
+  font-family: "Aktive Grotesk", "Arial, sans serif";
+  font-size: 28rem;
+  font-weight: 400;
   margin-bottom: 30rem;
-  line-height: 1;
+  line-height: 1.2;
 }
 @media (max-width: 1024px) {
   h3 {
@@ -3053,11 +3101,11 @@ h3 {
 }
 
 h4 {
-  font-family: "Inter";
-  font-size: 28rem;
-  font-weight: 600;
+  font-family: "Aktive Grotesk", "Arial, sans serif";
+  font-size: 25rem;
+  font-weight: 400;
   margin-bottom: 30rem;
-  line-height: 1;
+  line-height: 1.2;
 }
 @media (max-width: 1024px) {
   h4 {
@@ -3066,17 +3114,17 @@ h4 {
 }
 @media (max-width: 580px) {
   h4 {
-    font-size: 20rem;
+    font-size: 22rem;
     margin-bottom: 20rem;
   }
 }
 
 h5 {
-  font-family: "Inter";
-  font-size: 23rem;
-  font-weight: 600;
+  font-family: "Aktive Grotesk", "Arial, sans serif";
+  font-size: 22rem;
+  font-weight: 400;
   margin-bottom: 30rem;
-  line-height: 1;
+  line-height: 1.2;
 }
 @media (max-width: 1024px) {
   h5 {
@@ -3091,11 +3139,12 @@ h5 {
 }
 
 h6 {
-  font-family: "Inter";
-  font-size: 19rem;
+  font-family: "Aktive Grotesk", "Arial, sans serif";
+  font-size: 20rem;
   font-weight: 600;
   margin-bottom: 30rem;
   line-height: 1;
+  color: #006f3c;
 }
 @media (max-width: 1024px) {
   h6 {
@@ -3335,9 +3384,9 @@ div#hs-eu-cookie-confirmation.hs-cookie-notification-position-bottom.can-use-gra
   max-width: 1240rem;
 }
 div#hs-eu-cookie-confirmation.hs-cookie-notification-position-bottom.can-use-gradients div#hs-eu-cookie-confirmation-inner p {
-  font-family: "Inter";
+  font-family: "Aktive Grotesk", "Arial, sans serif";
   font-size: 14rem;
-  line-height: 1.3;
+  line-height: 1.5;
   margin-bottom: 20rem;
   margin-bottom: 0;
 }
@@ -3352,12 +3401,12 @@ div#hs-eu-cookie-confirmation.hs-cookie-notification-position-bottom.can-use-gra
 }
 div#hs-eu-cookie-confirmation.hs-cookie-notification-position-bottom.can-use-gradients div#hs-eu-cookie-confirmation-inner div#hs-en-cookie-confirmation-buttons-area a#hs-eu-confirmation-button {
   display: inline-block;
-  font-family: "Inter";
+  font-family: "Aktive Grotesk", "Arial, sans serif";
   color: #ffffff;
-  background-color: #007c43;
-  border: 1px solid #007c43;
-  border-radius: 12rem;
-  padding: 11rem 24rem;
+  background-color: #006f3c;
+  border: 2px solid #006f3c;
+  border-radius: 4rem;
+  padding: 14rem 16rem;
   margin: 0;
   transition: 0.1s ease-in;
   font-weight: 600;
@@ -3374,39 +3423,36 @@ div#hs-eu-cookie-confirmation.hs-cookie-notification-position-bottom.can-use-gra
 }
 div#hs-eu-cookie-confirmation.hs-cookie-notification-position-bottom.can-use-gradients div#hs-eu-cookie-confirmation-inner div#hs-en-cookie-confirmation-buttons-area a#hs-eu-confirmation-button:hover, div#hs-eu-cookie-confirmation.hs-cookie-notification-position-bottom.can-use-gradients div#hs-eu-cookie-confirmation-inner div#hs-en-cookie-confirmation-buttons-area a#hs-eu-confirmation-button:focus {
   background-color: #ffffff;
-  color: #007c43;
+  color: #006f3c;
 }
 div#hs-eu-cookie-confirmation.hs-cookie-notification-position-bottom.can-use-gradients div#hs-eu-cookie-confirmation-inner div#hs-en-cookie-confirmation-buttons-area a#hs-eu-confirmation-button:hover {
   background-color: #000000 !important;
 }
 
 p {
-  font-family: "Inter";
-  font-size: 16rem;
-  line-height: 1.3;
   margin-bottom: 20rem;
 }
 
 a {
-  color: #007c43;
+  color: #006f3c;
   transition: 0.1s ease-in;
   display: inline-block;
   text-decoration-thickness: 2px;
   text-underline-offset: 4px;
 }
 a:hover {
-  color: #007c43;
+  color: #006f3c;
 }
 
 blockquote,
 blockquote p {
-  font-family: "Inter";
+  font-family: "Aktive Grotesk", "Arial, sans serif";
   font-size: 30rem;
   font-weight: bold;
-  line-height: 1.3;
+  line-height: 1.5;
   letter-spacing: 1rem;
   margin: 50rem auto;
-  color: #007c43;
+  color: #006f3c;
   display: block;
   max-width: 90%;
 }
@@ -3426,10 +3472,6 @@ strong {
 }
 
 ul {
-  font-family: "Inter";
-  font-size: 16rem;
-  line-height: 1.3;
-  margin-bottom: 20rem;
   list-style: disc;
   padding-left: 34rem;
   margin-top: 0;
@@ -3437,10 +3479,6 @@ ul {
 }
 
 ol {
-  font-family: "Inter";
-  font-size: 16rem;
-  line-height: 1.3;
-  margin-bottom: 20rem;
   list-style: decimal;
   padding-left: 40rem;
   margin-top: 0;
@@ -3465,7 +3503,7 @@ li {
   font-family: "Material Symbols Outlined";
   font-weight: normal;
   font-style: normal;
-  font-size: 16px;
+  font-size: 15px;
   line-height: 1;
   letter-spacing: normal;
   text-transform: none;
@@ -3481,13 +3519,17 @@ li {
   top: 0;
   width: 20px;
   height: 20px;
-  background: #c49e5b;
+  background: #dcecd6;
   border-radius: 100%;
   text-align: center;
   display: flex;
   align-items: center;
   justify-content: center;
+  color: #006f3c;
+}
+#main-content .reverse-text ul:not([class]) li:not([class])::before {
   color: #ffffff;
+  background: #c49e5b;
 }
 
 ul ul,
@@ -3498,11 +3540,11 @@ ol ul {
 }
 
 input {
-  font-family: "Inter";
+  font-family: "Aktive Grotesk", "Arial, sans serif";
 }
 
 button {
-  font-family: "Inter";
+  font-family: "Aktive Grotesk", "Arial, sans serif";
   cursor: pointer;
 }
 
@@ -3656,12 +3698,12 @@ section[class*=u4m-] {
 
 .hs-button {
   display: inline-block;
-  font-family: "Inter";
+  font-family: "Aktive Grotesk", "Arial, sans serif";
   color: #ffffff;
-  background-color: #007c43;
-  border: 1px solid #007c43;
-  border-radius: 12rem;
-  padding: 11rem 24rem;
+  background-color: #006f3c;
+  border: 2px solid #006f3c;
+  border-radius: 4rem;
+  padding: 14rem 16rem;
   margin: 0;
   transition: 0.1s ease-in;
   font-weight: 600;
@@ -3673,17 +3715,17 @@ section[class*=u4m-] {
 }
 .hs-button:hover, .hs-button:focus {
   background-color: #ffffff;
-  color: #007c43;
+  color: #006f3c;
 }
 
 .sec-btn {
   display: inline-block;
-  font-family: "Inter";
+  font-family: "Aktive Grotesk", "Arial, sans serif";
   color: #ffffff;
-  background-color: #007c43;
-  border: 1px solid #007c43;
-  border-radius: 12rem;
-  padding: 11rem 24rem;
+  background-color: #006f3c;
+  border: 2px solid #006f3c;
+  border-radius: 4rem;
+  padding: 14rem 16rem;
   margin: 0;
   transition: 0.1s ease-in;
   font-weight: 600;
@@ -3692,28 +3734,39 @@ section[class*=u4m-] {
   text-decoration: none;
   cursor: pointer;
   text-align: center;
-  color: #007c43;
+  color: #006f3c;
   background-color: #ffffff;
 }
 .sec-btn:hover, .sec-btn:focus {
   background-color: #ffffff;
-  color: #007c43;
+  color: #006f3c;
 }
 .sec-btn:hover, .sec-btn:focus {
-  background-color: #007c43;
+  background-color: #006f3c;
   color: #ffffff;
 }
 
 .arrow-link {
-  color: #007c43;
+  color: #006f3c;
   text-decoration: none;
 }
 .arrow-link:hover, .arrow-link:focus {
-  color: #213944;
+  color: #006f3c;
 }
 
 .intro_btn_wrap {
   margin: 20rem 0 0 0;
+}
+
+.eyebrow_text {
+  font-family: "Aktive Grotesk", "Arial, sans serif";
+  font-size: 16rem;
+  font-weight: 600;
+  line-height: 1;
+  display: block;
+  margin-bottom: 10rem;
+  color: #006f3c;
+  margin-bottom: 8rem;
 }
 
 .intro_content {
@@ -3725,20 +3778,36 @@ section[class*=u4m-] {
   margin-right: auto;
   padding: 0 20px;
 }
+@media (max-width: 767px) {
+  .intro_content {
+    padding: 0;
+  }
+}
 .intro_content .eyebrow_text {
-  font-family: "Inter";
-  font-size: 14rem;
-  font-weight: 500;
+  font-family: "Aktive Grotesk", "Arial, sans serif";
+  font-size: 16rem;
+  font-weight: 600;
   line-height: 1;
   display: block;
   margin-bottom: 10rem;
+  color: #006f3c;
   margin-bottom: 8rem;
 }
 .intro_content .intro_title {
   margin-bottom: 20rem;
 }
+@media (max-width: 1024px) {
+  .intro_content .intro_title br {
+    display: none;
+  }
+}
 .intro_content .intro_desc {
   margin-bottom: 0;
+}
+@media (max-width: 1024px) {
+  .intro_content .intro_desc br {
+    display: none;
+  }
 }
 .intro_content .intro_desc p:last-child {
   margin: 0;
@@ -3760,15 +3829,27 @@ section[class*=u4m-] {
   padding: 0px;
   gap: 4px;
   font-weight: 600;
+  padding: 15px 16px;
+  padding-left: 0;
+}
+.arrow-link:hover {
+  font-weight: 700;
+}
+.arrow-link:hover svg {
+  left: 5px;
 }
 
 .arrow-link svg {
   width: 12px;
   height: 12px;
+  position: relative;
+  left: 0;
+  transition: 0.25s ease-in;
 }
 
 .arrow-link svg path {
   fill: currentColor;
+  stroke: currentColor;
 }
 
 .reverse-text {
@@ -3787,7 +3868,7 @@ section[class*=u4m-] {
 }
 
 .forest_green {
-  background-color: #007c43;
+  background-color: #006f3c;
 }
 
 .dark_teal {
@@ -3819,7 +3900,7 @@ section[class*=u4m-] {
 }
 
 .forest_green_text {
-  color: #007c43;
+  color: #006f3c;
 }
 
 .dark_teal_text {
@@ -3851,7 +3932,7 @@ section[class*=u4m-] {
 }
 
 .forest_green_textclr svg path {
-  fill: #007c43;
+  fill: #006f3c;
 }
 
 .dark_teal_textclr svg path {
@@ -3879,11 +3960,11 @@ section[class*=u4m-] {
 }
 
 .white_bg_textclr svg path {
-  fill: #ffffff;
+  fill: #006f3c;
 }
 
 .forest_green_icon_bg svg circle {
-  fill: #007c43;
+  fill: #006f3c;
 }
 
 .dark_teal_icon_bg svg circle {
@@ -3903,7 +3984,7 @@ section[class*=u4m-] {
 }
 
 .golden_brown_icon_bg svg circle {
-  fill: #c49e5b;
+  fill: #dcecd6;
 }
 
 .soft_white_icon_bg svg circle {
@@ -3921,23 +4002,27 @@ section[class*=u4m-] {
 }
 
 .gradient1 {
-  background-image: linear-gradient(278.27deg, #315363 0%, #213944 100%);
+  background-image: linear-gradient(89.85deg, rgba(247, 248, 246, 0) 0.75%, rgba(252, 252, 252, 0.626667) 20.58%, #ffffff 34.45%, #f5f0e7 96.4%);
 }
 
 .gradient2 {
-  background-image: linear-gradient(278.27deg, #eeeeee 0%, #dbdbdb 100%);
+  background-image: linear-gradient(180deg, #f7f8f6 0%, #dcecd6 100%);
 }
 
 .gradient3 {
-  background-image: linear-gradient(360deg, rgba(0, 124, 67, 0.07) 0.01%, rgba(181, 221, 165, 0.07) 99.97%);
+  background-image: linear-gradient(180deg, #f7f8f6 0%, #e6f1e2 100%);
 }
 
 .gradient4 {
-  background-image: linear-gradient(341.11deg, #315363 12.77%, #213944 87.28%);
+  background-image: linear-gradient(180deg, #ffffff 54%, #f9fbf9 97%);
 }
 
 .gradient5 {
-  background-image: linear-gradient(180deg, #315363 0%, #213944 100%);
+  background-image: linear-gradient(278.27deg, #315363 0%, #213944 100%);
+}
+
+.gradient6 {
+  background-image: linear-gradient(90deg, #ffffff 0%, #f9f5ee 99.93%);
 }
 
 .form-title:empty {
@@ -3948,7 +4033,7 @@ form {
   background-color: #ffffff;
   padding: 40rem;
   max-width: 765rem;
-  border-radius: 12rem;
+  border-radius: 4rem;
   float: none;
   overflow: auto;
 }
@@ -3958,11 +4043,12 @@ form {
   }
 }
 form h3 {
-  font-family: "Inter";
-  font-size: 19rem;
+  font-family: "Aktive Grotesk", "Arial, sans serif";
+  font-size: 20rem;
   font-weight: 600;
   margin-bottom: 30rem;
   line-height: 1;
+  color: #006f3c;
 }
 @media (max-width: 1024px) {
   form h3 {
@@ -3977,9 +4063,9 @@ form h3 {
 }
 form div.legal-consent-container p,
 form div.legal-consent-container .hs-form-booleancheckbox label {
-  font-family: "Inter";
+  font-family: "Aktive Grotesk", "Arial, sans serif";
   font-size: 11rem;
-  line-height: 1.3;
+  line-height: 1.5;
   margin-bottom: 10rem;
 }
 @media (max-width: 580px) {
@@ -4045,13 +4131,12 @@ form .input input[type=tel],
 form .input input[type=email] {
   border: 1rem solid #6e757c;
   border-radius: 4rem;
-  font-size: 16rem;
   background-color: #ffffff;
-  line-height: 1;
   margin-bottom: 0;
   outline: none !important;
-  padding: 13rem 12rem;
+  padding: 12rem 12rem;
   width: 100%;
+  line-height: 1.5;
   appearance: none;
   color: #213944;
 }
@@ -4198,7 +4283,7 @@ form.hs-form .input input select:focus, form.mixitup-multifilter .input input se
 }
 form.hs-form .input input[type=file], form.mixitup-multifilter .input input[type=file], form .input input[type=file] {
   font-size: 16rem;
-  font-family: "Inter";
+  font-family: "Aktive Grotesk", "Arial, sans serif";
   background-color: transparent;
   position: relative;
   font-weight: bold;
@@ -4263,7 +4348,7 @@ form.hs-form .input + .hs-error-msgs li:before, form.mixitup-multifilter .input 
 }
 form.hs-form .input + .hs-error-msgs li label, form.mixitup-multifilter .input + .hs-error-msgs li label, form .input + .hs-error-msgs li label {
   font-size: 12rem;
-  font-family: "Inter";
+  font-family: "Aktive Grotesk", "Arial, sans serif";
   text-transform: uppercase;
   letter-spacing: 1rem;
   display: inline-block;
@@ -4552,12 +4637,12 @@ form.hs-form fieldset.form-columns-1 .hs-input, form.mixitup-multifilter fieldse
 }
 form.hs-form .hs-button, form.mixitup-multifilter .hs-button, form .hs-button {
   display: inline-block;
-  font-family: "Inter";
+  font-family: "Aktive Grotesk", "Arial, sans serif";
   color: #ffffff;
-  background-color: #007c43;
-  border: 1px solid #007c43;
-  border-radius: 12rem;
-  padding: 11rem 24rem;
+  background-color: #006f3c;
+  border: 2px solid #006f3c;
+  border-radius: 4rem;
+  padding: 14rem 16rem;
   margin: 0;
   transition: 0.1s ease-in;
   font-weight: 600;
@@ -4569,7 +4654,7 @@ form.hs-form .hs-button, form.mixitup-multifilter .hs-button, form .hs-button {
 }
 form.hs-form .hs-button:hover, form.hs-form .hs-button:focus, form.mixitup-multifilter .hs-button:hover, form.mixitup-multifilter .hs-button:focus, form .hs-button:hover, form .hs-button:focus {
   background-color: #ffffff;
-  color: #007c43;
+  color: #006f3c;
 }
 form .hs-richtext p {
   font-size: 11rem;
@@ -4609,7 +4694,7 @@ section.u4m-500-error {
   float: none;
   margin-left: auto;
   margin-right: auto;
-  max-width: 1240rem;
+  max-width: 1120rem;
   padding-left: 20rem;
   padding-right: 20rem;
   margin: 150rem auto;
@@ -4617,9 +4702,9 @@ section.u4m-500-error {
 }
 section.u4m-404-error p,
 section.u4m-500-error p {
-  font-family: "Inter";
-  font-size: 22rem;
-  line-height: 1.3;
+  font-family: "Aktive Grotesk", "Arial, sans serif";
+  font-size: 15rem;
+  line-height: 1.5;
   margin-bottom: 20rem;
 }
 @media (max-width: 580px) {
@@ -4639,7 +4724,7 @@ section.u4m-backup-unsubscribe {
   float: none;
   margin-left: auto;
   margin-right: auto;
-  max-width: 1240rem;
+  max-width: 1120rem;
   padding-left: 20rem;
   padding-right: 20rem;
   margin: 150rem auto;
@@ -4651,9 +4736,9 @@ section.u4m-backup-unsubscribe {
   }
 }
 section.u4m-backup-unsubscribe p {
-  font-family: "Inter";
-  font-size: 22rem;
-  line-height: 1.3;
+  font-family: "Aktive Grotesk", "Arial, sans serif";
+  font-size: 15rem;
+  line-height: 1.5;
   margin-bottom: 20rem;
 }
 @media (max-width: 580px) {
@@ -4665,7 +4750,7 @@ section.u4m-backup-unsubscribe form {
   background-color: #ffffff;
   padding: 40rem;
   max-width: 765rem;
-  border-radius: 12rem;
+  border-radius: 4rem;
   float: none;
   overflow: auto;
   padding-bottom: 50rem;
@@ -4676,11 +4761,12 @@ section.u4m-backup-unsubscribe form {
   }
 }
 section.u4m-backup-unsubscribe form h3 {
-  font-family: "Inter";
-  font-size: 19rem;
+  font-family: "Aktive Grotesk", "Arial, sans serif";
+  font-size: 20rem;
   font-weight: 600;
   margin-bottom: 30rem;
   line-height: 1;
+  color: #006f3c;
 }
 @media (max-width: 1024px) {
   section.u4m-backup-unsubscribe form h3 {
@@ -4695,9 +4781,9 @@ section.u4m-backup-unsubscribe form h3 {
 }
 section.u4m-backup-unsubscribe form div.legal-consent-container p,
 section.u4m-backup-unsubscribe form div.legal-consent-container .hs-form-booleancheckbox label {
-  font-family: "Inter";
+  font-family: "Aktive Grotesk", "Arial, sans serif";
   font-size: 11rem;
-  line-height: 1.3;
+  line-height: 1.5;
   margin-bottom: 10rem;
 }
 @media (max-width: 580px) {
@@ -4763,13 +4849,12 @@ section.u4m-backup-unsubscribe form .input input[type=tel],
 section.u4m-backup-unsubscribe form .input input[type=email] {
   border: 1rem solid #6e757c;
   border-radius: 4rem;
-  font-size: 16rem;
   background-color: #ffffff;
-  line-height: 1;
   margin-bottom: 0;
   outline: none !important;
-  padding: 13rem 12rem;
+  padding: 12rem 12rem;
   width: 100%;
+  line-height: 1.5;
   appearance: none;
   color: #213944;
 }
@@ -4916,7 +5001,7 @@ section.u4m-backup-unsubscribe form.hs-form .input input select:focus, section.u
 }
 section.u4m-backup-unsubscribe form.hs-form .input input[type=file], section.u4m-backup-unsubscribe form.mixitup-multifilter .input input[type=file], section.u4m-backup-unsubscribe form .input input[type=file] {
   font-size: 16rem;
-  font-family: "Inter";
+  font-family: "Aktive Grotesk", "Arial, sans serif";
   background-color: transparent;
   position: relative;
   font-weight: bold;
@@ -4981,7 +5066,7 @@ section.u4m-backup-unsubscribe form.hs-form .input + .hs-error-msgs li:before, s
 }
 section.u4m-backup-unsubscribe form.hs-form .input + .hs-error-msgs li label, section.u4m-backup-unsubscribe form.mixitup-multifilter .input + .hs-error-msgs li label, section.u4m-backup-unsubscribe form .input + .hs-error-msgs li label {
   font-size: 12rem;
-  font-family: "Inter";
+  font-family: "Aktive Grotesk", "Arial, sans serif";
   text-transform: uppercase;
   letter-spacing: 1rem;
   display: inline-block;
@@ -5270,12 +5355,12 @@ section.u4m-backup-unsubscribe form.hs-form fieldset.form-columns-1 .hs-input, s
 }
 section.u4m-backup-unsubscribe form.hs-form .hs-button, section.u4m-backup-unsubscribe form.mixitup-multifilter .hs-button, section.u4m-backup-unsubscribe form .hs-button {
   display: inline-block;
-  font-family: "Inter";
+  font-family: "Aktive Grotesk", "Arial, sans serif";
   color: #ffffff;
-  background-color: #007c43;
-  border: 1px solid #007c43;
-  border-radius: 12rem;
-  padding: 11rem 24rem;
+  background-color: #006f3c;
+  border: 2px solid #006f3c;
+  border-radius: 4rem;
+  padding: 14rem 16rem;
   margin: 0;
   transition: 0.1s ease-in;
   font-weight: 600;
@@ -5287,7 +5372,7 @@ section.u4m-backup-unsubscribe form.hs-form .hs-button, section.u4m-backup-unsub
 }
 section.u4m-backup-unsubscribe form.hs-form .hs-button:hover, section.u4m-backup-unsubscribe form.hs-form .hs-button:focus, section.u4m-backup-unsubscribe form.mixitup-multifilter .hs-button:hover, section.u4m-backup-unsubscribe form.mixitup-multifilter .hs-button:focus, section.u4m-backup-unsubscribe form .hs-button:hover, section.u4m-backup-unsubscribe form .hs-button:focus {
   background-color: #ffffff;
-  color: #007c43;
+  color: #006f3c;
 }
 section.u4m-backup-unsubscribe form .hs-richtext p {
   font-size: 11rem;
@@ -5317,7 +5402,7 @@ section.u4m-password-prompt {
   float: none;
   margin-left: auto;
   margin-right: auto;
-  max-width: 1240rem;
+  max-width: 1120rem;
   padding-left: 20rem;
   padding-right: 20rem;
   margin: 150rem auto;
@@ -5347,7 +5432,7 @@ section.u4m-password-prompt form {
   background-color: #ffffff;
   padding: 40rem;
   max-width: 765rem;
-  border-radius: 12rem;
+  border-radius: 4rem;
   float: none;
   overflow: auto;
   margin-left: auto;
@@ -5369,11 +5454,12 @@ section.u4m-membership-register form h3,
 section.u4m-membership-reset-password-request form h3,
 section.u4m-membership-reset-password form h3,
 section.u4m-password-prompt form h3 {
-  font-family: "Inter";
-  font-size: 19rem;
+  font-family: "Aktive Grotesk", "Arial, sans serif";
+  font-size: 20rem;
   font-weight: 600;
   margin-bottom: 30rem;
   line-height: 1;
+  color: #006f3c;
 }
 @media (max-width: 1024px) {
   section.u4m-membership-login form h3,
@@ -5404,9 +5490,9 @@ section.u4m-membership-reset-password form div.legal-consent-container p,
 section.u4m-membership-reset-password form div.legal-consent-container .hs-form-booleancheckbox label,
 section.u4m-password-prompt form div.legal-consent-container p,
 section.u4m-password-prompt form div.legal-consent-container .hs-form-booleancheckbox label {
-  font-family: "Inter";
+  font-family: "Aktive Grotesk", "Arial, sans serif";
   font-size: 11rem;
-  line-height: 1.3;
+  line-height: 1.5;
   margin-bottom: 10rem;
 }
 @media (max-width: 580px) {
@@ -5628,13 +5714,12 @@ section.u4m-password-prompt form .input input[type=tel],
 section.u4m-password-prompt form .input input[type=email] {
   border: 1rem solid #6e757c;
   border-radius: 4rem;
-  font-size: 16rem;
   background-color: #ffffff;
-  line-height: 1;
   margin-bottom: 0;
   outline: none !important;
-  padding: 13rem 12rem;
+  padding: 12rem 12rem;
   width: 100%;
+  line-height: 1.5;
   appearance: none;
   color: #213944;
 }
@@ -6237,7 +6322,7 @@ section.u4m-password-prompt form.hs-form .input input[type=file],
 section.u4m-password-prompt form.mixitup-multifilter .input input[type=file],
 section.u4m-password-prompt form .input input[type=file] {
   font-size: 16rem;
-  font-family: "Inter";
+  font-family: "Aktive Grotesk", "Arial, sans serif";
   background-color: transparent;
   position: relative;
   font-weight: bold;
@@ -6386,7 +6471,7 @@ section.u4m-password-prompt form.hs-form .input + .hs-error-msgs li label,
 section.u4m-password-prompt form.mixitup-multifilter .input + .hs-error-msgs li label,
 section.u4m-password-prompt form .input + .hs-error-msgs li label {
   font-size: 12rem;
-  font-family: "Inter";
+  font-family: "Aktive Grotesk", "Arial, sans serif";
   text-transform: uppercase;
   letter-spacing: 1rem;
   display: inline-block;
@@ -7635,12 +7720,12 @@ section.u4m-password-prompt form.hs-form .hs-button,
 section.u4m-password-prompt form.mixitup-multifilter .hs-button,
 section.u4m-password-prompt form .hs-button {
   display: inline-block;
-  font-family: "Inter";
+  font-family: "Aktive Grotesk", "Arial, sans serif";
   color: #ffffff;
-  background-color: #007c43;
-  border: 1px solid #007c43;
-  border-radius: 12rem;
-  padding: 11rem 24rem;
+  background-color: #006f3c;
+  border: 2px solid #006f3c;
+  border-radius: 4rem;
+  padding: 14rem 16rem;
   margin: 0;
   transition: 0.1s ease-in;
   font-weight: 600;
@@ -7676,7 +7761,7 @@ section.u4m-password-prompt form.mixitup-multifilter .hs-button:focus,
 section.u4m-password-prompt form .hs-button:hover,
 section.u4m-password-prompt form .hs-button:focus {
   background-color: #ffffff;
-  color: #007c43;
+  color: #006f3c;
 }
 section.u4m-membership-login form .hs-richtext p,
 section.u4m-membership-register form .hs-richtext p,
@@ -7760,7 +7845,7 @@ section.u4m-search-results {
   float: none;
   margin-left: auto;
   margin-right: auto;
-  max-width: 1240rem;
+  max-width: 1120rem;
   padding-left: 20rem;
   padding-right: 20rem;
   max-width: 1000rem;
@@ -7774,7 +7859,7 @@ section.u4m-subscription-preferences {
   float: none;
   margin-left: auto;
   margin-right: auto;
-  max-width: 1240rem;
+  max-width: 1120rem;
   padding-left: 20rem;
   padding-right: 20rem;
   margin: 100rem auto;
@@ -7783,7 +7868,7 @@ section.u4m-subscription-preferences form {
   background-color: #ffffff;
   padding: 40rem;
   max-width: 765rem;
-  border-radius: 12rem;
+  border-radius: 4rem;
   float: none;
   overflow: auto;
   max-width: 1000rem;
@@ -7795,11 +7880,12 @@ section.u4m-subscription-preferences form {
   }
 }
 section.u4m-subscription-preferences form h3 {
-  font-family: "Inter";
-  font-size: 19rem;
+  font-family: "Aktive Grotesk", "Arial, sans serif";
+  font-size: 20rem;
   font-weight: 600;
   margin-bottom: 30rem;
   line-height: 1;
+  color: #006f3c;
 }
 @media (max-width: 1024px) {
   section.u4m-subscription-preferences form h3 {
@@ -7814,9 +7900,9 @@ section.u4m-subscription-preferences form h3 {
 }
 section.u4m-subscription-preferences form div.legal-consent-container p,
 section.u4m-subscription-preferences form div.legal-consent-container .hs-form-booleancheckbox label {
-  font-family: "Inter";
+  font-family: "Aktive Grotesk", "Arial, sans serif";
   font-size: 11rem;
-  line-height: 1.3;
+  line-height: 1.5;
   margin-bottom: 10rem;
 }
 @media (max-width: 580px) {
@@ -7882,13 +7968,12 @@ section.u4m-subscription-preferences form .input input[type=tel],
 section.u4m-subscription-preferences form .input input[type=email] {
   border: 1rem solid #6e757c;
   border-radius: 4rem;
-  font-size: 16rem;
   background-color: #ffffff;
-  line-height: 1;
   margin-bottom: 0;
   outline: none !important;
-  padding: 13rem 12rem;
+  padding: 12rem 12rem;
   width: 100%;
+  line-height: 1.5;
   appearance: none;
   color: #213944;
 }
@@ -8035,7 +8120,7 @@ section.u4m-subscription-preferences form.hs-form .input input select:focus, sec
 }
 section.u4m-subscription-preferences form.hs-form .input input[type=file], section.u4m-subscription-preferences form.mixitup-multifilter .input input[type=file], section.u4m-subscription-preferences form .input input[type=file] {
   font-size: 16rem;
-  font-family: "Inter";
+  font-family: "Aktive Grotesk", "Arial, sans serif";
   background-color: transparent;
   position: relative;
   font-weight: bold;
@@ -8100,7 +8185,7 @@ section.u4m-subscription-preferences form.hs-form .input + .hs-error-msgs li:bef
 }
 section.u4m-subscription-preferences form.hs-form .input + .hs-error-msgs li label, section.u4m-subscription-preferences form.mixitup-multifilter .input + .hs-error-msgs li label, section.u4m-subscription-preferences form .input + .hs-error-msgs li label {
   font-size: 12rem;
-  font-family: "Inter";
+  font-family: "Aktive Grotesk", "Arial, sans serif";
   text-transform: uppercase;
   letter-spacing: 1rem;
   display: inline-block;
@@ -8389,12 +8474,12 @@ section.u4m-subscription-preferences form.hs-form fieldset.form-columns-1 .hs-in
 }
 section.u4m-subscription-preferences form.hs-form .hs-button, section.u4m-subscription-preferences form.mixitup-multifilter .hs-button, section.u4m-subscription-preferences form .hs-button {
   display: inline-block;
-  font-family: "Inter";
+  font-family: "Aktive Grotesk", "Arial, sans serif";
   color: #ffffff;
-  background-color: #007c43;
-  border: 1px solid #007c43;
-  border-radius: 12rem;
-  padding: 11rem 24rem;
+  background-color: #006f3c;
+  border: 2px solid #006f3c;
+  border-radius: 4rem;
+  padding: 14rem 16rem;
   margin: 0;
   transition: 0.1s ease-in;
   font-weight: 600;
@@ -8406,7 +8491,7 @@ section.u4m-subscription-preferences form.hs-form .hs-button, section.u4m-subscr
 }
 section.u4m-subscription-preferences form.hs-form .hs-button:hover, section.u4m-subscription-preferences form.hs-form .hs-button:focus, section.u4m-subscription-preferences form.mixitup-multifilter .hs-button:hover, section.u4m-subscription-preferences form.mixitup-multifilter .hs-button:focus, section.u4m-subscription-preferences form .hs-button:hover, section.u4m-subscription-preferences form .hs-button:focus {
   background-color: #ffffff;
-  color: #007c43;
+  color: #006f3c;
 }
 section.u4m-subscription-preferences form .hs-richtext p {
   font-size: 11rem;
@@ -8427,7 +8512,7 @@ section.u4m-subscriptions-confirmation {
   float: none;
   margin-left: auto;
   margin-right: auto;
-  max-width: 1240rem;
+  max-width: 1120rem;
   padding-left: 20rem;
   padding-right: 20rem;
   max-width: 1000rem;
@@ -8453,7 +8538,7 @@ section.u4m-drag-and-drop-area {
   float: none;
   margin-left: auto;
   margin-right: auto;
-  max-width: 1240rem;
+  max-width: 1120rem;
   padding-left: 20rem;
   padding-right: 20rem;
   margin: 100rem auto;
@@ -8462,7 +8547,7 @@ section.u4m-drag-and-drop-area form {
   background-color: #ffffff;
   padding: 40rem;
   max-width: 765rem;
-  border-radius: 12rem;
+  border-radius: 4rem;
   float: none;
   overflow: auto;
 }
@@ -8472,11 +8557,12 @@ section.u4m-drag-and-drop-area form {
   }
 }
 section.u4m-drag-and-drop-area form h3 {
-  font-family: "Inter";
-  font-size: 19rem;
+  font-family: "Aktive Grotesk", "Arial, sans serif";
+  font-size: 20rem;
   font-weight: 600;
   margin-bottom: 30rem;
   line-height: 1;
+  color: #006f3c;
 }
 @media (max-width: 1024px) {
   section.u4m-drag-and-drop-area form h3 {
@@ -8491,9 +8577,9 @@ section.u4m-drag-and-drop-area form h3 {
 }
 section.u4m-drag-and-drop-area form div.legal-consent-container p,
 section.u4m-drag-and-drop-area form div.legal-consent-container .hs-form-booleancheckbox label {
-  font-family: "Inter";
+  font-family: "Aktive Grotesk", "Arial, sans serif";
   font-size: 11rem;
-  line-height: 1.3;
+  line-height: 1.5;
   margin-bottom: 10rem;
 }
 @media (max-width: 580px) {
@@ -8559,13 +8645,12 @@ section.u4m-drag-and-drop-area form .input input[type=tel],
 section.u4m-drag-and-drop-area form .input input[type=email] {
   border: 1rem solid #6e757c;
   border-radius: 4rem;
-  font-size: 16rem;
   background-color: #ffffff;
-  line-height: 1;
   margin-bottom: 0;
   outline: none !important;
-  padding: 13rem 12rem;
+  padding: 12rem 12rem;
   width: 100%;
+  line-height: 1.5;
   appearance: none;
   color: #213944;
 }
@@ -8712,7 +8797,7 @@ section.u4m-drag-and-drop-area form.hs-form .input input select:focus, section.u
 }
 section.u4m-drag-and-drop-area form.hs-form .input input[type=file], section.u4m-drag-and-drop-area form.mixitup-multifilter .input input[type=file], section.u4m-drag-and-drop-area form .input input[type=file] {
   font-size: 16rem;
-  font-family: "Inter";
+  font-family: "Aktive Grotesk", "Arial, sans serif";
   background-color: transparent;
   position: relative;
   font-weight: bold;
@@ -8777,7 +8862,7 @@ section.u4m-drag-and-drop-area form.hs-form .input + .hs-error-msgs li:before, s
 }
 section.u4m-drag-and-drop-area form.hs-form .input + .hs-error-msgs li label, section.u4m-drag-and-drop-area form.mixitup-multifilter .input + .hs-error-msgs li label, section.u4m-drag-and-drop-area form .input + .hs-error-msgs li label {
   font-size: 12rem;
-  font-family: "Inter";
+  font-family: "Aktive Grotesk", "Arial, sans serif";
   text-transform: uppercase;
   letter-spacing: 1rem;
   display: inline-block;
@@ -9066,12 +9151,12 @@ section.u4m-drag-and-drop-area form.hs-form fieldset.form-columns-1 .hs-input, s
 }
 section.u4m-drag-and-drop-area form.hs-form .hs-button, section.u4m-drag-and-drop-area form.mixitup-multifilter .hs-button, section.u4m-drag-and-drop-area form .hs-button {
   display: inline-block;
-  font-family: "Inter";
+  font-family: "Aktive Grotesk", "Arial, sans serif";
   color: #ffffff;
-  background-color: #007c43;
-  border: 1px solid #007c43;
-  border-radius: 12rem;
-  padding: 11rem 24rem;
+  background-color: #006f3c;
+  border: 2px solid #006f3c;
+  border-radius: 4rem;
+  padding: 14rem 16rem;
   margin: 0;
   transition: 0.1s ease-in;
   font-weight: 600;
@@ -9083,7 +9168,7 @@ section.u4m-drag-and-drop-area form.hs-form .hs-button, section.u4m-drag-and-dro
 }
 section.u4m-drag-and-drop-area form.hs-form .hs-button:hover, section.u4m-drag-and-drop-area form.hs-form .hs-button:focus, section.u4m-drag-and-drop-area form.mixitup-multifilter .hs-button:hover, section.u4m-drag-and-drop-area form.mixitup-multifilter .hs-button:focus, section.u4m-drag-and-drop-area form .hs-button:hover, section.u4m-drag-and-drop-area form .hs-button:focus {
   background-color: #ffffff;
-  color: #007c43;
+  color: #006f3c;
 }
 section.u4m-drag-and-drop-area form .hs-richtext p {
   font-size: 11rem;
@@ -9092,7 +9177,7 @@ section.u4m-drag-and-drop-area form .hs-richtext p {
 
 .dnd_padd,
 .dnd-section {
-  padding: 80rem 0;
+  padding: 100rem 0;
 }
 @media (max-width: 1024px) {
   .dnd_padd,
@@ -9124,7 +9209,7 @@ section.u4m-drag-and-drop-area form .hs-richtext p {
   float: none;
   margin-left: auto;
   margin-right: auto;
-  max-width: 1240rem;
+  max-width: 1120rem;
   padding-left: 20rem;
   padding-right: 20rem;
   margin: 0 auto;
@@ -9227,7 +9312,7 @@ section.u4m-blog-post div.hero div.content {
   float: none;
   margin-left: auto;
   margin-right: auto;
-  max-width: 1240rem;
+  max-width: 1120rem;
   padding-left: 20rem;
   padding-right: 20rem;
   max-width: 1000rem;
@@ -9235,11 +9320,11 @@ section.u4m-blog-post div.hero div.content {
   max-width: 1000rem;
 }
 section.u4m-blog-post div.hero div.content h1.title {
-  font-family: "Inter";
-  font-size: 48rem;
-  font-weight: 600;
+  font-family: "Aktive Grotesk", "Arial, sans serif";
+  font-size: 36rem;
+  font-weight: 400;
   margin-bottom: 30rem;
-  line-height: 1;
+  line-height: 1.2;
   margin-top: 0;
   margin: 0;
 }
@@ -9278,7 +9363,7 @@ section.u4m-blog-post div.body {
   float: none;
   margin-left: auto;
   margin-right: auto;
-  max-width: 1240rem;
+  max-width: 1120rem;
   padding-left: 20rem;
   padding-right: 20rem;
   max-width: 1000rem;
@@ -9286,17 +9371,17 @@ section.u4m-blog-post div.body {
 section.u4m-blog-post div.body div.content p,
 section.u4m-blog-post div.body div.content ul,
 section.u4m-blog-post div.body div.content ol {
-  font-family: "Inter";
+  font-family: "Aktive Grotesk", "Arial, sans serif";
   font-size: 16rem;
-  line-height: 1.3;
+  line-height: 1.5;
   margin-bottom: 20rem;
 }
 section.u4m-blog-post div.body div.content h1 {
-  font-family: "Inter";
-  font-size: 48rem;
-  font-weight: 600;
+  font-family: "Aktive Grotesk", "Arial, sans serif";
+  font-size: 36rem;
+  font-weight: 400;
   margin-bottom: 30rem;
-  line-height: 1;
+  line-height: 1.2;
   margin-top: 0;
 }
 @media (max-width: 1024px) {
@@ -9311,11 +9396,11 @@ section.u4m-blog-post div.body div.content h1 {
   }
 }
 section.u4m-blog-post div.body div.content h2 {
-  font-family: "Inter";
-  font-size: 40rem;
-  font-weight: 600;
+  font-family: "Aktive Grotesk", "Arial, sans serif";
+  font-size: 32rem;
+  font-weight: 400;
   margin-bottom: 30rem;
-  line-height: 1;
+  line-height: 1.2;
 }
 @media (max-width: 1024px) {
   section.u4m-blog-post div.body div.content h2 {
@@ -9329,11 +9414,11 @@ section.u4m-blog-post div.body div.content h2 {
   }
 }
 section.u4m-blog-post div.body div.content h3 {
-  font-family: "Inter";
-  font-size: 33rem;
-  font-weight: 600;
+  font-family: "Aktive Grotesk", "Arial, sans serif";
+  font-size: 28rem;
+  font-weight: 400;
   margin-bottom: 30rem;
-  line-height: 1;
+  line-height: 1.2;
 }
 @media (max-width: 1024px) {
   section.u4m-blog-post div.body div.content h3 {
@@ -9347,11 +9432,11 @@ section.u4m-blog-post div.body div.content h3 {
   }
 }
 section.u4m-blog-post div.body div.content h4 {
-  font-family: "Inter";
-  font-size: 28rem;
-  font-weight: 600;
+  font-family: "Aktive Grotesk", "Arial, sans serif";
+  font-size: 25rem;
+  font-weight: 400;
   margin-bottom: 30rem;
-  line-height: 1;
+  line-height: 1.2;
 }
 @media (max-width: 1024px) {
   section.u4m-blog-post div.body div.content h4 {
@@ -9360,16 +9445,16 @@ section.u4m-blog-post div.body div.content h4 {
 }
 @media (max-width: 580px) {
   section.u4m-blog-post div.body div.content h4 {
-    font-size: 20rem;
+    font-size: 22rem;
     margin-bottom: 20rem;
   }
 }
 section.u4m-blog-post div.body div.content h5 {
-  font-family: "Inter";
-  font-size: 23rem;
-  font-weight: 600;
+  font-family: "Aktive Grotesk", "Arial, sans serif";
+  font-size: 22rem;
+  font-weight: 400;
   margin-bottom: 30rem;
-  line-height: 1;
+  line-height: 1.2;
 }
 @media (max-width: 1024px) {
   section.u4m-blog-post div.body div.content h5 {
@@ -9383,11 +9468,12 @@ section.u4m-blog-post div.body div.content h5 {
   }
 }
 section.u4m-blog-post div.body div.content h6 {
-  font-family: "Inter";
-  font-size: 19rem;
+  font-family: "Aktive Grotesk", "Arial, sans serif";
+  font-size: 20rem;
   font-weight: 600;
   margin-bottom: 30rem;
   line-height: 1;
+  color: #006f3c;
 }
 @media (max-width: 1024px) {
   section.u4m-blog-post div.body div.content h6 {
@@ -9401,13 +9487,13 @@ section.u4m-blog-post div.body div.content h6 {
   }
 }
 section.u4m-blog-post div.body div.content blockquote {
-  font-family: "Inter";
+  font-family: "Aktive Grotesk", "Arial, sans serif";
   font-size: 30rem;
   font-weight: bold;
-  line-height: 1.3;
+  line-height: 1.5;
   letter-spacing: 1rem;
   margin: 50rem auto;
-  color: #007c43;
+  color: #006f3c;
   display: block;
   max-width: 90%;
 }
@@ -9417,13 +9503,13 @@ section.u4m-blog-post div.body div.content blockquote {
   }
 }
 section.u4m-blog-post div.body div.content blockquote p {
-  font-family: "Inter";
+  font-family: "Aktive Grotesk", "Arial, sans serif";
   font-size: 30rem;
   font-weight: bold;
-  line-height: 1.3;
+  line-height: 1.5;
   letter-spacing: 1rem;
   margin: 50rem auto;
-  color: #007c43;
+  color: #006f3c;
   display: block;
   max-width: 90%;
 }
@@ -9442,7 +9528,7 @@ section.u4m-blog-post div.author {
   float: none;
   margin-left: auto;
   margin-right: auto;
-  max-width: 1240rem;
+  max-width: 1120rem;
   padding-left: 20rem;
   padding-right: 20rem;
   max-width: 1000rem;
@@ -9474,11 +9560,11 @@ section.u4m-blog-post div.author div.meta div.avatar {
   }
 }
 section.u4m-blog-post div.author div.bio .name {
-  font-family: "Inter";
-  font-size: 23rem;
-  font-weight: 600;
+  font-family: "Aktive Grotesk", "Arial, sans serif";
+  font-size: 22rem;
+  font-weight: 400;
   margin-bottom: 30rem;
-  line-height: 1;
+  line-height: 1.2;
   margin: 0;
 }
 @media (max-width: 1024px) {
@@ -9493,9 +9579,9 @@ section.u4m-blog-post div.author div.bio .name {
   }
 }
 section.u4m-blog-post div.author div.bio p {
-  font-family: "Inter";
+  font-family: "Aktive Grotesk", "Arial, sans serif";
   font-size: 13rem;
-  line-height: 1.3;
+  line-height: 1.5;
   margin-bottom: 20rem;
   margin-top: 20px;
 }
@@ -9505,9 +9591,9 @@ section.u4m-blog-post div.author div.bio p {
   }
 }
 section.u4m-blog-post div.author div.bio .social .label {
-  font-family: "Inter";
+  font-family: "Aktive Grotesk", "Arial, sans serif";
   font-size: 14rem;
-  line-height: 1.3;
+  line-height: 1.5;
   margin-bottom: 20rem;
 }
 @media (max-width: 580px) {
@@ -9517,9 +9603,9 @@ section.u4m-blog-post div.author div.bio .social .label {
 }
 @media (max-width: 580px) {
   section.u4m-blog-post div.author div.bio .social .label {
-    font-family: "Inter";
+    font-family: "Aktive Grotesk", "Arial, sans serif";
     font-size: 11rem;
-    line-height: 1.3;
+    line-height: 1.5;
     margin-bottom: 10rem;
   }
 }
@@ -9542,15 +9628,15 @@ section.u4m-blog-post div.comments {
   margin-bottom: 100rem;
 }
 section.u4m-blog-post div.comments h2.heading {
-  font-family: "Inter";
-  font-size: 33rem;
-  font-weight: 600;
+  font-family: "Aktive Grotesk", "Arial, sans serif";
+  font-size: 28rem;
+  font-weight: 400;
   margin-bottom: 30rem;
-  line-height: 1;
+  line-height: 1.2;
   float: none;
   margin-left: auto;
   margin-right: auto;
-  max-width: 1240rem;
+  max-width: 1120rem;
   padding-left: 20rem;
   padding-right: 20rem;
   text-align: center;
@@ -9571,7 +9657,7 @@ section.u4m-blog-post div.comments div.content {
   float: none;
   margin-left: auto;
   margin-right: auto;
-  max-width: 1240rem;
+  max-width: 1120rem;
   padding-left: 20rem;
   padding-right: 20rem;
   max-width: 1000rem;
@@ -9581,7 +9667,7 @@ section.u4m-blog-post div.comments div.content form {
   background-color: #ffffff;
   padding: 40rem;
   max-width: 765rem;
-  border-radius: 12rem;
+  border-radius: 4rem;
   float: none;
   overflow: auto;
 }
@@ -9591,11 +9677,12 @@ section.u4m-blog-post div.comments div.content form {
   }
 }
 section.u4m-blog-post div.comments div.content form h3 {
-  font-family: "Inter";
-  font-size: 19rem;
+  font-family: "Aktive Grotesk", "Arial, sans serif";
+  font-size: 20rem;
   font-weight: 600;
   margin-bottom: 30rem;
   line-height: 1;
+  color: #006f3c;
 }
 @media (max-width: 1024px) {
   section.u4m-blog-post div.comments div.content form h3 {
@@ -9610,9 +9697,9 @@ section.u4m-blog-post div.comments div.content form h3 {
 }
 section.u4m-blog-post div.comments div.content form div.legal-consent-container p,
 section.u4m-blog-post div.comments div.content form div.legal-consent-container .hs-form-booleancheckbox label {
-  font-family: "Inter";
+  font-family: "Aktive Grotesk", "Arial, sans serif";
   font-size: 11rem;
-  line-height: 1.3;
+  line-height: 1.5;
   margin-bottom: 10rem;
 }
 @media (max-width: 580px) {
@@ -9678,13 +9765,12 @@ section.u4m-blog-post div.comments div.content form .input input[type=tel],
 section.u4m-blog-post div.comments div.content form .input input[type=email] {
   border: 1rem solid #6e757c;
   border-radius: 4rem;
-  font-size: 16rem;
   background-color: #ffffff;
-  line-height: 1;
   margin-bottom: 0;
   outline: none !important;
-  padding: 13rem 12rem;
+  padding: 12rem 12rem;
   width: 100%;
+  line-height: 1.5;
   appearance: none;
   color: #213944;
 }
@@ -9831,7 +9917,7 @@ section.u4m-blog-post div.comments div.content form.hs-form .input input select:
 }
 section.u4m-blog-post div.comments div.content form.hs-form .input input[type=file], section.u4m-blog-post div.comments div.content form.mixitup-multifilter .input input[type=file], section.u4m-blog-post div.comments div.content form .input input[type=file] {
   font-size: 16rem;
-  font-family: "Inter";
+  font-family: "Aktive Grotesk", "Arial, sans serif";
   background-color: transparent;
   position: relative;
   font-weight: bold;
@@ -9896,7 +9982,7 @@ section.u4m-blog-post div.comments div.content form.hs-form .input + .hs-error-m
 }
 section.u4m-blog-post div.comments div.content form.hs-form .input + .hs-error-msgs li label, section.u4m-blog-post div.comments div.content form.mixitup-multifilter .input + .hs-error-msgs li label, section.u4m-blog-post div.comments div.content form .input + .hs-error-msgs li label {
   font-size: 12rem;
-  font-family: "Inter";
+  font-family: "Aktive Grotesk", "Arial, sans serif";
   text-transform: uppercase;
   letter-spacing: 1rem;
   display: inline-block;
@@ -10185,12 +10271,12 @@ section.u4m-blog-post div.comments div.content form.hs-form fieldset.form-column
 }
 section.u4m-blog-post div.comments div.content form.hs-form .hs-button, section.u4m-blog-post div.comments div.content form.mixitup-multifilter .hs-button, section.u4m-blog-post div.comments div.content form .hs-button {
   display: inline-block;
-  font-family: "Inter";
+  font-family: "Aktive Grotesk", "Arial, sans serif";
   color: #ffffff;
-  background-color: #007c43;
-  border: 1px solid #007c43;
-  border-radius: 12rem;
-  padding: 11rem 24rem;
+  background-color: #006f3c;
+  border: 2px solid #006f3c;
+  border-radius: 4rem;
+  padding: 14rem 16rem;
   margin: 0;
   transition: 0.1s ease-in;
   font-weight: 600;
@@ -10202,7 +10288,7 @@ section.u4m-blog-post div.comments div.content form.hs-form .hs-button, section.
 }
 section.u4m-blog-post div.comments div.content form.hs-form .hs-button:hover, section.u4m-blog-post div.comments div.content form.hs-form .hs-button:focus, section.u4m-blog-post div.comments div.content form.mixitup-multifilter .hs-button:hover, section.u4m-blog-post div.comments div.content form.mixitup-multifilter .hs-button:focus, section.u4m-blog-post div.comments div.content form .hs-button:hover, section.u4m-blog-post div.comments div.content form .hs-button:focus {
   background-color: #ffffff;
-  color: #007c43;
+  color: #006f3c;
 }
 section.u4m-blog-post div.comments div.content form .hs-richtext p {
   font-size: 11rem;
@@ -10210,12 +10296,12 @@ section.u4m-blog-post div.comments div.content form .hs-richtext p {
 }
 section.u4m-blog-post div.comments div.content form .hs-button {
   display: inline-block;
-  font-family: "Inter";
+  font-family: "Aktive Grotesk", "Arial, sans serif";
   color: #ffffff;
-  background-color: #007c43;
-  border: 1px solid #007c43;
-  border-radius: 12rem;
-  padding: 11rem 24rem;
+  background-color: #006f3c;
+  border: 2px solid #006f3c;
+  border-radius: 4rem;
+  padding: 14rem 16rem;
   margin: 0;
   transition: 0.1s ease-in;
   font-weight: 600;
@@ -10227,7 +10313,7 @@ section.u4m-blog-post div.comments div.content form .hs-button {
 }
 section.u4m-blog-post div.comments div.content form .hs-button:hover, section.u4m-blog-post div.comments div.content form .hs-button:focus {
   background-color: #ffffff;
-  color: #007c43;
+  color: #006f3c;
 }
 
 @keyframes fadeIn1 {
@@ -10255,7 +10341,7 @@ section.u4m-blog-post div.comments div.content form .hs-button:hover, section.u4
   }
 }
 .footer-wrapper .footer {
-  background-color: #f7f8f6;
+  background-color: #f2f2f2;
   padding: 80px 0;
 }
 @media (max-width: 767px) {
@@ -10265,7 +10351,6 @@ section.u4m-blog-post div.comments div.content form .hs-button:hover, section.u4
 }
 .footer-wrapper .footer ul {
   line-height: normal;
-  font-size: 16rem;
 }
 @media (max-width: 767px) {
   .footer-wrapper .footer ul {
@@ -10357,11 +10442,13 @@ section.u4m-blog-post div.comments div.content form .hs-button:hover, section.u4
   white-space: normal;
   overflow: inherit;
   color: #213944;
-  font-weight: 600;
+  font-weight: 400;
   line-height: 1.3;
 }
 .footer-wrapper .footer .footer-top-inner .footer-logo-col .login-menu ul li a:hover {
-  color: #007c43;
+  color: #006f3c;
+  text-shadow: 1px 0 0 currentColor;
+  text-decoration: underline;
 }
 .footer-wrapper .footer .footer-top-inner .footer-menu {
   width: calc(100% - 453px);
@@ -10385,6 +10472,11 @@ section.u4m-blog-post div.comments div.content form .hs-button:hover, section.u4
   margin: 0;
   width: 100%;
   row-gap: 40px;
+}
+@media (min-width: 1281px) {
+  .footer-wrapper .footer .footer-top-inner .footer-menu .hs-menu-wrapper > ul {
+    flex-wrap: nowrap;
+  }
 }
 @media (max-width: 767px) {
   .footer-wrapper .footer .footer-top-inner .footer-menu .hs-menu-wrapper > ul {
@@ -10439,11 +10531,13 @@ section.u4m-blog-post div.comments div.content form .hs-button:hover, section.u4
 }
 .footer-wrapper .footer .footer-top-inner .footer-menu .hs-menu-wrapper > ul > li .hs-menu-children-wrapper > li > a {
   color: #213944;
-  font-weight: 600;
+  font-weight: 400;
   line-height: 1.3;
 }
 .footer-wrapper .footer .footer-top-inner .footer-menu .hs-menu-wrapper > ul > li .hs-menu-children-wrapper > li > a:hover {
-  color: #007c43;
+  color: #006f3c;
+  text-shadow: 1px 0 0 currentColor;
+  text-decoration: underline;
 }
 .footer-wrapper .footer .bottom-footer {
   border-top: 1px solid #dbdbdb;
@@ -10473,11 +10567,13 @@ section.u4m-blog-post div.comments div.content form .hs-button:hover, section.u4
   white-space: normal;
   overflow: inherit;
   color: #213944;
-  font-weight: 600;
+  font-weight: 400;
   line-height: 1.3;
 }
 .footer-wrapper .footer .bottom-footer .privacy-menu ul > li > a:hover {
-  color: #007c43;
+  color: #006f3c;
+  text-shadow: 1px 0 0 currentColor;
+  text-decoration: underline;
 }
 .footer-wrapper .footer .bottom-footer .copyright {
   margin-top: 28px;
@@ -10524,7 +10620,7 @@ section.u4m-blog-post div.comments div.content form .hs-button:hover, section.u4
   padding: 0;
 }
 .header-wrapper .header-top {
-  background-color: #f7f8f6;
+  background-color: #ffffff;
   padding-top: 12px;
   padding-bottom: 12px;
 }
@@ -10533,10 +10629,9 @@ section.u4m-blog-post div.comments div.content form .hs-button:hover, section.u4
   flex-wrap: wrap;
   justify-content: flex-end;
   margin: 0;
-  font-family: "Inter";
+  font-family: "Aktive Grotesk", "Arial, sans serif";
   line-height: 1;
   font-size: 16rem;
-  font-weight: 600;
   letter-spacing: normal;
 }
 .header-wrapper .header-top-menu .hs-menu-wrapper ul li {
@@ -10548,6 +10643,14 @@ section.u4m-blog-post div.comments div.content form .hs-button:hover, section.u4
 }
 .header-wrapper .header-top-menu .hs-menu-wrapper ul li:last-child {
   padding-right: 0;
+  font-weight: 600;
+}
+.header-wrapper .header-top-menu .hs-menu-wrapper ul li:last-child a {
+  color: #006f3c;
+}
+.header-wrapper .header-top-menu .hs-menu-wrapper ul li.active a {
+  font-weight: 600;
+  color: #006f3c;
 }
 .header-wrapper .header-top-menu .hs-menu-wrapper ul li a {
   color: #213944;
@@ -10559,10 +10662,11 @@ section.u4m-blog-post div.comments div.content form .hs-button:hover, section.u4
   text-overflow: unset;
 }
 .header-wrapper .header-top-menu .hs-menu-wrapper ul li a:hover {
-  color: #007c43;
+  color: #006f3c;
+  text-shadow: 1px 0 0 currentColor;
 }
 .header-wrapper .main-header {
-  background-color: #ffffff;
+  background: linear-gradient(89.99deg, #ffffff 61%, #f9f5ee 100%);
   padding-top: 20px;
   padding-bottom: 20px;
   position: relative;
@@ -10598,7 +10702,7 @@ section.u4m-blog-post div.comments div.content form .hs-button:hover, section.u4
 }
 .header-wrapper .main-header .row-fluid .site_logo img {
   max-width: 100%;
-  width: 325.71px !important;
+  width: 200px !important;
 }
 @media (max-width: 767px) {
   .header-wrapper .main-header .row-fluid .site_logo img {
@@ -10643,9 +10747,7 @@ section.u4m-blog-post div.comments div.content form .hs-button:hover, section.u4
 .header-wrapper .main-header .row-fluid .site_menu .hs-menu-wrapper ul {
   display: flex;
   flex-wrap: wrap;
-  font-family: "Inter";
-  font-size: 16rem;
-  font-weight: 600;
+  font-family: "Aktive Grotesk", "Arial, sans serif";
   justify-content: flex-end;
   letter-spacing: normal;
   line-height: 1;
@@ -10665,11 +10767,14 @@ section.u4m-blog-post div.comments div.content form .hs-button:hover, section.u4
   }
 }
 .header-wrapper .main-header .row-fluid .site_menu .hs-menu-wrapper ul li {
-  padding-right: 20px;
+  padding-right: 30px;
   position: relative;
   float: none;
   letter-spacing: normal;
   margin-bottom: 0;
+}
+.header-wrapper .main-header .row-fluid .site_menu .hs-menu-wrapper ul li.active {
+  text-shadow: 1px 0 0 currentColor;
 }
 @media (max-width: 1280px) {
   .header-wrapper .main-header .row-fluid .site_menu .hs-menu-wrapper ul li {
@@ -10702,7 +10807,6 @@ section.u4m-blog-post div.comments div.content form .hs-button:hover, section.u4
   }
 }
 .header-wrapper .main-header .row-fluid .site_menu .hs-menu-wrapper ul li a {
-  font-size: 16rem;
   line-height: 1;
   color: #213944;
   max-width: 100%;
@@ -10726,7 +10830,8 @@ section.u4m-blog-post div.comments div.content form .hs-button:hover, section.u4
   }
 }
 .header-wrapper .main-header .row-fluid .site_menu .hs-menu-wrapper ul li a:hover {
-  color: #007c43;
+  color: #006f3c;
+  text-shadow: 1px 0 0 currentColor;
 }
 .header-wrapper .main-header .row-fluid .site_menu .hs-menu-wrapper ul li ul.hs-menu-children-wrapper {
   top: 100%;
@@ -10772,14 +10877,14 @@ section.u4m-blog-post div.comments div.content form .hs-button:hover, section.u4
   }
 }
 .header-wrapper .main-header .row-fluid .site_menu .hs-menu-wrapper ul li ul.hs-menu-children-wrapper li a:hover {
-  color: #007c43;
+  color: #006f3c;
 }
 .header-wrapper .main-header .row-fluid .site_menu .hs-menu-wrapper ul li:hover ul.hs-menu-children-wrapper {
   opacity: 1;
   visibility: visible;
 }
 .header-wrapper .main-header .row-fluid .site_menu .header_btn {
-  padding-left: 20px;
+  padding-left: 30px;
 }
 @media (max-width: 991px) {
   .header-wrapper .main-header .row-fluid .site_menu .header_btn {
@@ -10897,5 +11002,12 @@ section.u4m-blog-post div.comments div.content form .hs-button:hover, section.u4
   position: fixed;
   width: 100%;
   top: 0;
-  z-index: 999;
+  z-index: 9999;
+}
+
+.page-scrolled .header-wrapper .main-header {
+  background: #ffffff;
+}
+.page-scrolled .header-wrapper .header-top {
+  background: #ffffff;
 }

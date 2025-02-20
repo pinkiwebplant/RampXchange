@@ -377,7 +377,7 @@
         "required" : false,
         "locked" : false,
         "display" : "select",
-        "choices" : [ [ "forest_green", "Forest Green" ], [ "dark_teal", "Dark Teal" ], [ "pale_green", "Pale Green" ], [ "silver_gray", "Silver Gray" ], [ "charcoal_gray", "Charcoal Gray" ], [ "golden_brown", "Golden Brown" ], [ "soft_white", "Soft White" ], [ "white_bg", "White" ] ],
+        "choices" : [ [ "forest_green", "Ramp Green" ], [ "dark_teal", "State Blue" ], [ "pale_green", "Digital Green" ], [ "silver_gray", "Cyber Gray" ], [ "charcoal_gray", "Change Gray" ], [ "golden_brown", "Bronze" ], [ "soft_white", "Air White" ], [ "white_bg", "White" ] ],
         "multiple" : false,
         "reordering_enabled" : true,
         "preset" : null,
@@ -919,7 +919,7 @@
         "access" : null
       },
       "display" : "select",
-      "choices" : [ [ "forest_green", "Forest Green" ], [ "dark_teal", "Dark Teal" ], [ "pale_green", "Pale Green" ], [ "silver_gray", "Silver Gray" ], [ "charcoal_gray", "Charcoal Gray" ], [ "golden_brown", "Golden Brown" ], [ "soft_white", "Soft White" ], [ "white_bg", "White" ] ],
+      "choices" : [ [ "forest_green", "Ramp Green" ], [ "dark_teal", "State Blue" ], [ "pale_green", "Digital Green" ], [ "silver_gray", "Cyber Gray" ], [ "charcoal_gray", "Change Gray" ], [ "golden_brown", "Bronze" ], [ "soft_white", "Air White" ], [ "white_bg", "White" ], [ "custom", "Custom" ] ],
       "multiple" : false,
       "reordering_enabled" : true,
       "preset" : null,
@@ -941,12 +941,99 @@
         "access" : null
       },
       "display" : "select",
-      "choices" : [ [ "gradient1", "Gradient 1" ], [ "gradient2", "Gradient 2" ], [ "gradient3", "Gradient 3" ], [ "gradient4", "Gradient 4" ], [ "gradient5", "Gradient 5" ] ],
+      "choices" : [ [ "gradient1", "Gradient 1" ], [ "gradient2", "Gradient 2" ], [ "gradient3", "Gradient 3" ], [ "gradient4", "Gradient 4" ], [ "gradient5", "Gradient 5" ], [ "custom", "Custom" ] ],
       "multiple" : false,
       "reordering_enabled" : true,
       "preset" : null,
       "type" : "choice",
-      "default" : "gradient1"
+      "default" : "gradient5"
+      }, {
+        "id" : "a34bb279-ff3a-c145-d0d1-7ed464f10eca",
+        "name" : "select_background_color",
+        "label" : "Select Background Color",
+        "required" : false,
+        "locked" : false,
+        "visibility" : {
+          "controlling_field" : null,
+          "controlling_field_path" : "module_overrides.background_settings.select_color",
+          "controlling_value_regex" : "custom",
+          "property" : null,
+          "operator" : "EQUAL",
+          "access" : null
+        },
+        "type" : "color",
+        "display_width" : null,
+        "default" : {
+          "color" : null,
+          "opacity" : null
+        }
+      }, {
+        "id" : "0e25b378-ee3f-50f9-cddb-ecdb8fcd69b4",
+        "name" : "gradient",
+        "label" : "Gradient",
+        "required" : false,
+        "locked" : false,
+        "visibility" : {
+          "controlling_field" : null,
+          "controlling_field_path" : "module_overrides.background_settings.select_gradient",
+          "controlling_value_regex" : "custom",
+          "property" : null,
+          "operator" : "EQUAL",
+          "access" : null
+        },
+        "children" : [ {
+          "id" : "6c790b6e-07a5-0f3c-3db6-491174f63419",
+          "name" : "direction",
+          "label" : "Direction",
+          "required" : false,
+          "locked" : false,
+          "display" : "select",
+          "choices" : [ [ "to top", "Bottom to top" ], [ "to bottom", "Top to bottom" ], [ "to right", "Left to right" ], [ "to left", "Right to left" ], [ "to bottom right", "Top left to bottom right" ], [ "to bottom left", "Top right to bottom left" ] ],
+          "multiple" : false,
+          "reordering_enabled" : true,
+          "preset" : null,
+          "type" : "choice",
+          "display_width" : null
+        }, {
+          "id" : "c53d899d-6007-89e7-a707-cb9a48d441de",
+          "name" : "start_gradient_color",
+          "label" : "Start Gradient Color",
+          "required" : false,
+          "locked" : false,
+          "type" : "color",
+          "display_width" : null,
+          "default" : {
+            "color" : null,
+            "opacity" : null
+          }
+        }, {
+          "id" : "5a2f165e-c84d-3e77-8f83-df50a9df8c1d",
+          "name" : "end_gradient_color",
+          "label" : "End Gradient Color",
+          "required" : false,
+          "locked" : false,
+          "type" : "color",
+          "display_width" : null,
+          "default" : {
+            "color" : null,
+            "opacity" : null
+          }
+        } ],
+        "tab" : "CONTENT",
+        "expanded" : false,
+        "group_occurrence_meta" : null,
+        "type" : "group",
+        "display_width" : null,
+        "default" : {
+          "start_gradient_color" : {
+            "color" : null,
+            "opacity" : null
+          },
+          "end_gradient_color" : {
+            "color" : null,
+            "opacity" : null
+          }
+        }
     } ],
     "tab" : "CONTENT",
     "expanded" : true,
@@ -961,7 +1048,21 @@
         "loading" : "lazy"
       },
       "select_color" : "",
-      "select_gradient" : "gradient1"
+      "select_gradient" : "gradient1",
+      "select_background_color" : {
+        "color" : null,
+        "opacity" : null
+      },
+      "gradient" : {
+        "start_gradient_color" : {
+          "color" : null,
+          "opacity" : null
+        },
+        "end_gradient_color" : {
+          "color" : null,
+          "opacity" : null
+        }
+      }
     }
   }, {
     "id" : "c813f3af-99b7-d54e-7ce2-b074f008a27c",
@@ -1052,9 +1153,23 @@
         "loading" : "lazy"
       },
       "select_color" : "",
-      "select_gradient" : "gradient1"
+      "select_gradient" : "gradient5",
+      "select_background_color" : {
+        "color" : null,
+        "opacity" : null
+      },
+      "gradient" : {
+        "start_gradient_color" : {
+          "color" : null,
+          "opacity" : null
+        },
+        "end_gradient_color" : {
+          "color" : null,
+          "opacity" : null
+        }
+      }
     },
-    "container" : {
+    "container" : { 
       "size" : "theme",
       "custom_size" : 1296
     }

@@ -1,5 +1,5 @@
 // Colors - For transparency use rgba($action1, 0.5) = 50% opaque
-$action1: #007c43;
+$action1: #006f3c;
 $action2: #00a4bd;
 $black: #000000;
 $white: #ffffff;
@@ -13,32 +13,61 @@ $statblue: #315363;
 $gray3: #eeeeee;
 $gradientbg3: #f7f8f6;
 $lightGrayishBlue: #b0b7ba;
+$lightgreen: #dcecd6;
+$lightBronze: #f5f0e7;
+$eyebrowtext: #006f3c;
 
-$gradient1: linear-gradient(278.27deg, $statblue 0%, $heading 100%);
-$gradient2: linear-gradient(278.27deg, $gray3 0%, $gray1 100%);
-$gradient3: linear-gradient(
-  360deg,
-  rgba($action1, 0.07) 0.01%,
-  rgba($digitalgreen, 0.07) 99.97%
+$rampGreen: #006f3c;
+$cyberGray: #dbdbdb;
+$changeGray: #6e757c;
+$gray4: #fcfcfc;
+$gray5: #f9fbf9;
+$lightestgreen: #e6f1e2;
+$colornew1: #ddecd6;
+$colornew2: #f7f8f6;
+$tabBg: #faf9f7;
+$hdBg: #f9f5ee;
+$ftBg: #f2f2f2;
+//
+
+$gradientnew1: linear-gradient(
+  89.85deg,
+  rgba($airwhite, 0) 0.75%,
+  rgba($gray4, 0.626667) 20.58%,
+  $white 34.45%,
+  $lightBronze 96.4%
 );
-$gradient4: linear-gradient(341.11deg, $statblue 12.77%, $heading 87.28%);
-$gradient5: linear-gradient(180deg, $statblue 0%, $heading 100%);
+$gradient2: linear-gradient(180deg, $airwhite 0%, $lightgreen 100%);
+$gradient3: linear-gradient(180deg, $airwhite 0%, $lightestgreen 100%);
 
-$font1: "Inter";
-$baseFontSize: 16rem;
-$baseLineHeight: 1.3; // Golden ratio
+$gradient4: linear-gradient(180deg, $white 54%, $gray5 97%);
+$gradient5: linear-gradient(278.27deg, $statblue 0%, $heading 100%);
+$hdgradient: linear-gradient(89.99deg, $white 61%, $hdBg 100%);
+$hdscrollgradient: linear-gradient(
+  89.99deg,
+  rgba($white, 80%) 61%,
+  rgba($hdBg, 80%) 100%
+);
+$Anchorgradient: linear-gradient(90deg, $white 0%, $hdBg 99.93%);
+//
+$font1: "Aktive Grotesk", "Arial, sans serif";
+$baseFontSize: 15rem;
+$baseLineHeight: 1.5; // Golden ratio
 // Border Radius
 $border1: 12rem;
 $border2: 5rem;
 $border3: 10rem;
-$borderRadius: 12rem;
+
+$borderRadius: 4rem;
 // Shadow
 $shadow1: 0rem 1rem 12rem 0 rgba($black, 0.1);
 $shadow2: 0 5rem 25rem 0 rgba($black, 0.2);
 $shadow3: 0 10rem 50rem 0 rgba($black, 0.3);
 $textShadow1: 0 0 4rem rgba($black, 0.3);
 
-$dropshadow: drop-shadow(0px 8px 16px rgba($black, 0.25));
+// $dropshadow: drop-shadow(0px 8px 16px rgba($black, 0.25));
+$dropshadow: drop-shadow(0px 0px 20px rgba($black, 0.15));
+
 // Animation
 $animation1: 0.1s ease-in;
 $animation2: 0.25s ease-in;

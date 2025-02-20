@@ -16,15 +16,11 @@ html {
   }
 }
 
-section.u4m-hero {
-  padding-top: 80px;
-  padding-bottom: 80px;
-}
 section.u4m-hero.reverse-text .intro_title {
   color: #b5dda5;
 }
 section.u4m-hero .intro_btn_wrap {
-  margin-top: 36px;
+  margin-top: 32px;
   gap: 10px 20px;
 }
 section.u4m-hero .page-center {
@@ -88,6 +84,9 @@ section.u4m-hero .content-column .intro_content {
   margin-bottom: 0;
   max-width: 100%;
 }
+section.u4m-hero .content-column .intro_content .intro_title {
+  margin-bottom: 10px;
+}
 section.u4m-hero .content-column .intro_content .intro_desc {
   margin-bottom: 12px;
 }
@@ -111,7 +110,7 @@ section.u4m-hero .media-col {
 }
 section.u4m-hero .media-col .mediaCol {
   position: relative;
-  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.25);
+  box-shadow: drop-shadow(0px 0px 20px rgba(0, 0, 0, 0.15));
 }
 section.u4m-hero .media-col .mediaCol .playIcon {
   position: absolute;
@@ -124,10 +123,10 @@ section.u4m-hero .media-col .mediaCol .playIcon {
   justify-content: center;
   cursor: pointer;
 }
-section.u4m-hero .media-col .cardVideoPoster {
+section.u4m-hero .media-col .cardVideoPoster.style1 {
   background-repeat: no-repeat;
   background-size: cover;
-  padding-bottom: 66.7%;
+  padding-bottom: 57%;
 }
 section.u4m-hero .cardVideoPopup {
   position: fixed;

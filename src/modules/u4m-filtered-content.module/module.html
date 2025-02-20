@@ -20,7 +20,7 @@
 					{% for row in ft_resouces %} 
 					{% if row.featured %}
 					<div class="cmCol3 cardItem">
-						<div class="itemInr {{ module.module_settings.select_card_theme }} {% if module.module_settings.reverse_text %}cardColor{% endif %}">
+						<div class="itemInr {{ module.module_settings.select_top_card_theme }} {% if module.module_settings.reverse_text %}cardColor{% endif %}" {% if module.module_settings.select_top_card_theme == "custom" %}style="background-color:{{ module.module_settings.top_background_color.rgba }}"{%  endif %}>
 							{% if row.image.url %}
 							<div class="itemImg">
 								<div class="itemImgin" style="background-image:url({{ row.image.url }})">	<a class="absltLink" href="{{ row.link }}"></a></div>
@@ -30,11 +30,11 @@
 								<div class="itemCntSec">
                     <div class="itemTags">{% for tag in row.topic %}{{ tag.name|capitalize }} {% if not loop.last %}<span class="dots"></span>{% endif %} {% endfor %}</div>
 									<div class="itemTitle ">
-										<h4 >
+										<h3 >
 											<a  href="{{ row.link }}">
 												{{ row.name }}
 											</a>
-										</h4>
+										</h3>
 									</div>  
 									{% if row.description %}
 									<div class="itemDescription">{{ row.description }}</div>  
@@ -92,8 +92,9 @@
 		<div class="cardSctn row-fluid">
 			<div class="flex_row cardItems resourceList">
 				{% for row in resouces %}
-				<div class="resourceCard cmCol3 cardItem {{ row.type.name|lower|replace(' ','-') }} {% for tag in row.topic %}{{ tag.name|lower|replace(' ','-') }} {% endfor %}">
-					<div class="itemInr {{ module.module_settings.select_card_theme }} {% if module.module_settings.reverse_text %}cardColor{% endif %}">
+				<div class="resourceCard cmCol3 cardItem {{ row.type.name|lower|replace(' ','-') }} {% for tag in row.topic %}{{ tag.name|lower|replace(' ','-') }} {% endfor %}"   data-aos='fade-up'
+        data-aos-delay='{{ loop.index }}00'>
+					<div class="itemInr {{ module.module_settings.select_card_theme }} {% if module.module_settings.reverse_text %}cardColor{% endif %}" {% if module.module_settings.select_card_theme == "custom" %}style="background-color:{{ module.module_settings.background_color.rgba }}"{%  endif %}>
 						{% if row.image.url %}
 						<div class="itemImg">
 							<div class="itemImgin" style="background-image:url({{ row.image.url }})">	<a class="absltLink" href="{{ row.link }}"></a></div>
@@ -119,11 +120,11 @@
         </div>
 								{% if row.name %}
 								<div class="itemTitle">
-									<h4 class="restitle">
+									<h3 class="restitle">
 										<a  href="{{ row.link }}">
 											{{ row.name }}
 										</a>
-									</h4>
+									</h3>
 								</div>  
 								{% endif %}
 							</div>

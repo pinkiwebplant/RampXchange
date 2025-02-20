@@ -1,9 +1,15 @@
 {% set moduleName = 'u4m-alternating-content' %}
-{% set ExtramoduleClass = '' %}
+	{% if module.module_overrides.background_settings.apply_overlay %}
+{% set ExtramoduleClass =  module.module_settings.select_content_alignment  %}
+{% endif %}
 {% include "../partials/u4-module-includes.html" %}
-
+{% if module.module_overrides.background_settings.background_type == 'image' %}
+{% if module.module_overrides.background_settings.apply_overlay %}
+ <div class="bg_overlay bg_overlayColor"></div>
+{% endif %}
+{% endif %}
 <div class="page-center ">
-	<div class="row {{ module.module_settings.select_content_alignment }} {{ module.media_section.select_media_type }}">
+	<div class="row {{ module.module_settings.select_content_alignment }} {{ module.media_section.select_media_type }} {% if module.module_settings.select_content_alignment_mobile %}mb{{ module.module_settings.select_content_alignment_mobile }}{%  endif %}">
 		<div class="left-section">
 			<div class="intro_wrapp">
 				{{macros.introGroup(module.intro_content)}}

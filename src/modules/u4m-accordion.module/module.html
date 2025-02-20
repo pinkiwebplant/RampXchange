@@ -9,7 +9,7 @@
 	
 		<div class="accordionItemsContainer">
 			{% for item in module.accordion %}
-			<div class="accItem {{ module.module_settings.accordion_group.background_color }} {% if  module.module_settings.accordion_group.accordion_reverse_text %}  accordion_reverse_text  {% endif %} {% if loop.first %} activeAcc {% endif %}">
+			<div class="accItem {{ module.module_settings.accordion_group.background_color }} {% if  module.module_settings.accordion_group.accordion_reverse_text %}  accordion_reverse_text  {% endif %} {% if loop.first %} activeAcc {% endif %}" {% if module.module_settings.accordion_group.background_color == "custom" %}style="background-color:{{ module.module_settings.accordion_group.select_background_color.rgba }}"{%  endif %}>
 				{% if item.title %}
 				<div class="accTitle">
 					<h6><span>{{ item.title }}</span>

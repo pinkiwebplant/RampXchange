@@ -28,6 +28,7 @@ html {
   gap: 0;
   border-radius: 4px;
   overflow: hidden;
+  cursor: pointer;
 }
 .u4m-accordion .accordionItemsContainer .accItem h6 {
   margin: 0;
@@ -37,6 +38,8 @@ html {
   gap: 10px;
   align-items: center;
   color: #213944;
+  font-weight: 600;
+  font-size: 19rem;
 }
 .u4m-accordion .accordionItemsContainer .accItem h6 svg.remove {
   display: none;

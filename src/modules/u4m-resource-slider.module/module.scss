@@ -1,74 +1,84 @@
 @import "../../css/_module-imports";
 
 .u4m-resource-slider {
-    &.reverse-text {
-        .intro_wrapp {
-            .intro_content {
-                .rightContent {
-                    .btnArrow {
-                        .prenext {
-                            border: 1px solid $white;
-                            color: $white;
-                        }
-                    }
-                }
-            }
-        }
-    }
+  &.reverse-text {
     .intro_wrapp {
-        .intro_content {
-            max-width: 100%;
-            padding: 0;
-            text-align: left;
-            display: flex;
-            gap: 20px;
-            justify-content: space-between;
-            flex-wrap: nowrap;
-            @include tabletvert {
-                flex-direction: column;
+      .intro_content {
+        .rightContent {
+          .btnArrow {
+            .prenext {
+              border: 1px solid $white;
+              color: $white;
             }
-            @include phone {
-                text-align: center;
-            }
-            .intro_title {
-                margin: 0;
-            }
-            .rightContent {
-                display: flex;
-                gap: 20px;
-                align-items: center;
-                justify-content: space-between;
-                @include phone {
-                    justify-content: center;
-                    flex-wrap: wrap;
-                    flex-direction: column;
-                }
-                .intro_btn_wrap {
-                    margin: 0;
-                    justify-content: start;
-                }
-                .btnArrow {
-                    display: flex;
-                    gap: 20px;
-                    align-items: center;
-                    .prenext {
-                        background: none;
-                        border: 1px solid $heading;
-                        border-radius: 100%;
-                        height: 44px;
-                        width: 44px;
-                        display: flex;
-                        align-items: center;
-                        justify-content: center;
-                        padding: 0;
-                        color: $heading;
-                        cursor: pointer;
-                    }
-                }
-            }
+          }
         }
+      }
     }
-    .CardWrap {
-        @include cardItem;
+  }
+  .intro_wrapp {
+    .intro_content {
+      max-width: 100%;
+      padding: 0;
+      text-align: left;
+      display: flex;
+      gap: 20px;
+      justify-content: space-between;
+      flex-wrap: nowrap;
+      @include tabletvert {
+        flex-direction: column;
+      }
+      @include phone {
+        text-align: center;
+      }
+      .intro_title {
+        margin: 0;
+      }
+      .rightContent {
+        display: flex;
+        gap: 20px;
+        align-items: center;
+        justify-content: space-between;
+        @include phone {
+          justify-content: center;
+          flex-wrap: wrap;
+          flex-direction: column;
+        }
+        .intro_btn_wrap {
+          margin: 0;
+          justify-content: start;
+          .sec-btn {
+            background-color: transparent;
+            &:hover {
+              background-color: $rampGreen;
+            }
+          }
+        }
+        .btnArrow {
+          display: flex;
+          gap: 20px;
+          align-items: center;
+          .prenext {
+            background: none;
+            border: 1px solid $heading;
+            border-radius: 100%;
+            height: 44px;
+            width: 44px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 0;
+            color: $heading;
+            cursor: pointer;
+          }
+        }
+      }
     }
+  }
+  .CardWrap {
+    @include cardItem;
+
+    .cardItems .cardItem .itemInr {
+      filter: drop-shadow(0px 0px 5px rgba($black, 0.15));
+    }
+  }
 }

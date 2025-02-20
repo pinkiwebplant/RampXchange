@@ -10,7 +10,7 @@
 		<div class="btms">
 			{% for item in module.items_group %}
 			<div class="items">
-				<div class="innerCntt {{ module.module_settings.card_group.card_bg_clr }} {% if module.module_settings.card_group.card_reverse_text %}card_reverse_text{% endif %} {{ module.module_settings.card_group.content_alignment }}_cnt ">
+				<div class="innerCntt {{ module.module_settings.card_group.card_bg_clr }} {% if module.module_settings.card_group.card_reverse_text %}card_reverse_text{% endif %} {{ module.module_settings.card_group.content_alignment }}_cnt " {% if module.module_settings.card_group.card_bg_clr == "custom" %}style="background-color:{{ module.module_settings.card_group.custom_background_color.rgba }}"{%  endif %}>
 					<div class="img">
 						{% if item.image_field.src %}
 						{% set sizeAttrs = 'width="{{ item.image_field.width|escape_attr }}" height="{{ item.image_field.height|escape_attr }}"' %}
@@ -29,7 +29,7 @@
 					<hr>
 					<div class="features">
 						{% for item2 in item.features_items_group %}
-						<div class="features_items  {{ module.module_settings.card_group.features_icon_background_color }}_icon_bg {{ module.module_settings.card_group.features_icon_color }}_textclr">
+						<div class="features_items  {{ module.module_settings.card_group.features_icon_background_color }}_icon_bg {{ module.module_settings.card_group.features_icon_color }}_textclr" >
 							{{ module.module_settings.card_group.features_icon }}
 							{{ item2.text_field }}
 						</div>
@@ -42,10 +42,22 @@
 </div>
 </section>
 
+{%  require_css %}
+<style>
+  {% if module.module_settings.card_group.features_icon_background_color == "custom" %}
+  .{{ name }}.u4m-pricing-cards .btms .items .innerCntt .features .features_items svg circle{
+  fill:{{ module.module_settings.card_group.icon_background_color.rgba }};
+  }
+  {%  endif %}
+  
+  {% if module.module_settings.card_group.features_icon_color == "custom" %} 
+  .{{ name }}.u4m-pricing-cards .btms .items .innerCntt .features .features_items svg path{
+    fill:{{ module.module_settings.card_group.icon_color.rgba }}
+  }
+  {%  endif %}
+</style>
 
-
-
-
+{%  end_require_css %}
 
 
 

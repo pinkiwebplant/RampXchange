@@ -75,8 +75,9 @@ section.u4m-filtered-content .topSec .flex_row .featCardsOuter .cardItems .cardI
   }
 }
 section.u4m-filtered-content .topSec .flex_row .featCardsOuter .cardItems .cardItem .itemInr {
-  border-radius: 12px;
+  border-radius: 4rem;
   overflow: hidden;
+  filter: drop-shadow(0px 0px 20px rgba(0, 0, 0, 0.15));
 }
 section.u4m-filtered-content .topSec .flex_row .featCardsOuter .cardItems .cardItem .itemInr.cardColor * {
   color: #ffffff;
@@ -89,6 +90,9 @@ section.u4m-filtered-content .topSec .flex_row .featCardsOuter .cardItems .cardI
 }
 section.u4m-filtered-content .topSec .flex_row .featCardsOuter .cardItems .cardItem .itemInr a:not(.arrow-link) {
   color: inherit;
+}
+section.u4m-filtered-content .topSec .flex_row .featCardsOuter .cardItems .cardItem .itemInr a.arrow-link {
+  padding: 0;
 }
 section.u4m-filtered-content .topSec .flex_row .featCardsOuter .cardItems .cardItem .itemInr .itemImg .itemImgin {
   position: relative;
@@ -120,6 +124,9 @@ section.u4m-filtered-content .topSec .flex_row .featCardsOuter .cardItems .cardI
 section.u4m-filtered-content .topSec .flex_row .featCardsOuter .cardItems .cardItem .itemInr .itemCnWrap .itemCntSec {
   margin-bottom: 32px;
 }
+section.u4m-filtered-content .topSec .flex_row .featCardsOuter .cardItems .cardItem .itemInr .itemCnWrap .itemCntSec .itemMetain {
+  margin-bottom: 32px;
+}
 section.u4m-filtered-content .topSec .flex_row .featCardsOuter .cardItems .cardItem .itemInr .itemCnWrap .itemCntSec .itemTitle h4 {
   margin: 0;
 }
@@ -132,6 +139,7 @@ section.u4m-filtered-content .topSec .flex_row .featCardsOuter .cardItems .cardI
   line-height: 1;
   margin-bottom: 8px;
   flex-wrap: nowrap;
+  color: #006f3c;
 }
 @media (max-width: 580px) {
   section.u4m-filtered-content .topSec .flex_row .featCardsOuter .cardItems .cardItem .itemInr .itemCnWrap .itemCntSec .itemTags {
@@ -158,7 +166,11 @@ section.u4m-filtered-content .topSec .flex_row .featCardsOuter .cardItems .cardI
     flex-wrap: wrap;
   }
 }
+section.u4m-filtered-content .topSec .flex_row .featCardsOuter .cardItems .cardItem .itemInr .itemCnWrap .itemCntSec .restitle {
+  margin-bottom: 0;
+}
 section.u4m-filtered-content .topSec .flex_row .featCardsOuter .cardItems .cardItem .itemInr .itemCnWrap .intro_btn_wrap {
+  font-size: 16rem;
   margin: auto 0 0;
   justify-content: start;
 }
@@ -197,8 +209,21 @@ section.u4m-filtered-content .topSec .flex_row .featCardsOuter .cardItems .cardI
     padding-bottom: 56.66%;
   }
 }
+section.u4m-filtered-content .topSec .flex_row .featCardsOuter .cardItems .cardItem .itemInr .itemCnWrap .itemCntSec .itemTags {
+  font-weight: 400;
+  font-size: 16rem;
+  margin-bottom: 32px;
+  text-shadow: 1px 0 0 currentColor;
+}
 section.u4m-filtered-content .topSec .flex_row .featCardsOuter .cardItems .cardItem .itemInr .itemCnWrap .itemCntSec .itemTitle {
   margin-bottom: 8px;
+  font-weight: 500;
+}
+section.u4m-filtered-content .topSec .flex_row .featCardsOuter .cardItems .cardItem .itemInr .itemCnWrap .itemCntSec .itemTitle h3 {
+  margin: 0;
+}
+section.u4m-filtered-content .topSec .flex_row .featCardsOuter .cardItems .cardItem .itemInr .itemCnWrap .intro_btn_wrap {
+  font-size: 16rem;
 }
 section.u4m-filtered-content .featCardsListWrap .filterWrap {
   padding: 60rem 0;
@@ -228,7 +253,7 @@ section.u4m-filtered-content .featCardsListWrap .filterWrap .flex_row .selctArro
   appearance: none;
   background-position: calc(100% - 30px) center;
   padding: 12.5px 64px 12.5px 24px;
-  border-radius: 12px;
+  border-radius: 4rem;
   border: 1px solid #6e757c;
   outline: none;
   color: #6e757c;
@@ -256,8 +281,9 @@ section.u4m-filtered-content .featCardsListWrap .cardSctn .cardItems .cardItem {
   }
 }
 section.u4m-filtered-content .featCardsListWrap .cardSctn .cardItems .cardItem .itemInr {
-  border-radius: 12px;
+  border-radius: 4rem;
   overflow: hidden;
+  filter: drop-shadow(0px 0px 20px rgba(0, 0, 0, 0.15));
 }
 section.u4m-filtered-content .featCardsListWrap .cardSctn .cardItems .cardItem .itemInr.cardColor * {
   color: #ffffff;
@@ -270,6 +296,9 @@ section.u4m-filtered-content .featCardsListWrap .cardSctn .cardItems .cardItem .
 }
 section.u4m-filtered-content .featCardsListWrap .cardSctn .cardItems .cardItem .itemInr a:not(.arrow-link) {
   color: inherit;
+}
+section.u4m-filtered-content .featCardsListWrap .cardSctn .cardItems .cardItem .itemInr a.arrow-link {
+  padding: 0;
 }
 section.u4m-filtered-content .featCardsListWrap .cardSctn .cardItems .cardItem .itemInr .itemImg .itemImgin {
   position: relative;
@@ -301,6 +330,9 @@ section.u4m-filtered-content .featCardsListWrap .cardSctn .cardItems .cardItem .
 section.u4m-filtered-content .featCardsListWrap .cardSctn .cardItems .cardItem .itemInr .itemCnWrap .itemCntSec {
   margin-bottom: 32px;
 }
+section.u4m-filtered-content .featCardsListWrap .cardSctn .cardItems .cardItem .itemInr .itemCnWrap .itemCntSec .itemMetain {
+  margin-bottom: 32px;
+}
 section.u4m-filtered-content .featCardsListWrap .cardSctn .cardItems .cardItem .itemInr .itemCnWrap .itemCntSec .itemTitle h4 {
   margin: 0;
 }
@@ -313,6 +345,7 @@ section.u4m-filtered-content .featCardsListWrap .cardSctn .cardItems .cardItem .
   line-height: 1;
   margin-bottom: 8px;
   flex-wrap: nowrap;
+  color: #006f3c;
 }
 @media (max-width: 580px) {
   section.u4m-filtered-content .featCardsListWrap .cardSctn .cardItems .cardItem .itemInr .itemCnWrap .itemCntSec .itemTags {
@@ -339,9 +372,23 @@ section.u4m-filtered-content .featCardsListWrap .cardSctn .cardItems .cardItem .
     flex-wrap: wrap;
   }
 }
+section.u4m-filtered-content .featCardsListWrap .cardSctn .cardItems .cardItem .itemInr .itemCnWrap .itemCntSec .restitle {
+  margin-bottom: 0;
+}
 section.u4m-filtered-content .featCardsListWrap .cardSctn .cardItems .cardItem .itemInr .itemCnWrap .intro_btn_wrap {
+  font-size: 16rem;
   margin: auto 0 0;
   justify-content: start;
+}
+section.u4m-filtered-content .featCardsListWrap .cardSctn .cardItems .cardItem .itemInr .itemCnWrap .itemCntSec .restitle {
+  font-weight: 600;
+  margin: 0;
+}
+section.u4m-filtered-content .featCardsListWrap .cardSctn .cardItems .cardItem .itemInr .itemCnWrap .itemCntSec .itemTags {
+  color: inherit;
+}
+section.u4m-filtered-content .featCardsListWrap .cardSctn .cardItems .cardItem .itemInr .itemCnWrap .intro_btn_wrap {
+  font-size: 16rem;
 }
 section.u4m-filtered-content .featCardsListWrap .cardSctn .cardItems .statusCnt {
   width: 100%;
@@ -383,10 +430,22 @@ section.u4m-filtered-content .featCardsListWrap .pagination nav button.prevnext 
   pointer-events: none;
 }
 section.u4m-filtered-content .featCardsListWrap .pagination nav button:not(.prevnext) {
-  color: #007c43;
+  color: #006f3c;
   font-weight: 600;
   text-align: center;
 }
 section.u4m-filtered-content .featCardsListWrap .pagination nav button.active {
-  border-bottom: 2px solid #007c43;
+  border-bottom: 2px solid #006f3c;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.cardItem {
+  animation: fadeIn 2s ease-in-out;
 }

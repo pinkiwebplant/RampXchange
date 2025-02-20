@@ -1,5 +1,13 @@
 @import "../../css/_module-imports";
 .u4m-slider-tabs-top {
+  &.soft_white {
+    .slider-tabs-top-wrapper .row .tabber_top_tabs ul {
+      background-color: $white;
+    }
+    ul:not([class]) li:not([class]):before {
+      background-color: $white !important;
+    }
+  }
   &.reverse-text {
     .slider-tabs-top-wrapper {
       .row {
@@ -31,8 +39,8 @@
     position: relative;
     z-index: 9;
     .row {
-     @include centerSmall;
-     padding: 0;
+      @include centerSmall;
+      padding: 0;
       .tabber_top_tabs {
         @include tabletvert {
           display: none;
@@ -44,13 +52,15 @@
           list-style: none;
           display: flex;
           justify-content: center;
-          background: $airwhite;
+          background: $tabBg;
           text-align: center;
           border-radius: 12px;
           justify-content: space-between;
           li {
             border-radius: 12px;
             max-width: 185px;
+            @include size16;
+            font-weight: 500;
             @include navbreak {
               max-width: unset;
             }
@@ -63,7 +73,7 @@
             background: none;
             justify-content: center;
             &.active {
-              background: $digitalgreen;
+              background: $lightgreen;
             }
             a {
               text-decoration: none;
@@ -84,7 +94,7 @@
           align-items: center;
           align-items: flex-start;
           @include tabletvert {
-            display: none; 
+            display: none;
             padding: 20px;
           }
         }
@@ -159,11 +169,11 @@
               width: 100%;
               margin-bottom: 40px;
             }
-            h3 { 
+            h3 {
               @include size32;
               margin-bottom: 20px;
-              @include tabletvert{
-              @include size22; 
+              @include tabletvert {
+                @include size22;
               }
               br {
                 display: none;
@@ -193,22 +203,21 @@
             }
             .media_sec {
               padding-bottom: 56%;
-              position: relative;  
-              border-radius: $borderRadius; 
+              position: relative;
+              border-radius: $borderRadius;
+              overflow: hidden;
+              .img_section {
                 overflow: hidden;
-              .img_section{
-                overflow: hidden;
-                border-radius: $borderRadius; 
+                border-radius: $borderRadius;
               }
               @include tabletvert {
                 padding-bottom: 66.6%;
                 min-height: unset;
               }
-              .vid_section { 
-                
+              .vid_section {
                 &.video-enable {
                   .poster_img {
-                    display: none; 
+                    display: none;
                   }
                 }
               }
@@ -248,7 +257,7 @@
               }
             }
             .inner_cntnt {
-              h5 {
+              h6 {
                 margin-bottom: 20px;
               }
               ul {

@@ -1,45 +1,5 @@
-// // Handle tab click and activation
-// $(".tab-item .tab-inner h4").click(function () {
-//   // Toggle the active class for the clicked tab
-//   $(this)
-//     .parent()
-//     .closest(".tab-item")
-//     .toggleClass("acc-open")
-//     .siblings()
-//     .removeClass("acc-open");
-
-//   $(this).next().slideToggle(250);
-//   var tabId = $(this).parent().closest(".tab-item").attr("data-id");
-
-//   // Show the corresponding image/video section and hide others
-//   $(".tab-image-section .img-item").each(function () {
-//     var dataSrc = $(this).attr("data-src");
-//     if (tabId === dataSrc) {
-//       $(this).addClass("acc-open").siblings().removeClass("acc-open");
-//     }
-//   });
-
-//   // Stop all iframe videos
-//   $(".tab-image-section .img-item iframe").each(function () {
-//     var iframe = $(this);
-//     var originalSrc = iframe.attr("data-src"); // Retrieve the original data-src
-//     if (originalSrc) {
-//       iframe.attr("src", ""); // Clear the src to stop the video
-//     }
-//   });
-
-//   // Stop all normal videos
-//   $(".tab-image-section .img-item video").each(function () {
-//     this.pause();
-//     this.currentTime = 0; // Reset the video to the beginning
-//   });
-
-//   // Remove video_play class from all video_wrap and external_video elements
-//   $(".video_wrap, .external_video").removeClass("video_play");
-// });
-
 // Tab Click and Activation Handler
-$(".tab-item .tab-inner h4").click(function () {
+$(".tab-item .tab-inner h3").click(function () {
   var $tabItem = $(this).closest(".tab-item");
   var tabId = $tabItem.attr("data-id");
   console.log("Clicked Tab ID:", tabId);

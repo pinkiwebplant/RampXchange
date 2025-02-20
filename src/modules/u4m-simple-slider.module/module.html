@@ -47,7 +47,7 @@
 						<div class="{% if not item.image_field.src %} no_right_img{% endif %}">
 							<div class="left_section">
 
-								<div class="topSec">
+								<div class="topSec intro_content">
 									{% if item.eyebrow_text %}
 									<div class="eyebrow_text">
 										{{ item.eyebrow_text }}
@@ -98,7 +98,7 @@
 					<div class="slider_item {{ row.select_title.columns.select_title.columns.name|lower|replace(' ','-') }}">
 						<div class="row {% if not row.select_title.columns.logo_image.url %} no_right_img{% endif %}">
 							<div class="left_section">
-								<div class="topSec">
+								<div class="topSec intro_content">
 									{% if row.select_title.columns.eyebrow_text %}
 									<div class="eyebrow_text">
 										{{ row.select_title.columns.eyebrow_text }}
@@ -217,10 +217,6 @@
 
 			{% endif %}
 		</div>
-		{% if module.module_setting.content_type == 'tc' %}
-		<div class="shape_image">
-		</div>
-		{% endif %}
 	</div>
 
 </div>
@@ -229,35 +225,11 @@
 {% require_css %}
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.css" />
 {% end_require_css %}
-{% if  module.module_setting.content_type == 'tc' %}
-	{% require_css %}
-	{% if module.module_overrides.background_settings.select_color == 'forest_green' %}
-	{% set svgColor = '%23007c43' %}
-	{% elif module.module_overrides.background_settings.select_color == 'dark_teal' %}
-	{% set svgColor = '%23213944' %}
-	{% elif module.module_overrides.background_settings.select_color == 'pale_green' %}
-	{% set svgColor = '%23b5dda5' %}
-	{% elif module.module_overrides.background_settings.select_color == 'silver_gray' %}
-	{% set svgColor = '%23dbdbdb' %}
-	{% elif module.module_overrides.background_settings.select_color == 'charcoal_gray' %}
-	{% set svgColor = '%236e757c' %}
-	{% elif module.module_overrides.background_settings.select_color == 'golden_brown' %}
-	{% set svgColor = '%23c49e5b' %}
-	{% elif module.module_overrides.background_settings.select_color == 'soft_white' %}
-	{% set svgColor = '%23f7f8f6' %}
-	{% else %}
-	{% set svgColor = '%23ffffff' %}
-	{% endif %}
-	<style>
-		.{{ name }} .shape_image {
-			background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 1440 579' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M805.256 0H0V579H749.684L941.963 242.344L805.256 0ZM967.146 579H1162.34L1059.98 372.753H1057.28L967.146 579ZM1386.6 579H1440V0H1325.32L1188.77 236.955L1386.6 579ZM1122.19 0L1073.45 111.396H1070.76L1018.54 0H1122.19Z' fill='{{ svgColor }}'/%3E%3C/svg%3E");
-		  }
-	</style>
-	{% end_require_css %}
-	{% endif %}
+
 {% require_js %}
 <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
 <script>
+{% if module.module_setting.content_type == 'tc' %}
 	$(document).ready(function () {
 
 		$('.{{ name }} .slider_wrapper').slick({
@@ -267,9 +239,9 @@
 			fade: true,
 			autoplay: true,
 			autoplaySpeed: 5000,
-			prevArrow: $('.prev-arrow'),
-			nextArrow: $('.next-arrow'),
-				asNavFor: '.bgImageNav'
+			prevArrow: $('.{{ name }} .prev-arrow'),
+			nextArrow: $('.{{ name }} .next-arrow'),
+				asNavFor: '.{{ name }} .bgImageNav'
 	});
 	$('.{{ name }} .bgImageNav').slick({
 		slidesToShow: 1,
@@ -280,5 +252,17 @@
 		arrows: false,
 		});
 	});
+	{% else %}
+		$('.{{ name }} .slider_wrapper').slick({
+			slidesToShow: 1,
+			slidesToScroll: 1,
+			arrows: true,
+			fade: true,
+			autoplay: true,
+			autoplaySpeed: 5000,
+			prevArrow: $('.{{ name }} .prev-arrow'),
+			nextArrow: $('.{{ name }} .next-arrow')
+	});
+	{% endif %}
 </script>
 {% end_require_js %}

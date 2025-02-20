@@ -326,8 +326,9 @@
         width: 33.33%;
       }
       .itemInr {
-        border-radius: 12px;
+        border-radius: $borderRadius;
         overflow: hidden;
+        filter: $dropshadow;
         &.cardColor {
           * {
             color: $white;
@@ -345,9 +346,15 @@
         a {
           text-decoration: none;
         }
-        a:not(.arrow-link) {
-          color: inherit;
+        a {
+          &:not(.arrow-link) {
+            color: inherit;
+          }
+          &.arrow-link {
+            padding: 0;
+          }
         }
+
         .itemImg {
           .itemImgin {
             position: relative;
@@ -374,6 +381,9 @@
           }
           .itemCntSec {
             margin-bottom: 32px;
+            .itemMetain {
+              margin-bottom: 32px;
+            }
             .itemTitle {
               h4 {
                 margin: 0;
@@ -388,6 +398,7 @@
               line-height: 1;
               margin-bottom: 8px;
               flex-wrap: nowrap;
+              color: $rampGreen;
               @include phone {
                 flex-wrap: wrap;
               }
@@ -410,8 +421,12 @@
                 flex-wrap: wrap;
               }
             }
+            .restitle {
+              margin-bottom: 0;
+            }
           }
           .intro_btn_wrap {
+            @include size16;
             margin: auto 0 0;
             justify-content: start;
           }

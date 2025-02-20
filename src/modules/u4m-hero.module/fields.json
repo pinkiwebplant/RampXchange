@@ -1,24 +1,22 @@
 [ {
   "id" : "081bfb60-a75d-a475-e7fb-44c8a8969c1a",
   "name" : "intro_content",
-  "display_width" : null,
   "label" : "Content",
   "required" : false,
   "locked" : false,
   "children" : [ {
     "id" : "c5ccdda8-6960-e255-a51f-c61077a633ca",
     "name" : "include_eyebrow_text",
-    "display_width" : null,
     "label" : "Include Eyebrow Text",
     "required" : false,
     "locked" : false,
     "display" : "checkbox",
     "type" : "boolean",
+    "display_width" : null,
     "default" : true
   }, {
     "id" : "5baff6ad-02e1-6b84-3429-260a0ded7ef6",
     "name" : "eyebrow_text",
-    "display_width" : null,
     "label" : "Eyebrow Text",
     "required" : false,
     "locked" : false,
@@ -34,21 +32,21 @@
     "allow_new_line" : false,
     "show_emoji_picker" : false,
     "type" : "text",
-    "default" : "Optional Eyebrow Text"
+    "display_width" : null,
+    "default" : "Cybersecurity Procurement Simplified."
   }, {
     "id" : "e1a83e2f-f82a-c168-4ab5-d2e59735e581",
     "name" : "include_heading",
-    "display_width" : null,
     "label" : "Include Heading",
     "required" : false,
     "locked" : false,
     "display" : "checkbox",
     "type" : "boolean",
+    "display_width" : null,
     "default" : true
   }, {
     "id" : "aef5e961-e297-2654-68e0-6128687770bf",
     "name" : "heading_size",
-    "display_width" : null,
     "label" : "Heading Size",
     "required" : false,
     "locked" : false,
@@ -66,11 +64,11 @@
     "reordering_enabled" : true,
     "preset" : null,
     "type" : "choice",
+    "display_width" : null,
     "default" : "h1"
   }, {
     "id" : "c7aa6b72-58e0-4caa-9b63-4da765e70069",
     "name" : "heading",
-    "display_width" : null,
     "label" : "Heading",
     "required" : false,
     "locked" : false,
@@ -86,21 +84,21 @@
     "allow_new_line" : false,
     "show_emoji_picker" : false,
     "type" : "text",
-    "default" : "Take Charge of Your Cybersecurity. Find Partners You Can Trust in One Platform."
+    "display_width" : null,
+    "default" : "The comprehensive platform for securing verified cybersecurity services."
   }, {
     "id" : "2f10bd6e-cf85-1cf6-5a4f-fa75e1e78238",
     "name" : "include_content",
-    "display_width" : null,
     "label" : "Include Content",
     "required" : false,
     "locked" : false,
     "display" : "checkbox",
     "type" : "boolean",
+    "display_width" : null,
     "default" : true
   }, {
     "id" : "0dc03814-a33d-3284-f2d6-b130f633f03d",
     "name" : "content",
-    "display_width" : null,
     "label" : "Content",
     "required" : false,
     "locked" : false,
@@ -113,21 +111,21 @@
       "access" : null
     },
     "type" : "richtext",
-    "default" : "<p>Discover how RAMPxchange revolutionizes cybersecurity buying with our all-in-one procurement platform. Our marketplace is more than a bridge to experts; it's a guide that empowers you to take control of your cybersecurity journey with confidence and clarity.</p>"
+    "display_width" : null,
+    "default" : "<p>Discover, evaluate, and acquire pre-vetted cybersecurity services with RAMPxchange, a secure marketplace designed to streamline cybersecurity purchasing. With a dedicated advisor team to provide industry expertise and personalized guidance, plus a user-friendly platform to conduct cybersecurity business, you will be equipped to make informed decisions with confidence and spend more time focused on your core operations.</p>"
   }, {
     "id" : "4a517c8a-8c15-a721-dca5-db7b58a8c2a7",
     "name" : "include_button",
-    "display_width" : null,
     "label" : "Include Button",
     "required" : false,
     "locked" : false,
     "display" : "checkbox",
     "type" : "boolean",
+    "display_width" : null,
     "default" : true
   }, {
     "id" : "3d861e2f-6981-78b6-57a8-d59863169561",
     "name" : "button_group",
-    "display_width" : null,
     "label" : "Button Group",
     "required" : false,
     "locked" : false,
@@ -148,7 +146,6 @@
     "children" : [ {
       "id" : "43e0936c-b29a-7bd7-61e3-b4671077ba62",
       "name" : "button_type",
-      "display_width" : null,
       "label" : "Button Type",
       "required" : false,
       "locked" : false,
@@ -158,11 +155,11 @@
       "reordering_enabled" : true,
       "preset" : null,
       "type" : "choice",
+      "display_width" : null,
       "default" : "std"
     }, {
       "id" : "9d5fe057-d461-68d1-9845-607ec6d892ff",
       "name" : "button_style",
-      "display_width" : null,
       "label" : "Button Style",
       "required" : false,
       "locked" : false,
@@ -180,11 +177,11 @@
       "reordering_enabled" : true,
       "preset" : null,
       "type" : "choice",
+      "display_width" : null,
       "default" : "hs-button"
     }, {
       "id" : "d7f546d8-3ad4-e6d8-2402-9344198c279b",
       "name" : "include_arrow_icon",
-      "display_width" : null,
       "label" : "Include Arrow Icon",
       "required" : false,
       "locked" : false,
@@ -198,11 +195,11 @@
       },
       "display" : "checkbox",
       "type" : "boolean",
+      "display_width" : null,
       "default" : false
     }, {
       "id" : "105bbd69-dccc-fd6b-3d3d-3f4063128744",
       "name" : "button_text",
-      "display_width" : null,
       "label" : "Button Text",
       "required" : false,
       "locked" : false,
@@ -218,11 +215,11 @@
       "allow_new_line" : false,
       "show_emoji_picker" : false,
       "type" : "text",
+      "display_width" : null,
       "default" : "Book a Demo"
     }, {
       "id" : "f1ccd7fd-a18d-1262-3c67-476cdf5424cd",
       "name" : "link",
-      "display_width" : null,
       "label" : "Link",
       "required" : false,
       "locked" : false,
@@ -237,6 +234,7 @@
       "supported_types" : [ "EXTERNAL", "CONTENT", "FILE", "EMAIL_ADDRESS", "PHONE_NUMBER" ],
       "show_advanced_rel_options" : false,
       "type" : "link",
+      "display_width" : null,
       "default" : {
         "url" : {
           "content_id" : null,
@@ -249,7 +247,6 @@
     }, {
       "id" : "ef46548d-bcc7-841c-4635-d4d035ae7022",
       "name" : "cta",
-      "display_width" : null,
       "label" : "CTA",
       "required" : false,
       "locked" : false,
@@ -261,12 +258,14 @@
         "operator" : "EQUAL",
         "access" : null
       },
-      "type" : "cta"
+      "type" : "cta",
+      "display_width" : null
     } ],
     "tab" : "CONTENT",
     "expanded" : false,
     "group_occurrence_meta" : null,
     "type" : "group",
+    "display_width" : null,
     "default" : [ {
       "button_type" : "std",
       "button_style" : "hs-button",
@@ -301,14 +300,15 @@
   "expanded" : false,
   "group_occurrence_meta" : null,
   "type" : "group",
+  "display_width" : null,
   "default" : {
     "include_eyebrow_text" : true,
-    "eyebrow_text" : "Optional Eyebrow Text",
+    "eyebrow_text" : "Cybersecurity Procurement Simplified.",
     "include_heading" : true,
     "heading_size" : "h1",
-    "heading" : "Take Charge of Your Cybersecurity. Find Partners You Can Trust in One Platform.",
+    "heading" : "The comprehensive platform for securing verified cybersecurity services.",
     "include_content" : true,
-    "content" : "<p>Discover how RAMPxchange revolutionizes cybersecurity buying with our all-in-one procurement platform. Our marketplace is more than a bridge to experts; it's a guide that empowers you to take control of your cybersecurity journey with confidence and clarity.</p>",
+    "content" : "<p>Discover, evaluate, and acquire pre-vetted cybersecurity services with RAMPxchange, a secure marketplace designed to streamline cybersecurity purchasing. With a dedicated advisor team to provide industry expertise and personalized guidance, plus a user-friendly platform to conduct cybersecurity business, you will be equipped to make informed decisions with confidence and spend more time focused on your core operations.</p>",
     "include_button" : true,
     "button_group" : [ {
       "button_type" : "std",
@@ -343,14 +343,12 @@
 }, {
   "id" : "e35e51f9-3d4b-4f63-ecb5-239f6522bfae",
   "name" : "media",
-  "display_width" : null,
   "label" : "Media Section",
   "required" : false,
   "locked" : false,
   "children" : [ {
     "id" : "f84b0fd4-eb0e-4d51-5031-ad877f4a06f9",
     "name" : "type",
-    "display_width" : null,
     "label" : "Type",
     "required" : false,
     "locked" : false,
@@ -360,11 +358,11 @@
     "reordering_enabled" : true,
     "preset" : null,
     "type" : "choice",
+    "display_width" : null,
     "default" : "video"
   }, {
     "id" : "3270fd60-010e-96e5-e515-198daaef0700",
     "name" : "image",
-    "display_width" : null,
     "label" : "Image",
     "required" : false,
     "locked" : false,
@@ -380,20 +378,20 @@
     "resizable" : false,
     "show_loading" : false,
     "type" : "image",
+    "display_width" : null,
     "default" : {
       "size_type" : "auto",
-      "src" : "https://47484996.fs1.hubspotusercontent-na1.net/hubfs/47484996/RampXchange-u4m/images/Poster%20Image.png",
-      "alt" : "Poster Image",
+      "src" : "https://47484996.fs1.hubspotusercontent-na1.net/hubfs/47484996/RampXchange-u4m/images/Image-1.png",
+      "alt" : "Hero Image",
       "loading" : "lazy",
-      "width" : 855,
-      "height" : 571,
-      "max_width" : 855,
-      "max_height" : 571
+      "width" : 510,
+      "height" : 291,
+      "max_width" : 510,
+      "max_height" : 291
     }
   }, {
     "id" : "9d556862-c031-517d-9b89-e160ba5055a4",
     "name" : "video_section",
-    "display_width" : null,
     "label" : "Video Section",
     "required" : false,
     "locked" : false,
@@ -408,7 +406,6 @@
     "children" : [ {
       "id" : "c11a4a3e-4884-913d-0af0-077bbabcd509",
       "name" : "video_type",
-      "display_width" : null,
       "label" : "Video Type",
       "required" : false,
       "locked" : false,
@@ -418,11 +415,25 @@
       "reordering_enabled" : true,
       "preset" : null,
       "type" : "choice",
+      "display_width" : null,
       "default" : "file"
+    }, {
+      "id" : "caf1b5fb-9ff8-1537-c024-bba9bc5f51be",
+      "name" : "poster_image_style",
+      "label" : "Poster Image Style",
+      "required" : false,
+      "locked" : false,
+      "display" : "select",
+      "choices" : [ [ "style1", "Style 1" ], [ "style2", "Style 2" ] ],
+      "multiple" : false,
+      "reordering_enabled" : true,
+      "preset" : null,
+      "type" : "choice",
+      "display_width" : null,
+      "default" : "style2"
     }, {
       "id" : "43be26d9-c80e-ee60-d1af-d4671b54eeb3",
       "name" : "poster_image",
-      "display_width" : null,
       "label" : "Poster Image",
       "required" : false,
       "locked" : false,
@@ -430,21 +441,21 @@
       "resizable" : false,
       "show_loading" : false,
       "type" : "image",
+      "display_width" : null,
       "default" : {
         "size_type" : "auto",
-        "src" : "https://47484996.fs1.hubspotusercontent-na1.net/hubfs/47484996/RampXchange-u4m/images/Poster%20Image.png",
-        "alt" : "Poster Image",
+        "src" : "https://47484996.fs1.hubspotusercontent-na1.net/hubfs/47484996/RampXchange-u4m/images/heroImage.png",
+        "alt" : "Hero Image",
         "loading" : "lazy",
-        "width" : 855,
-        "height" : 571,
-        "max_width" : 855,
-        "max_height" : 571
+        "width" : 1020,
+        "height" : 580,
+        "max_width" : 1020,
+        "max_height" : 580
       }
     }, {
       "picker" : "video",
       "id" : "ddf96ef8-1e63-757f-9de1-55248e8984c6",
       "name" : "video",
-      "display_width" : null,
       "label" : "Video",
       "required" : false,
       "locked" : false,
@@ -457,11 +468,11 @@
         "access" : null
       },
       "type" : "file",
+      "display_width" : null,
       "default" : "https://47484996.fs1.hubspotusercontent-na1.net/hubfs/47484996/RampXchange-u4m/videos/big_buck_bunny_720p_1mb.mp4"
     }, {
       "id" : "55bd8c65-b2bf-ec0d-caa7-c7e21ba4b87d",
       "name" : "embed_url",
-      "display_width" : null,
       "label" : "Embed url",
       "required" : false,
       "locked" : false,
@@ -477,23 +488,26 @@
       "allow_new_line" : false,
       "show_emoji_picker" : false,
       "type" : "text",
+      "display_width" : null,
       "default" : "https://www.youtube.com/embed/9xwazD5SyVg"
     } ],
     "tab" : "CONTENT",
     "expanded" : false,
     "group_occurrence_meta" : null,
     "type" : "group",
+    "display_width" : null,
     "default" : {
       "video_type" : "file",
+      "poster_image_style" : "style2",
       "poster_image" : {
         "size_type" : "auto",
-        "src" : "https://47484996.fs1.hubspotusercontent-na1.net/hubfs/47484996/RampXchange-u4m/images/Poster%20Image.png",
-        "alt" : "Poster Image",
+        "src" : "https://47484996.fs1.hubspotusercontent-na1.net/hubfs/47484996/RampXchange-u4m/images/heroImage.png",
+        "alt" : "Hero Image",
         "loading" : "lazy",
-        "width" : 855,
-        "height" : 571,
-        "max_width" : 855,
-        "max_height" : 571
+        "width" : 1020,
+        "height" : 580,
+        "max_width" : 1020,
+        "max_height" : 580
       },
       "video" : "https://47484996.fs1.hubspotusercontent-na1.net/hubfs/47484996/RampXchange-u4m/videos/big_buck_bunny_720p_1mb.mp4",
       "embed_url" : "https://www.youtube.com/embed/9xwazD5SyVg"
@@ -503,29 +517,31 @@
   "expanded" : false,
   "group_occurrence_meta" : null,
   "type" : "group",
+  "display_width" : null,
   "default" : {
     "type" : "video",
     "image" : {
       "size_type" : "auto",
-      "src" : "https://47484996.fs1.hubspotusercontent-na1.net/hubfs/47484996/RampXchange-u4m/images/Poster%20Image.png",
-      "alt" : "Poster Image",
+      "src" : "https://47484996.fs1.hubspotusercontent-na1.net/hubfs/47484996/RampXchange-u4m/images/Image-1.png",
+      "alt" : "Hero Image",
       "loading" : "lazy",
-      "width" : 855,
-      "height" : 571,
-      "max_width" : 855,
-      "max_height" : 571
+      "width" : 510,
+      "height" : 291,
+      "max_width" : 510,
+      "max_height" : 291
     },
     "video_section" : {
       "video_type" : "file",
+      "poster_image_style" : "style2",
       "poster_image" : {
         "size_type" : "auto",
-        "src" : "https://47484996.fs1.hubspotusercontent-na1.net/hubfs/47484996/RampXchange-u4m/images/Poster%20Image.png",
-        "alt" : "Poster Image",
+        "src" : "https://47484996.fs1.hubspotusercontent-na1.net/hubfs/47484996/RampXchange-u4m/images/heroImage.png",
+        "alt" : "Hero Image",
         "loading" : "lazy",
-        "width" : 855,
-        "height" : 571,
-        "max_width" : 855,
-        "max_height" : 571
+        "width" : 1020,
+        "height" : 580,
+        "max_width" : 1020,
+        "max_height" : 580
       },
       "video" : "https://47484996.fs1.hubspotusercontent-na1.net/hubfs/47484996/RampXchange-u4m/videos/big_buck_bunny_720p_1mb.mp4",
       "embed_url" : "https://www.youtube.com/embed/9xwazD5SyVg"
@@ -534,14 +550,12 @@
 }, {
   "id" : "d26e3ee0-3d99-992b-0aca-f89208f647ff",
   "name" : "module_settings",
-  "display_width" : null,
   "label" : "Module Settings",
   "required" : false,
   "locked" : false,
   "children" : [ {
     "id" : "626f0aa3-c7a0-8466-e4c5-911e4bab0b85",
     "name" : "content_alignment",
-    "display_width" : null,
     "label" : "Content Alignment",
     "required" : false,
     "locked" : false,
@@ -551,50 +565,37 @@
     "reordering_enabled" : true,
     "preset" : null,
     "type" : "choice",
-    "default" : "left"
-  }, {
-    "id" : "1ececde7-6ed5-8f07-5f11-098e2c81aab6",
-    "name" : "border_radius",
     "display_width" : null,
-    "label" : "Border Radius",
-    "required" : false,
-    "locked" : false,
-    "display" : "text",
-    "step" : 1,
-    "suffix" : "px",
-    "type" : "number",
-    "default" : 12
+    "default" : "left"
   } ],
   "tab" : "CONTENT",
   "expanded" : false,
   "group_occurrence_meta" : null,
   "type" : "group",
+  "display_width" : null,
   "default" : {
-    "content_alignment" : "left",
-    "border_radius" : 12
+    "content_alignment" : "left"
   }
 }, {
   "id" : "module_overrides",
   "name" : "module_overrides",
-  "display_width" : null,
   "label" : "Module Overrides",
   "required" : false,
   "locked" : false,
   "children" : [ {
     "id" : "enable_overrides",
     "name" : "enable_overrides",
-    "display_width" : null,
     "label" : "Enable Overrides",
     "help_text" : "Toggle to override section ID and vertical margin. ",
     "required" : false,
     "locked" : false,
     "display" : "checkbox",
     "type" : "boolean",
+    "display_width" : null,
     "default" : true
   }, {
     "id" : "module_overrides.section_id",
     "name" : "section_id",
-    "display_width" : null,
     "label" : "Section ID",
     "help_text" : "The value you type here will be the anchor link for this section. Should be all lowercase and include dashes instead of spaces. This should be a unique value per module.",
     "required" : false,
@@ -610,11 +611,11 @@
     },
     "allow_new_line" : false,
     "show_emoji_picker" : false,
-    "type" : "text"
+    "type" : "text",
+    "display_width" : null
   }, {
     "id" : "module_overrides.top_margin",
     "name" : "top_margin",
-    "display_width" : null,
     "label" : "Top Margin",
     "required" : false,
     "locked" : false,
@@ -632,11 +633,11 @@
     "reordering_enabled" : true,
     "preset" : null,
     "type" : "choice",
+    "display_width" : null,
     "default" : "top-margin-none"
   }, {
     "id" : "custom_top_margin",
     "name" : "custom_top_margin",
-    "display_width" : null,
     "label" : "Custom Top Margin",
     "required" : false,
     "locked" : false,
@@ -651,11 +652,11 @@
     "display" : "text",
     "step" : 1,
     "type" : "number",
+    "display_width" : null,
     "default" : 100
   }, {
     "id" : "custom_top_margin_mobile",
     "name" : "custom_top_margin_mobile",
-    "display_width" : null,
     "label" : "Custom Top Margin Mobile",
     "required" : false,
     "locked" : false,
@@ -670,11 +671,11 @@
     "display" : "text",
     "step" : 1,
     "type" : "number",
+    "display_width" : null,
     "default" : 50
   }, {
     "id" : "module_overrides.bottom_margin",
     "name" : "bottom_margin",
-    "display_width" : null,
     "label" : "Bottom Margin",
     "required" : false,
     "locked" : false,
@@ -692,11 +693,11 @@
     "reordering_enabled" : true,
     "preset" : null,
     "type" : "choice",
+    "display_width" : null,
     "default" : "bottom-margin-none"
   }, {
     "id" : "custom_bottom_margin",
     "name" : "custom_bottom_margin",
-    "display_width" : null,
     "label" : "Custom Bottom Margin",
     "required" : false,
     "locked" : false,
@@ -711,11 +712,11 @@
     "display" : "text",
     "step" : 1,
     "type" : "number",
+    "display_width" : null,
     "default" : 100
   }, {
     "id" : "custom_bottom_margin_mobile",
     "name" : "custom_bottom_margin_mobile",
-    "display_width" : null,
     "label" : "Custom Bottom Margin Mobile",
     "required" : false,
     "locked" : false,
@@ -730,11 +731,11 @@
     "display" : "text",
     "step" : 1,
     "type" : "number",
+    "display_width" : null,
     "default" : 50
   }, {
     "id" : "module_overrides.top_padding",
     "name" : "top_padding",
-    "display_width" : null,
     "label" : "Top Padding",
     "required" : false,
     "locked" : false,
@@ -752,11 +753,11 @@
     "reordering_enabled" : true,
     "preset" : null,
     "type" : "choice",
+    "display_width" : null,
     "default" : "top-padding-default"
   }, {
     "id" : "custom_top_padding",
     "name" : "custom_top_padding",
-    "display_width" : null,
     "label" : "Custom Top Padding",
     "required" : false,
     "locked" : false,
@@ -771,11 +772,11 @@
     "display" : "text",
     "step" : 1,
     "type" : "number",
+    "display_width" : null,
     "default" : 100
   }, {
     "id" : "custom_top_padding_mobile",
     "name" : "custom_top_padding_mobile",
-    "display_width" : null,
     "label" : "Custom Top Padding Mobile",
     "required" : false,
     "locked" : false,
@@ -790,11 +791,11 @@
     "display" : "text",
     "step" : 1,
     "type" : "number",
+    "display_width" : null,
     "default" : 50
   }, {
     "id" : "module_overrides.bottom_padding",
     "name" : "bottom_padding",
-    "display_width" : null,
     "label" : "Bottom Padding",
     "required" : false,
     "locked" : false,
@@ -812,11 +813,11 @@
     "reordering_enabled" : true,
     "preset" : null,
     "type" : "choice",
+    "display_width" : null,
     "default" : "bottom-padding-default"
   }, {
     "id" : "custom_bottom_padding",
     "name" : "custom_bottom_padding",
-    "display_width" : null,
     "label" : "Custom Bottom Padding",
     "required" : false,
     "locked" : false,
@@ -831,11 +832,11 @@
     "display" : "text",
     "step" : 1,
     "type" : "number",
+    "display_width" : null,
     "default" : 100
   }, {
     "id" : "custom_bottom_padding_mobile",
     "name" : "custom_bottom_padding_mobile",
-    "display_width" : null,
     "label" : "Custom Bottom Padding Mobile",
     "required" : false,
     "locked" : false,
@@ -850,11 +851,11 @@
     "display" : "text",
     "step" : 1,
     "type" : "number",
+    "display_width" : null,
     "default" : 50
   }, {
     "id" : "3eccf45d-b0dc-4bac-42a0-f923e4405158",
     "name" : "reverse_text",
-    "display_width" : null,
     "label" : "Reverse Text",
     "required" : false,
     "locked" : false,
@@ -868,11 +869,11 @@
     },
     "display" : "checkbox",
     "type" : "boolean",
-    "default" : true
+    "display_width" : null,
+    "default" : false
   }, {
     "id" : "94e04306-ecc1-4735-09fd-9b66482a8101",
     "name" : "background_settings",
-    "display_width" : null,
     "label" : "Background Settings",
     "required" : false,
     "locked" : false,
@@ -887,7 +888,6 @@
     "children" : [ {
       "id" : "3c812905-0c66-421d-6e7e-7a7109acdd49",
       "name" : "background_type",
-      "display_width" : null,
       "label" : "Background Type",
       "required" : false,
       "locked" : false,
@@ -897,11 +897,11 @@
       "reordering_enabled" : true,
       "preset" : null,
       "type" : "choice",
-      "default" : "gradient"
+      "display_width" : null,
+      "default" : "image"
     }, {
       "id" : "5d97321e-e326-2d30-8757-51608da05ea6",
       "name" : "background_image",
-      "display_width" : null,
       "label" : "Background Image",
       "required" : false,
       "locked" : false,
@@ -917,16 +917,20 @@
       "resizable" : false,
       "show_loading" : false,
       "type" : "image",
+      "display_width" : null,
       "default" : {
-        "size_type" : "auto",
-        "src" : "",
-        "alt" : null,
-        "loading" : "lazy"
+        "size_type" : "auto_custom_max",
+        "src" : "https://47484996.fs1.hubspotusercontent-na1.net/hubfs/47484996/RampXchange-u4m/images/heroBanner.png",
+        "alt" : "heroBanner",
+        "loading" : "lazy",
+        "width" : 2160,
+        "height" : 818,
+        "max_width" : 2000,
+        "max_height" : 757.4074074074074
       }
     }, {
       "id" : "4ea36da9-c8a6-adf2-7460-cbf4d98190fd",
       "name" : "select_color",
-      "display_width" : null,
       "label" : "Select Color",
       "required" : false,
       "locked" : false,
@@ -939,16 +943,16 @@
         "access" : null
       },
       "display" : "select",
-      "choices" : [ [ "forest_green", "Forest Green" ], [ "dark_teal", "Dark Teal" ], [ "pale_green", "Pale Green" ], [ "silver_gray", "Silver Gray" ], [ "charcoal_gray", "Charcoal Gray" ], [ "golden_brown", "Golden Brown" ], [ "soft_white", "Soft White" ], [ "white_bg", "White" ] ],
+      "choices" : [ [ "forest_green", "Ramp Green" ], [ "dark_teal", "State Blue" ], [ "pale_green", "Digital Green" ], [ "silver_gray", "Cyber Gray" ], [ "charcoal_gray", "Change Gray" ], [ "golden_brown", "Bronze" ], [ "soft_white", "Air White" ], [ "white_bg", "White" ], [ "custom", "Custom" ] ],
       "multiple" : false,
       "reordering_enabled" : true,
       "preset" : null,
       "type" : "choice",
+      "display_width" : null,
       "default" : "forest_green"
     }, {
       "id" : "2659085b-598d-e346-643e-6a9ebb3bae70",
       "name" : "select_gradient",
-      "display_width" : null,
       "label" : "Select Gradient",
       "required" : false,
       "locked" : false,
@@ -961,32 +965,226 @@
         "access" : null
       },
       "display" : "select",
-      "choices" : [ [ "gradient1", "Gradient 1" ], [ "gradient2", "Gradient 2" ], [ "gradient3", "Gradient 3" ], [ "gradient4", "Gradient 4" ], [ "gradient5", "Gradient 5" ] ],
+      "choices" : [ [ "gradient1", "Gradient 1" ], [ "gradient2", "Gradient 2" ], [ "gradient3", "Gradient 3" ], [ "gradient4", "Gradient 4" ], [ "gradient5", "Gradient 5" ], [ "custom", "Custom" ] ],
       "multiple" : false,
       "reordering_enabled" : true,
       "preset" : null,
       "type" : "choice",
+      "display_width" : null,
       "default" : "gradient5"
+    }, {
+      "id" : "a34bb279-ff3a-c145-d0d1-7ed464f10eca",
+      "name" : "select_background_color",
+      "label" : "Select Background Color",
+      "required" : false,
+      "locked" : false,
+      "visibility" : {
+        "controlling_field" : null,
+        "controlling_field_path" : "module_overrides.background_settings.select_color",
+        "controlling_value_regex" : "custom",
+        "property" : null,
+        "operator" : "EQUAL",
+        "access" : null
+      },
+      "type" : "color",
+      "display_width" : null,
+      "default" : {
+        "color" : null,
+        "opacity" : null
+      }
+    }, {
+      "id" : "0e25b378-ee3f-50f9-cddb-ecdb8fcd69b4",
+      "name" : "gradient",
+      "label" : "Gradient",
+      "required" : false,
+      "locked" : false,
+      "visibility" : {
+        "controlling_field" : null,
+        "controlling_field_path" : "module_overrides.background_settings.select_gradient",
+        "controlling_value_regex" : "custom",
+        "property" : null,
+        "operator" : "EQUAL",
+        "access" : null
+      },
+      "children" : [ {
+        "id" : "6c790b6e-07a5-0f3c-3db6-491174f63419",
+        "name" : "direction",
+        "label" : "Direction",
+        "required" : false,
+        "locked" : false,
+        "display" : "select",
+        "choices" : [ [ "to top", "Bottom to top" ], [ "to bottom", "Top to bottom" ], [ "to right", "Left to right" ], [ "to left", "Right to left" ], [ "to bottom right", "Top left to bottom right" ], [ "to bottom left", "Top right to bottom left" ] ],
+        "multiple" : false,
+        "reordering_enabled" : true,
+        "preset" : null,
+        "type" : "choice",
+        "display_width" : null
+      }, {
+        "id" : "c53d899d-6007-89e7-a707-cb9a48d441de",
+        "name" : "start_gradient_color",
+        "label" : "Start Gradient Color",
+        "required" : false,
+        "locked" : false,
+        "type" : "color",
+        "display_width" : null,
+        "default" : {
+          "color" : null,
+          "opacity" : null
+        }
+      }, {
+        "id" : "5a2f165e-c84d-3e77-8f83-df50a9df8c1d",
+        "name" : "end_gradient_color",
+        "label" : "End Gradient Color",
+        "required" : false,
+        "locked" : false,
+        "type" : "color",
+        "display_width" : null,
+        "default" : {
+          "color" : null,
+          "opacity" : null
+        }
+      } ],
+      "tab" : "CONTENT",
+      "expanded" : false,
+      "group_occurrence_meta" : null,
+      "type" : "group",
+      "display_width" : null,
+      "default" : {
+        "start_gradient_color" : {
+          "color" : null,
+          "opacity" : null
+        },
+        "end_gradient_color" : {
+          "color" : null,
+          "opacity" : null
+        }
+      }
+    }, {
+      "id" : "3d5ae8b7-8a2b-533c-624d-9b623db0784d",
+      "name" : "enabled_overlay",
+      "label" : "Enable Overlay",
+      "required" : false,
+      "locked" : false,
+      "visibility" : {
+        "controlling_field" : null,
+        "controlling_field_path" : "module_overrides.background_settings.background_type",
+        "controlling_value_regex" : "image",
+        "property" : null,
+        "operator" : "EQUAL",
+        "access" : null
+      },
+      "display" : "checkbox",
+      "type" : "boolean",
+      "display_width" : null,
+      "default" : false
+    }, {
+      "id" : "15d5b44e-42c9-ed9d-bc62-c4d2497bf0ef",
+      "name" : "overlay_color",
+      "label" : "Overlay Color",
+      "required" : false,
+      "locked" : false,
+      "visibility" : {
+        "controlling_field" : null,
+        "controlling_field_path" : "module_overrides.background_settings.enabled_overlay",
+        "controlling_value_regex" : "true",
+        "property" : null,
+        "operator" : "EQUAL",
+        "access" : null
+      },
+      "display" : "select",
+      "choices" : [ [ "forest_green", "Ramp Green" ], [ "dark_teal", "State Blue" ], [ "pale_green", "Digital Green" ], [ "silver_gray", "Cyber Gray" ], [ "charcoal_gray", "Change Gray" ], [ "golden_brown", "Bronze" ], [ "soft_white", "Air White" ], [ "white_bg", "White" ], [ "custom", "Custom" ] ],
+      "multiple" : false,
+      "reordering_enabled" : true,
+      "preset" : null,
+      "type" : "choice",
+      "display_width" : null,
+      "default" : "forest_green"
+    }, {
+      "id" : "017d3292-8250-8a90-85d6-97552d565766",
+      "name" : "custom_overlay_color",
+      "label" : "Custom Overlay Color",
+      "required" : false,
+      "locked" : false,
+      "visibility" : {
+        "controlling_field" : null,
+        "controlling_field_path" : "module_overrides.background_settings.overlay_color",
+        "controlling_value_regex" : "custom",
+        "property" : null,
+        "operator" : "EQUAL",
+        "access" : null
+      },
+      "type" : "color",
+      "display_width" : null,
+      "default" : {
+        "color" : null,
+        "opacity" : null
+      }
+    }, {
+      "id" : "e2d05039-f92e-388f-6db7-61485a7e4dd9",
+      "name" : "opacity",
+      "label" : "Opacity",
+      "required" : false,
+      "locked" : false,
+      "visibility" : {
+        "controlling_field" : null,
+        "controlling_field_path" : "module_overrides.background_settings.overlay_color",
+        "controlling_value_regex" : "custom",
+        "property" : null,
+        "operator" : "NOT_EQUAL",
+        "access" : null
+      },
+      "display" : "text",
+      "min" : 0.1,
+      "max" : 0.9,
+      "step" : 0.1,
+      "type" : "number",
+      "display_width" : null,
+      "default" : 0.4
     } ],
     "tab" : "CONTENT",
     "expanded" : true,
     "group_occurrence_meta" : null,
     "type" : "group",
+    "display_width" : null,
     "default" : {
-      "background_type" : "gradient",
+      "background_type" : "image",
       "background_image" : {
-        "size_type" : "auto",
-        "src" : "",
-        "alt" : null,
-        "loading" : "lazy"
+        "size_type" : "auto_custom_max",
+        "src" : "https://47484996.fs1.hubspotusercontent-na1.net/hubfs/47484996/RampXchange-u4m/images/heroBanner.png",
+        "alt" : "heroBanner",
+        "loading" : "lazy",
+        "width" : 2160,
+        "height" : 818,
+        "max_width" : 2000,
+        "max_height" : 757.4074074074074
       },
       "select_color" : "forest_green",
-      "select_gradient" : "gradient5"
+      "select_gradient" : "gradient5",
+      "select_background_color" : {
+        "color" : null,
+        "opacity" : null
+      },
+      "gradient" : {
+        "start_gradient_color" : {
+          "color" : null,
+          "opacity" : null
+        },
+        "end_gradient_color" : {
+          "color" : null,
+          "opacity" : null
+        }
+      },
+      "enabled_overlay" : false,
+      "overlay_color" : "forest_green",
+      "custom_overlay_color" : {
+        "color" : null,
+        "opacity" : null
+      },
+      "opacity" : 0.4
     }
   }, {
     "id" : "c813f3af-99b7-d54e-7ce2-b074f008a27c",
     "name" : "container",
-    "display_width" : null,
     "label" : "Container",
     "required" : false,
     "locked" : false,
@@ -1001,7 +1199,6 @@
     "children" : [ {
       "id" : "87361475-d2b5-329d-45b2-227103ad95d9",
       "name" : "size",
-      "display_width" : null,
       "label" : "Size",
       "required" : false,
       "locked" : false,
@@ -1011,11 +1208,11 @@
       "reordering_enabled" : true,
       "preset" : null,
       "type" : "choice",
+      "display_width" : null,
       "default" : "theme"
     }, {
       "id" : "b9865f26-0901-d5ad-66a2-7c6ecacec658",
       "name" : "custom_size",
-      "display_width" : null,
       "label" : "Custom Size",
       "required" : false,
       "locked" : false,
@@ -1033,12 +1230,14 @@
       "step" : 1,
       "suffix" : "px",
       "type" : "number",
+      "display_width" : null,
       "default" : 1296
     } ],
     "tab" : "CONTENT",
     "expanded" : false,
     "group_occurrence_meta" : null,
     "type" : "group",
+    "display_width" : null,
     "default" : {
       "size" : "theme",
       "custom_size" : 1296
@@ -1048,6 +1247,7 @@
   "expanded" : false,
   "group_occurrence_meta" : null,
   "type" : "group",
+  "display_width" : null,
   "default" : {
     "enable_overrides" : true,
     "top_margin" : "top-margin-none",
@@ -1062,17 +1262,42 @@
     "bottom_padding" : "bottom-padding-default",
     "custom_bottom_padding" : 100,
     "custom_bottom_padding_mobile" : 50,
-    "reverse_text" : true,
+    "reverse_text" : false,
     "background_settings" : {
-      "background_type" : "gradient",
+      "background_type" : "image",
       "background_image" : {
-        "size_type" : "auto",
-        "src" : "",
-        "alt" : null,
-        "loading" : "lazy"
+        "size_type" : "auto_custom_max",
+        "src" : "https://47484996.fs1.hubspotusercontent-na1.net/hubfs/47484996/RampXchange-u4m/images/heroBanner.png",
+        "alt" : "heroBanner",
+        "loading" : "lazy",
+        "width" : 2160,
+        "height" : 818,
+        "max_width" : 2000,
+        "max_height" : 757.4074074074074
       },
       "select_color" : "forest_green",
-      "select_gradient" : "gradient5"
+      "select_gradient" : "gradient5",
+      "select_background_color" : {
+        "color" : null,
+        "opacity" : null
+      },
+      "gradient" : {
+        "start_gradient_color" : {
+          "color" : null,
+          "opacity" : null
+        },
+        "end_gradient_color" : {
+          "color" : null,
+          "opacity" : null
+        }
+      },
+      "enabled_overlay" : false,
+      "overlay_color" : "forest_green",
+      "custom_overlay_color" : {
+        "color" : null,
+        "opacity" : null
+      },
+      "opacity" : 0.4
     },
     "container" : {
       "size" : "theme",

@@ -18,9 +18,9 @@
       }
       .stats-item {
         position: relative;
-        padding: 36px 24px;
-        border-radius: 12px;
+        padding: 40px 24px;
         overflow: hidden;
+        border-top: 2px solid $digitalgreen;
 
         @include tabletvert {
           padding: 30px 24px;
@@ -32,9 +32,7 @@
           display: flex;
           flex-wrap: wrap;
           flex-direction: column;
-          align-items: center;
-          row-gap: 20px;
-          text-align: center;
+          row-gap: 10px;
           .number {
             @include h2;
             margin-bottom: 0;
@@ -42,13 +40,20 @@
             flex-wrap: wrap;
             align-items: center;
             gap: 2px;
+            @include size50;
+            font-weight: 300;
+            line-height: 1;
             @include phone {
               margin-bottom: 0;
+              @include size32;
             }
             .prefix,
             .suffix {
               @include h6;
               margin-bottom: 0;
+              font-weight: 600;
+              @include size25;
+              color: inherit;
               @include phone {
                 margin-bottom: 0;
               }
@@ -63,9 +68,9 @@
             }
           }
           .caption {
-            @include h6;
             margin-bottom: 0;
             font-weight: 500;
+            line-height: 1;
           }
         }
       }

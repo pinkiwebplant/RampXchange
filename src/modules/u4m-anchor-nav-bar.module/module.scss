@@ -15,16 +15,17 @@
     padding: 20px;
     flex-wrap: wrap;
     row-gap: 20px;
+    text-align: center;
     a.cm_btn {
-      font-weight: 600;
       text-decoration: none;
       color: $heading;
       position: relative;
       z-index: 99;
-      border-bottom: 2px solid transparent;
+      transition: $animation1;
       &:hover {
         color: $action1;
-    }
+        text-shadow: 1px 0 0 currentColor;
+      }
     }
     a.cm_btn.active {
       border-bottom: 2px solid;
@@ -38,8 +39,11 @@
   width: 100%;
   right: 0;
   left: 0;
-  top: 143px;
-  z-index: 100;
+  top: 128px;
+  z-index: 1000;
+  @include navbreak {
+    top: 124px;
+  }
   @include tabletmid {
     position: unset;
   }

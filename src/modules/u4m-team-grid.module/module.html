@@ -1,104 +1,111 @@
 {% set moduleName = 'u4m-team-grid' %}
 {% set ExtramoduleClass = '' %}
-{% include "../partials/u4-module-includes.html" %}
+{% include "../partials/u4-module-includes.html" %} 
+{% if module.module_overrides.background_settings.background_type != 'image' %}
+{% if module.module_overrides.background_settings.overlay_image.src %}
+<div class="bg_overlay overlay_img" style="background-image:url({{ module.module_overrides.background_settings.overlay_image.src }})"></div>
+{% endif %}
+{% endif %}
 
 <div class="page-center ">
-	<div class="intro_wrapp">
-		{{macros.introGroup(module.intro_content)}}
-	</div>
-<div class="btmm">
-	
-	<div class="team_grid_row flex_row">
-		{% for item in module.member_group %}
-		<div class="team_item {{ module.module_settings.select_number_of_column }} {% if module.module_settings.card_reverse_text %} card_reverse_text {% else %} theme_text{% endif %}">
-			<div class="team_item_inn {{ module.module_settings.card_background_color }}">
+  <div class="intro_wrapp">
+    {{macros.introGroup(module.intro_content)}}
+  </div>
+  <div class="btmm">
+
+    <div class="team_grid_row flex_row">
+      {% for item in module.member_group %}
+      <div class="team_item {{ module.module_settings.select_number_of_column }} {% if module.module_settings.card_reverse_text %} card_reverse_text {% else %} theme_text{% endif %}">
+        <div class="team_item_inn {{ module.module_settings.card_background_color }}" {% if module.module_settings.card_background_color == "custom" %}style="background-color:{{ module.module_settings.background_color.rgba }}"{%  endif %}>
 
 
-				<div class="team_content">
-					<div class="team_content_inn">
-						{% if item.image_field.src %}
-						<div class="team_img">
-							<div class="team_img_inn">
-								{% set loadingAttr = item.image_field.loading != 'disabled' ? 'loading="{{ item.image_field.loading|escape_attr }}"' : '' %}
-								<img src="{{ item.image_field.src|escape_url }}" alt="{{ item.image_field.alt|escape_attr }}" {{ loadingAttr }}>
-							</div>
-						</div>
-						{% endif %}
-						{% if item.member_name %}
-						<h5 class="member_name">
-							{{ item.member_name }}
-						</h5>
-						{% endif %}    
-						{% if item.member_position %}
-						<div class="member_position eyebrow_text">
-							{{ item.member_position }}
-						</div>
-						{% endif %}    
-						<div class="member_btm">
-							{% if item.popup_button_text %}
-							<div class="bio_popup_text">
-								<a class="bio_popup arrow-link {{ module.module_settings.popup_button_theme }}" href="javascript:void(0);"  data_index="data{{loop.index}}">
-									{{ item.popup_button_text }}
-									<svg width="7" height="12" viewBox="0 0 7 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-										<path fill-rule="evenodd" clip-rule="evenodd" d="M6.83814 5.62106C7.05396 5.83037 7.05396 6.16965 6.83814 6.37896L1.2039 11.843C0.988082 12.0523 0.638231 12.0523 0.422411 11.843L0.161865 11.5904C-0.053955 11.3811 -0.053955 11.0417 0.161865 10.8324L5.14481 6.00001L0.161865 1.16755C-0.0539548 0.958242 -0.0539548 0.618957 0.161865 0.409655L0.422411 0.156977C0.638231 -0.0523252 0.988082 -0.0523252 1.2039 0.156977L6.83814 5.62106Z" fill="#007C43"/>
-									</svg>
-								</a>
-							</div>
-							{% endif %}   
-							<div class="member_share">
-								<ul>
-									{% for item2 in item.social_icon %}
-									<li>
-										{% set href = item2.link_field.url.href %}
-										{% if item2.link_field.url.type is equalto "EMAIL_ADDRESS" %}
-										{% set href = "mailto:" + href %}
-										{% endif %}
-										<a
-											 {% if item2.link_field.url.type is equalto "CALL_TO_ACTION"  %}
-											 href="{{ href }}" 
-											 {% else %}
-											 href="{{ href|escape_url }}"
-											 {% endif %}
-											 {% if item2.link_field.open_in_new_tab %}
-											 target="_blank"
-											 {% endif %}
-											 {% if item2.link_field.rel %}
-											 rel="{{ item2.link_field.rel|escape_attr }}"
-											 {% endif %}
-											 >
-											{% if item2.select_icon_type == "image" %}
-											{% if item2.image_field_1.src %}
-											{% set sizeAttrs = 'width="{{ item2.image_field_1.width|escape_attr }}" height="{{ item2.image_field_1.height|escape_attr }}"' %}
-											{% if item2.image_field_1.size_type == 'auto' %}
-											{% set sizeAttrs = 'width="{{ item2.image_field_1.width|escape_attr }}" height="{{ item2.image_field_1.height|escape_attr }}" style="max-width: 100%; height: auto;"' %}
-											{% elif item2.image_field_1.size_type == 'auto_custom_max' %}
-											{% set sizeAttrs = 'width="{{ item2.image_field_1.max_width|escape_attr }}" height="{{ item2.image_field_1.max_height|escape_attr }}" style="max-width: 100%; height: auto;"' %}
-											{% endif %}
-											{% set loadingAttr = item2.image_field_1.loading != 'disabled' ? 'loading="{{ item2.image_field_1.loading|escape_attr }}"' : '' %}
-											<img src="{{ item2.image_field_1.src|escape_url }}" alt="{{ item2.image_field_1.alt|escape_attr }}" {{ loadingAttr }} {{ sizeAttrs }}>
-											{% endif %}
-											{% endif %}
-											{% if item2.select_icon_type == "icon" %}
-											{{ item2.svg_icon }}
-											{% endif %}
-										</a>
-									</li>
-									{% endfor %}
-								</ul>
-							</div>
+          <div class="team_content">
+            <div class="team_content_inn">
+              {% if item.image_field.src %}
+              <div class="team_img">
+                <div class="team_img_inn">
+                  {% set loadingAttr = item.image_field.loading != 'disabled' ? 'loading="{{ item.image_field.loading|escape_attr }}"' : '' %}
+                  <img src="{{ item.image_field.src|escape_url }}" alt="{{ item.image_field.alt|escape_attr }}" {{ loadingAttr }}>
+                </div>
+              </div>
+              {% endif %}
+              {% if item.member_name %}
+              <h5 class="member_name">
+                {{ item.member_name }}
+              </h5>
+              {% endif %}    
+              {% if item.member_position %}
+              <div class="member_position eyebrow_text">
+                {{ item.member_position }}
+              </div>
+              {% endif %}    
+              <div class="member_btm">
+                {% if item.popup_button_text %}
+                <div class="bio_popup_text">
+                  <a class="bio_popup arrow-link {{ module.module_settings.popup_button_theme }}" href="javascript:void(0);"  data_index="data{{loop.index}}">
+                    {{ item.popup_button_text }}
+                    <svg width="7" height="12" viewBox="0 0 7 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path fill-rule="evenodd" clip-rule="evenodd" d="M6.83814 5.62106C7.05396 5.83037 7.05396 6.16965 6.83814 6.37896L1.2039 11.843C0.988082 12.0523 0.638231 12.0523 0.422411 11.843L0.161865 11.5904C-0.053955 11.3811 -0.053955 11.0417 0.161865 10.8324L5.14481 6.00001L0.161865 1.16755C-0.0539548 0.958242 -0.0539548 0.618957 0.161865 0.409655L0.422411 0.156977C0.638231 -0.0523252 0.988082 -0.0523252 1.2039 0.156977L6.83814 5.62106Z" fill="#007C43"/>
+                    </svg>
+                  </a>
+                </div>
+                {% endif %}  
+                {% if item.social_icon %}
+                <div class="member_share">
+                  <ul>
+                    {% for item2 in item.social_icon %}
+                    <li>
+                      {% set href = item2.link_field.url.href %}
+                      {% if item2.link_field.url.type is equalto "EMAIL_ADDRESS" %}
+                      {% set href = "mailto:" + href %}
+                      {% endif %}
+                      <a
+                         {% if item2.link_field.url.type is equalto "CALL_TO_ACTION"  %}
+                         href="{{ href }}" 
+                         {% else %}
+                         href="{{ href|escape_url }}"
+                         {% endif %}
+                         {% if item2.link_field.open_in_new_tab %}
+                         target="_blank"
+                         {% endif %}
+                         {% if item2.link_field.rel %}
+                         rel="{{ item2.link_field.rel|escape_attr }}"
+                         {% endif %}
+                         >
+                        {% if item2.select_icon_type == "image" %}
+                        {% if item2.image_field_1.src %}
+                        {% set sizeAttrs = 'width="{{ item2.image_field_1.width|escape_attr }}" height="{{ item2.image_field_1.height|escape_attr }}"' %}
+                        {% if item2.image_field_1.size_type == 'auto' %}
+                        {% set sizeAttrs = 'width="{{ item2.image_field_1.width|escape_attr }}" height="{{ item2.image_field_1.height|escape_attr }}" style="max-width: 100%; height: auto;"' %}
+                        {% elif item2.image_field_1.size_type == 'auto_custom_max' %}
+                        {% set sizeAttrs = 'width="{{ item2.image_field_1.max_width|escape_attr }}" height="{{ item2.image_field_1.max_height|escape_attr }}" style="max-width: 100%; height: auto;"' %}
+                        {% endif %}
+                        {% set loadingAttr = item2.image_field_1.loading != 'disabled' ? 'loading="{{ item2.image_field_1.loading|escape_attr }}"' : '' %}
+                        <img src="{{ item2.image_field_1.src|escape_url }}" alt="{{ item2.image_field_1.alt|escape_attr }}" {{ loadingAttr }} {{ sizeAttrs }}>
+                        {% endif %}
+                        {% endif %}
+                        {% if item2.select_icon_type == "icon" %}
+                        {{ item2.svg_icon }}
+                        {% endif %}
+                      </a>
+                    </li>
+                    {% endfor %}
+                  </ul>
+                </div>
+                {%  endif %}
 
-						</div>
+              </div>
 
-					</div>
-				</div>
-			</div>
+            </div>
+          </div>
+        </div>
 
 
-		</div>
-		{% endfor %}
+      </div>
+      {% endfor %}
 
-	</div>
-	</div>
+    </div>
+  </div>
 
 
 </div>
@@ -108,101 +115,127 @@
 
 {% for item in module.member_group %}
 <div class="team_popup {% if module.module_settings.card.reverse_text %} card_reverse_text {% else %} theme_text {% endif %}" id="data{{loop.index}}">
-	<div class="team_popup_overlay"></div>
-	<div class="team_popup_container">
-		<div class="team_popup_row {{ module.module_settings.card.select_background_color }}">
+  <div class="team_popup_overlay"></div>
+  <div class="team_popup_container">
+    <div class="team_popup_row {{ module.module_settings.card.select_background_color }}">
 
 
-			<div class=" flex_row team_popup_inn">
+      <div class=" flex_row team_popup_inn">
 
-				<svg class="popup_close" xmlns="http://www.w3.org/2000/svg" width="36" height="37" viewBox="0 0 36 37" fill="none">
-					<g clip-path="url(#clip0_2046_461)">
-						<path d="M26 12.1798L24.3886 10.5684L18 16.9569L11.6114 10.5684L10 12.1798L16.3886 18.5684L10 24.9569L11.6114 26.5684L18 20.1798L24.3886 26.5684L26 24.9569L19.6114 18.5684L26 12.1798Z"/>
-					</g>
-					<defs>
-						<clipPath id="clip0_2046_461">
-							<rect width="36" height="36" fill="white" transform="translate(0 0.181641)"/>
-						</clipPath>
-					</defs>
-				</svg>
-				<div class="popup_img_col col5">
-					<div class="popup_img">
-						{% if item.image_field.src %}
-						<div class="popup_team_img">
-							<div class="popup_img_inn">
-								{% set loadingAttr = item.image_field.loading != 'disabled' ? 'loading="{{ item.image_field.loading|escape_attr }}"' : '' %}
-								<img src="{{ item.image_field.src|escape_url }}" alt="{{ item.image_field.alt|escape_attr }}" {{ loadingAttr }}>
-							</div>
-						</div>
-						{% endif %}
+        <svg class="popup_close" xmlns="http://www.w3.org/2000/svg" width="36" height="37" viewBox="0 0 36 37" fill="none">
+          <g clip-path="url(#clip0_2046_461)">
+            <path d="M26 12.1798L24.3886 10.5684L18 16.9569L11.6114 10.5684L10 12.1798L16.3886 18.5684L10 24.9569L11.6114 26.5684L18 20.1798L24.3886 26.5684L26 24.9569L19.6114 18.5684L26 12.1798Z"/>
+          </g>
+          <defs>
+            <clipPath id="clip0_2046_461">
+              <rect width="36" height="36" fill="white" transform="translate(0 0.181641)"/>
+            </clipPath>
+          </defs>
+        </svg>
+        <div class="popup_img_col col5">
+          <div class="popup_img">
+            {% if item.image_field.src %}
+            <div class="popup_team_img">
+              <div class="popup_img_inn">
+                {% set loadingAttr = item.image_field.loading != 'disabled' ? 'loading="{{ item.image_field.loading|escape_attr }}"' : '' %}
+                <img src="{{ item.image_field.src|escape_url }}" alt="{{ item.image_field.alt|escape_attr }}" {{ loadingAttr }}>
+              </div>
+            </div>
+            {% endif %}
 
-					</div>
-				</div>
-				{% if item.description %}
-				<div class="popup_cnt col7">
-					{% if item.member_name %}
-					<h5 class="member_name">
-						{{ item.member_name }}
-					</h5>
-					{% endif %}    
-					{% if item.member_position %}
-					<div class="member_position eyebrow_text">
-						{{ item.member_position }}
-					</div>
-					{% endif %} 
+          </div>
+        </div>
+        {% if item.description %}
+        <div class="popup_cnt col7">
+          {% if item.member_name %}
+          <h5 class="member_name">
+            {{ item.member_name }}
+          </h5>
+          {% endif %}    
+          {% if item.member_position %}
+          <div class="member_position eyebrow_text">
+            {{ item.member_position }}
+          </div>
+          {% endif %} 
 
-					<div class="popup_cnt_inn">
-						{{ item.description }}
-					</div>
+          <div class="popup_cnt_inn"> 
+            {{ item.description }}
+          </div>
+          {% if item.popup_link.text %}
+          <div class="linkedin_textWrap">
 
-
-					<div class="member_share">
-						<ul>
-							{% for item2 in item.social_icon %}
-							<li>
-								{% set href = item2.link_field.url.href %}
-								{% if item2.link_field.url.type is equalto "EMAIL_ADDRESS" %}
-								{% set href = "mailto:" + href %}
-								{% endif %}
-								<a
-									 {% if item2.link_field.url.type is equalto "CALL_TO_ACTION"  %}
-									 href="{{ href }}" 
-									 {% else %}
-									 href="{{ href|escape_url }}"
-									 {% endif %}
-									 {% if item2.link_field.open_in_new_tab %}
-									 target="_blank"
-									 {% endif %}
-									 {% if item2.link_field.rel %}
-									 rel="{{ item2.link_field.rel|escape_attr }}"
-									 {% endif %}
-									 >
-									{% if item2.select_icon_type == "image" %}
-									{% if item2.image_field_1.src %}
-									{% set sizeAttrs = 'width="{{ item2.image_field_1.width|escape_attr }}" height="{{ item2.image_field_1.height|escape_attr }}"' %}
-									{% if item2.image_field_1.size_type == 'auto' %}
-									{% set sizeAttrs = 'width="{{ item2.image_field_1.width|escape_attr }}" height="{{ item2.image_field_1.height|escape_attr }}" style="max-width: 100%; height: auto;"' %}
-									{% elif item2.image_field_1.size_type == 'auto_custom_max' %}
-									{% set sizeAttrs = 'width="{{ item2.image_field_1.max_width|escape_attr }}" height="{{ item2.image_field_1.max_height|escape_attr }}" style="max-width: 100%; height: auto;"' %}
-									{% endif %}
-									{% set loadingAttr = item2.image_field_1.loading != 'disabled' ? 'loading="{{ item2.image_field_1.loading|escape_attr }}"' : '' %}
-									<img src="{{ item2.image_field_1.src|escape_url }}" alt="{{ item2.image_field_1.alt|escape_attr }}" {{ loadingAttr }} {{ sizeAttrs }}>
-									{% endif %}
-									{% endif %}
-									{% if item2.select_icon_type == "icon" %}
-									{{ item2.svg_icon }}
-									{% endif %}
-								</a>
-							</li>
-							{% endfor %}
-						</ul>
-					</div>
-
-				</div>
-				{% endif %}
-			</div>
-		</div>
-	</div>
+            {% set href = item.popup_link.link_field_1.url.href %}
+            {% if item.popup_link.link_field_1.url.type is equalto "EMAIL_ADDRESS" %}
+            {% set href = "mailto:" + href %}
+            {% endif %}
+            <a class="text arrow-link "
+               {% if item.popup_link.link_field_1.url.type is equalto "CALL_TO_ACTION"  %}
+               href="{{ href }}" {# The href here is not escaped as it is not editable and functions as a JavaScript call to the associated CTA #}
+               {% else %}
+               href="{{ href }}"
+               {% endif %}
+               {% if item.popup_link.link_field_1.open_in_new_tab %}
+               target="_blank"
+               {% endif %}
+               {% if item.popup_link.link_field_1.rel %}
+               rel="{{ item.popup_link.link_field_1.rel|escape_attr }}"
+               {% endif %}
+               >
+              {{ item.popup_link.text }}
+              <svg width="7" height="12" viewBox="0 0 7 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M6.83814 5.62106C7.05396 5.83037 7.05396 6.16965 6.83814 6.37896L1.2039 11.843C0.988082 12.0523 0.638231 12.0523 0.422411 11.843L0.161865 11.5904C-0.053955 11.3811 -0.053955 11.0417 0.161865 10.8324L5.14481 6.00001L0.161865 1.16755C-0.0539548 0.958242 -0.0539548 0.618957 0.161865 0.409655L0.422411 0.156977C0.638231 -0.0523252 0.988082 -0.0523252 1.2039 0.156977L6.83814 5.62106Z" fill="#007C43"/>
+              </svg>
+            </a>
+          </div>
+          {% endif %}
+          {% if item.social_icon %}
+          <div class="member_share">
+            <ul>
+              {% for item2 in item.social_icon %}
+              <li>
+                {% set href = item2.link_field.url.href %}
+                {% if item2.link_field.url.type is equalto "EMAIL_ADDRESS" %}
+                {% set href = "mailto:" + href %}
+                {% endif %}
+                <a
+                   {% if item2.link_field.url.type is equalto "CALL_TO_ACTION"  %}
+                   href="{{ href }}" 
+                   {% else %}
+                   href="{{ href|escape_url }}"
+                   {% endif %}
+                   {% if item2.link_field.open_in_new_tab %}
+                   target="_blank"
+                   {% endif %}
+                   {% if item2.link_field.rel %}
+                   rel="{{ item2.link_field.rel|escape_attr }}"
+                   {% endif %}
+                   >
+                  {% if item2.select_icon_type == "image" %}
+                  {% if item2.image_field_1.src %}
+                  {% set sizeAttrs = 'width="{{ item2.image_field_1.width|escape_attr }}" height="{{ item2.image_field_1.height|escape_attr }}"' %}
+                  {% if item2.image_field_1.size_type == 'auto' %}
+                  {% set sizeAttrs = 'width="{{ item2.image_field_1.width|escape_attr }}" height="{{ item2.image_field_1.height|escape_attr }}" style="max-width: 100%; height: auto;"' %}
+                  {% elif item2.image_field_1.size_type == 'auto_custom_max' %}
+                  {% set sizeAttrs = 'width="{{ item2.image_field_1.max_width|escape_attr }}" height="{{ item2.image_field_1.max_height|escape_attr }}" style="max-width: 100%; height: auto;"' %}
+                  {% endif %}
+                  {% set loadingAttr = item2.image_field_1.loading != 'disabled' ? 'loading="{{ item2.image_field_1.loading|escape_attr }}"' : '' %}
+                  <img src="{{ item2.image_field_1.src|escape_url }}" alt="{{ item2.image_field_1.alt|escape_attr }}" {{ loadingAttr }} {{ sizeAttrs }}>
+                  {% endif %}
+                  {% endif %}
+                  {% if item2.select_icon_type == "icon" %}
+                  {{ item2.svg_icon }}
+                  {% endif %}
+                </a>
+              </li>
+              {% endfor %}
+            </ul>
+          </div>
+          {% endif %}
+        </div>
+        {% endif %}
+      </div>
+    </div>
+  </div>
 </div>
 {% endfor  %}
 
@@ -212,29 +245,29 @@
 {% require_js %}
 <script>
 
-	$('.{{name}} .popup_close').click(function(){
-		$('.team_popup').removeClass('team_open')
-	$('body').removeClass('overflow-hidden');
-	});
+  $('.{{name}} .popup_close').click(function(){
+    $('.team_popup').removeClass('team_open')
+  $('body').removeClass('overflow-hidden');
+  });
 
-	$('.{{name}} .team_popup_overlay').click(function(){
-		$('.team_popup').removeClass('team_open')
-	$('body').removeClass('overflow-hidden');
-	});
+  $('.{{name}} .team_popup_overlay').click(function(){
+    $('.team_popup').removeClass('team_open')
+  $('body').removeClass('overflow-hidden');
+  });
 
-	$(document).ready(function() {
-		$('.{{name}} a.bio_popup').on('click', function(event) {
-			event.preventDefault();
-		var index = $(this).attr('data_index');
-		$('.{{name}} .team_popup').each(function(){
-			var popup = $(this).attr('id');
-		if (index === popup){
-			$(this).addClass('team_open');
-			$('body').addClass('overflow-hidden');
-		}
-	})
-	});
-	});
+  $(document).ready(function() {
+    $('.{{name}} a.bio_popup').on('click', function(event) {
+      event.preventDefault();
+    var index = $(this).attr('data_index');
+    $('.{{name}} .team_popup').each(function(){
+      var popup = $(this).attr('id');
+    if (index === popup){
+      $(this).addClass('team_open');
+      $('body').addClass('overflow-hidden');
+    }
+  })
+  });
+  });
 
 </script>
 {% end_require_js %}

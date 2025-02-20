@@ -3,7 +3,7 @@
 {% include "../partials/u4-module-includes.html" %}
 
 <div class="page-center ">
-	<div class="row {{ module.module_settings.select_content_alignment }} {% if module.module_settings.reverse_text  %} cards_reverse_text {% endif %} {% if module.media_section.select_media_type %} {{ module.module_settings.bg }} {% endif %}  {{ module.media_section.select_media_type }} {% if not module.media_section.select_media_type %}  widther {% endif %}" 		>
+	<div class="row {{ module.module_settings.select_content_alignment }} {% if module.module_settings.reverse_text  %} cards_reverse_text {% endif %} {% if module.media_section.select_media_type %} {{ module.module_settings.bg }} {% endif %}  {{ module.media_section.select_media_type }} {% if not module.media_section.select_media_type %}  widther {% endif %}" 	{% if module.module_settings.bg  == "custom" %}style="background-color:{{ module.module_settings.background_color.rgba }}"{%  endif %}	>
 		<div class="left-section">
 			<div class="intro_wrapp">
 				{{macros.introGroup(module.intro_content)}}

@@ -1,6 +1,3 @@
-
-
-
 $('.u4m-accordion .accItem').click(function() {
   $(this).siblings('.accItem').removeClass('activeAcc');
   $(this).siblings('.accItem').find('.accCont').slideUp(250);

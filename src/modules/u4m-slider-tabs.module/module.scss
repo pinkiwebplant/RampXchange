@@ -7,14 +7,14 @@
           .tab-item {
             &.acc-open {
               .tab-inner {
-                h4 {
+                h3 {
                   opacity: 1;
                   color: $white;
                 }
               }
             }
             .tab-inner {
-              h4 {
+              h3 {
                 color: $white;
                 opacity: 0.7;
                 &:hover {
@@ -28,10 +28,6 @@
     }
   }
   .intro_wrapp {
-    .eyebrow_text {
-      @include size14;
-      margin-bottom: 12px;
-    }
     .intro_title {
       margin-bottom: 12px;
     }
@@ -51,9 +47,7 @@
 
         .tab-item {
           padding: 16px 28px;
-          transition:
-            color 0.2s ease,
-            border 0.2s ease;
+          transition: color 0.2s ease, border 0.2s ease;
           & * {
             transition: inherit;
           }
@@ -90,7 +84,7 @@
           }
 
           .tab-inner {
-            h4 {
+            h3 {
               cursor: pointer;
               color: $lightGrayishBlue;
               margin: 0;
@@ -131,9 +125,9 @@
             }
           }
           &.acc-open {
-            border-color: #007c43;
+            border-color: $rampGreen;
             .tab-inner {
-              h4 {
+              h3 {
                 pointer-events: none;
                 color: $heading;
               }

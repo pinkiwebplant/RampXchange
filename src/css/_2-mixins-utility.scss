@@ -4,6 +4,11 @@
     @content;
   }
 }
+@mixin phoneMin {
+  @media (min-width: 581px) {
+    @content;
+  }
+}
 
 @mixin tabletvertmin {
   @media (min-width: 768px) {
@@ -35,6 +40,12 @@
 
 @mixin tabletMin {
   @media (min-width: 1025px) {
+    @content;
+  }
+}
+
+@mixin navbreakMin {
+  @media (min-width: 1281px) {
     @content;
   }
 }
@@ -127,7 +138,7 @@
   float: none;
   margin-left: auto;
   margin-right: auto;
-  max-width: 1240rem;
+  max-width: 1120rem;
   padding-left: 20rem;
   padding-right: 20rem;
 }

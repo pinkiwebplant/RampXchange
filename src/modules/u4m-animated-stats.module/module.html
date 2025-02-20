@@ -3,39 +3,39 @@
 {% include "../partials/u4-module-includes.html" %}
 
 <div class="page-center ">
-	<div class="intro_wrapp">
-		{{macros.introGroup(module.intro_content)}}
-	</div>
-	<div class="animated-stats-row">
-		<div class="statistics-items flex-row">
-			{% for item in module.statistic_group %}
-			<div class="animated-stats-item span3">
-				<div class="stats-item bg_{{ module.card_settings.background_settings.background_type }} bg_pos_{{ module.card_settings.background_settings.select_background_position }}">
-					{% if module.card_settings.background_settings.background_type == "color" %}
-					<div
-							 class="bg_overlay bg_color {{ module.card_settings.background_settings.select_color }}"></div>
-					{% endif %}
-					{% if module.card_settings.background_settings.background_type == "gradient" %}
-					<div
-							 class="bg_overlay bg_color {{ module.card_settings.background_settings.select_gradient }}"></div>
-					{% endif %}
-					{% if module.card_settings.background_settings.background_type == "image" %}
-					<div class="bg_overlay bg_card_image"></div>
-					{% endif %}
-					<div class="stats-item-inn">
-						<span class="number {{ module.card_settings.select_count_text_color }}">
-							<span class="prefix">{{ item.prefix }}</span>
-{# 							<span class="counter-value counter" data-count="{{ item.numeric_stat }}">0</span> #}
-														<span class="counter-value counter" data-count="{{ item.numeric_stat }}">{{ item.numeric_stat }}</span>
-							<span class="suffix">{{ item.suffix }}</span>
-						</span>
-						<span class="caption {{ module.card_settings.select_content_text_color }}">{{ item.caption }}</span>
-					</div>
-				</div>
-			</div>
-			{% endfor %}
-		</div>
-	</div>
+  <div class="intro_wrapp">
+    {{macros.introGroup(module.intro_content)}}
+  </div>
+  <div class="animated-stats-row">
+    <div class="statistics-items flex-row">
+      {% for item in module.statistic_group %}
+      <div class="animated-stats-item span3">
+        <div class="stats-item bg_{{ module.card_settings.background_settings.background_type }} bg_pos_{{ module.card_settings.background_settings.select_background_position }}">
+          {% if module.card_settings.background_settings.background_type == "color" %}
+          <div
+               class="bg_overlay bg_color {{ module.card_settings.background_settings.select_color }}" {%  if module.card_settings.background_settings.select_color == 'custom' %}style="background-color:{{ module.card_settings.background_settings.select_background_color.rgba }}"{% endif %}></div>
+          {% endif %}
+          {% if module.card_settings.background_settings.background_type == "gradient" %}
+          <div
+               class="bg_overlay bg_color {{ module.card_settings.background_settings.select_gradient }}" {%  if module.card_settings.background_settings.select_gradient == 'custom' %}style="background:linear-gradient({{ module.card_settings.background_settings.gradient.direction }}, {{ module.card_settings.background_settings.gradient.start_gradient_color.rgba }}, {{ module.card_settings.background_settings.gradient.end_gradient_color.rgba }})"{% endif %}></div>
+          {% endif %}
+          {% if module.card_settings.background_settings.background_type == "image" %}
+          <div class="bg_overlay bg_card_image"></div>
+          {% endif %}
+          <div class="stats-item-inn">
+            <span class="number {{ module.card_settings.select_count_text_color }}" {% if module.card_settings.select_count_text_color == "custom" %}style="color:{{ module.card_settings.number_color.rgba }}"{%  endif %}>
+              <span class="prefix">{{ item.prefix }}</span>
+              {# 							<span class="counter-value counter" data-count="{{ item.numeric_stat }}">0</span> #}
+              <span class="counter-value counter" data-count="{{ item.numeric_stat }}">{{ item.numeric_stat }}</span>
+              <span class="suffix" style="font-weight:{{ item.suffix_font_weight }}">{{ item.suffix }}</span>
+            </span>
+            <span class="caption {{ module.card_settings.select_content_text_color }}" {% if module.card_settings.select_content_text_color == "custom" %}style="color:{{ module.card_settings.content_text_color.rgba }}"{%  endif %}>{{ item.caption }}</span>
+          </div>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
 
 </div>
 </section>
@@ -44,16 +44,16 @@
 
 <style>
 
-	{% if module.card_settings.background_settings.background_type == "image" %}
-	{% if module.card_settings.background_settings.background_image.src %}
-	.{{name}}.u4m-animated-stats .animated-stats-item .bg_card_image{
-		background-image:url({{ module.card_settings.background_settings.background_image.src }});
-		    background-position: 50%;
+  {% if module.card_settings.background_settings.background_type == "image" %}
+  {% if module.card_settings.background_settings.background_image.src %}
+  .{{name}}.u4m-animated-stats .animated-stats-item .bg_card_image{
+    background-image:url({{ module.card_settings.background_settings.background_image.src }});
+    background-position: 50%;
     background-repeat: no-repeat;
     background-size: cover;
-	}
-	{% endif %}
-	{% endif %}
+  }
+  {% endif %}
+  {% endif %}
 
 </style>
 {% end_require_css %}
@@ -62,44 +62,44 @@
 {% require_js %}
 
 <script>
-	var a = 0;
-	$(window).scroll(function() {
+  var a = 0;
+  $(window).scroll(function() {
 
-		var oTop = $('.{{name}}.u4m-animated-stats .statistics-items').offset().top - window.innerHeight;
-								 if (a == 0 && $(window).scrollTop() > oTop) {
-// 			$('.counter-value').each(function() {
-// 				var $this = $(this),
-// 						countTo = $this.attr('data-count');
-// 				$({
-// 					countNum: $this.text()
-// 				}).animate({
-// 					countNum: countTo
-// 				},
+    var oTop = $('.{{name}}.u4m-animated-stats .statistics-items').offset().top - window.innerHeight;
+                 if (a == 0 && $(window).scrollTop() > oTop) {
+      // 			$('.counter-value').each(function() {
+      // 				var $this = $(this),
+      // 						countTo = $this.attr('data-count');
+      // 				$({
+      // 					countNum: $this.text()
+      // 				}).animate({
+      // 					countNum: countTo
+      // 				},
 
-// 									 {
+      // 									 {
 
-// 					duration: 5000,
-// 					easing: 'swing',
-// 					step: function() {
-// 						$this.text(Math.floor(this.countNum));
-// 					},
-// 					complete: function() {
-// 						$this.text(this.countNum);
-// 						//alert('finished');
-// 					}
+      // 					duration: 5000,
+      // 					easing: 'swing',
+      // 					step: function() {
+      // 						$this.text(Math.floor(this.countNum));
+      // 					},
+      // 					complete: function() {
+      // 						$this.text(this.countNum);
+      // 						//alert('finished');
+      // 					}
 
-// 				});
-// 			});
-			
-			      $('.counter').counterUp({
-                delay: 10,
-                time: 1000
-            });
-			
-			a = 1;
-		}
+      // 				});
+      // 			});
 
-	});
+      $('.counter').counterUp({
+        delay: 10,
+        time: 1000
+      });
+
+      a = 1;
+    }
+
+  });
 </script>
 
 {% end_require_js %}

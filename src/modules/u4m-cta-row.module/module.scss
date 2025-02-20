@@ -6,35 +6,35 @@
     flex-wrap: wrap;
     align-items: center;
     padding: 40px;
-    border-radius: 12px;
+    border-radius: $borderRadius;
     overflow: hidden;
-&.widther{
-  padding: 0;
-  .left-section{
-width: 100%;
-.intro_wrapp {
-  .intro_content{
-    text-align: center;
-    .intro_desc{
-      margin-bottom: 40px !important;
+    &.widther {
+      padding: 0;
+      .left-section {
+        width: 100%;
+        .intro_wrapp {
+          .intro_content {
+            text-align: center;
+            .intro_desc {
+              margin-bottom: 40px !important;
+              @include size16;
+            }
+            .intro_btn_wrap {
+              justify-content: center !important;
+            }
+          }
+        }
+      }
     }
-    .intro_btn_wrap{
-      justify-content: center !important;
+    &.form {
+      .media_section {
+        overflow: visible;
+      }
     }
-  }
-}
-
-  }
-}
-&.form{
-  .media_section{
-    overflow: visible;
-  }
-}
     @include tabletvert {
       gap: 30px;
       flex-direction: column-reverse;
-      &.form{
+      &.form {
         flex-direction: row-reverse !important;
       }
     }
@@ -62,29 +62,25 @@ width: 100%;
           width: 100%;
 
           .intro__inner {
-            .eyebrow_text {
-              @include size14;
-              color: $heading;
-            }
-            .intro_title{
+            .intro_title {
               color: $heading;
             }
             .intro_desc {
-              > *{
+              > * {
                 color: $heading;
               }
             }
-            .intro_btn_wrap{
-margin-top: 32px;
+            .intro_btn_wrap {
+              margin-top: 32px;
             }
             .intro_btn_wrap {
               justify-content: flex-start;
               .btn_item {
-                .arrow-link{
-color: $action1;
-&:hover{
-  color: $heading;
-}
+                .arrow-link {
+                  color: $action1;
+                  &:hover {
+                    color: $heading;
+                  }
                 }
                 a.sec-btn {
                   margin: 0;
@@ -101,7 +97,7 @@ color: $action1;
       @include tabletvert {
         width: 100%;
       }
-      img{
+      img {
         border-radius: $borderRadius;
         filter: $dropshadow;
       }
@@ -156,15 +152,14 @@ color: $action1;
           }
         }
       }
-      .form-title{
-        &:empty{
-        margin: 0;
+      .form-title {
+        &:empty {
+          margin: 0;
         }
-    }
+      }
       form {
         align-items: center;
-        display: flex
-    ;
+        display: flex;
         gap: 8px;
         margin: 0;
         position: relative;
@@ -172,7 +167,7 @@ color: $action1;
         background: transparent;
         padding: 0;
         overflow: visible;
-    
+
         .hs_error_rollup {
           position: absolute;
           left: 0;
@@ -191,88 +186,87 @@ color: $action1;
           left: 0;
           right: 0;
           border: 0;
-          @include navbreak{
-position: unset;
+          @include navbreak {
+            position: unset;
           }
         }
         .hs-form-field {
-          >label {
+          > label {
             font-weight: 500;
-            @include size13; line-height: 100%;
+            @include size13;
+            line-height: 100%;
             color: $heading;
             margin-bottom: 8px;
             display: block;
           }
           max-width: 395px;
           width: 100%;
-          @include navbreak{
+          @include navbreak {
             max-width: 100%;
           }
         }
         .hs_submit.hs-submit {
-          width: calc(100% - 395px);
+          width: calc(100% - 350px);
           max-width: 100%;
           input.hs-button {
             min-height: 48px;
             width: 100%;
           }
-          @include navbreak{
+          @include navbreak {
             width: 100%;
-            display: inline-flex
-            ;
+            display: inline-flex;
           }
         }
-        .input{
+        .input {
           input {
             min-height: 48px;
             background: $white;
             border: 1px solid $gray2;
-            border-radius: 12px;
+            border-radius: $borderRadius;
             padding: 12px !important;
             outline: none;
           }
         }
 
-        @include navbreak{
+        @include navbreak {
           flex-wrap: wrap;
         }
       }
-    
     }
-    &.cards_reverse_text{
-      .eyebrow_text{
+    &.cards_reverse_text {
+      .eyebrow_text {
         color: $white !important;
       }
-     .intro_title{
-      color: $white !important;
+      .intro_title {
+        color: $white !important;
       }
 
-      .intro_desc{
-        > *{
+      .intro_desc {
+        > * {
           color: $white !important;
         }
       }
       .intro_btn_wrap {
         justify-content: flex-start;
         .btn_item {
-          .arrow-link{
+          .arrow-link {
             color: $white !important;
-&:hover{
-color: $white !important;
-}
+            &:hover {
+              color: $white !important;
+            }
           }
         }
       }
       form {
         .hs-form-field {
-          & > label{
+          & > label {
             color: $white !important;
           }
         }
       }
     }
-    @include tabletvert{
-padding: 20px;
+    @include tabletvert {
+      padding: 20px;
     }
   }
 }

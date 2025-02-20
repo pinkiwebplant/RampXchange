@@ -1,32 +1,48 @@
 @import "../../css/_module-imports";
 
 .u4m-logo-trust-marks {
-  .intro_content {
-    margin-bottom: 17px;
-    .eyebrow_text {
-      @include size14;
-    }
+  @include navbreakMin {
+    padding-left: 50rem;
+    padding-right: 50rem;
   }
-  .logo-trust-marks {
-    padding: 23px 13px 17px 13px;
+  .logostying {
     position: relative;
     z-index: 9;
+    @include navbreakMin {
+      &.style2 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        max-width: 1021px;
+        margin: 0 auto;
 
-    &.type_one {
-      .page-center {
-        &:after {
-          background: linear-gradient(90deg, $airwhite 0%, rgba($airwhite, 0) 50%, $airwhite 100%);
+        .topSec {
+          .page-center {
+            padding-left: 0;
+            padding-right: 45px;
+          }
+        }
+        .intro_content {
+          margin: 0;
+          padding: 0;
+          .intro_title {
+            margin: 0;
+          }
+        }
+        .logo-trust-marks {
+          max-width: 854px;
         }
       }
     }
-    &.type_two {
-      .page-center {
-        &:after {
-          background: linear-gradient(90deg, $gray1 0%, rgba($gray1, 0) 50%, $gray1 100%);
-        }
-      }
-    }
+  }
 
+  .logo-trust-marks {
+    position: relative;
+    z-index: 9;
+    @include navbreak {
+      padding-left: 50rem;
+      padding-right: 50rem;
+    }
     .page-center {
       position: relative;
       &:after {
@@ -39,27 +55,74 @@
         pointer-events: none;
       }
       .row {
-        margin: 0 -20px;
+        margin: 0 -22px;
         .logo-wrapper {
           .slick-list {
             .slick-track {
               display: flex;
               align-items: center;
+              margin: 0 -22px;
               .slick-slide {
-                img {
-                  padding: 0 20px;
-                  width: 180px;
-                  object-fit: cover;
-                  filter: grayscale(1);
-                  &:hover {
-                    filter: none;
+                line-height: 0;
+                padding: 0 22px;
+                .logo-item {
+                  img {
+                    object-fit: cover;
                   }
                 }
+              }
+              &::before {
+                display: none;
+              }
+              &::after {
+                display: none;
+              }
+            }
+          }
+          .slick-arrow {
+            border: 1px solid $heading;
+            width: 44px;
+            height: 44px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 100%;
+            cursor: pointer;
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            @include navbreak {
+              width: 30px;
+              height: 30px;
+            }
+            span {
+              @include navbreak {
+                font-size: 20px;
+              }
+            }
+
+            &.button-prev {
+              left: -50px;
+              display: none !important;
+            }
+            &.button-next {
+              right: -85px;
+              @include tabbreakpoint(1281px, 1400px) {
+                right: -60px;
+              }
+              @include navbreak {
+                right: -45px;
+              }
+              @include tabletmid {
+                right: -35px;
               }
             }
           }
         }
       }
     }
+  }
+  .gradient6 {
+    background: linear-gradient(90deg, $white 41.5%, $lightBronze 100%);
   }
 }

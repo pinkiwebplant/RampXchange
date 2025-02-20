@@ -75,12 +75,22 @@ section.u4m-filtered-content {
               }
               .itemCnWrap {
                 .itemCntSec {
-                  // .itemTags {
-                  //   margin-bottom: 32px;
-                  // }
+                  .itemTags {
+                    font-weight: 400;
+                    @include size16;
+                    margin-bottom: 32px;
+                    text-shadow: 1px 0 0 currentColor;
+                  }
                   .itemTitle {
                     margin-bottom: 8px;
+                    font-weight: 500;
+                    h3 {
+                      margin: 0;
+                    }
                   }
+                }
+                .intro_btn_wrap {
+                  @include size16;
                 }
               }
             }
@@ -111,7 +121,7 @@ section.u4m-filtered-content {
             appearance: none;
             background-position: calc(100% - 30px) center;
             padding: 12.5px 64px 12.5px 24px;
-            border-radius: 12px;
+            border-radius: $borderRadius;
             border: 1px solid $gray2;
             outline: none;
             color: $gray2;
@@ -124,17 +134,24 @@ section.u4m-filtered-content {
       margin-bottom: 60px;
       @include cardItem;
       .cardItems {
-        // .cardItem {
-        //   .itemInr {
-        //     .itemCnWrap {
-        //       .itemCntSec {
-        //         .itemTags {
-        //           margin-bottom: 32px;
-        //         }
-        //       }
-        //     }
-        //   }
-        // }
+        .cardItem {
+          .itemInr {
+            .itemCnWrap {
+              .itemCntSec {
+                .restitle {
+                  font-weight: 600;
+                  margin: 0;
+                }
+                .itemTags {
+                  color: inherit;
+                }
+              }
+              .intro_btn_wrap {
+                @include size16;
+              }
+            }
+          }
+        }
         .statusCnt {
           width: 100%;
           text-align: center;
@@ -185,4 +202,17 @@ section.u4m-filtered-content {
       }
     }
   }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.cardItem {
+  animation: fadeIn 2s ease-in-out;
 }

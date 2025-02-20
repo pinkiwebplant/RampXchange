@@ -40,9 +40,9 @@ html {
 }
 .u4m-animated-stats .statistics-items .animated-stats-item .stats-item {
   position: relative;
-  padding: 36px 24px;
-  border-radius: 12px;
+  padding: 40px 24px;
   overflow: hidden;
+  border-top: 2px solid #b5dda5;
 }
 @media (max-width: 767px) {
   .u4m-animated-stats .statistics-items .animated-stats-item .stats-item {
@@ -55,21 +55,22 @@ html {
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
-  align-items: center;
-  row-gap: 20px;
-  text-align: center;
+  row-gap: 10px;
 }
 .u4m-animated-stats .statistics-items .animated-stats-item .stats-item .stats-item-inn .number {
-  font-family: "Inter";
-  font-size: 40rem;
-  font-weight: 600;
+  font-family: "Aktive Grotesk", "Arial, sans serif";
+  font-size: 32rem;
+  font-weight: 400;
   margin-bottom: 30rem;
-  line-height: 1;
+  line-height: 1.2;
   margin-bottom: 0;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   gap: 2px;
+  font-size: 50rem;
+  font-weight: 300;
+  line-height: 1;
 }
 @media (max-width: 1024px) {
   .u4m-animated-stats .statistics-items .animated-stats-item .stats-item .stats-item-inn .number {
@@ -85,16 +86,21 @@ html {
 @media (max-width: 580px) {
   .u4m-animated-stats .statistics-items .animated-stats-item .stats-item .stats-item-inn .number {
     margin-bottom: 0;
+    font-size: 32rem;
   }
 }
 .u4m-animated-stats .statistics-items .animated-stats-item .stats-item .stats-item-inn .number .prefix,
 .u4m-animated-stats .statistics-items .animated-stats-item .stats-item .stats-item-inn .number .suffix {
-  font-family: "Inter";
-  font-size: 19rem;
+  font-family: "Aktive Grotesk", "Arial, sans serif";
+  font-size: 20rem;
   font-weight: 600;
   margin-bottom: 30rem;
   line-height: 1;
+  color: #006f3c;
   margin-bottom: 0;
+  font-weight: 600;
+  font-size: 25rem;
+  color: inherit;
 }
 @media (max-width: 1024px) {
   .u4m-animated-stats .statistics-items .animated-stats-item .stats-item .stats-item-inn .number .prefix,
@@ -126,27 +132,12 @@ html {
   }
 }
 .u4m-animated-stats .statistics-items .animated-stats-item .stats-item .stats-item-inn .caption {
-  font-family: "Inter";
-  font-size: 19rem;
-  font-weight: 600;
-  margin-bottom: 30rem;
-  line-height: 1;
   margin-bottom: 0;
   font-weight: 500;
-}
-@media (max-width: 1024px) {
-  .u4m-animated-stats .statistics-items .animated-stats-item .stats-item .stats-item-inn .caption {
-    font-size: 19rem;
-  }
-}
-@media (max-width: 580px) {
-  .u4m-animated-stats .statistics-items .animated-stats-item .stats-item .stats-item-inn .caption {
-    font-size: 19rem;
-    margin-bottom: 20rem;
-  }
+  line-height: 1;
 }
 .u4m-animated-stats .lime_green {
-  color: #007c43;
+  color: #006f3c;
 }
 .u4m-animated-stats .strong_cyan {
   color: #00a4bd;

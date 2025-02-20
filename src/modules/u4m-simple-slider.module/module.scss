@@ -39,14 +39,14 @@
           padding: 0 20rem;
           .cutomArrows {
             position: absolute;
-            position: absolute;
             width: 100%;
-            top: 89rem;
+            top: 0;
             display: flex;
             justify-content: flex-end;
             gap: 20px;
-            z-index: 99;
+            z-index: 100;
             right: 0;
+            max-width: 130px;
             @include tablet {
               top: auto;
               justify-content: flex-start;
@@ -54,32 +54,32 @@
               padding-left: 20px;
             }
             .slick-arrow {
-                width: 44px;
-                height: 44px;
-                border: 1px solid $heading;
-                border-radius: 100%;
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                cursor: pointer;
-                color: $heading;
+              width: 44px;
+              height: 44px;
+              border: 1px solid $heading;
+              border-radius: 100%;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              cursor: pointer;
+              color: $heading;
+              // @include tablet {
+              //   width: 30px;
+              //   height: 30px;
+              //   }
+              &:hover {
+                background-color: $heading;
+                color: $white;
+              }
+              svg {
                 // @include tablet {
-                //   width: 30px;
-                //   height: 30px;
+                //   width: 10px;
+                //   height: 10px;
                 //   }
-                &:hover {
-                  background-color: $heading;
-                  color: $white;
+                path {
+                  fill: currentColor;
                 }
-                svg {
-                  // @include tablet {
-                  //   width: 10px;
-                  //   height: 10px;
-                  //   }
-                  path {
-                    fill: currentColor;
-                  }
-                }
+              }
             }
           }
           width: 50%;
@@ -92,37 +92,32 @@
             .left_section {
               position: relative;
               z-index: 99;
-              padding: 89px 0 70px;
-              @include tablet {
-                padding: 40px 0 120px;
-              }
-              .topSec{
+              .topSec {
                 max-width: 422px;
+                margin-left: 0;
+                text-align: left;
+                padding: 0;
                 @include tablet {
-                    max-width: 100%;
-                    padding-right: 120px;
+                  max-width: 100%;
+                  padding-right: 120px;
                 }
                 @include tablet {
                   padding-right: 0;
                 }
-              .eyebrow_text {
-                margin-bottom: 8px;
-                font-size: 14px;
               }
-
-            }
               .intro_desc {
                 margin-bottom: 32px;
-                @include size23; 
-                &> span{ 
+                @include size23;
+                & > span {
                   display: inline-block;
                   font-weight: 500;
                 }
-                
               }
               .author-section {
+                @include eyebrow;
                 font-weight: 500;
                 margin-bottom: 32px;
+                line-height: 1.3;
                 span {
                   padding: 0 8px;
                 }
@@ -136,12 +131,16 @@
           }
         }
         .rightColumn {
-          width: calc(50% + 38px);
-          margin-left: -38px;
+          width: 50%;
+          position: relative;
+          z-index: 1;
           display: flex;
           @include tablet {
             width: 100%;
             margin-left: 0;
+            margin-bottom: 10px;
+            padding-left: 20rem;
+            padding-right: 20rem;
           }
           .bgImageNav {
             height: 100%;
@@ -154,42 +153,72 @@
                   height: 100%;
                   > div {
                     height: 100%;
-                      display: block;
+                    display: block;
 
-                .media_section {
-                  background-position: 50%;
-                  background-repeat: no-repeat;
-                  background-size: cover;
-                  display: block;
-                  height: 100%;
-                  @include tablet {
-                    position: static;
-                    min-width: 100%;
-                    min-height: 50vw;
-                    // img {
-                    //   mask: none !important;
-                    //   -webkit-mask-box-image: none !important;
-                    //   width: 100%;
-                    //   height: auto;
-                    //   object-position: inherit;
-                    // }
+                    .media_section {
+                      background-position: 50%;
+                      background-repeat: no-repeat;
+                      background-size: cover;
+                      display: block;
+                      height: 100%;
+                      @include tablet {
+                        position: static;
+                        min-width: 100%;
+                        min-height: 50vw;
+                        // img {
+                        //   mask: none !important;
+                        //   -webkit-mask-box-image: none !important;
+                        //   width: 100%;
+                        //   height: auto;
+                        //   object-position: inherit;
+                        // }
+                      }
+                    }
                   }
                 }
-                  }
               }
-              
             }
-            
           }
-          
         }
+      }
+    }
+    &.tc {
+      .page-center {
+        .row {
+          > * {
+            padding-left: 30rem;
+            padding-right: 30rem;
+            @include tablet {
+              padding-left: 20rem;
+              padding-right: 20rem;
+            }
+            .cutomArrows {
+              right: 20px;
+              @include tablet {
+                top: auto;
+                justify-content: flex-start;
+                bottom: 10px;
+                padding-left: 20px;
+                right: auto;
+                left: 0;
+              }
+            }
+          }
+          .leftColumn {
+            @include tablet {
+              padding-bottom: 80rem;
+            }
+          }
         }
       }
     }
     &.fw {
       .row {
+        @include tablet {
+          padding: 40px 0;
+        }
         .leftColumn {
-          width: 100%;  
+          width: 100%;
           text-align: center;
           max-width: 800px;
           margin: auto;
@@ -199,12 +228,12 @@
           .cutomArrows {
             position: static;
             justify-content: center;
-            margin: 40px 0 80px;
+            margin: 40px 0 0;
+            max-width: 100%;
           }
           .slider_wrapper {
             width: 100%;
             .left_section {
-              padding: 80px 0 0;
               .logo_img {
                 text-align: center;
                 img {
@@ -215,9 +244,10 @@
               .topSec {
                 max-width: 100% !important;
                 padding: 0 !important;
+                text-align: center;
               }
             }
-        }
+          }
         }
       }
     }

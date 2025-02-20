@@ -1,10 +1,10 @@
 //heading styles
 @mixin h1 {
   font-family: $font1;
-  font-size: 48rem;
-  font-weight: 600;
+  font-size: 36rem;
+  font-weight: 400;
   margin-bottom: 30rem;
-  line-height: 1;
+  line-height: 1.2;
   margin-top: 0;
   @include tablet {
     font-size: 30rem;
@@ -16,10 +16,10 @@
 }
 @mixin h2 {
   font-family: $font1;
-  font-size: 40rem;
-  font-weight: 600;
+  font-size: 32rem;
+  font-weight: 400;
   margin-bottom: 30rem;
-  line-height: 1;
+  line-height: 1.2;
   @include tablet {
     font-size: 28rem;
   }
@@ -30,10 +30,10 @@
 }
 @mixin h3 {
   font-family: $font1;
-  font-size: 33rem;
-  font-weight: 600;
+  font-size: 28rem;
+  font-weight: 400;
   margin-bottom: 30rem;
-  line-height: 1;
+  line-height: 1.2;
   @include tablet {
     font-size: 25rem;
   }
@@ -44,24 +44,24 @@
 }
 @mixin h4 {
   font-family: $font1;
-  font-size: 28rem;
-  font-weight: 600;
+  font-size: 25rem;
+  font-weight: 400;
   margin-bottom: 30rem;
-  line-height: 1;
+  line-height: 1.2;
   @include tablet {
     font-size: 22rem;
   }
   @include phone {
-    font-size: 20rem;
+    font-size: 22rem;
     margin-bottom: 20rem;
   }
 }
 @mixin h5 {
   font-family: $font1;
-  font-size: 23rem;
-  font-weight: 600;
+  font-size: 22rem;
+  font-weight: 400;
   margin-bottom: 30rem;
-  line-height: 1;
+  line-height: 1.2;
   @include tablet {
     font-size: 20rem;
   }
@@ -72,10 +72,11 @@
 }
 @mixin h6 {
   font-family: $font1;
-  font-size: 19rem;
+  font-size: 20rem;
   font-weight: 600;
   margin-bottom: 30rem;
   line-height: 1;
+  color: $rampGreen;
   @include tablet {
     font-size: 19rem;
   }
@@ -87,7 +88,7 @@
 //body styles
 @mixin b1 {
   font-family: $font1;
-  font-size: 22rem;
+  font-size: $baseFontSize;
   line-height: $baseLineHeight;
   margin-bottom: 20rem;
   @include phone {
@@ -152,11 +153,12 @@
 }
 @mixin eyebrow {
   font-family: $font1;
-  font-size: 14rem;
-  font-weight: 500;
+  font-size: 16rem;
+  font-weight: 600;
   line-height: 1;
   display: block;
   margin-bottom: 10rem;
+  color: $eyebrowtext;
 }
 @mixin caption {
   font-family: $font1;
@@ -168,6 +170,9 @@
 }
 @mixin size32 {
   font-size: 32rem;
+}
+@mixin size25 {
+  font-size: 25rem;
 }
 @mixin size24 {
   font-size: 24rem;
@@ -210,4 +215,7 @@
 }
 @mixin size10 {
   font-size: 10rem;
+}
+@mixin size50 {
+  font-size: 50rem;
 }
