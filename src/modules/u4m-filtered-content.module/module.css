@@ -210,10 +210,17 @@ section.u4m-filtered-content .topSec .flex_row .featCardsOuter .cardItems .cardI
   }
 }
 section.u4m-filtered-content .topSec .flex_row .featCardsOuter .cardItems .cardItem .itemInr .itemCnWrap .itemCntSec .itemTags {
-  font-weight: 400;
+  font-family: "Aktive Grotesk", "Arial, sans serif";
   font-size: 16rem;
+  font-weight: 600;
+  line-height: 1;
+  display: block;
+  margin-bottom: 10rem;
+  color: #006f3c;
   margin-bottom: 32px;
-  text-shadow: 1px 0 0 currentColor;
+  align-items: center;
+  display: flex;
+  flex-wrap: nowrap;
 }
 section.u4m-filtered-content .topSec .flex_row .featCardsOuter .cardItems .cardItem .itemInr .itemCnWrap .itemCntSec .itemTitle {
   margin-bottom: 8px;
@@ -250,7 +257,9 @@ section.u4m-filtered-content .featCardsListWrap .filterWrap .flex_row .selctArro
 section.u4m-filtered-content .featCardsListWrap .filterWrap .flex_row .selctArrow select {
   background-size: 12px;
   background-repeat: no-repeat;
-  appearance: none;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
   background-position: calc(100% - 30px) center;
   padding: 12.5px 64px 12.5px 24px;
   border-radius: 4rem;
