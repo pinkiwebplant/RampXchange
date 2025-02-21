@@ -9399,6 +9399,7 @@ section.u4m-blog-post div.hero div.content div.author-wrap div.avatar {
 }
 section.u4m-blog-post div.hero div.content div.author-wrap div.author-link a {
   font-weight: bold;
+  text-decoration: none;
 }
 section.u4m-blog-post div.hero div.content div.author-wrap div.author-link a:hover {
   color: #000000;
@@ -9568,6 +9569,9 @@ section.u4m-blog-post div.body div.content a {
 section.u4m-blog-post div.body div.content a:hover {
   color: #000000;
 }
+section.u4m-blog-post div.body div.topics a.link {
+  text-decoration: none;
+}
 section.u4m-blog-post div.author {
   float: none;
   margin-left: auto;
@@ -9579,6 +9583,7 @@ section.u4m-blog-post div.author {
   margin-top: 50rem;
   display: flex;
   align-items: center;
+  margin-bottom: 30px;
 }
 @media (max-width: 580px) {
   section.u4m-blog-post div.author {
@@ -9621,6 +9626,9 @@ section.u4m-blog-post div.author div.bio .name {
     font-size: 20rem;
     margin-bottom: 20rem;
   }
+}
+section.u4m-blog-post div.author div.bio .name a {
+  text-decoration: none;
 }
 section.u4m-blog-post div.author div.bio p {
   font-family: "Aktive Grotesk", "Arial, sans serif";
