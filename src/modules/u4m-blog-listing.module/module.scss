@@ -1,5 +1,5 @@
 @import "../../css/_module-imports";
-
+/*
 section.u4m-blog-listing {
   &.reverse-text {
     .featCardsListWrap {
@@ -167,4 +167,225 @@ section.u4m-blog-listing {
       }
     }
   }
+}
+
+*/
+
+section.u4m-blog-listing {
+  &.reverse-text {
+    .featCardsListWrap {
+      .pagination {
+        nav {
+          button.prevnext {
+            border: 1px solid $white;
+            color: $white;
+          }
+        }
+      }
+    }
+  }
+
+  .topSec {
+    .flex_row {
+      @include tabletmidmin {
+        gap: 0px;
+      }
+      gap: 40px;
+      .intro_wrapp {
+        @include tabletmidmin {
+          max-width: 341px;
+        }
+        max-width: 100%;
+        .intro_content {
+          padding: 0;
+          text-align: left;
+          max-width: 100%;
+          margin: 0;
+          .intro_btn_wrap {
+            justify-content: start;
+            margin-top: 32px;
+          }
+        }
+      }
+      .featCardsOuter {
+        @include tabletmidmin {
+          max-width: calc(100% - 341px);
+          padding-left: 60px;
+        }
+        max-width: 100%;
+        width: 100%;
+
+        @include cardItem;
+        .featCards {
+          margin: 0;
+        }
+        .cardItems {
+          margin: 0;
+          .cardItem {
+            padding: 0;
+            width: 100%;
+            .itemInr {
+              display: flex;
+              align-items: center;
+              @include phone {
+                display: block;
+              }
+              > * {
+                width: 50%;
+                @include phone {
+                  width: 100%;
+                }
+              }
+              .itemImg {
+                .itemImgin {
+                  padding-bottom: 333px;
+                  @include phone {
+                    padding-bottom: 56.66%;
+                  }
+                }
+              }
+              .itemCnWrap {
+                .itemCntSec {
+                  .itemTags {
+                    @include eyebrow;
+                    margin-bottom: 32px;
+                    align-items: center;
+                    display: flex;
+                    flex-wrap: nowrap;
+                  }
+                  .itemTitle {
+                    margin-bottom: 8px;
+                    font-weight: 500;
+                    h3 {
+                      margin: 0;
+                    }
+                  }
+                }
+                .intro_btn_wrap {
+                  @include size16;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  .featCardsListWrap {
+    .filterWrap {
+      padding: 60rem 0;
+      @include tabletvert {
+        padding: 40rem 0;
+      }
+      .flex_row {
+        justify-content: center;
+        gap: 20px;
+        .selctArrow {
+          padding: 0;
+          max-width: 390px;
+          width: 100%;
+          @include phone {
+            max-width: 100%;
+          }
+          select {
+            background-size: 12px;
+            background-repeat: no-repeat;
+            appearance: none;
+            background-position: calc(100% - 30px) center;
+            padding: 12.5px 64px 12.5px 24px;
+            border-radius: $borderRadius;
+            border: 1px solid $gray2;
+            outline: none;
+            color: $gray2;
+            line-height: 1.3;
+          }
+        }
+      }
+    }
+    .cardSctn {
+      margin-bottom: 60px;
+      @include cardItem;
+      .cardItems {
+        .cardItem {
+          .itemInr {
+            .itemCnWrap {
+              .itemCntSec {
+                .restitle {
+                  font-weight: 600;
+                  margin: 0;
+                }
+                .itemTags {
+                  color: inherit;
+                }
+              }
+              .intro_btn_wrap {
+                @include size16;
+              }
+            }
+          }
+        }
+        .statusCnt {
+          width: 100%;
+          text-align: center;
+          margin: 0;
+        }
+      }
+    }
+    .blog-pagination {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      align-items: center;
+      justify-content: center;
+      .items {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+        a {
+          background: none;
+          border: none;
+          padding: 0;
+          outline: none;
+          text-decoration: none;
+          &.prevnext {
+            background: none;
+            border: 1px solid $heading;
+            border-radius: 100%;
+            height: 44px;
+            width: 44px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 0;
+            color: $heading;
+            span {
+              pointer-events: none;
+            }
+          }
+          &:not(.prevnext) {
+            color: $action1;
+            font-weight: 600;
+            text-align: center;
+          }
+          &.active {
+            border-bottom: 2px solid $action1;
+          }
+        }
+      }
+    }
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.cardItem {
+  animation: fadeIn 2s ease-in-out;
 }

@@ -210,10 +210,17 @@ section.u4m-filtered-content .topSec .flex_row .featCardsOuter .cardItems .cardI
   }
 }
 section.u4m-filtered-content .topSec .flex_row .featCardsOuter .cardItems .cardItem .itemInr .itemCnWrap .itemCntSec .itemTags {
-  font-weight: 400;
+  font-family: "Aktive Grotesk", "Arial, sans serif";
   font-size: 16rem;
+  font-weight: 600;
+  line-height: 1;
+  display: block;
+  margin-bottom: 10rem;
+  color: #006f3c;
   margin-bottom: 32px;
-  text-shadow: 1px 0 0 currentColor;
+  align-items: center;
+  display: flex;
+  flex-wrap: nowrap;
 }
 section.u4m-filtered-content .topSec .flex_row .featCardsOuter .cardItems .cardItem .itemInr .itemCnWrap .itemCntSec .itemTitle {
   margin-bottom: 8px;
@@ -250,7 +257,9 @@ section.u4m-filtered-content .featCardsListWrap .filterWrap .flex_row .selctArro
 section.u4m-filtered-content .featCardsListWrap .filterWrap .flex_row .selctArrow select {
   background-size: 12px;
   background-repeat: no-repeat;
-  appearance: none;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
   background-position: calc(100% - 30px) center;
   padding: 12.5px 64px 12.5px 24px;
   border-radius: 4rem;
@@ -436,6 +445,85 @@ section.u4m-filtered-content .featCardsListWrap .pagination nav button:not(.prev
 }
 section.u4m-filtered-content .featCardsListWrap .pagination nav button.active {
   border-bottom: 2px solid #006f3c;
+}
+section.u4m-filtered-content .filter_label {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background-position: calc(100% - 30px);
+  background-repeat: no-repeat;
+  background-size: 12px;
+  border: 1px solid #6e757c;
+  border-radius: 4rem;
+  color: #6e757c;
+  line-height: 1.3;
+  outline: none;
+  padding: 12.5px 64px 12.5px 24px;
+  cursor: pointer;
+}
+section.u4m-filtered-content .filter_dropdown {
+  position: absolute;
+  z-index: 4;
+  background: #f7f8f6;
+  width: 100%;
+  border: 1px solid #6e757c;
+  border-radius: 4rem;
+  overflow: hidden;
+  display: none;
+}
+section.u4m-filtered-content .dropdownopen .filter_dropdown {
+  display: block;
+}
+section.u4m-filtered-content .selctArrow {
+  position: relative;
+  z-index: 6;
+}
+section.u4m-filtered-content .topic_ele {
+  padding: 8px 24px;
+  border-bottom: 1px solid #dbdbdb;
+  cursor: pointer;
+}
+section.u4m-filtered-content .filterWrap {
+  position: relative;
+  z-index: 8;
+}
+section.u4m-filtered-content .topic_ele:hover {
+  background: #ffffff;
+}
+section.u4m-filtered-content .listing-wrap {
+  position: relative;
+  z-index: 4;
+}
+section.u4m-filtered-content .pagi_wranation a.next,
+section.u4m-filtered-content .pagi_wranation a.prev {
+  align-items: center;
+  background: none;
+  border: 1px solid #213944;
+  border-radius: 100%;
+  color: #213944;
+  display: flex;
+  height: 44px;
+  justify-content: center;
+  padding: 0;
+  width: 44px;
+}
+section.u4m-filtered-content .pagi_wranation .nav-links {
+  align-items: center;
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+}
+section.u4m-filtered-content .pagi_wranation .nav-links a {
+  text-decoration: none;
+}
+section.u4m-filtered-content .pagi_wranation a {
+  font-weight: 600;
+}
+section.u4m-filtered-content .pagi_wranation a.active {
+  color: #006f3c;
+  font-weight: 600;
+  text-align: center;
+  text-decoration: underline;
 }
 
 @keyframes fadeIn {

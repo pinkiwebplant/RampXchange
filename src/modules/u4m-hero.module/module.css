@@ -27,7 +27,8 @@ section.u4m-hero .page-center {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  column-gap: 60px;
+  -moz-column-gap: 60px;
+       column-gap: 60px;
 }
 section.u4m-hero .page-center.center {
   flex-direction: column-reverse;
@@ -58,14 +59,16 @@ section.u4m-hero .page-center.center .media-col .mediaItem img {
   min-height: 380px;
   max-height: 380px;
   width: 100%;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 section.u4m-hero .page-center.no-media {
   row-gap: 0px;
 }
 @media (max-width: 991px) {
   section.u4m-hero .page-center {
-    column-gap: 0;
+    -moz-column-gap: 0;
+         column-gap: 0;
   }
 }
 section.u4m-hero .content-column {

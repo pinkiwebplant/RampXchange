@@ -317,7 +317,21 @@
     "step" : 1,
     "type" : "number",
     "display_width" : null,
-    "default" : 9
+    "default" : 3
+  }, {
+    "id" : "bc07c218-761d-54f0-89d6-12211d66dc54",
+    "name" : "page_path",
+    "label" : "Page Path",
+    "help_text" : "",
+    "inline_help_text" : "Add path text to mark active topic on page load.\nExample = /resources?topic=Guides\n",
+    "required" : false,
+    "locked" : true,
+    "validation_regex" : "",
+    "placeholder" : "/resources/case-studies",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "display_width" : null
   } ],
   "tab" : "CONTENT",
   "expanded" : false,
@@ -326,7 +340,7 @@
   "display_width" : null,
   "default" : {
     "select_hubdb_table" : 105503810,
-    "number_of_posts" : 9
+    "number_of_posts" : 3
   }
 }, {
   "id" : "4ad4dab1-bfe8-979e-975e-f27866e9d308",
