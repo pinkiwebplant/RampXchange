@@ -1,395 +1,483 @@
 {% set moduleName = 'u4m-filtered-content' %}
 {% set ExtramoduleClass = '' %}
 {% include "../partials/u4-module-includes.html" %}
-{% set table =  module.filtered_content.select_hubdb_table  %}
-{% set query = '-hs_created_at' %}
-{% set resouces = hubdb_table_rows(table,query) %}
 
-{% set ft_query = '-hs_created_at&limit=1000' %}
+{# {% set table =  module.hubdbtable_field  %}
+
+{% set table =  module.filtered_content.select_hubdb_table  %} #}
+{# {% set query = '-hs_created_at' %}
+{% set resouces = hubdb_table_rows(table,query) %} #}
+
+
+
+{# {% set ft_query = '-hs_created_at&limit=1000' %}
 {% set ft_resouces = hubdb_table_rows(table,ft_query) %}
+ #}
+
+{# =============. #}
+
+
+{% set table =  module.filtered_content.select_hubdb_table  %}
+{% set query = ""%}
+{% set batch_num = module.filtered_content.number_of_posts %}
+
+
+
+{% if not request.query_dict.page_num %}
+{% set page_num = 1 %}
+{% set offset_num = 0 %}
+{% elif request.query_dict.page_num %}
+{% set page_num = request.query_dict.page_num %}
+{% set offset_num = page_num|add(-1) * batch_num %}
+{% endif %}
+
+
+{% set limit = "&limit=" ~ batch_num ~ "&offset=" ~ offset_num %}
+
+
+{% set query =  "orderBy=hs_created_at" %}
+
+
+{# {% if request.query_dict.type %}
+{% set query = query ~ '&type__in=' ~ request.query_dict.type|urlencode %}
+{% endif %} #}
+
+{% if request.query_dict.topic %}
+{% set query = query  ~ '&topic__in=' ~ request.query_dict.topic|urlencode %}
+{% endif %}
+
+
+{# {% if request.query_dict.search %}
+{% set query = query  ~ '&name__icontains=' ~ request.query_dict.search|urlencode %}
+{% endif %} #}
+
+
+{% set resouces = hubdb_table_rows(table,query ~ limit) %}
+{% set rowType = [] %}
+{% set rowTagsType = [] %}
+
+
+
+{% set query2 = "orderBy=hs_created_at" %}
+
+{% set ft_resouces = hubdb_table_rows(table,query~"&limit=1000") %}
+
+
 <div class="page-center ">
 
-	<div class="topSec">
-		<div class="flex_row">
-			<div class="intro_wrapp">
-				{{macros.introGroup(module.intro_content)}}
-			</div>
-			{% if ft_resouces|length > 0 %}
-			<div class="featCardsOuter"> 
-				<div class="featCards cardItems">  
-					{% for row in ft_resouces %} 
-					{% if row.featured %}
-					<div class="cmCol3 cardItem">
-						<div class="itemInr {{ module.module_settings.select_top_card_theme }} {% if module.module_settings.reverse_text %}cardColor{% endif %}" {% if module.module_settings.select_top_card_theme == "custom" %}style="background-color:{{ module.module_settings.top_background_color.rgba }}"{%  endif %}>
-							{% if row.image.url %}
-							<div class="itemImg">
-								<div class="itemImgin" style="background-image:url({{ row.image.url }})">	<a class="absltLink" href="{{ row.link }}"></a></div>
-							</div>
-							{% endif %}
-							<div class="itemCnWrap">
-								<div class="itemCntSec">
-                    <div class="itemTags">{% for tag in row.topic %}{{ tag.name|capitalize }} {% if not loop.last %}<span class="dots"></span>{% endif %} {% endfor %}</div>
-									<div class="itemTitle ">
-										<h3 >
-											<a  href="{{ row.link }}">
-												{{ row.name }}
-											</a>
-										</h3>
-									</div>  
-									{% if row.description %}
-									<div class="itemDescription">{{ row.description }}</div>  
-									{% endif %}
-								</div>
-								{% if row.read_more_text %}
-								<div class="intro_btn_wrap">
-									<div class="btn_item">
-										<a class="arrow-link " href="{{ row.link }}">
-											<span>{{ row.read_more_text }}</span>
-											<svg width="7" height="12" viewBox="0 0 7 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-												<path fill-rule="evenodd" clip-rule="evenodd" d="M6.83814 5.62106C7.05396 5.83037 7.05396 6.16965 6.83814 6.37896L1.2039 11.843C0.988082 12.0523 0.638231 12.0523 0.422411 11.843L0.161865 11.5904C-0.053955 11.3811 -0.053955 11.0417 0.161865 10.8324L5.14481 6.00001L0.161865 1.16755C-0.0539548 0.958242 -0.0539548 0.618957 0.161865 0.409655L0.422411 0.156977C0.638231 -0.0523252 0.988082 -0.0523252 1.2039 0.156977L6.83814 5.62106Z" fill="#007C43"></path>
-											</svg>
-										</a>
-									</div>
-								</div>
-								{% endif %}
-							</div>
-						</div>
-					</div>
-					{% endif %}
-					{% endfor %} 
-				</div> 
-			</div>
-			{% endif %}
-		</div>
-	</div>
-
-	<div class="featCardsListWrap">
-		<div class="filterWrap">
-			<div class="filters">
-				<div id="filters" class="flex_row"> 
-					<div class="col selctArrow">   
-						<select name="type" id="type" class="resourceSelect" style="background-image: url({{ get_asset_url('../../templates/images/selectArrow.png') }});">
-							<option value="" selected>Select Type...</option> 
-							{% for type in hubdb_table_column(table, 'type').options %}
-							<option value="{{ type.name|lower|replace(' ','-') }}">{{ type.name|capitalize }}</option>
-							{% endfor %}
-						</select> 
-					</div>   
-					<div class="col selctArrow">  
-						<select name="topic" id="topic" class="topicSelect resourceSelect" style="background-image: url({{ get_asset_url('../../templates/images/selectArrow.png') }});">
-							<option value="" selected>Select Topic...</option> 
-							{% for topic in hubdb_table_column(table, 'topic').options %}
-							<option value="{{ topic.name|lower|replace(' ','-') }}">{{ topic.name|capitalize }}</option>
-							{% endfor %}
-						</select> 
-					</div>  
-
-				</div> 
-			</div>	
-		</div>
-
-
-		<div class="cardSctn row-fluid">
-			<div class="flex_row cardItems resourceList">
-				{% for row in resouces %}
-				<div class="resourceCard cmCol3 cardItem {{ row.type.name|lower|replace(' ','-') }} {% for tag in row.topic %}{{ tag.name|lower|replace(' ','-') }} {% endfor %}"   data-aos='fade-up'
-        data-aos-delay='{{ loop.index }}00'>
-					<div class="itemInr {{ module.module_settings.select_card_theme }} {% if module.module_settings.reverse_text %}cardColor{% endif %}" {% if module.module_settings.select_card_theme == "custom" %}style="background-color:{{ module.module_settings.background_color.rgba }}"{%  endif %}>
-						{% if row.image.url %}
-						<div class="itemImg">
-							<div class="itemImgin" style="background-image:url({{ row.image.url }})">	<a class="absltLink" href="{{ row.link }}"></a></div>
-						</div>
-						{% endif %}
-						<div class="itemCnWrap">
-							<div class="itemCntSec">
-            <div class="itemTags">{% for tag in row.topic %}{{ tag.name|capitalize }} {% if not loop.last %}<span class="dots"></span>{% endif %} {% endfor %}</div>
-            <div class="itemMeta">
-          <span class="reading-minutes">
-
-            {% set initialPostWords = row.description|striptags|wordcount %}
-              {% set calculatedPostWords = initialPostWords / 100 %}
-              {% set finishedPostWords = calculatedPostWords|divide(300)|round(2) %}
-              {% set number = finishedPostWords|round %}
-              {% if number < 1 %}
-              Less than one min
-              {% else %}
-              {{ finishedPostWords|round }} minute read
+  <div class="topSec">
+    <div class="flex_row">
+      <div class="intro_wrapp">
+        {{macros.introGroup(module.intro_content)}}
+      </div>
+      {% if ft_resouces|length > 0 %}
+      <div class="featCardsOuter"> 
+        <div class="featCards cardItems">  
+          {% for row in ft_resouces %} 
+          {% if row.featured %}
+          <div class="cmCol3 cardItem">
+            <div class="itemInr {{ module.module_settings.select_top_card_theme }} {% if module.module_settings.reverse_text %}cardColor{% endif %}" {% if module.module_settings.select_top_card_theme == "custom" %}style="background-color:{{ module.module_settings.top_background_color.rgba }}"{%  endif %}>
+              {% if row.image.url %}
+              <div class="itemImg">
+                <div class="itemImgin" style="background-image:url({{ row.image.url }})">	<a class="absltLink" href="{{ row.link }}"></a></div>
+              </div>
               {% endif %}
-          </span>
-           | <span class="itemDate">{{ row.date|datetimeformat('%B %e, %Y') }}</span>
-        </div>
-								{% if row.name %}
-								<div class="itemTitle">
-									<h3 class="restitle">
-										<a  href="{{ row.link }}">
-											{{ row.name }}
-										</a>
-									</h3>
-								</div>  
-								{% endif %}
-							</div>
-							{% if row.read_more_text %}
-							<div class="intro_btn_wrap">
-								<div class="btn_item">
-									<a class="arrow-link " href="{{ row.link }}">
-										<span>{{ row.read_more_text }}</span>
-										<svg width="7" height="12" viewBox="0 0 7 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-											<path fill-rule="evenodd" clip-rule="evenodd" d="M6.83814 5.62106C7.05396 5.83037 7.05396 6.16965 6.83814 6.37896L1.2039 11.843C0.988082 12.0523 0.638231 12.0523 0.422411 11.843L0.161865 11.5904C-0.053955 11.3811 -0.053955 11.0417 0.161865 10.8324L5.14481 6.00001L0.161865 1.16755C-0.0539548 0.958242 -0.0539548 0.618957 0.161865 0.409655L0.422411 0.156977C0.638231 -0.0523252 0.988082 -0.0523252 1.2039 0.156977L6.83814 5.62106Z" fill="#007C43"></path>
-										</svg>
-									</a>
-								</div>
-							</div>
-							{% endif %}
-						</div>
+              <div class="itemCnWrap">
+                <div class="itemCntSec">
+                  <div class="itemTags">{% for tag in row.topic %}{{ tag.name|capitalize }} {% if not loop.last %}<span class="dots"></span>{% endif %} {% endfor %}</div>
+                  <div class="itemTitle ">
+                    <h3 >
+                      <a  href="{{ row.link }}">
+                        {{ row.name }}
+                      </a>
+                    </h3>
+                  </div>  
+                  {% if row.description %}
+                  <div class="itemDescription">{{ row.description }}</div>  
+                  {% endif %}
+                </div>
+                {% if row.read_more_text %}
+                <div class="intro_btn_wrap">
+                  <div class="btn_item">
+                    <a class="arrow-link " href="{{ row.link }}">
+                      <span>{{ row.read_more_text }}</span>
+                      <svg width="7" height="12" viewBox="0 0 7 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M6.83814 5.62106C7.05396 5.83037 7.05396 6.16965 6.83814 6.37896L1.2039 11.843C0.988082 12.0523 0.638231 12.0523 0.422411 11.843L0.161865 11.5904C-0.053955 11.3811 -0.053955 11.0417 0.161865 10.8324L5.14481 6.00001L0.161865 1.16755C-0.0539548 0.958242 -0.0539548 0.618957 0.161865 0.409655L0.422411 0.156977C0.638231 -0.0523252 0.988082 -0.0523252 1.2039 0.156977L6.83814 5.62106Z" fill="#007C43"></path>
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+                {% endif %}
+              </div>
+            </div>
+          </div>
+          {% endif %}
+          {% endfor %} 
+        </div> 
+      </div>
+      {% endif %}
+    </div>
+  </div>
 
-					</div>
-				</div>
-				{% endfor %} 
-			</div> 
-		</div>   
+  <div class="featCardsListWrap">
+    <div class="filterWrap">
+      <div class="filters">
+        <div id="filters" class="flex_row"> 
 
-		<ul id="pagination{{ name|replace('widget_','')|replace('module_','') }}" class="pagination"></ul> 
 
-	</div>
+          <div class=" selctArrow tag-col">   
+            <div class="filter_label topic_filter_label" style="background-image: url({{ get_asset_url('../../templates/images/selectArrow.png') }});">
+              Filter by Topic
+            </div>
+            <div class="filter_dropdown topicSelect  tag_filter" data-value="">
+              <div class="topic_ele" data-topic="" data-topic-label>
+                <span class="tag_name">Filter by Topic</span>
+              </div>
+              {% for topic in hubdb_table_column(table, 'topic').options %}
+              <div class="topic_ele" data-topic="{{ topic.name|urlencode }}" data-topic-label="{{ topic.name }}" data-topic-url="{{ topic.name|replace(' ','-')|lower }}">
+                <span class="tag_name">{{ topic.name }}</span>
+              </div>
+              {% endfor %}
+            </div>
+          </div>  
+
+
+        </div> 
+      </div>	
+    </div>
+
+    <div class='listing-wrap'>
+
+
+      <div class="cardSctn row-fluid">
+        <div class="flex_row cardItems resourceList">
+          {% for row in resouces %}
+          <div class="resourceCard cmCol3 cardItem {{ row.type.name|lower|replace(' ','-') }} {% for tag in row.topic %}{{ tag.name|lower|replace(' ','-') }} {% endfor %}"   >
+            <div class="itemInr {{ module.module_settings.select_card_theme }} {% if module.module_settings.reverse_text %}cardColor{% endif %}" {% if module.module_settings.select_card_theme == "custom" %}style="background-color:{{ module.module_settings.background_color.rgba }}"{%  endif %}>
+              {% if row.image.url %}
+              <div class="itemImg">
+                <div class="itemImgin" style="background-image:url({{ row.image.url }})">	<a class="absltLink" href="{{ row.link }}"></a></div>
+              </div>
+              {% endif %}
+              <div class="itemCnWrap">
+                <div class="itemCntSec">
+                  <div class="itemTags">{% for tag in row.topic %}{{ tag.name|capitalize }} {% if not loop.last %}<span class="dots"></span>{% endif %} {% endfor %}</div>
+                  <div class="itemMeta">
+                    <span class="reading-minutes">
+
+                      {% set initialPostWords = row.description|striptags|wordcount %}
+                      {% set calculatedPostWords = initialPostWords / 100 %}
+                      {% set finishedPostWords = calculatedPostWords|divide(300)|round(2) %}
+                      {% set number = finishedPostWords|round %}
+                      {% if number < 1 %}
+                      Less than one min
+                      {% else %}
+                      {{ finishedPostWords|round }} minute read
+                      {% endif %}
+                    </span>
+                    | <span class="itemDate">{{ row.date|datetimeformat('%B %e, %Y') }}</span>
+                  </div>
+                  {% if row.name %}
+                  <div class="itemTitle">
+                    <h3 class="restitle">
+                      <a  href="{{ row.link }}">
+                        {{ row.name }}
+                      </a>
+                    </h3>
+                  </div>  
+                  {% endif %}
+                </div>
+                {% if row.read_more_text %}
+                <div class="intro_btn_wrap">
+                  <div class="btn_item">
+                    <a class="arrow-link " href="{{ row.link }}">
+                      <span>{{ row.read_more_text }}</span>
+                      <svg width="7" height="12" viewBox="0 0 7 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M6.83814 5.62106C7.05396 5.83037 7.05396 6.16965 6.83814 6.37896L1.2039 11.843C0.988082 12.0523 0.638231 12.0523 0.422411 11.843L0.161865 11.5904C-0.053955 11.3811 -0.053955 11.0417 0.161865 10.8324L5.14481 6.00001L0.161865 1.16755C-0.0539548 0.958242 -0.0539548 0.618957 0.161865 0.409655L0.422411 0.156977C0.638231 -0.0523252 0.988082 -0.0523252 1.2039 0.156977L6.83814 5.62106Z" fill="#007C43"></path>
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+                {% endif %}
+              </div>
+
+            </div>
+          </div>
+          {% endfor %} 
+        </div> 
+      </div>   
+
+      {#     <ul id="pagination{{ name|replace('widget_','')|replace('module_','') }}" class="pagination"></ul>  #}
+
+
+      <div class="pagi_wranation" >
+
+        {% set nav = hubdb_table_rows(table, query) %}
+        {% set total_pages = (nav|length/batch_num)|round(0, 'ceil') %} 
+        {% set more_pages = nav|length % batch_num %}
+
+        <nav  id="pagination{{ name|replace('widget_','')|replace('module_','') }}" class="hbdb_dsp_table_pagination pagination" data-total="{{total_pages}}" data-page="{{page_num}}">
+          <div class="nav-links">
+
+
+            {% if page_num > 1 %}
+            <a class="prev page-numbers" href="{{ content.absolute_url }}?topic={{request.query_dict.topic|urlencode}}&page_num={{ page_num|add(-1) }}" data-page-num="{{ page_num|add(-1) }}">
+              <span class="material-symbols-outlined">arrow_back</span>
+            </a>
+            {% endif %}
+
+
+            {% set page_list = [-2, -1, 0, 1, 2] %}
+            {% if total_pages - page_num == 1 %}{% set offset = -1 %}
+            {% elif total_pages - page_num == 0 %}{% set offset = -2 %}
+            {% elif page_num == 2 %}{% set offset = 1 %}
+            {% elif page_num == 1 %}{% set offset = 2 %}
+            {% else %}{% set offset = 0 %}{% endif %}
+
+
+            {% for page in page_list %}
+            {% set this_page = page_num|add(page)|add(offset) %}
+            {% if this_page > 0 and this_page <= total_pages %}
+            <a {% if this_page == page_num %}class="active"{% endif %} href="{{ content.absolute_url }}?topic={{request.query_dict.topic|urlencode}}&page_num={{ this_page }}">{{ this_page }}</a>
+            {% endif %}
+            {% endfor %}
+
+
+
+            {% if total_pages > page_num %}
+            <a class="next page-numbers {% if page_num >= total_pages %}hide page_num{% endif %}" href="{{ content.absolute_url }}?topic={{request.query_dict.topic|urlencode}}&page_num={{ page_num|add(1) }}" data-page-num="{{ page_num|add(1) }}">
+              <span class="material-symbols-outlined">arrow_forward</span>
+            </a>
+            {% endif %}
+
+
+
+          </div>
+        </nav>
+
+
+
+      </div>
+    </div>
+  </div>
 </div>
 </section>
 
+
+<style>
+
+  .listing-wrap{
+    opacity: 0;
+  }
+
+  .loaded.listing-wrap{
+    opacity: 1;
+  }
+</style>
+
+{% set pagepath = module.filtered_content.page_path%}
+
 {% require_js %}
 <script>
-const wrapper = document.querySelector(".resourceList");
-const pagination = document.querySelector(".pagination");
-const items = Array.from(document.querySelectorAll(".resourceCard"));
-let filteredItems = items;
-let currPage = 1;
-const TagSelect = document.querySelector(".resourceSelect");
-const TopicSelect = document.querySelector(".topicSelect");
 
-// const featuredPost = document.querySelector(".featCardsOuter");
-// const filteredContntTopBnr = document.querySelector(".filteredContnt .topBnr");
+  $(document).ready(function(){
+    $('.listing-wrap').addClass('loaded');
+  })
 
-function filterItems(el, type, category) {
-  const title = el.querySelector(".restitle").innerText.toLowerCase();
-  const isOfType = !type || el.classList.contains(type);
-  const isOfcategory = !category || el.classList.contains(category);
 
-  return isOfType && isOfcategory;
-}
+  window.addEventListener("DOMContentLoaded", function () {
+    let getLIstingWrap = document.querySelector(".u4m-filtered-content .featCardsListWrap");
 
-const selectedAll = document.querySelectorAll(".wrapper-dropdown");
-
-selectedAll.forEach((selected) => {
-  const optionsContainer = selected.children[2];
-  const optionsList = selected.querySelectorAll("div.wrapper-dropdown a");
-
-  selected.addEventListener("click", () => {
-    let arrow = selected.children[1];
-
-    if (selected.classList.contains("active")) {
-      handleDropdown(selected, arrow, false);
-    } else {
-      let currentActive = document.querySelector(".wrapper-dropdown.active");
-
-      if (currentActive) {
-        let anotherArrow = currentActive.children[1];
-        handleDropdown(currentActive, anotherArrow, false);
-      }
-
-      handleDropdown(selected, arrow, true);
-    }
-  });
-
-  // update the display of the dropdown
-  for (let o of optionsList) {
-    o.addEventListener("click", () => {
-      selected.querySelector(".selected-display").innerHTML = o.innerHTML;
+    setTimeout(function () {
+      getLIstingWrap.classList.add("loaddedList");
     });
-  }
-});
-
-// check if anything else ofther than the dropdown is clicked
-window.addEventListener("click", function (e) {
-  if (e.target.closest(".wrapper-dropdown") === null) {
-    closeAllDropdowns();
-  }
-});
-
-// close all the dropdowns
-function closeAllDropdowns() {
-  const selectedAll = document.querySelectorAll(".wrapper-dropdown");
-  selectedAll.forEach((selected) => {
-    const optionsContainer = selected.children[2];
-    let arrow = selected.children[1];
-
-    handleDropdown(selected, arrow, false);
-  });
-}
-
-// open all the dropdowns
-function handleDropdown(dropdown, arrow, open) {
-  if (open) {
-    arrow.classList.add("rotated");
-    dropdown.classList.add("active");
-  } else {
-    arrow.classList.remove("rotated");
-    dropdown.classList.remove("active");
-  }
-}
-
-function MainLogic() {
-  const type = TagSelect.value;
-  const topic = TopicSelect.value;
-
-  filteredItems = items.filter((el) => filterItems(el, type, topic));
-  currPage = 1;
-
-  if (filteredItems.length !== 0) {
-    pagination.style.display = "flex";
-    setHTML(filteredItems);
-  } else {
-    pagination.style.display = "none";
-    wrapper.innerHTML = "<p class='col statusCnt'>No Data Found.</p>";
-  }
-}
-
-function calculatePagination(
-  totalItems,
-  currentPage = 1,
-  pageSize = 6,
-  maxPages = 4
-) {
-  let startPage,
-    endPage,
-    totalPages = Math.ceil(totalItems / pageSize);
-
-  if (currentPage < 1) {
-    currentPage = 1;
-  } else if (currentPage > totalPages) {
-    currentPage = totalPages;
-  }
-
-  if (totalPages <= maxPages) {
-    startPage = 1;
-    endPage = totalPages;
-  } else {
-    let maxPagesBeforeCurrentPage = Math.floor(maxPages / 2);
-    let maxPagesAfterCurrentPage = Math.ceil(maxPages / 2) - 1;
-
-    if (currentPage <= maxPagesBeforeCurrentPage) {
-      startPage = 1;
-      endPage = maxPages;
-    } else if (currentPage + maxPagesAfterCurrentPage >= totalPages) {
-      startPage = totalPages - maxPages + 1;
-      endPage = totalPages;
-    } else {
-      startPage = currentPage - maxPagesBeforeCurrentPage;
-      endPage = currentPage + maxPagesAfterCurrentPage;
-    }
-  }
-
-  let startIndex = (currentPage - 1) * pageSize;
-  let endIndex = Math.min(startIndex + pageSize - 1, totalItems - 1);
-  let pages = Array.from(Array(endPage + 1 - startPage).keys()).map(
-    (i) => startPage + i
-  );
-
-  return {
-    totalItems: totalItems,
-    currentPage: currentPage,
-    pageSize: pageSize,
-    totalPages: totalPages,
-    startPage: startPage,
-    endPage: endPage,
-    startIndex: startIndex,
-    endIndex: endIndex,
-    pages: pages,
-  };
-}
-
-function setHTML(items) {
-  wrapper.innerHTML = "";
-  pagination.innerHTML = "";
-
-  const {
-    totalItems,
-    currentPage,
-    pageSize,
-    totalPages,
-    startPage,
-    endPage,
-    startIndex,
-    endIndex,
-    pages,
-  } = calculatePagination(items.length, currPage, {{ module.filtered_content.number_of_posts }}, 4);
-
-  const nav = document.createElement("nav");
-  nav.classList.add(
-    "relative",
-    "z-0",
-    "inline-flex",
-    "rounded-md",
-    "shadow-sm",
-    "-space-x-px"
-  );
-  let paginationHTML = "";
-  paginationHTML += `<button ${currentPage === 1 && "disabled"} class="${
-    currentPage === 1 ? "cursor-not-allowed" : "prev"
-  } prevnext">\n<span class="material-symbols-outlined">arrow_back</span>\n</button>`;
-
-  pages.forEach((page) => {
-    paginationHTML +=
-      currentPage === page
-        ? `<button class=" active para gray_border black_color light_bg z-10 bg-indigo-50 border-indigo-500 text-indigo-600 relative inline-flex items-center px-4 py-2 border text-sm font-medium" page="${page}" disabled>${page}</button>`
-        : `<button class="para gray_border black_color light_bg page bg-white border-gray-300 text-gray-500 hover:bg-gray-50 relative inline-flex items-center px-4 py-2 border text-sm font-medium" page="${page}">${page}</button>`;
   });
 
-  paginationHTML += `<button ${currentPage === endPage && "disabled"} class="${
-    currentPage === endPage ? "cursor-not-allowed" : "next"
-  } prevnext">\n<span class="material-symbols-outlined">arrow_forward</span>\n</button>`;
 
-  nav.innerHTML = paginationHTML;
-  pagination.append(nav);
-
-	nav.classList.add('count'+totalPages);
-  const start = (currentPage - 1) * pageSize;
-  const end = currentPage * pageSize;
-  items.slice(start, end).forEach((el) => {
-    wrapper.append(el);
+  var filterlabeln = document.querySelectorAll(".filter_label");
+  filterlabeln.forEach((label) => {
+    label.addEventListener("click", (event) => {
+      event.currentTarget.parentElement.classList.toggle("dropdownopen");
+    });
   });
-}
-TagSelect.addEventListener("change", (f) => {
-  f.preventDefault();
-  MainLogic();
-});
 
-TopicSelect.addEventListener("change", (f) => {
-  f.preventDefault();
-  MainLogic();
-});
 
-document.addEventListener("click", (e) => {
-  const $this = e.target;
-  if ($this.classList.contains("page")) {
-    const pageNumber = $this.getAttribute("page");
-    if (pageNumber) {
-      currPage = parseInt(pageNumber);
-      setHTML(filteredItems);
-    }
+  document.querySelectorAll(".filter_label").forEach((filterLabel) => {
+    filterLabel.addEventListener("click", function (e) {
+      const selctArrow = this.parentElement;
+      const siblings = Array.from(selctArrow.parentElement.children).filter(
+        (child) => child !== selctArrow
+      );
+      siblings.forEach((sibling) => sibling.classList.remove("dropdownopen"));
+      e.stopPropagation();
+    });
+  });
+
+  document.body.addEventListener("click", function () {
+    document.querySelectorAll(".selctArrow").forEach((selctArrow) => {
+      selctArrow.classList.remove("dropdownopen");
+    });
+  });
+
+  document.querySelectorAll(".filter_label").forEach((filterLabel) => {
+    filterLabel.addEventListener("click", function () {
+      const selctArrow = this.parentElement;
+      const siblings = Array.from(selctArrow.parentElement.children).filter(
+        (child) => child !== selctArrow
+      );
+      siblings.forEach((sibling) => sibling.classList.remove("dropdownopen"));
+    });
+  });
+
+  document.querySelectorAll(".filter_dropdown").forEach((filterDropdown) => {
+    filterDropdown.addEventListener("click", function (e) {
+      e.stopPropagation();
+    });
+  });
+
+  // ========================
+
+  const wrapper = document.querySelector(".resourceList");
+  const pagination = document.querySelector(".pagination");
+  const items = Array.from(document.querySelectorAll(".resourceCard"));
+  let filteredItems = items;
+  let currPage = 1;
+
+  const TopicSelect = document.querySelector(".topicSelect");
+  const TopicSelectValueAttr = $(TopicSelect).attr("data-value");
+  // const searchField = document.querySelector(".resourceInput");
+  // const TypeSelectLabel = document.querySelector(".type_filter_label");
+  const TagSelectLabel = document.querySelector(".tag_filter_label");
+
+  // ========================
+
+  // let typeArrayValues = "";
+  let tagArrayValues = "";
+
+  function typeArrayUpdate(value) {
+    typeArrayValues = value;
   }
-  if ($this.classList.contains("next")) {
-    currPage += 1;
-    setHTML(filteredItems);
+
+  function tagArrayUpdate(value) {
+    tagArrayValues = value;
   }
-  if ($this.classList.contains("prev")) {
-    currPage -= 1;
-    setHTML(filteredItems);
+
+  function printTypeArrayUpdate() {
+    return typeArrayValues;
   }
-});
+
+  function printTagArrayUpdate() {
+    return tagArrayValues;
+  }
+
+  var params = new URLSearchParams(window.location.search);
+  // var typeParam = params.get("type");
+  var tagParam = params.get("tag");
+
+  // var typeArray = typeParam?.length > 0 ? typeParam?.split(",") : [];
+  var tagArray = tagParam?.length > 0 ? tagParam?.split(",") : [];
+
+  // ========================
+
+  //===== tag filter  ====
+
+  $(".topic_ele").each(function (f) {
+    $(this).click(function (f) {
+      f.preventDefault();
+
+      const getValue = $(this).attr("data-topic");
+      const getValueLabel = $(this).attr("data-topic-label");
 
 
-setHTML(filteredItems);
+      var url = window.location.href.split("?")[0];
+
+      if(getValueLabel != ""){
+        $('.filter_label.topic_filter_label').text(getValueLabel)
+      }
+      else{
+        $('.filter_label.topic_filter_label').text("Filter by Type")
+      }
+      $('.filter_label.type_filter_label').text("Filter by Topic")
+
+      if ( getValue != "") {
+        if (window.location.href.indexOf("?") > 0) {
+          newUrl = url + "?topic=" + getValue ;
+        } else {
+          newUrl = url + "?topic=" + getValue ;
+        }
+        window.history.pushState({ path: newUrl }, "", newUrl);
+        $(".listing-wrap .cardSctn").load(newUrl + " .listing-wrap .cardSctn .resourceList");
+        $(".pagination").load(newUrl + " .pagination .nav-links");
+        $(TopicSelect).attr("data-value", getValue);
+      } else {
+        window.history.pushState({ path: url }, "", url);
+        $(".listing-wrap .cardSctn").load(url + " .listing-wrap .cardSctn .resourceList");
+        $(".pagination").load(url + " .pagination .nav-links");
+        $(TopicSelect).attr("data-value", "");
+      }
+    });
+  });
+
+  //===== pagination  ====
+  $(document).on("click", ".pagi_wranation .nav-links a", function (event) {
+    event.preventDefault();
+    const currentPageWithQuery = $(this).attr("href");
+    window.history.pushState({ path: currentPageWithQuery }, "", currentPageWithQuery);
+    $(".listing-wrap .cardSctn").load(currentPageWithQuery + " .listing-wrap .cardSctn .resourceList");
+    $(".pagination").load(currentPageWithQuery + " .pagination .nav-links");
+  });
+
+
+  //===== onloadevent ====
+
+  function loadEvents() {
+    const url = window.location.href;
+    const path = new URL(url).pathname;
+    const parts = path.split("/resources");
+
+    var topicText = parts.length > 1 ? parts[1].replace("/", "") : null;
+
+    console.log('topicText', topicText);
+
+
+    // Get the URL parameters
+    const urlParams = new URLSearchParams(window.location.search);
+
+    // Get the value of the "tag" parameter
+    const tagValue = urlParams.get('topic');
+
+    // Check if tagValue exists and find matching data-value elements
+    //    if (tagValue) {
+    //        $('[data-topic]').each(function () {
+    //            if ($(this).data('topic') === tagValue) {
+    //                $(this).click(); // Trigger a click on the matching element
+    //            }
+    //        });
+    //    }
+
+
+    $(".topic_ele").each(function() {
+      var getTopic = $(this).attr("data-topic-url");
+      if (getTopic === topicText) {
+        $('.filter_dropdown.topicSelect').addClass('active_tag_url_matched pageis_',+getTopic)
+        $(this).click();
+        console.log(getTopic ,'===', topicText)
+      }
+    });
+
+    console.log('loadEvents loaded');
+  }
+
+  $(document).ready(function() {
+    loadEvents();
+  });
 
 </script>
-{% end_require_js %}
+{% end_require_js %} 
+
+
+
+
 
 
 
