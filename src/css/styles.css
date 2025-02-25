@@ -10406,6 +10406,7 @@ section.u4m-blog-post div.comments div.content form .hs-button:hover, section.u4
 }
 .footer-wrapper .footer .footer-top-inner .footer-logo-col img {
   vertical-align: middle;
+  width: 250px !important;
 }
 @media (max-width: 767px) {
   .footer-wrapper .footer .footer-top-inner .footer-logo-col img {
@@ -10656,8 +10657,10 @@ section.u4m-blog-post div.comments div.content form .hs-button:hover, section.u4
 .header-wrapper .header-top-menu .hs-menu-wrapper ul li:last-child a {
   color: #006f3c;
 }
+.header-wrapper .header-top-menu .hs-menu-wrapper ul li:last-child a:hover {
+  color: #000000;
+}
 .header-wrapper .header-top-menu .hs-menu-wrapper ul li.active a {
-  font-weight: 600;
   color: #006f3c;
 }
 .header-wrapper .header-top-menu .hs-menu-wrapper ul li a {
@@ -10673,7 +10676,6 @@ section.u4m-blog-post div.comments div.content form .hs-button:hover, section.u4
 }
 .header-wrapper .header-top-menu .hs-menu-wrapper ul li a:hover {
   color: #006f3c;
-  text-shadow: 1px 0 0 currentColor;
 }
 .header-wrapper .main-header {
   background: linear-gradient(89.99deg, #ffffff 61%, #f9f5ee 100%);
@@ -10784,7 +10786,7 @@ section.u4m-blog-post div.comments div.content form .hs-button:hover, section.u4
   margin-bottom: 0;
 }
 .header-wrapper .main-header .row-fluid .site_menu .hs-menu-wrapper ul li.active {
-  text-shadow: 1px 0 0 currentColor;
+  color: #006f3c;
 }
 @media (max-width: 1280px) {
   .header-wrapper .main-header .row-fluid .site_menu .hs-menu-wrapper ul li {
@@ -10841,7 +10843,6 @@ section.u4m-blog-post div.comments div.content form .hs-button:hover, section.u4
 }
 .header-wrapper .main-header .row-fluid .site_menu .hs-menu-wrapper ul li a:hover {
   color: #006f3c;
-  text-shadow: 1px 0 0 currentColor;
 }
 .header-wrapper .main-header .row-fluid .site_menu .hs-menu-wrapper ul li ul.hs-menu-children-wrapper {
   top: 100%;

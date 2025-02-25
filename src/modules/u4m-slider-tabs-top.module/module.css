@@ -59,11 +59,11 @@ html {
   justify-content: center;
   background: #faf9f7;
   text-align: center;
-  border-radius: 12px;
+  border-radius: 4rem;
   justify-content: space-between;
 }
 .u4m-slider-tabs-top .slider-tabs-top-wrapper .row .tabber_top_tabs ul li {
-  border-radius: 12px;
+  border-radius: 4rem;
   max-width: 185px;
   font-size: 16rem;
   font-weight: 500;

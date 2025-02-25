@@ -43,6 +43,7 @@
         }
         img {
           vertical-align: middle;
+          width: 250px !important;
           @include tabletvert {
             width: 200px !important;
             margin-bottom: 5px;
