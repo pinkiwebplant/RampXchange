@@ -12,6 +12,7 @@
   @include tabletvert {
     .bg_image {
       background-size: cover !important;
+      width: 100% !important;
     }
   }
   .row.mbbottom {
@@ -23,7 +24,10 @@
   &.left_col {
     .bg_image {
       background-position: top right;
-      background-size: contain;
+      background-size: cover;
+      width: 50%;
+      left: auto;
+      right: 0;
     }
     .bg_overlayColor {
       background: linear-gradient(90.02deg, $white 55.51%, rgba($white, 0) 90%);
@@ -32,7 +36,8 @@
   &.right_col {
     .bg_image {
       background-position: top left;
-      background-size: contain;
+      background-size: cover;
+      width: 50%;
     }
     .bg_overlayColor {
       background: linear-gradient(
