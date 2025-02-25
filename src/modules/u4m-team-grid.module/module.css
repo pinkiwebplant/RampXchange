@@ -41,8 +41,7 @@ html {
 }
 .u4m-team-grid .team_grid_row .team_item .team_item_inn .team_img img {
   height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   width: 100%;
 }
 .u4m-team-grid .team_grid_row .team_item .team_item_inn .member_position {
@@ -98,8 +97,7 @@ html {
   color: #006f3c;
 }
 .u4m-team-grid .team_grid_row .team_item .member_share ul li a img {
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   height: 100% !important;
 }
 .u4m-team-grid .team_grid_row .team_item .member_share ul li a svg {
@@ -177,8 +175,7 @@ html {
 }
 .u4m-team-grid .team_popup .team_popup_container .flex_row.team_popup_inn .popup_img_col .popup_img img {
   height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   width: 100%;
 }
 .u4m-team-grid .team_popup .team_popup_container .flex_row.team_popup_inn .popup_cnt {
@@ -232,8 +229,7 @@ html {
   width: 24px;
 }
 .u4m-team-grid .team_popup .team_popup_container .flex_row.team_popup_inn .popup_cnt .member_share ul li a img {
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   height: 100% !important;
 }
 .u4m-team-grid .team_popup .team_popup_container .flex_row.team_popup_inn .popup_cnt .member_share ul li a svg {
