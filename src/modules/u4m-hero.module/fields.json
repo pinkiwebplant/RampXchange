@@ -353,7 +353,7 @@
     "required" : false,
     "locked" : false,
     "display" : "select",
-    "choices" : [ [ "video", "Video" ], [ "image", "Image" ] ],
+    "choices" : [ [ "image", "Image" ], [ "colvideo", "Video" ], [ "video", "Popup Video" ] ],
     "multiple" : false,
     "reordering_enabled" : true,
     "preset" : null,
@@ -392,7 +392,7 @@
   }, {
     "id" : "9d556862-c031-517d-9b89-e160ba5055a4",
     "name" : "video_section",
-    "label" : "Video Section",
+    "label" : "Video Popup Section",
     "required" : false,
     "locked" : false,
     "visibility" : {
@@ -512,6 +512,83 @@
       "video" : "https://47484996.fs1.hubspotusercontent-na1.net/hubfs/47484996/RampXchange-u4m/videos/big_buck_bunny_720p_1mb.mp4",
       "embed_url" : "https://www.youtube.com/embed/9xwazD5SyVg"
     }
+  }, {
+    "id" : "c3c1e928-74e2-3442-bb2c-e7b4c4a00447",
+    "name" : "video_col_section",
+    "label" : "Video Section",
+    "required" : false,
+    "locked" : false,
+    "visibility" : {
+      "controlling_field" : null,
+      "controlling_field_path" : "media.type",
+      "controlling_value_regex" : "colvideo",
+      "property" : null,
+      "operator" : "EQUAL",
+      "access" : null
+    },
+    "children" : [ {
+      "id" : "dac5cb4b-8346-d539-e7e2-f307b4a2c303",
+      "name" : "video_type",
+      "label" : "Video Type",
+      "required" : false,
+      "locked" : false,
+      "display" : "select",
+      "choices" : [ [ "file", "File" ], [ "embed", "Embed" ] ],
+      "multiple" : false,
+      "reordering_enabled" : true,
+      "preset" : null,
+      "type" : "choice",
+      "display_width" : null,
+      "default" : "file"
+    }, {
+      "picker" : "video",
+      "id" : "f86fa12f-351f-286b-4542-68c5d3a93cf8",
+      "name" : "video",
+      "label" : "Video",
+      "required" : false,
+      "locked" : false,
+      "visibility" : {
+        "controlling_field" : null,
+        "controlling_field_path" : "media.video_col_section.video_type",
+        "controlling_value_regex" : "file",
+        "property" : null,
+        "operator" : "EQUAL",
+        "access" : null
+      },
+      "type" : "file",
+      "display_width" : null,
+      "default" : "https://47484996.fs1.hubspotusercontent-na1.net/hubfs/47484996/RampXchange-u4m/videos/big_buck_bunny_720p_1mb.mp4"
+    }, {
+      "id" : "f40a79b8-5962-c25e-646e-32affb6c9f2b",
+      "name" : "embed_url",
+      "label" : "Embed url",
+      "required" : false,
+      "locked" : false,
+      "validation_regex" : "",
+      "visibility" : {
+        "controlling_field" : null,
+        "controlling_field_path" : "media.video_col_section.video_type",
+        "controlling_value_regex" : "embed",
+        "property" : null,
+        "operator" : "EQUAL",
+        "access" : null
+      },
+      "allow_new_line" : false,
+      "show_emoji_picker" : false,
+      "type" : "text",
+      "display_width" : null,
+      "default" : "https://www.youtube.com/embed/9xwazD5SyVg"
+    } ],
+    "tab" : "CONTENT",
+    "expanded" : false,
+    "group_occurrence_meta" : null,
+    "type" : "group",
+    "display_width" : null,
+    "default" : {
+      "video_type" : "file",
+      "video" : "https://47484996.fs1.hubspotusercontent-na1.net/hubfs/47484996/RampXchange-u4m/videos/big_buck_bunny_720p_1mb.mp4",
+      "embed_url" : "https://www.youtube.com/embed/9xwazD5SyVg"
+    }
   } ],
   "tab" : "CONTENT",
   "expanded" : false,
@@ -543,6 +620,11 @@
         "max_width" : 1020,
         "max_height" : 580
       },
+      "video" : "https://47484996.fs1.hubspotusercontent-na1.net/hubfs/47484996/RampXchange-u4m/videos/big_buck_bunny_720p_1mb.mp4",
+      "embed_url" : "https://www.youtube.com/embed/9xwazD5SyVg"
+    },
+    "video_col_section" : {
+      "video_type" : "file",
       "video" : "https://47484996.fs1.hubspotusercontent-na1.net/hubfs/47484996/RampXchange-u4m/videos/big_buck_bunny_720p_1mb.mp4",
       "embed_url" : "https://www.youtube.com/embed/9xwazD5SyVg"
     }

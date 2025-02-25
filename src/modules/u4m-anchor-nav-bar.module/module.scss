@@ -26,6 +26,9 @@
       position: relative;
       z-index: 99;
       transition: $animation1;
+      @include tabletmid {
+        @include size14;
+      }
       &:hover {
         color: $action1;
       }

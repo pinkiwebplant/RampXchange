@@ -242,7 +242,7 @@ section.u4m-filtered-content {
     z-index: 6;
   }
 
-  .topic_ele {
+  .ele {
     padding: 8px 24px;
     border-bottom: 1px solid $gray1;
     cursor: pointer;
@@ -253,7 +253,7 @@ section.u4m-filtered-content {
     z-index: 8;
   }
 
-  .topic_ele:hover {
+  .ele:hover {
     background: $white;
   }
 

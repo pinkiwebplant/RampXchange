@@ -206,7 +206,7 @@
                 white-space: normal;
 
                 @include tabletmid {
-                  @include size12;
+                  @include size14;
                 }
                 @include tabletvert {
                   @include size16;

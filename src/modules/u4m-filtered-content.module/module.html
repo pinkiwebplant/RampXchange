@@ -37,10 +37,9 @@
 
 {% set query =  "orderBy=hs_created_at" %}
 
-
-{# {% if request.query_dict.type %}
+{% if request.query_dict.type %}
 {% set query = query ~ '&type__in=' ~ request.query_dict.type|urlencode %}
-{% endif %} #}
+{% endif %} 
 
 {% if request.query_dict.topic %}
 {% set query = query  ~ '&topic__in=' ~ request.query_dict.topic|urlencode %}
@@ -123,6 +122,23 @@
     <div class="filterWrap">
       <div class="filters">
         <div id="filters" class="flex_row"> 
+ 
+
+          <div class=" selctArrow tag-col">   
+            <div class="filter_label type_filter_label" style="background-image: url({{ get_asset_url('../../templates/images/selectArrow.png') }});">
+              Filter by Type
+            </div>
+            <div class="filter_dropdown typeSelect  tag_filter" data-value="">
+              <div class="type_ele ele" data-type="" data-type-label>
+                <span class="tag_name">Filter by Type</span>
+              </div>
+              {% for type in hubdb_table_column(table, 'type').options %}
+              <div class="type_ele ele" data-type="{{ type.name|urlencode }}" data-type-label="{{ type.name }}" data-type-url="{{ type.name|replace(' ','-')|lower }}">
+                <span class="tag_name">{{ type.name }}</span>
+              </div>
+              {% endfor %}
+            </div>
+          </div> 
 
 
           <div class=" selctArrow tag-col">   
@@ -130,11 +146,11 @@
               Filter by Topic
             </div>
             <div class="filter_dropdown topicSelect  tag_filter" data-value="">
-              <div class="topic_ele" data-topic="" data-topic-label>
+              <div class="topic_ele ele" data-topic="" data-topic-label>
                 <span class="tag_name">Filter by Topic</span>
               </div>
               {% for topic in hubdb_table_column(table, 'topic').options %}
-              <div class="topic_ele" data-topic="{{ topic.name|urlencode }}" data-topic-label="{{ topic.name }}" data-topic-url="{{ topic.name|replace(' ','-')|lower }}">
+              <div class="topic_ele ele" data-topic="{{ topic.name|urlencode }}" data-topic-label="{{ topic.name }}" data-topic-url="{{ topic.name|replace(' ','-')|lower }}">
                 <span class="tag_name">{{ topic.name }}</span>
               </div>
               {% endfor %}
@@ -343,11 +359,15 @@
   let filteredItems = items;
   let currPage = 1;
 
-  const TopicSelect = document.querySelector(".topicSelect");
-  const TopicSelectValueAttr = $(TopicSelect).attr("data-value");
+  var TopicSelect = document.querySelector(".topicSelect");
+  var TopicSelectValueAttr = $(TopicSelect).attr("data-value");
+
+  var TypeSelect = document.querySelector(".typeSelect");
+  var TypeSelectValueAttr = $(TypeSelect).attr("data-value");
+
   // const searchField = document.querySelector(".resourceInput");
   // const TypeSelectLabel = document.querySelector(".type_filter_label");
-  const TagSelectLabel = document.querySelector(".tag_filter_label");
+  var TagSelectLabel = document.querySelector(".tag_filter_label");
 
   // ========================
 
@@ -385,8 +405,11 @@
     $(this).click(function (f) {
       f.preventDefault();
 
-      const getValue = $(this).attr("data-topic");
-      const getValueLabel = $(this).attr("data-topic-label");
+      var getValue = $(this).attr("data-topic");
+      var getValueLabel = $(this).attr("data-topic-label");
+
+      //       $('.topicSelect').attr("data-value",getValueLabel);
+      var getTypeSelectedValue =  $('.typeSelect').attr("data-value");
 
 
       var url = window.location.href.split("?")[0];
@@ -395,15 +418,15 @@
         $('.filter_label.topic_filter_label').text(getValueLabel)
       }
       else{
-        $('.filter_label.topic_filter_label').text("Filter by Type")
+        $('.filter_label.topic_filter_label').text("Filter by Topic")
       }
-      $('.filter_label.type_filter_label').text("Filter by Topic")
+       
 
       if ( getValue != "") {
         if (window.location.href.indexOf("?") > 0) {
-          newUrl = url + "?topic=" + getValue ;
+          newUrl = url + "?topic=" + getValue + "&type=" + getTypeSelectedValue ;
         } else {
-          newUrl = url + "?topic=" + getValue ;
+          newUrl = url + "?topic=" + getValue + "&type=" + getTypeSelectedValue ;
         }
         window.history.pushState({ path: newUrl }, "", newUrl);
         $(".listing-wrap .cardSctn").load(newUrl + " .listing-wrap .cardSctn .resourceList");
@@ -417,6 +440,49 @@
       }
     });
   });
+  
+  
+   $(".type_ele").each(function (f) {
+    $(this).click(function (f) {
+      f.preventDefault();
+
+      var getValue = $(this).attr("data-type");
+      var getValueLabel = $(this).attr("data-type-label");
+
+      //       $('.topicSelect').attr("data-value",getValueLabel);
+      var getTopicSelectedValue =  $('.topicSelect').attr("data-value");
+
+
+      var url = window.location.href.split("?")[0];
+
+      if(getValueLabel != ""){
+        $('.filter_label.type_filter_label').text(getValueLabel)
+      }
+      else{
+        $('.filter_label.type_filter_label').text("Filter by Type")
+      }
+      
+
+      if ( getValue != "") {
+        if (window.location.href.indexOf("?") > 0) {
+          newUrl = url + "?topic=" + getTopicSelectedValue + "&type=" + getValue ;
+        } else {
+          newUrl = url + "?topic=" + getTopicSelectedValue + "&type=" + getValue ;
+        }
+        window.history.pushState({ path: newUrl }, "", newUrl);
+        $(".listing-wrap .cardSctn").load(newUrl + " .listing-wrap .cardSctn .resourceList");
+        $(".pagination").load(newUrl + " .pagination .nav-links");
+        $(TypeSelect).attr("data-value", getValue);
+      } else {
+        window.history.pushState({ path: url }, "", url);
+        $(".listing-wrap .cardSctn").load(url + " .listing-wrap .cardSctn .resourceList");
+        $(".pagination").load(url + " .pagination .nav-links");
+        $(TypeSelect).attr("data-value", "");
+      }
+    });
+  });
+
+
 
   //===== pagination  ====
   $(document).on("click", ".pagi_wranation .nav-links a", function (event) {

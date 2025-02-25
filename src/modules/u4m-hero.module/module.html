@@ -36,6 +36,23 @@
         </div> 
       </div> 
       {% endif %}  
+
+      {% else %}
+      <div class="twocolVideowrap">
+        {% if module.media.video_col_section.video_type == 'file' %}
+        <video poster="" src="{{ module.media.video_col_section.video }}" controls></video>
+        {% else %}
+        <div class="iframe_wrap">
+          <div class="iframe_wrap_inr">
+            {% if module.media.video_col_section.embed_url is string_containing "youtube.com" %}
+            <iframe src="{{ module.media.video_col_section.embed_url }}?controls=1" frameborder="0" allowFullScreen class="iframe_video"></iframe>
+            {% else %}
+            <iframe src="{{ module.media.video_col_section.embed_url}}" frameborder="0" allow="autoplay; fullscreen" allowFullScreen class="iframe_video"></iframe>
+            {% endif %}
+          </div>    
+        </div>
+        {% endif %}
+      </div>
       {% endif %}
     </div>
   </div>
