@@ -187,6 +187,7 @@ section.u4m-filtered-content .topSec .flex_row .featCardsOuter .cardItems .cardI
 section.u4m-filtered-content .topSec .flex_row .featCardsOuter .cardItems .cardItem .itemInr {
   display: flex;
   align-items: center;
+  height: 100%;
 }
 @media (max-width: 580px) {
   section.u4m-filtered-content .topSec .flex_row .featCardsOuter .cardItems .cardItem .itemInr {
@@ -386,6 +387,9 @@ section.u4m-filtered-content .featCardsListWrap .cardSctn .cardItems .cardItem .
   font-size: 16rem;
   margin: auto 0 0;
   justify-content: start;
+}
+section.u4m-filtered-content .featCardsListWrap .cardSctn .cardItems .cardItem .itemInr {
+  height: 100%;
 }
 section.u4m-filtered-content .featCardsListWrap .cardSctn .cardItems .cardItem .itemInr .itemCnWrap .itemCntSec .restitle {
   font-weight: 600;

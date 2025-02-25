@@ -56,6 +56,7 @@ section.u4m-filtered-content {
             .itemInr {
               display: flex;
               align-items: center;
+              height: 100%;
               @include phone {
                 display: block;
               }
@@ -137,6 +138,7 @@ section.u4m-filtered-content {
       .cardItems {
         .cardItem {
           .itemInr {
+            height: 100%;
             .itemCnWrap {
               .itemCntSec {
                 .restitle {
