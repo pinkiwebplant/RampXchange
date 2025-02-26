@@ -393,9 +393,8 @@
   .header-wrapper .main-header {
     background: linear-gradient(
       89.99deg,
-      rgba($white, 0.8) 61%,
-      rgba($hdBg, 0.8) 100%
+      rgba($white, 1) 61%,
+      rgba($hdBg, 1) 100%
     );
-    backdrop-filter: blur(2px);
   }
 }

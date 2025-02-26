@@ -11017,6 +11017,5 @@ section.u4m-blog-post div.comments div.content form .hs-button:hover, section.u4
 }
 
 .page-scrolled .header-wrapper .main-header {
-  background: linear-gradient(89.99deg, rgba(255, 255, 255, 0.8) 61%, rgba(249, 245, 238, 0.8) 100%);
-  backdrop-filter: blur(2px);
+  background: linear-gradient(89.99deg, white 61%, #f9f5ee 100%);
 }

@@ -13,7 +13,7 @@
   </div>
   <div class="btmm">
 
-    <div class="team_grid_row flex_row">
+    <div class="team_grid_row flex_row {{ module.module_settings.column_type }}">
       {% for item in module.member_group %}
       <div class="team_item {{ module.module_settings.select_number_of_column }} {% if module.module_settings.card_reverse_text %} card_reverse_text {% else %} theme_text{% endif %}">
         <div class="team_item_inn {{ module.module_settings.card_background_color }}" {% if module.module_settings.card_background_color == "custom" %}style="background-color:{{ module.module_settings.background_color.rgba }}"{%  endif %}>
