@@ -186,7 +186,6 @@ section.u4m-filtered-content .topSec .flex_row .featCardsOuter .cardItems .cardI
 }
 section.u4m-filtered-content .topSec .flex_row .featCardsOuter .cardItems .cardItem .itemInr {
   display: flex;
-  align-items: center;
   height: 100%;
 }
 @media (max-width: 580px) {
@@ -204,6 +203,7 @@ section.u4m-filtered-content .topSec .flex_row .featCardsOuter .cardItems .cardI
 }
 section.u4m-filtered-content .topSec .flex_row .featCardsOuter .cardItems .cardItem .itemInr .itemImg .itemImgin {
   padding-bottom: 333px;
+  height: 100%;
 }
 @media (max-width: 580px) {
   section.u4m-filtered-content .topSec .flex_row .featCardsOuter .cardItems .cardItem .itemInr .itemImg .itemImgin {
@@ -462,8 +462,10 @@ section.u4m-filtered-content .filter_label {
   outline: none;
   padding: 12.5px 64px 12.5px 24px;
   cursor: pointer;
+  text-transform: capitalize;
 }
 section.u4m-filtered-content .filter_dropdown {
+  text-transform: capitalize;
   position: absolute;
   z-index: 4;
   background: #f7f8f6;
@@ -472,6 +474,9 @@ section.u4m-filtered-content .filter_dropdown {
   border-radius: 4rem;
   overflow: hidden;
   display: none;
+}
+section.u4m-filtered-content .filter_dropdown.active_tag_url_matched {
+  display: none !important;
 }
 section.u4m-filtered-content .dropdownopen .filter_dropdown {
   display: block;
@@ -538,4 +543,8 @@ section.u4m-filtered-content .pagi_wranation a.active {
 }
 .cardItem {
   animation: fadeIn 2s ease-in-out;
+}
+
+.featCardsListWrap .cardSctn .cardItems .cardItem .itemInr .itemCnWrap .itemCntSec .itemTags {
+  margin-bottom: 25px !important;
 }

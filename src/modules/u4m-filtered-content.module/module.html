@@ -133,8 +133,8 @@
                 <span class="tag_name">Filter by Type</span>
               </div>
               {% for type in hubdb_table_column(table, 'type').options %}
-              <div class="type_ele ele" data-type="{{ type.name|urlencode }}" data-type-label="{{ type.name }}" data-type-url="{{ type.name|replace(' ','-')|lower }}">
-                <span class="tag_name">{{ type.name }}</span>
+              <div class="type_ele ele" data-type="{{ type.name|urlencode }}" data-type-label="{{ type.name|replace('_',' ') }}" data-type-url="{{ type.name|replace('_','-')|lower }}">
+                <span class="tag_name">{{ type.name|replace('_',' ') }}</span>
               </div>
               {% endfor %}
             </div>
@@ -150,8 +150,8 @@
                 <span class="tag_name">Filter by Topic</span>
               </div>
               {% for topic in hubdb_table_column(table, 'topic').options %}
-              <div class="topic_ele ele" data-topic="{{ topic.name|urlencode }}" data-topic-label="{{ topic.name }}" data-topic-url="{{ topic.name|replace(' ','-')|lower }}">
-                <span class="tag_name">{{ topic.name }}</span>
+              <div class="topic_ele ele" data-topic="{{ topic.name|urlencode }}" data-topic-label="{{ topic.name|replace('_',' ') }}" data-topic-url="{{ topic.name|replace(' ','-')|lower }}">
+                <span class="tag_name">{{ topic.name|replace('_',' ') }}</span>
               </div>
               {% endfor %}
             </div>
@@ -177,9 +177,9 @@
               {% endif %}
               <div class="itemCnWrap">
                 <div class="itemCntSec">
-                  <div class="itemTags">{% for tag in row.topic %}{{ tag.name|capitalize }} {% if not loop.last %}<span class="dots"></span>{% endif %} {% endfor %}</div>
-                  <div class="itemMeta">
-                    <span class="reading-minutes">
+                  <div class="itemTags">{% for tag in row.type %}{{ tag.name|capitalize }} {% if not loop.last %}<span class="dots"></span>{% endif %} {% endfor %}</div>
+                  {#<div class="itemMeta">
+                    span class="reading-minutes">
 
                       {% set initialPostWords = row.description|striptags|wordcount %}
                       {% set calculatedPostWords = initialPostWords / 100 %}
@@ -192,7 +192,8 @@
                       {% endif %}
                     </span>
                     | <span class="itemDate">{{ row.date|datetimeformat('%B %e, %Y') }}</span>
-                  </div>
+                    
+                  </div>#}
                   {% if row.name %}
                   <div class="itemTitle">
                     <h3 class="restitle">
@@ -237,7 +238,7 @@
 
 
             {% if page_num > 1 %}
-            <a class="prev page-numbers" href="{{ content.absolute_url }}?topic={{request.query_dict.topic|urlencode}}&page_num={{ page_num|add(-1) }}" data-page-num="{{ page_num|add(-1) }}">
+            <a class="prev page-numbers" href="{{ content.absolute_url }}?topic={{request.query_dict.topic|urlencode}}&type={{request.query_dict.type|urlencode}}&page_num={{ page_num|add(-1) }}" data-page-num="{{ page_num|add(-1) }}">
               <span class="material-symbols-outlined">arrow_back</span>
             </a>
             {% endif %}
@@ -254,14 +255,14 @@
             {% for page in page_list %}
             {% set this_page = page_num|add(page)|add(offset) %}
             {% if this_page > 0 and this_page <= total_pages %}
-            <a {% if this_page == page_num %}class="active"{% endif %} href="{{ content.absolute_url }}?topic={{request.query_dict.topic|urlencode}}&page_num={{ this_page }}">{{ this_page }}</a>
+            <a {% if this_page == page_num %}class="active"{% endif %} href="{{ content.absolute_url }}?topic={{request.query_dict.topic|urlencode}}&type={{request.query_dict.type|urlencode}}&page_num={{ this_page }}">{{ this_page }}</a>
             {% endif %}
             {% endfor %}
 
 
 
             {% if total_pages > page_num %}
-            <a class="next page-numbers {% if page_num >= total_pages %}hide page_num{% endif %}" href="{{ content.absolute_url }}?topic={{request.query_dict.topic|urlencode}}&page_num={{ page_num|add(1) }}" data-page-num="{{ page_num|add(1) }}">
+            <a class="next page-numbers {% if page_num >= total_pages %}hide page_num{% endif %}" href="{{ content.absolute_url }}?topic={{request.query_dict.topic|urlencode}}&type={{request.query_dict.type|urlencode}}&page_num={{ page_num|add(1) }}" data-page-num="{{ page_num|add(1) }}">
               <span class="material-symbols-outlined">arrow_forward</span>
             </a>
             {% endif %}
@@ -292,6 +293,11 @@
 </style>
 
 {% set pagepath = module.filtered_content.page_path%}
+
+
+
+
+
 
 {% require_js %}
 <script>
@@ -501,16 +507,16 @@
     const path = new URL(url).pathname;
     const parts = path.split("/resources");
 
-    var topicText = parts.length > 1 ? parts[1].replace("/", "") : null;
+    var typeText = parts.length > 1 ? parts[1].replace("/", "") : null;
 
-    console.log('topicText', topicText);
+    console.log('typeText', typeText);
 
 
     // Get the URL parameters
     const urlParams = new URLSearchParams(window.location.search);
 
     // Get the value of the "tag" parameter
-    const tagValue = urlParams.get('topic');
+    const tagValue = urlParams.get('type');
 
     // Check if tagValue exists and find matching data-value elements
     //    if (tagValue) {
@@ -522,12 +528,12 @@
     //    }
 
 
-    $(".topic_ele").each(function() {
-      var getTopic = $(this).attr("data-topic-url");
-      if (getTopic === topicText) {
-        $('.filter_dropdown.topicSelect').addClass('active_tag_url_matched pageis_',+getTopic)
+    $(".type_ele").each(function() {
+      var gettype = $(this).attr("data-type-url");
+      if (gettype === typeText) {
+        $('.filter_dropdown.typeSelect').addClass('active_tag_url_matched pageis_',+gettype)
         $(this).click();
-        console.log(getTopic ,'===', topicText)
+        console.log(gettype ,'===', typeText)
       }
     });
 
@@ -540,11 +546,6 @@
 
 </script>
 {% end_require_js %} 
-
-
-
-
-
 
 
 

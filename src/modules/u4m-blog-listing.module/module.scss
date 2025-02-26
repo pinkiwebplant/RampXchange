@@ -226,7 +226,6 @@ section.u4m-blog-listing {
             width: 100%;
             .itemInr {
               display: flex;
-              align-items: center;
               @include phone {
                 display: block;
               }
@@ -239,6 +238,7 @@ section.u4m-blog-listing {
               .itemImg {
                 .itemImgin {
                   padding-bottom: 333px;
+                  height: 100%;
                   @include phone {
                     padding-bottom: 56.66%;
                   }
@@ -308,6 +308,7 @@ section.u4m-blog-listing {
       .cardItems {
         .cardItem {
           .itemInr {
+            height: 100%;
             .itemCnWrap {
               .itemCntSec {
                 .restitle {
