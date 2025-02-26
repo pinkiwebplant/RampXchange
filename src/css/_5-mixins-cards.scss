@@ -329,6 +329,7 @@
         border-radius: $borderRadius;
         overflow: hidden;
         filter: $dropshadow;
+        height: 100%;
         &.cardColor {
           * {
             color: $white;

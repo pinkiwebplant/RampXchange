@@ -78,6 +78,7 @@ section.u4m-filtered-content .topSec .flex_row .featCardsOuter .cardItems .cardI
   border-radius: 4rem;
   overflow: hidden;
   filter: drop-shadow(0px 0px 20px rgba(0, 0, 0, 0.15));
+  height: 100%;
 }
 section.u4m-filtered-content .topSec .flex_row .featCardsOuter .cardItems .cardItem .itemInr.cardColor * {
   color: #ffffff;
@@ -186,7 +187,7 @@ section.u4m-filtered-content .topSec .flex_row .featCardsOuter .cardItems .cardI
 }
 section.u4m-filtered-content .topSec .flex_row .featCardsOuter .cardItems .cardItem .itemInr {
   display: flex;
-  align-items: center;
+  height: 100%;
 }
 @media (max-width: 580px) {
   section.u4m-filtered-content .topSec .flex_row .featCardsOuter .cardItems .cardItem .itemInr {
@@ -203,6 +204,7 @@ section.u4m-filtered-content .topSec .flex_row .featCardsOuter .cardItems .cardI
 }
 section.u4m-filtered-content .topSec .flex_row .featCardsOuter .cardItems .cardItem .itemInr .itemImg .itemImgin {
   padding-bottom: 333px;
+  height: 100%;
 }
 @media (max-width: 580px) {
   section.u4m-filtered-content .topSec .flex_row .featCardsOuter .cardItems .cardItem .itemInr .itemImg .itemImgin {
@@ -257,9 +259,7 @@ section.u4m-filtered-content .featCardsListWrap .filterWrap .flex_row .selctArro
 section.u4m-filtered-content .featCardsListWrap .filterWrap .flex_row .selctArrow select {
   background-size: 12px;
   background-repeat: no-repeat;
-  -webkit-appearance: none;
-     -moz-appearance: none;
-          appearance: none;
+  appearance: none;
   background-position: calc(100% - 30px) center;
   padding: 12.5px 64px 12.5px 24px;
   border-radius: 4rem;
@@ -293,6 +293,7 @@ section.u4m-filtered-content .featCardsListWrap .cardSctn .cardItems .cardItem .
   border-radius: 4rem;
   overflow: hidden;
   filter: drop-shadow(0px 0px 20px rgba(0, 0, 0, 0.15));
+  height: 100%;
 }
 section.u4m-filtered-content .featCardsListWrap .cardSctn .cardItems .cardItem .itemInr.cardColor * {
   color: #ffffff;
@@ -389,6 +390,9 @@ section.u4m-filtered-content .featCardsListWrap .cardSctn .cardItems .cardItem .
   margin: auto 0 0;
   justify-content: start;
 }
+section.u4m-filtered-content .featCardsListWrap .cardSctn .cardItems .cardItem .itemInr {
+  height: 100%;
+}
 section.u4m-filtered-content .featCardsListWrap .cardSctn .cardItems .cardItem .itemInr .itemCnWrap .itemCntSec .restitle {
   font-weight: 600;
   margin: 0;
@@ -460,8 +464,10 @@ section.u4m-filtered-content .filter_label {
   outline: none;
   padding: 12.5px 64px 12.5px 24px;
   cursor: pointer;
+  text-transform: capitalize;
 }
 section.u4m-filtered-content .filter_dropdown {
+  text-transform: capitalize;
   position: absolute;
   z-index: 4;
   background: #f7f8f6;
@@ -471,6 +477,9 @@ section.u4m-filtered-content .filter_dropdown {
   overflow: hidden;
   display: none;
 }
+section.u4m-filtered-content .filter_dropdown.active_tag_url_matched {
+  display: none !important;
+}
 section.u4m-filtered-content .dropdownopen .filter_dropdown {
   display: block;
 }
@@ -478,7 +487,7 @@ section.u4m-filtered-content .selctArrow {
   position: relative;
   z-index: 6;
 }
-section.u4m-filtered-content .topic_ele {
+section.u4m-filtered-content .ele {
   padding: 8px 24px;
   border-bottom: 1px solid #dbdbdb;
   cursor: pointer;
@@ -487,7 +496,7 @@ section.u4m-filtered-content .filterWrap {
   position: relative;
   z-index: 8;
 }
-section.u4m-filtered-content .topic_ele:hover {
+section.u4m-filtered-content .ele:hover {
   background: #ffffff;
 }
 section.u4m-filtered-content .listing-wrap {
@@ -536,4 +545,8 @@ section.u4m-filtered-content .pagi_wranation a.active {
 }
 .cardItem {
   animation: fadeIn 2s ease-in-out;
+}
+
+.featCardsListWrap .cardSctn .cardItems .cardItem .itemInr .itemCnWrap .itemCntSec .itemTags {
+  margin-bottom: 25px !important;
 }

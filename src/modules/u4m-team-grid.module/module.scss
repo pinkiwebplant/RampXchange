@@ -4,6 +4,15 @@
   .team_grid_row {
     row-gap: 20px;
     margin: 0 -10px;
+    @include tabletmidmin {
+      &.twocol {
+        justify-content: center;
+        .team_item {
+          min-width: 370px;
+          width: auto;
+        }
+      }
+    }
     .team_item {
       width: 33.33%;
       padding: 0 10px;

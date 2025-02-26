@@ -55,7 +55,7 @@ section.u4m-filtered-content {
             width: 100%;
             .itemInr {
               display: flex;
-              align-items: center;
+              height: 100%;
               @include phone {
                 display: block;
               }
@@ -68,6 +68,7 @@ section.u4m-filtered-content {
               .itemImg {
                 .itemImgin {
                   padding-bottom: 333px;
+                  height: 100%;
                   @include phone {
                     padding-bottom: 56.66%;
                   }
@@ -137,6 +138,7 @@ section.u4m-filtered-content {
       .cardItems {
         .cardItem {
           .itemInr {
+            height: 100%;
             .itemCnWrap {
               .itemCntSec {
                 .restitle {
@@ -218,9 +220,11 @@ section.u4m-filtered-content {
     outline: none;
     padding: 12.5px 64px 12.5px 24px;
     cursor: pointer;
+    text-transform: capitalize;
   }
 
   .filter_dropdown {
+    text-transform: capitalize;
     position: absolute;
     z-index: 4;
     background: $airwhite;
@@ -229,6 +233,9 @@ section.u4m-filtered-content {
     border-radius: 4rem;
     overflow: hidden;
     display: none;
+    &.active_tag_url_matched {
+      display: none !important;
+    }
   }
 
   .dropdownopen {
@@ -242,7 +249,7 @@ section.u4m-filtered-content {
     z-index: 6;
   }
 
-  .topic_ele {
+  .ele {
     padding: 8px 24px;
     border-bottom: 1px solid $gray1;
     cursor: pointer;
@@ -253,7 +260,7 @@ section.u4m-filtered-content {
     z-index: 8;
   }
 
-  .topic_ele:hover {
+  .ele:hover {
     background: $white;
   }
 
@@ -314,4 +321,15 @@ section.u4m-filtered-content {
 
 .cardItem {
   animation: fadeIn 2s ease-in-out;
+}
+
+.featCardsListWrap
+  .cardSctn
+  .cardItems
+  .cardItem
+  .itemInr
+  .itemCnWrap
+  .itemCntSec
+  .itemTags {
+  margin-bottom: 25px !important;
 }

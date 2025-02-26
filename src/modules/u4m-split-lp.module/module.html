@@ -13,7 +13,7 @@
 					<div class="featured">
 						<ul class="featuredItems">
 							{% for item in module.intro_content.featured_content.items %}
-							<li class="featuredItem"><span class="material-symbols-outlined {{ module.intro_content.featured_content.icon_settings.icon_color }} {{ module.intro_content.featured_content.icon_settings.select_icon_theme }}">{{ module.intro_content.featured_content.icon }}</span>{{ item.text }}</li>
+							<li class="featuredItem"><span class="material-symbols-outlined {{ module.intro_content.featured_content.icon_settings.icon_color }} {{ module.intro_content.featured_content.icon_settings.select_icon_theme }}">{{ item.icon }}</span>{{ item.text }}</li>
 							{% endfor %}
 						</ul>
 					</div>

@@ -339,7 +339,7 @@
     "children" : [ {
       "id" : "ab88f0e8-778b-fad6-1bf5-7e1d20e44354",
       "name" : "title",
-      "label" : "Title",
+      "label" : "Tab",
       "required" : false,
       "locked" : false,
       "validation_regex" : "",
@@ -348,6 +348,16 @@
       "type" : "text",
       "display_width" : null,
       "default" : "Small & Medium Businesses"
+    }, {
+      "id" : "04307751-9368-19d8-500e-8bffd23fe854",
+      "name" : "add_tab_as_title",
+      "label" : "Apply Tab Text as Title",
+      "required" : false,
+      "locked" : false,
+      "display" : "checkbox",
+      "type" : "boolean",
+      "display_width" : null,
+      "default" : true
     }, {
       "id" : "5379ffb0-be49-b02d-9b63-1a7dd97f0e11",
       "name" : "content",
@@ -496,6 +506,7 @@
     "display_width" : null,
     "default" : {
       "title" : "Small & Medium Businesses",
+      "add_tab_as_title" : true,
       "content" : "<p>Highlight the ease of finding affordable, scalable cybersecurity solutions tailored for small businesses. Emphasize guidance from our cybersecurity professional advisors for navigating cybersecurity compliance.</p>",
       "button_group" : [ {
         "button_type" : "std",
@@ -814,6 +825,7 @@
   "default" : [ {
     "content_section" : {
       "title" : "Small & Medium Businesses",
+      "add_tab_as_title" : true,
       "content" : "<p>Highlight the ease of finding affordable, scalable cybersecurity solutions tailored for small businesses. Emphasize guidance from our cybersecurity professional advisors for navigating cybersecurity compliance.</p>",
       "button_group" : [ {
         "button_type" : "std",
@@ -865,6 +877,7 @@
   }, {
     "content_section" : {
       "title" : "Small & Medium Businesses",
+      "add_tab_as_title" : true,
       "content" : "<p>Highlight the ease of finding affordable, scalable cybersecurity solutions tailored for small businesses. Emphasize guidance from our cybersecurity professional advisors for navigating cybersecurity compliance.</p>",
       "button_group" : [ {
         "button_type" : "std",
@@ -916,6 +929,7 @@
   }, {
     "content_section" : {
       "title" : "Small & Medium Businesses",
+      "add_tab_as_title" : true,
       "content" : "<p>Highlight the ease of finding affordable, scalable cybersecurity solutions tailored for small businesses. Emphasize guidance from our cybersecurity professional advisors for navigating cybersecurity compliance.</p>",
       "button_group" : [ {
         "button_type" : "std",
@@ -967,6 +981,7 @@
   }, {
     "content_section" : {
       "title" : "Small & Medium Businesses",
+      "add_tab_as_title" : true,
       "content" : "<p>Highlight the ease of finding affordable, scalable cybersecurity solutions tailored for small businesses. Emphasize guidance from our cybersecurity professional advisors for navigating cybersecurity compliance.</p>",
       "button_group" : [ {
         "button_type" : "std",
@@ -1018,6 +1033,7 @@
   }, {
     "content_section" : {
       "title" : "Small & Medium Businesses",
+      "add_tab_as_title" : true,
       "content" : "<p>Highlight the ease of finding affordable, scalable cybersecurity solutions tailored for small businesses. Emphasize guidance from our cybersecurity professional advisors for navigating cybersecurity compliance.</p>",
       "button_group" : [ {
         "button_type" : "std",
@@ -1459,20 +1475,59 @@
       "type" : "choice",
       "display_width" : null,
       "default" : "gradient5"
-      }, {
-        "id" : "a34bb279-ff3a-c145-d0d1-7ed464f10eca",
-        "name" : "select_background_color",
-        "label" : "Select Background Color",
+    }, {
+      "id" : "a34bb279-ff3a-c145-d0d1-7ed464f10eca",
+      "name" : "select_background_color",
+      "label" : "Select Background Color",
+      "required" : false,
+      "locked" : false,
+      "visibility" : {
+        "controlling_field" : null,
+        "controlling_field_path" : "module_overrides.background_settings.select_color",
+        "controlling_value_regex" : "custom",
+        "property" : null,
+        "operator" : "EQUAL",
+        "access" : null
+      },
+      "type" : "color",
+      "display_width" : null,
+      "default" : {
+        "color" : null,
+        "opacity" : null
+      }
+    }, {
+      "id" : "0e25b378-ee3f-50f9-cddb-ecdb8fcd69b4",
+      "name" : "gradient",
+      "label" : "Gradient",
+      "required" : false,
+      "locked" : false,
+      "visibility" : {
+        "controlling_field" : null,
+        "controlling_field_path" : "module_overrides.background_settings.select_gradient",
+        "controlling_value_regex" : "custom",
+        "property" : null,
+        "operator" : "EQUAL",
+        "access" : null
+      },
+      "children" : [ {
+        "id" : "6c790b6e-07a5-0f3c-3db6-491174f63419",
+        "name" : "direction",
+        "label" : "Direction",
         "required" : false,
         "locked" : false,
-        "visibility" : {
-          "controlling_field" : null,
-          "controlling_field_path" : "module_overrides.background_settings.select_color",
-          "controlling_value_regex" : "custom",
-          "property" : null,
-          "operator" : "EQUAL",
-          "access" : null
-        },
+        "display" : "select",
+        "choices" : [ [ "to top", "Bottom to top" ], [ "to bottom", "Top to bottom" ], [ "to right", "Left to right" ], [ "to left", "Right to left" ], [ "to bottom right", "Top left to bottom right" ], [ "to bottom left", "Top right to bottom left" ] ],
+        "multiple" : false,
+        "reordering_enabled" : true,
+        "preset" : null,
+        "type" : "choice",
+        "display_width" : null
+      }, {
+        "id" : "c53d899d-6007-89e7-a707-cb9a48d441de",
+        "name" : "start_gradient_color",
+        "label" : "Start Gradient Color",
+        "required" : false,
+        "locked" : false,
         "type" : "color",
         "display_width" : null,
         "default" : {
@@ -1480,72 +1535,33 @@
           "opacity" : null
         }
       }, {
-        "id" : "0e25b378-ee3f-50f9-cddb-ecdb8fcd69b4",
-        "name" : "gradient",
-        "label" : "Gradient",
+        "id" : "5a2f165e-c84d-3e77-8f83-df50a9df8c1d",
+        "name" : "end_gradient_color",
+        "label" : "End Gradient Color",
         "required" : false,
         "locked" : false,
-        "visibility" : {
-          "controlling_field" : null,
-          "controlling_field_path" : "module_overrides.background_settings.select_gradient",
-          "controlling_value_regex" : "custom",
-          "property" : null,
-          "operator" : "EQUAL",
-          "access" : null
-        },
-        "children" : [ {
-          "id" : "6c790b6e-07a5-0f3c-3db6-491174f63419",
-          "name" : "direction",
-          "label" : "Direction",
-          "required" : false,
-          "locked" : false,
-          "display" : "select",
-          "choices" : [ [ "to top", "Bottom to top" ], [ "to bottom", "Top to bottom" ], [ "to right", "Left to right" ], [ "to left", "Right to left" ], [ "to bottom right", "Top left to bottom right" ], [ "to bottom left", "Top right to bottom left" ] ],
-          "multiple" : false,
-          "reordering_enabled" : true,
-          "preset" : null,
-          "type" : "choice",
-          "display_width" : null
-        }, {
-          "id" : "c53d899d-6007-89e7-a707-cb9a48d441de",
-          "name" : "start_gradient_color",
-          "label" : "Start Gradient Color",
-          "required" : false,
-          "locked" : false,
-          "type" : "color",
-          "display_width" : null,
-          "default" : {
-            "color" : null,
-            "opacity" : null
-          }
-        }, {
-          "id" : "5a2f165e-c84d-3e77-8f83-df50a9df8c1d",
-          "name" : "end_gradient_color",
-          "label" : "End Gradient Color",
-          "required" : false,
-          "locked" : false,
-          "type" : "color",
-          "display_width" : null,
-          "default" : {
-            "color" : null,
-            "opacity" : null
-          }
-        } ],
-        "tab" : "CONTENT",
-        "expanded" : false,
-        "group_occurrence_meta" : null,
-        "type" : "group",
+        "type" : "color",
         "display_width" : null,
         "default" : {
-          "start_gradient_color" : {
-            "color" : null,
-            "opacity" : null
-          },
-          "end_gradient_color" : {
-            "color" : null,
-            "opacity" : null
-          }
+          "color" : null,
+          "opacity" : null
         }
+      } ],
+      "tab" : "CONTENT",
+      "expanded" : false,
+      "group_occurrence_meta" : null,
+      "type" : "group",
+      "display_width" : null,
+      "default" : {
+        "start_gradient_color" : {
+          "color" : null,
+          "opacity" : null
+        },
+        "end_gradient_color" : {
+          "color" : null,
+          "opacity" : null
+        }
+      }
     } ],
     "tab" : "CONTENT",
     "expanded" : true,

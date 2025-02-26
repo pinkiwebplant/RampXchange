@@ -785,6 +785,20 @@
     "type" : "boolean",
     "display_width" : null,
     "default" : false
+  }, {
+    "id" : "fbb0c3d6-bdc3-4bc7-9716-89fed1bb4bfb",
+    "name" : "column_type",
+    "label" : "Column Type",
+    "required" : false,
+    "locked" : false,
+    "display" : "select",
+    "choices" : [ [ "twocol", "Two Column" ], [ "threecol", "Three Column" ] ],
+    "multiple" : false,
+    "reordering_enabled" : true,
+    "preset" : null,
+    "type" : "choice",
+    "display_width" : null,
+    "default" : "threecol"
   } ],
   "tab" : "CONTENT",
   "expanded" : false,
@@ -797,7 +811,8 @@
       "color" : null,
       "opacity" : null
     },
-    "card_reverse_text" : false
+    "card_reverse_text" : false,
+    "column_type" : "threecol"
   }
 }, {
   "id" : "module_overrides",

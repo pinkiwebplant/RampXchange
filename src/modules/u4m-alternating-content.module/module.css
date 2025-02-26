@@ -31,6 +31,7 @@ html {
 @media (max-width: 767px) {
   .u4m-alternating-content .bg_image {
     background-size: cover !important;
+    width: 100% !important;
   }
 }
 .u4m-alternating-content .row.mbbottom {
@@ -41,14 +42,18 @@ html {
 }
 .u4m-alternating-content.left_col .bg_image {
   background-position: top right;
-  background-size: contain;
+  background-size: cover;
+  width: 50%;
+  left: auto;
+  right: 0;
 }
 .u4m-alternating-content.left_col .bg_overlayColor {
   background: linear-gradient(90.02deg, #ffffff 55.51%, rgba(255, 255, 255, 0) 90%);
 }
 .u4m-alternating-content.right_col .bg_image {
   background-position: top left;
-  background-size: contain;
+  background-size: cover;
+  width: 50%;
 }
 .u4m-alternating-content.right_col .bg_overlayColor {
   background: linear-gradient(90.13deg, rgba(255, 255, 255, 0) 32.05%, rgba(255, 255, 255, 0.665271) 37.45%, #ffffff 45.99%);
@@ -133,8 +138,7 @@ html {
   width: 100%;
 }
 .u4m-alternating-content .row .media_section .vid_section .poster_img img {
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   height: 100%;
   width: 100%;
 }

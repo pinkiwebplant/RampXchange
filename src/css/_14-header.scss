@@ -48,10 +48,12 @@
             font-weight: 600;
             a {
               color: $action1;
+              &:hover {
+                color: $black;
+              }
             }
           }
           &.active a {
-            font-weight: 600;
             color: $action1;
           }
           a {
@@ -62,9 +64,10 @@
             max-width: 100%;
             white-space: normal;
             text-overflow: unset;
+            display: flex;
+            align-items: center;
             &:hover {
               color: $action1;
-              text-shadow: 1px 0 0 currentColor;
             }
           }
         }
@@ -161,7 +164,7 @@
               letter-spacing: normal;
               margin-bottom: 0;
               &.active {
-                text-shadow: 1px 0 0 currentColor;
+                color: $action1;
               }
               @include navbreak {
                 padding-right: 10px;
@@ -180,7 +183,7 @@
                     background-size: contain;
                     background-repeat: no-repeat;
                     height: 7px;
-                    margin: 7.5px 6px 8.5px 10px;
+                    margin: 0 6px 0 10px;
                     vertical-align: middle;
 
                     @include tabletvert {
@@ -203,7 +206,7 @@
                 white-space: normal;
 
                 @include tabletmid {
-                  @include size12;
+                  @include size14;
                 }
                 @include tabletvert {
                   @include size16;
@@ -213,7 +216,6 @@
                 }
                 &:hover {
                   color: $action1;
-                  text-shadow: 1px 0 0 currentColor;
                 }
               }
               ul.hs-menu-children-wrapper {
@@ -318,9 +320,7 @@
             height: 4px;
             background-color: $heading;
             border-radius: 2px;
-            transition:
-              transform 0.3s ease,
-              opacity 0.3s ease;
+            transition: transform 0.3s ease, opacity 0.3s ease;
           }
           &.trigger-open {
             height: 18px;
@@ -391,7 +391,10 @@
 
 .page-scrolled {
   .header-wrapper .main-header {
-    background: linear-gradient(89.99deg, rgba($white, 0.8) 61%, rgba($hdBg, 0.8) 100%);
-    backdrop-filter: blur(2px);
+    background: linear-gradient(
+      89.99deg,
+      rgba($white, 1) 61%,
+      rgba($hdBg, 1) 100%
+    );
   }
 }

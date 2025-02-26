@@ -5,11 +5,46 @@
 -->
 {% extends '../base.html' %} {% block body %}
 <main id="main-content" class="body-container-wrapper">
-  <section class="u4m-404-error">
-    <h1 class="heading">
-      404 Error - We're sorry the page you're looking for isn't available.
+  <section class="u4m-404-wrapper">
+    {% module "error_module" path="../../modules/u4m-hero", offset=0, width=12,
+    intro_content={ "button_group" : [ { "boolean_field" : false, "button_style"
+    : "sec-btn", "button_text" : "Go to home page", "button_type" : "std",
+    "link" : { "no_follow" : false, "open_in_new_tab" : false, "url" : {
+    "content_id" : 186141651377, "type" : "CONTENT" } } } ], "content" : "
+    <h1>
+      <span><strong>404</strong><br />Page Not Found</span>
     </h1>
-    <p>Please use the main menu to find what you're looking for.</p>
+    <p>We can’t find the page you were looking for.</p>
+    ", "include_eyebrow_text" : false, "include_heading" : false }, media={
+    "image" : { "src" : "" }, "type" : "image", "video_section" : {
+    "poster_image" : { "src" : "" }, "poster_image_style" : "", "video_type" :
+    "" } }, module_settings={ "content_alignment" : "center" },
+    module_overrides={ "background_settings" : { "background_image" : { "alt" :
+    "rampxchange", "height" : 1600, "loading" : "lazy", "max_height" :
+    1111.111111111111, "max_width" : 2000, "size_type" : "auto_custom_max",
+    "src" :
+    "https://47484996.fs1.hubspotusercontent-na1.net/hubfs/47484996/RampXchange-u4m/images/rampxchange_bg_7.png",
+    "width" : 2880 }, "background_type" : "image", "enabled_overlay" : false,
+    "opacity" : 0.9 }, "bottom_padding" : "bottom-padding-custom", "container" :
+    { "size" : "theme" }, "custom_bottom_padding" : 80, "custom_top_padding" :
+    80, "enable_overrides" : true, "reverse_text" : true, "top_padding" :
+    "top-padding-custom" } %}
   </section>
 </main>
-{% endblock body %}
+{% require_css %}
+<style>
+  section.u4m-hero .intro_desc h1 {
+    font-size: 40rem;
+    margin-bottom: 20rem;
+  }
+  section.u4m-hero .intro_desc p {
+    font-size: 16rem;
+  }
+  section.u4m-hero .page-center.center {
+    gap: 0;
+  }
+  section.u4m-hero .intro_desc br {
+    display: block;
+  }
+</style>
+{% end_require_css %} {% endblock body %}

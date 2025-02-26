@@ -54,10 +54,10 @@
           justify-content: center;
           background: $tabBg;
           text-align: center;
-          border-radius: 12px;
+          border-radius: $borderRadius;
           justify-content: space-between;
           li {
-            border-radius: 12px;
+            border-radius: $borderRadius;
             max-width: 185px;
             @include size16;
             font-weight: 500;
