@@ -1,6 +1,4 @@
-{% set moduleName = 'u4m-resource-slider' %}
-{% set ExtramoduleClass = '' %}
-{% include "../partials/u4-module-includes.html" %}
+
 
 
 
@@ -17,81 +15,153 @@
 {% set data = hubdb_table_rows(table,category_query) %}
 {% endif %}
 
+
+{% set moduleName = 'u4m-resource-slider' %}
+{% set ExtramoduleClass = '' %}
+{% include "../partials/u4-module-includes.html" %}
+
+{% macro hubDBcards(row,moduleSetting) %}
+{% if row %}
+<div class="cmCol3 cardItem">
+  <div class="itemInr {{ moduleSetting.select_card_theme }} {% if moduleSetting.reverse_text %}cardColor{% endif %}" {% if moduleSetting.select_card_theme == "custom" %}style="background-color:{{ module.module_settings.background_color.rgba }}"{%  endif %}>
+    {% if row.image.url %}
+    <div class="itemImg">
+      <div class="itemImgin" style="background-image:url({{ row.image.url }})">	<a class="absltLink" href="{{ row.link }}"></a></div>
+    </div>
+    {% endif %}
+    <div class="itemCnWrap">
+      <div class="itemCntSec">
+        {# {% if row.topic.name %}
+					<div class="itemTags">{{ row.topic.name|capitalize }}</div>
+					{% endif %} #}
+        <div class="itemMetain">
+          {#           <div class="itemTags">{% for tag in row.topic %}{{ tag.label|capitalize }}{% if not loop.last %}<span class="dots"></span>{% endif %} {% endfor %}</div> #}
+          <div class="itemTags">{{row.type.label}}</div>
+          {% if moduleSetting.enable_meta %}
+          <div class="itemMeta">
+            <span class="reading-minutes">
+
+              {% set initialPostWords = row.description|striptags|wordcount %}
+              {% set calculatedPostWords = initialPostWords / 100 %}
+              {% set finishedPostWords = calculatedPostWords|divide(300)|round(2) %}
+              {% set number = finishedPostWords|round %}
+              {% if number < 1 %}
+              Less than one min
+              {% else %}
+              {{ finishedPostWords|round }} minute read
+              {% endif %}
+            </span>
+            | <span class="itemDate">{{ row.date|datetimeformat('%B %e, %Y') }}</span>
+          </div>
+          {% endif %}   
+        </div>
+
+        {% if row.name %}
+        <div class="itemTitle">
+          <h3 class="restitle">
+            <a  href="{{ row.link }}">
+              {{ row.name }}
+            </a>
+          </h3>
+        </div>  
+        {% endif %}
+      </div>
+      {% if row.read_more_text %}
+      <div class="intro_btn_wrap">
+        <div class="btn_item">
+          <a class="arrow-link " href="{{ row.link }}">
+            <span>{{ row.read_more_text }}</span>
+            <svg width="7" height="12" viewBox="0 0 7 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M6.83814 5.62106C7.05396 5.83037 7.05396 6.16965 6.83814 6.37896L1.2039 11.843C0.988082 12.0523 0.638231 12.0523 0.422411 11.843L0.161865 11.5904C-0.053955 11.3811 -0.053955 11.0417 0.161865 10.8324L5.14481 6.00001L0.161865 1.16755C-0.0539548 0.958242 -0.0539548 0.618957 0.161865 0.409655L0.422411 0.156977C0.638231 -0.0523252 0.988082 -0.0523252 1.2039 0.156977L6.83814 5.62106Z" fill="#007C43"></path>
+            </svg>
+          </a>
+        </div>
+      </div>
+      {% endif %}
+    </div>
+
+  </div>
+</div>
+{% endif %}
+{% endmacro%}
+
+
+
 <div class="page-center ">
-	<div class="intro_wrapp">
-		{% if module.intro_content.include_eyebrow_text or module.intro_content.include_heading or  module.intro_content.include_button%}
-		<div class="intro_content flex_wrap">
-			<div class="leftContent">
-				{% if module.intro_content.include_eyebrow_text %}
-				<div class="eyebrow_text">
-					{{ module.intro_content.eyebrow_text }}
-				</div>
-				{% endif %}
-				{% if module.intro_content.include_heading %}
-				<{{module.intro_content.heading_size}} class="intro_title">{{ module.intro_content.heading }}</{{module.intro_content.heading_size}}>
-					{% endif %}
+  <div class="intro_wrapp">
+    {% if module.intro_content.include_eyebrow_text or module.intro_content.include_heading or  module.intro_content.include_button%}
+    <div class="intro_content flex_wrap">
+      <div class="leftContent">
+        {% if module.intro_content.include_eyebrow_text %}
+        <div class="eyebrow_text">
+          {{ module.intro_content.eyebrow_text }}
+        </div>
+        {% endif %}
+        {% if module.intro_content.include_heading %}
+        <{{module.intro_content.heading_size}} class="intro_title">{{ module.intro_content.heading }}</{{module.intro_content.heading_size}}>
+          {% endif %}
 
-					</div>
-				<div class="rightContent">
-					{{macros.singleButton(module.intro_content.button_group)}}
-					<div class="btnArrow">
-						<div class="prev prenext"><span class="material-symbols-outlined">arrow_back</span></div>
-						<div class="next prenext"><span class="material-symbols-outlined">arrow_forward</span></div>
-					</div>
-				</div>
-			</div>
-			{% endif %}
-		</div>
-		<div class="CardWrap">
-			<div class="flex_row cardItems">
-				{% if module.resource.resource_type == "recent" ||  module.resource.resource_type == "category" %} 
-				{% for row in data %}
-				{{ macros.hubDBcards(row,module.module_settings)}}
-				{% endfor %}
-				{% elif module.resource.resource_type == 'postbytitle' %}
-				{% for item in module.resource.resouce_items %}
-				{% set row = item.select_row.columns %}
-				{% if row %}
-					{{ macros.hubDBcards(row,module.module_settings)}}
-				{% endif %}
-				{% endfor %}
-				{% endif %}
-			</div>
-		</div>
-	</div>
-	</section>
+          </div>
+        <div class="rightContent">
+          {{macros.singleButton(module.intro_content.button_group)}}
+          <div class="btnArrow">
+            <div class="prev prenext"><span class="material-symbols-outlined">arrow_back</span></div>
+            <div class="next prenext"><span class="material-symbols-outlined">arrow_forward</span></div>
+          </div>
+        </div>
+      </div>
+      {% endif %}
+    </div>
+    <div class="CardWrap">
+      <div class="flex_row cardItems">
+        {% if module.resource.resource_type == "recent" ||  module.resource.resource_type == "category" %} 
+        {% for row in data %}
+        {{ hubDBcards(row,module.module_settings)}}
+        {% endfor %}
+        {% elif module.resource.resource_type == 'postbytitle' %}
+        {% for item in module.resource.resouce_items %}
+        {% set row = item.select_row.columns %}
+        {% if row %}
+        {{ hubDBcards(row,module.module_settings)}}
+        {% endif %}
+        {% endfor %}
+        {% endif %}
+      </div>
+    </div>
+  </div>
+  </section>
 
 
-	{% require_js %}
-		<script>
-			$('.{{ name }} .cardItems').slick({
-				dots: false,
-				prevArrow: $('.prev'),
-				nextArrow: $('.next'),
-						speed: 300,
-							slidesToShow: 3,
-								slidesToScroll: 1,
-									autoplay: true,
-										autoplaySpeed: {{ module.module_settings.slider_settings.speed }},
-											responsive: [
-    {
-      breakpoint: 1024,
-      settings: {
-        slidesToShow: 2,
-      },
-    },
-												{
-      breakpoint: 640,
-      settings: {
-        slidesToShow: 1,
-      }
-    },
-  ],
-			});
-		</script>
-		
-		{% end_require_js %}
-		
+{% require_js %}
+<script>
+  $('.{{ name }} .cardItems').slick({
+    dots: false,
+    prevArrow: $('.prev'),
+    nextArrow: $('.next'),
+      speed: 300,
+        slidesToShow: 3,
+          slidesToScroll: 1,
+            autoplay: true,
+              autoplaySpeed: {{ module.module_settings.slider_settings.speed }},
+                responsive: [
+                  {
+                    breakpoint: 1024,
+                    settings: {
+                      slidesToShow: 2,
+                    },
+                  },
+                  {
+                    breakpoint: 640,
+                    settings: {
+                      slidesToShow: 1,
+                    }
+                  },
+                ],
+  });
+</script>
+
+{% end_require_js %}
+
 
 
 
