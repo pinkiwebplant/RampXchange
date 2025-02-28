@@ -20,14 +20,6 @@ html {
   position: relative;
   margin: 0 auto;
 }
-.u4m-alternating-content .bg_overlayColor {
-  background: rgba(255, 255, 255, 0.5);
-}
-@media (max-width: 767px) {
-  .u4m-alternating-content .bg_overlayColor {
-    background: rgba(255, 255, 255, 0.8) !important;
-  }
-}
 @media (max-width: 767px) {
   .u4m-alternating-content .bg_image {
     background-size: cover !important;
@@ -47,16 +39,10 @@ html {
   left: auto;
   right: 0;
 }
-.u4m-alternating-content.left_col .bg_overlayColor {
-  background: linear-gradient(90.02deg, #ffffff 55.51%, rgba(255, 255, 255, 0) 90%);
-}
 .u4m-alternating-content.right_col .bg_image {
   background-position: top left;
   background-size: cover;
   width: 50%;
-}
-.u4m-alternating-content.right_col .bg_overlayColor {
-  background: linear-gradient(90.13deg, rgba(255, 255, 255, 0) 32.05%, rgba(255, 255, 255, 0.665271) 37.45%, #ffffff 45.99%);
 }
 .u4m-alternating-content .gradient1 {
   background-image: linear-gradient(89.85deg, rgba(247, 248, 246, 0) 0.75%, rgba(252, 252, 252, 0.626667) 20.58%, #ffffff 34.45%, #f5f0e7 96.4%);

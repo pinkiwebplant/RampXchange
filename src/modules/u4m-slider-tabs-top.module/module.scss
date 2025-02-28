@@ -39,7 +39,6 @@
     position: relative;
     z-index: 9;
     .row {
-      @include centerSmall;
       padding: 0;
       .tabber_top_tabs {
         @include tabletvert {
