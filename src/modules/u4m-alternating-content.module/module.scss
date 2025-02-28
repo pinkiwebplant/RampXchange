@@ -3,12 +3,7 @@
   position: relative;
 
   margin: 0 auto;
-  .bg_overlayColor {
-    background: rgba($white, 0.5);
-    @include tabletvert {
-      background: rgba($white, 0.8) !important;
-    }
-  }
+
   @include tabletvert {
     .bg_image {
       background-size: cover !important;
@@ -29,23 +24,12 @@
       left: auto;
       right: 0;
     }
-    .bg_overlayColor {
-      background: linear-gradient(90.02deg, $white 55.51%, rgba($white, 0) 90%);
-    }
   }
   &.right_col {
     .bg_image {
       background-position: top left;
       background-size: cover;
       width: 50%;
-    }
-    .bg_overlayColor {
-      background: linear-gradient(
-        90.13deg,
-        rgba($white, 0) 32.05%,
-        rgba($white, 0.665271) 37.45%,
-        $white 45.99%
-      );
     }
   }
   .gradient1 {
