@@ -12,7 +12,7 @@
     </div>
   </div>
   <div class="media-col">
-    <div class="mediaCol {{ module.media.type }}">
+    <div class="mediaCol {{ module.media.type }} {% if module.module_settings.add_dropshadow_on_media %}drop{% endif %}">
       {% if module.media.type == 'image' %}
       {% if module.media.image.src %}
       <div class="mediaItem" > 

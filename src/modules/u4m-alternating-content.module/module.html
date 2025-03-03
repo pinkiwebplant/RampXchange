@@ -18,7 +18,7 @@
     <div class="media_section">
       {% if module.media_section.select_media_type=="img"%}
       {% if module.media_section.image.src %}
-      <img src="{{ module.media_section.image.src }}" alt="{{ module.media_section.image.alt }}">
+      <img src="{{ module.media_section.image.src }}" alt="{{ module.media_section.image.alt }}" {% if module.module_settings.add_dropshadow_on_image %} class="drop"{% endif %}>
       {% endif %}
       {% elif module.media_section.select_media_type=="vd"%}
 

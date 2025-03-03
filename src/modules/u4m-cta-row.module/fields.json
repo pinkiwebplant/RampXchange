@@ -558,6 +558,24 @@
     "type" : "boolean",
     "display_width" : null,
     "default" : false
+  }, {
+    "id" : "0f72f854-0d21-cfe5-3316-688613c9198a",
+    "name" : "add_dropshadow_on_image",
+    "label" : "Add DropShadow On Image",
+    "required" : false,
+    "locked" : false,
+    "visibility" : {
+      "controlling_field" : null,
+      "controlling_field_path" : "media_section.select_media_type",
+      "controlling_value_regex" : "img",
+      "property" : null,
+      "operator" : "EQUAL",
+      "access" : null
+    },
+    "display" : "checkbox",
+    "type" : "boolean",
+    "display_width" : null,
+    "default" : true
   } ],
   "tab" : "CONTENT",
   "expanded" : false,
@@ -571,7 +589,8 @@
       "color" : null,
       "opacity" : null
     },
-    "reverse_text" : false
+    "reverse_text" : false,
+    "add_dropshadow_on_image" : true
   }
 }, {
   "id" : "module_overrides",

@@ -48,7 +48,7 @@
 							</div>
 							{% endif %}
 							{% if item.media_section.select_column_type == 'media' %}
-							<div class="media_sec {{ item.media_section.select_video_type }}">
+							<div class="media_sec {{ item.media_section.select_video_type }} {% if module.module_settings.add_dropshadow_on_media %}drop{% endif %}">
 								{% if item.media_section.select_media_type == 'image' %}
 								<div class="img_section">
 									{% if item.media_section.image_field.src %}

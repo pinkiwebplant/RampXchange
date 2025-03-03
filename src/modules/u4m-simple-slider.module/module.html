@@ -181,12 +181,12 @@
 			</div>
 			{% if module.module_setting.content_type == 'tc' %}
 			<div class="rightColumn">
-				<div class="bgImageNav">
+				<div class="bgImageNav {% if module.module_setting.add_dropshadow_on_image %}drop{% endif %}">
 					{% if module.select_content_type == "custom" %}
 
 					{% for item in module.slider_items %}
 					{% if item.image_field.src %}
-						<div class="media_section" style="background-image: url({{ item.image_field.src }});">
+						<div class="media_section " style="background-image: url({{ item.image_field.src }});">
 						</div>
 					{% endif %}
 					{% endfor %}
@@ -206,7 +206,7 @@
 					{% else %}
 					{% for row in data %}
 					{% if row.feature_image.url %}
-						<div class="media_section" style="background-image: url({{ row.feature_image.url }});">
+						<div class="media_section " style="background-image: url({{ row.feature_image.url }});">
 						</div>
 					{% endif %}
 					{% endfor %}

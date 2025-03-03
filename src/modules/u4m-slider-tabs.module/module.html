@@ -30,7 +30,7 @@
 							<div class="tabber-btn">
 								{{ macros.singleButtonGroup(item.button_group) }}
 							</div>
-							<div class="mobile_cnnt tab-image-section">
+							<div class="mobile_cnnt tab-image-section {% if module.module_settings.add_dropshadow_on_media %}drop{% endif %} ">
 								<div class="img-item {% if loop.first %}acc-open animate-media{% endif %}" data-src="tab{{ loop.index }}">
 									{% if item.media_type == 'img' %}
 									<div class="img_wrap">
@@ -86,7 +86,7 @@
 				</div>
 				{% endfor %}
 			</div>
-			<div class="tab-image-section">
+			<div class="tab-image-section {% if module.module_settings.add_dropshadow_on_media %}drop{% endif %}">
 				{% for item in module.tabber_items %}
 				<div class="img-item {% if loop.first %}acc-open animate-media{% endif %}" data-src="tab{{ loop.index }}">
 					{% if item.media_type == 'img' %}

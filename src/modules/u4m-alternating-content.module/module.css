@@ -107,7 +107,6 @@ html {
 }
 .u4m-alternating-content .row .media_section img {
   border-radius: 4rem;
-  filter: drop-shadow(0px 0px 20px rgba(0, 0, 0, 0.15));
 }
 .u4m-alternating-content .row .media_section .vid_section {
   min-height: 390px;

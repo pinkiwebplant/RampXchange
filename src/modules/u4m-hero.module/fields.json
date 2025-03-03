@@ -649,6 +649,16 @@
     "type" : "choice",
     "display_width" : null,
     "default" : "left"
+  }, {
+    "id" : "3e9bbe74-52c0-7404-d3e9-b50f891f9423",
+    "name" : "add_dropshadow_on_media",
+    "label" : "Add DropShadow On Media",
+    "required" : false,
+    "locked" : false,
+    "display" : "checkbox",
+    "type" : "boolean",
+    "display_width" : null,
+    "default" : true
   } ],
   "tab" : "CONTENT",
   "expanded" : false,
@@ -656,7 +666,8 @@
   "type" : "group",
   "display_width" : null,
   "default" : {
-    "content_alignment" : "left"
+    "content_alignment" : "left",
+    "add_dropshadow_on_media" : true
   }
 }, {
   "id" : "module_overrides",

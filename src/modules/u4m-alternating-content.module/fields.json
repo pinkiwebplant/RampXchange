@@ -500,6 +500,24 @@
     "type" : "choice",
     "display_width" : null,
     "default" : ""
+  }, {
+    "id" : "7ae2352c-1473-5834-59bd-4d4e8f2a64ac",
+    "name" : "add_dropshadow_on_image",
+    "label" : "Add DropShadow on Image",
+    "required" : false,
+    "locked" : false,
+    "visibility" : {
+      "controlling_field" : null,
+      "controlling_field_path" : "media_section.select_media_type",
+      "controlling_value_regex" : "img",
+      "property" : null,
+      "operator" : "EQUAL",
+      "access" : null
+    },
+    "display" : "checkbox",
+    "type" : "boolean",
+    "display_width" : null,
+    "default" : true
   } ],
   "tab" : "CONTENT",
   "expanded" : false,
@@ -508,7 +526,8 @@
   "display_width" : null,
   "default" : {
     "select_content_alignment" : "left_col",
-    "select_content_alignment_mobile" : ""
+    "select_content_alignment_mobile" : "",
+    "add_dropshadow_on_image" : true
   }
 }, {
   "id" : "module_overrides",
