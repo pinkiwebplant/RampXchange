@@ -1040,8 +1040,8 @@
       "locked" : false,
       "visibility" : {
         "controlling_field" : null,
-        "controlling_field_path" : "module_overrides.background_settings.background_size",
-        "controlling_value_regex" : "cover",
+        "controlling_field_path" : "module_overrides.background_settings.apply_overlay",
+        "controlling_value_regex" : "true",
         "property" : null,
         "operator" : "EQUAL",
         "access" : null

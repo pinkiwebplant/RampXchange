@@ -8,7 +8,8 @@
 
 @font-face {
   font-family: "Aktive Grotesk";
-  src: url("https://use.typekit.net/af/63eba7/00000000000000007753ca4f/30/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3")
+  src:
+    url("https://use.typekit.net/af/63eba7/00000000000000007753ca4f/30/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3")
       format("woff2"),
     url("https://use.typekit.net/af/63eba7/00000000000000007753ca4f/30/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3")
       format("woff"),
@@ -22,7 +23,8 @@
 
 @font-face {
   font-family: "Aktive Grotesk";
-  src: url("https://use.typekit.net/af/f7a8b2/00000000000000007753ca28/30/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i4&v=3")
+  src:
+    url("https://use.typekit.net/af/f7a8b2/00000000000000007753ca28/30/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i4&v=3")
       format("woff2"),
     url("https://use.typekit.net/af/f7a8b2/00000000000000007753ca28/30/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i4&v=3")
       format("woff"),
@@ -36,7 +38,8 @@
 
 @font-face {
   font-family: "Aktive Grotesk";
-  src: url("https://use.typekit.net/af/2b93b6/00000000000000007753ca37/30/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3")
+  src:
+    url("https://use.typekit.net/af/2b93b6/00000000000000007753ca37/30/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3")
       format("woff2"),
     url("https://use.typekit.net/af/2b93b6/00000000000000007753ca37/30/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3")
       format("woff"),
@@ -50,7 +53,8 @@
 
 @font-face {
   font-family: "Aktive Grotesk";
-  src: url("https://use.typekit.net/af/ae6138/00000000000000007753ca27/30/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i7&v=3")
+  src:
+    url("https://use.typekit.net/af/ae6138/00000000000000007753ca27/30/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i7&v=3")
       format("woff2"),
     url("https://use.typekit.net/af/ae6138/00000000000000007753ca27/30/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i7&v=3")
       format("woff"),
@@ -64,7 +68,8 @@
 
 @font-face {
   font-family: "Aktive Grotesk";
-  src: url("https://use.typekit.net/af/434507/00000000000000007753ca2a/30/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n2&v=3")
+  src:
+    url("https://use.typekit.net/af/434507/00000000000000007753ca2a/30/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n2&v=3")
       format("woff2"),
     url("https://use.typekit.net/af/434507/00000000000000007753ca2a/30/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n2&v=3")
       format("woff"),
@@ -78,7 +83,8 @@
 
 @font-face {
   font-family: "Aktive Grotesk";
-  src: url("https://use.typekit.net/af/0f6952/00000000000000007753ca4e/30/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i2&v=3")
+  src:
+    url("https://use.typekit.net/af/0f6952/00000000000000007753ca4e/30/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i2&v=3")
       format("woff2"),
     url("https://use.typekit.net/af/0f6952/00000000000000007753ca4e/30/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i2&v=3")
       format("woff"),
@@ -910,4 +916,7 @@ ol li {
 
 iframe {
   border: none;
+}
+.drop {
+  filter: $dropshadow;
 }

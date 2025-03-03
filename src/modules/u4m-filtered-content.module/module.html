@@ -86,7 +86,7 @@
               {% endif %}
               <div class="itemCnWrap">
                 <div class="itemCntSec">
-                  <div class="itemTags">{% for tag in row.topic %}{{ tag.label|capitalize }} {% if not loop.last %}<span class="dots"></span>{% endif %} {% endfor %}</div>
+                  <div class="itemTags">{% for tag in row.topic %}{% if loop.first %}{{ tag.label|capitalize }}{% endif %} {% endfor %}</div>
                   <div class="itemTitle ">
                     <h3 >
                       <a  href="{{ row.link }}">

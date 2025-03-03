@@ -84,7 +84,8 @@ html {
   padding: 0 22px;
 }
 .u4m-logo-trust-marks .logo-trust-marks .page-center .row .logo-wrapper .slick-list .slick-track .slick-slide .logo-item img {
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .u4m-logo-trust-marks .logo-trust-marks .page-center .row .logo-wrapper .slick-list .slick-track::before {
   display: none;

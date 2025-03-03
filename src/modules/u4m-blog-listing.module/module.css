@@ -429,7 +429,9 @@ section.u4m-blog-listing .featCardsListWrap .filterWrap .flex_row .selctArrow {
 section.u4m-blog-listing .featCardsListWrap .filterWrap .flex_row .selctArrow select {
   background-size: 12px;
   background-repeat: no-repeat;
-  appearance: none;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
   background-position: calc(100% - 30px) center;
   padding: 12.5px 64px 12.5px 24px;
   border-radius: 4rem;

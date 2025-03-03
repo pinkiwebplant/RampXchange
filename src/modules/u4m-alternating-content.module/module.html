@@ -62,15 +62,8 @@
 
 {% require_css %}
 <style>
-  {% if module.module_overrides.background_settings.background_size == "contain" %}
-  .u4m-alternating-content.right_col .bg_overlayColor {
-    background: linear-gradient(90.13deg, rgba(255, 255, 255, 0) 32.05%, rgba(255, 255, 255, 0.665271) 37.45%, #ffffff 45.99%);
-  } 
-  .u4m-alternating-content.left_col .bg_overlayColor {
-    background: linear-gradient(90.02deg, #ffffff 55.51%, rgba(255, 255, 255, 0) 90%);
-  }
-
-  {% else %}
+{% if module.module_overrides.background_settings.apply_overlay %}
+ 
   .u4m-alternating-content.{{ name }} .bg_overlayColor {
     background: linear-gradient(90.02deg, {{ module.module_overrides.background_settings.overlay_settings.primary_color.rgba }} {{ module.module_overrides.background_settings.overlay_settings.desktop_view.primary_color_position }}%, {{ module.module_overrides.background_settings.overlay_settings.secondary_color.rgba }} {{ module.module_overrides.background_settings.overlay_settings.desktop_view.secondary_color_position }}%);
   }
@@ -84,7 +77,7 @@
       background: linear-gradient(90.02deg, {{ module.module_overrides.background_settings.overlay_settings.primary_color.rgba }} {{ module.module_overrides.background_settings.overlay_settings.mobile_view_position.primary_color_position }}%, {{ module.module_overrides.background_settings.overlay_settings.secondary_color.rgba }} {{ module.module_overrides.background_settings.overlay_settings.mobile_view_position.secondary_color_position }}%);
     }
   }
-
   {% endif %}
+ 
 </style>
 {% end_require_css %}

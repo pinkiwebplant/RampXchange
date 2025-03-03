@@ -124,7 +124,8 @@ html {
   width: 100%;
 }
 .u4m-cta-row .row .media_section .vid_section .poster_img img {
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
   height: 100%;
   width: 100%;
 }
