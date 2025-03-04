@@ -35,6 +35,9 @@ section.u4m-filtered-content {
             margin-top: 32px;
           }
         }
+        &.full {
+          max-width: 100%;
+        }
       }
       .featCardsOuter {
         @include tabletmidmin {

@@ -21,6 +21,12 @@
         padding: 36px 24px;
         border-radius: $borderRadius;
         text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        .team_content {
+          width: 100%;
+        }
         .team_img {
           width: 200px;
           margin-left: auto;

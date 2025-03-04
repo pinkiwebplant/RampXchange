@@ -46,6 +46,9 @@ section.u4m-filtered-content .topSec .flex_row .intro_wrapp .intro_content .intr
   justify-content: start;
   margin-top: 32px;
 }
+section.u4m-filtered-content .topSec .flex_row .intro_wrapp.full {
+  max-width: 100%;
+}
 section.u4m-filtered-content .topSec .flex_row .featCardsOuter {
   max-width: 100%;
   width: 100%;

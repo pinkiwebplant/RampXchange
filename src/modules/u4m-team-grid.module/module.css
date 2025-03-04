@@ -38,6 +38,12 @@ html {
   padding: 36px 24px;
   border-radius: 4rem;
   text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.u4m-team-grid .team_grid_row .team_item .team_item_inn .team_content {
+  width: 100%;
 }
 .u4m-team-grid .team_grid_row .team_item .team_item_inn .team_img {
   width: 200px;

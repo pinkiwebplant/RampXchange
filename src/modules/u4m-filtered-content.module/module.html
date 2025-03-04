@@ -59,7 +59,7 @@
 
 {% set query2 = "orderBy=hs_created_at" %}
  
-{% set query3 = query ~ '&featured=true'%}
+{% set query3 = 'orderBy=hs_created_at&featured=true'%}
  
 
 {% set ft_resources = hubdb_table_rows(table, query3 ) %}
@@ -68,14 +68,13 @@
 
   <div class="topSec">
     <div class="flex_row">
-      <div class="intro_wrapp">
+      <div class="intro_wrapp {% if not ft_resources %}full{% endif %}">
         {{macros.introGroup(module.intro_content)}}
       </div>
-      
+      {% if ft_resources %}
       <div class="featCardsOuter"> 
         <div class="featCards cardItems">  
-          {% for row in ft_resources %} 
-
+          {% for row in ft_resources %}  
          {% if loop.first %}
           <div class="cmCol3 cardItem">
             <div class="itemInr {{ module.module_settings.select_top_card_theme }} {% if module.module_settings.reverse_text %}cardColor{% endif %}" {% if module.module_settings.select_top_card_theme == "custom" %}style="background-color:{{ module.module_settings.top_background_color.rgba }}"{%  endif %}>
@@ -118,7 +117,7 @@
           {% endfor %} 
         </div> 
       </div>
-      
+      {% endif %} 
     </div>
   </div>
 
