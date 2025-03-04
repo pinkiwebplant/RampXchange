@@ -241,14 +241,16 @@
 			</div>
 			{% endif %}
 			<div class="itemCnWrap">
-				<div class="itemCntSec">
+				<div class="itemCntSec"> 
 				<div class="tag_wrap">
 					{% if item.topic_list %}
 					<div class="itemTags">
 						{% set included_topics = item.topic_list | rejectattr("slug", "equalto", "featured") | list %}
 						{% for topic in included_topics %}
-						<a class="{{ topic.slug }}" href="{{ blog_tag_url(group.id, topic.slug) }}">{{ topic.name|capitalize }}</a>{% if not loop.last %}<span class="dots"></span>{% endif %}
-						{% endfor %}
+							{% if loop.first %}
+						<a class="{{ topic.slug }}" href="{{ blog_tag_url(group.id, topic.slug) }}">{{ topic.name|capitalize }}</a>
+					{% endif %}
+					{% endfor %}
 					</div>
 					{% endif %}
 					<div class="itemMeta">

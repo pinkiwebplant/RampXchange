@@ -1,10 +1,6 @@
 @import "../../css/module-imports";
 
 .u4m-anchor-nav-bar {
-  .bg_overlay.bg_color {
-    backdrop-filter: blur(2px);
-    opacity: 0.8;
-  }
   &.reverse-text {
     .btns_nav_inr {
       a.cm_btn {

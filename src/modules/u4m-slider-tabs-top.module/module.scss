@@ -208,6 +208,10 @@
               .img_section {
                 overflow: hidden;
                 border-radius: $borderRadius;
+                img {
+                  overflow: hidden;
+                  border-radius: $borderRadius;
+                }
               }
               @include tabletvert {
                 padding-bottom: 66.6%;

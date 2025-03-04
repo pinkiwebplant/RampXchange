@@ -920,3 +920,7 @@ iframe {
 .drop {
   filter: $dropshadow;
 }
+
+.filterWrap .flex_row {
+  justify-content: flex-start !important;
+}

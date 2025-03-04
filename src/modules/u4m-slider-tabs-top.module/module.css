@@ -213,6 +213,10 @@ html {
   overflow: hidden;
   border-radius: 4rem;
 }
+.u4m-slider-tabs-top .slider-tabs-top-wrapper .row .tabber_tab_content .tabber_cntnt .right_section .media_sec .img_section img {
+  overflow: hidden;
+  border-radius: 4rem;
+}
 @media (max-width: 767px) {
   .u4m-slider-tabs-top .slider-tabs-top-wrapper .row .tabber_tab_content .tabber_cntnt .right_section .media_sec {
     padding-bottom: 66.6%;

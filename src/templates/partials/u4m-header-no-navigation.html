@@ -4,25 +4,25 @@
 -->
 
 <div class="header-wrapper no-nav">
-	<header class="header">
-		<div class="header-inner">
-			<div class="main-header">
-				<div class="page-center">
-					<div class="row-fluid">
-						<div class="span4 site_logo">
-							<div class="site_logo_inn">
-								{% set logo_src = get_asset_url('../../templates/images/mainLogo.png') %}
-								{% module "site_logo" path="@hubspot/logo", label="Site Logo", link="/" img={src="{{logo_src}}?noresize", width=326, open_in_new_tab=true ,override_inherited_src= true, alt="rampXchange"} %}
-							</div>
-							<div class="menu-trigger">
-								<span></span>
-								<span></span>
-								<span></span>
-							</div>
-						</div> 
-					</div>
-				</div>
-			</div>
-		</div>
-	</header>
+  <header class="header">
+    <div class="header-inner">
+      <div class="main-header">
+        <div class="page-center">
+          <div class="row-fluid">
+            <div class="span4 site_logo">
+              <div class="site_logo_inn">
+                {% set logo_src =
+                get_asset_url('../../templates/images/mainLogo.png') %} {%
+                module "site_logo" path="@hubspot/logo", label="Site Logo",
+                link="https://rampxchange.com/"
+                img={src="{{logo_src}}?noresize", width=326,
+                open_in_new_tab=true ,override_inherited_src= true,
+                alt="rampXchange"} %}
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
 </div>
