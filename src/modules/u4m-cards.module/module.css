@@ -259,12 +259,8 @@ html {
   flex-direction: column;
   height: 100%;
 }
-.u4m-cards .btmCntt .inner_wrpp.intro_content .items .topcntt.top .icon {
+.u4m-cards .btmCntt .inner_wrpp.intro_content .items .topcntt.top .icon img {
   width: 64px;
-  height: 64px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
 @media (min-width: 581px) {
   .u4m-cards .btmCntt .inner_wrpp.intro_content .items .topcntt.left {

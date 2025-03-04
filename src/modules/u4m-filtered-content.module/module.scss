@@ -224,6 +224,10 @@ section.u4m-filtered-content {
     padding: 12.5px 64px 12.5px 24px;
     cursor: pointer;
     text-transform: capitalize;
+    &.active_tag_label {
+      opacity: 0.5;
+      cursor: default;
+    }
   }
 
   .filter_dropdown {

@@ -241,12 +241,8 @@
           display: flex;
           flex-direction: column;
           height: 100%;
-          &.top .icon {
+          &.top .icon img {
             width: 64px;
-            height: 64px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
           }
           &.left {
             @include phoneMin {

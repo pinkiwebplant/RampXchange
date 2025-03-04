@@ -534,7 +534,8 @@
     $(".type_ele").each(function() {
       var gettype = $(this).attr("data-type-url");
       if (gettype === typeText) {
-        $('.filter_dropdown.typeSelect').addClass('active_tag_url_matched pageis_',+gettype)
+        $('.filter_dropdown.typeSelect').addClass('active_tag_url_matched pageis_',+gettype);
+        $('.type_filter_label').addClass('active_tag_label');
         $(this).click();
         console.log(gettype ,'===', typeText)
       }

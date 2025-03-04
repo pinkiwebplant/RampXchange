@@ -14,7 +14,7 @@
         <div class="innerWrpp">
           <div class="topcntt {{ module.module_settings.cards_group.icon_alignment }}">
             {% if  module.module_settings.cards_group.media_type  == 'img'%}
-            {% if item.image_field.src %}
+            {% if item.image_field.src %} 
             <div class="topcnttimg" style="background-image:url({{ item.image_field.src }});"></div>
 <!--             <img src="{{ item.image_field.src }}" alt="{{ item.image_field.alt }}"> -->
             {% endif %}
@@ -24,8 +24,8 @@
               {% if item.icon_group.icon_type == 'Image' %}
               <div class="icon">
                 {% if item.icon_group.image_icon.src %}
-                {% set sizeAttrs = 'width="{{ item.icon_group.image_icon.width|escape_attr }}" height="{{ item.icon_group.image_icon.height|escape_attr }}"' %}
-                <img src="{{ item.icon_group.image_icon.src }}" alt="{{ item.icon_group.image_icon.alt }}"  {{ sizeAttrs }}>
+                {% set sizeAttrs = 'width="{{ item.icon_group.image_icon.width|escape_attr }}" height="{{ item.icon_group.image_icon.height|escape_attr }}"' %} 
+                <img src="{{ item.icon_group.image_icon.src }}" alt="{{ item.icon_group.image_icon.alt }}"  {{ sizeAttrs }}  {% if item.icon_group.image_icon_width %}style="width:{{ item.icon_group.icon_width }}px"{% endif %}>
                 {% endif %}
               </div>
               {% elif item.icon_group.icon_type == 'svg' %}

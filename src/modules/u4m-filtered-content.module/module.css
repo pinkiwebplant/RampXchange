@@ -471,6 +471,10 @@ section.u4m-filtered-content .filter_label {
   cursor: pointer;
   text-transform: capitalize;
 }
+section.u4m-filtered-content .filter_label.active_tag_label {
+  opacity: 0.5;
+  cursor: default;
+}
 section.u4m-filtered-content .filter_dropdown {
   text-transform: capitalize;
   position: absolute;
