@@ -35,7 +35,7 @@
         margin: 0;
         font-family: $font1;
         line-height: 1;
-        @include size16;
+        // @include size16;
         letter-spacing: normal;
         li {
           float: none;
@@ -320,7 +320,9 @@
             height: 4px;
             background-color: $heading;
             border-radius: 2px;
-            transition: transform 0.3s ease, opacity 0.3s ease;
+            transition:
+              transform 0.3s ease,
+              opacity 0.3s ease;
           }
           &.trigger-open {
             height: 18px;
@@ -391,10 +393,6 @@
 
 .page-scrolled {
   .header-wrapper .main-header {
-    background: linear-gradient(
-      89.99deg,
-      rgba($white, 1) 61%,
-      rgba($hdBg, 1) 100%
-    );
+    background: linear-gradient(89.99deg, rgba($white, 1) 61%, rgba($hdBg, 1) 100%);
   }
 }

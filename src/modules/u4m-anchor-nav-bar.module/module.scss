@@ -30,9 +30,10 @@
       }
     }
     a.cm_btn.active {
-      border-bottom: 2px solid;
-      border-color: $heading;
-      text-shadow: 1px 0 0 currentColor;
+      // border-bottom: 2px solid;
+      // border-color: $heading;
+      // text-shadow: 1px 0 0 currentColor;
+      color: $action1;
     }
   }
   transition: all 0.3s ease;
